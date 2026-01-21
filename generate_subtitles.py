@@ -41,7 +41,7 @@ def extract_subtitles(html_file):
             if time_tag and text_tag:
                 time_text = time_tag.get_text(strip=True)
                 subtitle_text = text_tag.get_text(strip=True)
-                subtitles.append(f"{time_text}\n{subtitle_text}\n")
+                subtitles.append(f"{time_text}  \n{subtitle_text}\n")
 
         if not subtitles:
             # Fallback: pair time and text by order in all p tags
@@ -54,7 +54,7 @@ def extract_subtitles(html_file):
                     while j < len(ps):
                         subtitle_text = ps[j].get_text(strip=True)
                         if subtitle_text and not TIME_PATTERN.match(subtitle_text):
-                            subtitles.append(f"{time_text}\n{subtitle_text}\n")
+                            subtitles.append(f"{time_text}  \n{subtitle_text}\n")
                             i = j
                             break
                         j += 1
