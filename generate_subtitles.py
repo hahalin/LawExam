@@ -15,9 +15,10 @@ def extract_subtitles(html_file):
         with open(html_file, 'r', encoding='utf-8') as file:
             soup = BeautifulSoup(file, 'html.parser')
 
-        # Extract course name if available
-        course_name = soup.find('span', class_='MuiTypography-h6')
-        course_name_text = course_name.get_text(strip=True) if course_name else "請填寫課程名稱"
+        # Course name: folder name + html filename (without extension)
+        folder_name = os.path.basename(os.path.dirname(html_file))
+        file_stem = os.path.splitext(os.path.basename(html_file))[0]
+        course_name_text = f"{folder_name}{file_stem}"
 
         # Extract subtitles with timestamps
         subtitles = []
