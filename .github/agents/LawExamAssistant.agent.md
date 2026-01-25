@@ -40,7 +40,7 @@ LawExamAssistant 是一個專為簡化法律考試資料準備流程而設計的
 ### 調用指引
 - 使用 `@subtitle` 指令來調用對應的指引文件。
 - 指引文件位於：[d:/repo/LawExam/.github/instructions/subtitle_instructions.md](d:/repo/LawExam/.github/instructions/subtitle_instructions.md)。
-- 此指令會自動偵測各科目資料夾中尚未轉換為字幕檔的 HTML 檔案，並執行轉換。
+- 此指令會自動偵測各科目資料夾中尚未轉換為字幕檔的 HTML 檔案，以utf-8解讀，並執行轉換。
 - **跳過規則**：只要對應的 `.md` 已存在就必須跳過，不可覆蓋。
   - 例：`刑法/05.html` 若已有 `刑法/05.md`，就不處理。
 
@@ -62,11 +62,13 @@ LawExamAssistant 是一個專為簡化法律考試資料準備流程而設計的
 - 只要對應的 `.md` 已存在就必須跳過，不可覆蓋。
 
 **Python 路徑確認（Windows）**:
-- 先用 PowerShell 執行：`Get-Command python`。
+- 使用 C:\Users\User\anaconda3\python.exe
+- 若不行，再用 PowerShell 執行：`Get-Command python`。
 - 若 `python` 失敗或版本不符，改用完整路徑，例如：`D:/Users/使用者/anaconda3/python.exe`。
 - 在 VS Code 工作區內，優先使用已設定的 Python 環境路徑執行。
 
 **範例**:
+
 ```
 @subtitle
 ```
