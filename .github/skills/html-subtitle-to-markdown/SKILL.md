@@ -76,8 +76,8 @@ C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output 
 ### 1. 解析使用者指令
 
 從指令中提取：
-- `html_path`：HTML 檔案路徑（如 `刑法/06.html`）
-- `md_path`：輸出路徑，同資料夾、同檔名、副檔名改為 `.md`（如 `刑法/06.md`）
+- `html_path`：HTML 檔案路徑（如 `課程字幕/刑法/06.html`）
+- `md_path`：輸出路徑，同資料夾、同檔名、副檔名改為 `.md`（如 `課程字幕/刑法/06.md`）
 
 ### 2. 檢查是否已存在
 
@@ -148,12 +148,12 @@ HH:MM:SS - HH:MM:SS
 
 ❌ 錯誤用法：
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python .github/skills/html-subtitle-to-markdown/convert_subtitle.py 刑法/08.html
+C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python .github/skills/html-subtitle-to-markdown/convert_subtitle.py 課程字幕/刑法/08.html
 ```
 
 ✅ 正確用法：
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python .github/skills/html-subtitle-to-markdown/convert_subtitle.py "D:/repo/LawExam/刑法/08.html"
+C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python .github/skills/html-subtitle-to-markdown/convert_subtitle.py "D:/repo/LawExam/課程字幕/刑法/08.html"
 ```
 
 **執行步驟中的指令也應使用絕對路徑**：
@@ -173,6 +173,6 @@ C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output 
 
 ## 輸出範例
 
-- [刑法/01.md](../../../刑法/01.md)
-- [憲法/01.md](../../../憲法/01.md)
-- [行政法/01.md](../../../行政法/01.md)
+- [刑法/01.md](../../../課程字幕/刑法/01.md)
+- [憲法/01.md](../../../課程字幕/憲法/01.md)
+- [行政法/01.md](../../../課程字幕/行政法/01.md)
