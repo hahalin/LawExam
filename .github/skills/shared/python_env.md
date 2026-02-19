@@ -42,10 +42,16 @@ C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output 
 C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip install beautifulsoup4 -q
 ```
 
+### EPUB 產生（markdown-to-epub）
+
+```powershell
+C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip install ebooklib markdown -q
+```
+
 ## 安裝所有套件
 
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip install pdfplumber beautifulsoup4 -q
+C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip install pdfplumber beautifulsoup4 ebooklib markdown -q
 ```
 
 ## 確認環境

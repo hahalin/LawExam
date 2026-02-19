@@ -32,6 +32,14 @@ LawExamAssistant 是一個專為法律考試一試準備而設計的AI。
 - **用途**: 將包含字幕的 HTML 檔案轉換為 Markdown 格式
 - **觸發指令**: `@subtitle`
 
+#### 3. Markdown 轉 EPUB
+- **Skill**: [markdown-to-epub](../skills/markdown-to-epub/SKILL.md)
+- **用途**: 將 Markdown 檔案轉換為 EPUB 電子書格式
+- **觸發指令範例**:
+  ```
+  考古題/刑法/114110_1301.md 轉換為epub
+  ```
+
 ### 進度回報
 
 此 Agent 會在完成每項任務後提供更新，包括檔案建立、編輯以及遇到的任何問題。如果需要額外的輸入或澄清，Agent 會向使用者請求協助。
