@@ -58,9 +58,12 @@ description: 將包含字幕的 HTML 檔案轉換為 Markdown 格式。適用於
 - **環境名稱**：tf_gpu_env
 - **Python 版本**：3.12.4
 
-### 執行 Python 的指令前綴
+### 執行 Python 的指令
+
+建議使用直接 Python 路徑（`conda run` 在 PowerShell 中中文輸出會亂碼）：
+
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe
 ```
 
 ### 必要套件
@@ -68,7 +71,7 @@ C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output 
 
 ### 安裝必要套件
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip install beautifulsoup4 -q
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe -m pip install beautifulsoup4 -q
 ```
 
 ## 執行步驟
@@ -88,7 +91,7 @@ C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output 
 使用本 skill 資料夾內的 `convert_subtitle.py` 腳本：
 
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python .github/skills/html-subtitle-to-markdown/convert_subtitle.py 刑法/06.html
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe .github/skills/html-subtitle-to-markdown/convert_subtitle.py "D:/repo/LawExam/課程字幕/刑法/06.html"
 ```
 
 腳本會自動：
@@ -148,17 +151,17 @@ HH:MM:SS - HH:MM:SS
 
 ❌ 錯誤用法：
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python .github/skills/html-subtitle-to-markdown/convert_subtitle.py 課程字幕/刑法/08.html
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe .github/skills/html-subtitle-to-markdown/convert_subtitle.py 課程字幕/刑法/08.html
 ```
 
 ✅ 正確用法：
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python .github/skills/html-subtitle-to-markdown/convert_subtitle.py "D:/repo/LawExam/課程字幕/刑法/08.html"
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe .github/skills/html-subtitle-to-markdown/convert_subtitle.py "D:/repo/LawExam/課程字幕/刑法/08.html"
 ```
 
 **執行步驟中的指令也應使用絕對路徑**：
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python .github/skills/html-subtitle-to-markdown/convert_subtitle.py "{完整絕對路徑}"
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe .github/skills/html-subtitle-to-markdown/convert_subtitle.py "{完整絕對路徑}"
 ```
 
 ## 批次處理
@@ -166,7 +169,7 @@ C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output 
 若需要批次處理所有 HTML 檔案，可使用專案根目錄的 `generate_subtitles.py` 腳本：
 
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python generate_subtitles.py
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe generate_subtitles.py
 ```
 
 此腳本會自動處理所有子資料夾中的 HTML 檔案，並跳過已存在的 `.md` 檔案。

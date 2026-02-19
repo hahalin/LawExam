@@ -10,22 +10,30 @@
 | 環境名稱 | `tf_gpu_env` |
 | Python 版本 | 3.12.4 |
 
-## 執行 Python 的指令前綴
+## 執行 Python 的指令
 
-在終端機執行 Python 腳本時，使用以下前綴：
+### 建議方式：直接 Python 路徑
 
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe
 ```
+
+> ⚠️ 使用 `conda run` 在 PowerShell 中執行含中文輸出的腳本時，會出現亂碼或輸出消失的問題。**建議使用直接路徑**。
 
 ### 範例
 
 ```powershell
 # 執行腳本
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python script.py
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe script.py
 
 # 執行指令
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -c "print('Hello')"
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe -c "print('Hello')"
+```
+
+### 備選方式：conda run（不建議用於中文輸出場景）
+
+```powershell
+C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python
 ```
 
 ## 必要套件
@@ -33,33 +41,33 @@ C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output 
 ### PDF 處理（exam-pdf-to-markdown）
 
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip install pdfplumber -q
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe -m pip install pdfplumber -q
 ```
 
 ### HTML 處理（html-subtitle-to-markdown）
 
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip install beautifulsoup4 -q
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe -m pip install beautifulsoup4 -q
 ```
 
 ### EPUB 產生（markdown-to-epub）
 
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip install ebooklib markdown -q
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe -m pip install ebooklib markdown -q
 ```
 
 ## 安裝所有套件
 
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip install pdfplumber beautifulsoup4 ebooklib markdown -q
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe -m pip install pdfplumber beautifulsoup4 ebooklib markdown -q
 ```
 
 ## 確認環境
 
 ```powershell
 # 確認 Python 版本
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python --version
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe --version
 
 # 確認已安裝套件
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip list | Select-String "pdfplumber|beautifulsoup4"
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe -m pip list | Select-String "pdfplumber|beautifulsoup4|ebooklib|markdown"
 ```

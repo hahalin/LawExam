@@ -106,14 +106,17 @@ Agent 判斷的依據包括：
 - **環境名稱**：tf_gpu_env
 - **Python 版本**：3.12.4
 
-### 執行 Python 的指令前綴
+### 執行 Python 的指令
+
+建議使用直接 Python 路徑（`conda run` 在 PowerShell 中中文輸出會亂碼）：
+
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe
 ```
 
 ### 安裝必要套件
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python -m pip install pdfplumber -q
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe -m pip install pdfplumber -q
 ```
 
 ## 執行步驟
@@ -127,7 +130,7 @@ C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output 
 ### 2. 第一層：執行 Python 腳本自動分科
 
 ```powershell
-C:/Users/User/anaconda3/Scripts/conda.exe run -n tf_gpu_env --no-capture-output python .github/skills/exam-pdf-to-markdown/convert_exam.py <考卷PDF> <答案卷PDF>
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe .github/skills/exam-pdf-to-markdown/convert_exam.py <考卷PDF> <答案卷PDF>
 ```
 
 腳本會自動：
