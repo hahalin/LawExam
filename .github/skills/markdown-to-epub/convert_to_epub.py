@@ -36,8 +36,13 @@ def create_epub(md_path: str) -> None:
     epub_path = os.path.splitext(md_path)[0] + '.epub'
 
     if os.path.exists(epub_path):
-        print(f"跳過：{epub_path} 已存在")
-        sys.exit(0)
+        md_mtime = os.path.getmtime(md_path)
+        epub_mtime = os.path.getmtime(epub_path)
+        if md_mtime <= epub_mtime:
+            print(f"跳過：{epub_path} 已存在且為最新")
+            sys.exit(0)
+        else:
+            print(f"偵測到 MD 檔案已更新，重新產生 EPUB：{epub_path}")
 
     # Read markdown content
     with open(md_path, 'r', encoding='utf-8') as f:
