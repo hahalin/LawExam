@@ -3,6 +3,11 @@
 2026 年司律一試準備專案
 
 ---
+## md2epub
+```
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe .github/skills/markdown-to-epub/convert_to_epub.py "D:/repo/LawExam/課程字幕/憲法/憲法02.md"
+```
+---
 
 ## 課程字幕與筆記
 
