@@ -4,8 +4,13 @@
 
 ---
 ## md2epub
+- 單檔
 ```
 C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe .github/skills/markdown-to-epub/convert_to_epub.py "D:/repo/LawExam/課程字幕/憲法/憲法02.md"
+```
+- 資料夾
+```
+C:/Users/User/anaconda3/envs/tf_gpu_env/python.exe .github/skills/markdown-to-epub/convert_to_epub.py "D:/repo/LawExam/課程字幕/民法"
 ```
 ---
 
