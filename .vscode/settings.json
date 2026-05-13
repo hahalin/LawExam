@@ -124,5 +124,8 @@
         "eval": false,
         "Invoke-Expression": false,
         "iex": false
-    }
+    },
+    "markdown-pdf.styles": [
+        "D:/repo/LawExam/style.css"
+    ]
 }
