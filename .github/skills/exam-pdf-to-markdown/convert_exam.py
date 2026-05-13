@@ -16,6 +16,12 @@ try:
 except ImportError:
     fitz = None
 
+# Windows cp950 環境下，避免 print 含 PUA/罕用字時崩潰
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except Exception:
+    pass
+
 #  科目關鍵字（支援正規表達式）
 SUBJECT_KEYWORDS = {
     '憲法': [
@@ -259,6 +265,8 @@ def extract_exam_info(paper_text):
         m2 = re.search(r'(\d{3})年', line)
         if m2 and not year:
             year = m2.group(1)
+    # 移除 PUA 私用區字元（PDF CID 字型可能殘留），避免 cp950 編碼錯誤
+    exam_name = re.sub(r'[\ue000-\uf8ff]', '', exam_name)
     return year, exam_name
 
 
