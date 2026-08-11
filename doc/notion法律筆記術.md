@@ -72,8 +72,7 @@
   篩選「狀態為：考前衝刺必看」＋「重要度：★★★」。Notion 會把所有跨科最核心的爭點、以及你從法律人 App 複製過來的最新大法庭裁定精華集中在一起。考前在考場休息區，你只需要用 iPad mini 滑這個清單，就能完成最有效率的總複習。   
 透過這種「以爭點為核心、標籤為橋樑」的 Notion 整理術，搭配 iPad mini 上的法律人 App 隨時查閱法條，你的數位大腦就能在司律考試中發揮最大威力！
 ---
-
-## 🛠️ 核心 AI 工具組合推薦
+# 🛠️ 核心 AI 工具組合推薦
 1. 法律人 App 內建的 AI（PRO版功能）
    - 特色：最適合用來「初步白話翻譯」。
    - 用法：當你在 iPad mini 上查到極度晦澀的古老最高法院判決或冷門法條，直接在 App 內使用 AI 功能，將其快速轉換為易懂的白話文，幫你省下大腦卡關的時間。
@@ -106,6 +105,7 @@ AI 會在幾秒鐘內吐出完美的五大結構。你只需要把這段結構�
 - 提供你一組 Notion 內頁的 Toggle（折疊清單）模板，讓你的 AI 筆記看起來更整齊好看？
 - 還是幫你測試一個真實的最新大法庭裁定，示範 AI 跑出來的成果給你看？
 ---
+# Notion MCP
 ## 1. Claude Code ✕ Notion MCP（上榜生最強推崇）
 如果你有一定的資訊基礎或願意嘗試，Anthropic 官方推出的命令列工具 Claude Code 搭配 Notion MCP (Model Context Protocol) 協議，是目前最黑科技的組合。
 ### 💡 它能做到什麼？
@@ -128,7 +128,7 @@ Notion 官方有提供完整的 [Notion MCP 串接指南](https://developers.not
 - 透過 Copilot Studio / Power Automate：微軟生態系有提供 [微軟官方 Notion 連接器](https://learn.microsoft.com/en-us/connectors/notionip/)。當你在 Windows 電腦的 Copilot 查到某個法律時事，你可以叫它直接觸發工作流，寫入 Notion。
 - 透過 Zapier MCP：如果你在 Cursor 或其他支援 MCP 的編輯器中使用 Copilot，可以綁定 Zapier，讓 Copilot 直接呼叫「在 Notion 建立頁面」的指令。
 ---
-### 🚀 國考實戰自動化流程範例
+## 🚀 國考實戰自動化流程範例
 當你設定好 Claude Code 串接 Notion 後，你的每天日常複習將會變得極度優雅：
 1. 查閱法條：在 iPad mini 上用 法律人 App 看書，發現某個釋字必考。
 2. AI 自動建檔：在電腦或手機打開 Claude，輸入：「把釋字第748號的婚姻自由意旨摘要成100字上榜金句，直接寫入我 Notion 的【憲法】資料庫，並幫我把備考狀態改成【已理解】」。
