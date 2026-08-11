@@ -73,3 +73,35 @@ AI 會在幾秒鐘內吐出完美的五大結構。你只需要把這段結構�
 如果想要馬上試試看，我可以：
 - 提供你一組 Notion 內頁的 Toggle（折疊清單）模板，讓你的 AI 筆記看起來更整齊好看？
 - 還是幫你測試一個真實的最新大法庭裁定，示範 AI 跑出來的成果給你看？
+---
+## 1. Claude Code ✕ Notion MCP（上榜生最強推崇）
+如果你有一定的資訊基礎或願意嘗試，Anthropic 官方推出的命令列工具 Claude Code 搭配 Notion MCP (Model Context Protocol) 協議，是目前最黑科技的組合。
+### 💡 它能做到什麼？
+你可以在終端機直接對 Claude 說白話文：
+> 「把這篇最新大法庭裁定的法理摘要下來，直接在我的 Notion『司律爭點地圖』資料庫裡新增一筆資料。科目設定為【民訴】，跨科標籤勾選【民法✕民訴】，並在內頁建立學說與實務對照表。」
+Claude 收到後，會自動透過 API 讀取你資料庫的欄位格式（Schema），並完美地幫你把資料填入正確的格子裡，連複製貼上都省了！
+### 🔧 如何串接設定？
+Notion 官方有提供完整的 [Notion MCP 串接指南](https://developers.notion.com/guides/mcp/get-started-with-mcp)：
+1. 在電腦的終端機執行指令安裝 Notion 插件：
+   ```
+   bash
+   claude mcp add --transport http notion https://mcp.notion.com/mcp
+   ```
+2. 輸入 /mcp 啟動認證流程，網頁會自動跳出 Notion 的 OAuth 授權畫面。
+3. 關鍵步驟：勾選並允許 Claude 存取你用來備考的那個「司律筆記工作區」即可。
+---
+## 2. Microsoft Copilot ✕ Power Automate / Zapier
+如果你習慣使用 Microsoft Copilot，它無法像 Claude Code 那樣用工程師的代碼直接控制，但它可以透過 擴充功能（Plugins） 或自動化橋樑來達成。
+### 💡 它能做到什麼？
+- 透過 Copilot Studio / Power Automate：微軟生態系有提供 [微軟官方 Notion 連接器](https://learn.microsoft.com/en-us/connectors/notionip/)。當你在 Windows 電腦的 Copilot 查到某個法律時事，你可以叫它直接觸發工作流，寫入 Notion。
+- 透過 Zapier MCP：如果你在 Cursor 或其他支援 MCP 的編輯器中使用 Copilot，可以綁定 Zapier，讓 Copilot 直接呼叫「在 Notion 建立頁面」的指令。
+---
+### 🚀 國考實戰自動化流程範例
+當你設定好 Claude Code 串接 Notion 後，你的每天日常複習將會變得極度優雅：
+1. 查閱法條：在 iPad mini 上用 法律人 App 看書，發現某個釋字必考。
+2. AI 自動建檔：在電腦或手機打開 Claude，輸入：「把釋字第748號的婚姻自由意旨摘要成100字上榜金句，直接寫入我 Notion 的【憲法】資料庫，並幫我把備考狀態改成【已理解】」。
+3. 成果產出：Claude 自動在背景刷寫你的 Notion 頁面。當你隔天出門，拿起 iPad mini 開啟 Notion 複習時，那句漂亮的申論題帥話已經躺在你的筆記裡了！
+這種「免複製貼上」的無縫建檔法，能幫司律考生在動輒一兩年的備考期中，省下至少數十個小時的排版與建檔時間，讓你把所有的精力都專注在法理的記憶與輸出。   
+你想先試著動手設定看看：
+- Claude Code 的 MCP 連接步驟？
+- 還是需要我幫你寫一段專門讓 Claude 在 Notion 建檔時使用的資料庫屬性對齊指令？
