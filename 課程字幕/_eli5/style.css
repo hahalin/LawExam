@@ -1,0 +1,139 @@
+/* ELI5 課程頁共用樣式。每堂課的 HTML 只放內容，外觀改這裡。 */
+:root{
+  --paper:#F5F6F4;      /* 頁面底色 */
+  --card:#FFFFFF;
+  --ink:#1F2A33;        /* 主文字 */
+  --muted:#6B7680;      /* 次要文字 */
+  --line:#D6DAD6;
+  --rule:#2F6F8F;       /* 規則：靛青 */
+  --rule-bg:#EAF2F6;
+  --trap:#B6392F;       /* 陷阱：朱砂 */
+  --trap-bg:#F9ECEA;
+  --done:#3C8A5A;       /* 我懂了 */
+  --box:#F0F2F0;        /* 流程框 */
+  --maxw:720px;
+}
+*{box-sizing:border-box}
+html{font-size:17px}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Microsoft JhengHei","PingFang TC","Noto Sans TC","Heiti TC",sans-serif;
+  line-height:1.8;
+}
+main{max-width:var(--maxw);margin:0 auto;padding:32px 20px 96px}
+
+/* 頂部 */
+.lesson-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 16px;margin-bottom:8px}
+.lesson-head h1{font-size:1.6rem;margin:0;letter-spacing:.02em}
+.lesson-head .sub{color:var(--muted)}
+.lesson-intro{margin:0 0 20px;color:var(--muted)}
+.toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:12px;margin:0 0 28px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.toolbar .progress{flex:1;min-width:160px}
+.toolbar .bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-top:4px}
+.toolbar .bar i{display:block;height:100%;width:0;background:var(--done);transition:width .3s}
+.toolbar button{
+  font:inherit;font-size:.9rem;color:var(--ink);background:var(--card);
+  border:1px solid var(--line);border-radius:4px;padding:4px 12px;cursor:pointer
+}
+.toolbar button:hover{border-color:var(--ink)}
+
+/* 卡片：左側書脊，不用陰影 */
+.card{
+  position:relative;background:var(--card);border:1px solid var(--line);
+  border-left:5px solid var(--line);margin:0 0 20px;padding:20px 24px 16px;
+}
+.card.done{border-left-color:var(--done)}
+.card h2{font-size:1.2rem;margin:0 0 12px;display:flex;gap:10px;align-items:baseline}
+.card h2 .n{color:var(--muted);font-weight:400;font-size:1rem;flex:none}
+.card .scene{margin:0 0 16px}
+.card .scene p{margin:0 0 .6em}
+.card .scene p:last-child{margin-bottom:0}
+.card .q{font-weight:700}
+
+/* 點開才看：規則 / 陷阱 */
+details{margin:10px 0 0;border-radius:4px;border:1px solid transparent}
+details summary{
+  cursor:pointer;list-style:none;padding:8px 12px;font-weight:700;border-radius:4px;
+  display:flex;align-items:center;gap:8px;user-select:none
+}
+details summary::-webkit-details-marker{display:none}
+details summary::before{content:"▸";display:inline-block;transition:transform .15s;font-weight:400}
+details[open] summary::before{transform:rotate(90deg)}
+details .body{padding:4px 12px 12px}
+details .body p{margin:0 0 .6em}
+details .body p:last-child{margin-bottom:0}
+details.rule summary{color:var(--rule);background:var(--rule-bg)}
+details.rule[open]{border-color:var(--rule-bg)}
+details.trap summary{color:var(--trap);background:var(--trap-bg)}
+details.trap[open]{border-color:var(--trap-bg)}
+summary:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+
+/* 卡片底 */
+.card-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-top:16px;padding-top:12px;border-top:1px dashed var(--line);font-size:.9rem;color:var(--muted)}
+.card-foot label{display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--ink)}
+.card-foot input{width:16px;height:16px;accent-color:var(--done)}
+.card-foot .src{font-family:Consolas,"Courier New",monospace;font-size:.8rem;word-break:break-all}
+
+/* 條號小標 */
+.s{display:inline-block;font-family:Consolas,"Courier New",monospace;font-size:.8em;color:var(--rule);background:var(--rule-bg);padding:0 5px;border-radius:3px;white-space:nowrap}
+
+/* ===== 圖：流程框 ===== */
+.flow{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:14px 0;font-size:.92rem;line-height:1.5}
+.flow .b{background:var(--box);border:1px solid var(--line);border-radius:4px;padding:8px 12px;display:block;text-align:center}
+.flow .b small{display:block;color:var(--muted);font-size:.85em;line-height:1.4}
+.flow .b.ok{border-color:var(--done);background:#EDF5F0}
+.flow .b.no{border-color:var(--trap);background:var(--trap-bg);color:var(--trap)}
+.flow .b.dim{color:var(--muted);background:transparent;border-style:dashed}
+.flow .b.q{border-color:var(--rule);background:var(--rule-bg)}
+.flow .a{display:flex;align-items:center;color:var(--muted);padding:0 2px}
+.flow .a::before{content:"→"}
+.flow .a.lbl{flex-direction:column;font-size:.75rem;line-height:1.3;max-width:7em;text-align:center}
+.flow .a.lbl::before{content:none}
+.flow .a.lbl::after{content:"→";font-size:1rem}
+.flow .br{flex-basis:100%;height:0}  /* 換行 */
+
+/* 分叉：左條件、右兩個結果 */
+.fork{display:grid;grid-template-columns:auto 1fr;gap:6px 10px;align-items:center;margin:14px 0;font-size:.92rem;line-height:1.5}
+.fork .cond{grid-row:span 2;background:var(--rule-bg);border:1px solid var(--rule);border-radius:4px;padding:8px 12px;text-align:center}
+.fork .out{display:flex;align-items:center;gap:8px}
+.fork .out .tag{flex:none;color:var(--muted);font-size:.8rem;min-width:2.5em}
+.fork .out .b{flex:1;background:var(--box);border:1px solid var(--line);border-radius:4px;padding:6px 12px}
+.fork .out .b.ok{border-color:var(--done);background:#EDF5F0}
+.fork .out .b.no{border-color:var(--trap);background:var(--trap-bg);color:var(--trap)}
+
+/* 分類樹 */
+.tree{margin:14px 0;padding:0 0 0 4px;font-size:.92rem;line-height:1.6}
+.tree ul{list-style:none;margin:0;padding-left:22px;border-left:1px solid var(--line)}
+.tree>ul{border-left:none;padding-left:0}
+.tree li{position:relative;padding:3px 0 3px 10px}
+.tree li::before{content:"";position:absolute;left:-1px;top:1.1em;width:10px;border-top:1px solid var(--line)}
+.tree>ul>li::before{display:none}
+.tree li.hit>span{background:var(--rule-bg);color:var(--rule);padding:0 6px;border-radius:3px;font-weight:700}
+.tree li.off>span{color:var(--muted)}
+
+/* 兩欄比較 */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0;font-size:.92rem;line-height:1.5}
+.vs>div{border:1px solid var(--line);border-radius:4px;padding:10px 12px;background:var(--box)}
+.vs>div h4{margin:0 0 6px;font-size:.95rem}
+.vs>div.rule-c{border-color:var(--rule);background:var(--rule-bg)}
+.vs>div.trap-c{border-color:var(--trap);background:var(--trap-bg)}
+
+/* 時間軸 SVG */
+.tl{width:100%;height:auto;margin:14px 0;display:block}
+.tl text{font-family:inherit;font-size:13px;fill:var(--ink)}
+.tl .mu{fill:var(--muted);font-size:12px}
+.tl line,.tl path{stroke:var(--ink);stroke-width:1.5;fill:none}
+.tl .lt{stroke:var(--line)}
+.tl .acc{stroke:var(--rule)}
+.tl .dot{fill:var(--ink)}
+.tl .dot.acc{fill:var(--rule);stroke:none}
+
+@media (max-width:560px){
+  html{font-size:16px}
+  main{padding:20px 14px 80px}
+  .card{padding:16px 16px 12px}
+  .vs{grid-template-columns:1fr}
+  .fork{grid-template-columns:1fr}
+  .fork .cond{grid-row:auto}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
