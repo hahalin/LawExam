@@ -126,17 +126,19 @@ HH:MM:SS - HH:MM:SS
 ## 輸出路徑
 
 ```
-課程字幕/{科目}/{科目}{編號}-筆記-{主題名稱}.md
+課程字幕/{科目}/{科目}{編號}-筆記-{序號}-{主題名稱}.md
 ```
+序號兩位數、依講課（字幕時間）順序，讓檔案總管排序＝上課順序＝ELI5 卡片順序。
 
 範例：
 ```
-課程字幕/民法/民法12-筆記-消滅時效客體.md
-課程字幕/民法/民法12-筆記-§767與消滅時效.md
-課程字幕/民法/民法12-筆記-釋字771與繼承回復請求權.md
-課程字幕/民法/民法12-筆記-浮覆地與大法庭裁定.md
-課程字幕/民法/民法12-筆記-考試論述技巧.md
+課程字幕/民法/民法12-筆記-01-消滅時效客體.md
+課程字幕/民法/民法12-筆記-02-§767與消滅時效.md
+課程字幕/民法/民法12-筆記-03-考試論述技巧.md
+課程字幕/民法/民法12-筆記-04-釋字771與繼承回復請求權.md
+課程字幕/民法/民法12-筆記-05-浮覆地與大法庭裁定.md
 ```
+寫檔時可先不帶序號，整堂寫完後把主題順序加進 `scripts/rename_notes_seq.py` 的 `ORDER`，執行 `python3 scripts/rename_notes_seq.py` 一次改名並更新 ELI5 頁的對應檔名。
 
 ## Markdown 結構範本
 
@@ -335,7 +337,7 @@ B 結論 → 但受 C 限制
   <svg class="tl">…</svg>         <!-- 時間軸，照民法01 卡 6 的寫法 -->
   <details class="rule"><summary>規則</summary><div class="body">2～3 句，條號用 <span class="s">§7</span></div></details>
   <details class="trap"><summary>陷阱</summary><div class="body">1～2 句，一試最常錯的點</div></details>
-  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">對應的主題筆記檔名.md</span></div>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">對應的主題筆記檔名（含序號）.md</span></div>
 </section>
 ```
 
