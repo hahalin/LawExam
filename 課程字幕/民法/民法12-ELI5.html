@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法12 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法12">
+<main>
+
+<header class="lesson-head">
+  <h1>民法12</h1>
+  <span class="sub">消滅時效：什麼會過期・幾年過期・從哪天開始算・怎麼砍掉重練</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 9</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>只有「跟人要東西」的權利會過期</h2>
+  <div class="scene">
+    <p>甲買的冷氣有瑕疵，想依 §359「請求」減少價金。另一題：乙的妻子丙離家 20 年，乙想依 §1001「請求」同居；丁想跟兒子「請求扶養費」。</p>
+    <p class="q">三個都有「請求」兩個字，哪些會被「15 年過期」擋住？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>消滅時效（§125）只管「請求權」</span><ul>
+      <li class="off"><span>形成權 → 不適用，改看「除斥期間」</span>（§359 減價雖寫「請求」，本質是形成權 → §365 六個月）</li>
+      <li><span>請求權</span><ul>
+        <li class="hit"><span>債權請求權（契約、不當得利、侵權、無因管理）→ 一律會過期</span></li>
+        <li><span>物權請求權 → 看情況（§962 一年；§767 見下一卡）</span></li>
+        <li><span>身分請求權 → 純身分（§1001 同居、請求扶養）不過期；涉錢（§1030-1、請求扶養<b>費</b>）會過期</span></li>
+        <li><span>人格權 → §18 I 除去／防止不過期；損害賠償會過期</span></li>
+      </ul></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>「過期」這件事只發生在<b>請求權</b>——你要對方給你什麼的權利。形成權是「我一句話就改變法律關係」（解約、減價、撤銷），它有自己的保存期限叫除斥期間，不能套 <span class="s">§125</span>。條文裡有「請求」兩個字不代表它是請求權，要看本質。</p>
+    <p>請求權裡再分：欠錢的（債權）一律會過期；跟身分有關的看涉不涉及錢——「請求扶養」是純身分不過期，「請求扶養費」有金額就會過期；人格權的除去／防止涉及人性尊嚴，不過期，但要賠償金就會。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「§359 減少價金的消滅時效為何？」——沒有消滅時效，它是形成權，答除斥期間 §365。</p>
+    <p>「§823 共有物分割請求權的除斥期間？」——沒有，隨時可以分。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法12-筆記-01-消滅時效客體.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>登記過的地不會過期：真正的主人才算</h2>
+  <div class="scene">
+    <p>甲為了躲債，跟乙串通假裝把 A 地賣給乙，過戶到乙名下。乙過世，不知情的兒子丙辦了繼承登記。20 年後甲想拿回 A 地，請求丙塗銷登記。</p>
+    <p class="q">地登記在丙名下，甲算「已登記不動產所有人」嗎？丙能說「20 年了，過期了」嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲乙通謀虛偽 §87</div><div class="a lbl">無效</div>
+    <div class="b">登記了也不生效 §758 → 乙從未取得</div><div class="a lbl">乙死</div>
+    <div class="b">丙繼承：乙沒有的東西繼承不到（§1148）；繼承不是法律行為，不能善意取得（§759-1 II）</div>
+    <div class="br"></div>
+    <div class="b ok">甲還是真正所有人 → §767 I 中段請求塗銷</div><div class="a lbl">丙：過期？</div>
+    <div class="b no">不行。「已登記不動產」＋「所有人」→ 釋字 164 → 不受時效限制</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§767</span> 會不會過期，先分三類：動產會（15 年）；<b>已登記不動產原則不會</b>（釋字 107 管前段返還、164 管中段除去）——登記制度本身已經夠安定，不需要再用時效逼人；未登記不動產原則會（15 年），除非是依法不能登記的地（水源地）。</p>
+    <p>「已登記不動產所有人」九個字要斷成「已登記不動產」＋「所有人」（前六後三）：只要那塊地有登記、你是<b>真正</b>所有人就算，不是看登記在誰名下（69 台上 277）。所以甲贏。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>已登記土地上有<b>未登記</b>的違建，被占 20 年：土地不過期可以要回來；房子原則過期，但房子蓋在地上分不開 → 83 年第 7 次決議：占有人對房子的時效利益不能擴張到土地，要一起搬走。</p>
+    <p>選項寫「丙善意繼承登記，依 §759-1 II 善意取得」→ 錯，善意取得要「法律行為」。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法12-筆記-02-§767與消滅時效.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>先有牛奶，才談過期</h2>
+  <div class="scene">
+    <p>考卷：「甲對乙之請求是否有理由？」你一看日期，已經過 15 年了，很想直接寫「已罹於消滅時效，無理由」。</p>
+    <p class="q">可以第一句就寫過期嗎？寫「違反誠信原則」可以放開頭嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 請求權成立嗎？<br><small>構成要件逐一對</small></div><div class="a lbl">成立才有</div>
+    <div class="b">② 有沒有抗辯？<br><small>時效 §144、誠信 §148、同時履行…</small></div><div class="a"></div>
+    <div class="b">③ 結論</div>
+    <div class="br"></div>
+    <div class="b no">不成立 → 不用談時效、不用談誠信，直接結束</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>請求權像一瓶牛奶：先確認冰箱裡<b>有</b>牛奶，才有「過期沒過期」可談。沒有的東西不會過期。實務判決為了效率常先審時效，但考試要展現完整論述：先成立、再抗辯。</p>
+    <p>誠信原則同理：<span class="s">§148</span> 寫的是「行使權利應依誠信」，前提是有權利可行使。權利不存在，就沒有「行使權利違反誠信」這回事。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項同時出現「構成要件不該當」和「罹於時效」——構成要件不該當的那個才是根本答案，時效只是多餘的一層。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法12-筆記-03-考試論述技巧.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>「繼承回復」過期了，房子還是你的</h2>
+  <div class="scene">
+    <p>甲過世，留下已登記的 A 屋。乾兒子丙說「我才是繼承人」，占了全部遺產。女兒乙出嫁在外，10 年後才知道。</p>
+    <p class="q">乙依 §1146 要回遺產，丙說「超過 10 年了」。乙還能改用 §767 說「A 屋是我的，還我」嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">§1146 過期了<br>（知悉 2 年／繼承開始 10 年）<br>繼承權還在嗎？</div>
+    <div class="out"><span class="tag">早年</span><div class="b no">繼承權跟著消滅 → 不是所有人 → §767 也不能用</div></div>
+    <div class="out"><span class="tag">釋字 771</span><div class="b ok">繼承權<b>不消滅</b>（身分是事實）→ 仍是所有人 → 可用 §767，但這時 §767 一律受 §125 十五年限制</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§1146</span> 是「概括一次要回全部遺產」的方便工具，過期只表示這個方便工具不能用了，不代表你不是繼承人——對方否認你，不會真的剝奪你的身分。所以乙還是 A 屋所有人，可以逐件用 <span class="s">§767</span> 要。</p>
+    <p>但釋字 771 加了一個但書：這種情況下的 §767，<b>不分動產、已登記、未登記，一律 15 年</b>，不然幾十年前的繼承糾紛全部復活。這是對釋字 107、164 的「補充」，不是推翻。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這張卡的 A 屋是已登記不動產，依上一卡本來不會過期——但因為是 §1146 與 §767 競合的情形，<b>例外會過期</b>（15 年）。兩卡要對照著記。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法12-筆記-04-釋字771與繼承回復請求權.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>沉到河裡的地浮回來了，國家可以說「過期」嗎</h2>
+  <div class="scene">
+    <p>日據時期甲登記為 A 地所有人。A 地後來被河水淹沒；光復後浮出來，甲的子孫不知道、沒去登記。民國 70 年代政府總登記，A 地公告沒人認領，登記為國有。又過了 15 年，甲的孫子發現，請求國家塗銷。</p>
+    <p class="q">國家能不能像一般人一樣說「超過 15 年，我不還」？</p>
+  </div>
+  <div class="vs">
+    <div><h4>最高法院大法庭</h4>「已登記」限縮為<b>依我國法</b>登記，日本法登記不算 → §767 會過期 → 國家<b>可以</b>主張 §144，但要過 §148 誠信檢驗（有沒有依法公告、通知、給夠時間）</div>
+    <div class="rule-c"><h4>112 年憲判字第 20 號</h4>國家不受憲法 §15 財產權保障，為人民而存在；登記制度變動是政權更替，不能苛責人民 → 容許國家用時效 ≈ 不經徵收程序拿走土地 → 國家<b>不得</b>主張 §144</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>兩個機關在同一類案件裡講出不同答案，因為站的樓層不同：大法庭在<b>法律層次</b>解釋釋字 107、164 的「已登記」三個字，結論是可以主張但有但書；憲法法庭在<b>憲法層次</b>問「國家有沒有資格享受時效利益」，結論是沒有。</p>
+    <p>考試會要你比較：大法庭「可以、但受誠信原則限制」vs 憲判「不可以」。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「日據時期依日本法辦的登記，是不是釋字 107 的『已登記』？」——大法庭說不是。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法12-筆記-05-浮覆地與大法庭裁定.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>15 年、5 年：租金 vs 分期付款的差別</h2>
+  <div class="scene">
+    <p>乙無權占用甲的 A 地 20 年，A 地一年租金行情 20 萬。甲向乙請求「相當於租金的不當得利」。另一題：丙被詐欺交付 100 萬，8 年後才撤銷，要求本金加利息。</p>
+    <p class="q">甲可以要 20 年 400 萬，還是只有 5 年 100 萬？丙的利息能全拿嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>定期給付 → §126 五年</h4>利息、租金、紅利、贍養費、退職金。特色：<b>持續發生、沒有總額上限</b>（存越久利息越多）</div>
+    <div><h4>分期給付 → §125 十五年</h4>總額固定、分期攤還（分期付款買車）。不是「定期」</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>法律沒特別規定就回 <span class="s">§125</span> 十五年，但老師提醒：不要看到沒規定就直接跳 15 年，先看那個請求權的性質。<span class="s">§110</span> 無權代理損賠實務說 15 年，學說說要看原法律關係（承攬報酬只有 2 年，契約無效反而變 15 年不合理）；公司法 §23 大法庭說比照侵權 <span class="s">§197</span>。</p>
+    <p>相當於租金的不當得利：實務「既然叫租金就是 §126 五年」→ 甲只能要 100 萬；學說說那其實是「占有」的價額換算，應該 15 年。老師諷刺：租不到就去無權占有，超過 5 年一定賺。§182 II 的利息：95 年第 17 次決議改採 5 年 → 丙的 8 年利息只拿得到 5 年。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>一試看到「相當於租金之不當得利」「§182 II 利息」→ 選 <b>5 年</b>（實務）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法12-筆記-06-消滅時效期間.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>2 年：一天賣一百杯的生意，帳要快點結</h2>
+  <div class="scene">
+    <p>飲料店欠帳 3 年沒收；建商賣房子價金 3 年沒收；電信公司月租費 3 年沒收；墾丁租機車店租金 3 年沒收；台電電線桿租金 3 年沒收。</p>
+    <p class="q">哪些已經過期（2 年）、哪些還能要？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§127 二年：日常<b>頻繁</b>發生的債權</span><ul>
+      <li class="hit"><span>第 8 款 商人的商品代價 → 飲料店 ✓、電信月租費 ✓、電信違約金 ✓（本質是手機價金）</span></li>
+      <li class="off"><span>不含不動產（78 年決議）→ 建商賣房 §125 十五年；不含生財器具（麵包店賣烤箱）；買受人請求交付 §348 → 十五年</span></li>
+      <li class="hit"><span>第 3 款 以租賃<b>動產</b>為業之租價 → 墾丁租機車 ✓</span></li>
+      <li class="off"><span>電線桿：現行見解是不動產 → 不是第 3 款 → §126 五年</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§127</span> 的精神：一天賣一百杯，一天就一百筆債權，不趕快確定會亂，所以兩年。建商一年賣十戶，不符合「頻繁」。看到「租金」先問：租不動產 → §126；租動產、以此為業 → §127 ③；租動產但不是做這行 → §126。</p>
+    <p>電信月租費為什麼是第 8 款？門號不是物（不能套租金），它是電信「商品」，月租費是商品代價 → 2 年。老師親身經驗：資產管理公司催收舊月租費，很多早過 2 年，可主張時效抗辯不用繳。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>第 8 款只管<b>商人要價金</b>這個方向；買受人要東西（§348、§365）一律 15 年。出賣人不是商人（私人賣車）也是 15 年。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法12-筆記-07-§127短期時效.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>碼表從哪一天按下去</h2>
+  <div class="scene">
+    <p>民國 90 年甲向乙借 100 萬，沒約定還款日。98 年乙催告「一年內還」，99 年期滿甲沒還。113 年乙起訴。</p>
+    <p class="q">15 年從 90 年算（105 年過期）還是從 99 年算（114 年過期）？甲能不能說「過期了」？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 680 190" role="img" aria-label="未定期限消費借貸時效起算">
+    <line x1="20" y1="90" x2="660" y2="90" class="lt"/>
+    <circle cx="60" cy="90" r="5" class="dot"/>
+    <text x="60" y="68" text-anchor="middle">90 年</text>
+    <text x="60" y="114" text-anchor="middle" class="mu">借款、未定期限</text>
+    <circle cx="230" cy="90" r="5" class="dot"/>
+    <text x="230" y="68" text-anchor="middle">98 年</text>
+    <text x="230" y="114" text-anchor="middle" class="mu">催告「一年內還」</text>
+    <circle cx="340" cy="90" r="5" class="dot acc"/>
+    <text x="340" y="68" text-anchor="middle">99 年</text>
+    <text x="340" y="114" text-anchor="middle" class="mu">催告期滿</text>
+    <circle cx="470" cy="90" r="5" class="dot"/>
+    <text x="470" y="68" text-anchor="middle">105 年</text>
+    <text x="470" y="114" text-anchor="middle" class="mu">90＋15</text>
+    <circle cx="600" cy="90" r="5" class="dot"/>
+    <text x="600" y="68" text-anchor="middle">113 年</text>
+    <text x="600" y="114" text-anchor="middle" class="mu">起訴</text>
+    <path d="M60 36 H 470" class="lt"/>
+    <text x="265" y="30" text-anchor="middle" class="mu">學說：契約成立即可請求（§315）→ 90 年起算 → 105 年過期 → 113 年已過期</text>
+    <path d="M340 150 H 660" class="acc"/>
+    <text x="500" y="144" text-anchor="middle" class="mu">實務（99 年第 7 次決議）：催告期滿才可請求</text>
+    <text x="500" y="172" text-anchor="middle" class="mu">→ 99 年起算 → 114 年才過期 → 113 年沒過期</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§128</span>：時效從請求權「可行使」時起算，只看<b>客觀上有沒有法律障礙</b>。你不知道有這個權利？照算。對方跑了找不到？照算（事實障礙）。票據被檢察官扣押不能行使？這才是法律障礙，暫不起算。</p>
+    <p>未定期限借款的爭點在 <span class="s">§478</span>「定一個月以上期限催告」是什麼：實務說是清償期的特別規定，沒催告就不能請求，所以時效從催告期滿起算；學說說它只是給借用人的「恩惠期間」（<span class="s">§229</span> 遲延責任的特別規定），§315 未定期限本來就隨時可請求，時效從契約成立就跑——不然債權人永遠不催告，時效永遠不起算，30 年都不會過期。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>一試問「依最高法院見解」→ 選 99 年決議：<b>催告期滿起算</b>。申論再寫學說批評。</p>
+    <p>題目寫「甲不知道自己有權利」→ 不影響起算，客觀說。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法12-筆記-08-消滅時效起算點.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>砍掉重練：什麼動作會讓碼表歸零</h2>
+  <div class="scene">
+    <p>110 年 3 月甲開車撞傷乙（侵權，2 年過期）。乙 8 月去地檢署告甲，檢察官拖到 112 年 3 月才起訴，甲在刑庭認罪換緩刑。乙 112 年 4 月提附帶民事。另一題：丙欠丁 100 萬已經過期 16 年，丙說「我會還」。</p>
+    <p class="q">乙的民事賠償過期了嗎？丙那句話是「中斷」還是別的東西？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">§129 中斷事由<br><small>請求／承認／起訴（含支付命令、調解、強制執行…）</small></div>
+    <div class="out"><span class="tag">請求</span><div class="b">口頭、存證信函都算，但 <span class="s">§130</span>：六個月內不起訴 → <b>視為不中斷</b>（當作沒請求過）</div></div>
+    <div class="out"><span class="tag">承認</span><div class="b ok">明示、付利息、求緩期都算 → 直接重新起算，不用六個月內起訴</div></div>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>時效進行中承認</h4><span class="s">§129 I ②</span> 中斷 → 砍掉重練，重新起算原有時效</div>
+    <div class="trap-c"><h4>時效完成後承認（丙）</h4><span class="s">§147</span> 反面：只禁止「預先」拋棄 → 事後可以 → 丙<b>拋棄時效利益</b>，不能再抗辯</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>乙那題：刑事告訴不是民事「請求」、檢察官起訴不是民事「起訴」、刑庭認罪不是民事「承認」——民事歸民事，刑事程序裡的動作都不中斷民事時效。112 年 3 月一到就過期了，附帶民事太晚。律師 SOP：自己盯死線，檢察官不起訴就自己先提民事。</p>
+    <p>起訴中斷後從<b>判決確定</b>重新起算（<span class="s">§137 II</span>），原時效不滿 5 年延為 5 年（§137 III）。之後每次強制執行拿到債權憑證又中斷一次 → 銀行債權實質永不消滅。假扣押算不算中斷？實務 103 年第 2 次決議說算（§129 II ⑤），學說說最多是「請求」。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>看到「承認」就選「中斷」——錯。先問承認發生在時效<b>進行中</b>還是<b>完成後</b>。超級愛考。</p>
+    <p>房貸每月繳息＝每月承認一次 → 時效永遠重新起算，銀行不怕。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法12-筆記-09-消滅時效中斷.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>
