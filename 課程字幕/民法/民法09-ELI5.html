@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法09 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法09">
+<main>
+
+<header class="lesson-head">
+  <h1>民法09</h1>
+  <span class="sub">條件與期限 §99～§102・期待權 §100 §101・處分權 §118・代理的要件 §103 §167 §168・顯名／隱名／冒名</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>條件與期限：會不會發生 vs 一定發生；停止條件與解除條件 §99</h2>
+  <div class="scene">
+    <p>「你考上律師我送你一台車」「聖誕節我送你一本書」。預售屋契約：「一個月內貸不到八成，本契約自動作廢」；另一版本：「貸到八成本契約才生效」。</p>
+    <p class="q">哪個是條件、哪個是期限？兩個預售屋版本各是停止條件還是解除條件？</p>
+  </div>
+  <div class="vs">
+    <div><h4>條件</h4><b>不確定是否發生</b>的事實：考上、下禮拜三下雨 → §99</div>
+    <div><h4>期限</h4><b>確定會發生</b>的事實：聖誕節、光復節 → §102</div>
+  </div>
+  <div class="fork">
+    <div class="cond">真正條件</div>
+    <div class="out"><span class="tag">停止條件 §99 I</span><div class="b">成立但效力<b>停住</b>，條件成就時<b>生效</b>：「貸到八成才生效」</div></div>
+    <div class="out"><span class="tag">解除條件 §99 II</span><div class="b">成立即生效，條件成就時<b>失效</b>：「貸不到八成自動作廢」</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>條件、期限、處分權是法律行為的<b>特別生效要件</b>（一般生效要件：行為能力、意思表示無瑕疵、標的可能妥當確定適法）。這張體系圖是審查工具：題目給了 17 歲、監護宣告、詐欺、原保地等線索才審那一關，沒給就跳過。</p>
+    <p>分期 60 期買車「價金付清才取得所有權」是<b>附條件買賣</b>：買賣契約本身沒有條件，是<b>物權行為</b>附停止條件（卡 4）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>法律行為的效力只有四種：有效、無效、得撤銷、效力未定。§111～§117 處理無效和撤銷之後的事。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-01-法律行為生效要件體系與條件vs期限§99停止條件解除條件.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>既成條件四格表、不能條件：「租到反攻大陸為止」怎麼變</h2>
+  <div class="scene">
+    <p>「你考上律師我送你書」——你去年就考上了。「房子租到你考上為止」——你去年就考上了。「你懷孕我就不租你」——承租人不孕。民國 38 年國防部租地「租到反攻大陸那天」，地主現在想收回。</p>
+    <p class="q">拿已經確定的事當條件，效果是什麼？反攻大陸是期限還是條件？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>既成條件：約定時就已確定（用推的，不要背）</span><ul>
+      <li class="hit"><span><b>已確定發生</b>當停止條件 → 一成立就成就 → <b>視為無條件</b>（直接送書）</span></li>
+      <li><span>已確定發生當解除條件 → 一成立就失效 → <b>無效</b>（不租了）</span></li>
+      <li><span>已確定不發生當停止條件 → 永遠不會生效 → <b>無效</b></span></li>
+      <li class="hit"><span>已確定不發生當解除條件 → 永遠不會失效 → <b>視為無條件</b>（不孕症那條當作沒寫）</span></li>
+    </ul></li>
+    <li><span>不能條件（長江北流）：客觀不可能 → 比照確定不發生</span></li>
+    <li><span>法定條件（你承諾契約就成立）：廢話，無意義</span></li>
+  </ul></div>
+  <div class="flow">
+    <div class="b">蔣中正時期：反攻大陸確定會發生</div><div class="a lbl">期限</div>
+    <div class="b">期限未屆至 → 地主不能收回</div>
+    <div class="br"></div>
+    <div class="b">八二三砲戰後：不確定了</div><div class="a"></div>
+    <div class="b">真正條件 → 條件成就前不能收回</div>
+    <div class="br"></div>
+    <div class="b">近年：確定不發生、甚至不可能</div><div class="a lbl">解除條件</div>
+    <div class="b ok">視為無條件 → 不定期租賃 → §450 II 隨時終止 → 收回</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>條件本來是「不確定是否發生」；既成條件是約定時就已經確定了，所以要問：一成立時這個條件是「早就成就」還是「永遠不會成就」，再看它是停止還是解除，推出生效、失效或當作沒這條件。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題愛考既成條件。同一個附款隨時代有不同解釋脈絡——反攻大陸大概只有台灣感受得到。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-02-不真正條件法定條件既成條件四格表不能條件反攻大陸.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>不法條件與 §111：「分手就還地」不能要回，但理由不是判例說的那樣</h2>
+  <div class="scene">
+    <p>有婦之夫甲贈與小三乙一塊地，約定「分手就返還」。分手後甲請求返還。另一題：勞動契約寫「懷孕即離職」。</p>
+    <p class="q">甲要得回地嗎？「分手就返還」這句話是請求權基礎嗎？懷孕條款無效，整份勞動契約跟著無效嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>實務（65 台上 2436）</h4>「如分手則返還」的約定違反善良風俗無效 → 請求返還無理由</div>
+    <div class="rule-c"><h4>王澤鑑</h4>那句話不是請求權基礎，是贈與的<b>解除條件</b>（契約有效怎麼可能請求返還）→ 條件不法無效 → §111 本文：附款是贈與的主要要素 → <b>贈與全部無效</b> → §179 要件具備 → 但 <b>§180 ④</b> 不法原因給付不得請求返還</div>
+  </div>
+  <div class="fork">
+    <div class="cond">條件無效，法律行為呢？§111</div>
+    <div class="out"><span class="tag">本文</span><div class="b no">條件是主要要素（沒這附款富商就不送）→ 全部無效</div></div>
+    <div class="out"><span class="tag">但書</span><div class="b ok">除去仍可成立（懷孕離職條款 vs 服勞務給付報酬）→ 其餘有效</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>兩說結論相同：拿不回來。差在論理——實務直接把約定當請求權基礎；王澤鑑說它是解除條件，要繞到不當得利，再被 §180 ④「拒絕保護說」擋下：不當得利不保護為了維持外遇而給付的人。</p>
+    <p>判例的前提是外遇關係。一般男女朋友約定分手還禮物有沒有悖於善良風俗，老師認為有待商榷。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題只問「能不能請求返還」，答無效即可；申論別被判例牽著把約定寫成請求權基礎。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-03-不法條件§111一部無效65台上2436分手還地案實務vs王澤鑑§180④懷孕離職條款.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>物權行為附條件要靠特別法：預告登記（土地法 §79-1）與附條件買賣（動擔法 §26）</h2>
+  <div class="scene">
+    <p>甲賣地給乙，約定乙付款達 50% 甲就移轉登記，雙方辦了預告登記。乙付到 30% 時，甲把地移轉登記給丙。乙付到 50% 了。另一題：老師買訂製床架，契約寫「附條件買賣，繳足價金始取得所有權」。</p>
+    <p class="q">甲丙的移轉登記有效嗎？乙怎麼把地拿到手？床先交付了，所有權移轉了嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">預告登記：附條件之請求權</div><div class="a lbl">§79-1 I ③</div>
+    <div class="b">甲→丙移轉對乙的請求權有<b>妨礙</b></div>
+    <div class="br"></div>
+    <div class="b no">§79-1 II 無效 → 丙未取得</div>
+    <div class="br"></div>
+    <div class="b">甲不會告丙（是他賣的）</div><div class="a lbl">§242 代位</div>
+    <div class="b">乙代位甲行使 §767 I 中段 → 丙塗銷</div><div class="a lbl">§348</div>
+    <div class="b ok">乙請求甲移轉登記</div>
+  </div>
+  <div class="vs">
+    <div><h4>不動產：預告登記</h4>條件成就後乙可單獨申請轉為本登記；中途處分對請求權有妨礙者無效。100 年司法官二試考過，寫在六法 §99 旁</div>
+    <div class="rule-c"><h4>動產：附條件買賣 §26</h4>買受人<b>先占有</b>（公示外觀先做出來），付清價金才取得所有權。買賣契約無條件，物權行為效力先停</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債權行為附條件很簡單：成就 → 取得債權請求權 → 請求給付。物權行為附條件麻煩：物權要公示外觀，沒登記、沒交付就不會有物權效力，所以約定「付清土地就是你的」本身沒有物權效力，要辦預告登記。</p>
+    <p>為什麼乙要「代位」？地移轉給乙之前甲還是地主，對丙的塗銷請求權是甲的；乙對丙沒有直接請求權。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>真正條件事後確定不發生（26 歲約定考上調查局送重機，過 30 歲還沒考上）→ 比照既成條件：停止條件無效、解除條件視為無條件。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-04-真正條件的效力債權行為vs物權行為附條件預告登記土地法§79-1附條件買賣動擔§26.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>§100 期待權：條件還沒成就，贈與人就把車賣了</h2>
+  <div class="scene">
+    <p>甲對乙說「你考上律師我就送你 A 車」。乙還在準備考試，甲把 A 車賣給丙並交付。</p>
+    <p class="q">乙現在能向甲要賠償嗎？要等考上才行？§100 到底是什麼？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§100：當事人於條件成否未定前，損害相對人因條件成就所應得利益者，負賠償責任</span><ul>
+      <li><span><b>實務</b>：條件未成就 → 契約未生效 → 無損害 → 不能請求；成就後依 §100 或 §226（兩條重疊）</span></li>
+      <li class="hit"><span><b>王澤鑑</b>：這樣 §100 變具文。§100 是期待權的特別保護，把期待<b>權利化</b> → 成就前即可請求；成就後 §226。老師補：成就前不可能有履行利益 → §100 的損害應是<b>信賴利益</b>（補習、函授費）</span></li>
+      <li><span><b>林誠二</b>：成就前無損害不能是請求權基礎，成就後又跟 §226 疊床架屋 → §100 是<b>君子條款</b>（確認性規範）：只是警告「一言既出駟馬難追，將來拿不到就要賠」</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>三說的差別在 §100 的定位：請求權（實務，與 §226 重疊）、成就前的信賴利益請求權（王澤鑑＋老師推論）、不是請求權只是警告（林誠二）。§100 的第一句「附條件法律行為之<b>當事人</b>」限制了適用對象，第三人侵害不能用（卡 6）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>條件成就後：契約生效、甲已給付不能 → §226 履行利益，這部分三說都沒爭議。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-05-§100期待權當事人侵害實務成就後vs王澤鑑成就前獨立請求權vs林誠二君子條款.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>第三人毀了附條件贈與的標的物：§100 用不上，§184 走前段還是後段</h2>
+  <div class="scene">
+    <p>甲以「乙考上律師」為停止條件贈與 A 車。條件未定前，第三人丙過失撞毀 A 車。</p>
+    <p class="q">乙能依 §100 向丙請求嗎？依 §184？乙真正該走的路是什麼？</p>
+  </div>
+  <div class="flow">
+    <div class="b">§100「當事人」</div><div class="a lbl">丙非當事人</div>
+    <div class="b no">要件不該當 ✗</div>
+  </div>
+  <div class="vs">
+    <div><h4>王澤鑑：§184 I 前段</h4>期待權權利化 → 是「權利」</div>
+    <div class="rule-c"><h4>老師：看期待的是什麼</h4>債權的期待權將來頂多拿到債權，債權不是絕對權 → <b>後段</b>（契約生效後都只能走後段，沒生效反而變前段很怪）；<b>物權</b>期待權（附條件買賣已占有）→ 前段可接受</div>
+  </div>
+  <div class="flow">
+    <div class="b">後段要故意背於善良風俗，過失的丙不用賠乙</div><div class="a lbl">正確的路</div>
+    <div class="b ok">等條件成就 → 契約生效 → 甲給付不能 → 乙依 <b>§225 II 代償請求權</b>請求甲讓與其對丙的 §184 I 前段 → 乙再向丙請求</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>A 車是甲的所有權，丙撞毀 → 甲對丙有 §184 I 前段。乙拿不到 A 車了，就依 §225 II 請甲把「對丙的賠償請求權」讓給自己代替 A 車。契約的事交給契約處理，侵權不是萬能——侵權法本來就沒打算保護過失侵害債權的被害人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>條件成就後乙對丙還是不能用 §100（丙仍非當事人）；拿到債權 → 後段，拿到物權 → 前段。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-06-第三人侵害期待權§100不適用§184I前段vs後段債權期待權物權期待權§225II代償請求權.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>§101 擬制：你故意不讓條件成就，就當它成就了</h2>
+  <div class="scene">
+    <p>甲答應乙考上就送車，考前在乙的水裡下瀉藥。另一題：甲乙合建契約約定「周邊土地收購達 80% 時甲開始付款」，乙蓋到一定程度，甲就是不去收購。乙 100 年完工，忍到 103 年才起訴。</p>
+    <p class="q">乙能請求付款嗎？甲說「就算視為成就，承攬報酬兩年時效也過了」——這樣甲豈不是立於不敗之地？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">§101：以<b>不正當行為</b>（須故意）</div>
+    <div class="out"><span class="tag">I 受不利益者阻止成就</span><div class="b ok">視為<b>已成就</b>：瀉藥、擺爛不收購 → 乙得請求付款</div></div>
+    <div class="out"><span class="tag">II 受利益者促成成就</span><div class="b">視為<b>不成就</b></div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>合建案是台大法研所考題。第一小題 §101 I 視為成就。第二小題是進階：承攬報酬 §127 ⑦ 二年時效，視為成就後請求權「可行使時」（§128）怎麼算？採客觀說時用<b>時效停止</b>或<b>誠信原則</b>解套——時效章再講，這裡先有問題意識。</p>
+    <p>老師的農地案：買方主張地主「不配合下鄉耕種一年」是不正當方法，法院認為地主無此義務 → 不算 → 單純解除條件成就 → §179 互相返還。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「不正當行為」以<b>故意</b>為限，過失不算。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-07-§101條件成就不成就之擬制不正當行為須故意合建契約收購80%與時效問題.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>§102 期限：不確定期限是「不知何時」不是「不知會不會」；§102 III 漏了 §101</h2>
+  <div class="scene">
+    <p>「我死了車就是你的」——受贈人把贈與人殺了。承攬契約「驗收合格付尾款」——定作人就是不去驗收。意外險剛繳保費就出車禍，保險公司故意不核保（核保會溯及生效要理賠）。</p>
+    <p class="q">死亡是期限還是條件？§102 III 只準用 §100 不準用 §101，這三個情形怎麼辦？</p>
+  </div>
+  <div class="vs">
+    <div><h4>確定期限</h4>確定發生、也知道何時：聖誕節、放榜日。無法讓它提前或不來 → 不需要 §101</div>
+    <div class="rule-c"><h4>不確定期限</h4>確定發生、但不知何時：<b>死亡</b>（死因贈與）。可以被積極促成（殺人）或故意延緩（不驗收）→ <b>類推 §101</b></div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>類推 §101 的例子</span><ul>
+      <li><span>殺贈與人 → 類推 §101 II 視為期限不屆至（贈與法另有撤銷規定）</span></li>
+      <li class="hit"><span>故意不驗收 → 實務類推 §101 I 視為屆至 → 可請求尾款</span></li>
+      <li><span>保險公司故意不核保 → 早期實務類推 §101：合格保險體視為核保、契約生效（保險法後續請查）</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>用語：始期<b>屆至</b>生效、終期<b>屆滿</b>失效——到了才開始叫屆至，到了就結束叫屆滿。立法者不準用 §101 是因為「期限必然到來，怎麼用不正當方法阻止」，但不確定期限做得到，所以有類推的實益。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「期限確定會發生，怎麼會有不確定期限？」確定的是會不會，不確定的是何時。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-08-§102期限始期終期屆至屆滿確定不確定期限§102III不準用§101不確定期限類推.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>§118 處分權：買賣契約不受影響；善意取得不會「治癒」物權行為</h2>
+  <div class="scene">
+    <p>甲把 A 車借給乙，乙賣給善意的丙並交付，甲拒絕承認。選項說：「丙善意取得，故乙丙間物權行為之瑕疵被治癒而有效。」另一題：阿公送孫子一塊地，爸媽為了送孫子去美國讀名校把地賣了。</p>
+    <p class="q">乙丙買賣有效嗎？物權行為？那個選項對嗎？爸媽有處分權嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙丙買賣</div><div class="a lbl">債權行為</div>
+    <div class="b ok">有效：不以有處分權為必要（移轉不了 → 債務不履行）</div>
+    <div class="br"></div>
+    <div class="b">乙→丙移轉</div><div class="a lbl">狹義處分 §118</div>
+    <div class="b">效力未定 → 甲拒絕 → 不生效力</div>
+    <div class="br"></div>
+    <div class="b ok">丙依 §801＋§948 善意取得</div>
+    <div class="br"></div>
+    <div class="b no">「善意取得治癒物權行為」✗——物權行為若有效，丙根本不需要善意取得，兩者矛盾</div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>誰有處分權</span><ul>
+      <li><span>所有人 §765</span></li>
+      <li class="hit"><span>父母對未成年子女<b>特有財產</b>，<b>為子女利益</b>時（§1088 II 但書）→ 賣地供留學 ✓</span></li>
+      <li><span>授權處分（王澤鑑）：甲授權乙以<b>乙自己名義</b>處分甲的物（明星不想出名）；私法自治可承認</span></li>
+      <li class="off"><span>承租人、借名登記出名人、讓與擔保權人 → 無</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§118 的「處分」是狹義：物權行為和<b>準物權行為</b>（債權讓與也適用）。債權行為以發生債權債務為目的，不以有處分權為必要——若認無權處分的買賣無效，丙連債務不履行都不能主張，更可怕。</p>
+    <p>善意取得是「無中生有」，前提就是前手無權處分；它只讓丙拿到 A，沒有讓乙丙物權行為從無效變有效的功能。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>授權處分 vs 授與代理權：代理是乙以<b>甲</b>的名義、效果在甲丙間；授權處分是乙以<b>自己</b>名義處分甲的物。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-09-§118處分權狹義處分債權行為不受影響有權處分來源§765§1088授權處分善意取得不治癒物權行為.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>§118 II、III：占有改定不能善意取得，繼承後處分溯及有效，最初處分勝出</h2>
+  <div class="scene">
+    <p>1/1 乙以占有改定（賣出去再借回來）把甲的 A 車賣給<b>惡意</b>的丙；2/2 同樣方式賣給<b>善意</b>的丁；3/3 甲意外死亡，乙是唯一繼承人。</p>
+    <p class="q">A 車現在是誰的？乙、丙、丁猜一個。</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="兩次占有改定後繼承">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="90" cy="70" r="5" class="dot"/>
+    <text x="90" y="48" text-anchor="middle">1/1</text>
+    <text x="90" y="94" text-anchor="middle" class="mu">占有改定賣惡意丙</text>
+    <text x="90" y="112" text-anchor="middle" class="mu">效力未定・惡意 ✗</text>
+    <circle cx="265" cy="70" r="5" class="dot"/>
+    <text x="265" y="48" text-anchor="middle">2/2</text>
+    <text x="265" y="94" text-anchor="middle" class="mu">占有改定賣善意丁</text>
+    <text x="265" y="112" text-anchor="middle" class="mu">§948 II 無現實交付 ✗</text>
+    <circle cx="440" cy="70" r="5" class="dot acc"/>
+    <text x="440" y="48" text-anchor="middle">3/3</text>
+    <text x="440" y="94" text-anchor="middle" class="mu">乙繼承 §1148</text>
+    <text x="440" y="112" text-anchor="middle" class="mu">§118 II 兩處分自始有效</text>
+  </svg>
+  <div class="flow">
+    <div class="b">丙 1/1 取得、丁 2/2 取得 → 一物二主</div><div class="a lbl">§118 III</div>
+    <div class="b ok"><b>最初之處分有效 → 丙</b>（惡意的那個）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>占有改定（<span class="s">§761 II</span>）：讓與人繼續占有，以契約讓受讓人取得間接占有代替交付——畫展結束才取畫、車賣了再借一個月。它也是物權行為。<span class="s">§948 II</span>：占有改定的受讓人要受<b>現實交付</b>且當時善意才能善意取得。丁沒拿到車，所以不能。</p>
+    <p>3/3 乙繼承成為所有人 → §118 II 無權處分人事後取得權利，處分<b>自始有效</b>，溯及改寫過去 → 兩個處分都有效 → 相牴觸 → §118 III 最初的有效。若題目加一句「3/3 乙立刻把車現實交付給丁」→ 丁善意取得 → 答案變丁。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§118 II 但書：乙 1/1 以占有改定無權處分給丙，3/3 甲把 A 送乙 → 丙溯及 1/1 取得；但 1/1～3/3 是甲在用車，丙<b>不能</b>向甲主張不當得利——原權利人已取得之利益不受影響。選擇題：「丙自 1/1 取得所有權」✓、「丙得對甲主張不當得利」✗。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-10-§118II§III占有改定§948II不能善意取得繼承後處分自始有效最初處分有效原權利人利益不受影響.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>代理的要件 §103：代理是權限不是權利；授權是有相對人的單獨行為</h2>
+  <div class="scene">
+    <p>甲授權 10 歲的乙當代理人去買東西。甲授權律師團、會計團、公關團一起談判，公關團自己先出手。律師乙衝庭，請同事丙代理出庭。</p>
+    <p class="q">對 10 歲小孩授權要法代同意嗎？公關團單獨行動效力如何？丙代理甲有效嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§103 代理要件：① 代理<b>權限</b>內（法定 §1086 §1098 §1003／意定 §167）② 以<b>本人名義</b>為意思表示 ③ 非無行為能力人（§104 反面）→ 效果直接及於本人</span><ul>
+      <li class="hit"><span>授權的性質：<b>有相對人的單獨行為</b>（不需被授權人同意，他只得到資格）＋<b>無損益中性行為</b>（對 10 歲小孩授權不須法代同意，類推 §77 但書）；內部授權或外部授權都可（§167）</span></li>
+      <li><span>限法律行為、準法律行為；侵權行為、事實行為不能代理；身分行為原則不能，例外 §1076-2 I 未滿七歲被收養</span></li>
+      <li class="hit"><span>數代理人：原則<b>共同代理</b>（§168 本文）→ 公關團單獨＝無權代理；特約才是<b>集合代理</b>（三個房仲各管一區）</span></li>
+      <li><span><b>複代理</b>：原則無權代理效力未定（信賴你 ≠ 信賴別人）；例外經本人同意（委任契約的衝庭條款）、或無利害關係（買杯飲料誰買都一樣）</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§103 用「權限」兩個字：代理是資格、地位，不是權利。考卷不要寫「有代理的權利」。</p>
+    <p>無權代理 vs 無權處分的關鍵字是「以<b>本人</b>名義」vs「以<b>自己</b>名義」：宣稱代理甲 → 無權代理，債權物權行為都效力未定，法律關係在甲丙間；用自己名義處分甲的物 → 無權處分，債權行為有效、物權行為效力未定，法律關係在乙丙間。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>被授權不等於有義務去做——不做也沒責任，除非另有委任、僱傭契約。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-11-代理的要件§103代理是權限非權利無權代理vs無權處分授權性質§167§168共同代理集合代理複代理.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>隱名代理看相對人知不知情，冒名行為看姓名有無區別意義</h2>
+  <div class="scene">
+    <p>爸爸幫兒子報名幼兒園課外教學，姓名欄寫了自己的名字，老師打來問「是星佑寶貝的媽媽嗎」。乙沒有甲的授權，去 50 嵐買飲料說「我是甲」；另一個乙冒郭台銘之名向銀行貸款 30 億。</p>
+    <p class="q">去遠足的是爸爸還是兒子？飲料和貸款的法律關係各在誰之間？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>隱名代理：<b>有</b>代理權，用自己名義</h4>看相對人<b>知不知情</b><br>不知 → 乙丙間（間接代理），甲乙依內部關係<br>知（老師知道是幫兒子報）→ 甲丙間 → 去遠足的是兒子</div>
+    <div class="trap-c"><h4>冒名行為：<b>無</b>代理權，冒用甲的名字</h4>看姓名<b>有無區別意義</b>（重不重人的資格）<br>不重（買飲料）→ 乙丙間<br>重（貸款）→ 丙沒有借給乙的意思、甲沒有借錢的意思 → <b>類推無權代理 §170</b> → 甲丙間效力未定</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>原則是顯名代理：合約寫甲方＝甲、註明代理人乙 → 效果直接及於甲（直接代理）。隱名代理的前提是乙有代理權<b>而且有代理甲的意思</b>——甲拜託乙代購預售屋，乙發現很讚用自己名義買下自住，房價暴漲：乙沒有代理的意思，房子是乙的，乙對甲頂多債務不履行。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題把兩個標準混在一起：「隱名代理重人的資格時直接對甲發生效力」→ 錯，隱名看知不知情，冒名才看資格。下堂：§104 代理人須非無行為能力人。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法09-筆記-12-顯名代理隱名代理冒名行為相對人知情與否姓名有無區別意義類推無權代理.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

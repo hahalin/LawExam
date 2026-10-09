@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法07 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法07">
+<main>
+
+<header class="lesson-head">
+  <h1>民法07</h1>
+  <span class="sub">§87 但書的承租人・惡意的後手・69 年決議・誤載無害真意・意思表示錯誤 §88～§91・網拍標錯價・§92 詐欺的要件</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>承租人是不是 §87 I 但書的「善意第三人」</h2>
+  <div class="scene">
+    <p>甲與乙通謀虛偽，把 A 地登記給乙。乙把 A 地出租給善意的丙並交付。甲依 §767 I 前段向丙請求返還。</p>
+    <p class="q">丙不可能善意取得（租地不會租成地主）。那丙在訴訟上該主張什麼？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲乙物權行為通謀無效</div><div class="a lbl">乙未取得</div>
+    <div class="b">甲是所有人？</div><div class="a lbl">丙的策略</div>
+    <div class="b q">不主張「我是所有人」，主張「<b>甲不是</b>所有人」：甲乙行為有效、乙才是地主</div>
+    <div class="br"></div>
+    <div class="b">甲能否以通謀無效對抗丙？</div><div class="a lbl">取決於</div>
+    <div class="b">丙是不是但書的善意第三人</div>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>王澤鑑（少數說）：不是</h4>善意第三人須「<b>法律行為之效力</b>」因通謀受影響；乙丙租賃契約效力不受影響 → 甲得對抗 → §767 有理由 → 丙對乙依 §436 準用 §435、§227 求償</div>
+    <div class="rule-c"><h4>多數說（林誠二、陳聰富）：是</h4>只要「<b>受影響</b>」即可：① 丙原可使用收益變成只能請求賠償，實質受影響 ② 甲是通謀當事人、丙善意，無保護惡意犧牲善意之理 → 甲不得對抗 → 乙是地主 → §767 無理由</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>先排除錯誤示範：「乙交付給丙＝無權處分 → 丙善意取得」是錯的。租賃是債權契約，交付只是履行，<b>沒有處分行為</b>，無權處分和善意受讓都無從談起。</p>
+    <p>所以丙的路只有一條：否認甲的所有人地位。這就回到 §87 I 但書「第三人」怎麼解釋。王澤鑑在民法絕大多數爭點是多數說，這裡是少數的例外。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙若是把 A <b>賣</b>給丙，就有物權行為 → 無權處分 → 丙有兩條路：§87 I 但書主張甲乙有效（乙有權處分），或 §801＋§948／§759-1 II 善意受讓。民總階段兩條路結果相同，到 §92 II 才有差。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-01-出租他人房屋承租人是否為§87I但書善意第三人.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>善意第三人再轉手給惡意的丁：前手有權處分，後手善惡不問</h2>
+  <div class="scene">
+    <p>甲與乙通謀虛偽移轉 A 車，乙賣給善意的丙並交付，丙再把車<b>贈與</b>給丁並交付。丁明知甲乙通謀。甲依 §767 向丁請求返還。</p>
+    <p class="q">丁是惡意的，甲可以用「通謀無效」對抗丁嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙丙：無權處分</div><div class="a lbl">丙善意</div>
+    <div class="b ok">丙善意受讓（或 §87 I 但書）→ <b>終局取得</b>所有權</div>
+    <div class="br"></div>
+    <div class="b">丙丁：丙是所有人</div><div class="a lbl">有權處分</div>
+    <div class="b ok">丁取得所有權，善意惡意、有償無償都不問</div>
+    <div class="br"></div>
+    <div class="b no">甲→丁 §767 ✗（甲早已非所有人）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>討論後手善惡意，目的是「前手無權處分時保護後手的交易安全」。到丙這一手已經終局確定，丙→丁是有權處分，沒有交易安全問題，丁的善惡意一點關係都沒有。若不讓丁取得，丁回頭告丙債務不履行，丙說「我的東西卻移轉不過去」——不合理。</p>
+    <p>第二個觀念：<b>交易安全不限於有償行為</b>。交易安全指法律行為有效性的安全，買賣、租賃、贈與、物權行為都有，只是強弱不同；沒有交易安全的是<b>身分行為</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>老師改考卷常見錯誤：「贈與是無償契約，並非交易，不涉及交易安全」——完全錯誤。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-02-善意第三人再轉手惡意丁前手有權處分後手善惡不問.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>買受人面對出賣人與第三人的通謀：§242 代位 vs §184＋§213</h2>
+  <div class="scene">
+    <p>甲向乙買 A 地（§348 債權）。乙為了不履行，與丙通謀虛偽把 A 地移轉登記給丙。甲要讓 A 地回到乙名下。</p>
+    <p class="q">甲能直接叫丙移轉給自己嗎？能用侵權行為告乙丙塗銷嗎？被告可以列乙嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>路 ①：§242 代位（無爭議）</h4>乙丙物權行為無效 → 丙登記為所有人是對乙的<b>法律上妨害</b> → 乙對丙有 §767 I 中段塗銷請求權 → 乙怠於行使 → 甲依 §242 代位 → 塗銷 → 再依 §348 請求乙移轉</div>
+    <div class="trap-c"><h4>路 ②：侵權行為（有爭議）</h4>乙丙侵害甲的債權 → §184＋<b>§213 回復原狀</b> → 塗銷登記<br><b>69 年第 7 次決議</b>：只能告丙，乙處分自己財產不構成侵權<br><b>王澤鑑</b>：乙丙都可告，依 <b>§184 I 後段</b>（債權非前段的「權利」）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>甲丙之間沒有任何法律關係，甲不能叫丙直接移轉給自己。能做的是讓地回到乙名下，再叫乙履行。土地登記題畫一張登記簿流向圖給自己看。</p>
+    <p>侵權路線三個注意：一定要配 <span class="s">§213</span>（靠回復原狀帶出塗銷）；能不能告乙實務學說不同；條文是 §184 I <b>後段</b>不是前段。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>69 年第 7 次決議的邏輯：「土地是乙的，乙要給誰是他的自由，就算通謀也不是侵權」。至今仍有最高法院判決引用，然後被學者罵。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-03-69年第7次決議買受人對通謀的出賣人與第三人§242代位vs§184§213.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>誤載無害真意：收據寫錯，不是意思表示錯誤</h2>
+  <div class="scene">
+    <p>甲向乙訂蛋黃酥 50 顆、一顆 100 元，講好總價 5,000。乙事後開的收據寫「總價 500 元」，少一個零。</p>
+    <p class="q">有人說：這是表示行為錯誤，乙寫錯有過失不能撤銷，所以價金變 500。對嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b q">意思表示在哪裡？</div><div class="a lbl">締約那一刻</div>
+    <div class="b ok">甲 5,000 買、乙 5,000 賣 → 意思表示合致、<b>沒有錯誤</b></div>
+    <div class="br"></div>
+    <div class="b dim">收據寫 500</div><div class="a lbl">不是意思表示</div>
+    <div class="b">單純誤載 → <b>更正即可</b>，不進 §88</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§86～§93 處理的是「意思表示有瑕疵」。意思表示本身沒錯、只是事後記載錯了，叫<b>誤載無害真意</b>——不影響真意，依 <span class="s">§98</span> 探求真意更正就好，根本不需要撤銷。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>一試超愛考。看到「寫錯」就想撤銷之前，先問：<b>意思表示本身有錯嗎？</b>沒有就不是 §88 的問題。字幕聽成「物權無害爭議」，正確用語是誤載無害真意。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-04-誤載無害真意寫錯不是意思表示錯誤更正即可.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>意思表示不成立 vs 有瑕疵：看哪一個要素缺了</h2>
+  <div class="scene">
+    <p>母親把所有權狀交兒子保管。兒子拿一份買賣契約書說「媽，幫我簽一下」，母親什麼都沒問就簽了，土地被過戶。十年後才發現。</p>
+    <p class="q">母親主張「我不知道我在簽什麼」——這是意思表示不成立，還是成立但有瑕疵？差在哪？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>意思表示四要素（陳忠五）</span><ul>
+      <li class="off"><span>客觀：<b>表示行為</b>欠缺 → 不成立</span></li>
+      <li class="off"><span>主觀：<b>行為意思</b>欠缺（連自己在簽名都不知道）→ 不成立</span></li>
+      <li class="hit"><span>主觀：<b>表示意思／效果意思</b>欠缺（知道在簽名，不知道簽了會過戶）→ 成立但有瑕疵 → §88、§92 撤銷</span></li>
+    </ul></li>
+  </ul></div>
+  <div class="vs">
+    <div><h4>不成立</h4>自始沒有意思表示 → 對方從未取得 → 隨時確認之訴＋§767，<b>無除斥期間</b></div>
+    <div class="trap-c"><h4>有瑕疵（得撤銷）</h4>須先撤銷 → §90 一年／§93 一年、十年 → 十年後才發現 → 來不及</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>媽媽知道自己在簽名 → 有表示行為、有行為意思 → 意思表示<b>成立</b>；不知道效果是效果意思的問題 → <b>瑕疵</b>。二審（瑕疵）較正確，最高法院（不成立）有待商榷。</p>
+    <p>最高法院為什麼硬說不成立？因為老母親十年後才發現，走瑕疵路線早就逾除斥期間；說不成立就隨時能要回。陳忠五：可以理解，但應該用締約上過失、侵權、§92 較長的除斥期間從寬保護，不是把得撤銷說成不成立。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>考試第一步先判斷錯在哪個要素，決定走不成立還是走瑕疵，兩條路的時間限制完全不同。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-05-意思表示不成立vs瑕疵陳忠五四要素媽媽簽名案.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>§88 的三種錯誤：內容錯誤、表示行為錯誤可撤銷，動機錯誤不行</h2>
+  <div class="scene">
+    <p>甲想買 A 顯示卡，店員拿貨時拿成長得很像的 B。乙以為對面那個人是某甲、其實是某丙，就跟他簽約。丙為了求婚買鑽戒，求婚時才發現女友早已結婚。</p>
+    <p class="q">三個都「搞錯了」，哪些可以依 §88 撤銷？</p>
+  </div>
+  <div class="flow">
+    <div class="b dim">動機</div><div class="a"></div>
+    <div class="b">意思</div><div class="a"></div>
+    <div class="b">表示</div>
+    <div class="br"></div>
+    <div class="b no">錯在動機：動機錯誤「誤以為…」✗ 不得撤銷</div>
+    <div class="br"></div>
+    <div class="b ok">錯在意思：內容錯誤「誤 A 為 B」✓</div>
+    <div class="br"></div>
+    <div class="b ok">錯在表示：表示行為錯誤「誤＋動詞」（寫錯、拿錯）✓</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§88 I</span> 第一句「內容有錯誤」＝腦子裡就錯（誤甲為乙、誤 A 車為 B 車、誤買賣為贈與）；第二句「若知其事情即不為意思表示」＝表示行為錯誤，腦子沒錯、動作出錯。兩種都可撤銷。</p>
+    <p>動機藏在內心深處，不是交易的要素——買鹹酥雞不用跟老闆說為什麼。所以 §88 沒有「一般動機錯誤」這個類型，最高法院判例也說動機錯誤與 §88 之錯誤有別 → 鑽戒不能退（除非店家有「求婚失敗條款」，那是契約）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>句型只是粗略判斷。有的題目寫「誤以為 A 車為 B 車」，那還是誤 A 為 B 的內容錯誤。看劇情：搞錯了、拿錯了、還是出發點的理由錯了。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-06-§88三種錯誤內容錯誤表示行為錯誤動機錯誤句型判斷.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>動機錯誤被對方看穿、或雙方都錯：不撤銷，改用 §148 或調整契約</h2>
+  <div class="scene">
+    <p>甲誤以為 A 畫很值錢向乙購買。情形一：乙明知甲搞錯，沒說。情形二：乙不只明知，還故意利用這點誘使甲買。情形三：甲乙都以為那塊地要重劃成建地才交易，結果變道路用地。</p>
+    <p class="q">三種情形甲能依 §88 撤銷嗎？不能的話甲怎麼辦？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>單純動機錯誤：無論如何<b>不能依 §88 撤銷</b>（王澤鑑：動機非交易要素）</span><ul>
+      <li class="off"><span>乙明知 → 不得撤銷，也沒救：相對人不須承擔你動機錯誤的風險，買東西要自己做功課</span></li>
+      <li class="hit"><span>乙明知＋故意利用 → 不得撤銷，但乙依 §367 請求履行是<b>權利濫用</b> → <b>§148</b> 限制 → 無理由</span></li>
+      <li class="hit"><span>雙方動機錯誤 → 不是撤銷讓契約消滅，是<b>調整契約內容</b>：王澤鑑用誠信原則；陳聰富類推 <b>§227-2</b> 情事變更</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>王澤鑑的邏輯一以貫之：動機不是交易要素，不能讓它影響契約效力，所以不能撤。但「不能撤」不等於「沒救」——對方很壞，就從權利行使那一端擋（誠信原則），而不是從意思表示瑕疵這一端處理。</p>
+    <p>雙方都錯時，雙方要的是契約調到符合真意的狀態，不是契約無效；所以要找調整機制。英國法的例子：租閣樓看女王登基大典，房東房客一起記錯日期。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題「相對人明知表意人動機錯誤，表意人即得撤銷」→ 錯。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-07-動機錯誤特殊情形相對人明知故意利用§148與雙方動機錯誤§227-2.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>§88 II 重要動機錯誤：人的資格、物的性質，交易上重要；「價值」不算</h2>
+  <div class="scene">
+    <p>甲以為那幅畫是張大千真跡才買；乙以為對方有律師執照才委任；丙以為那間房不是凶宅；丁以為那幅畫<b>很值錢</b>；戊僱秘書時以為她未婚。</p>
+    <p class="q">哪些能依 §88 II 視為內容錯誤而撤銷？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">① 人的資格／物的性質<br>（<b>客觀</b>，有標準答案）<br>② 交易上認為重要</div>
+    <div class="out"><span class="tag">兩個都過</span><div class="b ok">真跡與否、有無執照、凶宅、泡水車、前科 → 視為內容錯誤 → 依 §88 I 撤銷</div></div>
+    <div class="out"><span class="tag">有一個不過</span><div class="b no">「很值錢」是<b>價值</b>，主觀 → ✗；「已婚未婚」客觀但交易上<b>不重要</b> → ✗</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>客觀要素＝有標準答案、不取決於個人好惡：有沒有律師資格是客觀的，法律好不好是主觀的；是不是真跡是客觀的，值不值錢是主觀的。交易上重要＝會影響締約意願或價格。</p>
+    <p><span class="s">§88 II</span> 的效果是「<b>視為</b>內容錯誤」，條文裡沒有「撤銷」兩個字。論述寫「依 §88 II 視為內容錯誤，依 §88 I 撤銷」，不要寫「依 §88 II 撤銷」。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>考試最愛問「如果是價值呢」——<b>性質</b>可以、<b>價值</b>不行，看清楚題目用哪個字。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-08-§88II重要動機錯誤人的資格物的性質客觀交易上重要價值不算.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>§88 I 要不要「重要」、「無過失」是哪一種過失：三說</h2>
+  <div class="scene">
+    <p>甲有一件古董，曾送專家乙鑑定，乙看出是假的。丙誤以為是真品向甲購買（甲什麼都沒說）。一般人看不出來，專家看得出來。</p>
+    <p class="q">古董真假是物的性質、交易上重要，§88 II 過關。那丙「無過失」嗎？看你拿誰當及格線。</p>
+  </div>
+  <div class="flow">
+    <div class="b">過失有無 ＝ 做到幾分</div><div class="a lbl">×</div>
+    <div class="b q">及格線畫在哪</div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>「無過失」是沒有哪一種過失？</span><ul>
+      <li><span><b>抽象輕過失</b>（王澤鑑）：跟<b>專家</b>比，及格線 90 分 → 專家看得出 → 丙有過失 → <b>不得</b>撤銷</span></li>
+      <li><span><b>具體輕過失</b>（實務）：跟<b>自己</b>比，有沒有盡與處理自己事務同一的注意</span></li>
+      <li class="hit"><span><b>重大過失</b>（林誠二）：跟<b>一般人</b>比，及格線 50 分 → 一般人看不出 → 無過失 → <b>得</b>撤銷，但依 §91 賠償</span></li>
+    </ul></li>
+  </ul></div>
+  <div class="vs">
+    <div><h4>王澤鑑：偏交易安全</h4>§88 要件嚴格解釋，能不撤就不撤。§88 I 沒寫「重要」是法律漏洞 → 類推 II → I 也要交易上重要</div>
+    <div><h4>林誠二：偏意思自主</h4>§88 I 沒寫就不用重要。要撤就撤，交易安全交給 §91 損害賠償。每個人都要做到專家程度才能撤，§88 變具文</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§88 在衡量表意人的<b>意思真意</b>與相對人的<b>交易安全</b>。撤銷 → §114 自始無效 → 甲的真意被保護、乙信賴契約有效的安全被破壞。兩位老師的價值取向不同，決定了「要不要重要」「無過失標準」兩個爭點的答案。</p>
+    <p>判斷過失要知道兩件事：他做到什麼程度、法律要求的標準在哪。只知道考 60 分沒意義，要知道及格線是 70 還是 60。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>地政機關資料有誤、連代書都看不出 → 即使抽象輕過失標準也無過失。題目給「專家看得出、一般人看不出」就是要你分三說。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-09-§88I要不要重要與無過失標準王澤鑑林誠二實務三說過失即及格標準.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>§90 一年除斥期間與 §91 信賴利益賠償：鑑定費能要，差價不能</h2>
+  <div class="scene">
+    <p>A 畫市價 100 萬。甲誤以為仿作，30 萬賣乙（乙花 3 萬請人鑑定）。乙 100 萬轉賣善意的丙（丙也花 3 萬鑑定）。甲依 §88 II 撤銷（假設無過失）。</p>
+    <p class="q">甲要得回畫嗎？甲乙之間怎麼算錢？丙能跟甲要 3 萬鑑定費嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲→丙 §767</div><div class="a lbl">丙善意受讓</div>
+    <div class="b no">✗</div>
+    <div class="br"></div>
+    <div class="b">甲→乙</div><div class="a lbl">§179</div>
+    <div class="b">畫的代替利益 100 萬</div>
+    <div class="br"></div>
+    <div class="b">乙→甲</div><div class="a lbl">§179＋§91</div>
+    <div class="b ok">價金 30 萬 ＋ 鑑定費 3 萬 ＝ 33 萬</div>
+    <div class="br"></div>
+    <div class="b no">70 萬差價：履行利益，契約無效不存在 ✗</div>
+    <div class="br"></div>
+    <div class="b">丙→甲 §91 要 3 萬？</div><div class="a lbl">丙已善意取得</div>
+    <div class="b no"><b>沒有損害</b> ✗</div>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>信賴利益</h4>為締約付出的成本。契約<b>無效、不成立</b>才變成損害。四條：<b>§91、§110、§245-1、§247</b></div>
+    <div><h4>履行利益</h4>契約履行後能得到的獲利。契約<b>有效</b>對方不履行才是損害：§226、§227、§360、§495</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§90</span>：撤銷權自意思表示後一年消滅（不是從發現起算）。<span class="s">§91</span> 的關鍵字是「<b>信</b>其意思表示為有效」——信賴利益。但書「明知或可得而知者不在此限」＝排除惡意與善意有過失 → 受害人要<b>善意且無過失</b>才能請求，跟 §88 要表意人無過失互相衡平。</p>
+    <p>跟契約無關、本來就有的叫固有利益，走侵權或加害給付。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§91 的「第三人」是誰？王澤鑑：用在<b>無相對人</b>的法律行為——甲拋棄 A 車，乙先占，甲說拋棄的意思表示有錯誤要撤銷 → 乙不是相對人，但因撤銷受損 → 就是那個第三人。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-10-§90除斥期間與§91信賴利益賠償履行信賴固有利益明知或可得而知第三人.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>網拍標錯價三爭點：§154、§88、§148</h2>
+  <div class="scene">
+    <p>戴爾網站把 3 萬多元的電腦標成 3 千多。兩位成大學生以為在辦活動，一人買一台；另一批人明知標錯，一人買 20 台還呼朋引伴。戴爾拒絕出貨。</p>
+    <p class="q">契約成立了嗎？戴爾能撤銷嗎？買家一定能要求出貨嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 契約成立？</div><div class="a lbl">§154 II</div>
+    <div class="b q">標價是<b>要約</b>（貨物標定賣價陳列，多數說）還是<b>要約之引誘</b>（價目表寄送）？</div>
+    <div class="br"></div>
+    <div class="b">② 能撤銷？</div><div class="a lbl">§88</div>
+    <div class="b no">表示行為錯誤，但 key 錯單<b>有過失</b>（連重大過失說都過不了）→ 不得撤銷；系統當機例外</div>
+    <div class="br"></div>
+    <div class="b">③ 請求出貨違反誠信？</div><div class="a lbl">§148</div>
+    <div class="b ok">成大學生不知情、各買一台 → 戴爾應出貨</div>
+    <div class="br"></div>
+    <div class="b no">明知標錯、買 20 台轉賣 → 以損害他人為主要目的 → 不得請求</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>三個層次要照順序：契約不成立就沒有契約請求權，原告之訴駁回，結束；成立才看能不能撤；不能撤才看請求履約有沒有違反誠信。</p>
+    <p><span class="s">§154 II</span> 是民國 19 年寫的，那時只有「東西擺店裡標價」和「發傳單」兩種賣法，網拍對不上。現在業者幾乎都加「本公司保有最終決定權」，把標價約定成要約之引誘；通說認為該條款有效（消費者頂多沒買到，無不利益）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>標錯價是可撤銷的錯誤類型（表示行為錯誤），問題不在類型，在<b>無過失</b>這一關過不了。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-11-網拍標錯價三爭點§154要約或要約引誘§88撤銷§148誠信戴爾案.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>§92 被詐欺的要件：不講也是騙、廣告不真實不等於詐欺</h2>
+  <div class="scene">
+    <p>乙賣車給甲，車內去年有人自殺，乙隻字未提。另一題：退休公務員看到女明星代言淡水建案，slogan「我決定住在這裡了，你呢？」以為能跟她當鄰居就買了，她根本不住那。</p>
+    <p class="q">沒騙你、只是沒講，算詐欺嗎？廣告不實就是詐欺嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§92 被詐欺的要件</span><ul>
+      <li class="hit"><span>① 詐欺行為（須有<b>故意</b>，不小心講錯不算）：<b>作為</b>詐欺＝積極告知不實；<b>不作為</b>詐欺＝有告知義務而故意隱匿重要資訊 → 自殺車不講 ✓ 詐欺</span></li>
+      <li class="off"><span>廣告詐欺（陳忠五）：<b>不真實 ≠ 不誠實</b>。須 客觀上可擬制為契約之一部 ＋ 主觀上引起合理信賴。鄰居是誰非契約要素、沒人會合理信賴 → 女明星案 ✗</span></li>
+      <li><span>② 因果關係兩階段：<b>因</b>詐欺陷於錯誤、<b>因</b>錯誤而為意思表示</span></li>
+      <li><span>③ 第三人詐欺（I 但書）→ 下堂　④ 除斥期間 §93（發現後一年、意思表示後十年）</span></li>
+    </ul></li>
+  </ul></div>
+  <div class="vs">
+    <div class="rule-c"><h4>通說：錯誤含動機錯誤</h4>§88 是自己的錯要顧相對人交易安全；§92 是<b>你騙我</b>，相對人沒有被保護的必要 → 不管什麼錯誤都能撤</div>
+    <div class="trap-c"><h4>葉啟洲：須重要錯誤</h4>參照 §88 II，民法對單純動機錯誤保護較低；不涉人的資格、物的性質，縱被詐欺也不能依 §92 撤</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>克寧奶粉「像大樹一樣高」沒長高不能告詐欺——廣告本來就浮誇。消保法 §22 寫「真實」，但陳忠五說詐欺看的是<b>誠實</b>：有沒有針對契約要素誠實告知。建案廣告的「依山傍水人間仙境」是意象，不引起合理信賴。</p>
+    <p><span class="s">§92 I</span> 的「因被詐欺<b>而</b>為意思表示」有兩個因：因詐欺陷於錯誤、因錯誤為意思表示。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「不講也是一種騙」——但前提是有<b>告知義務</b>而故意隱匿<b>重要</b>資訊。下堂：第三人詐欺（律師一試萬年考點）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法07-筆記-12-§92被詐欺要件詐欺故意不作為詐欺廣告詐欺因果關係含動機錯誤葉啟洲.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>
