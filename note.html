@@ -63,21 +63,21 @@ async function main(){
   try { toc = await (await fetch('toc.json', {cache:'no-cache'})).json(); } catch(e) {}
   let ctx = null;
   for (const s of toc) for (const l of s.lessons) {
-    if (l.sub.path === f) ctx = {s, l, kind:'sub'};
+    if (l.sub && l.sub.path === f) ctx = {s, l, kind:'sub'};
     l.notes.forEach((n, i) => { if (n.path === f) ctx = {s, l, kind:'note', i}; });
   }
   if (ctx) {
     const {s, l} = ctx;
-    $('back').textContent = `← ${s.label}${l.n}`;
-    $('back').href = 'index.html#' + encodeURIComponent(s.id) + '/' + l.n;
-    $('where').textContent = ctx.kind === 'sub' ? '課程字幕' : `分主題筆記 ${l.notes[ctx.i].no} / ${l.notes.length}`;
+    $('back').textContent = `← ${l.title}`;
+    $('back').href = 'index.html#' + encodeURIComponent(s.id) + '/' + encodeURIComponent(l.n);
+    $('where').textContent = ctx.kind === 'sub' ? '課程字幕' : `筆記 ${ctx.i + 1} / ${l.notes.length}`;
     if (l.eli) { $('eli').href = l.eli; $('eli').hidden = false; }
     if (ctx.kind === 'note') {
       const p = l.notes[ctx.i - 1], n = l.notes[ctx.i + 1];
-      const link = (x, cls, lab) => `<a class="${cls}" href="${x.url}"><small>${lab}</small>${x.no}　${esc(x.t)}</a>`;
-      $('pager').innerHTML = (p ? link(p, 'prev', '← 上一份') : '<span class="gap"></span>') + (n ? link(n, 'next', '下一份 →') : `<a class="next" href="${$('back').href}"><small>本堂讀完</small>回 ${esc(s.label)}${l.n} 目錄</a>`);
-      document.title = `${s.label}${l.n}-${l.notes[ctx.i].no} ${l.notes[ctx.i].t.slice(0, 20)}`;
-    } else document.title = `${s.label}${l.n} 課程字幕`;
+      const link = (x, cls, lab) => `<a class="${cls}" href="${x.url}"><small>${lab}</small>${x.no ? x.no + '　' : ''}${esc(x.t)}</a>`;
+      $('pager').innerHTML = (p ? link(p, 'prev', '← 上一份') : '<span class="gap"></span>') + (n ? link(n, 'next', '下一份 →') : `<a class="next" href="${$('back').href}"><small>本堂讀完</small>回 ${esc(l.title)} 目錄</a>`);
+      document.title = `${l.title} ${l.notes[ctx.i].t.slice(0, 20)}`;
+    } else document.title = `${l.title} 課程字幕`;
   }
   let text;
   try { const r = await fetch(enc(f)); if (!r.ok) throw 0; text = await r.text(); }

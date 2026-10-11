@@ -1,42 +1,9 @@
-"""產生 repo 根目錄 index.html 與 toc.json（note.html 用來做上一份／下一份）（GitHub Pages 首頁）：各科、各課分節，列出課程字幕 md、ELI5 網頁、分主題筆記 md。
-用法：python scripts/build_index.py
-md 檔連到 GitHub 頁面（才有 markdown 排版）；ELI5 用相對路徑在 Pages 上開。"""
-import os, re, html, urllib.parse as up
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BLOB = 'https://github.com/hahalin/LawExam/blob/master/'
-SUBJECTS = [('民法', '民法', '民法'), ('強制執行法', '強制執行法', '')]  # (資料夾, 顯示名, 檔名前綴)
-
-def q(p): return up.quote(p)
-def esc(s): return html.escape(s, quote=True)
-def eli5_sub(path):
-    t = open(path, encoding='utf-8').read()
-    m = re.search(r'<span class="sub">(.*?)</span>', t, re.S)
-    return re.sub('<[^>]+>', '', m.group(1)).strip() if m else ''
-
-def lessons(d, prefix):
-    base = f'課程字幕/{d}'
-    fs = os.listdir(os.path.join(ROOT, base))
-    nums = sorted({m.group(1) for f in fs for m in [re.match(re.escape(prefix) + r'(\d\d)\.md$', f)] if m})
-    for n in nums:
-        eli = f'{prefix}{n}-ELI5.html'
-        notes = []
-        for f in sorted(fs):
-            m = re.match(re.escape(prefix) + n + r'-筆記-(\d\d)-(.*)\.md$', f)
-            if m: notes.append((m.group(1), m.group(2), f'{base}/{f}'))
-        yield dict(n=n, base=base, sub_md=f'{base}/{prefix}{n}.md', sub_name=f'{prefix}{n}.md',
-                   eli=f'{base}/{eli}' if eli in fs else None,
-                   theme=eli5_sub(os.path.join(ROOT, base, eli)) if eli in fs else '', notes=notes)
-
-import json
-data = []
-for d, label, prefix in SUBJECTS:
-    ls = []
-    for l in lessons(d, prefix):
-        ls.append(dict(n=l['n'], theme=l['theme'],
-                       sub=dict(name=l['sub_name'], path=l['sub_md'], url='note.html?f=' + q(l['sub_md'])),
-                       eli=q(l['eli']) if l['eli'] else None,
-                       notes=[dict(no=no, t=t, path=p, url='note.html?f=' + q(p)) for no, t, p in l['notes']]))
-    data.append(dict(id=d, label=label, lessons=ls))
+"""產生 repo 根目錄 index.html（左科目、上課堂活頁）與 toc.json（note.html 用來做上一份／下一份）。
+用法：python scripts/build_index.py；掃描規則見 scripts/toc_lib.py。"""
+import os, sys, json
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from toc_lib import ROOT, scan
+data = scan()
 DATA = json.dumps(data, ensure_ascii=False).replace('</', '<\\/')
 json.dump(data, open(os.path.join(ROOT, 'toc.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 
@@ -108,27 +75,27 @@ function renderSubjects(){
 function renderTabs(){
   const ls = DATA[cur.s].lessons;
   $('tabs').innerHTML = ls.map((l, i) =>
-    `<button role="tab" class="${l.notes.length ? 'has' : ''}" aria-selected="${i===cur.l}" data-i="${i}" title="${esc(l.theme || '')}">${l.n}</button>`).join('');
+    `<button role="tab" class="${l.notes.length ? 'has' : ''}" aria-selected="${i===cur.l}" data-i="${i}" title="${esc(l.theme || '')}">${esc(l.tab)}</button>`).join('');
   const b = $('tabs').querySelector('[aria-selected="true"]'); if (b) b.scrollIntoView({block:'nearest', inline:'nearest'});
 }
 function renderSheet(){
   const s = DATA[cur.s], l = s.lessons[cur.l];
-  const pills = [`<a class="pill" href="${l.sub.url}">📄 課程字幕 ${esc(l.sub.name)}</a>`,
+  const pills = [l.sub ? `<a class="pill" href="${l.sub.url}">📄 課程字幕 ${esc(l.sub.name)}</a>` : `<span class="pill off">無字幕檔</span>`,
     l.eli ? `<a class="pill eli" href="${l.eli}">🌐 ELI5 網頁</a>` : `<span class="pill off">ELI5 尚未製作</span>`];
   const notes = l.notes.length
-    ? `<h3>分主題筆記 ${l.notes.length} 份</h3><ol>${l.notes.map(n => `<li><a href="${n.url}"><b>${n.no}</b>${esc(n.t)}</a></li>`).join('')}</ol>`
-    : `<p class="none">分主題筆記尚未製作</p>`;
-  $('sheet').innerHTML = `<h2>${esc(s.label)}${l.n}</h2>${l.theme ? `<p class="theme">${esc(l.theme)}</p>` : ''}<div class="pills">${pills.join('')}</div>${notes}`;
+    ? `<h3>筆記 ${l.notes.length} 份</h3><ol>${l.notes.map(n => `<li><a href="${n.url}"><b>${n.no || '•'}</b>${esc(n.t)}</a></li>`).join('')}</ol>`
+    : `<p class="none">筆記尚未製作</p>`;
+  $('sheet').innerHTML = `<h2>${esc(l.title)}</h2>${l.theme ? `<p class="theme">${esc(l.theme)}</p>` : ''}<div class="pills">${pills.join('')}</div>${notes}`;
 }
 function go(si, li, push){
   cur = {s: si, l: li ?? defaultLesson(si)};
   renderSubjects(); renderTabs(); renderSheet();
-  const h = '#' + encodeURIComponent(DATA[cur.s].id) + '/' + DATA[cur.s].lessons[cur.l].n;
+  const h = '#' + encodeURIComponent(DATA[cur.s].id) + '/' + encodeURIComponent(DATA[cur.s].lessons[cur.l].n);
   if (push !== false && location.hash !== h) history.replaceState(null, '', h);
   try { localStorage.setItem('toc-last', h); } catch(e) {}
 }
 function fromHash(h){
-  const m = decodeURIComponent(h || '').match(/^#([^/]+)\/(\d\d)$/); if (!m) return false;
+  const m = (h || '').match(/^#([^/]+)\/(.+)$/); if (!m) return false; m[1] = decodeURIComponent(m[1]); m[2] = decodeURIComponent(m[2]);
   const si = DATA.findIndex(s => s.id === m[1]); if (si < 0) return false;
   const li = DATA[si].lessons.findIndex(l => l.n === m[2]);
   go(si, li < 0 ? null : li, false); return true;
