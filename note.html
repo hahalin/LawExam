@@ -15,8 +15,10 @@ header .where{color:var(--mu);font-size:.9rem;margin-right:auto}
 .pill.eli{background:var(--acc-bg);border-color:transparent}
 main{max-width:860px;margin:0 auto;padding:20px 16px 32px}
 article{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 26px;overflow-wrap:anywhere}
-article h1{font-size:1.05rem;line-height:1.8;margin:0 0 8px;font-weight:500}
-article h1:first-child{font-size:1.05rem;padding-bottom:10px;border-bottom:1px solid var(--line)}
+article h1{font-size:1.3rem;line-height:1.5;margin:0 0 12px;font-weight:700}
+article .kicker{margin:0 0 2px;color:var(--mu);font-size:.85rem;font-weight:600;letter-spacing:.02em}
+article .lead{margin:0 0 16px;padding:12px 16px;background:var(--q);border-radius:8px;font-size:.95rem;line-height:1.8}
+article .lead b.tag{display:block;color:var(--acc);font-size:.8rem;margin-bottom:2px;background:none}
 article h2{font-size:1.15rem;margin:28px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--line)}
 article h3{font-size:1.02rem;margin:22px 0 6px}
 article p{margin:8px 0}
@@ -84,6 +86,17 @@ async function main(){
   catch(e) { $('doc').innerHTML = '<p class="msg">讀取失敗，請重新整理或改到 GitHub 看原始檔。</p>'; return; }
   if (!window.marked) { $('doc').innerHTML = '<pre></pre>'; $('doc').firstChild.textContent = text; return; }
   $('doc').innerHTML = marked.parse(text, {gfm: true, breaks: true});
+  const h1 = $('doc').querySelector('h1');
+  if (h1) {
+    let t = h1.innerHTML, kicker = '', lead = '';
+    const k = t.match(/^\s*([^<>]{1,30}?筆記)[：:]\s*/);
+    if (k) { kicker = k[1]; t = t.slice(k[0].length); }
+    const i = t.indexOf('——');
+    if (i > 0 && t.length - i > 4) { lead = t.slice(i + 2); t = t.slice(0, i); }
+    h1.innerHTML = t;
+    if (kicker) h1.insertAdjacentHTML('beforebegin', `<p class="kicker">${esc(kicker)}</p>`);
+    if (lead) h1.insertAdjacentHTML('afterend', `<div class="lead"><b class="tag">本篇重點</b>${lead}</div>`);
+  }
   $('doc').querySelectorAll('table').forEach(t => { const w = document.createElement('div'); w.className = 'tw'; t.replaceWith(w); w.appendChild(t); });
   $('doc').querySelectorAll('a[href]').forEach(a => {
     const h = a.getAttribute('href');
