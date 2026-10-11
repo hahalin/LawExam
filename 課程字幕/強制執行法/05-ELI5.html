@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>強制執行法05 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="強制執行法05">
+<main>
+
+<header class="lesson-head">
+  <h1>強制執行法05</h1>
+  <span class="sub">第三人異議之訴收尾・§14-1 當事人不適格・強制處分（拘提管收）・參與分配 §31～§34・併案執行 §33</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。這堂後半全部在講「錢怎麼分」：找<b>基準時</b>、分<b>群團</b>、抵押權人<b>不受影響</b>。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>§15 適用於所有執行（含假扣押），執行處查封錯人時還可以同時聲明異議</h2>
+  <div class="scene">
+    <p>甲聲請假扣押乙的財產，執行處沒看謄本，把登記在丙名下的 A 地也查封了。丙很火。</p>
+    <p class="q">假扣押執行中丙能提 §15 嗎？除了 §15 還能做什麼？要去哪個法院？</p>
+  </div>
+  <div class="flow">
+    <div class="b">§15 適用範圍：<b>所有</b>財產執行，含保全執行（任何執行都可能執行到非債務人的財產）</div>
+    <div class="br"></div>
+    <div class="b dim">對照 §14：不適用保全執行（假扣押必有本案訴訟，實體爭執去本案解決）</div>
+    <div class="br"></div>
+    <div class="b">執行處違背<b>責任財產外觀認定原則</b>（不動產看登記、動產看占有）</div>
+    <div class="br"></div>
+    <div class="b ok">程序瑕疵 → §12 聲明異議（執行處）</div><div class="a lbl">並行</div>
+    <div class="b ok">實體瑕疵 → §15 第三人異議之訴（民事庭）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§15 骨架：原告第三人；被告債權人（債務人亦否認其權利時並列為共同被告）；向<b>執行處所屬法院之民事庭</b>起訴——條文寫「執行法院」，在 §14、§15 都指民事庭，是民訴 §1 以原就被的例外，執行在台中地院就在台中地院民事庭告，不用另找管轄。</p>
+    <p>不動產違反外觀認定較少（謄本很清楚），動產（債務人沒占有卻被執行）較常見。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題常問「得否並行」——可以，甚至同時：在執行處聲明異議，又去隔壁民事庭起訴。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-01-§15複習與適用範圍所有執行含保全執行vs§14不含與聲明異議競合違背責任財產外觀認定原則兩者並行管轄執行處所屬法院民事庭民訴§1例外.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>§15 要在「那個標的物」執行完之前告；拍定後只能要價金，不能撤銷拍賣</h2>
+  <div class="scene">
+    <p>執行乙的 A 地和 B 車。A 地已拍定給小明、價金還沒分；B 車還在查封中。丙說 A 地是他的。</p>
+    <p class="q">丙現在提 §15 來得及嗎？來得及的話能拿回 A 地嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="A 地執行時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="80" cy="70" r="5" class="dot"/>
+    <text x="80" y="48" text-anchor="middle">查封</text>
+    <text x="80" y="94" text-anchor="middle" class="mu">§15 ✓</text>
+    <circle cx="220" cy="70" r="5" class="dot acc"/>
+    <text x="220" y="48" text-anchor="middle">拍定（拍賣終結）</text>
+    <text x="220" y="94" text-anchor="middle" class="mu">仍可提 §15</text>
+    <text x="220" y="112" text-anchor="middle" class="mu">但只能要賣得價金</text>
+    <circle cx="360" cy="70" r="5" class="dot"/>
+    <text x="360" y="48" text-anchor="middle">價金分配</text>
+    <text x="360" y="94" text-anchor="middle" class="mu">滿足階段</text>
+    <circle cx="470" cy="70" r="5" class="dot"/>
+    <text x="470" y="48" text-anchor="middle">A 地終結</text>
+    <text x="470" y="94" text-anchor="middle" class="mu">§15 ✗ 另訴</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>院 2776：執行標的物經拍賣終結而<b>未將賣得價金交付債權人</b>時，該標的物之執行程序尚未終結，第三人仍得提 §15；但已終結之拍賣不能撤銷 → <b>僅得請求交付賣得價金，不得請求撤銷拍賣程序</b>。保護拍定人：動產善意受讓、不動產土地法 §43 登記絕對效力，第三人已喪失所有權。</p>
+    <p>個別程序終結後 → 不能提 §15（形成之訴沒有排除對象了）→ 另訴（§179、§184、國賠）。</p>
+    <p>訴訟標的價額：債權額與標的物價值取<b>低者</b>（91 年第 5 次決議）。有理由判決：不許對<b>該特定財產</b>執行（§14 是全面否定執行名義）；判決不當然使執行處分失效，原告要把判決正本<b>提出於執行法院</b>，執行處才會撤銷執行處分——民事庭和執行處是兩個單位。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「個別終結前」考過 N＋1 次。這題 A 地的 deadline 是 A 地做完，跟 B 車無關。拍定後能提不代表能拿回土地。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-02-§15時點個別終結前院2776拍賣終結未交價金仍得提但僅得請求賣得價金不得撤銷拍賣終結後另訴訴訟標的價額低者為準判決須提出於執行法院.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>違建四選項：賣掉就不能告，買的人要代位，代位要有債權關係</h2>
+  <div class="scene">
+    <p>甲執行乙占用的未辦保存登記 A 屋。四種情況：丙蓋的沒賣；丙賣給乙；丙賣給丁；丙賣給乙、乙再賣給丁。</p>
+    <p class="q">哪一個選項是錯的？</p>
+  </div>
+  <div class="tree"><ul>
+    <li class="hit"><span>A　丙出資興建、未出售 → 丙是所有權人，乙未取得所有權 → 丙得提 §15 ✓</span></li>
+    <li class="off"><span>B　丙出售於<b>乙（債務人）</b> → 丙<b>不得</b>（50 台上 1236：錢拿了、只剩形式所有權空殼，對乙的債權人有忍受義務）→ 選項說「得」→ <b>錯，答案 B</b></span></li>
+    <li class="hit"><span>C　丙出售於<b>丁（第三人）</b>，執行乙占用的 A 屋＝錯誤執行 → 丁無所有權（違建只能移轉事實上處分權）不能直接提 → <b>代位丙</b>提 §15（48 台上 209）✓</span></li>
+    <li class="hit"><span>D　丙→乙→丁 → 丁<b>不得</b>代位丙：丙丁間無債權債務關係（民法 §242 代位以債權為前提）→ 這是民法題 ✓</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>解法：先把「違建」拿掉——一般已登記不動產，非債務人的所有權人被執行當然 §15；再加回違建：買受人沒有所有權，實務想辦法讓他救濟 → 代位。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>表面考執行法、實際考民法（代位權）或民訴的題目不少。D 選項的關鍵不在違建，在「丙丁之間有沒有債權」。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-03-違建執行選擇題複習丙出資未售得提售予債務人乙不得50台上1236售予第三人丁代位48台上209乙再轉售丁不得代位無債權關係民法§242.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>申論題：拍賣抵押物裁定不畫圖，改成確定判決就要畫圖——時效在起訴前完成會被遮斷</h2>
+  <div class="scene">
+    <p>甲把爸爸丙送的台南土地設定最高限額抵押給乙、簽本票，到期 90/6/1 沒還。乙拿拍賣抵押物裁定執行。甲說債權罹於時效；丙說兒子不孝、我已撤銷贈與。第二小題把執行名義改成本票債權的確定判決，乙是 93/7/1 才起訴的。</p>
+    <p class="q">甲、丙各怎麼救濟？第二小題甲還能告嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">執行三要素：乙→甲／§4 I ⑤ 拍賣抵押物裁定（對物，只能執行該地）／台南土地</div>
+    <div class="br"></div>
+    <div class="b">甲：時效＝實體</div><div class="a"></div>
+    <div class="b ok">§14 ＋ §18 II；裁定無既判力 → <b>不畫圖</b></div>
+    <div class="br"></div>
+    <div class="b dim">另有：對裁定抗告；釋字 182 確認抵押權不存在之訴（亦得停止執行）</div>
+    <div class="br"></div>
+    <div class="b">丙：撤銷贈與、地是我的</div><div class="a"></div>
+    <div class="b ok">§15 ＋ §18 II</div>
+    <div class="br"></div>
+    <div class="b">第二小題：確定判決（§4 I ①）→ 有既判力 → <b>畫圖</b></div>
+    <div class="br"></div>
+    <div class="b no">本票對發票人時效 3 年：90/6/1 → 93/6/1 完成；乙 93/7/1 起訴 → 時效在<b>基準時前</b>完成、甲本案未抗辯 → 遮斷 → 不得 §14，另訴</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>要畫基準時圖的只有三種執行名義：確定判決、訴訟上和解、訴訟上調解。拍賣抵押物裁定、支付命令、本票裁定都不畫。</p>
+    <p>講義 152 頁概念解析：時效以<b>完成時</b>為異議事由發生時點，完成在基準時前又沒抗辯 → 被遮斷，不能把時效抗辯「憋到執行階段當大招」。對照：抵銷以<b>行使時</b>為準（上堂卡 6）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>讀題先抓三要素，再把不同角色的主張切開（債務人→§14、第三人→§15）。原告被告、甲乙不要寫反，電腦作答打完整體檢查一次。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-04-申論題拍賣抵押物裁定執行時效抗辯§14不畫圖另有抗告釋字182確認抵押權不存在之訴父撤銷贈與§15改確定判決本票3年時效起訴前完成遭遮斷.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>§14-1：人找錯了——債務人用第一項，債權人被打槍用第二項，跟 §4-2 綁在一起</h2>
+  <div class="scene">
+    <p>債務人死了，債權人對他兒子執行，兒子說「我早就拋棄繼承」。另一邊，資產管理公司買了銀行的債權去聲請執行，執行處說「你不是判決書上的債權人」裁定駁回。</p>
+    <p class="q">兒子怎麼救濟？資產管理公司怎麼救濟？同名同姓被執行的人呢？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>三種實體瑕疵一蘿蔔一坑（講義 131 頁）</span>
+      <ul>
+        <li><span>執行<b>名義</b>瑕疵 → §14</span></li>
+        <li class="hit"><span>執行<b>主體</b>瑕疵（人找錯）→ <b>§14-1</b>，對應 §4-2（執行力主觀範圍＝民訴 §401 既判力主觀範圍）</span>
+          <ul>
+            <li class="hit"><span>I　原告<b>債務人</b>（拋棄繼承、否認債務承擔）→ 對債權人 → 民事庭 → <b>整個</b>終結前 → 得 §18 II 停止執行</span></li>
+            <li class="hit"><span>II　原告<b>債權人</b>（依 §4-2 聲請被裁定駁回：債權受讓人）→ 對債務人 → 民事庭 → 駁回裁定送達後 <b>10 日</b>不變期間 → 許可執行之訴，無停止問題</span></li>
+          </ul>
+        </li>
+        <li><span>執行<b>客體</b>瑕疵（財產執行錯）→ §15</span></li>
+        <li class="off"><span>同名同姓躺著中槍＝<b>同一性爭執</b> → 程序瑕疵 → §12 聲明異議，不是 §14-1</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>懂 §4-2 就知道何時用 §14-1：繼承人、占有人（債務人的員工、保全、清潔人員都算，可施強制力）、為他人而為當事人之該他人、繼受人（債權讓與、債務承擔）都是執行力所及。不在 §4-2 範圍卻被執行 → §14-1 I；在範圍卻被執行處拒絕 → §14-1 II。</p>
+    <p>條文倒著規定：債務人在前（I）、債權人在後（II）。I 項廣義上還是債務人異議之訴，時點跟 §14 一起記＝整個終結前。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>停止執行是向<b>民事庭</b>聲請、拿裁定到執行處；執行處自己不能決定停止。「要告都去隔壁」。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-05-§14-1執行當事人不適格對應§4-2即民訴§401三種實體瑕疵一蘿蔔一坑I債務人整個終結前II債權人許可執行之訴10日同一性爭執用聲明異議.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>支付命令題：從未欠款走 §14（＋民訴 §521 III）；沒收到支付命令 → 它根本不是執行名義</h2>
+  <div class="scene">
+    <p>甲持 A 法院核發、已附確定證明書的支付命令，執行乙的動產和土地。乙說一：我從來沒欠你錢。乙說二：我根本沒收到支付命令。</p>
+    <p class="q">兩種主張各用什麼救濟？執行處要不要審查支付命令有沒有合法送達？</p>
+  </div>
+  <div class="flow">
+    <div class="b">支付命令＋確定證明書＝§4 I ② 執行名義（民訴 §521：104 年後<b>只有執行力、無既判力</b>）</div>
+    <div class="br"></div>
+    <div class="b">「從未欠款」＝實體</div><div class="a"></div>
+    <div class="b ok">§14 債務人異議之訴（無既判力不畫圖）</div>
+    <div class="br"></div>
+    <div class="b ok">＋民訴 §521 III 確認債權不存在之訴（亦得停止執行）</div>
+    <div class="br"></div>
+    <div class="b">「沒收到」→ 支付命令不得公示送達、不得於國外送達；未合法送達 → 20 日異議期間不起算、三個月內未送達即<b>失效</b></div>
+    <div class="br"></div>
+    <div class="b no">未確定 → 不是執行名義 → 執行法院<b>應審查</b>（81 台抗 114：執行名義是否成立，執行法院得審查，不受確定證明書拘束）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>邏輯鏈：沒合法送達 → 不會確定 → 不是執行名義 → 執行處不能發動。執行名義是執行處「最重要的文件」，成立要件執行處有獨立審查權。</p>
+    <p>支付命令條號（民訴 §515、§516、§521）等民訴上到再回看；老師說這種題考出來是送分題。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>81 台抗 114 上堂（卡 2）出現過，這堂又考一次——「號碼可以不記，內容一定要會」。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-06-支付命令練習題從未欠款§14加民訴§521III確認債權不存在之訴未合法送達即失效不確定非執行名義執行法院應審查81台抗114不得公示送達.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>強制處分：拘提三事由、管收五事由；管收不是抵債，是逼有錢人把錢吐出來</h2>
+  <div class="scene">
+    <p>債務人明明有錢卻裝窮，叫他報告財產他不報、調查不動產他亂講。另一位是演唱會歌手，判決命他履行卻一直不唱。</p>
+    <p class="q">執行處能把人關起來嗎？關了可以抵債嗎？要誰簽字？</p>
+  </div>
+  <div class="vs">
+    <div><h4>拘提（強制到場）</h4>①合法通知無正當理由不到場 ②有事實足認顯有逃匿之虞 ③違反限制住居命令<br>①②另須有<b>必要性</b></div>
+    <div class="trap-c"><h4>管收（類似羈押）五事由</h4>①命報告財產狀況而不報告或虛偽報告 ②顯有履行可能而<b>故不履行</b> ③就應執行之財產有<b>隱匿、處分</b>之情事 ④不動產現況調查無正當理由拒絕陳述或虛偽陳述 ⑤不可代替行為、不作為義務（§128、§129：處怠金或管收）</div>
+    <div class="rule-c"><h4>限制住居</h4>事由＝管收②③（故不履行、隱匿處分財產）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>程序：都是人身自由限制 → <b>法官保留</b>（事務官要報請法院）＋<b>令狀主義</b>（拘票、管收票，法官簽名）→ 執達員執行；未規定者準用刑訴。</p>
+    <p>管收期間不得逾 <b>3 個月</b>；有新管收原因得再行管收，以<b>一次</b>為限。不得管收／停止管收：一家生計難以維持、懷胎五月以上或生產後二月未滿、罹病恐因管收不能治療。釋放：原因消滅、提供擔保、期限屆滿、執行完畢。</p>
+    <p>§25 I：債務人履行債務之義務不因被管收而免除——<b>管收不能抵債</b>。前四個事由背後都是「你有錢但藏起來／不配合」，所以被管收的通常不是窮人；新聞上多半是行政執行（欠稅大老闆），「關一個禮拜家人就拿錢來救」。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題幾乎沒考過強制處分，申論、執達員考試會考（112 年執達員：拘提要件）。至少記第⑤個：不可代替行為 → 怠金或管收。流程圖在講義 395 頁。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-07-強制處分拘提三事由加必要性管收五事由管收不能抵債法官保留令狀主義拘票管收票三個月再行管收一次不得管收釋放事由限制住居二事由準用刑訴.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>準債務人與具保證書人：沒欠錢也可能被拘提管收，當保人會被直接執行</h2>
+  <div class="scene">
+    <p>債務人是未成年人，執行處要管收他的法定代理人。另一位朋友幫債務人出具保證書代替供擔保，保證書上寫「債務人不履行時由我負責」。</p>
+    <p class="q">法定代理人沒欠錢，可以對他拘提管收嗎？保證人會怎樣？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§25 II 準債務人：關於債務人拘提、管收、限制住居、報告及其他應負義務之規定，於下列之人亦適用</span>
+      <ul>
+        <li><span>① 債務人為無行為能力或限制行為能力人 → <b>法定代理人</b></span></li>
+        <li><span>② 債務人失蹤 → <b>財產管理人</b></span></li>
+        <li><span>③ 債務人死亡 → <b>繼承人、遺產管理人、遺囑執行人、特別代理人</b></span></li>
+        <li><span>④ 法人或非法人團體 → <b>負責人</b>；獨資商號 → <b>經理人</b></span></li>
+        <li class="off"><span>§25 III：喪失資格或解任<b>前</b>有事由者，解任<b>後</b>於執行必要範圍內仍得命其履行或拘提管收限制住居</span></li>
+      </ul>
+    </li>
+    <li><span>§23 具保證書人</span>
+      <ul>
+        <li><span>I 債務人應供之擔保，執行法院得許由<b>該管區域內有資產之人</b>具保證書代之</span></li>
+        <li class="off"><span>II 保證書載明債務人逃亡或不履行時由其負責清償或賠償一定金額者 → 執行法院得因債權人聲請<b>逕向具保證書人強制執行</b></span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>準債務人都是「管理人、代理人、負責人」這類替債務人掌握財產的人，所以債務人的義務（報告財產、到場、受管收）他們也要負。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>99.9% 的保證書都會寫「債務人不履行由我負責」，所以當保人等於直接變成被執行人。「任何情況都不要去當保人。」</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-08-準債務人§25II法定代理人財產管理人繼承人負責人經理人亦得拘提管收III解任後仍得具保證書人§23區域內有資產保證書載明得逕對其執行.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>參與分配入門：錢都變現金之後怎麼分——§31 分配表、§32 三個時間點、要有執行名義</h2>
+  <div class="scene">
+    <p>甲一聲請執行乙的財產。甲二、甲三看到了也想分一杯羹。甲二只有一張借據和 LINE 對話；甲三拿著一個還沒到期的將來給付勝訴判決。</p>
+    <p class="q">甲二、甲三能來參與分配嗎？要用什麼方式、什麼時候前來？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>金錢債權執行：查封 → 換價 → 滿足。第 2～6 節依財產種類只規定查封換價；<b>滿足統一規定在第 1 節參與分配</b>（都變錢了沒差別）；只有金錢債權才有分配問題</span></li>
+    <li><span>§31 多數債權人 → 執行法院作成<b>分配表</b>（次序：稅捐 → 執行費 → 實行抵押費用 → 抵押權等優先 → 普通債權；講義 399 頁）、指定分配期日（匯款）、期日 <b>5 日前</b>繕本交付並任其閱覽</span></li>
+    <li><span>參與分配五要件</span>
+      <ul>
+        <li><span>①金錢債權 ②終局執行 ③同一債務人</span></li>
+        <li class="off"><span>④債權<b>已屆清償期</b>：§4 II 將來給付判決期限未屆至不得聲請執行，也不得據以參與分配 → 甲三 ✗</span></li>
+        <li class="off"><span>⑤有<b>執行名義</b>（§34 I）：借據、合約、LINE 都不行 → 甲二 ✗（例外：抵押權人，卡 10）</span></li>
+      </ul>
+    </li>
+    <li><span>§32 I 三個時間點（＝<b>基準時</b>）：拍賣變賣終結、交債權人承受、不經拍賣者分配表作成，各「之日一日前」，以<b>書狀</b>聲明（口頭 ✗）</span></li>
+    <li class="hit"><span>§32 II 逾基準時 → 僅得就前項債權人受償<b>餘額</b>受清償（群團二）；就債務人<b>其他財產</b>執行時按<b>債權額比例</b>平均受償</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><b>基準時 ≠ 最晚時點</b>：逾基準時還是能參與分配（只是列群團二、分剩的）；真正的最晚是<b>整個執行程序終結前</b>——已分配完的部分不重來，只能分還沒分完的。</p>
+    <p>程序：書狀、證明文件、執行費千分之八（§28-2 II，參與分配不打折）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「平均受償」是按<b>債權額比例</b>，不是除以人數。「口頭聲明參與分配」考過，錯。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-09-金錢債權執行體系查封換價滿足滿足規定於第一節參與分配§31分配表分配期日5日前繕本§32I三基準時書狀要式II逾期僅就餘額要件五最晚整個終結前.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>抵押權人是天選之人：不用執行名義、不管到期沒、不來也強制列入——因為抵押權會被塗銷</h2>
+  <div class="scene">
+    <p>執行處要拍乙的房子，調謄本發現銀行有第一順位抵押，貸款要到 130 年才到期。銀行說「我不想來」。</p>
+    <p class="q">銀行沒有執行名義、債權沒到期、人不想來，執行處怎麼處理？為什麼？</p>
+  </div>
+  <div class="flow">
+    <div class="b">§98 III <b>塗銷主義</b>：不動產上抵押權及其他優先受償權<b>因拍賣而消滅</b>（拍定人買到乾淨的房子）</div>
+    <div class="br"></div>
+    <div class="b">抵押權要被塗銷 → 怎麼保護抵押權人？</div>
+    <div class="br"></div>
+    <div class="b ok">把他抓進來先分錢＝<b>強制列入參與分配</b>（§34 II、III）</div>
+    <div class="br"></div>
+    <div class="b ok">§34 II：不須執行名義，提出<b>權利證明文件</b>即可；<b>不問債權是否屆清償期</b></div>
+    <div class="br"></div>
+    <div class="b ok">§34 III：知有抵押權人應<b>通知</b>（不知住所則公告）；經通知未聲明 → 執行法院就<b>已知債權及金額列入分配</b>；執行費從執行所得扣繳</div>
+    <div class="br"></div>
+    <div class="b no">§34 IV：不聲明又金額非法院所知 → 優先受償權因拍賣消滅；已列入而未受償部分亦同</div>
+    <div class="br"></div>
+    <div class="b dim">§34 V 通知各債權人及債務人；§34-1 政府機關公法上金錢債權（欠稅、健保費、罰單）得檢附證明參與分配，依特別法定優先次序</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>一般債權人要先去拿到確定判決、確定支付命令、本票裁定之類的執行名義才能來分錢；抵押權人（講義：擔保物權或優先受償權人，含質權、留置權、船舶優先權）連拍賣抵押物裁定都不用拿。</p>
+    <p>原因只有一個：<b>§98 III 抵押權會因拍賣而消滅</b>。既然要塗銷，就一定要讓他先分到錢。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題「99.9% 考抵押權人」。不用執行名義 ≠ 什麼都不用：還是要提出權利證明文件（設定抵押的文件）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-10-抵押權人參與分配不須執行名義§34II不問清償期強制列入III通知不來亦列入執行費扣繳IV不聲明且不知則消滅原因§98III塗銷主義§34-1公法上金錢債權.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>分錢的次序：找基準時（拍定日前一天）、分群團、同群團按比例；每個財產重新分一次</h2>
+  <div class="scene">
+    <p>甲一（債權 100 萬）3/1 聲請執行；甲二（300 萬）3/2、甲三（100 萬）3/11 聲明參與分配。A 車 3/10 拍定得 200 萬，B 車 4/1 拍定得 120 萬。</p>
+    <p class="q">A 車的 200 萬誰先拿？B 車呢？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="A 車基準時">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="70" cy="70" r="5" class="dot"/>
+    <text x="70" y="48" text-anchor="middle">3/1 甲一</text>
+    <text x="70" y="94" text-anchor="middle" class="mu">群團一</text>
+    <circle cx="160" cy="70" r="5" class="dot"/>
+    <text x="160" y="48" text-anchor="middle">3/2 甲二</text>
+    <text x="160" y="94" text-anchor="middle" class="mu">群團一</text>
+    <circle cx="290" cy="70" r="5" class="dot acc"/>
+    <text x="290" y="48" text-anchor="middle">3/9 基準時</text>
+    <text x="290" y="94" text-anchor="middle" class="mu">＝拍定日 3/10 前一天</text>
+    <circle cx="430" cy="70" r="5" class="dot"/>
+    <text x="430" y="48" text-anchor="middle">3/11 甲三</text>
+    <text x="430" y="94" text-anchor="middle" class="mu">群團二</text>
+    <text x="260" y="130" text-anchor="middle" class="mu">A 車 200 萬：群團一先分，甲一：甲二＝1：3 → 50 萬、150 萬；甲三 0</text>
+  </svg>
+  <div class="vs">
+    <div class="rule-c"><h4>A 車（基準時 3/9）</h4>甲一 50 萬（餘 50）／甲二 150 萬（餘 150）／甲三 0（餘 100）</div>
+    <div class="rule-c"><h4>B 車（基準時 3/31，<b>重新認定</b>）</h4>三人都在 3/31 前 → 全是群團一 → 按<b>餘額</b>比例 50：150：100＝1：3：2 → 20、60、40 萬（餘 30、90、60）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>立法例：平等主義（不分先後按比例）vs 優先主義（早起的鳥兒有蟲吃）；我國採<b>折衷主義（群團優先）</b>：基準時前加入＝群團一，優先於群團二；同群團內按債權額比例。</p>
+    <p>三個基準時（§32 I）：①拍賣或變賣終結之日前一日＝<b>拍定日前一天</b>（九成題目用這個；當天太忙所以往前一天）②依法交債權人承受之日前一日（賣不掉以底價作價抵債）③不經拍賣變賣者，分配表作成之日前一日。</p>
+    <p><b>拍賣終結</b>（槌子敲下、買賣契約成立）≠ <b>拍賣程序終結</b>（拍定人繳足價金取得所有權、換價階段整個結束）。基準時用前者；§15 個別程序終結（卡 2）看後者。</p>
+    <p><b>群團零</b>：抵押權人等優先受償權人實體法上本來就優先，不受基準時影響，姍姍來遲也排最前面。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>基準時<b>跟著標的物</b>，每個財產認定一次 → 群團會重組：A 車的群團二到 B 車可能變群團一。第二輪用<b>受償餘額</b>算比例，所以第一輪要把每個人剩多少算出來。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-11-分配方式折衷主義群團優先基準時拍定日前一日承受日前一日分配表作成日前一日拍賣終結vs拍賣程序終結群團零抵押權人不受影響A車B車實例群團重組.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>參與分配 vs 併案執行：查封只查一次，先程序停了後程序照跑；行政執行也是後案併前案</h2>
+  <div class="scene">
+    <p>甲執行乙的房屋（A 事件），第三人丙提 §15 並供擔保，法院裁定停止執行。停止期間丁也來聲請執行同一房屋（B 事件），併入 A。丁說：我要繼續執行。</p>
+    <p class="q">執行處要不要再查封一次？丁能續行嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">§33 立法意旨：<b>禁止雙重查封</b>——已實施執行行為之效力於聲請時及於後聲請之他債權人 → 合併程序、依 §31、§32 分配（後案併前案，§56）</div>
+    <div class="br"></div>
+    <div class="b">後執行程序於聲請時生<b>潛在查封效力</b></div>
+    <div class="br"></div>
+    <div class="b">先程序撤回或撤銷 → 潛在效力<b>顯現</b>（甲一撤回不能啟封，甲二還在）</div>
+    <div class="br"></div>
+    <div class="b ok">座談會：丁<b>得續行</b>——後執行程序獨立、與先執行債權人地位相同；停止裁定效力僅及於<b>兩造（丙、甲）與 A 事件</b>，不及於丁；丁的執行名義是什麼都一樣</div>
+    <div class="br"></div>
+    <div class="b dim">行政執行競合 §33-1、§33-2：行政先查封 → 民事卷宗函送行政執行機關合併；民事先查封 → 行政函送執行法院；先者不續行時卷宗送回後者續行</div>
+  </div>
+  <div class="vs">
+    <div><h4>§32 參與分配</h4><b>附隨</b>於執行債權人之程序（理論上失所附麗）；<b>優先受償權人不須執行名義</b>（但不能單獨聲請執行）；書狀寫「聲明參與分配」</div>
+    <div class="rule-c"><h4>§33 併案執行</h4><b>獨立</b>程序（本有單獨查封效力 → 潛在效力顯現）；聲請人<b>一律須有執行名義</b>；書狀寫「聲請強制執行」。執行費同、最後都做分配表分群團</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>注意事項 §16 I：執行債權人撤回時，依 §34 I 聲明參與分配之他債權人<b>得聲請繼續執行</b>——補一個聲請就好，不必另案重來。所以參與分配跟併案執行實際上幾乎沒差。注意事項 §18 III：撤回時原執行處分對再聲請執行之他債權人繼續有效（§33 本有）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>停止裁定「停的是裁定上寫的那兩造、那個事件」，不是整棟房子不能動。下堂從「國字五 分配程序」（分配表異議）開始。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">05-筆記-12-參與分配§32vs雙重聲請執行併案§33禁止雙重查封後案併前案潛在查封效力座談會停止裁定不及於後執行債權人注意事項§16I得聲請續行行政執行競合§33-1§33-2.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>
