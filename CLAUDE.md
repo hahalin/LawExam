@@ -49,3 +49,8 @@ epub / pdf 轉換目前不需要，不要主動提。
 ## 環境
 - 執行環境是 Linux（透過 Claude 掛載 D:\repo\LawExam），用 `python3`，已有 beautifulsoup4。
 - mermaid 圖請依 `.github/instructions/mermaid.instructions.md`。
+
+## 網站（GitHub Pages：https://hahalin.github.io/LawExam/）
+- `index.html`（左科目、上課堂活頁）與 `toc.json` 由 `python scripts/build_index.py` 產生；README「課程字幕與筆記」段由 `python scripts/build_readme.py` 產生。**每做完一堂（或改了筆記檔名）兩支都要重跑**。
+- 字幕與分主題筆記一律維持 md，網站用 `note.html?f=路徑` 即時排版（marked.js），不另做筆記 html。
+- repo 根目錄 `.nojekyll` 不可刪（否則 `_eli5/` 不會發佈）。

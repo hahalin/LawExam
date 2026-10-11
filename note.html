@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>筆記</title>
+<style>
+:root{--bg:#f7f7f4;--fg:#1f2328;--mu:#646a71;--card:#fff;--line:#e2e2dc;--acc:#2f6f8f;--acc-bg:#e3eef3;--code:#f0f0eb;--q:#f3f6f8;--mark:#fff3c4}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171a;--fg:#e6e6e3;--mu:#9a9fa5;--card:#1f2225;--line:#32363a;--acc:#7fb6d1;--acc-bg:#1d3440;--code:#25292d;--q:#1b2730;--mark:#4a4220}}
+:root[data-theme="dark"]{--bg:#15171a;--fg:#e6e6e3;--mu:#9a9fa5;--card:#1f2225;--line:#32363a;--acc:#7fb6d1;--acc-bg:#1d3440;--code:#25292d;--q:#1b2730;--mark:#4a4220}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 system-ui,"Noto Sans TC","PingFang TC",sans-serif}
+header{position:sticky;top:0;z-index:3;background:var(--bg);border-bottom:1px solid var(--line)}
+header .in{max-width:860px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+header a{color:var(--acc);text-decoration:none;font-weight:600}
+header .where{color:var(--mu);font-size:.9rem;margin-right:auto}
+.pill{border:1px solid var(--line);border-radius:999px;padding:2px 12px;font-size:.85rem;font-weight:500}
+.pill.eli{background:var(--acc-bg);border-color:transparent}
+main{max-width:860px;margin:0 auto;padding:20px 16px 32px}
+article{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 26px;overflow-wrap:anywhere}
+article h1{font-size:1.05rem;line-height:1.8;margin:0 0 8px;font-weight:500}
+article h1:first-child{font-size:1.05rem;padding-bottom:10px;border-bottom:1px solid var(--line)}
+article h2{font-size:1.15rem;margin:28px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--line)}
+article h3{font-size:1.02rem;margin:22px 0 6px}
+article p{margin:8px 0}
+article hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+article blockquote{margin:10px 0;padding:8px 14px;background:var(--q);border-left:3px solid var(--acc);border-radius:0 6px 6px 0}
+article blockquote p{margin:4px 0}
+article code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:.9em}
+article pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;line-height:1.55}
+article pre code{background:none;padding:0;font-size:.88rem;white-space:pre}
+article ul,article ol{padding-left:1.4em;margin:8px 0}
+article li{margin:3px 0}
+article strong{color:var(--fg);background:linear-gradient(transparent 62%,var(--mark) 62%)}
+.tw{overflow-x:auto;margin:12px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;min-width:100%;font-size:.93rem}
+article th,article td{border:1px solid var(--line);padding:6px 10px;vertical-align:top;text-align:left}
+article th{background:var(--code);white-space:nowrap}
+article table td:first-child{min-width:9em}
+.pager{max-width:860px;margin:0 auto;padding:0 16px 48px;display:flex;gap:12px}
+.pager a{flex:1;display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--fg);text-decoration:none;font-size:.9rem;line-height:1.5}
+.pager a:hover{border-color:var(--acc)}
+.pager small{display:block;color:var(--acc);font-weight:600}
+.pager .next{text-align:right}
+.pager span.gap{flex:1}
+.msg{color:var(--mu)}
+.src{display:block;text-align:right;font-size:.82rem;margin-top:14px;color:var(--mu)}
+.src a{color:var(--mu)}
+@media (max-width:600px){article{padding:16px 14px}main{padding:12px 10px 24px}.pager{flex-direction:column;padding:0 10px 32px}.pager .next{text-align:left}}
+</style></head><body>
+<header><div class="in"><a id="back" href="index.html">← 目錄</a><span class="where" id="where"></span><a class="pill eli" id="eli" hidden>🌐 ELI5</a></div></header>
+<main><article id="doc"><p class="msg">載入中…</p></article>
+<span class="src" id="src"></span></main>
+<nav class="pager" id="pager"></nav>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script>
+const BLOB = 'https://github.com/hahalin/LawExam/blob/master/';
+const $ = id => document.getElementById(id);
+const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const f = new URLSearchParams(location.search).get('f') || '';
+const enc = p => p.split('/').map(encodeURIComponent).join('/');
+async function main(){
+  if (!/^課程字幕\/[^?#]+\.md$/.test(f) || f.includes('..')) { $('doc').innerHTML = '<p class="msg">找不到這份筆記。</p>'; return; }
+  $('src').innerHTML = `<a href="${BLOB + enc(f)}">在 GitHub 看原始檔</a>`;
+  let toc = [];
+  try { toc = await (await fetch('toc.json', {cache:'no-cache'})).json(); } catch(e) {}
+  let ctx = null;
+  for (const s of toc) for (const l of s.lessons) {
+    if (l.sub.path === f) ctx = {s, l, kind:'sub'};
+    l.notes.forEach((n, i) => { if (n.path === f) ctx = {s, l, kind:'note', i}; });
+  }
+  if (ctx) {
+    const {s, l} = ctx;
+    $('back').textContent = `← ${s.label}${l.n}`;
+    $('back').href = 'index.html#' + encodeURIComponent(s.id) + '/' + l.n;
+    $('where').textContent = ctx.kind === 'sub' ? '課程字幕' : `分主題筆記 ${l.notes[ctx.i].no} / ${l.notes.length}`;
+    if (l.eli) { $('eli').href = l.eli; $('eli').hidden = false; }
+    if (ctx.kind === 'note') {
+      const p = l.notes[ctx.i - 1], n = l.notes[ctx.i + 1];
+      const link = (x, cls, lab) => `<a class="${cls}" href="${x.url}"><small>${lab}</small>${x.no}　${esc(x.t)}</a>`;
+      $('pager').innerHTML = (p ? link(p, 'prev', '← 上一份') : '<span class="gap"></span>') + (n ? link(n, 'next', '下一份 →') : `<a class="next" href="${$('back').href}"><small>本堂讀完</small>回 ${esc(s.label)}${l.n} 目錄</a>`);
+      document.title = `${s.label}${l.n}-${l.notes[ctx.i].no} ${l.notes[ctx.i].t.slice(0, 20)}`;
+    } else document.title = `${s.label}${l.n} 課程字幕`;
+  }
+  let text;
+  try { const r = await fetch(enc(f)); if (!r.ok) throw 0; text = await r.text(); }
+  catch(e) { $('doc').innerHTML = '<p class="msg">讀取失敗，請重新整理或改到 GitHub 看原始檔。</p>'; return; }
+  if (!window.marked) { $('doc').innerHTML = '<pre></pre>'; $('doc').firstChild.textContent = text; return; }
+  $('doc').innerHTML = marked.parse(text, {gfm: true, breaks: true});
+  $('doc').querySelectorAll('table').forEach(t => { const w = document.createElement('div'); w.className = 'tw'; t.replaceWith(w); w.appendChild(t); });
+  $('doc').querySelectorAll('a[href]').forEach(a => {
+    const h = a.getAttribute('href');
+    if (/^https?:/.test(h)) { a.target = '_blank'; a.rel = 'noopener'; }
+    else if (/\.md$/.test(h) && !h.includes('://')) { const base = decodeURIComponent(new URL('.', location.href).pathname); const u = decodeURIComponent(new URL(h, new URL(enc(f), location.href)).pathname); if (u.startsWith(base)) a.href = 'note.html?f=' + encodeURIComponent(u.slice(base.length)); }
+  });
+}
+main();
+</script>
+</body></html>

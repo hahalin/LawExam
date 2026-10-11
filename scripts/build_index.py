@@ -1,4 +1,4 @@
-"""產生 repo 根目錄 index.html（GitHub Pages 首頁）：各科、各課分節，列出課程字幕 md、ELI5 網頁、分主題筆記 md。
+"""產生 repo 根目錄 index.html 與 toc.json（note.html 用來做上一份／下一份）（GitHub Pages 首頁）：各科、各課分節，列出課程字幕 md、ELI5 網頁、分主題筆記 md。
 用法：python scripts/build_index.py
 md 檔連到 GitHub 頁面（才有 markdown 排版）；ELI5 用相對路徑在 Pages 上開。"""
 import os, re, html, urllib.parse as up
@@ -33,11 +33,12 @@ for d, label, prefix in SUBJECTS:
     ls = []
     for l in lessons(d, prefix):
         ls.append(dict(n=l['n'], theme=l['theme'],
-                       sub=dict(name=l['sub_name'], url=BLOB + q(l['sub_md'])),
+                       sub=dict(name=l['sub_name'], path=l['sub_md'], url='note.html?f=' + q(l['sub_md'])),
                        eli=q(l['eli']) if l['eli'] else None,
-                       notes=[dict(no=no, t=t, url=BLOB + q(p)) for no, t, p in l['notes']]))
+                       notes=[dict(no=no, t=t, path=p, url='note.html?f=' + q(p)) for no, t, p in l['notes']]))
     data.append(dict(id=d, label=label, lessons=ls))
 DATA = json.dumps(data, ensure_ascii=False).replace('</', '<\\/')
+json.dump(data, open(os.path.join(ROOT, 'toc.json'), 'w', encoding='utf-8'), ensure_ascii=False)
 
 page = r"""<!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -91,7 +92,7 @@ ol a:hover{color:var(--acc)}
 }
 </style></head><body>
 <aside><h1>司律課程筆記</h1><div id="subjects" role="tablist" aria-label="科目"></div>
-<p class="foot">字幕、筆記連到 GitHub 檢視；ELI5 在本站開。「懂了」勾選只存在各裝置的瀏覽器。</p></aside>
+<p class="foot">字幕、筆記、ELI5 都在本站開。「懂了」勾選只存在各裝置的瀏覽器。</p></aside>
 <div class="main"><nav class="tabs" id="tabs" role="tablist" aria-label="課堂"></nav>
 <div class="panel"><div class="sheet" id="sheet" role="tabpanel"></div></div></div>
 <script>
