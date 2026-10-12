@@ -13,6 +13,23 @@ ORDER = ['民法', '強制執行法', '民事訴訟法', '刑法', '刑訴', '�
 
 def q(p): return up.quote(p)
 def natkey(s): return [int(t) if t.isdigit() else t for t in re.split(r'(\d+)', s)]
+def md_title(path, fallback):
+    """取筆記第一個 # 大標題：去掉「民法14 筆記：」前綴、「——」後的摘要、粗體記號；沒有大標題就用 fallback。"""
+    try:
+        with open(path, encoding='utf-8') as fh:
+            for line in fh:
+                if line.startswith('# '):
+                    t = line[2:].strip()
+                    t = re.sub(r'^[^：:]{0,30}?筆記[：:]\s*', '', t)
+                    t = t.split('——')[0].replace('**', '').strip()
+                    t = re.sub(r'（[^（）]*講義[^（）]*）$', '', t).strip()
+                    return t or fallback
+                if line.strip() and not line.startswith('#'):
+                    break
+    except OSError:
+        pass
+    return fallback
+
 def eli5_sub(path):
     t = open(path, encoding='utf-8').read()
     m = re.search(r'<span class="sub">(.*?)</span>', t, re.S)
@@ -48,7 +65,8 @@ def scan_subject(d):
             n=i, tab=tab, title=(d + tab) if not rest and not d.startswith(tab) else tab, theme=theme,
             sub=dict(name=l['sub'], path=f"{base}/{l['sub']}", url='note.html?f=' + q(f"{base}/{l['sub']}")) if l['sub'] else None,
             eli=q(f"{base}/{l['eli']}") if l['eli'] else None,
-            notes=[dict(no=no, t=t, path=f'{base}/{f}', url='note.html?f=' + q(f'{base}/{f}')) for no, t, f in notes]))
+            notes=[dict(no=no, t=t if t.startswith('整堂筆記') else md_title(os.path.join(ROOT, base, f), t), fn=t,
+                        path=f'{base}/{f}', url='note.html?f=' + q(f'{base}/{f}')) for no, t, f in notes]))
     return out
 
 def scan():

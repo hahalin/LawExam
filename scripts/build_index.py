@@ -83,7 +83,7 @@ function renderSheet(){
   const pills = [l.sub ? `<a class="pill" href="${l.sub.url}">📄 課程字幕 ${esc(l.sub.name)}</a>` : `<span class="pill off">無字幕檔</span>`,
     l.eli ? `<a class="pill eli" href="${l.eli}">🌐 ELI5 網頁</a>` : `<span class="pill off">ELI5 尚未製作</span>`];
   const notes = l.notes.length
-    ? `<h3>筆記 ${l.notes.length} 份</h3><ol>${l.notes.map(n => `<li><a href="${n.url}"><b>${n.no || '•'}</b>${esc(n.t)}</a></li>`).join('')}</ol>`
+    ? `<h3>筆記 ${l.notes.length} 份</h3><ol>${l.notes.map(n => `<li><a href="${n.url}" title="${esc(n.fn || '')}"><b>${n.no || '•'}</b>${esc(n.t)}</a></li>`).join('')}</ol>`
     : `<p class="none">筆記尚未製作</p>`;
   $('sheet').innerHTML = `<h2>${esc(l.title)}</h2>${l.theme ? `<p class="theme">${esc(l.theme)}</p>` : ''}<div class="pills">${pills.join('')}</div>${notes}`;
 }

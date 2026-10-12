@@ -53,4 +53,6 @@ epub / pdf 轉換目前不需要，不要主動提。
 ## 網站（GitHub Pages：https://hahalin.github.io/LawExam/）
 - `index.html`（左科目、上課堂活頁）與 `toc.json` 由 `python scripts/build_index.py` 產生（掃描 `課程字幕/` 全部科目，規則在 `scripts/toc_lib.py`；新科目資料夾自動出現，排序在 ORDER）；README「課程字幕與筆記」段由 `python scripts/build_readme.py` 產生。**每做完一堂（或改了筆記檔名）兩支都要重跑**。
 - 字幕與分主題筆記一律維持 md，網站用 `note.html?f=路徑` 即時排版（marked.js），不另做筆記 html。
+- 目錄與上一份／下一份顯示的筆記標題取自筆記第一行 `#` 大標題（去掉「民法NN 筆記：」前綴、「——」後摘要、結尾的（講義…）），檔名只當滑鼠提示；要改目錄上的名字就改大標題。
+- `.github/workflows/pages.yml`：每次 push 到 master 自動重產 `index.html`、`toc.json` 並發佈 Pages（Settings → Pages → Source 須選 GitHub Actions）；不 commit 回 repo。README 仍需手動跑 `build_readme.py`。
 - repo 根目錄 `.nojekyll` 不可刪（否則 `_eli5/` 不會發佈）。
