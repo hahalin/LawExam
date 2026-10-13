@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>強制執行法02 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="強制執行法02">
+<main>
+
+<header class="lesson-head">
+  <h1>強制執行法02</h1>
+  <span class="sub">拍賣抵押物裁定・本票裁定・外國判決 §4-1・開始執行要件 §4 II III・時效・管轄 §7・主觀範圍 §4-2・繼承・合夥</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。這堂一半在講執行名義（種類、競合、條件、時效），一半在講主體（法院管轄、當事人與主觀範圍）。貫穿全堂的是分離原則：執行處只看執行名義，實體爭執一律去民事庭。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>拍賣抵押物裁定是對物的執行名義；土地抵押後所建房屋得聲請併付拍賣，但房屋價金無優先受償權</h2>
+  <div class="scene">
+    <p>100 年乙以 A 地為甲設定抵押，105 年乙在 A 地上蓋了 B 屋。甲持拍賣抵押物裁定聲請拍賣 A 地，因為地上有房子，一拍無人應買。</p>
+    <p class="q">甲能連 B 屋一起賣嗎？B 屋賣得 300 萬能優先拿嗎？A 地賣不夠，能再查封乙的存款嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">100 年：A 地設定抵押</div><div class="a"></div>
+    <div class="b">105 年：抵押後才蓋 B 屋</div><div class="a"></div>
+    <div class="b q">聲請併付拍賣（<span class="s">民 §877</span>），不必另取裁定</div>
+    <div class="br"></div>
+    <div class="b ok">A 地價金：抵押權人優先受償</div>
+    <div class="b no">B 屋價金：<b>無</b>優先受償權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>拍賣抵押物裁定（<span class="s">§4 I ⑤</span>）只能拿來執行擔保物；賣不夠的部分，要另外取得執行名義才能動債務人其他財產。併付拍賣由抵押權人聲請，執行處個案決定准不准。</p>
+    <p>查封時由債務人占有的，拍定後可以點交（<span class="s">§99</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>別和法定地上權（<span class="s">民 §876</span>）混淆：設定抵押時土地、房屋同屬一人，拍賣時視為有地上權；§877 是抵押「後」才蓋的房屋。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-01-拍賣抵押物裁定與併付拍賣.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>最高限額抵押所憑債權經判決確認不存在，執行處形式審查認尚有其他擔保債權時，不得駁回執行聲請</h2>
+  <div class="scene">
+    <p>甲對乙有最高限額抵押，憑 A 債權（附本票為證明）取得拍賣抵押物裁定。民事庭後來判決 A 債權不存在確定，但同判決理由提到還有一筆 B 借款 300 萬。乙向執行處聲明異議。</p>
+    <p class="q">執行處要駁回甲的執行聲請嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">非訟法院：裁定主文以<b>抵押物</b>為對象</div><div class="a"></div>
+    <div class="b no">民事庭：A 債權不存在確定</div><div class="a"></div>
+    <div class="b">執行處：形式審查 B 債權證明</div><div class="a"></div>
+    <div class="b ok">B 已屆清償期且存在 → 續行執行</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>大法庭的理由是分離原則：裁定由非訟法院作成，執行處受它拘束；裁定理由寫的是哪一筆債權，不影響主文的執行效力。執行處依其他債權證明做形式審查，也沒有取代非訟法院的職權。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>題目裡的本票不一定是執行名義，這裡它只是債權證明，執行名義是拍賣抵押物裁定。乙用的是 §12 聲明異議（程序），結論是「不得駁回」。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-02-最高限額抵押之執行名義.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>本票裁定合法送達生效即得聲請強制執行，不必確定；鄉鎮市調解書須經法院核定</h2>
+  <div class="scene">
+    <p>甲持乙簽發的 100 萬本票，3/1 取得本票裁定，3/5 送達乙，乙 3/8 提起抗告。另一案甲乙在鄉公所調解成立，調解書還沒送法院核定。</p>
+    <p class="q">甲 3/9 可以拿本票裁定聲請執行嗎？那份調解書呢？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>不必確定</h4>本票裁定（<span class="s">票據法 §123</span>）、假扣押假處分裁定、拍賣抵押物裁定</div>
+    <div class="trap-c"><h4>須確定</h4>判決、支付命令</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§4 I ⑥「其他法律規定」的執行名義，最重要的是本票裁定。其他還有：經法院核定的鄉鎮市調解書、國賠協議書、緩起訴命被告給付金錢、家事事件的和解調解與本案裁判。乙抗告不影響甲聲請執行。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>實務上書記官會要確定證明書，那是為了確認裁定已合法送達生效，不代表本票裁定要等確定。調解書沒經法院核定就不是執行名義。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-03-本票裁定與其他法律之執行名義§4I⑥.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>外國確定判決須經我國法院判決許可執行；被告未應訴但開庭通知已合法送達者，仍得執行</h2>
+  <div class="scene">
+    <p>美國法院判臺灣甲公司賠償 5,000 萬美元。甲公司收到合法送達的開庭通知，卻沒有出庭，判決確定。債權人來臺聲請執行。</p>
+    <p class="q">可以直接拿美國判決到執行處嗎？甲公司說「我沒出庭」有用嗎？法院要先查甲公司在臺灣有沒有財產嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">外國確定<b>給付</b>判決</div><div class="a"></div>
+    <div class="b q">我國民事庭：許可執行判決<small>審查民訴 §402 I 四款</small></div><div class="a"></div>
+    <div class="b ok">執行處：兩份合併為執行名義（結合說）</div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§402 I 不承認的四款</span><ul>
+      <li><span>依我國法外國法院無管轄權</span></li>
+      <li class="hit"><span>敗訴被告未應訴；但開庭通知合法送達或經我國協助送達 → 仍承認</span></li>
+      <li><span>內容或程序違背公序良俗</span></li>
+      <li><span>無相互承認（實務從寬）</span></li>
+      <li class="off"><span>債務人在臺灣有沒有財產：不在考慮範圍</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>依 §4-1，外國確定判決要經我國法院判決宣示許可執行；外國判決和許可判決兩份都要有，任何一份失效就不能執行。§4 I ① 的確定終局判決限於給付判決，夫妻同居判決雖然是給付判決，也不得執行（<span class="s">§128 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>果凍題：問「不需考慮」的是「債務人在我國有無財產」。沒出庭不等於不承認，要看但書的開庭通知。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-04-外國確定判決§4-1.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>同一債權有數執行名義，均屬有效；已受償後重複執行，債務人應提債務人異議之訴</h2>
+  <div class="scene">
+    <p>乙欠甲 100 萬。甲先作成可逕受強制執行的公證書，後來又取得給付判決。甲用公證書執行拿到 100 萬，隔月又拿判決聲請執行同一筆錢。</p>
+    <p class="q">執行處會擋下來嗎？乙要怎麼救濟？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>程序面</h4>甲手上有有效的執行名義，執行處只做形式審查 → 照收</div>
+    <div class="trap-c"><h4>實體面</h4>請求權已因清償消滅 → 乙到民事庭提債務人異議之訴（<span class="s">§14</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>執行名義競合採「新舊執行名義均有效」。銀行常同時有借款判決、本票裁定、拍賣抵押物裁定，都能用；但它們背後是同一個給付請求權，債只能還一次。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項寫「執行法院應駁回第二次聲請」→ 錯。重複執行在程序上沒有瑕疵，要用實體救濟，這也是分離原則。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-05-執行名義的競合.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>條件、期限、供擔保、對待給付是開始執行要件；未具備前得先聲請，開始執行前須補正</h2>
+  <div class="scene">
+    <p>判決命乙「於甲給付搬遷費 50 萬後遷讓房屋」，甲還沒付錢就去聲請執行。另一份判決命丙「於 117/1/1 給付 30 萬」，甲 116 年就去聲請。</p>
+    <p class="q">執行處會收件嗎？什麼時候才會真的去查封？</p>
+  </div>
+  <div class="flow">
+    <div class="b">聲請強制執行<small>可先收件、中斷時效</small></div><div class="a"></div>
+    <div class="b q">補正：提存書、對待給付證明、期限屆至</div><div class="a"></div>
+    <div class="b ok">開始執行（查封）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§4 II、III 都寫「始得<b>開始</b>強制執行」，是開始要件，不是成立要件。已為對待給付可用提存、執行法院證明書、公證證明（參 <span class="s">§130 II</span>）。解除條件成就時執行名義不會失效，債務人要提 §14；過怠條款由債務人舉證已按期履行。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>判決中被告抗辯的對待給付沒有執行力（要反訴）；和解筆錄約定的則有。期限未屆至不能開始執行，將來給付判決也一樣（考過）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-06-執行名義之附條件期限與對待給付.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>聲請強制執行中斷時效；經確定判決之短期時效重行起算延為五年，本票裁定不延長</h2>
+  <div class="scene">
+    <p>甲對乙有兩件：一件是侵權損害賠償（原時效 2 年）判決確定；另一件是本票裁定（3 年）。兩件都在 110 年聲請執行，111 年各發債權憑證。</p>
+    <p class="q">兩件的時效各從何時重算、各算幾年？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="時效中斷與重行起算時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="60" cy="70" r="5" class="dot"/>
+    <text x="60" y="48" text-anchor="middle">起訴</text>
+    <text x="60" y="94" text-anchor="middle" class="mu">中斷</text>
+    <circle cx="165" cy="70" r="5" class="dot"/>
+    <text x="165" y="48" text-anchor="middle">判決確定</text>
+    <text x="165" y="94" text-anchor="middle" class="mu">重行起算</text>
+    <circle cx="275" cy="70" r="5" class="dot acc"/>
+    <text x="275" y="48" text-anchor="middle">聲請執行</text>
+    <text x="275" y="94" text-anchor="middle" class="mu">再中斷</text>
+    <circle cx="385" cy="70" r="5" class="dot"/>
+    <text x="385" y="48" text-anchor="middle">債權憑證</text>
+    <text x="385" y="94" text-anchor="middle" class="mu">重行起算</text>
+    <line x1="385" y1="120" x2="500" y2="120" class="acc"/>
+    <text x="445" y="112" text-anchor="middle" class="mu">判決：5 年</text>
+    <text x="445" y="138" text-anchor="middle" class="mu">本票：3 年</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>執行名義本身沒有時效，要看背後的請求權；唯一例外是假扣押、假處分裁定，收受後 30 日內要聲請（<span class="s">§132 III</span>）。撤回或被駁回時視為不中斷。延為五年須：原時效不滿五年＋經確定判決或同一效力的執行名義確定（<span class="s">民 §137 III</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>本票裁定沒有確定判決效力，中斷後永遠是 3 年；15 年的請求權也不會縮成 5 年。時效完成後，執行處照樣執行，債務人要提 §14（考過）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-07-執行名義與消滅時效.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>強制執行由標的物所在地或執行行為地法院管轄；數法院有管轄權時擇一聲請，轄區外囑託執行</h2>
+  <div class="scene">
+    <p>甲對乙有 500 萬判決。乙住高雄，在基隆、高雄各有一筆土地，在臺南的公司上班領薪水。甲想同時向基隆、高雄、臺南三個法院聲請。</p>
+    <p class="q">可以三處同時聲請嗎？要執行薪水該找哪個法院？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">受理的法院<br>有沒有管轄權？</div>
+    <div class="out"><span class="tag">有</span><div class="b ok">擇一主辦（<span class="s">§7 III</span>），轄區外的土地<b>囑託</b>當地執行處（<span class="s">§7 IV</span>）</div></div>
+    <div class="out"><span class="tag">無</span><div class="b no">先查明，確定沒有才<b>裁定移送</b>（<span class="s">§30-1</span> 準用民訴 §28）；已做的執行行為非當然無效</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>執行管轄和民訴分開，民訴的合意管轄不及於執行。標的物所在地、執行行為地不明，才找債務人住所地（<span class="s">§7 II</span>）。商標權看債務人住所地，薪資看雇主公司所在地（本例是臺南）。移送裁定在實際執行行為同時或之後才送達債務人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不得以同一執行名義同時向多個法院聲請。無管轄權法院的執行行為不是當然無效，而是程序瑕疵，用 §12 聲明異議；程序終結後瑕疵就治癒了。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-08-執行機關與執行管轄§7.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>執行力主觀範圍與既判力相同，及於繼受人、占有人、實質當事人；各款執行名義均準用</h2>
+  <div class="scene">
+    <p>甲持對乙 100 萬的判決，判決確定後乙死亡，由丙繼承。另一案甲持本票裁定，後來甲自己過世，由丁繼承。</p>
+    <p class="q">執行名義上沒有丙、丁的名字，丙能被執行嗎？丁能拿去聲請嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§4-2 主觀範圍</span><ul>
+      <li><span>① 形式當事人：執行名義上寫的人</span></li>
+      <li class="hit"><span>② 繼受人：一般繼受（死亡）、特定繼受（債權讓與、標的物受讓）</span></li>
+      <li class="hit"><span>③ 占有人：為當事人占有（受僱人、同居家屬）</span></li>
+      <li class="hit"><span>④ 實質當事人：為他人起訴、被訴的「該他人」</span></li>
+      <li class="off"><span>§4-2 II：第二至六款執行名義準用，本票裁定也一樣</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>誰是執行當事人依執行名義的記載決定。當事人能力準用民訴 §40；執行行為能力要成年，未成年由法定代理人代理。§4-2 和民訴 §401 內容一樣，債權人方、債務人方都會擴張，所以丙、丁都可以。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>丙雖然可以被執行，執行標的只限遺產。對「是否為執行名義效力所及」有爭執，用 §14-1 異議之訴，和 §4-2 是一組。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-09-執行當事人與主觀範圍§4-2.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>執行繼承人固有財產屬實體違法，繼承人應提第三人異議之訴；拋棄繼承者不得列為債務人</h2>
+  <div class="scene">
+    <p>甲對 A 有 500 萬判決，A 死亡。丙拋棄繼承，丁、戊沒有表示。A 留下一筆未辦繼承登記的土地，執行處卻也查封了丁的存款。</p>
+    <p class="q">可以把誰列為債務人？丁該用哪一種救濟？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>遺產</h4>繼承人立於<b>債務人</b>地位，可以執行；未登記者依聲請以債務人費用通知地政辦繼承登記（<span class="s">§11 III IV</span>）</div>
+    <div class="trap-c"><h4>固有財產</h4>繼承人立於<b>第三人</b>地位 → 第三人異議之訴（<span class="s">§15</span>），並可聲請停止執行（<span class="s">§18</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>繼承人以所得遺產為限負清償責任（<span class="s">民 §1148</span>），遺產和固有財產分開。執行開始後債務人死亡可以續行（<span class="s">§5 III</span>）；繼承人不明等情形可選任特別代理人（<span class="s">§5 IV</span>）。執行名義若寫「於繼承財產限度內給付」，另可用 §12 聲明異議。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>萬年考古題：救濟是第三人異議之訴，不是債務人異議之訴。選項「債務人改列丙丁戊」錯在丙已經拋棄繼承。公示催告申報期間仍可執行。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-10-債務人死亡與繼承人之執行.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>訴訟標的物受讓人是否受執行力所及，依原訴訟係物權或債權請求而定（61 台上 186）</h2>
+  <div class="scene">
+    <p>房東甲租期屆滿請乙搬走，起訴後乙把房子轉租給丙。甲本於租賃關係勝訴確定，要求把丙也遷出。另一案甲把對丁 300 萬的判決債權賣給資產管理公司戊。</p>
+    <p class="q">能對丙執行嗎？戊能拿甲的判決聲請嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">原訴訟主張的<br>是哪一種權利？</div>
+    <div class="out"><span class="tag">物權<br>§767</span><div class="b ok">有對世效 → 及於丙，可以直接執行</div></div>
+    <div class="out"><span class="tag">債權<br>租賃</span><div class="b no">債之相對性 → 不及於丙，須另取執行名義</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債權受讓人戊是特定繼受人，可以依原執行名義聲請，但要附讓與契約書和通知債務人的證明（<span class="s">民 §297 I</span>）。保全人員、受僱人、同居家屬是為當事人占有的占有輔助人，可以直接執行。第三人符合善意受讓時，實體法優先。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>本例甲主張租賃，所以不能對丙執行（房子題考過很多次）。承租人為自己利益占有，不是占有輔助人；次承租人要用 61 台上 186 判斷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-11-特定繼受人與占有輔助人.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>對合夥之執行名義，應先執行合夥財產，不足時始得執行各合夥人；否認為合夥人者應另循訴訟</h2>
+  <div class="scene">
+    <p>乙、丙、丁合夥開雞排店，欠甲肉錢 100 萬。甲勝訴判決上寫的被告是雞排店，店裡只剩 20 萬。丁說他上個月就退夥了。</p>
+    <p class="q">甲可以直接查封乙丙丁的存款嗎？丁說已退夥，執行處要審查嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 先執行合夥財產 20 萬</div><div class="a lbl">不足 80 萬</div>
+    <div class="b ok">② 各合夥人就不足額連帶（<span class="s">民 §681</span>）</div>
+    <div class="br"></div>
+    <div class="b dim">否認是合夥人 → 沒有確認判決就不得對他執行 → <span class="s">§14-1</span> 異議之訴</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>合夥是非法人團體，可以當被告，執行名義寫的是合夥團體。合夥財產和合夥人個人財產分開，合夥人負的是補充連帶責任，有先後順序。這也是主觀範圍的擴張：名義只寫合夥，最後可以執行到合夥人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不能一開始就找合夥人。有沒有退夥是實體爭執，執行處不審，要到民事庭用 §14-1 處理。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">02-筆記-12-對合夥之執行.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

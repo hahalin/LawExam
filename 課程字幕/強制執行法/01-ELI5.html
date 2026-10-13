@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>強制執行法01 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="強制執行法01">
+<main>
+
+<header class="lesson-head">
+  <h1>強制執行法01</h1>
+  <span class="sub">基本流程・分離原則・執行請求權・執行種類與方法・執行名義 §4 六款・假執行・支付命令・公證書・救濟二分</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。這堂是整部強執的地基：執行處只看執行名義、不審實體；哪些文書算執行名義，選擇題最愛考。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>金錢債權執行依聲請開始，經查封、換價、滿足三階段；不足清償發債權憑證（§27）</h2>
+  <div class="scene">
+    <p>甲拿到「乙應給付甲 100 萬元」的確定判決，等了一個月，乙一毛都沒還，法院也沒動靜。</p>
+    <p class="q">法院為什麼沒有主動幫甲執行？甲去聲請後，乙名下的房子只賣到 60 萬，剩下 40 萬怎麼辦？</p>
+  </div>
+  <div class="flow">
+    <div class="b q">債權人<b>聲請</b>（無依職權）</div><div class="a"></div>
+    <div class="b">查封<small>剝奪處分權，所有權仍在</small></div><div class="a"></div>
+    <div class="b">換價<small>拍賣、變賣、強制管理</small></div><div class="a"></div>
+    <div class="b ok">滿足<small>分配</small></div>
+    <div class="br"></div>
+    <div class="b no">不足清償 → 發<b>債權憑證</b>（<span class="s">§27</span>）→ 程序先終結，日後發現財產再聲請</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>強制執行的主體是國家（民事執行處），目的在實現私權；民訴負責解決紛爭、產出執行名義。開始一律依聲請。讀題先抓三要素：執行名義、主體（債權人、債務人）、客體（責任財產）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>欠稅、罰鍰走行政執行法，不走強執。查封後債務人只是不能處分，不是喪失所有權。執行沒有重複起訴禁止，持憑證可一再聲請。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-01-強制執行的意義與基本流程.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>執行法院不審查實體法律關係；實體爭執由債務人向民事庭起訴（分離原則）</h2>
+  <div class="scene">
+    <p>甲持確定判決執行乙的存款 100 萬。執行中兩人私下和解：乙付 50 萬，甲不再追。結果甲照樣聲請續行執行，乙拿著和解書跑到執行處抗議。</p>
+    <p class="q">執行處要不要看這份和解書？乙該去哪裡救濟？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">債務人提出<br>實體抗辯</div>
+    <div class="out"><span class="tag">執行處</span><div class="b no">只看執行名義外觀，<b>不審查</b>和解、清償、時效 → 得繼續執行</div></div>
+    <div class="out"><span class="tag">民事庭</span><div class="b ok">提 <span class="s">§14</span> 債務人異議之訴，並依 <span class="s">§18 II</span> 聲請停止執行</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>執行機關（執行處）與權利判定機關（民事庭）分離，執行處只做形式審查：判決寫 100 萬就執行 100 萬，沒寫利息就不執行利息。迅速是最高指導原則，該吵的在民訴就要吵完。未規定事項準用民訴（<span class="s">§30-1</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>88 年裁定（考過）：執行中和解，執行法院仍得繼續執行。提起異議之訴不會當然停止，停止執行是「得」，要另外聲請。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-02-分離原則不審查實體.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>強制執行請求權屬債權人，不得以特約拋棄（院字 2776）；通說採抽象請求權說</h2>
+  <div class="scene">
+    <p>甲借乙 30 萬，乙要求甲簽一張「甲拋棄對乙之強制執行請求權」的協議。後來甲拿到確定判決，還是去聲請執行。</p>
+    <p class="q">執行處要因為這份拋棄協議而駁回嗎？聲請執行除了執行名義，還要證明實體權利存在嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>強制執行請求權</h4>主體：<b>債權人</b>。請求國家發動執行的公法上請求權。可以不行使，不能約定拋棄。</div>
+    <div><h4>強制執行權</h4>主體：<b>國家</b>。執行處查封、法拍的權力；強執法主要寫給執行處看。</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>33 年院字 2776 號（強執最重要的實務見解）：拋棄強制執行請求權的特約，在執行法上不生請求權喪失的效力。抽象請求權說：只要有執行名義就能請求執行，不問實體權利是否存在，和分離原則一致。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「須有執行名義及實體法上請求權」是具體請求權說，通說不採。題目把「請求權」和「執行權」的主體對調，是常見錯誤選項。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-03-強制執行請求權院字2776.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>假執行為終局執行，假扣押、假處分為保全執行；破產等一般執行優先於個別執行</h2>
+  <div class="scene">
+    <p>甲對乙公司有兩件案子：一件拿到假扣押裁定，扣住乙 300 萬存款；另一件一審勝訴附假執行宣告。執行到一半，乙公司被宣告破產。</p>
+    <p class="q">兩件各能做到哪個階段？破產宣告後，甲的強制執行還能繼續嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>依效果</span><ul>
+      <li class="hit"><span>終局執行：確定判決、<b>假執行</b> → 查封、換價、滿足</span></li>
+      <li class="hit"><span>保全執行：假扣押、假處分 → 原則只到<b>查封</b></span></li></ul></li>
+    <li><span>依財產範圍</span><ul>
+      <li class="hit"><span>個別執行（強制執行）vs 一般執行（破產、更生、清算）→ <b>一般優先</b></span></li></ul></li>
+    <li><span>依對象</span><ul>
+      <li class="off"><span>對物為原則；對人只有拘提、管收</span></li></ul></li>
+    <li><span>依請求權</span><ul>
+      <li class="hit"><span>金錢（第二章，最常考）／非金錢：物之交付、行為不行為</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>保全執行的錢只是先扣在法院，債權人拿不到，目的是防止訴訟中脫產。一般執行是總財產的總清算，與個別執行互斥，競合時強制執行停下，由破產管理人主導。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「假」字開頭不代表保全：假執行是終局執行。保全執行也有例外能到滿足，就是定暫時狀態處分（卡 8）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-04-強制執行的種類.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>可代替行為採代替執行；不可代替行為及不行為採間接強制（怠金、管收）</h2>
+  <div class="scene">
+    <p>三份確定判決：A 命乙拆除占用甲地的鐵皮屋並返還土地；B 命丙修好樓上漏水；C 命歌手丁於 12/20 履行演唱會，並命鄰居戊晚上 10 點後不得彈鋼琴。</p>
+    <p class="q">各用什麼方法執行？誰出錢？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">行為由第三人<br>做效果相同？</div>
+    <div class="out"><span class="tag">可代替</span><div class="b ok">代替執行：第三人或債權人代為，費用由債務人負擔（<span class="s">§127</span>）→ 拆屋、修漏水</div></div>
+    <div class="out"><span class="tag">不可代替</span><div class="b no">間接強制：<b>怠金</b>或<b>管收</b>（<span class="s">§128</span>）→ 演唱會；不行為同（<span class="s">§129</span>）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>金錢請求權和物之交付都用直接強制。物之交付的術語叫「點交」，就是占有移轉。A 的「還地」是不動產交付，「拆屋」是可代替行為，一個程序可以混用多種方法。可不可代替，看債之本質和判決主文著重的是結果還是本人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>修漏水國考考過：多數認為可代替，用代替執行。不行為性質上一定不可代替；實務幾乎不管收，主要處怠金。間接強制只有怠金、管收兩種。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-05-執行方法直接代替間接強制.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>許可拍賣抵押物裁定為對物執行名義：只能執行抵押物，不足清償不發債權憑證</h2>
+  <div class="scene">
+    <p>銀行對乙的房屋有抵押權，乙房貸違約。銀行取得拍賣抵押物裁定後聲請執行，房子拍得 600 萬，貸款還欠 200 萬。銀行接著要求執行乙的存款，並請求發債權憑證。</p>
+    <p class="q">執行處要准嗎？銀行還有什麼辦法？</p>
+  </div>
+  <div class="vs">
+    <div><h4>對人執行名義</h4>確定判決、本票裁定等：執行債務人<b>一般財產</b>（存款、薪資、車、房），債權人可挑；不足發債權憑證</div>
+    <div class="trap-c"><h4>對物執行名義（<span class="s">§4 I ⑤</span>）</h4>只能執行<b>抵押物</b>；債權人無選擇權；不足清償不得續執行其他財產，<b>不發</b>債權憑證</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>執行名義是表示請求權存在及範圍的公文書，是開啟程序的必備鑰匙，執行處只做形式審查。借據、切結書、私下和解書都不是，要拿去公證或到鄉鎮市調解委員會調解並經法院核定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>銀行聲請發債權憑證應駁回。但銀行如果另外有本票裁定或清償判決，可以另持那份執行名義執行乙的其他財產，所以銀行才會要你設抵押又簽本票。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-06-執行名義與對物執行名義.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>執行名義以 §4 I 六款為限；民法上和解、支票不是執行名義，假扣押裁定不必確定</h2>
+  <div class="scene">
+    <p>甲手上有五份文件：和乙簽的民法和解契約、未確定的假扣押裁定、一張跳票的支票、土地租約公證書（約定蓋房子）、拍賣抵押物裁定。</p>
+    <p class="q">哪幾份可以拿去聲請強制執行？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§4 I 六款</span><ul>
+      <li class="hit"><span>① 確定終局判決（限給付判決）</span></li>
+      <li class="hit"><span>② 假扣押、假處分（<b>不必確定</b>）、假執行、確定支付命令</span></li>
+      <li class="hit"><span>③ 依<b>民訴</b>成立之和解、調解</span></li>
+      <li class="hit"><span>④ 符合公證法之公證書</span></li>
+      <li class="hit"><span>⑤ 許可拍賣抵押物／質物裁定</span></li>
+      <li class="hit"><span>⑥ 其他：<b>本票</b>裁定、鄉鎮市調解經法院核定</span></li></ul></li>
+    <li class="off"><span>不是：民法和解、支票、匯票、私人借據、命夫妻同居之判決</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>執行名義法定主義：當事人不能合意創設法律沒列的執行名義。命夫妻履行同居的判決也不能執行，因為會侵害人格自由，只能拿去當離婚理由。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>講義考題答案：民法和解、約定建築的土地公證書、支票三個都不是。「尚未確定」的假扣押裁定是騙你的，第 2 款本來就沒寫確定。題目問「何者非」要先圈起來。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-07-執行名義法定主義與六款§4.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>確定判決限給付判決始得執行；保全處分原則只到查封，定暫時狀態處分可達滿足</h2>
+  <div class="scene">
+    <p>甲拿到「確認甲對乙土地有通行權」的確定判決，想請執行處叫乙拆掉圍籬。另一案，子女丙訴請確認親子關係，同時聲請定暫時狀態，法院命生父每月先付 2 萬元扶養費。</p>
+    <p class="q">甲的判決能執行嗎？丙能真的拿到錢嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b no">確認、形成判決：原則無執行力</div><div class="a"></div>
+    <div class="b ok">給付判決才能執行<small>應聲明「不得妨礙通行」</small></div>
+    <div class="br"></div>
+    <div class="b">假扣押、假處分 → 只到查封</div><div class="a"></div>
+    <div class="b ok">定暫時狀態處分 → 可到<b>滿足</b>，不足可發債權憑證</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>民訴教的是怎麼取得假扣押、假處分裁定；強執教的是拿裁定去查封，而且要另外聲請執行。違法的判決並非當然無效，確定後照樣執行，債務人不能以判決違法聲明異議（<span class="s">§12</span> 只救程序瑕疵）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>外國法院確定判決可以在臺灣執行（考過），條件是經我國法院判決許可（<span class="s">§4-1</span>）。分割共有物判決雖是形成判決，可以執行。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-08-確定給付判決與保全處分.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>假執行為暫定執行名義，本案或宣告廢棄即向後失效；免為假執行須於拍定、變賣或交付前供擔保</h2>
+  <div class="scene">
+    <p>一審判乙應給付甲 300 萬並准假執行，甲供擔保 300 萬後執行乙的房子。乙上訴，同時想供反擔保阻止拍賣，但拍賣期日已排定。</p>
+    <p class="q">乙最晚什麼時候要供擔保？二審如果改判甲敗訴，已經進行的執行怎麼辦？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="假執行時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="70" cy="70" r="5" class="dot"/>
+    <text x="70" y="48" text-anchor="middle">一審假執行</text>
+    <text x="70" y="94" text-anchor="middle" class="mu">甲供擔保聲請</text>
+    <circle cx="190" cy="70" r="5" class="dot"/>
+    <text x="190" y="48" text-anchor="middle">查封</text>
+    <text x="190" y="94" text-anchor="middle" class="mu">乙仍可反擔保</text>
+    <circle cx="315" cy="70" r="5" class="dot acc"/>
+    <text x="315" y="48" text-anchor="middle">拍定</text>
+    <text x="315" y="94" text-anchor="middle" class="mu">反擔保截止</text>
+    <circle cx="445" cy="70" r="5" class="dot"/>
+    <text x="445" y="48" text-anchor="middle">二審改判</text>
+    <text x="445" y="94" text-anchor="middle" class="mu">向後失效</text>
+    <text x="445" y="112" text-anchor="middle" class="mu">終結前才能撤銷</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>假執行是終局執行，可以做到滿足，也會發債權憑證，但通常要全額供擔保。本案判決或假執行宣告被廢棄變更，在該範圍內失效（民訴 <span class="s">§395</span>）；執行還在進行就撤銷執行處分，已終結的只能請求回復原狀、賠償。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>反擔保時點（民訴 <span class="s">§392 III</span>）：拍定、變賣或物之交付前；行為不行為則依法理在執行終結前。拍定＝買賣契約成立，出賣人是債務人，買受人是拍定人。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-09-假執行與免為假執行.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>支付命令送達後 20 日未異議始得為執行名義；民訴和解、調解與確定判決同一效力</h2>
+  <div class="scene">
+    <p>3/1 乙收到甲聲請的 50 萬支付命令，以為是詐騙就丟了。4/15 乙發現存款被扣。另一案，甲乙在法院和解，乙的哥哥丙也加入當保證人。</p>
+    <p class="q">乙還能怎麼救濟？甲可以對丙強制執行嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="支付命令時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="70" cy="70" r="5" class="dot"/>
+    <text x="70" y="48" text-anchor="middle">3/1 送達</text>
+    <text x="70" y="94" text-anchor="middle" class="mu">20 日不變期間</text>
+    <circle cx="210" cy="70" r="5" class="dot acc"/>
+    <text x="210" y="48" text-anchor="middle">3/21 確定</text>
+    <text x="210" y="94" text-anchor="middle" class="mu">未異議</text>
+    <text x="210" y="112" text-anchor="middle" class="mu">附確定證明書</text>
+    <circle cx="440" cy="70" r="5" class="dot"/>
+    <text x="440" y="48" text-anchor="middle">4/15 扣存款</text>
+    <text x="440" y="94" text-anchor="middle" class="mu">確認債權不存在</text>
+    <text x="440" y="112" text-anchor="middle" class="mu">得聲請停止執行</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>確定的支付命令屬第 2 款，現行法沒有既判力，乙可以提確認債權不存在之訴，法院得命供擔保停止執行（民訴 <span class="s">§521 III</span>）。訴訟上和解、調解有既判力和執行力；第三人參加和解、或就未聲明事項成立和解，都可以執行（民訴 <span class="s">§380-1</span>），所以甲可以執行丙。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>執行程序中的和解、民法上和解只有民法效力，不是執行名義。停止執行是「得」不是「應」。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-10-支付命令與和解調解.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>公證書須載明逕受強制執行；不動產限租用、借用並約定期滿交還，土地另須非供耕作或建築</h2>
+  <div class="scene">
+    <p>甲把一塊土地租給乙，經公證並寫明「乙不履行時應逕受強制執行」。情況一：約定作停車場、期滿交還，乙實際上蓋了鐵皮屋。情況二：約定蓋房子，乙實際上只停車。</p>
+    <p class="q">租期屆滿乙不還地，哪一種甲可以直接拿公證書聲請執行？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">公證書的<br>標的</div>
+    <div class="out"><span class="tag">動產</span><div class="b ok">金錢等<b>一定數量</b>、<b>特定</b>動產 → 不限契約類型（買賣、贈與、借貸皆可）</div></div>
+    <div class="out"><span class="tag">不動產</span><div class="b">限<b>租用、借用</b>＋期滿交還；土地另須約定<b>非供耕作或建築</b>（夜市、停車場可）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>四要件：公證人作成、屬公證法 <span class="s">§13</span> 四款之一、載明逕受強制執行、債務人給付遲延。使用目的看「約定」不看實際：情況一可以，情況二不行。附條件的公證書，債權人要證明條件成就（<span class="s">§4 II</span>，102 年裁定）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>老師說這節「考出來一定死一片」。買賣房屋的公證書不能執行；只寫「租到 12/31 止」沒寫期滿交還也不行；「返還已受領價金」沒寫金額，不算一定數量。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-11-公證書公證法§13.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>程序瑕疵依 §12 聲明異議，實體瑕疵向民事庭起訴；擔保債權經確認不存在仍執行者為雙重瑕疵</h2>
+  <div class="scene">
+    <p>甲持拍賣抵押物裁定執行乙的房子。乙起訴確認擔保債權不存在，判決勝訴確定。甲仍拿原裁定聲請續行拍賣。</p>
+    <p class="q">乙要去民事庭起訴，還是可以直接向執行處聲明異議？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>程序瑕疵（違法執行）</h4>執行處沒照強執法做：夜間查封住宅、法拍未公告 → 向執行處 <span class="s">§12</span> 聲明異議</div>
+    <div class="trap-c"><h4>實體瑕疵（不當執行）</h4>清償、時效、抵銷 → 民事庭異議之訴（<span class="s">§14</span>）＋聲請停止執行（得停止）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>抵押權從屬於擔保債權，債權不存在，抵押權也不存在。79 年判例：確認債權不存在勝訴確定後，原執行名義的執行力已確定不存在，尚在執行中者，債務人可以依 §12 聲明異議。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這題考過好幾次：答案是兩條路都可以。理由是欠缺執行名義，等於拿一張白紙去聲請執行，所以同時構成程序瑕疵。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">01-筆記-12-執行救濟二分與雙重瑕疵.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>
