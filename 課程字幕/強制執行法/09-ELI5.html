@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>強制執行法09 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="強制執行法09">
+<main>
+
+<header class="lesson-head">
+  <h1>強制執行法09</h1>
+  <span class="sub">物之交付 §123～§126・代買交付・還地拆屋・行為不行為 §127～§129・家事法交付子女・意思表示擬制 §130・分割執行 §131</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。這堂的主軸是「這個義務要用哪一種方法執行」：取交、解除占有、代替執行、間接強制、擬制。先分類，答案就出來了。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>一般動產只能取交；書據、印章等憑證多兩種方法（§123 II）</h2>
+  <div class="scene">
+    <p>甲有兩份確定判決：一份命乙交付 B 車，一份命乙交付 A 地所有權狀。執行人員到場，兩樣東西都找不到。</p>
+    <p class="q">兩案都可以對乙處怠金逼他交出來嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">交付的是<br>什麼動產？</div>
+    <div class="out"><span class="tag">一般動產</span><div class="b no">只有<b>取交</b>（<span class="s">§123 I</span>）；取不到就是執行無效果，不得處怠金</div></div>
+    <div class="out"><span class="tag">憑證類</span><div class="b ok">① 取交 → ② 公告宣示無效、另作證明書（準用 <span class="s">§121</span>）→ ③ 定期履行、處怠金或管收（準用 <span class="s">§128 I</span>）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>取交就是執行法院把東西拿來交給債權人，屬於直接強制。特定的那一張憑證別人無從代交，性質接近不可代替行為，所以法律多給兩種方法。股東會議紀錄、記帳憑證、所有權狀都算憑證類。</p>
+    <p>命交付合夥帳冊「供查閱」，重點在看內容而不是移轉占有 → 不可代替行為（<span class="s">§128</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項寫「取交無效果，<b>不得</b>定期命交出並處怠金或管收」→ 對憑證類是錯的，應為「得」。反過來，汽車、字畫等一般動產處怠金也是錯的。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-01-動產交付與憑證類執行§123.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>應交付之物在第三人手上：發移轉命令，但只給債權人收取權（§126）</h2>
+  <div class="scene">
+    <p>判決命乙把 B 車交給甲。乙說車借給丙開了。丙不是執行名義效力所及之人。</p>
+    <p class="q">執行法院要先發扣押命令嗎？丙收到命令還是不交，甲可以直接對丙執行嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙對丙有借用物返還請求權</div><div class="a"></div>
+    <div class="b ok">§126 移轉命令：把這個請求權移轉給甲<small>不必先扣押</small></div><div class="a"></div>
+    <div class="b q">丙不交 → 甲<b>另訴</b>取得對丙的執行名義</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>第三人若是執行名義效力所及之人（<span class="s">§4-2</span>），直接對他執行，不必用 §126。物之交付不走「查封、換價、滿足」，物之交付章也沒有準用 §115、§116，所以不必先發扣押命令（否定說）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>同名不同義：§115 II 的移轉命令是債權讓與、執行程序終結；§126 的移轉命令只給收取權，也沒有 §119 那種逕對第三人執行。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-02-第三人占有物之移轉命令§126.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>應交付代替物而不交付：由第三人代為購買，費用由債務人負擔</h2>
+  <div class="scene">
+    <p>判決命乙返還甲日月光公司股票 1 萬股，沒寫是哪幾張。另一份和解寫「乙應於離婚後一年內購買價值 3,500 萬元的房屋給甲」，房子還沒選定。</p>
+    <p class="q">這兩件要用取交、解除占有，還是別的方法？</p>
+  </div>
+  <div class="flow">
+    <div class="b">代替物或只是可得特定</div><div class="a"></div>
+    <div class="b">以債務人費用命第三人<b>代為購買交付</b></div><div class="a"></div>
+    <div class="b">裁定命債務人預付費用</div><div class="a"></div>
+    <div class="b ok">依裁定執行債務人一切財產<small>回到金錢債權執行</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>代買交付規定在強制執行法注意事項，條文沒有；執行方式比照可代替行為（<span class="s">§127</span>）。股票未特定某張＝代替物；房屋未特定地號門牌＝可得特定，依 §127 執行，不是 §124。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>金飾、黃金題要先問「外面買不買得到一樣的」。買得到 → 代買交付；世界上只有那一件 → 回到 §123 取交，取不到也不能處怠金。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-03-代買交付與可得特定之給付物.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>交付不動產：解除債務人占有，同住家屬一併排除；復即占有得再為執行</h2>
+  <div class="scene">
+    <p>妻單獨跟房東簽租約，租期滿夫妻都不搬。房東拿到只列妻為被告的判決。執行完三天後，兩人又搬回去住。</p>
+    <p class="q">夫也要搬嗎？房東要再打一次官司嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">解除債務人占有、使歸債權人占有（<span class="s">§124 I</span>）</div><div class="a"></div>
+    <div class="b">屋內家具：取去點交 → 暫付保管 → 拍賣提存（<span class="s">§125</span> 準用 <span class="s">§100</span>）</div>
+    <div class="br"></div>
+    <div class="b q">債務人復即占有</div><div class="a"></div>
+    <div class="b ok">原執行名義聲請<b>再為執行</b>，再繳執行費</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§124 的債務人是廣義的：受僱人、學徒、同居一家共同生活者、占有輔助人都包括，夫不必另取執行名義。再為執行要與前次執行時間密接，個案判斷（<span class="s">§124 I 後段、II</span>）。船舶、航空器準用。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>動產交付<b>沒有</b>再為執行。有再為執行的只有三處：§99 再行點交、§124 不動產交付、§129 III 不作為，而且都要再繳執行費。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-04-不動產交付§124與再為執行.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>執行名義只命返還土地，債務人有處分權的地上物不論何時所建都可拆除</h2>
+  <div class="scene">
+    <p>甲持「乙應拆除違建並返還 A 地」的確定判決執行，7/11 點交完畢。7/16 乙又在地上搭了輕鋼架屋。7/22 甲聲請續行執行。</p>
+    <p class="q">原判決沒提到輕鋼架屋，可以拆嗎？甲要再繳錢嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="拆屋還地再為執行時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="70" cy="70" r="5" class="dot"/>
+    <text x="70" y="48" text-anchor="middle">言詞辯論終結</text>
+    <text x="70" y="94" text-anchor="middle" class="mu">之前蓋的違建</text>
+    <circle cx="200" cy="70" r="5" class="dot"/>
+    <text x="200" y="48" text-anchor="middle">7/11</text>
+    <text x="200" y="94" text-anchor="middle" class="mu">拆屋＋點交</text>
+    <circle cx="320" cy="70" r="5" class="dot acc"/>
+    <text x="320" y="48" text-anchor="middle">7/16</text>
+    <text x="320" y="94" text-anchor="middle" class="mu">搭輕鋼架屋</text>
+    <circle cx="440" cy="70" r="5" class="dot"/>
+    <text x="440" y="48" text-anchor="middle">7/22</text>
+    <text x="440" y="94" text-anchor="middle" class="mu">聲請再為執行</text>
+    <line x1="70" y1="125" x2="440" y2="125" class="acc"/>
+    <text x="255" y="143" text-anchor="middle" class="mu">前後所建、有處分權者都在執行力範圍內</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>44 台抗 6：還地的執行名義依 §125 準用 §100 法意推知，當然含有拆卸房屋的效力。93 年最高法院限於債務人有拆除權者；100 台抗 482 擴及言詞辯論終結後新建的地上物。</p>
+    <p>拆屋還地是兩種執行：拆屋 <span class="s">§127</span>、還地 <span class="s">§124</span>。復即占有可再為執行，要再繳執行費。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>學說主張要另取拆屋的執行名義，但選擇題一律採實務（109 年題答案 C）。不要去記「何時蓋的」，前後都可以拆。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-05-還地執行得拆除地上物44台抗6.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>可代替行為以債務人費用命第三人代為履行；義務轉化為金錢給付</h2>
+  <div class="scene">
+    <p>三份執行名義：乙應清除 A 地上的廢棄物；乙應刪除臉書上的貼文；乙應登報向甲道歉（111 年以前確定）。</p>
+    <p class="q">哪一件可以找別人代做？哪一件現在已經不能執行？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>清除廢棄物</span><ul>
+      <li class="hit"><span>誰清都一樣 → 可代替（<span class="s">§127</span>）</span></li></ul></li>
+    <li><span>刪除臉書貼文</span><ul>
+      <li class="hit"><span>台灣臉書無從代刪 → 不可代替（<span class="s">§128</span>）</span></li></ul></li>
+    <li><span>登報道歉</span><ul>
+      <li class="off"><span>以前是可代替；111 年憲判字第 2 號後不得再予執行</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>可代替＝第三人代做與債務人自己做，對債權人經濟上、法律上效果相同。費用由執行法院酌定，命債務人預付或命債權人代為預納（<span class="s">§127 II</span>），債務人不付就走金錢債權執行。修漏水、拆屋都是這一類。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不作為一律不可代替。命道歉的舊判決，憲判生效時尚未執行或執行未完畢者都不得執行；現在可考的是「判決主文登報」，仍屬可代替。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-06-行為請求權體系與可代替行為§127.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>不可代替行為：定期履行 → 處怠金 → 再處怠金或管收；但有些根本不能強制</h2>
+  <div class="scene">
+    <p>甲委託畫家乙畫一幅肖像油畫，判決命乙完成；另一案判決命丙交出 1 歲的子女。兩人都不理會。</p>
+    <p class="q">兩案都可以用怠金逼他們做嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 定履行期間</div><div class="a"></div>
+    <div class="b">② 處怠金 3 萬～30 萬元</div><div class="a"></div>
+    <div class="b">③ 再定期仍不履行 → 再處怠金或管收</div>
+    <div class="br"></div>
+    <div class="b ok">交出子女：另得<b>直接強制</b>取交（<span class="s">§128 III</span>）</div>
+    <div class="b no">夫妻同居：不適用（<span class="s">§128 II</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>有些不可代替行為不適用間接強制：夫妻同居、壓制意思就難以實現債務本質（藝術創作）、需第三人協力而無協力之預期、需特別設備、需顯不相當的巨額費用。這時只能請求債務不履行損害賠償。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>國考考過「藝術家作畫」不能間接強制。§129-1 得通知協助的是「有關機關」，不包括私人企業、團體。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-07-不可代替行為§128.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>交付子女與會面交往依家事法，以子女最佳利益擇一或併用直接、間接強制</h2>
+  <div class="scene">
+    <p>判決甲每月第一、三週週五 17 時接子女丙外出。屆期乙把丙送到丁經營的私立托育中心，丁拒絕讓甲接走。</p>
+    <p class="q">執行法院可以對丁執行嗎？應該駁回甲的聲請嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">自動履行命令</div><div class="a"></div>
+    <div class="b">通知雙方協商</div><div class="a"></div>
+    <div class="b">囑託家事庭、學校、社福機關勸導</div><div class="a"></div>
+    <div class="b">處怠金</div><div class="a"></div>
+    <div class="b q">最後才直接強制</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>家事法 <span class="s">§194</span> 審酌年齡與意思能力、意願、急迫性、實效性、互動狀況。直接強制宜先擬定執行計畫，必要時不先通知執行日期，過程採平和手段（<span class="s">§195</span>）。強執法 §128 III 的「交出子女」不包括會面交往。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>丁不是執行力所及之人，私人機構也沒有配合義務 → 執行法院應退出、不得繼續執行，但不是駁回聲請（346 頁題答案 C）。滿 12 歲子女確無意願，執行法院得駁回。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-08-交付子女與會面交往家事法§194.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>不作為：違反即處怠金；留下的圍牆以債務人費用除去，復行違反得再為執行</h2>
+  <div class="scene">
+    <p>判決命乙容忍甲通行 A 地。乙在路上蓋圍牆。另一個鄰居丙只拿到「確認甲有通行權存在」的判決，路被停滿車。</p>
+    <p class="q">甲可以怎麼辦？丙可以聲請執行嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>容忍通行（給付判決）</h4>處怠金、再處怠金或管收（<span class="s">§129 I</span>）＋聲請除去圍牆，債務人負擔費用（<span class="s">§129 II</span>）；又蓋回 → 再為執行（<span class="s">§129 III</span>）</div>
+    <div class="trap-c"><h4>確認通行權存在</h4>確認判決<b>沒有執行力</b>，不能聲請排除妨礙</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§128 要先定履行期間；§129 沒有，違反就處怠金。除去行為結果本身是可代替行為。圍牆在執行名義成立前或後蓋的都可以除去（注意事項）。「容忍進入修漏水」要切兩段：容忍進入 §129、修漏水 §127。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>看到「容忍」「禁止」＝不作為＝不可代替；但拆牆、除去路障又回到可代替。確認判決與給付判決一字之差，執行力完全不同。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-09-不作為請求權之執行§129.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>命為意思表示的判決確定時視為已為意思表示，不必也不能聲請執行</h2>
+  <div class="scene">
+    <p>甲拿到「乙應協同辦理 A 屋所有權移轉登記」的確定判決，跑去民事執行處聲請強制執行。另一位丙拿的是同內容但「宣告假執行」的一審判決。</p>
+    <p class="q">執行處會受理嗎？丙的判決有沒有擬制效力？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">執行名義<br>種類</div>
+    <div class="out"><span class="tag">確定判決／和解／調解</span><div class="b ok">確定或成立時<b>擬制</b>（<span class="s">§130 I</span>）→ 單獨持判決辦登記；聲請執行駁回</div></div>
+    <div class="out"><span class="tag">假執行、公證書</span><div class="b no">不生擬制效力；意思表示判決不得宣告假執行</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>有對待給付時，債權人先以提存、執行法院證明書或公證證明已給付，才擬制（<span class="s">§130 II</span>）。擬制只到意思表示：仍要辦完登記才移轉所有權；股票過戶需公司記載股東名簿 → §128；撤回假扣押等公法上意思表示不能執行。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「判決確定即視為登記完畢」錯。§130 沒有執行程序，也不能依 §18 聲請停止執行。356 頁題：須聲請執行的是登報道歉（§127），其餘都是擬制。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-10-意思表示請求權之擬制§130.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>點交分得部分限分割「裁判」；變價分割不限執行名義</h2>
+  <div class="scene">
+    <p>甲乙共有建地，分割之訴中成立訴訟上和解，約定原物分割、甲分得東側，但沒寫雙方要互相交付。乙的車庫蓋在東側。</p>
+    <p class="q">甲可以拿和解筆錄聲請拆車庫、點交土地嗎？如果和解約定的是變價分割呢？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span><span class="s">§131 I</span> 限裁判</span><ul>
+      <li class="hit"><span>原物分割 → 分得部分點交</span></li>
+      <li class="hit"><span>金錢補償 → 執行補償義務人財產</span></li></ul></li>
+    <li><span><span class="s">§131 II</span> 不限執行名義</span><ul>
+      <li class="hit"><span>變價分割 → 拍賣分配價金（和解、調解也可）</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>訴訟上和解只有協議分割效力，沒有形成判決效力，所以不能依 §131 I 點交；和解有約定互為交付義務時，改依 <span class="s">§124</span> 執行。分割執行三特色：原告被告都可聲請、共有人可應買（排除 §70 VI）、不適用無益執行禁止（§80-1）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>同樣是和解：原物分割未約定交付 → 不得點交；變價分割 → 得聲請拍賣。題目一定把「和解」「裁判」藏在題幹裡。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-11-分割執行§131與訴訟上和解.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>變價分割可拍到拍定為止；共有人皆得應買，二人以上優先承買以抽籤定之</h2>
+  <div class="scene">
+    <p>甲乙丙共有 A 地各 1/3，判決變價分割。A 地應有部分有高額抵押權，四拍都沒人買。後來第三人丁拍定，甲乙都說要優先承買。</p>
+    <p class="q">還能繼續拍嗎？甲乙誰買得到？</p>
+  </div>
+  <div class="vs">
+    <div><h4>一般金錢債權拍賣</h4>債務人不得應買；無益執行禁止；四拍未拍定發債權憑證</div>
+    <div class="rule-c"><h4>變價分割拍賣</h4>共有人皆得應買；無無益執行問題；可減價拍到拍定；優先承買二人以上 → <b>抽籤</b>（民法 <span class="s">§824 VII</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>分割判決是形成判決，§131 例外賦予執行力；變賣完成後共有關係才消滅。共有人的債權人要執行將來分得的價金 → 先發附條件扣押命令。原物分割不配合登記 → 單獨持判決登記，不必執行；分得部分被占有 → 聲請點交。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「按應有部分比例優先承買」錯，是抽籤。「僅原告得聲請執行」錯，甲乙丙都可以。拆鄰居招牌是 §127 可代替。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">09-筆記-12-分割執行的實務問題與練習.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

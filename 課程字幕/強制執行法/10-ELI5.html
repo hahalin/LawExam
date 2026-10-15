@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>強制執行法10 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="強制執行法10">
+<main>
+
+<header class="lesson-head">
+  <h1>強制執行法10</h1>
+  <span class="sub">保全執行 §132・假扣押 §133～§136・假處分 §137～§140・定暫時狀態處分・強制執行競合</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。前半是保全執行「只凍結、不滿足」的各種細節（30 日、先執行再送達、提存）；後半是每年必考一題的強制執行競合：先判斷能否並存，不能並存就「終局優先」或「時間先後」。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>保全執行先執行、再送達；收受裁定後 30 日內要聲請執行</h2>
+  <div class="scene">
+    <p>甲 3/1 收到對乙的假扣押裁定。執行處 3/20 查封乙的車子，3/22 才把裁定送達乙。另一位債權人丙收到裁定第 35 天才聲請。</p>
+    <p class="q">先查封、後送達合法嗎？丙還能聲請執行嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="保全執行時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="60" cy="70" r="5" class="dot"/>
+    <text x="60" y="48" text-anchor="middle">3/1</text>
+    <text x="60" y="94" text-anchor="middle" class="mu">收受裁定</text>
+    <circle cx="230" cy="70" r="5" class="dot acc"/>
+    <text x="230" y="48" text-anchor="middle">3/20</text>
+    <text x="230" y="94" text-anchor="middle" class="mu">先執行（查封）</text>
+    <circle cx="330" cy="70" r="5" class="dot"/>
+    <text x="330" y="48" text-anchor="middle">3/22</text>
+    <text x="330" y="94" text-anchor="middle" class="mu">後送達</text>
+    <circle cx="460" cy="70" r="5" class="dot"/>
+    <text x="460" y="48" text-anchor="middle">第 30 日</text>
+    <text x="460" y="94" text-anchor="middle" class="mu">逾期不得聲請</text>
+    <line x1="60" y1="122" x2="460" y2="122" class="acc"/>
+    <text x="260" y="140" text-anchor="middle" class="mu">30 日內第一次聲請（§132 III）</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>保全執行應於裁定送達同時或送達前為之，目的是避免債務人知情後脫產（<span class="s">§132 I</span>）。先執行後不能送達，債權人又未聲請公示送達，應撤銷執行（<span class="s">§132 II</span>）。</p>
+    <p>保全執行原則只到查封，例外換價，不得滿足。丙逾期只能重新聲請裁定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>注意事項要求執行後 7 日內送達，但那是訓示規定，第 10 天才送達也不撤銷執行。執行名義原則上無期間限制，假扣押、假處分裁定的 30 日是例外。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-01-保全執行的性質與先執行後送達§132.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>假扣押執行行為完成時，時效即重行起算；抗告不停止執行</h2>
+  <div class="scene">
+    <p>甲對乙的債權還剩 1 年時效。甲 5/1 聲請假扣押執行，5/3 查封完成，之後一直沒有起訴本案。乙收到裁定後提起抗告。</p>
+    <p class="q">時效從哪天重新起算？乙抗告後，查封要先解除嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">5/1 聲請假扣押執行 → 時效中斷</div><div class="a"></div>
+    <div class="b ok">5/3 查封<b>行為完成</b> → 中斷事由終止、重行起算</div>
+    <div class="br"></div>
+    <div class="b dim">✕ 不是等到假扣押撤銷或標的脫離處置才重算</div>
+    <div class="br"></div>
+    <div class="b">乙抗告</div><div class="a lbl">不停止</div>
+    <div class="b">查封繼續有效（民訴 <span class="s">§491</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>103 年決議：查封、查封登記、強制管理、緊急換價提存等執行行為完成時，時效重行起算。債權人應儘快起訴本案。</p>
+    <p>保全執行以標的脫離假扣押之處置為終結，例如交付本案終局執行或撤銷假扣押。債務人在裁定後死亡致未能送達，不影響執行，改對聲明承受的繼承人送達。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>已轉本案執行時，第三人只能對本案執行程序提起第三人異議之訴，不能對已終結的假扣押程序提起。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-02-保全執行終結時效與抗告不停止.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>供擔保是開始執行的要件；標的所在地法院的裁定只能扣裁定所列財產</h2>
+  <div class="scene">
+    <p>甲向 A 地所在的嘉義地院聲請，裁定主文寫「聲請人供擔保 100 萬元後，得就 A 地為假扣押」。甲想先查封、事後再補擔保，還想順便扣乙在台北的存款。</p>
+    <p class="q">哪個做法可以？如果裁定是本案管轄法院發的，結果會不同嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">裁定由哪個<br>法院作成？</div>
+    <div class="out"><span class="tag">本案管轄法院</span><div class="b ok">債務人<b>全部財產</b>都可查封</div></div>
+    <div class="out"><span class="tag">標的所在地法院</span><div class="b">只能查封<b>裁定所涉財產</b>（民訴 <span class="s">§524</span>）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>須供擔保的執行名義，供擔保後才能開始執行（<span class="s">§4 II</span>），不能先執行再補。主文後半段「相對人供擔保後得免為或撤銷假扣押」是債務人的反擔保。</p>
+    <p>30 日只限第一次聲請；之後發現新財產追加執行，不受 30 日限制。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>保全執行沒有債權憑證，也不能聲請命債務人報告財產（<span class="s">§20</span>），兩者都限於終局執行名義。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-03-假扣押裁定主文與執行開始.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>假扣押債權人分到的錢一律提存；緊急換價也只換價、不滿足</h2>
+  <div class="scene">
+    <p>甲1 持確定判決、甲2 持假扣押，同時執行乙的車子，賣得 60 萬。另外，假扣押中的 100 箱鮮魚快壞了，拍賣又沒人買，甲2 想直接用債權抵價承受。</p>
+    <p class="q">甲2 那份錢怎麼處理？甲2 可以用債權承受鮮魚嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>應提存的錢</span><ul>
+      <li class="hit"><span>依分配程序應分配於假扣押債權人之金額（<span class="s">§133</span>）</span></li>
+      <li class="hit"><span>假扣押收取之金錢（租金、報酬）（<span class="s">§133</span>）</span></li>
+      <li class="hit"><span>假扣押土地被徵收的補償金（注意事項 70）</span></li>
+      <li class="hit"><span>緊急換價賣得金（<span class="s">§134</span>）</span></li>
+      <li class="off"><span>對第三人金錢債權假扣押：發扣押命令即可，第三人不必提存</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>緊急換價限動產，要件是價格減少之虞或保管需費過多；債權人、債務人聲請或依職權都可以發動（<span class="s">§134</span>）。</p>
+    <p>承受等於作價抵債，也就是滿足，保全執行不可以。實務折衷：甲2 要承受，就和其他拍定人一樣提出現款，價金再提存。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「緊急換價限依債權人聲請」錯。「對第三人金錢債權假扣押，命第三人交付之金額應提存」錯，這是考古題的答案選項。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-04-假扣押之提存與緊急換價§133～§134.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>假扣押準用一般查封規定；裁定經廢棄確定後，依聲請撤銷執行處分</h2>
+  <div class="scene">
+    <p>甲的假扣押扣到乙的房子和乙對丁的 50 萬貨款債權。乙抗告成功，抗告法院廢棄假扣押裁定並確定。另一案，甲後來本案勝訴確定。</p>
+    <p class="q">房子和債權各怎麼扣？乙接下來要做什麼？甲本案勝訴後要重新查封嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>執行方法</span><ul>
+      <li class="hit"><span>不動產：揭示、封閉、追繳契據＋查封登記（<span class="s">§136</span> 準用 <span class="s">§76</span>）</span></li>
+      <li class="hit"><span>債權：禁止處分或清償之命令（<span class="s">§135</span>）</span></li>
+      <li><span>自助行為後：得管收債務人（<span class="s">§132-2</span>）</span></li></ul></li>
+    <li><span>後續</span><ul>
+      <li class="hit"><span>裁定廢棄確定 → 乙持裁定聲請撤銷執行處分（<span class="s">§132-1</span>）</span></li>
+      <li class="hit"><span>本案勝訴 → 接續換價、分配，不再查封</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>假扣押執行的效力就是查封：乙仍是所有權人，只是處分權受限制，債權不得收取。題目表面考假扣押，實際上常是考前面的查封規定。</p>
+    <p>本案執行被撤銷時，假扣押仍是獨立的執行名義，原則上可以恢復；除非債務人本案勝訴確定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>民事庭的抗告和執行處的執行是兩個程序。抗告成功不會自動解除查封，要拿確定裁定到執行處聲請撤銷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-05-假扣押之準用效力與移本案執行.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>假處分依裁定內容準用各種執行方法；命令或禁止一定行為者應送達</h2>
+  <div class="scene">
+    <p>甲取得三份假處分：① 乙不得移轉 B 地；② 乙不得提示 C 支票；③ 乙晚上 10 點後不得彈鋼琴。乙在收到裁定 40 天後才開始半夜彈琴。</p>
+    <p class="q">三份各怎麼執行？③ 已經超過 30 天，甲還能聲請嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>依內容準用（<span class="s">§140</span>）</span><ul>
+      <li class="hit"><span>① 禁止移轉 B 地＝查封：查封登記＋揭示（<span class="s">§139</span>）</span></li>
+      <li class="hit"><span>② 支票：其他財產權，發扣押命令</span></li>
+      <li class="hit"><span>③ 單純不作為：未違反無執行問題；違反 → <span class="s">§129</span> 怠金</span></li>
+      <li><span>選任管理人：使管理人占有（<span class="s">§137</span>）</span></li>
+      <li><span>命令或禁止一定行為：送達債務人（<span class="s">§138</span>）</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>假處分保全金錢以外的請求，內容很多種，但核心仍是凍結。單純不作為的假處分不適用 30 日，③ 可以聲請處怠金。</p>
+    <p>查封效力在查封登記通知到達地政時發生，不待送達債務人；民訴的抗告期間仍從送達起算。違反禁止處分所為的移轉是相對無效（準用 <span class="s">§51 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§138 選擇題考過不只一次：命令或禁止債務人為一定行為者，執行法院應將裁定送達債務人。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-06-假處分的執行§137～§140.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>定暫時狀態處分不限給付之訴，而且可以先命給付到滿足</h2>
+  <div class="scene">
+    <p>勞工丁月薪 6 萬，被公司以不實理由解僱。丁提起確認僱傭關係存在之訴，同時聲請在訴訟期間由公司每月先付薪資。</p>
+    <p class="q">本案是確認之訴，可以聲請命給付的保全處分嗎？公司會事先知道嗎？</p>
+  </div>
+  <div class="vs">
+    <div><h4>假扣押、假處分</h4>本案限給付之訴；只凍結（查封），不滿足；秘密進行，債務人到執行時才知道</div>
+    <div class="rule-c"><h4>定暫時狀態處分</h4>本案給付、確認、形成都可以；得命<b>先為一定給付</b>（民訴 <span class="s">§538 III</span>），可到滿足；原則應使兩造陳述意見</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>要件是爭執之法律關係，為防止重大損害、避免急迫危險而有必要（民訴 <span class="s">§538 I</span>）。常見於租賃、僱傭、婚姻、黨籍這類繼續性法律關係，並帶有保護勞工、受扶養人的公益色彩。</p>
+    <p>本案和處分內容可以不同：本案離婚（形成），處分命給付扶養費（給付）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>國賠法命賠償義務機關暫先支付醫療費、喪葬費的「假處分」，性質是定暫時狀態處分，可以拿到錢。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-07-定暫時狀態處分的特色民訴§538.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>禁止行使董事職權的處分送達即生效；命返還給付的是抗告法院</h2>
+  <div class="scene">
+    <p>股東戊取得「己不得行使董事長職權」的定暫時狀態處分。收到裁定後，己仍去主持董事會。另一案，通行處分經乙抗告廢棄確定，乙請執行法院命甲返還通行利益。</p>
+    <p class="q">己的處分什麼時候生效？違反怎麼辦？執行法院能命甲返還嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">執行處送達裁定（<span class="s">§138</span>）</div><div class="a"></div>
+    <div class="b ok">己<b>收受時</b>生效，發生禁止的形成效果</div><div class="a lbl">違反</div>
+    <div class="b">聲請處怠金（準用 <span class="s">§129</span>）</div>
+    <div class="br"></div>
+    <div class="b">處分經抗告廢棄確定</div><div class="a"></div>
+    <div class="b no">命返還所受領之給付 → <b>抗告法院</b>（民訴 <span class="s">§538-2</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>94 年實務：送達後即生效力，無其他強制執行問題；學說補充，違反時仍得聲請處怠金，兩者並行。暫定受僱人地位的處分沒有給付內容，仍要聲請執行，由執行處送達，送達後程序終結。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>執行處只依執行名義辦事；名義被廢棄就撤銷執行處分。命對方返還給付是審判機關的事，選項寫「執行法院」就是錯的。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-08-定暫時狀態處分的執行.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>執行競合先判斷能否並存：可以就併案分配，不行就看終局或時間</h2>
+  <div class="scene">
+    <p>債務人乙只有一塊 A 地。甲1 持確定判決要拍賣 A 地；甲2 持假處分「禁止處分 A 地」。另一案，甲3 持確定判決、甲4 持假扣押，兩人都要錢。</p>
+    <p class="q">哪一組可以並存？不能並存的那組誰優先？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">兩個執行內容<br>互相抵觸嗎？</div>
+    <div class="out"><span class="tag">不抵觸</span><div class="b ok">並存：<span class="s">§33</span> 合併、分配；假扣押那份提存（<span class="s">§133</span>）</div></div>
+    <div class="out"><span class="tag">抵觸</span><div class="b">終局 vs 保全 → <b>終局優先</b>；同級 → <b>聲請先後</b></div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>執行競合是數個債權人各持執行名義，對同一債務人的同一標的同時或先後聲請執行。金錢對金錢通常可以並存；物之交付、行為不行為具排他性，通常不能並存。</p>
+    <p>甲1、甲2 一個要換價、一個不准動，互相抵觸，終局優先，甲2 的聲請駁回。甲3、甲4 並存。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>併案後前案撤回，後案的潛在效力會顯現，可以繼續執行。終局 vs 終局、保全 vs 保全才用時間先後。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-09-強制執行競合的處理原則.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>保全執行在先也擋不住終局執行：假處分不排除法院之強制執行</h2>
+  <div class="scene">
+    <p>乙先假扣押丙未辦保存登記的房屋，現場查封完畢。之後丁持拆屋還地的確定判決聲請執行同一棟房屋。</p>
+    <p class="q">違建能假扣押嗎？執行法院應否准許丁拆屋？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 乙：假扣押違建（現場查封，無查封登記）</div>
+    <div class="b">② 丁：拆屋（<span class="s">§127</span>）還地（<span class="s">§124</span>）</div>
+    <div class="br"></div>
+    <div class="b q">不准動 ↔ 要拆掉＝抵觸</div><div class="a"></div>
+    <div class="b ok">終局優先 → 准許丁執行（103 年座談會）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>70 年第 10 次（及 62 年第 1 次）：禁止處分之假處分只限制債務人自由處分，不排除法院之強制執行。假扣押在先、非金錢終局在後，本於相同法理同樣終局優先。</p>
+    <p>兩個終局（一金錢一非金錢）不依物權優先判斷，那樣違反分離原則；依聲請先後。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>先終局金錢查封、後假處分查封同一土地：查封階段可以短暫並存，到換價時終局優先。這題考過，很多人錯。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-10-終局與終局及終局與保全之競合.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>保全對保全看內容；誰先取得終局名義並完成，誰就優先</h2>
+  <div class="scene">
+    <p>甲先對乙的 A 地假處分禁止處分，乙的債權人丙後來假扣押 A 地。半年後甲先拿到「乙應移轉 A 地所有權登記」的確定判決。</p>
+    <p class="q">兩個保全能並存嗎？甲拿到判決後還要聲請強制執行嗎？丙的假扣押怎麼辦？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲假處分（查封）＋丙假扣押（查封）→ 都只查封，可並存</div>
+    <div class="br"></div>
+    <div class="b">甲先取得移轉登記確定判決</div><div class="a lbl">§130</div>
+    <div class="b ok">視為乙已為意思表示 → 逕辦登記</div><div class="a"></div>
+    <div class="b no">丙假扣押不相容部分效力消滅</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>假扣押對假扣押可以並存，金額提存（<span class="s">§133</span>）；涉及假處分的組合要看內容。</p>
+    <p>實務兼採查封優越（時間先後）與終局執行優越（終局優先）。反過來，若丙先取得清償判決並聲請拍賣，則終局優先，甲的假處分擋不住。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>該實務見解最後一句（假扣押在先、假處分債權人先取得名義者對假扣押債權人不生效力）已被 103 年座談會取代，不採。現在遇到終局一律終局優先。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-11-保全與保全之競合.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>假扣押的房屋被拆除後標的物失其存在，殘餘建材須重新依動產查封</h2>
+  <div class="scene">
+    <p>甲持拆屋還地確定判決執行乙的房屋；執行中丙假扣押同一房屋，後來丙取得清償借款確定判決，但房屋已經拆完，剩下一堆鋼筋木材。</p>
+    <p class="q">甲先拆合法嗎？丙可以請法院直接拍賣這些建材嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲、丙都是終局 → 聲請先後 → 甲先，拆除合法</div>
+    <div class="br"></div>
+    <div class="b">房屋（不動產查封 <span class="s">§76</span>）</div><div class="a lbl">拆除</div>
+    <div class="b no">標的物失其存在</div><div class="a"></div>
+    <div class="b ok">建材＝新動產 → 重新聲請、實施占有查封（<span class="s">§47</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>座談會多數說：動產與不動產的查封方法不同，查封不動產的效力不能變成查封動產的效力，丙不能依原查封直接拍賣建材。這與「假扣押移本案接續執行、不再查封」相反，因為標的已經不同。</p>
+    <p>假處分在先、金錢終局在後 → 准許拍賣，事後塗銷假處分查封登記。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>假處分債權人要阻止終局執行，不能以「保全在先」聲明異議；只能主張所有權等足以排除強制執行之權利，提起第三人異議之訴並聲請停止執行。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">10-筆記-12-強制執行競合實例演練.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>
