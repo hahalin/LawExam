@@ -42,12 +42,16 @@ article table td:first-child{min-width:9em}
 .pager small{display:block;color:var(--acc);font-weight:600}
 .pager .next{text-align:right}
 .pager span.gap{flex:1}
+.pager.top{padding:20px 16px 0}
+.pager.top:empty{display:none}
+.pager.top + main{padding-top:14px}
 .msg{color:var(--mu)}
 .src{display:block;text-align:right;font-size:.82rem;margin-top:14px;color:var(--mu)}
 .src a{color:var(--mu)}
-@media (max-width:600px){article{padding:16px 14px}main{padding:12px 10px 24px}.pager{flex-direction:column;padding:0 10px 32px}.pager .next{text-align:left}}
+@media (max-width:600px){article{padding:16px 14px}main{padding:12px 10px 24px}.pager{flex-direction:column;padding:0 10px 32px}.pager .next{text-align:left}.pager.top{padding:12px 10px 0}.pager.top + main{padding-top:10px}}
 </style></head><body>
 <header><div class="in"><a id="back" href="index.html">← 目錄</a><span class="where" id="where"></span><a class="pill eli" id="eli" hidden>🌐 ELI5</a></div></header>
+<nav class="pager top" id="pagerTop"></nav>
 <main><article id="doc"><p class="msg">載入中…</p></article>
 <span class="src" id="src"></span></main>
 <nav class="pager" id="pager"></nav>
@@ -77,7 +81,7 @@ async function main(){
     if (ctx.kind === 'note') {
       const p = l.notes[ctx.i - 1], n = l.notes[ctx.i + 1];
       const link = (x, cls, lab) => `<a class="${cls}" href="${x.url}"><small>${lab}</small>${x.no ? x.no + '　' : ''}${esc(x.t)}</a>`;
-      $('pager').innerHTML = (p ? link(p, 'prev', '← 上一份') : '<span class="gap"></span>') + (n ? link(n, 'next', '下一份 →') : `<a class="next" href="${$('back').href}"><small>本堂讀完</small>回 ${esc(l.title)} 目錄</a>`);
+      $('pager').innerHTML = $('pagerTop').innerHTML = (p ? link(p, 'prev', '← 上一份') : '<span class="gap"></span>') + (n ? link(n, 'next', '下一份 →') : `<a class="next" href="${$('back').href}"><small>本堂讀完</small>回 ${esc(l.title)} 目錄</a>`);
       document.title = `${l.title} ${l.notes[ctx.i].t.slice(0, 20)}`;
     } else document.title = `${l.title} 課程字幕`;
   }
