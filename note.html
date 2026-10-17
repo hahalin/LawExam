@@ -109,5 +109,12 @@ async function main(){
   });
 }
 main();
+document.addEventListener('keydown', e => {
+  if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || e.defaultPrevented) return;
+  if (e.target.closest('input,textarea,select,[contenteditable]')) return;
+  const cls = e.key === 'ArrowLeft' ? 'prev' : e.key === 'ArrowRight' ? 'next' : '';
+  const a = cls && document.querySelector('#pager a.' + cls);
+  if (a) { e.preventDefault(); location.href = a.href; }
+});
 </script>
 </body></html>
