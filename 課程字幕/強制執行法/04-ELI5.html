@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>強制執行法04 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="強制執行法04">
+<main>
+
+<header class="lesson-head">
+  <h1>強制執行法04</h1>
+  <span class="sub">強制執行的救濟：聲明異議 §12・債務人異議之訴 §14・既判力基準時與異議事由・第三人異議之訴 §15</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 8</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>救濟第一步：先問是程序瑕疵還是實體瑕疵，再決定找執行處還是民事庭</h2>
+  <div class="scene">
+    <p>甲持 500 萬確定判決，聲請執行乙的 A 屋與 B 地。乙說：甲欠我 800 萬買賣價金，我要抵銷。第三人丙說：A 屋是我出資興建的，是我的。</p>
+    <p class="q">乙和丙各該用什麼方式救濟？誰可以同時聲請停止執行？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">違反的是哪部法？</div>
+    <div class="out"><span class="tag">強執法</span><div class="b">程序瑕疵（違法執行）→ 向<b>執行處</b>聲明異議 §12 → <b>不停止執行</b></div></div>
+    <div class="out"><span class="tag">民法</span><div class="b ok">實體瑕疵（不當執行）→ 向<b>民事庭</b>提異議之訴（§14 債務人／§15 第三人）→ 得併 §18 II 聲請停止執行</div></div>
+  </div>
+  <div class="flow">
+    <div class="b">乙：抵銷＝債之消滅事由＝實體</div><div class="a"></div>
+    <div class="b ok">§14 債務人異議之訴 ＋ §18 II</div>
+    <div class="br"></div>
+    <div class="b">丙：所有權歸屬＝實體</div><div class="a"></div>
+    <div class="b ok">§15 第三人異議之訴 ＋ §18 II</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>審題先認三要素：誰對誰執行、執行名義是什麼、執行對象是什麼。三要素各有實體爭執的管道：執行名義 → §14；執行主體 → §14-1；執行客體 → §15。</p>
+    <p>兩種救濟最大的差別：聲明異議在執行處內部自我更正、<b>不停止執行</b>；異議之訴是一般民事訴訟，可以搭配 §18 II 停止執行，不然告到一半房子就被法拍了。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這張卡是幼幼班。若執行名義有確定判決效力，提 §14 還要看異議事由發生的時點（卡 6）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">04-筆記-01-救濟體系總覽程序瑕疵違法執行聲明異議§12vs實體瑕疵不當執行異議之訴§14§15停止執行§18II三要素辨識法違反強執法為程序違反民法為實體.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>聲明異議 §12：執行處做錯就跟執行處講；拿未確定的支付命令來執行等於拿白紙</h2>
+  <div class="scene">
+    <p>執行處變更了拍賣期日（裁定），債務人想抗告。承租人說執行法院沒有通知他優先承買。債權人拿到支付命令就急著聲請執行，確定證明書還沒下來。</p>
+    <p class="q">三個情形各怎麼救濟？裁定形式的執行處分要抗告還是聲明異議？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§12 I 四種事由（選擇題不用分，全是程序瑕疵）：執行命令／執行方法／應遵守之程序／其他侵害利益情事</span></li>
+    <li><span>程序：執行處裁定（§12 II）→ 不服得抗告（§12 III）；<b>不停止執行</b>（I 但書）</span><ul>
+      <li class="hit"><span>裁定形式的執行處分（變更拍賣期日）→ §12 是特別規定 → <b>先聲明異議</b>，對異議裁定不服再抗告（42 年判例）。沒剝奪抗告權，多一道讓執行處自我反省</span></li>
+      <li class="off"><span>土地法 §104、三七五減租 §15 優先承買通知 → 實體法上義務，非 §12「應遵守之程序」→ 不得聲明異議，只能以訴救濟（49 台抗 83）</span></li>
+      <li class="hit"><span>未確定支付命令、未確定判決、不具公證法 §13 要件之公證書 → <b>無執行名義＝白紙</b> → 聲明異議；執行法院獨立審查，不受誤發的確定證明書拘束（81 台抗 114，考 N 次）</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>「聲請」是執行機關不做（怠惰）叫他做；「聲明異議」是做了但做錯。口頭上統稱聲明異議。當事人和利害關係人都可以提、口頭書面皆可（查封現場舉手講）、向執行處或實際實施執行的受託法院；駁回確定後以同一理由再提也可以（不是訴訟）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>105 年題：確定支付命令未合法送達 → 異議期間無從起算、不確定 → 救濟是 C 聲明異議。同一個 81 台抗 114 換各種方式出。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">04-筆記-02-聲明異議§12聲請vs聲明異議四種事由不停止執行執行處裁定得抗告42年判例先異議再抗告49台抗83優先承買通知非§12程序81台抗114未確定支付命令.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>牙醫題：設備已拍賣受償就沒救了——救濟一定要在執行程序終結前，整個或個別看異議內容</h2>
+  <div class="scene">
+    <p>甲查封牙醫乙的醫療設備和房屋。設備已拍賣完畢、價金由甲受償；房屋拍賣程序進行中。乙主張設備是職業上所必需（§53 禁止查封），拍賣違法。</p>
+    <p class="q">乙的主張對嗎？還能救濟嗎？「執行程序終結前」是整個還是個別？</p>
+  </div>
+  <div class="flow">
+    <div class="b">設備：查封 → 換價 → 滿足都做完</div><div class="a"></div>
+    <div class="b no">設備之執行程序已終結</div>
+    <div class="br"></div>
+    <div class="b">乙主張禁止查封物＝程序瑕疵 → 聲明異議 ✓</div>
+    <div class="br"></div>
+    <div class="b">針對個別標的物 → 時點是該標的物之執行程序終結前</div>
+    <div class="br"></div>
+    <div class="b no">已終結 → 無救濟對象 → 答案 D</div>
+  </div>
+  <div class="vs">
+    <div><h4>整個 vs 個別（院 2776）</h4>異議針對<b>執行名義本身</b>（白紙）→ 整個執行程序終結前<br>異議針對<b>個別標的物</b>（設備為禁止查封物）→ 該標的物之執行程序終結前</div>
+    <div class="rule-c"><h4>拍賣程序終結＝買賣履行完畢</h4>拍定＝契約成立；買受人繳足價金、法院交付動產／不動產領得<b>權利移轉證書</b>（§98 I，取得所有權）＝履約完畢。之後永遠保護善意買受人，不得再撤銷拍賣，債務人只能就分配程序（價金）主張</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>兩個「已終結就沒救」：① 已終結之執行處分無從撤銷（§12 有理由也只撤銷未終結部分）② <b>執行程序跑得快</b>：聲明異議和抗告都不停止執行，抗告法院審到一半執行程序先終結 → 駁回（院 2776）。遷讓房屋題：解除占有使歸債權人占有＝§124 物之交付執行終結 → 抗告只能駁回。</p>
+    <p>違法執行行為沒去救濟，程序都有效。有意見要早點提。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不動產拍定人取得所有權的時點是領得權利移轉證書，不是登記——民法物權編登記生效的特別規定。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">04-筆記-03-聲明異議時點終結前整個vs個別院2776牙醫題已終結之執行處分無從撤銷拍賣程序終結即買賣履行完畢§98I保護善意買受人執行程序跑得快駁回.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>債務人異議之訴 §14 的骨架：形成之訴、告債權人、去民事庭；假扣押假處分不能用</h2>
+  <div class="scene">
+    <p>債務人被執行，說請求權已罹於時效，到民事庭起訴：「被告不得執某執行名義對原告為強制執行」。另一人被假扣押，也想提 §14。</p>
+    <p class="q">§14 的訴訟標的是什麼？敗訴後還能告不當得利嗎？哪種執行名義不能提 §14？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>結構：原告<b>債務人</b>、被告<b>債權人</b>、向執行處所屬地院<b>民事庭</b>（不用再依民訴找管轄）、<b>形成之訴</b>（訴訟標的＝§14 的異議權，效果＝排除執行名義之執行力）</span></li>
+    <li><span>既判力不及於實體法律關係 → 敗訴確定後仍得依不當得利另訴</span></li>
+    <li><span>適用範圍</span><ul>
+      <li class="off"><span><b>假扣押、假處分</b>（保全執行）→ 不得提 §14（實務；條文看不出來要記）→ 實體爭執走<b>本案訴訟</b></span></li>
+      <li class="hit"><span>假執行判決 → 得提（86 年判決：有 §18 II 停止執行的實益；學說反對）</span></li>
+    </ul></li>
+    <li><span>與確定判決同一效力的執行名義：確定判決、訴訟上和解、訴訟上調解、鄉鎮市調解經核定、仲裁判斷。公證書、支付命令、本票裁定、拍賣抵押物裁定、大陸裁判經認可 → <b>沒有</b></span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>結論只記一句：只有假扣押、假處分不能用 §14。「有無確定判決同一效力」這個分類接下來兩張卡都要用：決定 §14 用第一項還是第二項，也決定要不要畫既判力基準時的圖。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§14 的「執行法院」是民事庭不是執行處。執行處不開庭；當事人在執行處說「我已清償」，執行處依 §16 指示其另行起訴。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">04-筆記-04-債務人異議之訴§14基本形成之訴異議權為訴訟標的敗訴後仍得另訴保全執行不得假執行判決得與確定判決同一效力之執行名義.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>§14 第一項管「成立後」、第二項管「成立前」——條文倒著規定；數個事由要一併主張</h2>
+  <div class="scene">
+    <p>債務人清償了，債權人還是來執行。一個是在支付命令確定後才還的，一個是在支付命令確定前就還了。另一人以抵銷為由提異議之訴敗訴確定，又想以「根本沒有借貸合意」再告一次。</p>
+    <p class="q">兩個清償各用第幾項？第二次還能告嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">§14 II：執行名義<b>成立前</b></div><div class="a lbl">成立</div>
+    <div class="b">§14 I：執行名義<b>成立後</b></div>
+    <div class="br"></div>
+    <div class="b">II 事由：<b>不成立</b>、消滅、妨礙<small>限無確定判決同一效力之執行名義</small></div><div class="a"></div>
+    <div class="b">I 事由：消滅、妨礙<small>所有執行名義皆適用</small></div>
+    <div class="br"></div>
+    <div class="b dim">II 多送一個「不成立」：此類執行名義未經審判程序，較易有瑕疵</div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§14 III：數個異議原因事實應<b>一併主張</b>（通說：同一訴訟言詞辯論終結前可追加）→ 未一併主張不得再提<b>異議之訴</b>（另提給付之訴可）</span></li>
+    <li><span>異議事由例：清償、提存、抵銷、免除、混同、時效完成、解除條件成就、訴訟外和解、解除、撤銷、延期清償同意、同時履行抗辯、通謀虛偽無效、無權代理</span></li>
+    <li><span>執行契約：不利債務人的約定<b>無效</b>（強執法是債務人最低保障）；不利債權人的約定（分期、延期）有效但僅有實體法拘束力 → 執行處不受拘束 → 用 <b>§14</b> 不用 §12</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>112 年題（選錯）：A 支付命令未合法送達 → 聲明異議 ✓；B 未交付借款債權不成立 → §14 II ✓；C 執行開始後清償 → §14 I ✓；D 抵銷之訴駁回確定後再以無借貸合意另提 → §14 III ✗ → 答案 D。</p>
+    <p>113 年題（選對）：B 時效在聲請支付命令「前」完成卻寫「第一項」✗（應為第二項）；C 「依職權」「不須供擔保」停止執行 ✗（由債務人聲請、供擔保與否法院裁量）；D 支付命令不須確定即得執行 ✗；A §27 債權憑證 ✓。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題真的會問第一項還是第二項。記「倒著規定」：第二項在前、第一項在後。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">04-筆記-05-§14第一項vs第二項倒著規定成立後消滅妨礙vs成立前不成立消滅妨礙限無確定判決效力第三項一併主張異議事由例執行契約§16指示另訴考題.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>有確定判決效力的執行名義：異議事由要發生在既判力基準時之後；抵銷例外以行使時為準</h2>
+  <div class="scene">
+    <p>甲持確定判決執行乙。乙說早就清償了——問他什麼時候還的：「第二審審理中」。另一位乙在第二審時就有可以抵銷的債權，當時沒主張，執行中才行使抵銷。還有一位基準時前就有得撤銷的原因，執行中才撤銷。</p>
+    <p class="q">三個人各能不能提 §14？為什麼抵銷和撤銷結論相反？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="既判力基準時">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="130" cy="70" r="5" class="dot"/>
+    <text x="130" y="48" text-anchor="middle">A 事由（舊）</text>
+    <text x="130" y="94" text-anchor="middle" class="mu">第二審中清償</text>
+    <text x="130" y="112" text-anchor="middle" class="mu">被遮斷 ✗　§14 II 區</text>
+    <circle cx="260" cy="70" r="5" class="dot acc"/>
+    <text x="260" y="48" text-anchor="middle">基準時</text>
+    <text x="260" y="94" text-anchor="middle" class="mu">最後事實審言詞辯論終結</text>
+    <text x="260" y="112" text-anchor="middle" class="mu">和解調解：成立時</text>
+    <circle cx="400" cy="70" r="5" class="dot"/>
+    <text x="400" y="48" text-anchor="middle">B 事由（新）</text>
+    <text x="400" y="94" text-anchor="middle" class="mu">執行中清償</text>
+    <text x="400" y="112" text-anchor="middle" class="mu">得提 §14 ✓　§14 I 區</text>
+  </svg>
+  <div class="vs">
+    <div class="rule-c"><h4>抵銷：以實際行使時為準 → 得提</h4>抵銷不是請求權的瑕疵，是兩個獨立債權互抵；要不要抵銷是債務人的自由，民法不能強迫抵銷 → 基準時前有抵銷適狀未主張，執行中才行使 → 事由發生在行使時＝新 → §14 ✓（肯定說）</div>
+    <div class="trap-c"><h4>撤銷、解除、時效完成：須在本案主張 → 不得</h4>撤銷權是請求權本身的瑕疵，基準時前已存在未主張就被遮斷；無效都被既判力阻卻，較輕的撤銷反而能主張 → 失衡（否定說為大宗）。解除權、基準時前已完成的時效同此</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>畫這張圖的兩個前提都要滿足：① 考 §14 債務人異議之訴 ② 執行名義<b>有確定判決同一效力</b>。既判力遮斷的是<b>攻擊防禦方法</b>（基準時前能提的全部要提，沒提就失權），不是訴訟標的。</p>
+    <p>執行名義是支付命令、公證書、本票裁定、拍賣抵押物裁定、大陸裁判經認可 → 沒有既判力 → 同一張圖但不畫斜線，事由在前（§14 II）在後（§14 I）都能提。</p>
+    <p>執行還沒開始就擔心被執行而預先提 §14 → 不行（20 年判例，沒有執行程序就沒有異議之訴）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>講義 155 頁：確定判決執行，丙拍定領得權利移轉證書，乙於分配前主張「確定判決後」清償 → 新事由 → §14 ✓（答案 B），但拍賣已終結不能撤銷，只能就價金主張。156 頁拍賣抵押物裁定題 D 錯在「聲明異議並停止執行」——聲明異議不能停止執行；§14 或確認抵押權不存在之訴（釋字 182）才能。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">04-筆記-06-既判力基準時與異議事由發生時期有確定判決效力者須基準時後新事由遮斷效無既判力名義不限抵銷以行使時為準vs撤銷解除時效須本案主張超前部署不得.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>第三人異議之訴 §15：我不是債務人，你來執行我的東西——個別終結前、去民事庭</h2>
+  <div class="scene">
+    <p>甲持對乙1、乙2 的執行名義，執行三人（乙1、乙2、乙3）共有的 A 地。乙3 說：你沒有對我的執行名義。甲說：乙1 加乙2 已經三分之二，土地法 §34-1 多數決就能處分了。</p>
+    <p class="q">乙3 什麼情況能提 §15？多數決的說法對嗎？單純占有的人能提嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>結構：原告<b>第三人</b>、被告<b>債權人</b>（債務人也否認時並列）、民事庭、形成之訴、得併 §18 II；終結前＝<b>個別</b>（針對該標的物；§14 才是整個）</span></li>
+    <li><span>「足以排除強制執行之權利」：44 台上 721 例示所有權、典權、留置權、質權——<b>不以此為限</b>；<b>單純占有</b>（§940 事實上管領力）不行</span></li>
+    <li><span>共有四種情形</span><ul>
+      <li class="off"><span>只執行乙1 的<b>應有部分</b> → 乙3 不受影響 → ✗（持分可單獨賣）</span></li>
+      <li class="hit"><span>執行 A 地<b>全部</b> → 侵害乙3 的三分之一 → ✓</span></li>
+      <li class="hit"><span><b>公同共有</b> → ✓</span></li>
+      <li class="hit"><span>乙1＋乙2 達 §34-1 多數決 → 仍 ✓：§34-1 是共有人<b>主動</b>行使同意權處分，不是被執行；債權人不得為實現債權侵害第三人</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§15 救濟的是「錯誤執行」——執行到非債務人的財產，第三人躺著也中槍。訴之聲明：某執行事件就某標的物之執行程序應予撤銷。</p>
+    <p>§14 vs §15：§14 否定執行名義 → 整個程序終結前、有既判力遮斷問題；§15 針對客體 → 個別標的物終結前、沒有異議事由時期限制。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項若寫「§15 之權利以 44 台上 721 所列四種為限」→ 錯，是例示。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">04-筆記-07-第三人異議之訴§15實體形成之訴個別終結前民事庭足以排除強制執行之權利44台上721例示非限單純占有不行共有應有部分vs全部土地法§34-1不適用.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>誰能提 §15 的一覽：違建、附條件買賣、查封後過戶、用益／擔保物權、孳息、假處分</h2>
+  <div class="scene">
+    <p>丙蓋了頂樓加蓋賣給乙，乙的債權人來執行，丙說形式上我還是所有人。分期付款的手機還沒繳完，店家的債權人來執行。A 地查封後乙偷偷過戶給丙。地主的債權人查封承租人種的菜。假處分的債權人想擋其他債權人執行。</p>
+    <p class="q">每一個能不能提第三人異議之訴？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>違建</span><ul>
+      <li class="off"><span>原始建築人<b>已出賣</b>（形式所有人）→ ✗：賣掉錢也拿了，負交付義務，對買受人之債權人有忍受義務（50 台上 1236）</span></li>
+      <li class="hit"><span>債務人不是買受人、真正買受人丁（事實上處分權）→ 錯誤執行，但丁無所有權不得直接提 → <b>代位</b>原所有人丙提 §15（48 台上 209）</span></li>
+    </ul></li>
+    <li><span>附條件買賣（分期）</span><ul>
+      <li class="hit"><span>買受人之債權人執行 → <b>出賣人</b>得提（所有權保留擔保價金）</span></li>
+      <li class="hit"><span>出賣人之債權人執行 → <b>買受人</b>也得提（有占有使用、繼續繳款取得所有權的契約上權利）</span></li>
+    </ul></li>
+    <li class="hit"><span>查封後移轉登記之受讓人 → ✓（50 台上 69：登記絕對真實公信力；§51 II 查封效力<b>相對無效</b>）→ 債權人另訴<b>塗銷登記</b></span></li>
+    <li><span>用益物權人 → 看占有使用是否受侵害：不點交 ✗；點交、強制管理、物之交付 ✓</span></li>
+    <li><span>擔保物權：質權、留置權（以占有為要件）喪失占有 ✓；權利質權扣押命令 ✗、換價命令 ✓；<b>抵押權原則 ✗</b>（§98 III 拍賣消滅、§34 II 強制參與分配優先受償，權益不受影響；張登科例外：一部執行致整體擔保價值大降）</span></li>
+    <li class="hit"><span>天然孳息收取權人（承租種菜）→ ✓；前提：一個月內可收穫之孳息得執行（§53 I ⑤ 反面）</span></li>
+    <li class="off"><span>假處分債權人 → ✗（70 年第 10 次決議：只禁止<b>債務人</b>處分，不排除法院強制執行；不能藉假處分變成優先受償）</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>判斷原則一句話：第三人就標的物有物權等級的權利、因執行受侵害而<b>法律上無忍受義務</b> → 得提。違建買賣移轉的是事實上處分權（不能登記），所以買受人要代位；附條件買賣兩面都保護是實務較特別的地方。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>109 年考題（講義 171 頁）就是違建代位這個最難的點，下堂複習。下堂從國家財產（講義「國資產」）開始。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">04-筆記-08-§15特殊類型違建出賣人不得買受人代位48台上209附條件買賣兩面查封後移轉登記仍得50台上69§51II相對無效用益擔保物權孳息收取權假處分債權人不得.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

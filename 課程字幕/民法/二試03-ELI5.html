@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法二試03 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法二試03">
+<main>
+
+<header class="lesson-head">
+  <h1>民法二試03</h1>
+  <span class="sub">二試財產法總複習（完結）：無益裝修費用・查封與給付不能・履行請求權與預示拒絕・同時履行抗辯四爭點・撤銷拋棄繼承・108 台上大 1652・刊登判決・保證與不真正連帶・§244 IV 與同時履行抗辯・慰撫金抵銷・§425-1 租金・建物承租人占有土地</span>
+</header>
+<p class="lesson-intro">接續 02 的契約法，一路講到債之保全、債各實務和一個物權大法庭。每張卡都照同一個骨架：先找條文、停在有爭議的要件、比較各說，最後回到案例下結論。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>承租人之裝修費用已附合於出租人房屋，非固有利益；詹森林定性為徒勞無益費用，依 §227 I 準用 §226 請求</h2>
+  <div class="scene">
+    <p>甲向乙租 A 屋開高爾夫球培訓場，乙謊稱 A 屋是合法建物。甲花 250 萬裝修後，A 屋被拆了。甲不想算五年營業利潤，只想拿回 250 萬。</p>
+    <p class="q">這 250 萬是什麼性質的損害？</p>
+  </div>
+  <div class="vs">
+    <div><h4>實務（112 台上 2911）</h4>裝修費是甲的固有利益 → 加害給付 → <span class="s">§227 II</span></div>
+    <div class="rule-c"><h4>詹森林</h4>裝修已附合成乙屋的一部分（§811），甲沒有固有利益受害 → 徒勞無益費用 → <span class="s">§227 I＋§226</span>，類推 §213 III</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>乙違反 <span class="s">§423</span> 保持義務，構成不完全給付。§227 I 本身沒有完整效果，要看能不能補正：房子已拆、不能補正，所以準用給付不能。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>詹森林要回到的是「如同沒簽約」的狀態，不是真正回復原狀，所以只能類推 §213 III。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-01-承租人無益裝修費用之賠償§227.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>不動產查封僅屬一時不能，買受人仍得依 §348 請求移轉登記（詹森林，反對 70 年第 18 次民事庭決議）</h2>
+  <div class="scene">
+    <p>乙用 800 萬向甲買 A 屋。簽約後才發現，A 屋正被甲的債權人丙查封，地政機關停止辦理移轉登記。</p>
+    <p class="q">乙還能要求法院命甲過戶嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">查封是<br>哪一種不能？</div>
+    <div class="out"><span class="tag">早期實務</span><div class="b no">給付不能 → 不得命移轉，只能 §226 求償</div></div>
+    <div class="out"><span class="tag">詹森林</span><div class="b ok">一時不能 → 仍得依 §348 請求；屆期不能給付再依 §231 I 求遲延損害</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§226</span> 的給付不能應限於永久不能。查封是暫時的，甲清償後就能撤銷查封。最高法院前後兩件訴訟見解不一，詹森林主張應提大法庭統一見解。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>早期實務看似保護交易，其實剝奪了買受人請求給付標的物的權利，與財產權保障不符。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-02-不動產查封登記與給付不能§226.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>履行成本不合理時債權人只能請求損害賠償；債務人斷然預示拒絕時，得於履行期前解除契約</h2>
+  <div class="scene">
+    <p>乙每天供應甲的便當店 10 公斤高麗菜，約到 12/31。9/7 乙說：「別人出價高，9/30 以後不送了。」</p>
+    <p class="q">甲一定要等到 10/1 乙真的不送，才能解約嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="預示拒絕時間軸">
+    <line x1="15" y1="60" x2="505" y2="60" class="lt"/>
+    <circle cx="60" cy="60" r="5" class="dot"/>
+    <text x="60" y="40" text-anchor="middle">1/1 訂約</text>
+    <circle cx="190" cy="60" r="6" class="dot acc"/>
+    <text x="190" y="40" text-anchor="middle">9/7 預示拒絕</text>
+    <text x="190" y="86" text-anchor="middle" class="mu">折衷說、學說：</text>
+    <text x="190" y="104" text-anchor="middle" class="mu">此時可解除</text>
+    <circle cx="340" cy="60" r="5" class="dot"/>
+    <text x="340" y="40" text-anchor="middle">10/1 履行期</text>
+    <text x="340" y="86" text-anchor="middle" class="mu">否定說：等遲延、</text>
+    <text x="340" y="104" text-anchor="middle" class="mu">催告後才 §254</text>
+    <circle cx="465" cy="60" r="5" class="dot"/>
+    <text x="465" y="40" text-anchor="middle">12/31 約滿</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>否定說（104 台上判決）：履行期前沒有債務不履行。折衷說（108 年法律座談會）：斷然、無轉圜餘地的拒絕可以提前解約。學說依誠信原則肯定，陳聰富建議立法。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>歐陸法以請求履行為原則，但房子少蓋 33 公分就要拆除重建，負擔不合理，這時只能請求損害賠償。人身專屬勞務也不能強制履行。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-03-履行請求權之界限與預示拒絕之提前解約.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>同時履行抗辯行使後遲延責任溯及消滅（107 年第 8 次決議），但他方曾提出給付者例外不溯及</h2>
+  <div class="scene">
+    <p>甲賣車給乙，價金 100 萬。甲先把車開去交付，乙卻不收。一年後甲請求乙付款和這一年的遲延利息，乙主張同時履行抗辯。</p>
+    <p class="q">乙還能主張嗎？一年的利息要付嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>① 受領遲延後能否主張：實務能（75 台上 534）；陳聰富認為違反誠信，只剩不安抗辯</span></li>
+    <li class="hit"><span>② 已生的遲延利息：原則溯及消滅（107-8 決議）；本例甲曾提出 → 阮富枝：例外不溯及</span></li>
+    <li><span>③ 請求權已罹時效仍可抗辯（112 台上 2091）；老師認為原審否定說也有道理</span></li>
+    <li class="off"><span>④ 拒給收據：實務可抗辯；陳聰富認為無對立性</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§264</span> 的文義沒有排除受領遲延者，所以實務准許。抗辯一經行使，拒絕給付的效果溯及發生，往後也不再遲延。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這題可以分兩層考：先問能不能主張，再問已生的利息會不會一筆勾銷。第二層的例外正好就是第一層的受領遲延案型。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-04-同時履行抗辯四爭點§264.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>拋棄繼承為身分行為，原則不得依 §244 撤銷；遺產分割協議為財產行為，得撤銷</h2>
+  <div class="scene">
+    <p>甲過世，留下 1,000 萬，繼承人是乙、丙。丙欠 A 銀行 500 萬，本來可以繼承 500 萬讓銀行執行，丙卻全部讓給乙。</p>
+    <p class="q">A 銀行能撤銷丙的放棄嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">丙放棄的是<br>什麼？</div>
+    <div class="out"><span class="tag">繼承資格</span><div class="b no">拋棄繼承＝身分行為 → §244 III 不得撤銷（多數）</div></div>
+    <div class="out"><span class="tag">遺產</span><div class="b ok">分割協議全歸乙＝財產行為 → 得撤銷（106 年判決）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>林秀雄：銀行放款看的是現有資力，將來能繼承多少不在預期內。少數說：<span class="s">§1148 II</span> 改採有限責任後，繼承已無不利益，惡意拋棄依誠信原則例外得撤銷。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>老師點名還沒考過、可考性高。題目寫「拋棄繼承」或「協議不分遺產」，結論相反，要看清楚。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-05-撤銷拋棄繼承與遺產分割協議§244III.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>特定物債權人須轉換為金錢債權始得撤銷，撤銷後不得再請求移轉特定物（108 台上大 1652）</h2>
+  <div class="scene">
+    <p>甲把 A 地的一半借名登記在乙名下。乙把整塊 A 地送給丙，自己沒有其他財產。甲撤銷贈與後，土地回到乙名下。</p>
+    <p class="q">甲可以再要求乙把那一半過戶給自己嗎？</p>
+  </div>
+  <div class="vs">
+    <div><h4>大法庭（6 比 5）</h4>§244 III：特定物債權要先轉成金錢債權才能撤；撤銷後只能拍賣受償，讓其他債權人一起分配</div>
+    <div class="rule-c"><h4>不同意見書、陳忠五</h4>條文只說「僅」，不排除「兼」受害；沒有其他債權人時何必轉換？撤後要土地或要錢由甲選</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>甲不能直接依 §767 對丙塗銷，因為借名登記的出名人處分是有權處分。撤銷（<span class="s">§244 I</span>）和命丙回復原狀（<span class="s">§244 IV</span>）可以並存，爭點在撤銷後還能不能請求移轉土地。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>最可能的考法是「甲堅持不轉換，還能撤銷嗎？」。只寫結論不夠，要寫出兩邊的理由。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-06-特定物債權人之撤銷權108台上大1652.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>回復名譽之適當處分不得強制道歉；刊登判決得要求具名，但命於個人臉書置頂有侵害不表意自由之嫌</h2>
+  <div class="scene">
+    <p>甲在網路上造謠毀損乙的名譽，乙勝訴。乙希望甲在自己的臉書貼出判決，並置頂 30 天。</p>
+    <p class="q">法院可以這樣判嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b no">登報道歉 ✗<small>111 憲判 2</small></div>
+    <div class="br"></div>
+    <div class="b no">個人臉書刊登＋置頂 ✗<small>最高法院</small></div>
+    <div class="br"></div>
+    <div class="b ok">報紙刊判決＋具名「刊登人某某某」✓<small>高院 114 年座談會</small></div>
+    <div class="br"></div>
+    <div class="b ok">報紙刊判決 ✓<small>判決本來就公開</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§195 I 後段</span>的「適當處分」以不侵害加害人的不表意自由為界。判斷標準是這種方式離「以本人名義表態」有多近。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不是只要刊登判決就一定沒問題。同樣是刊登判決，用個人帳號發表就接近強迫道歉。這是補充二試01 強制道歉案的新發展，答題時接在 111 憲判 2 後面寫。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-07-回復名譽之適當處分與刊登判決§195I後段.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>保證人對未經認許外國法人之行為人無內部求償權，實務以 §749 承受債權解套；管靜怡主張擴大真正連帶</h2>
+  <div class="scene">
+    <p>甲向乙借 1,000 萬，由外國法人 B（未經認許）和 C 共同保證，A 代表 B 簽約。後來 C 自己還了 1,000 萬。</p>
+    <p class="q">C 能要求 A、B 連帶負責嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>B–C：§748 共同保證 → 真正連帶 → C 對 B 有 §281 I 求償</span></li>
+    <li><span>A–B：民總施行法 §15 → 連帶</span></li>
+    <li class="hit"><span>A–C：沒有條文 → 不真正連帶 → C 對 A 無求償權</span><ul>
+      <li><span>實務：C 依 §749 承受乙的債權（含對 A 的權利）</span></li>
+      <li><span>管靜怡：ABC 從寬認定為一組真正連帶；AB 一體 → C 請求 500 萬</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>民總施行法 §15 的連帶是對債權人乙，不是對 C。實務以「法條有沒有寫連帶」區分真正與不真正連帶，所以只能繞道 <span class="s">§749</span>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>題目出現「外國法人」，多半就是考這個。民總施行法考試可能不附，§15 要自己記。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-08-保證債務與不真正連帶§749.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>債權人依 §244 IV 請求回復原狀時，受益人不得以其對債務人之同時履行抗辯對抗（113 台上 1348）</h2>
+  <div class="scene">
+    <p>乙欠甲 500 萬，卻把唯一的 A 地（值 500 萬）用 100 萬賣給知情的丙。甲撤銷買賣，要求丙把 A 地登記回乙名下。</p>
+    <p class="q">丙說「乙先還我 100 萬再說」，有道理嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙↔丙：互負 §179 返還義務<small>類推 §264 可同時履行</small></div>
+    <div class="br"></div>
+    <div class="b q">甲依 §244 IV 請求丙回復<small>丙能拿對乙的抗辯對抗甲？</small></div>
+    <div class="br"></div>
+    <div class="b ok">✗ 甲的固有權利，非代位乙；丙惡意，自負乙無資力的風險</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>乙丙之間是因契約無效互負返還義務，不是因契約互負債務，所以只能類推 <span class="s">§264</span>。甲對丙的權利和丙對乙的權利沒有對立性。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>如果准丙抗辯，乙沒錢還 100 萬，土地就永遠回不去，撤銷權保全債權的作用就落空。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-09-受益人不得對撤銷債權人主張同時履行抗辯§244IV.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>慰撫金請求權縱未起訴或承諾，仍得主張抵銷（110 台上 2523）</h2>
+  <div class="scene">
+    <p>汽車撞機車。騎士甲受傷，慰撫金法院酌定 30 萬；駕駛乙車損 10 萬，先起訴向甲請求。</p>
+    <p class="q">甲還沒起訴請求慰撫金，能直接拿來抵銷嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>早期實務</h4>§195 II：未起訴、未承諾前要償意思不明、數額不明 → §334 I 但書，不能抵銷</div>
+    <div class="rule-c"><h4>110 台上 2523</h4>主張抵銷就表示要請求；數額本來由法院定；§195 II 只限制讓與、繼承 → 可以抵銷，甲還能再請求 20 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>爭點在 <span class="s">§334 I</span> 但書「依債之性質不能抵銷」。本判決原本想提大法庭，徵詢後發現各庭意見已經一致，直接改採肯定說。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>同判決另一爭點：甲收入沒減少，能否請求 <span class="s">§193 I</span> 勞動能力減損？課堂敘述前後不一致，判決結論要對講義。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-10-慰撫金請求權之抵銷與勞動能力減損110台上2523.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>§425-1 租金請求權時效自推定租賃時起算；判決確定前承租人不可歸責，不負遲延責任（113 台上 766）</h2>
+  <div class="scene">
+    <p>甲把 A 屋賣給乙、B 地賣給丙，推定乙丙之間有租賃。租金談不攏，丙在 108 年起訴，110 年判決月租 2 萬確定。</p>
+    <p class="q">判決確定前那幾年，丙能另外請求遲延利息嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">判決確定前<br>的遲延利息</div>
+    <div class="out"><span class="tag">高院座談會</span><div class="b">已催告 → 催告時起；未催告 → 起訴狀送達翌日起</div></div>
+    <div class="out"><span class="tag">最高法院</span><div class="b ok">數額未定，承租人不可歸責（§230）→ 判決確定後才有遲延利息</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>定租金之訴只是就既有租賃確定數額，效力溯及，所以租金和時效都從推定租賃時起算（<span class="s">§128</span>）。不知道數額只是事實上障礙。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>同一個溯及效力，租金往前算，遲延利息卻不往前算，因為遲延責任還要以可歸責為要件。老師認為最高法院較有說服力。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-11-法定租賃之租金時效與遲延利息§425-1.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>無權占有土地之建物承租人亦為土地占有人，除善意占有外應返還使用土地之利益（大法庭）</h2>
+  <div class="scene">
+    <p>B 在 A 的土地上違建，再把房子租給 C。A 鑑定這兩年土地使用利益 199 萬，扣掉 B 已付的 20 萬，向 C 請求 179 萬。</p>
+    <p class="q">C 只是租房子，怎麼會占有 A 的土地？</p>
+  </div>
+  <div class="flow">
+    <div class="b q">受利益：租房子＝占有土地？<small>§940 事實上管領力</small></div>
+    <div class="br"></div>
+    <div class="b ok">大法庭：是；否則 A 也無法依 §767 請求 C 遷出</div>
+    <div class="br"></div>
+    <div class="b q">無法律上原因？<small>不看 BC 租約，依權益歸屬說</small></div>
+    <div class="br"></div>
+    <div class="b">善意 C：§943 推定有租賃權 → §952 起訴前不返還</div>
+    <div class="b no">惡意 C 或訴狀送達後 → 返還</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>房屋不能脫離土地，C 支配房屋，也就支配了土地。陳忠五在本案前身判決時已撰文採同一看法。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不同意見書不否認物理上房地不可分，而是改用社會通念：承租人認知自己只用房屋空間。兩說並陳時，要點出這個切法。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">二試03-筆記-12-建物承租人之土地占有與不當得利§952.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

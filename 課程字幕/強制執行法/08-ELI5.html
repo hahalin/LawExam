@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>強制執行法08 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="強制執行法08">
+<main>
+
+<header class="lesson-head">
+  <h1>強制執行法08</h1>
+  <span class="sub">對第三人金錢債權 §115・扣押範圍 §118・繼續性給付 §115-1・提存 §115-2・§116・§117・第三人異議 §119～§120・禁止執行 §122・公法人 §122-1～§122-4・物之交付預告</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。這堂的主角是第三人丙：甲執行乙，但錢或東西在丙手上。最常考的是移轉命令（債權讓與、生效即終結）和兩個「十日」。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 14</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>對第三人金錢債權：先發扣押命令，再以收取、移轉或支付轉給命令換價（§115）</h2>
+  <div class="scene">
+    <p>甲對乙有 100 萬確定判決。乙名下沒有房子，但在丙銀行有 60 萬存款。</p>
+    <p class="q">存款看不到也摸不到，執行處要怎麼查封？哪一種換價命令一生效，執行程序就結束？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>查封階段（<span class="s">§115 I</span>）</span><ul>
+      <li class="hit"><span><b>扣押命令</b>：禁止乙收取或處分＋禁止丙向乙清償</span></li></ul></li>
+    <li><span>換價階段（<span class="s">§115 II</span>）</span><ul>
+      <li><span>收取命令：甲直接向丙收</span></li>
+      <li class="hit"><span><b>移轉命令</b>：債權讓與，生效即終結</span></li>
+      <li><span>支付轉給命令：丙付給法院，法院轉給甲</span></li></ul></li>
+    <li class="off"><span>難以依上述辦理 → 拍賣、變賣（<span class="s">§115 III</span>）</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>對債務人的金錢債權（存款、薪資、租金、貨款）執行，查封方法是執行法院<b>應</b>發扣押命令，有兩個禁止。換價則從三種命令中選一種。</p>
+    <p>收取與支付轉給都是代位收取，甲實際拿到錢才發生清償效力；移轉命令是債權讓與，換價與滿足同時完成。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>丙沒錢付的風險：移轉命令由<b>債權人甲</b>承擔；收取、支付轉給仍由債務人承擔，甲可以再執行乙的其他財產。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-01-對第三人金錢債權執行§115.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>扣押命令於送達第三人時生效；存款以到達當時的餘額為準（§118）</h2>
+  <div class="scene">
+    <p>扣押 50 萬的命令 3/1 送達乙、3/2 送達丙銀行。3/2 帳戶裡有 20 萬，3/3 有人匯入 30 萬。</p>
+    <p class="q">扣押何時生效？3/3 匯入的 30 萬也被扣住嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="扣押命令生效時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="90" cy="70" r="5" class="dot"/>
+    <text x="90" y="48" text-anchor="middle">3/1 送達乙</text>
+    <text x="90" y="94" text-anchor="middle" class="mu">尚未生效</text>
+    <circle cx="260" cy="70" r="5" class="dot acc"/>
+    <text x="260" y="48" text-anchor="middle">3/2 送達丙</text>
+    <text x="260" y="94" text-anchor="middle" class="mu">生效：扣住 20 萬</text>
+    <circle cx="430" cy="70" r="5" class="dot"/>
+    <text x="430" y="48" text-anchor="middle">3/3 匯入 30 萬</text>
+    <text x="430" y="94" text-anchor="middle" class="mu">不及，須另行扣押</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>扣押命令要送達債務人<b>及</b>第三人，送達<b>第三人</b>時生效；權利須登記者（專利、商標），先登記就以登記時為準，以先者為準（<span class="s">§118</span>）。</p>
+    <p>客觀範圍以命令記載金額為限：帳戶 100 萬、扣 50 萬，另外 50 萬乙仍有處分權，不是凍結整個帳戶。到達時已入帳的利息也在內。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>存款不是繼續性給付債權，扣押<b>沒有向後效力</b>，次日匯入的錢不及；存款不足 50 萬時，銀行要在 10 日內書狀聲明異議（卡 11 第三題）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-02-扣押命令生效與客觀範圍§118.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>薪資等繼續性給付債權，扣押效力及於扣押後應受及增加之給付（§115-1 I）</h2>
+  <div class="scene">
+    <p>甲對乙在 K 公司的薪資聲請執行，法院發扣押命令。三個月後 K 公司替乙加薪 5,000 元。</p>
+    <p class="q">甲要每個月重新聲請扣押嗎？加薪的部分也扣得到嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>存款（一般債權）</h4>只及於命令生效時已存在的債權；之後存入的不及</div>
+    <div class="rule-c"><h4>薪資、租金（繼續性給付）</h4>一次扣押即有<b>向後效力</b>：未到期部分（應受）＋加薪（增加）都及之</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>將來債權原則上不受扣押，但與原扣押債權基於<b>同一繼續之法律關係</b>發生的，於債權額及執行費用範圍內得繼續扣押，免得每月重發命令（<span class="s">§115-1 I</span>）。</p>
+    <p>薪資扣押原則上不得超過每期給付的三分之一（<span class="s">§115-1 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「扣押效力不及於扣押後加薪部分」是錯的（104 年考題 A 選項）。考試的繼續性給付幾乎只出<b>薪資、租金</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-03-繼續性給付債權扣押§115-1.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>扣押前已取得的抵銷權、契約終止權不受扣押影響；扣押後取得的債權不得抵銷</h2>
+  <div class="scene">
+    <p>乙在丙銀行有 50 萬存款，另外早就欠丙銀行 30 萬借款。甲的扣押命令送到後，丙銀行想用 30 萬借款抵銷。</p>
+    <p class="q">丙銀行可以抵銷嗎？如果借款是扣押之後才借的呢？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">丙對乙的債權<br>何時取得？</div>
+    <div class="out"><span class="tag">扣押前</span><div class="b ok">扣押後<b>仍得抵銷</b>（衡平原則）</div></div>
+    <div class="out"><span class="tag">扣押後</span><div class="b no"><b>不得</b>抵銷（<span class="s">民法 §340</span>）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>扣押不改變乙丙之間的實體法律關係：丙得對抗乙的一切抗辯（時效抗辯等），都可以對抗甲。保險公司仍得因乙欠繳保費<b>終止</b>保險契約。</p>
+    <p>扣押前為清償已簽發、尚未提示的支票，扣押效力不及，丙仍應兌現，以保障票據交易安全。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>扣押後才取得的債權不能抵銷，是為了防止第三人製造新債權來規避扣押。題目會把「扣押前」「扣押後」對調來考。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-04-扣押後第三人之抵銷與抗辯.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>收取命令是代位收取；移轉命令是債權讓與，生效時執行程序終結</h2>
+  <div class="scene">
+    <p>同樣是乙對丙 10 萬元的債權：A 案法院發收取命令，B 案法院發移轉命令。之後丙都不付錢。</p>
+    <p class="q">兩案中，甲對乙的債權消滅了多少？甲接下來要怎麼辦？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>收取命令</h4>甲代位向丙收；<b>實際收到</b>的範圍內才清償。丙不付 → 程序還在，可依 <span class="s">§119 II</span> 處理</div>
+    <div class="trap-c"><h4>移轉命令</h4>債權讓與給甲；生效時於移轉額度內<b>即清償</b>，程序<b>終結</b>。丙不付 → 甲另行取得執行名義</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>移轉命令適合有確切面額、能即時結算的債權，例如扣押當日的存款餘額。被移轉債權連同從權利移轉給甲，丙對乙的實體抗辯仍得對抗甲。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>答案沒寫「債權讓與」，老師說基本上就是錯。程序雖已終結，對移轉命令<b>本身是否合法</b>聲明異議，法院不得以程序終結為由駁回（考過）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-05-收取命令與移轉命令.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>對薪資發移轉命令，債務人離職則未受償部分失效，得聲請繼續執行且免徵執行費（§115-1 IV）</h2>
+  <div class="scene">
+    <p>法院對乙每月薪資的三分之一發移轉命令給甲，案件報結。半年後乙離職；同時另一債權人丁也來聲請參與分配。</p>
+    <p class="q">甲還沒拿到的部分怎麼辦？丁能不能分？</p>
+  </div>
+  <div class="flow">
+    <div class="b">對繼續性給付債權發移轉命令</div><div class="a"></div>
+    <div class="b dim">形式上結案；未到期部分<b>實質未終結</b></div>
+    <div class="br"></div>
+    <div class="b q">乙離職／公司喪失支付能力</div><div class="a"></div>
+    <div class="b ok">未受償部分失效 → 聲請<b>繼續執行</b>、<b>免徵</b>執行費</div>
+    <div class="br"></div>
+    <div class="b q">丁併案或參與分配</div><div class="a"></div>
+    <div class="b ok">撤銷<b>未到期</b>部分，改發按債權額<b>比例</b>的移轉命令</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>未到期的薪資債權還沒真正移轉，所以移轉命令失效後可以「復活」；他債權人加入時也只動未到期部分（注意事項 62 之 1）。債權人陳明已受清償或撤回時，法院應撤銷未到期部分。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>只有 <span class="s">§115-1 IV</span> 這種特殊移轉命令可以失效後繼續執行；一般移轉命令不行。已到期而移轉給甲的薪資，丁分不到。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-06-特殊移轉命令§115-1IV.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>換價命令前第三人得提存；收到兩份扣押命令且不足清償時，全額支付扣押在先之法院（§115-2）</h2>
+  <div class="scene">
+    <p>丙欠乙的 80 萬已到期，但甲的扣押命令先到，換價命令還沒來；後來另一債權人丁的扣押命令也到了，兩人共要 120 萬。</p>
+    <p class="q">丙不能付給乙，也還不能付給甲，要怎麼避免遲延責任？兩份扣押命令怎麼處理？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">丙的處境</div>
+    <div class="out"><span class="tag">換價命令前</span><div class="b ok">得將全額或扣押部分<b>提存</b>於清償地提存所（<span class="s">§115-2 I</span>）</div></div>
+    <div class="out"><span class="tag">又收扣押且不足</span><div class="b ok">全額支付<b>扣押在先</b>之執行法院（<span class="s">§115-2 II</span>）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>支付轉給命令是丙先付給法院、法院計算後轉給債權人，性質同收取命令，多用於債權人多數時；程序於轉給債權人時終結。§115-2 I 的提存是<b>清償提存</b>，目的是免除第三人遲延責任。提存或支付後要向執行法院陳明事由。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>全額支付扣押在先之法院只是程序上的集中，最後仍由法院作分配表，不是先扣押的人全拿。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-07-支付轉給命令與第三人提存§115-2.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>債務人對第三人有交付請求權時，法院命第三人將標的物直接交與執行法院（§116）</h2>
+  <div class="scene">
+    <p>甲對乙聲請金錢執行。乙的車借給丙開，乙對丙有借用物返還請求權。</p>
+    <p class="q">如果先叫乙把車要回來，會有什麼風險？法院可以怎麼做？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 禁止乙處分、禁止丙交付或移轉</div><div class="a"></div>
+    <div class="b ok">② 命丙把車<b>交與執行法院</b>（跳過乙）</div><div class="a"></div>
+    <div class="b">③ 依動產執行拍賣、變賣換價</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>乙基於債權或物權（借用物返還、買賣標的物交付）得請求丙交付或移轉動產、不動產、船舶、航空器的權利，都用 §116。跳過債務人是為了防止乙取回後藏匿脫產。</p>
+    <p>丙應移轉不動產物權給乙（有確定判決、和解、調解為據）時，債權人得聲請以<b>債務人之費用</b>先登記為乙所有再執行（<span class="s">§116 II</span>）。§115、§116 以外的財產權（專利、商標、租賃權）適用 <span class="s">§117</span>，另有讓與命令、管理命令。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§116 的標的「不是錢」；第三人是交給<b>執行法院</b>，不是交給乙，也不是直接交給甲。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-08-交付移轉請求權§116與其他財產權§117.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>第三人有實體爭議，應於十日內以書狀聲明異議；債權人十日內不起訴，依第三人聲請撤銷執行命令（§119 I、§120）</h2>
+  <div class="scene">
+    <p>K 公司收到扣押乙薪資的命令，但乙上個月已經離職。執行處 5/1 送達命令。</p>
+    <p class="q">K 公司要在什麼時候、用什麼方式、向誰表示？接下來輪到誰傷腦筋？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 160" role="img" aria-label="第三人聲明異議與債權人起訴時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="60" cy="70" r="5" class="dot"/>
+    <text x="60" y="48" text-anchor="middle">丙收到命令</text>
+    <line x1="60" y1="118" x2="200" y2="118" class="acc"/>
+    <text x="130" y="138" text-anchor="middle" class="mu">10 日：書狀異議</text>
+    <circle cx="200" cy="70" r="5" class="dot acc"/>
+    <text x="200" y="48" text-anchor="middle">丙聲明異議</text>
+    <text x="200" y="94" text-anchor="middle" class="mu">執行處通知甲</text>
+    <line x1="290" y1="118" x2="440" y2="118" class="acc"/>
+    <text x="365" y="138" text-anchor="middle" class="mu">10 日：起訴＋證明</text>
+    <circle cx="290" cy="70" r="5" class="dot"/>
+    <text x="290" y="48" text-anchor="middle">甲收到通知</text>
+    <circle cx="440" cy="70" r="5" class="dot"/>
+    <text x="440" y="48" text-anchor="middle">甲未起訴</text>
+    <text x="440" y="94" text-anchor="middle" class="mu">丙聲請撤銷命令</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>異議事由都是<b>實體</b>爭議：不承認債權存在、數額有爭議、有其他得對抗債務人之事由（如時效）。期間 10 日、要式（書狀）、向<b>執行處</b>提出（<span class="s">§119 I</span>）。</p>
+    <p>「命令」包括扣押命令<b>與換價命令</b>（注意事項 64），所以丙有兩次機會。甲認異議不實，收受通知後 10 日內向民事庭起訴並向執行處證明（<span class="s">§120 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>口頭異議不行；員工離職時公司應先「聲明異議」不是「起訴」。甲沒起訴時，撤銷執行命令要<b>依第三人聲請</b>，不能依職權——實務上這是最常見的結局。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-09-第三人聲明異議§119與爭議處理§120.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>第三人未異議又不遵守命令，債權人得聲請逕向第三人執行；移轉命令不適用（§119 II）</h2>
+  <div class="scene">
+    <p>法院對乙在丙處的貨款發收取命令，丙收到後十天都沒說話，也不付錢給甲。</p>
+    <p class="q">甲可以直接執行丙的財產嗎？如果發的是移轉命令呢？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 丙 10 日內<b>未聲明異議</b></div><div class="a"></div>
+    <div class="b">② 丙<b>不遵守</b>命令（不付款、不交付）</div><div class="a"></div>
+    <div class="b">③ <b>債權人聲請</b></div><div class="a"></div>
+    <div class="b ok">逕向丙強制執行</div>
+    <div class="br"></div>
+    <div class="b no">移轉命令：程序已終結 → 不適用，甲另取執行名義</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>收取命令、支付轉給命令可以；移轉命令不可以（注意事項 64 II）。丙被逕為執行後，要提 <span class="s">§119 III</span> 第三人異議之訴，並得聲請停止執行（<span class="s">§18 II</span>）。</p>
+    <p>起訴責任看丙有沒有出招：丙有異議 → 甲起訴（扣押階段為確認之訴，換價階段為給付之訴即收取訴訟）；丙沒異議 → 丙起訴。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>逕向第三人執行不得依職權發動。移轉命令「跟人家都不一樣」，所以最愛考。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-10-逕向第三人執行§119II與收取訴訟.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>例題：移轉命令不得逕向第三人執行；換價階段才異議仍屬合法</h2>
+  <div class="scene">
+    <p>乙應給付甲 100 萬。乙對丙銀行有 50 萬存款（發移轉命令），對丁有 30 萬貨款（發收取命令）。扣押時兩人都沒異議；丙之後也沒異議但拒不付款，丁在收取命令後 10 日內書狀異議。</p>
+    <p class="q">甲能逕向丙、丁執行嗎？甲能怎麼起訴？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>丙（移轉命令）</h4>不得逕向執行：程序已終結。甲以受讓人地位另提一般給付之訴</div>
+    <div class="rule-c"><h4>丁（收取命令）</h4>換價階段異議<b>合法</b>，要件①不符，不得逕向執行。甲 10 日內提收取訴訟（<span class="s">§120 II</span>）或不起訴</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>同堂三題選擇題的答案：扣薪題選 D（乙受破產宣告，法院得許破產管理人收取）；置之不理題選 D（「無論何種命令都不得逕向執行」錯）；存款扣押題選 B（次日匯入的錢不受扣押）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>扣薪題 C「公司應 10 日內起訴」錯，應聲明異議；存款扣押題 D「扣押前已有借款得抵銷」是對的，別誤選。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-11-第三人爭議例題演練.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>社會福利津貼、救助、補助絕對不得執行；社會保險給付僅生活所必需部分不得執行（§122）</h2>
+  <div class="scene">
+    <p>乙每月領中低收入老人生活津貼 8,000 元，另外領勞保年金 2 萬元。當地最低生活費每月 2 萬元。</p>
+    <p class="q">兩筆錢甲各能執行多少？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span><span class="s">§122 I</span> 絕對禁止</span><ul>
+      <li class="hit"><span>社會福利津貼、社會救助、補助 → 全部不得執行</span></li></ul></li>
+    <li><span><span class="s">§122 II</span> 相對禁止</span><ul>
+      <li class="hit"><span>社會保險給付、對第三人債權 → 生活所必需部分不得執行</span></li>
+      <li><span>計算：最低生活費 <b>× 1.2</b>；親屬再乘扶養義務比例</span></li>
+      <li class="off"><span>有失公平 → 不受前三項限制（<span class="s">§122 V</span>）</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>這題津貼 8,000 元全部不得執行。勞保年金屬社會保險給付，本人生活所必需 2 萬 × 1.2 ＝ 2.4 萬，已超過 2 萬，所以原則上也執行不到（未計其他財產）。</p>
+    <p>退休金存入專戶：特別法（公務人員退撫法、勞保條例等）明定專戶內存款不得扣押、強制執行，不用再算生活所必需。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>勞保、公保給付不是絕對禁止，跟津貼、救助性質不同，看清楚題目問哪一種。算出生活所必需後，有失公平仍得執行。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-12-禁止執行之債權§122.md</span></div>
+</section>
+
+<!-- 13 -->
+<section class="card" id="c13">
+  <h2><span class="n">13</span>對機關或公法人執行：先發執行命令限期三十日自動履行，列有預算者得逕向公庫執行（§122-1～§122-4）</h2>
+  <div class="scene">
+    <p>廠商甲替某市政府採購電腦，取得 300 萬價金的確定判決，市政府一直不付。</p>
+    <p class="q">甲能執行市政府嗎？能聲請拘提市長嗎？能查封使用中的辦公桌椅嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">先發執行命令：<b>30 日內</b>自動履行（<span class="s">§122-2 I</span>）</div><div class="a"></div>
+    <div class="b q">列有預算項目？</div><div class="a lbl">是</div>
+    <div class="b ok">逕向該管<b>公庫</b>執行（<span class="s">§122-2 II</span>）</div>
+    <div class="br"></div>
+    <div class="b no">公用財產＋推行公務所必需或移轉違反公益 → 不得執行（<span class="s">§122-3</span>）</div>
+    <div class="br"></div>
+    <div class="b ok">非公用財產、閒置公用財產 → 仍得執行（<span class="s">§122-4</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>機關、公法人可以是執行債務人，履行能力與意願不是執行要件。本節適用於中央或地方機關及公法人；<span class="s">§20～§25</span>（財產報告、拘提、管收等）不適用（<span class="s">§122-1 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>金融機構（如中央銀行）「不在此限」是指<b>不適用本節</b>、照一般程序執行，不是不得執行。中華郵政、中華電信已民營化，本來就走一般程序。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-13-對公法人之執行§122-1～§122-4.md</span></div>
+</section>
+
+<!-- 14 -->
+<section class="card" id="c14">
+  <h2><span class="n">14</span>物之交付或行為執行，依執行名義的記載與重點決定（§123、§128）</h2>
+  <div class="scene">
+    <p>股東甲勝訴，執行名義有兩種可能寫法：A「乙應將帳簿交付甲」；B「乙應容許甲在乙處閱覽帳簿」。</p>
+    <p class="q">兩種寫法各用哪一種執行方法？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">執行名義的重點</div>
+    <div class="out"><span class="tag">移轉占有</span><div class="b ok"><b>物之交付</b>：取交（<span class="s">§123 I</span>）</div></div>
+    <div class="out"><span class="tag">看內容</span><div class="b ok"><b>不可代替行為</b>：怠金、管收（<span class="s">§128</span>）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>電力也一樣：交付已裝入容器的電力是物之交付；裝設電線桿後供電是行為。製造後交付則兩者並用。</p>
+    <p>書據、印章等憑證取交無效果時，準用 <span class="s">§121</span> 公告宣示未交出者無效、另作證明書，或準用 <span class="s">§128 I</span> 處怠金、再處怠金或管收（<span class="s">§123 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「債務人不交印章，執行處另刻新印章交債權人」是錯的：只宣示原印章無效、另作證明書，不重刻印章、不重印權狀。下堂續講。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">08-筆記-14-物之交付與行為執行之區分.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

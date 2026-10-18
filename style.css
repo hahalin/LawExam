@@ -1,0 +1,58 @@
+body {
+    font-family: "Noto Sans CJK TC", "Microsoft JhengHei", sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+    color: #222;
+    background: #fff;
+}
+
+@page {
+    size: A4;
+    margin-top: 20mm;
+    margin-bottom: 20mm;
+    margin-left: 22mm;
+    margin-right: 60mm;
+}
+
+h1 {
+    page-break-before: always;
+    color: #1565c0;
+    font-weight: bold;
+    border-bottom: 2px solid #90caf9;
+    padding-bottom: 4px;
+}
+
+strong {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+blockquote {
+    border-left: 5px solid #2196f3;
+    background-color: #f5f5f5;
+    padding: 10px 16px;
+    margin: 12px 0;
+}
+
+code, pre {
+    background: #f0f0f0;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 13px;
+}
+
+ul, ol {
+    margin-left: 1.5em;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1.5em;
+    table-layout: fixed;
+    word-break: break-all;
+}
+th, td {
+    border: 1px solid #bbb;
+    padding: 6px 10px;
+}

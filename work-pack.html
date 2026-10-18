@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>工作資料打包</title>
+<style>
+:root{--bg:#f7f7f4;--fg:#1f2328;--mu:#646a71;--card:#fff;--line:#e2e2dc;--acc:#2f6f8f;--acc-bg:#e3eef3;--err:#b3261e;--ok:#2e7d32}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171a;--fg:#e6e6e3;--mu:#9a9fa5;--card:#1f2225;--line:#32363a;--acc:#7fb6d1;--acc-bg:#1d3440;--err:#f2b8b5;--ok:#a5d6a7}}
+:root[data-theme="dark"]{--bg:#15171a;--fg:#e6e6e3;--mu:#9a9fa5;--card:#1f2225;--line:#32363a;--acc:#7fb6d1;--acc-bg:#1d3440;--err:#f2b8b5;--ok:#a5d6a7}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,"Noto Sans TC","PingFang TC",sans-serif}
+main{max-width:620px;margin:0 auto;padding:28px 16px 48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 24px}
+h1{font-size:1.25rem;margin:0 0 4px}
+.lead{color:var(--mu);margin:0 0 18px;font-size:.92rem}
+.step{margin:0 0 18px}
+.step > b{display:block;margin-bottom:6px}
+input[type=password]{width:100%;font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);margin-bottom:8px}
+button{font:inherit;padding:8px 18px;border:0;border-radius:8px;background:var(--acc);color:var(--card);font-weight:600;cursor:pointer}
+button:disabled{opacity:.5;cursor:not-allowed}
+ul.files{margin:8px 0 0;padding-left:1.3em;font-size:.9rem;color:var(--mu)}
+.hint{font-size:.85rem;color:var(--mu);margin:2px 0 0}
+.err{color:var(--err)} .ok{color:var(--ok)}
+#out{margin-top:14px;font-size:.95rem}
+a{color:var(--acc)}
+@media (max-width:600px){.card{padding:16px 14px}}
+</style></head><body>
+<main><div class="card">
+<h1>工作資料打包</h1>
+<p class="lead">在這台電腦的瀏覽器裡加密，原檔和密語都不會送出去。產生的 work.enc 放進 repo 根目錄，網站的 <a href="work.html">工作資料</a> 頁就讀得到。</p>
+<div class="step"><b>1. 選資料夾（中嘉資料）</b>
+<input type="file" id="dir" webkitdirectory multiple>
+<p class="hint">只收 .md 與 .html，子資料夾裡的也會收進去。</p>
+<ul class="files" id="list"></ul></div>
+<div class="step"><b>2. 設密語</b>
+<input type="password" id="p1" placeholder="密語（建議 4～5 個不相關的詞，20 字元以上）" autocomplete="new-password">
+<input type="password" id="p2" placeholder="再輸入一次" autocomplete="new-password">
+<p class="hint" id="pmsg"></p></div>
+<div class="step"><b>3. 打包</b>
+<button id="pack" disabled>加密並下載 work.enc</button>
+<div id="out"></div></div>
+</div></main>
+<script>
+// 格式與 work.html 對應：PBKDF2-SHA256 600000 次 → AES-256-GCM；明文為 gzip 後的 {packed, files:[{name,text}]}。
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const ITER = 600000;
+let files = [];
+const b64 = u8 => { let s = ''; for (let i = 0; i < u8.length; i += 0x8000) s += String.fromCharCode(...u8.subarray(i, i + 0x8000)); return btoa(s); };
+function check(){
+  const a = $('p1').value, b = $('p2').value;
+  let msg = '', ok = false;
+  if (!a) msg = '';
+  else if ([...a].length < 12) msg = '<span class="err">太短了，至少 12 個字元；建議 20 個以上。</span>';
+  else if (b && a !== b) msg = '<span class="err">兩次輸入不一樣。</span>';
+  else if (a === b) { ok = true; msg = [...a].length < 20 ? '可以用，但再長一點更安全。' : '<span class="ok">OK</span>'; }
+  $('pmsg').innerHTML = msg;
+  $('pack').disabled = !(ok && files.length);
+}
+$('dir').addEventListener('change', e => {
+  files = [...e.target.files].filter(f => /\.(md|html?)$/i.test(f.name));
+  $('list').innerHTML = files.length ? files.map(f => `<li>${esc(f.webkitRelativePath.split('/').slice(1).join('/') || f.name)}</li>`).join('') : '<li class="err">這個資料夾裡沒有 .md 或 .html。</li>';
+  check();
+});
+$('p1').addEventListener('input', check); $('p2').addEventListener('input', check);
+$('pack').addEventListener('click', async () => {
+  $('pack').disabled = true; $('out').textContent = '加密中…';
+  try {
+    const data = {packed: new Date().toISOString(), files: []};
+    for (const f of files) data.files.push({name: f.webkitRelativePath.split('/').slice(1).join('/') || f.name, text: await f.text()});
+    const gz = new Uint8Array(await new Response(new Blob([JSON.stringify(data)]).stream().pipeThrough(new CompressionStream('gzip'))).arrayBuffer());
+    const salt = crypto.getRandomValues(new Uint8Array(16)), iv = crypto.getRandomValues(new Uint8Array(12));
+    const base = await crypto.subtle.importKey('raw', new TextEncoder().encode($('p1').value.normalize('NFC')), 'PBKDF2', false, ['deriveKey']);
+    const key = await crypto.subtle.deriveKey({name:'PBKDF2', hash:'SHA-256', salt, iterations:ITER}, base, {name:'AES-GCM', length:256}, false, ['encrypt']);
+    const ct = new Uint8Array(await crypto.subtle.encrypt({name:'AES-GCM', iv}, key, gz));
+    const box = {v:1, kdf:'PBKDF2-SHA256', iter:ITER, cipher:'AES-256-GCM', salt:b64(salt), iv:b64(iv), ct:b64(ct)};
+    const url = URL.createObjectURL(new Blob([JSON.stringify(box)], {type:'application/json'}));
+    const a = document.createElement('a'); a.href = url; a.download = 'work.enc'; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 60000);
+    $('out').innerHTML = `<span class="ok">完成：${data.files.length} 份、${(ct.length / 1024).toFixed(0)} KB。</span>把下載的 work.enc 移到 repo 根目錄（和 index.html 同一層），蓋掉舊的。`;
+    $('p1').value = $('p2').value = '';
+  } catch(err) {
+    $('out').innerHTML = `<span class="err">失敗：${esc(err.message || err)}</span>`;
+  }
+  check();
+});
+</script>
+</body></html>

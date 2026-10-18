@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法11 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法11">
+<main>
+
+<header class="lesson-head">
+  <h1>民法11</h1>
+  <span class="sub">§110 時效與賠償範圍・表見代理與 §110 競合・代理權消滅 §108 §109・無權代理／無權處分與繼承・§111～§117・期日期間 §120～§124・消滅時效導論</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 14</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>§110 的時效：實務 15 年；學說說補充責任不能比原契約的時效還長</h2>
+  <div class="scene">
+    <p>乙聽說甲想開店，主動以甲的名義向丙租下店面。甲說我只是心裡規劃，拒絕承認。丙想依 §110 向乙求償。</p>
+    <p class="q">租約有效時丙對甲的租金請求權只有 5 年時效（§126），租約不生效力後丙對乙的損害賠償反而有 15 年？</p>
+  </div>
+  <div class="vs">
+    <div><h4>實務（56 年判例，講義 273 頁註 24）</h4>§110 是直接依民法規定發生的特別責任，<b>無過失責任</b>（縱證明無過失亦不免責），非侵權行為 → 時效無特別規定 → <b>§125 十五年</b>，無 §197 之適用；相對人<b>善意即足</b>，有過失仍可求償</div>
+    <div class="rule-c"><h4>學說</h4>§110 是類似契約的<b>補充責任</b>，只填補「沒享受到法律行為效果」的損失，不會讓你拿更多 → 時效<b>依原權利定</b>：租金 §126 五年、價金 §367 十五年。§110 不寫時效是<b>故意留白</b>，不是忘記</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>56 年判例一次講三件事：無權代理人不以故意過失為要件（原因責任、結果責任）；時效 §125 十五年；相對人縱因過失而不知仍得求償。很常考。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「法律沒寫」有兩種：真的沒寫（回 §125）、故意不寫（另有概念可用）。學說認為 §110 屬後者——備胎不會比原胎大。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-01-§110消滅時效56年判例註24無過失責任§125十五年非§197相對人善意即足學說故意留白依原權利定租金§126五年.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>§110 要賠多少：履行利益 100 萬還是信賴利益 5 萬</h2>
+  <div class="scene">
+    <p>乙無權代理甲向丙買 A 地，市價 900 萬、約定 1000 萬（丙履約可賺 100 萬），丙為締約花了 5 萬代書費。甲拒絕承認。</p>
+    <p class="q">丙依 §110 向乙請求的數額是多少？契約都不生效力了，哪來的履行利益？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>三種利益</span><ul>
+      <li><span>固有利益：與契約無關，本來就有的</span></li>
+      <li><span><b>信賴利益</b>＝締約成本：契約<b>無效或不成立</b>時才是損害（§91、§245-1、§247）</span></li>
+      <li><span><b>履行利益</b>＝履約獲利：以契約<b>有效</b>為前提（§226、§360、§495）</span></li>
+    </ul></li>
+    <li><span>四說</span><ul>
+      <li><span>① 履行利益說（實務 90 台上 1923）：不得超過契約有效所得利益 → <b>100 萬</b></span></li>
+      <li class="hit"><span>② 信賴利益說（林誠二、劉春堂、游進發等多數）：契約不生效力 → 沒有履行利益可言 → 損失是那 <b>5 萬</b></span></li>
+      <li><span>③ 王澤鑑：信賴或履行皆可請求（or），但<b>信賴利益 ≤ 履行利益</b></span></li>
+      <li><span>④ 區分說（德國有力說、林信和）：惡意負履行利益、善意負信賴利益。游進發：§110 文義分不出善惡意，不必類推——惡意改走 <b>§184 I 後段</b>，侵權行為下純粹經濟上損失 100 萬可請求</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>多數說的邏輯：花 5 萬是為了讓契約有效，契約有效才賺得到 100 萬；契約根本沒效，損失就是前面那 5 萬。履行利益的賠償（§226 等）一定以契約有效為前提，§110 發生在契約不生效力時，與 §91、§245-1、§247 同一體系。</p>
+    <p>王澤鑑的限制：人是理性的，成本不會高於獲利。市價 900 萬賣 910 萬（賺 10 萬），締約成本卻 50 萬——契約有效要虧 40 萬，契約無效反而全拿回 50 萬，不合理 → 信賴利益受 10 萬限制。老師認為這句話可用在所有信賴利益賠償。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>老師最推游進發的解法：善意乙 → §110 信賴利益；惡意乙（詐騙製造無權代理假象）→ §184 I 後段履行利益。這是用既有條文得出德國區分說的結果，不必類推也不必修法——類推要先有法律漏洞，最高法院常指責下級審亂類推。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-02-§110損害賠償範圍四說履行利益說90台上1923信賴利益說多數§91§245-1§247體系王澤鑑信賴不得逾履行區分說游進發以§184I後段達成固有信賴履行利益.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>表見代理成立時，丙可以不找甲、直接依 §110 找乙嗎（102 台上 529）</h2>
+  <div class="scene">
+    <p>甲把身分證印章交乙保管，乙無權代理甲把甲的 A 畫賣給善意無過失的丙。甲還沒承認，丙發現這幅畫是傳家之寶，不想要了，想撤回（§171）然後直接向乙請求損害賠償。</p>
+    <p class="q">丙明明可以依 §169 要甲負授權人責任（契約就有效了），可以跳過不用、直接依 §110 向乙求償嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>選擇說（實務、鄭冠宇）</h4>§107／§169 與 §110 是<b>二選一</b>，由丙決定要甲負責還是要乙賠。表見代理也是廣義無權代理，符合 §110 要件即可。多數說強迫丙多打一次訴訟、承擔多餘成本，法條也看不出先後</div>
+    <div><h4>補充責任說（多數學說）</h4>§110 補充的是契約無效的損失；契約若能依表見代理對甲生效，丙就<b>沒有損害</b> → 乙的賠償責任以甲不負責為前提 → <b>先位</b> §107／§169，無理由才<b>備位</b> §110</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>102 台上 529：二審認為丙可對甲主張 §107／§169 所以沒有損害，判丙對乙 §110 無理由。最高法院廢棄：民事訴訟採<b>辯論主義</b>，表見代理須經當事人<b>主張</b>法院始得斟酌；丙沒主張，法院不能擅自把授權人責任的效果歸給丙，應當作無權代理處理。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>考題會問「表見代理構成要件該當時，丙得否對乙請求賠償」，要答兩說與 102 台上 529。與民法10 卡 9（102 台上 1778 前段）同一思路：法院不得依職權認定表見代理。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-03-表見代理與§110競合實務鄭冠宇選擇說102台上529辯論主義法院不得逕認表見代理vs多數說補充責任先位§107§169備位§110.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>甲為了商譽承認乙的無權代理而受損，承認不等於放過乙（99 台上 2154）</h2>
+  <div class="scene">
+    <p>保險公司甲的業務員乙越權代理賣出一張對公司很不利的保單。甲拒絕承認的話以後沒人敢跟業務員買，只好承認，因此虧損。</p>
+    <p class="q">甲可以向乙求償嗎？依據是 §110 嗎？甲承認了是不是等於免除乙的責任？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲拒絕承認</div><div class="a"></div><div class="b">甲無損害、丙有損害</div><div class="a"></div><div class="b">丙 → 乙：§110</div>
+    <div class="br"></div>
+    <div class="b">甲承認</div><div class="a"></div><div class="b">契約生效 → 丙無損害、甲有損害</div>
+    <div class="br"></div>
+    <div class="b ok">甲 → 乙：有契約走契約（§544 受任人逾越權限）、無契約走侵權（§184）；不是 §110</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§110 的賠償對象只有<b>善意相對人</b>，本人不在內。99 台上 2154：委任人的承認僅使受任人越權或無權代理之行為<b>對外</b>（對本人）生效，未對受任人為免除債務之意思表示者，受任人逾越權限致委任人受損的賠償責任<b>不因承認而免除</b>。</p>
+    <p>三面關係到此補齊：① 本人–相對人 §170 效力未定 ② 相對人–無權代理人 §110（不得請求履行、不能善意取得）③ 本人–無權代理人 契約或侵權。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題：「本人得依 §110 向無權代理人請求損害賠償」→ 錯。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-04-本人與無權代理人關係甲為商譽承認而受損害對乙依契約§544或侵權§184求償§110不適用於本人99台上2154承認僅使外部生效不免除內部賠償責任.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>代理權什麼時候消滅：原因關係沒了就沒了（§108 I）；原因還在能不能先收回（§108 II）</h2>
+  <div class="scene">
+    <p>甲請員工乙處理一件事並授與代理權，事情辦完甲把代理權收回、僱傭繼續。另一例：當事人委任律師打官司，想保留委任但撤回代理權。離婚後約定親權由一方行使。</p>
+    <p class="q">三個情形的代理權各怎麼了？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>法定代理</span><ul>
+      <li><span>離婚後他方親權、§1090 濫用親權經宣告 → <b>停止</b>，不是消滅（親權與生俱來，法律只能暫停）</span></li>
+      <li><span>子女成年 → 法定代理權真正<b>消滅</b></span></li>
+    </ul></li>
+    <li><span>意定代理（有原因關係的授權）</span><ul>
+      <li class="hit"><span>§108 I：代理權之消滅依其所由授與之法律關係定之 → 僱傭、委任終止 → 代理權<b>跟著消滅</b></span></li>
+      <li><span>§108 II 本文：原因關係存續中<b>得撤回</b>代理權 → 員工事情辦完收回代理權、僱傭繼續 ✓</span></li>
+      <li class="off"><span>§108 II 但書：依法律關係之性質不得撤回者除外 → 律師委任必含代理權，拆不開 → 不得單獨撤回</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§108 處理的是「有效的授權」什麼時候消滅、能不能撤回。沒有原因關係（或原因關係無效）時<b>還能不能授權</b>，不是 §108 在管的——那是下一張卡的有因說、無因說。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§1090 的用語是「宣告<b>停止</b>其權利」。選項寫「法院得宣告剝奪（消滅）親權」→ 錯。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-05-代理權之消滅法定代理§1090停止非消滅子女成年消滅意定代理§108I依原因關係定之§108II原因存續中得撤回但不可分離者除外律師委任.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>僱傭契約被法定代理人拒絕，授權還有效嗎：有因說 vs 無因說；授權要不要授權書（§109、§531）</h2>
+  <div class="scene">
+    <p>店長甲僱用 16 歲的乙並授與代理權，乙的父母拒絕承認僱傭契約。乙已經代理甲賣了貨給丙。另一題：§109 說代理權消滅時要交還「授權書」，所以授權一定要有授權書？</p>
+    <p class="q">授權受不受僱傭契約無效的影響？你在店裡看到十六七歲的小毛頭接洽，敢跟他買嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 僱傭契約</div><div class="a lbl">§79</div>
+    <div class="b no">法代拒絕 → 不生效力</div>
+    <div class="br"></div>
+    <div class="b">② 授權受僱傭無效影響？</div><div class="a lbl">有因說</div>
+    <div class="b no">受影響 → 不能授權 → 無權代理 §170 效力未定</div>
+    <div class="br"></div>
+    <div class="b">② 授權受僱傭無效影響？</div><div class="a lbl">無因說</div>
+    <div class="b ok">不受影響（王澤鑑、多數）→ 有權代理 → 甲丙契約有效<small>也不受乙是限制行為能力人影響：中性行為類推 §77 但書</small></div>
+  </div>
+  <div class="vs">
+    <div><h4>有因說</h4>事出必有因，沒人會無緣無故授權；§108 I 代理權隨原因關係消滅 → 授權依附原因 → 沒有原因就不能授權（反面推論）</div>
+    <div class="rule-c"><h4>無因說</h4>不常見 ≠ 不可能，<b>沒有法條禁止</b>單獨授權；§108 用的是「<b>消滅</b>」——先有後無才叫消滅（要先有體脂肪才能消滅體脂肪）→ §108 以有效授權為前提，推不出「無原因不能授權」；隱藏版好處：<b>保護交易安全</b>，勞動法 15 歲就能打工，無因說下跟小毛頭交易也不怕契約無效</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§109「代理權消滅或撤回時，代理人須將授權書交還」——考點不在交還，在「授權一定要有授權書嗎」。<b>不要式</b>：§109 讀作「<b>如有</b>授權書」才交還。例外 <b>§531</b>：委任事務須為法律行為、且該法律行為依法要式（§758 II 抵押權設定要書面）→ 代理權之授與亦應以文字為之。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這題與民法10 卡 1 是同一題型的進階版：民法10 卡 1 已假設授權無因，這裡把兩說補上。考題永遠長這樣：法代拒絕 → 問授權 → 問代理行為。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-06-授權有因說vs無因說王澤鑑多數§108反面解釋不成立消滅須先有後無保護交易安全考題法代拒絕僱傭契約授權是否受影響§109授權不要式授權書如有例外§531要式.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>兒子無權代理爸爸借錢，爸爸死了、兒子是唯一繼承人：承認權繼承了，能拒絕承認嗎</h2>
+  <div class="scene">
+    <p>兒子乙無權代理父甲向丙借款。甲還沒承認也沒拒絕就過世，乙是唯一繼承人。</p>
+    <p class="q">乙繼承了承認權，然後自己拒絕承認自己當初的無權代理，可以嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">層次一：承認權可否繼承？</div><div class="a"></div>
+    <div class="b ok">可（§1148）<small>只是對法律行為效力予以承認的權利，非一身專屬</small></div>
+    <div class="br"></div>
+    <div class="b">層次二：乙可否拒絕承認？</div><div class="a"></div>
+    <div class="b q">有爭議（下）</div>
+  </div>
+  <div class="vs">
+    <div><h4>否定說（身分法多數：戴東雄等）</h4>誠信原則、禁反言：自己無權代理，好不容易有機會讓契約有效，不能拒絕 → 契約<b>強制有效</b> → 乙繼承契約關係、對丙負履行義務</div>
+    <div class="rule-c"><h4>肯定說（林秀雄）</h4>① 法條沒說不能拒絕 ② 強制有效對丙未必好：效力未定狀態下丙有 <b>§171 撤回權</b>，甲一死契約強制有效，丙的撤回權就不見了 ③ 乙若拒絕，丙仍有 <b>§110</b> → 讓乙保有拒絕權對丙並無不利</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>本題限於甲在<b>效力未定狀態中</b>死亡。甲承認後或拒絕後死亡，效力已確定，沒有這個問題。</p>
+    <p>老師：林秀雄在身分法問題涉及財產法時的見解很有說服力——要問問丙，你真的想讓這個契約有效嗎？也許想一下之後要撤回，結果甲一死撤不了了。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>民總與身分法交界，考試出現過。選項若寫「承認權為一身專屬權，不得繼承」→ 錯。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-07-無權代理後本人死亡無權代理人為唯一繼承人承認權得繼承§1148能否拒絕身分法多數說誠信原則不得拒絕vs林秀雄可拒絕保留丙§171撤回權.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>兒子賣爸爸的畫、爸爸賣兒子的畫：§118 II 直接適用與類推的差別，98 年修法後不再類推</h2>
+  <div class="scene">
+    <p>類型一：兒子乙無權處分父甲的 A 畫給惡意丙，甲死，乙是繼承人。類型二：賭徒父乙無權處分藝術家子甲的 A 畫給惡意丙，乙死，甲是繼承人。</p>
+    <p class="q">兩種情形 A 畫各歸誰？第二種類型，甲要拿自己的畫幫爸爸還債嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>類型一：本人死亡</h4>乙依 §1148 取得 A 所有權 → 無權利人事後取得權利 → <b>§118 II 直接適用</b>，處分自始有效 → 丙取得（惡意亦同）。沒有爭議（民法09 卡 10）</div>
+    <div class="trap-c"><h4>類型二：無權處分人死亡</h4>甲繼承乙丙間買賣契約（債務）。<b>早年判例</b>（民國 20 幾年）：「有處分權人繼承債務」與「無處分權人取得權利」相似 → <b>類推 §118 II</b> → 自始有效 → 丙取得。<b>林秀雄</b>：98 年修法後<b>不應類推</b></div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>為什麼修法後不類推（§1148 II 概括繼承有限責任：只在所得遺產範圍內清償）</span><ul>
+      <li><span>① 剝奪甲的<b>有限責任抗辯</b>：乙遺產是 0，甲本不用還任何債，類推 §118 II 等於強迫甲拿自己的畫還債</span></li>
+      <li><span>② 對<b>其他債權人不公</b>：乙財產 100 萬、債務 1000 萬，大家按比例分十分之一，丙卻 100% 滿足</span></li>
+      <li class="hit"><span>改看甲要不要承認：承認 → 願以自己財產清償，丙取得；拒絕 → 乙給付不能 → 丙對乙的 §226 賠償債權由甲繼承，甲只在遺產範圍內賠</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>早年判例沒有錯：98 年前是三軌制（概括、限定、拋棄繼承），沒主張限定或拋棄就是概括繼承、概括承受一切債務，本來就要還，類推 §118 II 讓丙取得以清償，符合當時精神。修法後制度變了，結論也要變。</p>
+    <p>老師：現在卡住很正常，學完繼承法 §1148 II 再回來看。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>看到「兒子賣爸爸的畫」就是類型一，「爸爸賣兒子的畫」就是類型二。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-08-無權處分與繼承本人死亡§118II直接自始有效無權處分人死亡早年類推§118II98年修法後概括繼承有限責任§1148II林秀雄不應類推改依承認與否.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>無權代理 vs 無權處分比較表：當事人、效力、保護機制、善意的門檻</h2>
+  <div class="scene">
+    <p>選擇題「下列敘述何者正確」只要考到無權代理與無權處分，總會有一個選項說：「無權代理時，善意且無過失之相對人得依善意取得之規定取得權利。」</p>
+    <p class="q">這句話哪裡錯？四個條文的「善意」門檻各是什麼？</p>
+  </div>
+  <div class="vs">
+    <div><h4>無權代理</h4>乙用<b>甲的名義</b> → 當事人<b>甲丙</b> → 債權、物權行為<b>都</b>效力未定（§170）→ 保護：§107／§169 授權人責任、§170 II 催告、§171 撤回、§110 損害賠償 → 丙信賴的是乙有<b>代理權</b>（代理外觀）</div>
+    <div><h4>無權處分</h4>乙用<b>自己名義</b> → 當事人<b>乙丙</b> → 買賣有效、只有物權行為效力未定（§118）→ 保護：§801＋§948、§759-1 II 善意取得 → 丙信賴的是乙有<b>處分權</b>（占有 §943、登記的公示外觀）</div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>善意的門檻</span><ul>
+      <li class="hit"><span>§107、§169：善意且<b>無過失</b>（一點過失都不行）</span></li>
+      <li><span>§801＋§948：善意且無<b>重大</b>過失</span></li>
+      <li><span>§759-1 II：善意即可（信賴登記外觀就保護）</span></li>
+      <li><span>§110：善意即可</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>為什麼無權代理不能善意取得：善意取得保護的是對<b>公示外觀</b>的信賴（我看到乙占有、以為乙是所有人）。無權代理時乙明講「這是甲的車，我是甲的代理人」，丙根本沒有相信車是乙的，信賴的是<b>代理外觀</b> → 保護機制是 §107／§169（甲創造外觀就負授權人責任）；甲無可歸責事由時退而求其次 §110。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>那個錯誤選項講得很順，觀念完全錯。無權代理跟善意取得沒有關係。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-09-無權代理vs無權處分比較表當事人甲丙vs乙丙效力債權物權皆未定vs僅物權未定保護機制§107§169§170§110vs§801§948§759-1主觀要件門檻信賴代理外觀vs公示外觀.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>一部無效全部無效（§111）；無效行為之轉換（§112）；§113 是請求權基礎還是確認性規範</h2>
+  <div class="scene">
+    <p>甲向乙買毒品，毒品部分違法無效，錢又不是違禁品——價金部分有效嗎？僱傭契約附「懷孕即離職」條款，條款無效，整份契約跟著無效嗎？</p>
+    <p class="q">§111 的原則和例外怎麼分？§113 這條到底拿來幹嘛？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">§111 一部無效</div>
+    <div class="out"><span class="tag">原則</span><div class="b no">全部無效：毒品買賣的價金部分跟著無效，不能說毒品不用給、錢還是要付</div></div>
+    <div class="out"><span class="tag">但書</span><div class="b ok">除去該部分亦可成立 → 其他部分仍有效：懷孕離職條款無效，僱傭契約其他部分不受影響</div></div>
+  </div>
+  <div class="vs">
+    <div><h4>§113 實務：請求權基礎</h4>法律行為無效，直接依 §113 請求損害賠償、回復原狀，不用再找別的依據</div>
+    <div class="rule-c"><h4>§113 王澤鑑：確認性規範</h4>只是重申「無效時你可能依 §91、§110、§245-1、§247、§184 負賠償責任，可依 §179、§767 回復原狀」，拿掉也沒差；直接用 §113 會<b>架空</b>其他要件較嚴的請求權基礎（不當得利有自己的要件、範圍、效果）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>法律行為檢驗完所有要件後只有四種結果：有效、無效、得撤銷、效力未定。§111～§117 講後三種的效果。</p>
+    <p>確認性規範的其他例子：§18 II（人格權受侵害，法律有特別規定才得請求賠償——沒這條也知道）、§100（林誠二：君子條款，不是請求權基礎）。§112 無效行為之轉換的考點在身分法：無效認領→收養？無效拋棄繼承→特留分拋棄？票據：無效保證→背書？</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>老師：解題到現在根本沒用過 §113——回復原狀都用 §179，損害賠償用 §91 或 §184。§113 的性質比較像研究所考題；實務上找到一個依據操作就夠。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-10-§111一部無效全部無效毒品買賣例外懷孕離職條款§112無效行為之轉換身分法考點§113實務請求權基礎vs王澤鑑確認性規範§18II§100.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>撤銷怎麼做、承認溯及到什麼時候、承認要向誰為之（§114～§117）</h2>
+  <div class="scene">
+    <p>限制行為能力人甲 9/5 與乙訂約，法定代理人 10/5 承認——契約幾號生效？乙無權代理甲與丙締約，甲想承認，跟乙說「我承認」——有用嗎？</p>
+    <p class="q">§88、§92 的撤銷和 §74、§244 的撤銷做法有什麼不同？§116 和 §117 的「向誰」差在哪？</p>
+  </div>
+  <div class="vs">
+    <div><h4>撤銷方法</h4>§88、§92：以<b>意思表示</b>為之（§116 I），依 §94 了解／§95 到達生效時發生撤銷效果。§56、§74、§244 寫「<b>聲請法院撤銷之</b>」→ 撤銷訴權，<b>判決確定</b>才生效。效力：§114 視為自始無效、準用 §113</div>
+    <div class="rule-c"><h4>承認溯及</h4>§115 溯及為法律行為時生效 → 9/5 締約、10/5 承認 → <b>9/5 生效</b>，不是 10/5。得撤銷的法律行為也可承認：承認＝拋棄撤銷權 → 類推 §115 自始有效、不得再撤銷（王澤鑑）</div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>效力未定的承認向誰為之</span><ul>
+      <li><span>第三人為之（§79 的法定代理人、§118 的權利人）→ <b>§117</b> 得向當事人之<b>一方</b>（任一人即可）</span></li>
+      <li class="hit"><span>當事人自己為之（§170 的本人甲）→ <b>§116 II 應向相對人丙</b>；甲對乙說「我承認」沒有意義</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§116 II 的字是「<b>應</b>向相對人為之」，§117 的字是「得向當事人之<b>一方</b>」。無權代理的本人是法律行為當事人，不是第三人，所以用 §116。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題：「乙無權代理甲，甲行使承認權得向乙為之」→ 錯，應向丙。「法定代理人承認後契約自承認時生效」→ 錯，溯及。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-11-得撤銷§116意思表示vs撤銷訴權§114自始無效承認類推§115效力未定承認溯及§115承認對象§116當事人向相對人§117第三人向一方.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>無效的法律行為還能撤銷嗎：一個行為兩種瑕疵，丙只知道一半</h2>
+  <div class="scene">
+    <p>限制行為能力人甲被乙詐欺，把 A 賣給乙並交付；乙轉賣丙並交付。丙知道乙詐欺甲，但不知道甲未成年。法定代理人拒絕承認。</p>
+    <p class="q">甲想依 §767 I 前段向丙要回 A。走「我未成年」會怎樣？走「我被騙」又怎樣？</p>
+  </div>
+  <div class="flow">
+    <div class="b">路一：甲主張限制行為能力</div><div class="a"></div>
+    <div class="b">§77、§79 法代拒絕 → 乙未取得 A</div>
+    <div class="br"></div>
+    <div class="b no">乙丙物權行為效力未定；丙對「甲未成年」是<b>善意</b> → §801＋§948 善意取得 → §767 不通</div>
+    <div class="br"></div>
+    <div class="b">路二：甲主張 §92 撤銷</div><div class="a lbl">傳統實務</div>
+    <div class="b no">已無效不得撤銷</div>
+    <div class="br"></div>
+    <div class="b">路二：甲主張 §92 撤銷</div><div class="a lbl">王澤鑑</div>
+    <div class="b ok">有撤銷實益即得撤銷</div>
+    <div class="br"></div>
+    <div class="b ok">撤銷後乙未取得 A；丙對「詐欺」是<b>惡意</b> → 不能善意取得 → §767 ✓</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>最容易錯的地方：丙是善意還是惡意，要看<b>甲主張的是哪一個瑕疵</b>。甲從頭到尾講「我未成年」，就與詐欺無關。</p>
+    <p>王澤鑑：無效行為「頂多沒有撤銷實益」，不等於「不能撤銷」。本件有實益（讓丙變惡意），所以可以撤銷——這正是 18、19 世紀德國法學大辯論「無效之行為可否撤銷」設想的案例。最高法院「無效不得撤銷」的判例是針對 §87 通謀虛偽與 §244，不是這個情形。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>104、105 年公證人、檢察官考試很愛考，之後消失。題型特徵：兩種瑕疵、第三人知道一半、法代拒絕承認。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-12-無效之法律行為可否撤銷一行為兩瑕疵限制行為能力加被詐欺丙知詐欺不知未成年實務無效不得撤銷vs王澤鑑有撤銷實益即可撤銷丙惡意§767.md</span></div>
+</section>
+
+<!-- 13 -->
+<section class="card" id="c13">
+  <h2><span class="n">13</span>期間怎麼算：始日不算入、算到相當日前一日、沒有相當日就月底、假日順延、逆算</h2>
+  <div class="scene">
+    <p>114/5/9 起算六個月，算到哪天？1/30 訂約「一個月後履約」，2 月沒有 30 日怎麼辦？公司 4/8 開會，通知須於 20 日前寄發，最遲哪天寄？</p>
+    <p class="q">為什麼第一天不算？為什麼要算到「前一日」？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="5/9 起算六個月">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="70" cy="70" r="5" class="dot"/>
+    <text x="70" y="48" text-anchor="middle">5/9</text>
+    <text x="70" y="94" text-anchor="middle" class="mu">始日不算入 §120</text>
+    <text x="70" y="112" text-anchor="middle" class="mu">從 0:00 歸零起算</text>
+    <circle cx="320" cy="70" r="5" class="dot acc"/>
+    <text x="320" y="48" text-anchor="middle">11/8 24:00</text>
+    <text x="320" y="94" text-anchor="middle" class="mu">相當日前一日 §121 II</text>
+    <text x="320" y="112" text-anchor="middle" class="mu">剛好滿六個月</text>
+    <circle cx="470" cy="70" r="5" class="dot"/>
+    <text x="470" y="48" text-anchor="middle">11/9</text>
+    <text x="470" y="94" text-anchor="middle" class="mu">相當日</text>
+    <text x="470" y="112" text-anchor="middle" class="mu">算到這天多一天</text>
+  </svg>
+  <div class="tree"><ul>
+    <li><span>§120 II 始日不算入：今天已經過了 13 小時，不是 0:00 → 去頭讓起點歸零，才能對應 §121 I「末日之終止」＝24:00</span></li>
+    <li><span>§121 II：以最後之月與起算日相當日之<b>前一日</b>為末日 → 1/1 0:00 起算一年是算到 12/31 24:00，不是算到次年 1/1</span></li>
+    <li class="hit"><span>§121 II 但書：無相當日者以其月之末日 → 1/30 起算一個月 → <b>2/28 24:00</b> 滿一個月；「一個月<b>後</b>履約」→ 履約日 <b>3/1</b>，沒出現就給付遲延</span></li>
+    <li><span>§122：末日為星期日、紀念日、休息日 → 以次日代之（上訴期間亦同，實務寧可提早遞狀）</span></li>
+    <li><span>§123：非連續計算（臨時工做五天休一天）每月 30 日、每年 365 日；連續計算依曆</span></li>
+    <li><span>§124：年齡自出生之日起算（<b>始日算入</b>，§120 的特別規定）；不知月日推定 7/1，知月不知日推定 15 日</span></li>
+    <li><span>逆算（84 台上 972）：4/8 開會、20 日前通知 → <b>末日 4/8 不算入</b>，從 4/7 往回數 20 天到 3/19 → 最遲 <b>3/18</b> 寄出，3/19 寄不足 20 日</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§121 的文字把很簡單的曆法概念寫得很複雜。抓一句：從 0:00 開始、到 24:00 結束，所以起算日要去頭、末日要減一；照曆法算就不用管大小月。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>民總相對不重要的章節，但 §120、§121 的計算在實務上天天用（遲延、時效、上訴期間）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-13-期日與期間§123自然計算vs曆法§120始日不算入歸零§121末日相當日前一日無相當日以月末日§122假日順延§124年齡始日算入推定7月1日15日逆算84台上972末日不算入.md</span></div>
+</section>
+
+<!-- 14 -->
+<section class="card" id="c14">
+  <h2><span class="n">14</span>消滅時效導論：請求權罹於時效不是真的消滅（抗辯發生主義）；形成權才會真的消滅</h2>
+  <div class="scene">
+    <p>§125 說請求權「因十五年間不行使而消滅」。但 §144 II 說時效完成後債務人仍為給付者不得請求返還，§145 說抵押權仍可實行，§337 說還能抵銷。</p>
+    <p class="q">請求權到底消滅了沒有？§359「請求減少價金」、§823「請求分割」是請求權嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>請求權 → 消滅時效 → 抗辯發生主義</h4>請求權是請他方為一定<b>作為或不作為</b>的權利，須對方配合才能實現。罹於時效後請求權<b>仍存在</b>，只是債務人取得 <b>§144 I 拒絕給付的抗辯</b>。還是可以告，對方抗辯就輸；對方不抗辯甚至承認，照樣獲得滿足。證據：§144 II、§145、§337</div>
+    <div><h4>形成權 → 除斥期間 → 真正消滅</h4>形成權<b>單方</b>意思表示即生效果（§88、§92 撤銷），不需對方作為 → 期間叫除斥期間（§90、§93）→ 屆滿<b>真正消滅</b>。給對方抗辯權沒有意義，因為對方本來就沒有說好不好的餘地</div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>掛請求權的羊頭、賣形成權的狗肉（選擇題照貼法條）</span><ul>
+      <li class="hit"><span>§359「<b>請求</b>減少價金」→ 形成權：單方減價即生效，不須出賣人同意</span></li>
+      <li class="hit"><span>§823 I「<b>請求</b>分割共有物」→ 形成權：一主張即形成分割狀態；若有時效，15 年不分割共有就永久化</span></li>
+      <li class="hit"><span>§949 I「<b>請求</b>回復其物」→ 形成權：回復善意受讓前的法律狀態，不是要求返還</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>判斷順序：① 先看是請求權還是形成權——形成權一定沒有消滅時效 ② 是請求權再看有沒有消滅時效之適用（客體問題，民法12 卡 1）。</p>
+    <p>消滅時效體系：定義（本卡）→ 客體 → 期間 §125～§127 → 起算 §128 → 中斷 §129～§138（§147 與承認合看）→ 不完成 §139～§143 → 完成之效力。常考決議：99 年第 7 次（起算）、99 年第 5 次與 107 年第 3 次（完成之效力）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>我國不採權利消滅主義。選項寫「請求權罹於時效即歸消滅，債權人不得再為請求」→ 錯。下堂續講消滅時效，之後進債編。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法11-筆記-14-消滅時效導論體系§125至§147請求權vs形成權抗辯發生主義§144II§145§337除斥期間真正消滅偽裝形成權§359減少價金§823分割§949回復.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

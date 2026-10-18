@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法06 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法06">
+<main>
+
+<header class="lesson-head">
+  <h1>民法06</h1>
+  <span class="sub">沉默算不算話・契約名稱不算數・信什麼時候算送到・LINE 收回・開玩笑的贈與・假買賣・善意的人為什麼拿得到車</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>床墊試睡一週沒說話：帶回家＝要，在店裡＝不要</h2>
+  <div class="scene">
+    <p>甲乙丙共有一塊地，甲在角落種檳榔二十年，乙丙從沒說好也從沒反對。另一題：店家說「床墊送到你家試睡一週，喜歡再買」，一週過了你忘了回覆。</p>
+    <p class="q">乙丙「不反對」算不算同意？沉默一週的你，買了還是沒買？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">他有「表示」嗎？</div>
+    <div class="out"><span class="tag">明示／默示</span><div class="b ok">都是意思表示。二十年不反對 → 從行為推知同意 → 默示分管契約（最高法院：歷有年所、均未異議）</div></div>
+    <div class="out"><span class="tag">單純沉默</span><div class="b">原則<b>不生效力</b>（推不出要或不要）。例外：契約約定、<b>法律規定</b>賦予效果</div></div>
+  </div>
+  <div class="flow">
+    <div class="b">§386 床墊<b>沒帶回家</b></div><div class="a lbl">沉默</div>
+    <div class="b no">視為拒絕</div>
+    <div class="br"></div>
+    <div class="b">§387 床墊<b>送到家</b>，不退也不說</div><div class="a lbl">沉默</div>
+    <div class="b ok">視為承認（買了）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>明示是直接說好或不好；默示是從別的行為推出來（沒說同意，但開始找代書辦過戶）。兩種都是「能讓人瞭解法律效果」的表示，效力一樣。</p>
+    <p>單純沉默是「不表示」，原則上沒效果。但法律有幾個地方把沉默定了效果：<span class="s">§80 II</span> 法代被催告不回答 → 視為拒絕承認；<span class="s">§386</span>／<span class="s">§387</span> 試驗買賣；<span class="s">§426-2 II</span> 優先承買通知 10 天不回 → 視為放棄。契約也可以自己約定「7 天不回覆視為同意」。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題愛考單純沉默。記法：<b>沒帶回家，沒講就是不要；帶回家了，沒講就是要</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-01-意思表示的方法明示默示與單純沉默.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>合約上寫「承攬」，不代表你就是承攬</h2>
+  <div class="scene">
+    <p>甲在報社送報三十年，65 歲退休要退休金。報社拿出三十年前的「承攬契約書」說：我們是承攬，沒有勞基法。但契約裡寫著幾點到公司、幾點前送完、要收款回報、要接受調班。</p>
+    <p class="q">名稱說承攬，內容像什麼？法官看哪一個？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§98：探求真意，不拘泥文字 → 看內容不看名稱</span><ul>
+      <li class="hit"><span>有<b>指揮監督</b>（一個口令一個動作、調班、回報）→ <b>僱傭</b> §482 → 勞基法、退休金</span></li>
+      <li><span>無指揮監督、重<b>過程</b>（律師、醫生：輸官司、病人過世不算違約）→ 委任 §528</span></li>
+      <li><span>無指揮監督、重<b>結果</b>（水電工：怎麼修不管，通了就好）→ 承攬 §490</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>不是每個人都懂法律，寫出來的字句常不精準，所以 <span class="s">§98</span> 叫法官去找當事人真正的意思。送報生案最高法院就是這樣判：滿滿的指揮監督，本質是僱傭。</p>
+    <p>現代版是外送員、車隊司機——契約都叫承攬，勞動部說是僱傭。差別在外送員撞到人：僱傭 → 平台依 <span class="s">§188</span> 連帶賠；承攬 → <span class="s">§189</span> 定作人原則不負責。實務為了保護外送員和被害人，有指揮監督要素就偏向僱傭。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>考試不會問「Uber 外送員是什麼契約」（沒看契約無法判斷），申論會給你契約內容，要你自己找有沒有指揮監督。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-02-意思表示的解釋§98送報生承攬vs僱傭三種勞務契約.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>信送到你家門口就算數，你家狗咬爛是你的事</h2>
+  <div class="scene">
+    <p>房東在路上遇到剛來台灣、聽不懂中文的韓國房客，口頭說「該繳房租了」。另一題：人事主管不好意思當面解僱老員工，把解僱通知偷塞進他桌上的文件夾。第三題：對方律師說 3 點前沒收到和解條件就破局，你傳真過去，他故意不放紙。</p>
+    <p class="q">三個意思表示各自生效了嗎？</p>
+  </div>
+  <div class="vs">
+    <div><h4>對話 §94：<b>瞭解</b>時生效</h4>即時、不留紀錄（面對面、電話）<br>韓國房客聽不懂 → 沒瞭解 → 催告不生效 → 不能依 §440 終止</div>
+    <div class="rule-c"><h4>非對話 §95：<b>到達</b>時生效</h4>有時間差、留紀錄（信、Email、LINE 文字、<b>LINE 語音</b>）<br>到達＝置於相對人<b>隨時可瞭解</b>之地位，不以看到為必要</div>
+  </div>
+  <div class="flow">
+    <div class="b">寄出 → 到達前：寄不到的風險歸<b>表意人</b></div>
+    <div class="br"></div>
+    <div class="b q">到達（進信箱）→ 打開前：沒看到的風險歸<b>相對人</b></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>為什麼非對話不用「瞭解」而用「到達」切？風險分配：表意人只要把看得懂的內容送到你家門口就完成任務；之後家人丟掉、狗咬爛、沒開信箱，都是相對人的風險。前提是內容相對人看得懂——寄中文信給看不懂中文的人，到了也沒用。</p>
+    <p>但「到達」要<b>輔以誠信原則</b>（陳聰富）：解僱通知塞文件夾，形式上「打開就看到」，但方式顯然不誠信 → 不算到達；傳真故意不放紙，客觀沒到，但相對人故意阻撓 → 擬制到達。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>LINE 語音訊息是用嘴巴講，卻是<b>非對話</b>——它留在對方手機裡隨時能點開。判準是即時性和有沒有紀錄，不是用嘴還是用手。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-03-對話§94與非對話§95到達的定義風險分配與誠信原則.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>掛號信沒去領被退回，算送到了嗎</h2>
+  <div class="scene">
+    <p>乙一直遲延交貨，甲用掛號寄催告函。郵差到乙家時乙不在，貼了招領通知「15 天內到郵局領」。乙沒去領，信被退回。甲接著寄解約通知。</p>
+    <p class="q">催告有到達嗎？解約有效嗎？你是上班族，週一到五早八晚七，週末郵局沒開，你怎麼領？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>大法庭 109 台上大 908</h4>原則：<b>受招領通知時即到達</b>，不以領取為必要<br>例外：相對人證明有<b>不能領取的正當事由</b>（被教召、寄到五年前的租屋處）</div>
+    <div class="trap-c"><h4>吳從周</h4>招領通知 ≠「<b>隨時</b>」可瞭解：郵局不是超商、只有 15 天、不知誰寄的也不知內容<br>原則：<b>不到達</b>；例外：相對人違反誠信故意不領 → 擬制到達</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>大法庭貫徹 §95 的風險分配：我寄到你家門口就完成任務，15 天不去領被退回關我什麼事。學說說這誤會了「到達」的定義——一般信件 24 小時躺在信箱裡，一個月收一次信也看得到；招領通知只給你 15 天上班時間，不是「隨時」。</p>
+    <p>兩說的原則例外剛好顛倒，舉證責任也跟著反過來：大法庭要相對人證明正當事由，吳從周要表意人證明相對人惡意。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這個裁定不會單獨出 25 分，但「超級萬用」：<span class="s">§254</span> 催告解除、<span class="s">§80</span> 催告法代、<span class="s">§426-2</span> 優先承買通知、<span class="s">§440</span> 催告繳租——只要題目裡有一封掛號信被退回，就是在考它。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-04-掛號信招領通知109台上大908大法庭vs吳從周.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>跟老婆說等於跟老公說？跟警衛說呢？</h2>
+  <div class="scene">
+    <p>房東甲要終止租約，房客乙不在，甲跟乙的太太丙講了，丙忘記轉達。另一題：老股東跑到 HTC 總部跟警衛說「幫我轉告王雪紅」；另一個股東找上王雪紅的秘書講了一堆。</p>
+    <p class="q">終止生效了嗎？警衛和秘書有什麼不同？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>實務（86 台上 3742）</h4>只看<b>有沒有轉達</b>：丙沒轉達 → 不生效。警衛、秘書都一樣</div>
+    <div class="rule-c"><h4>學說（王澤鑑）</h4>先問受領的人有沒有「<b>告知受領權</b>」<br>有（代理人、秘書）→ 對他說＝對本人說 → 他<b>瞭解</b>即生效（§94），轉不轉達不重要<br>無（警衛）→ 只是傳達人 → 看有沒有帶到（§95）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>夫妻於日常家務互為代理人（<span class="s">§1003</span>）。催繳房租、終止租約算日常家務 → 丙有代理權、有告知受領權 → 甲對丙說完就生效，丙忘記是乙家的事。實務沒去問丙是誰，直接看轉達，學者認為不當。</p>
+    <p>王澤鑑很人性化的補充：告知受領權<b>不是永久的</b>。秘書休假、下班後、半夜被 LINE，那時候他只是一般人，沒有受領權 → 等他上班轉達才生效。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>兩說結論常常一樣（警衛案：都不生效），差別只在「有告知受領權但沒轉達」這一格——秘書案、老婆案。考題就會設計這一格。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-05-轉達實務看有無轉達vs學說看告知受領權§1003.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>追回那封信：限時掛號被郵局寄錯地方怎麼辦</h2>
+  <div class="scene">
+    <p>甲 9/10 平信寄出要約（預計 9/13 到），9/11 反悔，用限時掛號寄撤回通知，郵局說最慢 9/13 到。結果郵差把「台北公館」分到「苗栗公館」，9/15 才到。乙收到時看得到郵戳是 9/11。</p>
+    <p class="q">撤回晚到了，一定失敗嗎？乙什麼都不做會怎樣？</p>
+  </div>
+  <div class="flow">
+    <div class="b">撤回通知先時或同時到</div><div class="a lbl">§95 I 但書</div>
+    <div class="b ok">撤回成功</div>
+    <div class="br"></div>
+    <div class="b">晚到了</div><div class="a lbl">§162</div>
+    <div class="b q">方法通常不遲到？乙可得而知（郵戳）？</div>
+    <div class="br"></div>
+    <div class="b">乙<b>發</b>遲到通知</div><div class="a lbl"></div>
+    <div class="b no">遲到確定 → 撤回失敗</div>
+    <div class="br"></div>
+    <div class="b">乙<b>沒發</b>遲到通知</div><div class="a lbl">§162 II</div>
+    <div class="b ok">視為未遲到 → 撤回成功</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>非對話有時間差，能在時間差裡追回就當沒發出（<span class="s">§95 I</span> 但書）。但「通常不會遲到」的方法因為郵局疏失遲到，風險不該由表意人承擔——<span class="s">§162</span> 說：相對人看得出這封信本來應該先到（郵戳為憑），就要馬上發「遲到通知」；不發，就視為沒遲到。承諾的撤回 <span class="s">§163</span> 準用。</p>
+    <p>考選部的「郵戳為憑」就是這個邏輯：9/13 寄、9/20 才收到，郵戳 9/13 → 考選部可得而知 → 沒發遲到通知 → 報名有效。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>平信沒郵戳可辨、看不出是快捷還是平信 → 相對人<b>無法得知</b> → 沒有 §162 適用 → 當作遲到 → 撤回失敗。</p>
+    <p>用語：還沒生效叫<b>撤回</b>，生效了才叫撤銷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-06-撤回§95I後段與§162§163遲到通知郵戳為憑.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>LINE 傳出去就到了，那「收回」還有意義嗎</h2>
+  <div class="scene">
+    <p>甲 9:00 用 LINE 傳要約給乙，同一秒到乙手機。9:05 甲收回訊息。乙 10:00 才拿起手機。另一題：甲寄出要約後、乙收到前，甲過世了。</p>
+    <p class="q">按傳統「到達」的定義，9:00 已經到了，9:05 的收回有用嗎？甲死了要約還算數嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">用什麼時點比較？</div>
+    <div class="out"><span class="tag">傳統：到手機＝到達</span><div class="b no">9:00 已生效 → 收回永遠來不及 → §95 I 但書在網路時代變<b>具文</b></div></div>
+    <div class="out"><span class="tag">陳聰富：合理閱讀期間</span><div class="b ok">以<b>已讀</b>（實際閱讀或可合理預期閱讀）為準 → 收回在已讀前 → 撤回有效</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>民國 19 年制定民法時寄信要十幾天、坐輪船半年，時間差很明顯。網路瞬間到達，但人不是瞬間看——所以把「時間差」往後拉到已讀。老師說這叫社會學解釋：讓法律跟上社會和科技，在修法前民法還是可以用，只是要換個角度用。</p>
+    <p><span class="s">§95 II</span>：發出後表意人死亡或喪失行為能力，意思表示<b>不受影響</b>，以發出時有行為能力為準；之後由繼承人或監護人接手。這條沒爭議。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙<b>已讀之後</b>甲才收回 → 已生效 → 收回無效，要約還在。差別全在已讀的時間點。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-07-LINE與Email的到達與收回合理閱讀期間§95II發出後死亡.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>要跟小孩講事情，法律建議你跟他爸媽講</h2>
+  <div class="scene">
+    <p>甲要對 5 歲的乙、15 歲的丙為意思表示，法代都是丁。甲寄信給乙，或當面跟丙說。另一題：套房租給「阿呆」，從沒要過他的本名地址，有天阿呆人間蒸發、欠租兩個月，甲想終止租約。</p>
+    <p class="q">信寄給 5 歲小孩生效了嗎？§96 說要到達法代，§75 又說無效，矛盾嗎？找不到人要怎麼終止？</p>
+  </div>
+  <div class="flow">
+    <div class="b">聽建議：跟丁做</div><div class="a lbl">§96</div>
+    <div class="b ok">非對話到達丁時生效；對話<b>類推</b>，丁瞭解時生效</div>
+    <div class="br"></div>
+    <div class="b dim">硬跟乙（無行為能力）做</div><div class="a lbl">§75 §76</div>
+    <div class="b no">無效，乙沒有受意思表示的能力</div>
+    <div class="br"></div>
+    <div class="b dim">硬跟丙（限制行為能力）做</div><div class="a lbl">§77～§85</div>
+    <div class="b q">丙自己能做的（純獲利益、日常所需、§83）→ 直接對丙即可；否則看允許 → §78／§79</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§96</span> 用「達到」兩個字，是針對非對話設計；對話通說類推。它跟 §75 不矛盾——§96 是法律給的<b>建議</b>：跟法代做就沒事；你偏要找本人，那就是 §75 或 §77～§85 要搬出來的時候。</p>
+    <p><span class="s">§97</span>：非因自己過失不知相對人姓名居所 → 依民訴規定<b>公示送達</b>，在法院公告欄貼，期滿生效。冷知識，考過一次。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>限制行為能力人不是一律要到達法代——那件事如果是他自己可以做的（純獲法律上利益、日常生活所必需、§83 詐術），直接對他做就生效。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-08-§96對無限制行為能力人為意思表示與§75§77的關係§97公示送達.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>病床前被情勒答應送房子：誰的意思表示出了問題</h2>
+  <div class="scene">
+    <p>媽媽臨終前叫有錢的哥哥甲把一間房送給好吃懶做的弟弟乙。甲根本不想送，但只好說「好」；乙真心說「我接受」。</p>
+    <p class="q">贈與契約有效嗎？關鍵在誰知道什麼？乙的意思表示會不會也跟著無效？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>意思表示的瑕疵 §86～§93</span><ul>
+      <li><span>不一致（想的 ≠ 說的）：故意 → §86 心中保留、§87 通謀；偶然 → §88～91 錯誤（不叫「過失」不一致，因 §88 要無過失）</span></li>
+      <li><span>不自由（不一致是被迫的）：§92 §93 詐欺脅迫</span></li>
+    </ul></li>
+  </ul></div>
+  <div class="fork">
+    <div class="cond">§86：甲無受拘束之意卻故意表示<br>乙知道甲不想送嗎？</div>
+    <div class="out"><span class="tag">乙不知</span><div class="b ok">表示說：甲的意思表示<b>不因之無效</b> → 贈與有效</div></div>
+    <div class="out"><span class="tag">乙明知</span><div class="b no">意思說：<b>甲的</b>意思表示無效 → 贈與不成立。<b>乙的</b>意思表示仍有效</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§86</span> 心中保留（一試叫真意保留、單獨虛偽意思表示）：明明不想卻故意做。原則以外部表示為準（保護不知情的相對人），相對人明知就以內心為準。「不因之無效」不等於一定有效——還可能因違反強行規定、公序良俗、無行為能力而無效，題目沒給線索就當有效。</p>
+    <p>§86 只處理<b>表意人</b>那一條意思表示。乙是真心的，乙的「知道」影響的是甲的意思表示，不是乙自己的。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題：「因乙明知甲為虛偽意思表示，故乙之意思表示亦無效」→ <b>錯</b>。除非甲乙都虛偽，那是 §87 通謀。問「贈與契約效力」要說理：是甲那條缺了。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-09-意思表示瑕疵體系與§86心中保留表示說意思說.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>假脫產和真脫產，債權人走的路不一樣</h2>
+  <div class="scene">
+    <p>甲欠丙錢，為了躲強制執行，把唯一的 A 屋過戶給乙。版本一：甲乙是演的，根本沒有要送。版本二：甲是真心把房子送給乙。另一題：為了少繳稅，甲乙明明是贈與卻簽買賣契約。</p>
+    <p class="q">丙能不能聲請法院「撤銷」甲乙的行為？假買賣背後的真贈與有效嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>版本一：通謀虛偽 §87 I</h4><b>當然無效</b> → 不能用 §244 撤銷（50 台上 547：撤銷是把有效變無效，本來就無效撤什麼）<br>丙：確認無效 → <b>§242 代位</b>甲行使 §767 I 中段 → 乙塗銷 → 回甲名下 → 強制執行</div>
+    <div class="trap-c"><h4>版本二：真心脫產</h4>行為有效 → 丙依 <b>§244</b> 聲請撤銷 → §114 視為自始無效 → 依 <b>§244 IV 自己</b>請求乙回復原狀（塗銷），不必代位</div>
+  </div>
+  <div class="flow">
+    <div class="b">假買賣真贈與</div><div class="a lbl">§87 I</div>
+    <div class="b no">買賣無效</div>
+    <div class="br"></div>
+    <div class="b ok">§87 II 隱藏行為：贈與依贈與規定 → 有效（國稅局查金流補稅）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§87</span> 要件：雙方都故意虛偽、而且互相知道（通謀）。效果無效，但不得以無效對抗善意第三人（卡 11）。<span class="s">§87 II</span> 隱藏行為：掛羊頭賣狗肉，表面那個無效、裡面那個照它自己的規定。</p>
+    <p>為什麼版本一要「代位」？塗銷登記請求權是屋主甲的（§767），丙只是債權人；版本二 §244 IV 直接給丙請求權。實務上丙會先備位（先位主張無效、備位撤銷），考試題目會明講是假的還是真的。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題：「甲乙通謀虛偽意思表示，丙得聲請法院撤銷之」→ <b>錯</b>。嚴格說是撤銷無實益（王澤鑑），實務直接說不能撤銷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-10-§87通謀虛偽隱藏行為與§244的分工50台上547丙的兩條路.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>假賣給乙的車被乙真賣給丙：甲要得回來嗎</h2>
+  <div class="scene">
+    <p>甲與乙通謀虛偽買賣 A 車並交付，乙把車賣給不知情的丙並交車。甲告丙「車是我的，§767 還我」。變化題：丙善意但有重大過失；或者乙賣的不是車，是一筆債權。</p>
+    <p class="q">甲還是所有人嗎？丙有幾條路拿到車？重大過失的丙還有路嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲乙：通謀虛偽</div><div class="a lbl">§87 I</div>
+    <div class="b no">債權、物權行為都無效 → 乙沒拿到所有權</div>
+    <div class="br"></div>
+    <div class="b">乙丙買賣契約</div><div class="a lbl">債權行為</div>
+    <div class="b ok">有效：不以有處分權為必要（給不出來是債務不履行，不是無效）</div>
+    <div class="br"></div>
+    <div class="b">乙丙移轉 A 車</div><div class="a lbl">乙無處分權 §118</div>
+    <div class="b q">效力未定 → 甲拒絕 → 丙靠自己</div>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>路 ①：善意受讓 §801＋§948</h4>占有＋依法律行為＋善意<b>無重大過失</b> → 取得所有權<br>質權 §886、留置權 §928 II 反面、不動產 §759-1 II（只要善意）</div>
+    <div class="rule-c"><h4>路 ②：§87 I 但書</h4>丙主張甲乙行為<b>有效</b> → 乙是所有人 → 有權處分 → 甲乙不得以無效對抗善意丙</div>
+  </div>
+  <div class="vs">
+    <div><h4>王澤鑑</h4>善意受讓是物權法<b>特別規定</b>，優先適用 → 有重大過失不能善意受讓，<b>也不能</b>用但書</div>
+    <div><h4>林誠二</h4>兩條路<b>並存</b>自選。誰才特別？但書只管通謀，善意受讓管所有無權處分 → 但書才特別</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>解題兩招：請求權基礎（誰告誰、憑哪條、要件逐一檢驗）＋時間順序（先甲乙、再乙丙、最後丙）。<span class="s">§767</span> 第一個要件「甲是所有人」不過，後面都不用看。</p>
+    <p>善意受讓的背景：物權是絕對權要讓人看得到（公示：動產占有、不動產登記），但外觀只有推定力（§943、§759-1 I），相信外觀的人要保護，不然每筆交易都要追查前手（公信）。<span class="s">§801</span> 說「占有受保護」卻沒說什麼叫受保護，所以一定要配 <span class="s">§948</span>：依法律行為（繼承不算）＋善意無重大過失。</p>
+    <p>兩條路沒落差就擇一；有落差才寫爭議：重大過失、<b>債權讓與</b>（債權不是物，不能善意受讓，只剩但書——105 律師考過）、§92 II 脅迫可對抗善意第三人（下堂）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>寫「甲承認無權處分」就自打嘴巴——承認了乙丙有效，甲還告丙幹嘛。甲要告丙就一定是拒絕。</p>
+    <p>不動產善意取得<b>不要求無重大過失</b>，單純善意就夠（登記公信力強）；動產要善意且無重大過失。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-11-§87I但書vs善意受讓公示公信§801§948要件競合學說債權讓與.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>繼承到假登記的地，和租到假屋主的房</h2>
+  <div class="scene">
+    <p>變形一：甲與乙通謀虛偽把 A 地登記在乙名下，乙過世，善意的兒子丙辦了繼承登記；地一直是甲在用。變形二：甲與乙通謀虛偽過戶並交付 A 屋，乙把房子租給善意的丙並交付。甲都想要回來。</p>
+    <p class="q">丙繼承到地了嗎？甲用 §767 哪一段？租房子的丙能不能「善意取得」房子？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>變形一：繼承人丙（不要寫「乙丙間法律行為」——繼承是法律事實，倒扣）</span><ul>
+      <li class="off"><span>§1148 繼承？乙沒有 A → 繼承不到</span></li>
+      <li class="off"><span>§759-1 II 善意取得？須「依法律行為」→ 繼承 ✗</span></li>
+      <li class="off"><span>§87 I 但書？<b>目的性限縮</b>：第三人限於因法律行為交易安全受影響者 → 繼承人 ✗</span></li>
+      <li class="hit"><span>甲仍是所有人 → 丙沒占有（地是甲在用）→ 不用前段 → 丙「不是所有人卻登記為所有人」＝<b>法律上妨害</b> → <b>§767 I 中段</b>請求塗銷</span></li>
+    </ul></li>
+  </ul></div>
+  <div class="flow">
+    <div class="b dim">變形二 ✗ 寫法：乙交屋給丙＝無權處分 → 丙善意取得 → 丙變屋主</div>
+    <div class="br"></div>
+    <div class="b no">租房子租一租變屋主？交易安全不會保護到送你房子</div>
+    <div class="br"></div>
+    <div class="b q">錯在第一句：乙丙只有租賃（債權契約）＋履行的交付 → <b>根本沒有處分行為</b> → 沒有無權處分 → 沒有善意取得</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>繼承人取得了登記外觀，卻享受不到任何跟「善意」有關的保護——因為他沒有交易安全要被保護。這是 §87 裡很特別的存在。</p>
+    <p>變形二丙真正要做的是<b>抗辯甲不是屋主</b>：主張甲乙行為有效、乙才是所有人，乙來告我我用租約擋。於是問題變成：甲能不能用「通謀無效」對抗善意的承租人丙？丙沒取得物權，算不算但書的「善意第三人」？王澤鑑、陳聰富、林誠二看法不同——下堂從這裡接。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§767 I 三段分清楚：前段返還<b>占有</b>、中段除去<b>妨害</b>（含法律上妨害＝塗銷登記）、後段防止妨害之虞。地是自己在用、只是登記錯人 → 用中段。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法06-筆記-12-兩個變形繼承人不受但書保護目的性限縮§767I中段與出租房屋沒有處分行為.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

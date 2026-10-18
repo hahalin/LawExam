@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法01 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法01">
+<main>
+
+<header class="lesson-head">
+  <h1>民法01</h1>
+  <span class="sub">民法長什麼樣・誰算「人」・胎兒・失蹤・什麼叫法律行為</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 8</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>民法沒有「無法可管」</h2>
+  <div class="scene">
+    <p>甲乙兄弟繼承爸爸的地，分成兩塊各拿一塊。甲缺錢，要把自己那塊賣給外人丁。乙跳出來：「祖產要先問自家人，我有優先購買權！」法條翻遍了，沒有一條說分割完的地還要先問兄弟。</p>
+    <p class="q">法官可以說「法律沒規定，不管」嗎？乙有沒有優先購買權？</p>
+  </div>
+  <div class="flow">
+    <div class="b">法律有規定？</div><div class="a lbl">沒有</div>
+    <div class="b">有習慣？</div><div class="a lbl">有：賣產先問近親</div>
+    <div class="b q">§2 檢查：違反公共秩序？</div><div class="a lbl">會妨礙土地流通</div>
+    <div class="b no">不是合格的習慣</div>
+    <div class="br"></div>
+    <div class="b dim">沒習慣 → 看法理 → 也沒有</div><div class="a"></div><div class="b no">乙沒有優先購買權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>民法像客服專線：一定要給答案。法律沒規定就看習慣，沒習慣就看法理，不能掛電話（<span class="s">§1</span>）。這跟刑法相反——刑法像門禁，不在名單上就是不開門（罪刑法定）。</p>
+    <p>但習慣要先過一道門：不能違反公共秩序或善良風俗（<span class="s">§2</span>）。「賣祖產先問近親」會讓土地很難賣，妨礙經濟流通，過不了這道門。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這個習慣被擋下來，是因為違反「公共秩序」（經濟秩序），跟「善良風俗」（道德）沒關係。選項若寫「背於善良風俗」是錯的。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法01-筆記-民法體系鳥瞰與法源.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>遇到題目，先回答法官的三連問</h2>
+  <div class="scene">
+    <p>甲 15 歲，跟乙買一台車。乙把車交給甲了，甲還沒付錢，甲的爸媽不同意這筆交易。</p>
+    <p class="q">題目問「法律關係如何」。從哪裡開始想？</p>
+  </div>
+  <div class="flow">
+    <div class="b">誰告誰？<br><small>乙告甲</small></div><div class="a"></div>
+    <div class="b">要什麼？<br><small>錢，或車</small></div><div class="a"></div>
+    <div class="b">依哪一條？</div><div class="a"></div>
+    <div class="b">那條的每個要件，事實有沒有對上？</div>
+  </div>
+  <div class="fork">
+    <div class="cond">乙要錢<br><span class="s">§367</span></div>
+    <div class="out"><span class="tag">要件</span><div class="b">買賣契約有效？</div></div>
+    <div class="out"><span class="tag">結果</span><div class="b no">甲 15 歲、爸媽沒同意 → 契約效力未定 → 要不到錢</div></div>
+  </div>
+  <div class="fork">
+    <div class="cond">乙要車<br><span class="s">§767</span></div>
+    <div class="out"><span class="tag">要件</span><div class="b">乙還是車的所有人？</div></div>
+    <div class="out"><span class="tag">結果</span><div class="b no">交車對甲是「純拿好處」，不用爸媽同意就有效 → 車已經是甲的 → 乙不是所有人</div></div>
+  </div>
+  <div class="fork">
+    <div class="cond">乙要車<br><span class="s">§179</span></div>
+    <div class="out"><span class="tag">要件</span><div class="b">甲拿到好處、沒有合法原因、乙受損？</div></div>
+    <div class="out"><span class="tag">結果</span><div class="b ok">三個都對上 → 乙靠不當得利把車要回來</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>法官開庭問話的順序就是解題順序：確認人（誰告誰）→ 訴之聲明（要什麼）→ 請求權基礎（依哪條）→ 一個要件一個要件對事實。一條走不通，換下一條。</p>
+    <p>這題的關鍵：「簽契約」和「交車」是兩個動作，效力分開看。契約要爸媽同意（<span class="s">§77</span>、<span class="s">§79</span>）；交車對甲只有好處沒有義務，屬於「純獲法律上利益」，不用同意就有效（<span class="s">§77 但書</span>）。付錢是契約的義務，不是交車這個動作的義務。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>判斷完「契約效力未定、交車有效」不是結束——題目要的是「乙到底拿得到什麼」。寫到效力就停筆，等於沒回答。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法01-筆記-請求權基礎思考流程.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>契約上的數字打架，聽誰的</h2>
+  <div class="scene">
+    <p>一份契約，價金一處寫「180 萬」，另一處寫「壹佰伍拾萬元」。買賣雙方各說各話，法院也查不出當初到底講好多少。</p>
+    <p class="q">以哪個為準？如果是「180 萬」對「200 萬」呢？</p>
+  </div>
+  <div class="vs">
+    <div><h4>數字 vs 國字</h4>聽<b>國字</b>（國字難寫錯也難改）<br>→ 150 萬 <span class="s">§4</span></div>
+    <div><h4>數字 vs 數字</h4>聽<b>最低的</b><br>→ 180 萬 <span class="s">§5</span></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>兩條都有同一個前提：法院查不出真意。查得出來就照真意，這兩條是最後手段。</p>
+    <p>老師講這題不是要你背 §4 §5，是要你看到：同一個法條，從「字面」看和從「§4 §5 一起看」會得出不同答案。四個數字混寫（兩個數字兩個國字）時，只看 §5 取全部最低是 150 萬；先用 §4 刪掉數字只留國字、再在國字裡取最低是 180 萬。這就是「爭點」長出來的樣子。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項若少了「法院不能決定何者為當事人原意」這個前提，直接說「一律以文字為準」，是錯的。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法01-筆記-法律解釋與§4§5數量記載.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>民法這個遊戲，是「人」在玩的</h2>
+  <div class="scene">
+    <p>甲在路上被一條沒主人的流浪狗咬傷。</p>
+    <p class="q">甲可以告這條狗，要牠賠醫藥費嗎？富翁立遺囑說「我死後給我的狗 100 萬」，有效嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">出生<br><small>脫離母體、能自己呼吸</small></div><div class="a lbl">§6</div>
+    <div class="b ok">活著 = 有權利能力<br><small>只活一秒也算；植物人也算</small></div><div class="a lbl">§6</div>
+    <div class="b">死亡<br><small>一般看心跳停；器官移植看腦死</small></div>
+    <div class="br"></div>
+    <div class="b no">狗、貓、公司以外的東西：不是人，沒有入場券</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>「權利能力」就是玩民法這個遊戲的入場券：有資格享受權利、負擔義務。人只要活著就有，從出生到死亡（<span class="s">§6</span>）。狗沒有入場券，不能當被告（不負義務），也不能當原告或收遺贈（不享權利）。</p>
+    <p>權利本身是「法律給你的力」：有人格權（生命、身體、名譽）、財產權（債權、物權）、身分權（親子、配偶）。要實現這些權利，靠請求權、形成權、支配權、抗辯權四種工具。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「植物人沒有意識，所以沒有權利能力」——錯。權利能力只看活著沒活著，跟意識、年齡、腦袋清不清楚都無關。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法01-筆記-權利能力與權利的概念.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>胎兒：還沒出生，也視為既已出生</h2>
+  <div class="scene">
+    <p>甲懷孕 10 週，丈夫乙被丙開車撞死。</p>
+    <p class="q">胎兒還在肚子裡，能現在就告丙要賠償嗎？如果後來沒能活著出生呢？</p>
+  </div>
+  <div class="flow">
+    <div class="b">還在肚子裡</div><div class="a lbl">§7 先發卡</div>
+    <div class="b ok">可以告、可以分遺產</div>
+  </div>
+  <div class="fork">
+    <div class="cond">活著出生？</div>
+    <div class="out"><span class="tag">是</span><div class="b ok">卡片轉正，拿到的都算</div></div>
+    <div class="out"><span class="tag">否</span><div class="b no">卡片作廢，從頭就不算有過。沒賠 → 駁回；已賠 → 用 §179 還回去</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§7</span>：胎兒「以將來非死產者為限，關於其個人利益之保護，視為既已出生」。通說採「先給、死產再溯及收回」（法定解除條件說），因為這條的目的是保護胎兒，先給才保護得到。所以胎兒現在就能告。</p>
+    <p>但這張卡只能用來拿好處：爸爸留遺產他出來領（<span class="s">§1166</span> 還要幫他保留應繼分），爸爸只留債務他就說「我只是胎兒」不出來。老師說胎兒是雙標仔。</p>
+    <p>順便記一組字：<b>視為</b>＝法律硬說事實就是這樣，不准舉證反駁（§7、§1065 認領視為婚生）；<b>推定</b>＝法律先猜，你可以舉證推翻（§9 推定死亡、§1063 婚生推定）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>孕婦被撞、<b>胎兒沒保住</b>：媽媽只能告「我自己身體受傷」（<span class="s">§184</span>＋<span class="s">§195</span>），不能告「我小孩被殺」（<span class="s">§192</span>、<span class="s">§194</span>）。因為卡片作廢，法律上這孩子從來沒當過人，沒有生命權可以被侵害。</p>
+    <p>另一個：題目沒寫死產，就當胎兒有權利能力，不要自己加「可是萬一死產」。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法01-筆記-胎兒§7與視為推定.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>人失蹤了：死亡宣告讓財產關係能結算</h2>
+  <div class="scene">
+    <p>甲在民國 90 年 9 月 10 日之後再也沒人見過他，手機沒訊號、卡沒消費。他名下有房子也有債務。家屬 100 年 7 月 5 日向法院聲請，法院 101 年 3 月 8 日裁定宣告死亡。</p>
+    <p class="q">甲被推定死在哪一天幾點？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 680 150" role="img" aria-label="死亡宣告時間軸">
+    <line x1="20" y1="70" x2="660" y2="70" class="lt"/>
+    <circle cx="50" cy="70" r="5" class="dot"/>
+    <text x="50" y="48" text-anchor="middle">90/9/10</text>
+    <text x="50" y="98" text-anchor="middle" class="mu">最後音訊日</text>
+    <text x="50" y="116" text-anchor="middle" class="mu">這天不算（§120）</text>
+    <circle cx="150" cy="70" r="5" class="dot acc"/>
+    <text x="150" y="48" text-anchor="middle">90/9/11 0:00</text>
+    <text x="150" y="98" text-anchor="middle" class="mu">起算</text>
+    <path d="M158 70 H 442" class="acc"/>
+    <text x="300" y="62" text-anchor="middle" class="mu">7 年</text>
+    <circle cx="450" cy="70" r="5" class="dot acc"/>
+    <text x="450" y="48" text-anchor="middle">97/9/10 24:00</text>
+    <text x="450" y="98" text-anchor="middle" class="mu">相當日 9/11 的前一天結束（§121）</text>
+    <text x="450" y="116" text-anchor="middle" class="mu">＝推定死亡時點</text>
+    <circle cx="565" cy="70" r="4" fill="none" stroke="#6B7680"/>
+    <text x="565" y="48" text-anchor="middle" class="mu">100/7/5 聲請</text>
+    <circle cx="630" cy="70" r="4" fill="none" stroke="#6B7680"/>
+    <text x="630" y="98" text-anchor="middle" class="mu">101/3/8 裁定</text>
+    <text x="597" y="135" text-anchor="middle" class="mu">這兩個日期跟死亡時點無關</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>一個人生死不明（不是只是找不到人），債權人不知道該告他還是告繼承人，帳目懸著。死亡宣告就是讓法律先「假裝他死了」，大家依繼承結帳（<span class="s">§8</span>）。要等：一般 7 年、80 歲以上 3 年、海嘯地震這種誰都逃不掉的特別災難 1 年、空難 6 個月。利害關係人或檢察官聲請，法院才會動；檢察官可以自己聲請，不用家屬點頭。</p>
+    <p>推定死亡的時點不是裁定日、不是聲請日，是「期間最後一天結束時」（<span class="s">§9</span>）。第一天不算（不知道幾點失蹤），從隔天 0:00 起算；7 年後相當日的前一天 24:00 結束。</p>
+    <p>推定死不是真的死。甲如果其實躲在山上活著，他在山上酒駕撞死人照樣要賠——宣告只處理他「原來那個生活圈」的法律關係。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>79 歲失蹤要等幾年？看<b>失蹤當時</b>的年紀，未滿 80 → 7 年（實務），不會因為等到一半滿 80 就改成 3 年。</p>
+    <p>失足落海、登山跌落算特別災難嗎？不算，那是個人行為，不是誰都逃不掉的災難。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法01-筆記-死亡宣告§8§9.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>失蹤的人回來了：誰的東西要還</h2>
+  <div class="scene">
+    <p>甲被宣告死亡，A 地由兒子乙繼承。乙以 600 萬賣給丙並過戶，錢花掉 400 萬剩 200 萬。大家都以為甲真的死了。某天甲回來了，撤銷了死亡宣告。</p>
+    <p class="q">丙要把地還給甲嗎？乙要把 600 萬還給甲嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">丙<br><small>買賣＋過戶</small></div>
+    <div class="out"><span class="tag">性質</span><div class="b">法律行為，雙方善意</div></div>
+    <div class="out"><span class="tag">結果</span><div class="b ok">§163 I 但書保護 → 地保住，不用還</div></div>
+  </div>
+  <div class="fork">
+    <div class="cond">乙<br><small>繼承</small></div>
+    <div class="out"><span class="tag">性質</span><div class="b">繼承不是法律行為，連「行為」都不是</div></div>
+    <div class="out"><span class="tag">結果</span><div class="b no">沒有但書保護 → 600 萬沒有法律上原因 → §179 要還，但只還剩下的 200 萬（§163 II）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>人回來不會自動回復，要先去法院撤銷死亡宣告。撤銷後原則上一切回到宣告前，但「裁定確定前的善意行為不受影響」（家事事件法 <span class="s">§163 I</span>）。善意＝雙方都不知道他還活著；行為＝法律行為。</p>
+    <p>丙是靠買賣（法律行為）拿到地，善意，受保護。乙是靠繼承拿到地，繼承是人死就自動發生的狀態，不是法律行為，不受保護——所以 A 地的利益該歸甲，乙拿著賣地的錢沒有法律上原因，要還；但 <span class="s">§163 II</span> 只要還現在剩下的。</p>
+    <p>再婚也一樣看：甲的太太乙在宣告後跟丙結婚，大家善意 → 結婚是法律行為 → 乙丙的婚有效。甲乙的前婚要不要復活有爭議（老師：類推 §988-1 讓前婚不復活；另說：復活並存，受不了就訴請離婚）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙惡意、丙善意：甲回復所有人、乙變無權處分，但丙善意可以善意取得（<span class="s">§759-1 II</span>）。結果一樣是丙保住地，<b>理由不同</b>，選項會拿這個做文章。</p>
+    <p>再婚那題不要套 <span class="s">§988 第 3 款但書</span>，那條保護的是信賴「離婚登記／離婚判決」的人，不是信賴「死亡宣告」的人。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法01-筆記-撤銷死亡宣告與家事法§163.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>動作是空的，加上「心意」才是法律行為</h2>
+  <div class="scene">
+    <p>甲 15 歲，沒問爸媽就加入學生會。另一題：80 歲的老人完全失智，家人沒去聲請監護宣告。</p>
+    <p class="q">加入學生會有效嗎？失智老人有沒有行為能力？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>生活裡的每件事</span><ul>
+      <li class="off"><span>不產生權利義務 → 法律不管</span>（刷牙、賽跑、<b>加入學生會</b>）</li>
+      <li><span>會產生權利義務 → 法律事實</span><ul>
+        <li class="off"><span>自然發生，不用人做 → 非行為</span>（<b>繼承</b>、時效）</li>
+        <li><span>要人去做 → 行為</span><ul>
+          <li><span>不需要心意，做了就有效 → 事實行為</span>（撿到無主物 §802、添附 §811）</li>
+          <li class="hit"><span>要有心意（意思表示）→ 法律行為</span>（買賣、結婚、過戶）</li>
+        </ul></li>
+      </ul></li>
+    </ul></li>
+  </ul></div>
+  <div class="vs">
+    <div class="rule-c"><h4>行為能力：客觀，看兩件事</h4>幾歲？有沒有被宣告？<br>未滿 7 無、7～18 限制、滿 18 有（<span class="s">§12</span>、<span class="s">§13</span>）。失智老人沒被宣告 → <b>有</b>。</div>
+    <div><h4>識別能力／意識能力：主觀，看個人</h4>知不知道自己的行為會傷到人（<span class="s">§187</span>）、懂不懂結婚是什麼。30 歲精神分裂 → 有行為能力、<b>無</b>識別能力，可以並存。</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>把手錶交到你手上，這個動作本身是空的。加上「送你」是贈與，加上「借你」是借貸，加上「賣你」是買賣——動作＋心意（意思表示）才叫法律行為。加入學生會在法律上沒有權利義務，連法律事實都不是，<span class="s">§77</span> 根本用不上，想加就加。</p>
+    <p>行為能力為什麼只看年齡和宣告、不看腦袋？因為交易要快。看身分證就能判斷，不用每筆交易都去查對方清不清楚——這叫保護交易安全、降低查證成本。侵權和結婚不涉及交易，所以可以慢慢查個人主觀。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「繼承是一個事實，所以是事實行為」——錯。繼承連行為都不是，不可能是事實行為。</p>
+    <p>「未滿 18 歲」≠「18 歲以下」：「以下」含 18，「未滿」不含。§13 寫的是「未滿七歲」，寫成「七歲以下」就錯了。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法01-筆記-法律行為概念與各種能力.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

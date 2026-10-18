@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法16 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法16">
+<main>
+
+<header class="lesson-head">
+  <h1>民法16</h1>
+  <span class="sub">有責性・過失標準・§184 I 後段與第二項・共同侵權（§185）・公務員（§186）・法定代理人（§187）</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。前半堂把 §184 三款收尾（有責性、後段、第二項）；後半堂進特殊侵權行為，每張卡都在問：<b>誰要一起賠？誰負舉證責任？</b></p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 13</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>有責性先審識別能力，故意以結果為對象</h2>
+  <div class="scene">
+    <p>甲趕時間，故意闖紅燈，撞傷正在過馬路的乙。甲說：「我是故意闖紅燈沒錯，但我根本不想撞人。」</p>
+    <p class="q">甲對乙受傷這件事，是故意還是過失？</p>
+  </div>
+  <div class="flow">
+    <div class="b">有責性</div>
+    <div class="br"></div>
+    <div class="b">① 責任能力（識別能力）先審</div>
+    <div class="br"></div>
+    <div class="b">② 故意或過失</div>
+    <div class="br"></div>
+    <div class="b dim">闖紅燈：對「行為」有故意</div>
+    <div class="br"></div>
+    <div class="b ok">撞傷乙：對「結果」只有過失</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>有責性審兩件事：責任能力、故意過失。先審責任能力，以<b>識別能力</b>判斷，只要知道行為可能造成損害就夠（王澤鑑從寬）；沒有識別能力，就不可能有故意過失。故意包括直接故意與未必故意，兩者都以<b>結果</b>為對象。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>題目寫「故意闖紅燈」不要急著寫故意，要看對撞人這個結果。題目沒提識別能力，就當作具備，不必涵攝。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-01-有責性審查之識別能力與結果故意.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>過失可用注意義務、預見可能性或漢德公式判斷</h2>
+  <div class="scene">
+    <p>某人患了罕見疾病：全球發生率極低、不影響生命，要做多項精密檢查才查得出來。醫師一直沒做這些檢查，直到開刀才發現，病人要求醫師賠償。</p>
+    <p class="q">醫師沒做檢查，算不算過失？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">防範成本 B<br>vs<br>機率 P × 損害 L</div>
+    <div class="out"><span class="tag">B＞PL</span><div class="b ok">不防範＝無過失</div></div>
+    <div class="out"><span class="tag">B＜PL</span><div class="b no">不防範＝有過失</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>過失＝應注意、能注意而不注意。可以看有沒有違反客觀注意義務（過失客觀化），或能預見卻沒有迴避；老師認為兩者可綜合使用。題目給了成本、機率、損害三個線索時，用<b>漢德公式</b>：本題成本高、機率低、損害小 → 不檢查無過失。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>Hand 是法官的名字，不是「手」。這題是臺大法研所考題，用注意義務、預見可能性都很難論，代入公式就解開了。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-02-過失判斷標準與漢德公式.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>未成年人以同齡人為過失標準；好意施惠是否降低，學說兩說</h2>
+  <div class="scene">
+    <p>國中生騎腳踏車撞到路人。另一件事：甲好心順路載朋友乙，途中不小心擦撞，乙受傷。</p>
+    <p class="q">國中生要用大人的標準判斷過失嗎？好心載人可以少注意一點嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>原則：抽象輕過失（善良管理人之注意）</span>
+      <ul>
+        <li class="hit"><span>未成年人 → 以同年齡之人為標準</span></li>
+        <li><span>好意施惠 → 要不要降低？</span>
+          <ul>
+            <li><span>王澤鑑：不降低，仍是抽象輕過失</span></li>
+            <li><span>林誠二：降為具體輕過失</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>未成年人做不到成年人的注意程度，法律不強人所難，所以以<b>同年齡之人</b>判斷（講義 129 頁高院判決）。好意施惠是沒契約、沒報酬的互助：王澤鑑認為不能因為好意就打折被害人保護；林誠二認為應鼓勵互助，與處理自己事務同一注意即可。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>好意施惠和無償行為不一樣：前者重點在幫忙，後者只是沒有對價。無償行為看下一張卡的最高法院判決。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-03-未成年人與好意施惠之過失標準.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>無償行為之侵權過失仍採抽象輕過失（111 台上 1352）</h2>
+  <div class="scene">
+    <p>頂樓公設漏水，住戶甲叫管委會修，管委會要甲去告。甲告贏，判決確定後一個月內管委會就修好。甲再請求從通知修繕到修好、將近兩年不能使用房屋的損害。</p>
+    <p class="q">管委會一拿到判決就修，有過失嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="管委會漏水案時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="45" cy="55" r="5" class="dot"/>
+    <text x="45" y="35" text-anchor="middle">103.3.24</text>
+    <text x="45" y="80" text-anchor="middle" class="mu">通知修繕</text>
+    <circle cx="150" cy="55" r="5" class="dot"/>
+    <text x="150" y="35" text-anchor="middle">104.11.27</text>
+    <text x="150" y="80" text-anchor="middle" class="mu">判決確定</text>
+    <circle cx="255" cy="55" r="5" class="dot"/>
+    <text x="255" y="35" text-anchor="middle">104.12.20</text>
+    <text x="255" y="80" text-anchor="middle" class="mu">雇工修繕</text>
+    <circle cx="355" cy="55" r="5" class="dot acc"/>
+    <text x="355" y="35" text-anchor="middle">105.1.28</text>
+    <text x="355" y="80" text-anchor="middle" class="mu">修好</text>
+    <text x="200" y="110" text-anchor="middle" class="mu">請求期間：通知修繕起至修好止</text>
+  </svg>
+  <div class="vs">
+    <div class="trap-c"><h4>二審：具體輕過失</h4>管委會無償 → 標準降低 → 判決後立即修 → 無過失</div>
+    <div class="rule-c"><h4>最高法院：抽象輕過失</h4>過失不因無償而降低 → 一接獲通知就該主動修 → 可能有過失</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>管委會沒向住戶收錢，是無償關係。二審因此降為具體輕過失；最高法院 111 台上 1352 認為侵權行為的過失不因無償而降低，仍以善良管理人為準，拖到判決確定才修就可能有過失。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>請求的不是漏水本身（第一個訴訟已處理），而是漏水期間不能使用房屋的損害；損害是否存在，本堂先不論。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-04-無償行為之過失標準111台上1352.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>§184 I 後段保護利益，限故意且須背於善良風俗</h2>
+  <div class="scene">
+    <p>房仲業務員跳槽到競爭公司，把原公司的客戶一起帶走，原公司業績大跌。原公司沒有任何「權利」被侵害。</p>
+    <p class="q">原公司能依侵權行為請求嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b ok">損害 ✓</div>
+    <div class="br"></div>
+    <div class="b no">權利 ✗ → 前段不通</div>
+    <div class="br"></div>
+    <div class="b">背於善良風俗？惡性競爭，違背社會共同生活準則 ✓</div>
+    <div class="br"></div>
+    <div class="b">故意？主觀上可預見結果 ✓</div>
+    <div class="br"></div>
+    <div class="b ok">§184 I 後段 ✓（最高法院從寬）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>後段不問權利，<b>利益</b>（含純粹經濟上損失）也保護，但主觀限<b>故意</b>，客觀要「背於善良風俗」，也就是加重的不法性：有不法性之外，還違背社會共同生活準則、踩到一般人的道德底線。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>申論要採從寬時，先寫「從嚴則原告無從求償、保護不周」再轉從寬；不要直接把故意涵攝成重大輕率，論述會跳太快。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-05-§184I後段之故意背於善良風俗.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>律師過失致遺囑無效：受遺贈人只能靠從寬解釋 §184 I 後段</h2>
+  <div class="scene">
+    <p>乙請甲律師寫遺囑，要遺贈丙一筆錢。甲沒看清法條，方式不合法，遺囑無效。乙過世後，丙拿不到錢。</p>
+    <p class="q">丙能向甲律師請求什麼？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>丙 → 甲律師</span>
+      <ul>
+        <li class="off"><span>委任契約 ✗：丙非當事人（債之相對性）</span></li>
+        <li class="off"><span>契約對第三人保護效力 ✗：實務不承認</span></li>
+        <li class="off"><span>§184 I 前段 ✗：遺贈只是債權，非絕對權</span></li>
+        <li><span>§184 I 後段</span>
+          <ul>
+            <li class="off"><span>從嚴：非故意、沒踩到道德底線 ✗</span></li>
+            <li class="hit"><span>從寬：故意含重大輕率 ✓</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>丙沒有絕對權受侵害，是純粹經濟上損失，只剩後段。學者主張從寬：故意包含<b>重大輕率</b>，背俗只要一般大眾不能接受即可。理由是前段（權利＋過失）與後段（利益＋故意背俗）之間有保護漏洞，過失趨近故意者應例外納入。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這題法研所考過。關鍵一步是「遺贈＝債權」，所以前段一定不通，必須轉到後段討論寬嚴。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-06-律師過失致遺囑無效與重大輕率.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>§184 II 推定過失，請求人須在該法律保護範圍內</h2>
+  <div class="scene">
+    <p>乙超速撞傷甲。甲是 A 公司負責人，住院期間 A 公司無法如期發表專利而受損。A 公司主張乙違反交通法規，屬於違反保護他人之法律。</p>
+    <p class="q">A 公司能依 §184 II 向乙請求嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b ok">① 以保護私益為目的？✓</div>
+    <div class="br"></div>
+    <div class="b ok">② 該法律沒有自己的賠償規定？✓</div>
+    <div class="br"></div>
+    <div class="b">③ A 公司是受保護的「他人」？</div>
+    <div class="br"></div>
+    <div class="b no">交通法規保護用路人；A 公司不是 → ✗</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>依 §184 II，被害人只要證明違反保護他人之法律、損害、因果關係；過失由行為人證明不存在（<b>推定過失</b>）。這個法律要以保護私益為目的，例如未請領建照蓋違建毀損鄰屋，實務肯否兩說；法律本身已有賠償規定時能否再用 §184 II，也有兩說。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>條文兩個「他人」是同一人。110 年律師考過這題。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-07-§184II違反保護他人之法律.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>共同加害行為：實務採行為關聯共同，連帶使無資力風險轉給共同行為人</h2>
+  <div class="scene">
+    <p>甲、丙兩車在巷口相撞，波及路人乙。甲沒錢，丙有錢，兩人事先完全不認識。</p>
+    <p class="q">乙能向丙請求全部賠償嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">數人各自成立 §184</div>
+    <div class="br"></div>
+    <div class="b">主觀意思聯絡？有 → 共同</div>
+    <div class="br"></div>
+    <div class="b">沒有 → 客觀行為關聯？</div>
+    <div class="br"></div>
+    <div class="b ok">實務：行為關聯共同即足（司法院例變字第 1 號）</div>
+    <div class="br"></div>
+    <div class="b no">游進發：限主觀意思聯絡</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>共同侵權行為連帶負責（<span class="s">§273</span>），乙可向有資力的丙請求全部，丙再向甲內部求償（<span class="s">§281</span>），而且只要打一場官司。實務為保護被害人從寬認定；游進發認為偶然相撞就要互相承擔對方無資力的風險並不合理。選擇題選實務。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>偷車後交給別人拆解變賣：最高法院 100 台上 2217 認為處理贓物是竊盜後另一個侵權行為，欠缺時間密接性，不是共同。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-08-§185I前段共同加害行為與連帶責任.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>共同危險行為只推定因果關係，一盞天燈失敗不適用</h2>
+  <div class="scene">
+    <p>很多人一起放天燈，只有一盞掉下來，燒了丁的房子，不知道是誰的。</p>
+    <p class="q">丁能要求所有放天燈的人連帶賠償嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>只有一盞失敗</h4>只有一個侵權行為；其他人順利升空，沒有侵權行為 → §185 I 後段 ✗（95 台上 2388）</div>
+    <div class="rule-c"><h4>數盞都失敗</h4>每人都有侵權行為，只是不知道哪盞燒的 → 推定因果關係，連帶 ✓</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>「不能知其中孰為加害人者，亦同」要接著前一句讀：每個人都要有侵權行為，只推定<b>因果關係</b>。沒有這條，丁個別告誰都會輸在條件理論（沒有甲，還有乙、丙）。主張不是自己造成的，由行為人舉證。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>甲乙同車、不知道是誰開車撞人：只有一個侵權行為，不能直接適用；楊芳賢主張可以類推 §185 I 後段。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-09-§185I後段共同危險行為與天燈案.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>造意人、幫助人視為共同行為人；過失造意實務肯定、學說否定</h2>
+  <div class="scene">
+    <p>乙幫丙修屋頂，打電話問師傅甲漏水怎麼處理。甲沒看現場就建議用焊的，結果屋頂燒毀。</p>
+    <p class="q">丙能要甲和乙連帶賠嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b ok">丙 → 乙：§184 ✓</div>
+    <div class="br"></div>
+    <div class="b no">丙 → 甲：造意不是侵害行為，§184 ✗</div>
+    <div class="br"></div>
+    <div class="b">§185 II：甲視為共同行為人</div>
+    <div class="br"></div>
+    <div class="b ok">§185 I 前段：甲乙連帶</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>「視為」是法律擬制，不能舉反證推翻。最高法院 98 年判決認為民事造意不以故意為必要，甲過失造意也要連帶。學說多數否定：視為的效果很強，要有高度非難性才拉進來，否則隨口給意見的人都有風險。幫助也是同一爭點。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>借機車給無照者肇事：實務用過失幫助；王澤鑑認為借車人本身違反保護他人之法律（§184 II），直接用 §185 I 前段即可。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-10-§185II造意幫助與過失造意爭議.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>公務員過失僅負補充責任：先行政救濟，再國家賠償</h2>
+  <div class="scene">
+    <p>公務員過失誤拆甲的房子。另一件事：公務員索賄不成，故意刁難廠商的消防檢查，廠商無法營業。</p>
+    <p class="q">兩位被害人能不能直接告公務員？</p>
+  </div>
+  <div class="flow">
+    <div class="b">能用行政救濟除去損害嗎？</div>
+    <div class="br"></div>
+    <div class="b dim">能 → 除去即無損害；能而不為 → 公務員免責</div>
+    <div class="br"></div>
+    <div class="b">不能（房子已拆）→ 賠償</div>
+    <div class="br"></div>
+    <div class="b ok">故意：直接告公務員</div>
+    <div class="br"></div>
+    <div class="b q">過失：先國賠，不能受償才告公務員</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§186</span> 限違背對第三人應執行的職務，下班開車撞人是一般侵權。過失時以「不能依他項方法受賠償」為限，所以誤拆房屋先請求國賠；索賄刁難是故意，可以直接告公務員。立法目的是鼓勵公務員勇於任事。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>一般國考少考，高考二級會和國賠法合考。這條是保護公務員，和一般侵權保護被害人的方向相反。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-11-§186公務員侵權責任.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>§187 法代責任：有識別能力連帶、無識別能力單獨，都落空時衡平責任</h2>
+  <div class="scene">
+    <p>10 歲小孩在路邊玩球，球衝出來害機車騎士摔傷。小孩有識別能力，但名下沒有財產。</p>
+    <p class="q">騎士該告誰？法代能不能免責？都落空時怎麼辦？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">行為人有無<br>識別能力</div>
+    <div class="out"><span class="tag">有</span><div class="b">§187 I 前段：法代與小孩連帶</div></div>
+    <div class="out"><span class="tag">無</span><div class="b">§187 I 後段：法代單獨負責</div></div>
+  </div>
+  <div class="flow">
+    <div class="b no">法代證明監督無疏懈（§187 II）→ 免責</div>
+    <div class="br"></div>
+    <div class="b ok">§187 III：法院斟酌雙方經濟狀況，令為全部或一部賠償</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§187 II</span> 推定法代監督疏懈及因果關係，由法代舉證免責。衡平責任斟酌的是<b>經濟狀況</b>，不是行為輕重（普魯士民法的富人原則）。成年人在無意識或精神錯亂中致人損害，依 <span class="s">§187 IV</span> 準用 III。傳統認為本條是為他人負責，新見解認為是為自己的監督疏懈負責。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>受輔助宣告人有行為能力，輔助人不是法代，不適用 I；精神錯亂時走 IV 準用 III。老師說 §187 很愛考。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-12-§187法定代理人責任之體系與衡平責任.md</span></div>
+</section>
+
+<!-- 13 -->
+<section class="card" id="c13">
+  <h2><span class="n">13</span>未成年人因無過失不成立侵權時，王澤鑑主張類推 §187 I 令法代負責</h2>
+  <div class="scene">
+    <p>7 歲的甲在公園玩球，球滾走追不到，騎腳踏車的乙撞到球摔傷。甲的爸爸當時在滑手機。</p>
+    <p class="q">甲有識別能力，但有過失嗎？乙能找爸爸嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>小孩不負 §184 的兩種原因</span>
+      <ul>
+        <li><span>無識別能力 → §187 I 後段（條文已規定）</span></li>
+        <li><span>有識別能力但無過失（同齡標準）</span>
+          <ul>
+            <li class="off"><span>文義：§187 不適用，也進不了 III</span></li>
+            <li class="hit"><span>王澤鑑：類推 §187 I，法代單獨負責；可類推 II 免責</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>未成年人過失以同齡人為準，一般 7 歲小孩追不到滾走的球不算過失，甲不成立 §184。§187 以行為人成立侵權為前提，依文義法代不用負責。王澤鑑參考德國法：小孩是因為過失標準放寬才免責，法代監督若有疏懈，不該跟著免責。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這是講義 148 頁註 224 的進階問題。下堂從 149 頁監督疏懈的判斷續講，再進 §188。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法16-筆記-13-未成年人無過失時法定代理人之責任.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

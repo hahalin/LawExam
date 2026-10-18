@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>強制執行法06 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="強制執行法06">
+<main>
+
+<header class="lesson-head">
+  <h1>強制執行法06</h1>
+  <span class="sub">分配表異議 §39・§41・有價證券執行・動產查封與效力 §51・動產拍賣與變賣・不動產查封 §75～§78</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。這堂一半是「時間點」與「得／應」的考點：期日一日前、十日內起訴加證明、七日、五日、二拍五成。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>分配表上的金額、次序有錯：先在執行處以書狀聲明異議（§39）</h2>
+  <div class="scene">
+    <p>A 地拍得 1,000 萬。分配表把丙的普通債權 300 萬排在乙的抵押債權前面，分配期日定 3/2。</p>
+    <p class="q">乙最晚哪一天、用什麼方式表示不同意？這是程序瑕疵還是實體瑕疵？</p>
+  </div>
+  <div class="flow">
+    <div class="b">分配次序：稅 → 執行費（<span class="s">§29 II</span>）→ 優先受償債權 → 普通債權</div>
+    <div class="br"></div>
+    <div class="b q">債權金額、分配次序有爭執＝<b>實體</b></div><div class="a"></div>
+    <div class="b ok">§39：期日<b>一日前</b>（3/1）、<b>書狀</b>、寫明哪裡不當、要怎麼改</div>
+    <div class="br"></div>
+    <div class="b">分配期日：異議正當、無人反對 → 更正分配表</div><div class="a"></div>
+    <div class="b">未到場者：更正表送達後 <b>3 日內</b>不反對 → 視為同意（<span class="s">§40-1</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>聲明異議只代表「向執行處提出」，不代表一定是程序瑕疵。§39 是針對實體的聲明異議；分配程序裡的程序瑕疵仍用 §12，兩條路並行。</p>
+    <p>異議未終結 → 無異議部分先分配（<span class="s">§40 II</span>），有爭議部分接 §41。沒有異議的人事後也可以另訴不當得利。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項寫「於分配期日以言詞聲明異議」——錯兩次：時點要一日前、方式要書狀。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-01-分配次序與分配表聲明異議§39.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>異議未終結：分配期日起十日內起訴並向執行處證明，否則視為撤回異議（§41）</h2>
+  <div class="scene">
+    <p>乙聲明異議，丙在分配期日反對。乙第 8 天去民事庭起訴，但沒告訴執行處；乙也沒去分配期日。</p>
+    <p class="q">執行處第 11 天會怎麼分？乙能主張「我沒到場，十天應該晚點算」嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="分配表異議時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="80" cy="70" r="5" class="dot"/>
+    <text x="80" y="48" text-anchor="middle">期日前 1 日</text>
+    <text x="80" y="94" text-anchor="middle" class="mu">§39 書狀異議</text>
+    <circle cx="210" cy="70" r="5" class="dot acc"/>
+    <text x="210" y="48" text-anchor="middle">分配期日</text>
+    <text x="210" y="94" text-anchor="middle" class="mu">有人反對＝未終結</text>
+    <line x1="210" y1="120" x2="440" y2="120" class="acc"/>
+    <text x="325" y="138" text-anchor="middle" class="mu">起訴＋向執行處證明</text>
+    <circle cx="440" cy="70" r="5" class="dot"/>
+    <text x="440" y="48" text-anchor="middle">期日起 10 日</text>
+    <text x="440" y="94" text-anchor="middle" class="mu">做到 → 提存</text>
+    <text x="440" y="112" text-anchor="middle" class="mu">沒做到 → 視為撤回</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>原告是聲明異議的人，被告是反對陳述的人，向執行法院的<b>民事庭</b>起訴，性質是形成之訴。十日內要<b>起訴＋證明</b>兩件事：做到，該筆金額提存；沒做到，視為撤回異議，照原分配表分（<span class="s">§41 III</span>）。</p>
+    <p>債務人對有執行名義的債權人提起時，只能用 §14 的事由（<span class="s">§41 II</span>）。勝訴後剔除的金額，原告和沒起訴的其他債權人按比例分（按分說、團體分配主義）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>110 年大法庭：十日<b>不因是否到場</b>而延後，沒有例外。只有 §40-1 有反對陳述時，才從受通知日起算。只起訴不證明也是視為撤回。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-02-分配表異議之訴§41.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>股份在集保帳戶依其他財產權執行；有實體股票依動產執行</h2>
+  <div class="scene">
+    <p>甲要執行乙的兩種股份：證券戶裡的 B 股票 10 萬股，以及未上市丙公司已印製的實體股票。</p>
+    <p class="q">兩種各用什麼程序？執行法院對丙公司股份依 §117 準用 §115 拍賣、「未占有股票」，妥適嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">有沒有發行<br>實體股票？</div>
+    <div class="out"><span class="tag">無</span><div class="b">其他財產權（<span class="s">§117</span> 準用 <span class="s">§115</span>）：對券商發<b>扣押命令</b> → 轉入法院集保帳戶 → 集中市場賣出</div></div>
+    <div class="out"><span class="tag">有</span><div class="b ok"><b>動產</b>執行：實施占有股票、拍賣；拍賣後由法院代背書（<span class="s">§68-1</span>）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>實體股票轉讓要背書，權利跟著那張紙走，所以要剝奪債務人對股票的占有。誤用其他財產權程序 → 程序有瑕疵，不生轉讓效力，執行命令也不能取代背書（112 年判決）。</p>
+    <p>有價證券不得交債務人保管（<span class="s">§59 II</span>）；須於期限內行使或保全的權利由法院代為（<span class="s">§59-1</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>題目寫「股票」兩個字＝有那張紙。「未占有股票」就是在告訴你用錯程序。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-03-有價證券股票的執行.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>動產查封是執行人員實施占有；封條只是交付保管時的公示方法</h2>
+  <div class="scene">
+    <p>執行處到音樂教室查封債務人的鋼琴，請搬家公司載走，交給債權人保管，再在鋼琴上貼公文。</p>
+    <p class="q">哪一個動作才是「查封」？債務人還是鋼琴的所有人嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b ok">① 查封：執行人員<b>實施占有</b>（<span class="s">§47 I</span>）</div><div class="a"></div>
+    <div class="b">② 交付保管（<span class="s">§59</span>）</div><div class="a"></div>
+    <div class="b">③ 公示方法：標封、烙印、火漆印、貼公文</div>
+    <div class="br"></div>
+    <div class="b dim">債務人喪失<b>處分權</b>，不喪失所有權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>執行人員得檢查、啟視住所和箱櫃（<span class="s">§48 I</span>）；債務人不在場，要有家屬或鄰居在場，必要時請警察（<span class="s">§48 II</span>）。保管人可以是債權人；交債務人保管時，可在無損價值範圍內繼續使用。</p>
+    <p>貴重物品、有價證券原則不交債務人保管，除非債權人同意或認為適當。書記官作查封筆錄和物品清單（<span class="s">§54</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「以張貼封條方式查封動產」→ 錯。封條是為了讓第三人知道、避免善意受讓，是第三步。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-04-動產查封的方法與保管.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>查封有四種限制：時間、超額、無益、生活必需</h2>
+  <div class="scene">
+    <p>債務人欠 50 萬。債權人想星期六晚上去他住的公寓查封；另一處是沒人住的倉庫。他家冰箱裡有菜，果園的橘子下週可以採。</p>
+    <p class="q">哪些可以查封？查封價值超過 50 萬一定違法嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>時間 <span class="s">§55</span></span><ul>
+      <li class="hit"><span>休息日、夜間不得進入<b>有人居住之住宅</b></span></li>
+      <li class="off"><span>例外：急迫＋法官許可（提示債務人）；日沒前已開始</span></li>
+      <li class="off"><span>倉庫、空屋不受限</span></li></ul></li>
+    <li><span>超額 <span class="s">§50</span></span><ul>
+      <li class="hit"><span>以債權額＋執行費為限；除<b>極端超額</b>外不違法</span></li></ul></li>
+    <li><span>無益 <span class="s">§50-1</span></span><ul>
+      <li class="hit"><span>付完優先債權＋執行費已無剩餘 → 不得查封／撤銷查封</span></li></ul></li>
+    <li><span>生活必需 <span class="s">§52</span> <span class="s">§53</span></span><ul>
+      <li class="hit"><span>酌留 2 個月（1～3 個月）食物燃料金錢，含同住親屬</span></li>
+      <li class="off"><span>一個月內能收穫的橘子可以查封</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>為何容許稍微超額：查封時不知道之後會有多少人參與分配、併案，分母會變大。換價時賣到夠就停（<span class="s">§72</span>），多的撤銷查封還給債務人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>禁止查封物在<b>顯失公平</b>（依聲請）或<b>債務人同意</b>時仍可查封（<span class="s">§53 II</span>）。不得查封的是「<b>不能</b>於一個月內收穫」的天然孳息。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-05-查封的限制時間超額無益生活必需.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>查封後債務人出租、出賣，對債權人不生效力；個別執行程序終結前加入者都能主張</h2>
+  <div class="scene">
+    <p>5/1 下午查封登記函送到地政。當晚丙把房子租給丁三年。之後乙聲請執行同一房子，被併案。</p>
+    <p class="q">誰可以主張這份租約對自己不生效力？丙丁之間租約還有效嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="108年考題時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="70" cy="70" r="5" class="dot acc"/>
+    <text x="70" y="48" text-anchor="middle">5/1 下午</text>
+    <text x="70" y="94" text-anchor="middle" class="mu">函到地政</text>
+    <text x="70" y="112" text-anchor="middle" class="mu">查封效力發生</text>
+    <circle cx="190" cy="70" r="5" class="dot"/>
+    <text x="190" y="48" text-anchor="middle">5/1 晚上</text>
+    <text x="190" y="94" text-anchor="middle" class="mu">丙丁租約</text>
+    <circle cx="310" cy="70" r="5" class="dot"/>
+    <text x="310" y="48" text-anchor="middle">5/15</text>
+    <text x="310" y="94" text-anchor="middle" class="mu">現場查封（無關）</text>
+    <circle cx="440" cy="70" r="5" class="dot"/>
+    <text x="440" y="48" text-anchor="middle">乙併案</text>
+    <text x="440" y="94" text-anchor="middle" class="mu">終結前加入</text>
+    <text x="440" y="112" text-anchor="middle" class="mu">甲乙都可主張</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>查封後債務人的移轉、設定負擔、其他有礙執行效果的行為（含出租、破壞）對債權人<b>不生效力</b>（<span class="s">§51 II</span>），是相對無效：丙丁之間仍有效。只要在<b>個別執行程序終結前</b>加入，不問在處分前後，都可主張。</p>
+    <p>查封效力當然及於天然孳息（小牛、雞蛋）；租金利息要另發扣押命令。第三人占住查封物，執行處可依職權排除（<span class="s">§51 III</span>）。債務人在拍定前提出現款，可撤銷查封（<span class="s">§58</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>A 車題：查封當天下午賣給不知情的丙——查封在執行人員占有時就生效，跟監理站何時收到函無關；丙<b>不得主張善意受讓</b>。答案是「移轉行為對甲不生效力」。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-06-查封的效力§51.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>強制執行拍賣是買賣，債務人是出賣人；動產原則不鑑價、不定底價</h2>
+  <div class="scene">
+    <p>法院公告拍賣債務人的一台車。小明舉手出 30 萬，高呼三次，槌子敲下。</p>
+    <p class="q">這份買賣契約的出賣人是誰？公告、出價、敲槌各是要約還是承諾？</p>
+  </div>
+  <div class="flow">
+    <div class="b">拍賣公告<small>要約之引誘</small></div><div class="a"></div>
+    <div class="b">應買出價<small>要約</small></div><div class="a"></div>
+    <div class="b ok">拍定<small>承諾 → 契約成立</small></div>
+    <div class="br"></div>
+    <div class="b q">出賣人：<b>債務人</b>（法院代替其地位，49 台上 83）　買受人：拍定人</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>查封日到拍賣期日至少 7 日、不多於 1 個月（<span class="s">§57</span>）。地點：法院或動產所在地，可委託拍賣行（<span class="s">§61</span>）。只有貴重且價格不易確定才鑑價（<span class="s">§62</span>）。</p>
+    <p>要通知債權人和債務人，不到場不停止（<span class="s">§63</span>）；應通知未通知才是程序違法 → §12。底價條文寫「應」，實際是因聲請或必要時才定；可以收保證金（<span class="s">§70 I</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>動產、不動產共通的只有「拍定人無物之瑕疵擔保請求權」（<span class="s">§69</span>）。底價要定、底價寫在公告、投標，這三項都只有不動產。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-07-動產拍賣的性質與拍賣前準備.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>動產拍賣公告不載底價、上網站是「得」；債務人不得應買</h2>
+  <div class="scene">
+    <p>拍賣公告只貼在法院和拍賣場所，沒上法院網站，也沒寫底價，三天後就開拍。現場有債務人、他的連帶保證人、物上保證人爸爸、經管本案的執達員太太。</p>
+    <p class="q">公告哪裡有問題？哪些人可以買？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>可以買</h4>債權人、保證人、連帶債務人（不同人）；物上保證人、限定繼承人（只負物的有限責任，105 台抗 381）；院長及其他職員（有效，只生懲戒）</div>
+    <div class="trap-c"><h4>不可以買</h4><b>債務人</b>（<span class="s">§70 VI</span>：出賣人不能當買受人；避免循環執行）；經管拍賣的執行法官、書記官、執達員及其人頭（民法 <span class="s">§392</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公告內容沒有底價（<span class="s">§64</span>）。一定要揭示在執行法院＋公所或拍賣場所；法院網站、公報新聞紙都是「得」（<span class="s">§65</span>）。公告五日後才能拍賣（<span class="s">§66</span>）。違反公告程序 → §12。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這題的問題在「三天後開拍」，不在沒上網站、沒寫底價。不動產則相反：底價要寫、網站要放。債務人想留下財產，應提出現款撤銷查封，不是去應買。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-08-拍賣公告與應買資格.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>未拍定先問債權人是否承受；二拍達底價五成即拍定；無人應買原則終結</h2>
+  <div class="scene">
+    <p>底價 100 萬的機器。情況一：一拍最高只出 60 萬。情況二：一拍現場完全沒人。</p>
+    <p class="q">兩種情況下一步一樣嗎？二拍出 55 萬能拍定嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">一拍<br>未拍定</div>
+    <div class="out"><span class="tag">有人出價<br>§70 IV</span><div class="b">問債權人依底價承受 → 不承受 → <b>當然二拍</b>：≥ 50 萬拍定；不足 → 作價承受 → 不承受 → 撤銷查封</div></div>
+    <div class="out"><span class="tag">無人應買<br>§71</span><div class="b no">作價交債權人承受 → 不承受 → <b>原則撤銷查封、終結</b>；顯有賣得相當價金可能 → 才二拍</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>動產口頭喊價，最高價高呼三次後拍定（<span class="s">§70 III</span>）。沒定底價也不能出一塊錢就買到：兩造認為不足而反對、或二拍顯不相當，都不拍定。動產最多賣兩次。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>條文寫「應作價交債權人承受」，但債權人可以不要，承受從不強迫。無人應買≠當然進二拍。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-09-拍賣實施未拍定與再行拍賣.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>拍定人未繳足價金：同條件再拍賣，原拍定人不得應買並負擔差額（§68-2）</h2>
+  <div class="scene">
+    <p>丙繳 20 萬保證金，以 250 萬拍定乙的房子，卻沒繳價金。再拍賣只賣到 240 萬，再拍賣費用 3 萬。</p>
+    <p class="q">再拍賣要打折嗎？丙可以再來買嗎？保證金會怎樣？</p>
+  </div>
+  <div class="flow">
+    <div class="b no">拍定人未繳足</div><div class="a"></div>
+    <div class="b">再拍賣：<b>同一條件</b>，原拍定人不得應買</div><div class="a"></div>
+    <div class="b">差額 10 萬＋費用 3 萬＝13 萬由丙負擔<small>法院依職權裁定＝執行名義</small></div><div class="a"></div>
+    <div class="b ok">保證金 20 萬先抵 → 剩 7 萬發還</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>不打折，因為賣不掉不是東西差，是拍定人害的。差額負擔兼具損害賠償和制裁。不動產依 <span class="s">§113</span> 準用。債權人表示承受後反悔不繳 → 類推適用 §68-2（條文只寫拍定人）。</p>
+    <p>法拍先繳足價金才交付；動產移轉占有取得所有權。買到壞電視不能退貨減價（<span class="s">§69</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>別和二拍混在一起：二拍是「未拍定」，可以打五折；§68-2 是「拍定後沒付錢」，同條件。保證金不是一律全額沒收，抵完有剩要還。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-10-拍定後未繳足價金§68-2與交付.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>變賣是不經價格競爭的任意出賣；只限動產</h2>
+  <div class="scene">
+    <p>執行處查封了一卡車高麗菜，直接標「一包 50 元」賣掉；另一案查封了一塊土地，想直接開價一億賣給建商。</p>
+    <p class="q">哪一個可以？</p>
+  </div>
+  <div class="vs">
+    <div><h4>拍賣</h4>公開競價、有法定期間、公告、通知兩造；動產、不動產都可</div>
+    <div class="rule-c"><h4>變賣</h4>直接標價或個別交涉，快；只有動產（<span class="s">§60 I</span> 五款：兩造協議、易腐壞、減少價值之虞、金銀或有市價、保管困難）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>變賣賣不掉，準用 <span class="s">§71</span>：問債權人承受，不承受就撤銷查封返還。換價方式：動產＝拍賣、變賣；不動產＝拍賣、強制管理。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不動產<b>不能</b>變賣，一定要價格競爭。土地那題不行。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-11-動產變賣.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>不動產查封：查封登記函到達地政即生效，與現場查封以先者為準</h2>
+  <div class="scene">
+    <p>執行處 6/1 發查封登記函，6/2 送到地政，地政 6/10 才登記完成；現場揭示排到 7/1。現況調查時，債務人謊稱沒漏水，承租人拒絕到場。</p>
+    <p class="q">查封效力哪天發生？債務人和承租人各會受到什麼處置？</p>
+  </div>
+  <div class="flow">
+    <div class="b">查封行為：揭示、封閉、追繳契據（<span class="s">§76 I</span>）</div>
+    <div class="b">查封登記：通知<b>到達</b>地政即生效（<span class="s">§76 III</span>）</div>
+    <div class="br"></div>
+    <div class="b ok">以先者為準 → 6/2</div>
+    <div class="br"></div>
+    <div class="b">債務人拒絕或虛偽陳述 → <b>管收</b>（先訊問，非管收顯難查明）</div>
+    <div class="b">第三人 → <b>罰鍰</b> 1.5 萬元以下（<span class="s">§77-1</span>）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>不動產換價＝拍賣、強制管理（出租），可並行；與動產合併拍賣時，動產適用不動產規定（<span class="s">§75</span>）。本節沒規定的準用動產（<span class="s">§113</span>）。</p>
+    <p>查封筆錄要記海砂屋、輻射屋、漏水、非自然死亡等影響交易的情事，現場得知者記載；可開鎖進入、訊問、向警察調查。債務人保管時仍得照常居住使用（<span class="s">§78</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>生效點是「函到地政」，不是「地政辦完登記」。管收只對債務人，第三人只能罰鍰。下堂從查封效力接著講。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">06-筆記-12-不動產查封§75～§78.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

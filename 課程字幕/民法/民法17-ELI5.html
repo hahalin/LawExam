@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法17 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法17">
+<main>
+
+<header class="lesson-head">
+  <h1>民法17</h1>
+  <span class="sub">§187 收尾・§188 僱用人責任（僱傭關係、執行職務、內部求償）・§189 定作人・侵權行為的推定・§190 動物占有人</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。這堂主軸是 §188：先問<b>僱用人要不要對外負責</b>（僱傭關係、執行職務），再問<b>賠完能不能向受僱人求償、求多少</b>。最後把侵權行為各條的推定一次整理。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 14</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>子女交他人照顧不能主張監督未疏懈；未行使親權之一方不負 §187</h2>
+  <div class="scene">
+    <p>小學生甲在安親班打傷同學乙。甲的父母已離婚，由媽媽行使親權，爸爸住在外縣市。</p>
+    <p class="q">媽媽能說「小孩在安親班，我管不到」而免責嗎？爸爸要不要負責？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§187 II：法代舉證監督未疏懈</span>
+      <ul>
+        <li class="off"><span>少數說：小孩不在身邊 → 無從監督 → 可免責</span></li>
+        <li class="hit"><span>通說：交他人照顧 → 類推 §224 → 不能免責</span></li>
+      </ul>
+    </li>
+    <li><span>未行使親權之一方 → 親權暫停 → 不負 §187</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>監督疏懈是推定的，由法代證明。通說（王澤鑑）認為把小孩交給老師、安親班，等於把保護教養義務交給他人代為履行，<b>類推 §224</b>，照顧者的過失由父母負同一責任。離婚後依 <span class="s">§1055</span> 由一方行使親權，他方親權只是暫時停止，無從監督，不負 §187。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>是「類推」不是「適用」§224：保護教養義務不是債。父母對子女的權利叫<b>親權</b>，不叫監護權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-01-§187II委託照顧與未行使親權一方.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>富有未成年人依法不負責時，德國通說類推 §187 III 衡平</h2>
+  <div class="scene">
+    <p>6 歲的甲名下有大筆財產。案例一：甲撞傷乙，依同齡標準無過失。案例二：外送員乙撞傷在路邊玩球的甲，甲無識別能力。</p>
+    <p class="q">兩案依條文都對有錢的小孩比較有利，被害人或外送員怎麼辦？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>案例一：甲是加害人</h4>甲無過失 → §184 ✗；法代證明監督未疏懈 → 也落空 → 對甲<b>類推 §187 III</b></div>
+    <div class="rule-c"><h4>案例二：甲是被害人</h4>甲無識別能力 → 無過失 → §217 ✗ → 乙全賠 → <b>類推 §187 III</b> 減免</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>未成年人的過失從寬認定，是法律對加害人的保護；保護越多，被害人越沒保障。德國通說：先用 §187 I、III、§217 涵攝都不合，再指出結果不合理，最後<b>類推 §187 III</b>，由法院斟酌雙方經濟狀況，命小孩賠償，或減免外送員的賠償。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>衡平責任斟酌的是<b>經濟狀況</b>，不是行為輕重。這是研究所程度的考題，寫法順序不能跳。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-02-類推§187III之富有未成年人衡平責任.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>§188 三要件；實務採為他人負責，學說有為自己負責說</h2>
+  <div class="scene">
+    <p>A 公司的貨車司機甲送貨時撞傷乙，甲名下沒有財產。</p>
+    <p class="q">乙能找 A 公司嗎？A 公司賠完，能向甲全部要回來嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 僱傭關係</div>
+    <div class="a"></div>
+    <div class="b">② 執行職務</div>
+    <div class="a"></div>
+    <div class="b">③ 受僱人成立侵權</div>
+    <div class="br"></div>
+    <div class="b ok">§188 I：僱用人與受僱人連帶</div>
+    <div class="br"></div>
+    <div class="b dim">但書：僱用人證明選任監督無過失 → 免責；再走 §188 II 衡平</div>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>為他人負責（實務）</h4>公司本無責任，為保護被害人才被拉進來 → §188 III 全額求償</div>
+    <div class="trap-c"><h4>為自己負責（陳聰富、游進發）</h4>選任監督過失本身是不作為侵權 → §188 III 只是確認，回 §280、§281</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§188 I</span> 但書推定選任監督過失與因果關係，結構與 §187 II 相同；<span class="s">§188 II</span> 衡平責任對應 §187 III。受僱人不成立侵權，僱用人就不負 §188。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§188 國考出現機率特別高。上課先用為他人負責說，遇到求償爭點再補為自己負責說。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-03-§188構成要件與為他人或為自己負責.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>僱傭關係依序看法律上、事實上、客觀上；靠行公司要負 §188</h2>
+  <div class="scene">
+    <p>甲買遊覽車靠行 A 交通公司，車身漆著 A 公司名稱。甲自己請司機乙開車，乙撞傷丙。</p>
+    <p class="q">A 公司跟乙之間沒有契約，丙能依 §188 告 A 公司嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b no">法律上：A、乙無僱傭契約 ✗</div>
+    <div class="br"></div>
+    <div class="b no">事實上：乙不是為 A 服勞務 ✗</div>
+    <div class="br"></div>
+    <div class="b ok">客觀上：開 A 公司的車，足使人認為是 A 的司機 ✓</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>三層是思考順序，前一層過關就不必往下。§188 的目的是保護被害人：可以告不等於拿得到錢，多一個有資力的對象。所以要件從寬，交通公司收取靠行費獲利，就要承擔被告的風險（<b>風險分配</b>）。未成年人未得允許打工、法代拒絕承認，仍有事實上僱傭關係。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「甲是乙的員工，所以客觀上有僱傭關係」是錯的論述：真的是員工，在法律上那一層就過關了。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-04-僱傭關係三層判斷與靠行.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>無指揮監督權限者，對方是獨立履行輔助人，不負 §188</h2>
+  <div class="scene">
+    <p>甲搭 A 車隊的計程車，司機乙開太快撞傷丙。另一件事：旅行社委託遊覽車公司出車，司機翻車。</p>
+    <p class="q">丙能告乘客甲嗎？能告車隊嗎？學生能告旅行社嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>有沒有指揮監督權限？</span>
+      <ul>
+        <li class="off"><span>乘客：只指定目的地 ✗（指示超速 → §185 II 造意）</span></li>
+        <li class="off"><span>旅行社：遊覽車公司不受其監督 ✗</span></li>
+        <li class="hit"><span>計程車車隊：管制多、收費營運 → 實務漸採客觀上僱傭 ✓</span></li>
+        <li><span>外送平臺：幾乎不管制，沒有標準答案</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>判斷核心是<b>指揮監督</b>。乘客、旅行社對司機沒有指揮監督，司機或遊覽車公司是<b>獨立的履行輔助人</b>。車隊早期被看成居間，但現在出車天數、制服、罰關機都管，越管越像僱傭，再加上靠行的風險分配法理，實務漸採肯定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>外送平臺若涵攝為無僱傭關係，結論就寫無理由，可以再反思利潤與風險是否失衡。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-05-獨立履行輔助人與車隊外送平臺.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>非職務本體但有客觀關聯：實務採客觀說，王澤鑑另要求可預見</h2>
+  <div class="scene">
+    <p>貨車司機甲送完貨，回程順路開公司貨車去接小孩，途中撞傷乙。</p>
+    <p class="q">接小孩不是工作內容，算「執行職務」嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">職務本體？</div>
+    <div class="a lbl">不是</div>
+    <div class="b">利用職務機會、有客觀關聯？</div>
+    <div class="br"></div>
+    <div class="b dim">完全無關（下班開自己的車）→ 不是執行職務</div>
+    <div class="br"></div>
+    <div class="b ok">客觀說（實務）：有客觀關聯即可 ✓</div>
+    <div class="br"></div>
+    <div class="b q">內在關聯說（王澤鑑）：還要僱用人能預見</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>先看是不是職務本體；不是，再看有沒有利用職務機會、與職務有客觀關聯。有關聯時，<b>客觀說</b>直接過關；<b>內在關聯說</b>再問老闆能不能預見（例如知不知道他常順路接小孩），理由是預見得到才能事先分散風險。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>兩說只有在「非本體但有客觀關聯」時才會分歧。實務兩說都出現過，但大多仍採客觀說。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-06-執行職務之客觀說與內在關聯說.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>被害人無值得保護之信賴時，執行職務從嚴認定（信賴說）</h2>
+  <div class="scene">
+    <p>客戶乙把存摺、印章、身分證交給 A 銀行行員甲保管，說「有賺錢的直接幫我買」。甲挪用 200 萬投資失利，名下沒錢。</p>
+    <p class="q">乙能依 §188 要 A 銀行賠嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>客觀說、內在關聯說</h4>利用行員身分取得存摺印章 → 有客觀關聯；銀行一向告誡客戶 → 可預見 → 執行職務 ✓</div>
+    <div class="rule-c"><h4>最高法院、陳忠五</h4>乙行為異常、動機可疑，無值得保護的信賴 → 從嚴 → 執行職務 ✗</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§188 要件從寬是為了保護被害人；被害人沒有被保護的價值時，就該從嚴。<b>信賴說</b>：一般交易以一般被害人的信賴判斷，特殊情形（只有乙會把存摺印章交出去）以個別被害人的信賴判斷。陳聰富另指出，乙對甲依 §184 請求時有 §217 與有過失。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「受僱人行為構成犯罪就不是執行職務」是錯的，犯罪與否和執行職務沒有必然關係。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-07-行員盜領存款與陳忠五信賴說.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>僱用人無應分擔部分：受僱人被免除或時效完成，僱用人一併受益</h2>
+  <div class="scene">
+    <p>A 公司員工甲撞傷乙，損害 80 萬。乙知道甲是加害人 1 年半後，才知道甲受僱於 A，又過 1 年才告 A。</p>
+    <p class="q">乙對甲的時效已完成，對 A 還沒，A 能拒絕給付嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 130" role="img" aria-label="時效時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="45" cy="55" r="5" class="dot"/>
+    <text x="45" y="35" text-anchor="middle">第 0 年</text>
+    <text x="45" y="80" text-anchor="middle" class="mu">知悉甲加害</text>
+    <circle cx="165" cy="55" r="5" class="dot"/>
+    <text x="165" y="35" text-anchor="middle">1.5 年</text>
+    <text x="165" y="80" text-anchor="middle" class="mu">知悉 A 僱用</text>
+    <circle cx="260" cy="55" r="5" class="dot"/>
+    <text x="260" y="35" text-anchor="middle">2 年</text>
+    <text x="260" y="80" text-anchor="middle" class="mu">對甲時效完成</text>
+    <circle cx="355" cy="55" r="5" class="dot acc"/>
+    <text x="355" y="35" text-anchor="middle">2.5 年</text>
+    <text x="355" y="80" text-anchor="middle" class="mu">起訴 A</text>
+    <text x="200" y="115" text-anchor="middle" class="mu">對 A 自知有 A 起算才 1 年，未完成</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§188 III 只寫「有求償權」，不像 §281 I 寫各自分擔，實務認為僱用人<b>無應分擔部分</b>。所以依 <span class="s">§276 II</span>，A 可援用甲的時效利益拒絕全部給付（87 台上 1440），甲不必先抗辯。乙免除甲 50 萬、只向甲要 30 萬時，依 <span class="s">§276 I</span> A 也只要賠 30 萬（73 台上 2966）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不要和 §185 共同侵權混算：甲 40%、乙 60%、損害 80 萬，全部免除甲，乙仍要賠 48 萬。陳聰富、游進發認為公司有自己的過失，應只在員工分擔範圍內受益。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-08-僱用人無應分擔部分與§276免除時效.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>僱用人依 §188 III 求償時有無與有過失：實務否定，學界類推 §217</h2>
+  <div class="scene">
+    <p>A 公司讓司機甲一天開 16 小時、一週 7 天，車子也沒保養。甲撞傷乙，A 賠了 80 萬後向甲全額求償。A 自己的過失約占 30%。</p>
+    <p class="q">甲能主張 A 也有錯、少付一點嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>A 向甲求償 80 萬，甲主張減輕</span>
+      <ul>
+        <li class="off"><span>實務：§217 只適用於損害賠償之債，A 也不是被害人 → 甲付 80 萬</span></li>
+        <li class="hit"><span>王澤鑑、詹森林：類推 §217 → 甲付 56 萬</span></li>
+        <li><span>陳聰富：依 §281 直接按分擔求償 → 甲付 56 萬</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>實務從體系（求償權不是損害賠償）與文義（限「被害人」與有過失）否定 §217。學界多數維持為他人負責，但認為把僱用人自己的過失全轉給員工不合理，基於合理分配風險<b>類推 §217</b>。陳聰富認為 §188 III 是確認性規定，直接依 <span class="s">§281</span> 按內部分擔求償。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>甲若先賠乙 80 萬，依 §188 III 不能向 A 求償（只規定僱用人對受僱人）；只有陳聰富說可依 §281 I 反求償。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-09-§188III求償與類推§217與有過失.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>法代依 §187 I 前段連帶賠償後能否向子女求償，學說三說</h2>
+  <div class="scene">
+    <p>16 歲的甲（有識別能力）騎車撞傷乙，父母與甲連帶賠了 20 萬。</p>
+    <p class="q">父母賠完，能向甲要回錢嗎？要回多少？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§187 I 後段、§187 III：法代自己的責任，不生求償問題</span></li>
+    <li><span>§187 I 前段連帶</span>
+      <ul>
+        <li class="hit"><span>否定說：§188 有第三項而 §187 沒有，立法者有意省略 → 0</span></li>
+        <li><span>林誠二：§280、§281 平均分擔 → 10 萬</span></li>
+        <li><span>王澤鑑：類推 §188 III → 20 萬</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>只有子女有識別能力、與法代<b>連帶</b>時才有內部求償問題。認為 §187 是為自己負責，走 <span class="s">§280、§281</span>，比例無法認定就平均分擔；認為是為他人負責，類推 §188 III 全額轉嫁。老師近來採否定說：小孩的錢就是父母的錢，法不入家門。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這是純學理題，實務幾乎沒有案例；要先排除 §187 I 後段與 III 再討論。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-10-§187法代對子女之內部求償.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>監督權限理論：僱用人原則不得求償；答題分三步驟</h2>
+  <div class="scene">
+    <p>同樣是 A 公司司機甲撞傷乙、A 賠了 80 萬。陳忠五先問一個更上層的問題。</p>
+    <p class="q">A 憑什麼向甲求償？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 可否求償？</div>
+    <div class="br"></div>
+    <div class="b dim">多數說：可以／陳忠五：原則不行，例外才可以</div>
+    <div class="br"></div>
+    <div class="b">② 如何求償？</div>
+    <div class="br"></div>
+    <div class="b dim">多數說：§188 III 全額／陳聰富：§281 I 按分擔</div>
+    <div class="br"></div>
+    <div class="b">③ 有無與有過失？（走 §188 III 才要問）</div>
+    <div class="br"></div>
+    <div class="b dim">實務：否／多數學者、陳忠五：類推 §217</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>老闆能監督員工、藉員工獲利，員工造成的風險由老闆承擔有正當性，所以<b>原則不得求償</b>。這不影響被害人，被害人已能依 §188 找老闆。例外：受僱人非執行職務本體、只是利用職務機會；或受僱人有<b>故意或重大過失</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>前面各說爭的是「怎麼求償」，監督權限理論爭的是「能不能求償」，層次不同，答題要先寫第一步。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-11-監督權限理論與§188III三步驟.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>§189 定作人原則不負責，是確認性規定而非請求權基礎</h2>
+  <div class="scene">
+    <p>甲請乙來裝冷氣，乙不小心讓冷氣掉下去，砸傷樓下等公車的丙。</p>
+    <p class="q">丙能找甲嗎？要依哪一條？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>丙 → 乙（承攬人）：§184</span></li>
+    <li><span>丙 → 甲（定作人）</span>
+      <ul>
+        <li class="off"><span>§188 ✗：承攬沒有指揮監督（§189 本文確認）</span></li>
+        <li class="hit"><span>定作或指示有過失 → §184 ✓；甲乙依 §185 連帶</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>承攬著重工作完成，定作人沒有指揮監督權限，不負 §188。<span class="s">§189</span> 但書「不在此限」不是回到 §188，而是定作人為<b>自己的過失</b>依 §184 負責。刪掉 §189 結論也一樣，保留是為了避免爭執，屬確認性規定，和 §18 II 同類。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不要寫「依 §189 請求損害賠償」，§189 不是請求權基礎。甲乙連帶是依 §185，不是依 §188。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-12-§189定作人責任之確認性規定.md</span></div>
+</section>
+
+<!-- 13 -->
+<section class="card" id="c13">
+  <h2><span class="n">13</span>但書之後的要件由被告證明：各條推定的範圍不同</h2>
+  <div class="scene">
+    <p>選擇題問：「下列何者<b>不</b>推定過失？」選項是 §184 II、§185 I 後段、§188、§191-2。</p>
+    <p class="q">不背表格，怎麼從條文看出推定了什麼？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>只推定一個</span>
+      <ul>
+        <li><span>§184 II、§191-2：過失</span></li>
+        <li class="hit"><span>§185 I 後段：因果關係（唯一不推定過失）</span></li>
+      </ul>
+    </li>
+    <li><span>推定過失＋因果：§187、§188、§190、§191-3</span></li>
+    <li><span>不法（欠缺）＋過失＋因果全推定：§191、§191-1</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>找出「負損害賠償責任」這個<b>法律效果</b>：它之前的構成要件由原告證明，之後的但書由被告證明，也就是被推定的要件。以 §187 為例，被害人證明行為人是限制行為能力人、不法侵害權利、有識別能力、被告是法代；監督未疏懈、縱監督仍不免發生，由法代證明。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>老師說這類題選擇題超愛考。§191-2 只推定過失，§191-3 多推定因果；兩條相鄰最容易混。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-13-侵權行為之各種推定與舉證責任.md</span></div>
+</section>
+
+<!-- 14 -->
+<section class="card" id="c14">
+  <h2><span class="n">14</span>§190 由動物占有人負責，主人把狗送出去後是間接占有人</h2>
+  <div class="scene">
+    <p>甲把 A 犬送到寵物美容店，員工乙剪指甲時弄痛 A 犬，A 犬咬傷顧客丁的 B 犬。</p>
+    <p class="q">丁能依 §190 告誰？主人甲要負責嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b dim">甲：所有人、間接占有人</div>
+    <div class="a"></div>
+    <div class="b ok">美容店：直接占有人</div>
+    <div class="a"></div>
+    <div class="b ok">員工乙：占有輔助人</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§190 I</span> 看誰對動物有<b>事實上管領力</b>、最可能制止，所以是占有人；老師講述包含直接占有人與占有輔助人，不含間接占有人。侵害行為包括直接咬傷與間接追逐致摔車。單純餵養流浪狗，實務傾向不構成占有，要有牽繩、圈養等進一步管領。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§190 是動物<b>占有人</b>，§191 是工作物<b>所有人</b>，選擇題會互換。§190 II 下堂續講。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法17-筆記-14-§190I動物占有人之侵權責任.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

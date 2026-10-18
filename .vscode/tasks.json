@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "批次轉換選取的 Markdown 為 PDF",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/scripts/convert-selected-md-to-pdf.ps1"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "批次轉換資料夾內全部 Markdown 為 PDF",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-ExecutionPolicy",
+        "Bypass",
+        "-File",
+        "${workspaceFolder}/scripts/convert-folder-md-to-pdf.ps1"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

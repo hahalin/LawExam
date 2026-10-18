@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法02 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法02">
+<main>
+
+<header class="lesson-head">
+  <h1>民法02</h1>
+  <span class="sub">監護／輔助宣告・人格權怎麼告・住所・法人是什麼</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>監護宣告：把一個人的交易權限歸零</h2>
+  <div class="scene">
+    <p>甲 70 歲重度失智，連「一手交錢一手交貨」都不懂了。女兒乙怕他的房子被騙走，向法院聲請監護宣告。法院鑑定後覺得甲只是「不太行」，還沒到「完全不行」。</p>
+    <p class="q">法院只能「准」或「駁回」嗎？甲如果後來好轉了，是不是自動變回正常人？</p>
+  </div>
+  <div class="flow">
+    <div class="b">聲請監護宣告</div><div class="a lbl">法院鑑定</div>
+    <div class="b no">不能 → 監護宣告（§14 I）</div>
+    <div class="br"></div>
+    <div class="b dim">同一個聲請</div><div class="a"></div>
+    <div class="b q">只是顯有不足 → 法院自己改成輔助宣告（§14 III）</div>
+    <div class="br"></div>
+    <div class="b dim">同一個聲請</div><div class="a"></div>
+    <div class="b">正常／裝的 → 駁回</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>行為能力平常只看年齡，不看腦袋。失智的成年人在法律上還是「滿分」，所以要靠法院一刀把他歸零：這就是監護宣告，宣告後他做的法律行為都無效（<span class="s">§15</span>、<span class="s">§75</span>）。門檻是「不能」理解意思表示，不是「不太行」。</p>
+    <p>法院不受聲明拘束：你聲請監護，它可以改判輔助。反過來撤銷時也一樣重新鑑定一遍——沒好轉就駁回、好一半就改輔助（<span class="s">§14 IV</span>）、全好才撤銷。<b>沒撤銷之前，他事實上再清醒都還是無行為能力人</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>15 歲國中生可不可以被監護宣告？<b>可以</b>（限制→無）。2 歲小孩？不行，他本來就是零分，再歸零沒意義。</p>
+    <p>108 年新增三種聲請人：意定監護受任人、輔助人、其他利害關係人（例：契約簽了、對方履行前變植物人，相對人可以聲請）。這三種人<b>只能聲請監護，不能聲請輔助</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-01-監護宣告§14§15.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>輔助宣告：不是降級，是旁邊多一個人盯</h2>
+  <div class="scene">
+    <p>甲受輔助宣告。他去車行跟乙買一台 3,000 元的腳踏車，沒問輔助人。另一題：15 歲的丙也去買同一台腳踏車，爸媽不知情。</p>
+    <p class="q">甲的買賣有效嗎？丙的呢？兩個答案一樣嗎？</p>
+  </div>
+  <div class="vs">
+    <div><h4>15 歲丙（限制行為能力）</h4>腳踏車不是日常所需、不是純獲利益 → 要法代同意 → <b>效力未定</b>（<span class="s">§77</span>、<span class="s">§79</span>）</div>
+    <div class="rule-c"><h4>受輔助宣告的甲</h4>查 <span class="s">§15-2 I</span> 七款：不動產、船舶、飛機、汽車、其他重要財產……腳踏車<b>不在裡面</b> → 不用同意 → <b>有效</b></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>輔助宣告的門檻是「顯有不足」，效果不是剝奪行為能力。受輔助宣告的人<b>還是完全行為能力人</b>，只是做七種大事（開公司、借錢、保證、打官司、處分不動產、分遺產……）要輔助人點頭（<span class="s">§15-2 I</span>）。小事隨便買。</p>
+    <p>聲請人只有基本款（本人、配偶、四親等內親屬、同居一年親屬、檢察官、主管機關、社福機構）。法院若覺得他其實已經「不能」，可以直接改做監護宣告——依據不是民法，是<b>家事事件法 §179</b>，因為 <span class="s">§15-1 III</span> 的「變更」要先有輔助宣告才變得了。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項寫「受輔助宣告之人為限制行為能力人」——很多人打勾，<b>錯</b>。只是 §15-2 II 準用了 §78～§83，長得像而已。</p>
+    <p>可以對 15 歲國中生做輔助宣告嗎？<b>不行</b>，他能做的本來就比受輔助宣告人少，沒實益。輔助宣告只對完全行為能力人做。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-02-輔助宣告§15-1§15-2與監護宣告比較.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>成年從 20 改 18，舊約定付到幾歲</h2>
+  <div class="scene">
+    <p>甲乙 111 年 2 月離婚，約定乙每月付兒子丙扶養費 1 萬元「到成年前一日」。丙 98 年出生。112 年 1 月 1 日起成年變 18 歲。</p>
+    <p class="q">乙付到丙 18 歲還是 20 歲？如果協議裡多寫一句「成年依給付當月施行的法令認定」呢？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">協議怎麼寫？</div>
+    <div class="out"><span class="tag">沒寫</span><div class="b ok">丙原本可享到 20 歲的利益不受修法影響 → 付到 20 歲（施行法 §3-1 III）</div></div>
+    <div class="out"><span class="tag">有寫</span><div class="b">當事人已預見修法、明示依當時法令 → 依約定 → 付到 18 歲</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>修法不能把人家原本講好的好處縮水。所以民法總則施行法 <span class="s">§3-1 III</span> 說：112 年 1 月 1 日前依法律、處分、裁判或<b>契約</b>已經能享有到 20 歲的利益，繼續享有到 20 歲。考試沒特別說，就用這個原則。</p>
+    <p>但既然條文講「依契約」，契約內容本來就可以自己約。高等法院座談會的案子裡，協議寫明「依給付當月當時施行之成年年齡法令決定末期」，等於當事人自己選了新法 → 付到 18 歲。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>112 年 1 月 1 日當天未滿 20 歲的人，自當天起就是成年（<span class="s">§3-1 II</span>），不是等到生日。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-03-成年年齡修法與民總施行法§3-1.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>人格權被侵害：先看「值不值得非難」，不看有沒有故意</h2>
+  <div class="scene">
+    <p>A 整形診所的「術後見證」照片，其實是自家護士乙。甲發現後跑到診所拍乙的照片，PO 網比對：「見證是假的！」乙說肖像權被侵害，要求刪文。</p>
+    <p class="q">甲確實沒經同意就拍、就 PO。乙一定贏嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b ok">① 肖像權受侵害：有</div><div class="a"></div>
+    <div class="b ok">② 因果關係：有</div><div class="a"></div>
+    <div class="b q">③ 不法性？→ 利益衡量</div>
+    <div class="br"></div>
+    <div class="b dim">乙：肖像被公開</div><div class="a lbl">天平</div>
+    <div class="b dim">甲：言論自由＋公益（醫美資訊封閉，公開有助大眾選擇）</div>
+    <div class="br"></div>
+    <div class="b dim">公益較大</div><div class="a"></div>
+    <div class="b no">無不法性 → 乙敗</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>人格權＝維護人性尊嚴所必要的權利。§195 列出來的叫特別人格權（身體、健康、名譽、自由、信用、隱私、貞操）；沒列但法院承認的叫一般人格權（居住安寧、遺族追思、肖像）。要請求<b>刪文（除去）</b>或<b>不准再做（防止）</b>，走 <span class="s">§18 I</span>，兩種人格權都可以，而且<b>不問對方有無故意過失</b>——你的尊嚴不會因為對方沒注意就該被踐踏。</p>
+    <p>§18 真正難的是第三個隱藏要件「不法性」：通說用利益衡量、比例原則，把被侵害的法益、加害人的權利、社會公益放上天平。整形診所案法院判資訊公開勝出；米其林案判「評鑑是言論自由，餐廳的契約自由要讓路」（姚志明老師則認為「好不好吃」這種私益評鑑應該可以拒絕）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「§18 I 請求除去，須加害人有故意過失」——<b>錯</b>。故意過失是 §184 損害賠償的事。</p>
+    <p>§16 §17 順便記：權利能力、行為能力、自由都<b>不得拋棄</b>（簽約自願當奴隸無效）；自由<b>可以限制</b>，但以不背公序良俗為限——判斷方法一樣是利益衡量（紅衣恐慌症案）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-04-§16§17不得拋棄與人格權§18不法性.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>要錢的時候，人格權分兩種票價</h2>
+  <div class="scene">
+    <p>甲住在工地旁，日夜噪音遠超一般人能忍的程度，整個人心神不寧。另一題：丙未經同意把乙的私密照片傳給別人看。兩人都想告加害人要慰撫金。</p>
+    <p class="q">兩個人都要證明「情節重大」嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">第一步 要不要賠？</div><div class="a lbl">§184 I 前段</div>
+    <div class="b">故意過失・不法・侵害權利・因果</div><div class="a lbl">成立</div>
+    <div class="b">第二步 賠什麼？</div>
+  </div>
+  <div class="fork">
+    <div class="cond">非財產上損害<br>（慰撫金）</div>
+    <div class="out"><span class="tag">乙</span><div class="b ok">隱私是 §195 I 列舉的特別人格權 → 直接請求，只剩金額多少</div></div>
+    <div class="out"><span class="tag">甲</span><div class="b">居住安寧是一般人格權 → 走「其他人格法益」→ 要證明<b>情節重大</b></div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§18 I 只給<b>除去侵害</b>和<b>防止侵害</b>（像卡 4 要求刪文那樣，把侵害停掉）；要錢（損害賠償、慰撫金）要另找「法律特別規定」（<span class="s">§18 II</span>）。財產上損害靠 <span class="s">§184</span>＋<span class="s">§216</span>（所受損害、所失利益），身體健康還多一條 <span class="s">§193</span>（勞動能力減損、增加生活需要）。</p>
+    <p>慰撫金靠 <span class="s">§195 I</span>：列舉的七種直接拿；沒列舉的要加「情節重大」。所以區分一般／特別人格權，實益就在這一關。名譽權受侵害還能多要一樣：回復名譽的適當處分（<span class="s">§195 I 後段</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項說「人格權受侵害，不得依不當得利請求」——<b>錯</b>。肖像、姓名這種有授權費行情的人格權，被白用等於對方省了一筆，可以 <span class="s">§179</span>。身體健康沒有財產價值，才沒有不當得利。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-05-人格權損害賠償§184§195與不當得利.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>§19 這條到底在幹嘛：一個字「或」引發的爭議</h2>
+  <div class="scene">
+    <p>補習班沒經同意，把剛考上律師的甲的名字印在招生廣告上。甲想要慰撫金。</p>
+    <p class="q">姓名不在 §195 的名單裡。甲要證明「情節重大」嗎？§19 寫「得請求損害賠償」，能直接拿來要慰撫金嗎？</p>
+  </div>
+  <div class="vs">
+    <div><h4>王澤鑑：看文義</h4>§18 II 寫「損害賠償<b>或</b>慰撫金」→ 這裡的損害賠償不含慰撫金 → §19 同解 → 慰撫金回 §195「其他人格法益」→ <b>要情節重大</b></div>
+    <div><h4>陳聰富：看目的</h4>除去可用 §18、財產賠償可用 §184、慰撫金可用 §195 → 那 §19 不就廢了？→ 讓 §19 的損害賠償<b>含慰撫金</b>，它才有存在價值 → <b>不用情節重大</b></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§19</span> 給兩個效果。「除去」跟 §18 一樣，不問故意過失。「損害賠償」就麻煩了：條文只寫「姓名權受侵害者」七個字，沒有故意過失，直接當請求權基礎會變成無過失也要賠，跟侵權法的過失原則打架。所以學者說它受 §184 限制，或者乾脆說它只是「確認姓名權是人格權」的宣示條文。</p>
+    <p>老師的考試建議：姓名權被侵害，<b>請求權基礎直接寫 §184</b>，沒人會說你錯；題目故意寫「無過失 key 錯字」時，再把 §19 文義 vs §184 的爭點搬出來。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不要背「王否定、陳肯定」。要記的是方法：一個從 §18 II 的「或」字推（文義解釋），一個從「不然 §19 變具文」推（目的解釋）。申論寫得出推理才有分。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-06-姓名權§19體系定位.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>人死了，誰來告：死人不能當原告</h2>
+  <div class="scene">
+    <p>甲被乙開車撞死。甲家裡很窮，是里長丙幫他出了 20 萬喪葬費。甲還有 80 歲的媽媽丁要養。</p>
+    <p class="q">甲可以告乙嗎？甲的繼承人可以替甲告「他少活了 20 年」嗎？丙、丁呢？</p>
+  </div>
+  <div class="flow">
+    <div class="b no">甲 → §6 死亡即無權利能力 → 無損害 → 不能告</div>
+    <div class="br"></div>
+    <div class="b no">繼承人替甲告「餘命損害」→ 台灣不承認</div>
+    <div class="br"></div>
+    <div class="b dim">那乙不用賠？不合理</div><div class="a lbl">找間接被害人</div>
+    <div class="b ok">丙：支出喪葬費之人 §192 I<br><small>不須是親屬</small></div>
+    <div class="br"></div>
+    <div class="b dim">同樣是間接被害人</div><div class="a"></div>
+    <div class="b ok">丁：甲有法定扶養義務 §192 II<br>＋ 母親慰撫金 §194</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>美國有些州承認「餘命損害」：60 歲死於非命、平均壽命 80，那 20 年的價值是甲的損害，由繼承人幫他要。台灣沒有這個東西。甲死的那一刻就不是權利主體，沒有權利可被侵害，沒有損害。</p>
+    <p>所以 <span class="s">§192</span>、<span class="s">§194</span> 是特例：讓因為甲死亡而「間接」受損的人自己出來告——出醫藥費喪葬費的人、被甲扶養的人、甲的父母子女配偶。論述時先用 <span class="s">§184</span> 處理故意過失（§192、§194 條文裡沒有），再接 §192、§194 決定誰拿什麼。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>申論題寫「甲得依 §184 向乙請求」——<b>一定錯</b>。要寫「間接被害人得依 §184 ＋ §192、§194 向乙請求」。</p>
+    <p>§192 I 的人<b>不以親屬為限</b>，里長也算；§194 慰撫金<b>只限父母子女配偶</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-07-生命權侵害與間接被害人§192§194.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>身分權：你跟家人之間的那條線，也是權利</h2>
+  <div class="scene">
+    <p>民國 50 幾年，臺南一位老母親的女兒被人誘拐到臺北，囚在西門町。找回來後，母親以自己的名義告對方要慰撫金。</p>
+    <p class="q">被抓走的不是母親，她有什麼權利被侵害？現在的法律會怎麼處理？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">身分權受侵害<br><small>限父母・子女・配偶</small></div>
+    <div class="out"><span class="tag">除去防止</span><div class="b">§18 I 只寫「人格權」→ <b>類推適用</b>（同為非財產權、同為維護人性尊嚴）</div></div>
+    <div class="out"><span class="tag">損害賠償</span><div class="b ok">§184 I 前段（多數說）＋ 財產上 §216 ＋ 慰撫金 §195 III（<b>要情節重大</b>）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>當年法官問她「你的損害是什麼？」她答不出來——法律只保護人格權和財產權，「人跟人的關係」不算。到民國 89 年施行的新債編才承認身分權，而且怕浮濫（師生關係也要保護？），只給三種：父母、子女、配偶（<span class="s">§195 III</span>）。</p>
+    <p>條文用的字是身分「法益」不是「權」，所以有少數說認為只能用 §184 I 後段（故意背於善良風俗）；多數說把它當權利，用前段。考試寫多數說，順手提一句爭點來源。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>家人<b>被撞死</b>→ <span class="s">§194</span>，不用情節重大。家人<b>沒死但關係被侵害</b>（被誘拐、被長期拘禁、配偶被外遇）→ <span class="s">§195 III</span>，要情節重大。兩條別混。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-08-身分權§195III與類推§18.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>住所：法律上的地址，不是你睡覺的地方</h2>
+  <div class="scene">
+    <p>乙是日本人，住所在東京，來台灣工作三年、租屋在臺南，戶籍當然沒遷。台灣太太甲要跟他打離婚官司。</p>
+    <p class="q">甲要去哪個法院告？法院要用台灣法還是日本法審？乙的「住所」在這兩個問題裡是同一個地方嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">乙在台灣無住所<br><small>§22 ②</small></div>
+    <div class="out"><span class="tag">管轄</span><div class="b ok">臺南居所<b>視為</b>住所 → 臺南地院可以告（§22 ② 本文）</div></div>
+    <div class="out"><span class="tag">準據法</span><div class="b">涉外法要「住所地法」→ 不能用擬制的 → 回到<b>真正住所</b>東京 → 日本法（§22 ② 但書）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>住所要兩個要件：主觀有久住的意思、客觀有久住的事實（<span class="s">§20 I</span>），一人只能有一個。它不靠登記，所以<b>戶籍地只能「推定」是住所</b>（遷戶籍常是為了學區或投票），不能「視為」。</p>
+    <p>沒有住所的人，法律幫你指定：居所無可考、或在台灣沒住所 → 現在住的地方視為住所（<span class="s">§22</span>）；簽約時填的聯絡地址，就那份契約而言視為住所（<span class="s">§23</span>）；小孩跟著法定代理人（<span class="s">§21</span>）。離開要「廢止意思＋離去事實」（<span class="s">§24</span>）。實體法上最常用在清償地：一般之債到<b>債權人</b>住所地清償（<span class="s">§314</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「戶籍地即為住所」——錯，是推定。「視為」的只有 §22、§23 那幾種。</p>
+    <p>§22 ② 但書在民法幾乎不考，國際私法才會用；知道它存在、知道為什麼（否則涉外法的住所地法原則被架空）就夠了。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-09-住所§20-§24.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>法人：把一群人或一筆錢「當成一個人」</h2>
+  <div class="scene">
+    <p>甲很有錢，捐 1 億成立一個基金會做偏鄉教育。乙找了 50 個朋友組一個登山協會。丙想開一家「營利基金會」賺錢。</p>
+    <p class="q">三個組織各要經過什麼手續才會變成「人」？哪一個根本開不成？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>法人（§25 要有法律依據 ＋ §30 要登記）</span><ul>
+      <li><span>社團法人：以「人」為本，社員總會決定、董事執行</span><ul>
+        <li><span>營利社團（公司）→ 依公司法，<b>不用許可</b>（§45 準則制）</span></li>
+        <li class="hit"><span>公益社團（登山協會）→ 要主管機關<b>許可</b>（§46）</span></li>
+      </ul></li>
+      <li><span>財團法人：以「錢」為本，捐助章程決定、董事執行</span><ul>
+        <li class="hit"><span>公益財團（基金會）→ 要<b>許可</b>（§59）</span></li>
+        <li class="off"><span>營利財團 → <b>不存在</b>，法律沒這種東西</span></li>
+      </ul></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>大航海時代一個人出海賠 1000 萬，1000 個人組團一人賠 1 萬，風險分散了，但出事要告誰？告 1000 個人？於是法律把這個組織當成一個人（法人實在說），它自己享權利負義務，不牽扯背後的人。</p>
+    <p>社團靠人、財團靠錢，所以財團沒有「總會」，一切照捐助章程走。「財團法人」不是財團，是基金會，而且<b>一定只能做公益</b>。成立要法律依據＋登記；公益的另加許可。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>民法上一般法人去哪登記？<b>法人事務所所在地的法院</b>（民總施行法 §10），不是經濟部——老師說超級冷知識，考過。</p>
+    <p>法人解散就消滅？<b>不是</b>。解散只是停業，要清算完才算死；清算必要範圍內「視為存續」（<span class="s">§40 II</span>），因為它沒有繼承人，債務財產沒人接。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-10-法人成立消滅與社團財團.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>公司會不會「痛」：法人能要慰撫金嗎</h2>
+  <div class="scene">
+    <p>A 公益基金會被人在網路上誹謗，隔年捐款從 1,000 萬掉到 600 萬。A 除了要 400 萬，還想要慰撫金：「我們的名譽受損很痛。」</p>
+    <p class="q">法人沒有心，會「痛」嗎？沒有痛就一定沒有慰撫金嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>62 台上 2806（舊）</h4>慰撫金＝安慰精神痛苦 → 法人沒有精神痛苦 → <b>不能</b>請求</div>
+    <div class="rule-c"><h4>112 台上大 544（大法庭，新）</h4>§195 寫的是「非財產上損害」＝無法用錢衡量的損失；精神痛苦只是其中一種 → 法人<b>可以</b>請求（但要證明有這種損害）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>法人的權利能力原則上跟自然人一樣（<span class="s">§26</span>），兩種例外：法令限制（銀行法、保險法不准做的事）、專屬於自然人的（繼承、結婚——「我要嫁給台積電」不行）。慰撫金算不算專屬自然人？大法庭說：<b>精神痛苦</b>專屬自然人，<b>慰撫金</b>不是。</p>
+    <p>老師的評論：路是開了，但法人的損害幾乎都能換算成錢（捐款少 400 萬就是財產損害），很難想像什麼損害「不是錢、又不是痛」，實務上還在等第一個成功案例。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>法人要不要受「目的」限制？<b>社團不受</b>（§26 沒寫、而且一般人跟法人交易不會先查它的目的，保護交易安全）。<b>財團實質上受</b>，因為 <span class="s">§64</span>：董事違反捐助章程，法院得宣告無效。</p>
+    <p>§64「宣告無效」前有效嗎？實務採形成訴訟說：<b>沒宣告就一直有效</b>（王澤鑑：醫院基金會買地投資，法院沒宣告就沒事）。吳從周採確認說：本來就無效，法院只是確認。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-11-法人權利能力§26慰撫金與目的限制§64.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>董事是法人的手腳：誰的簽名算數</h2>
+  <div class="scene">
+    <p>A 法人有三位董事。甲董事一個人代表 A 跟 B 簽了 500 萬的買賣契約，其他兩位董事事後才知道。另一題：乙去年底就卸任董事，今年還跑去代表 A 簽約。</p>
+    <p class="q">甲一個人簽，A 要認帳嗎？乙的呢？兩題用同一條法條嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>「代表 A」簽約的人是誰？</span><ul>
+      <li class="hit"><span>董事＋有代表權＋沒限制 → 有權代表，A 認帳（§27 II 各董事均得單獨代表）</span></li>
+      <li><span>董事＋有代表權＋<b>代表權受限制</b> → §27 III：限制不得對抗善意第三人</span></li>
+      <li class="off"><span>董事但<b>沒有代表權</b> → 看 §31 登記效力（下堂）</span></li>
+      <li class="off"><span><b>不是董事</b>（卸任多時的乙）→ 看 §31 登記效力（下堂）</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>法人要動起來，靠董事。對內做決定：章程沒另訂就<b>過半數同意</b>（<span class="s">§27 I</span>）。對外簽約：章程沒另訂就<b>每個董事都能單獨代表</b>（<span class="s">§27 II</span>），所以甲一個人簽，A 就是簽了，虧錢也要吞。章程可以寫「三人共同代表」，也可以指定「只有爸媽董事有代表權、小孩董事沒有」，寫進登記簿就行。</p>
+    <p><span class="s">§27 III</span> 只管「有代表權但被加了限制」這一種——沒有的東西談不上「限制」。不是董事、或是沒代表權的董事，要走 <span class="s">§31</span>（董事是誰、誰有代表權都是應登記事項）。那條的效果老師下堂才講。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「法人<b>應</b>設監察人」——<b>錯</b>。董事是「應」設，監察人是「得」設（<span class="s">§27 IV</span>），可有可無。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法02-筆記-12-法人董事§27代表權.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

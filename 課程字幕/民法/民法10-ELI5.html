@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法10 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法10">
+<main>
+
+<header class="lesson-head">
+  <h1>民法10</h1>
+  <span class="sub">代理人之行為能力 §104・代理行為之瑕疵 §105・代理 vs 代表 vs 使者・自己代理雙方代理 §106・無權代理體系：§107 越權代理、§169 表見代理、§170 狹義無權代理、§110 無權代理人責任</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 14</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>15 歲店員代理老闆賣貨：僱傭、授權、代理行為三個階段各用不同法條</h2>
+  <div class="scene">
+    <p>商店老闆甲僱用 15 歲的乙打工，乙的父母不知情。甲為了讓乙能做生意，授與乙代理權。乙以甲的名義把貨賣給丙。</p>
+    <p class="q">甲丙的買賣契約有效嗎？§104「代理人為限制行為能力人不影響其意思表示之效力」要用在哪一個階段？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 僱傭契約</div><div class="a lbl">§79</div>
+    <div class="b q">效力未定（打工不是日常生活所必需）</div>
+    <div class="br"></div>
+    <div class="b">② 甲對乙授權</div><div class="a lbl">無因＋中性</div>
+    <div class="b ok">有效 → 有權代理<small>無因行為：不受僱傭契約影響<br>無損益中性行為：不受乙是限制行為能力人影響（類推 §77 但書）</small></div>
+    <div class="br"></div>
+    <div class="b">③ 乙以甲名義為意思表示</div><div class="a lbl">§104</div>
+    <div class="b ok">有效 → 甲丙買賣契約有效</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>代理的要件：① 有代理權限 ② 以本人名義為意思表示 ③ 代理人<b>非無行為能力人</b>（§104 反面）。限制行為能力人、受輔助宣告人（類推 §15-2 I 但書）都可以當代理人。</p>
+    <p>為什麼對限制行為能力人授權不須法定代理人允許：乙幫甲賣車，失去車的是甲、拿到價金的也是甲，乙既不取得權利也不負擔義務，這叫<b>無損益之中性行為</b>，比照 §77 但書「純獲法律上利益」處理。</p>
+    <p>三個階段用三個法條：無因性、類推 §77 但書、§104。老師改集訓班考卷最常見的錯：把 §104 寫到授權階段。§104 只講代理人的<b>意思表示</b>，跟授權一點關係都沒有。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>反過來，<b>限制行為能力人自己授權給別人</b>（甲 15 歲，未得允許授權乙）：授權是有相對人之<b>單獨行為</b> → <b>§78 無效</b>，不是 §79 效力未定。選效力未定的人是把授權當成契約了。他自己能做的事才能授權別人做。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-01-§104代理人之行為能力限制行為能力人授權§78無效對限制行為能力人授權無因中性類推§77但書三階段三法條受輔助宣告人.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>代理行為有瑕疵，從本人還是代理人的角度看？§105：誰決定買 A，就看誰</h2>
+  <div class="scene">
+    <p>甲看過 A 車，知道有瑕疵，沒買。後來甲授權乙「幫我買一台車」，乙不知道瑕疵，買了 A 車。甲想依 §359 減少價金，但 §355 說買受人訂約時知瑕疵，出賣人不負擔保責任。</p>
+    <p class="q">甲知情、乙不知情，算知情還是不知情？如果甲是叫乙「去買 A 車」呢？</p>
+  </div>
+  <div class="flow">
+    <div class="b q">§105 瑕疵就誰決之？<small>§86～§88 意思欠缺、§92 詐欺脅迫、善惡意有無過失</small></div>
+    <div class="br"></div>
+    <div class="b">原則：甲授權「買車」<small>買哪台由乙決定</small></div><div class="a"></div>
+    <div class="b ok">就<b>代理人</b>決之 → 乙不知情 → 甲可依 §359 主張</div>
+    <div class="br"></div>
+    <div class="b">但書：甲授權「買 A 車」<small>意定代理＋依本人指示</small></div><div class="a"></div>
+    <div class="b no">就<b>本人</b>決之 → 甲知情 → §355 I 不負擔保責任</div>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>第二題：買地遇到通謀虛偽</h4>丁與丙通謀虛偽把地登記給丙（§87 無效，丙未取得所有權），甲知道這件事。甲授權乙「買地」，善意的乙代理甲向丙買 A 地並完成登記。<br>→ 決定買 A 地的是乙 → 善惡意就乙決之 → 乙善意 → 甲依 §759-1 II <b>善意取得</b>。甲自己惡意派不上用場：萬中選一選到 A 地的是乙，風險不該由甲承擔。</div>
+    <div><h4>「就代理人決之」不是「由代理人決定」</h4>「就」＝客觀上從代理人的角度觀察（法官判斷他有沒有被騙），不是問他、也不是讓他決定。問代理人「你有沒有被騙」他說沒有，不代表沒有。</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>讀 §105 的技巧：把「因其意思欠缺……可得而知其事情」整段括起來，那就是「瑕疵」的清單；「其事實之有無」指的就是括號裡那些事存不存在。但書「代理權係以法律行為授與」一出現就是意定代理（法定代理不需要授權）。</p>
+    <p>§105 只做一件事：決定從誰的角度看瑕疵。它不給結論，定了角度之後再往下解題。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>考 §105 的題目一定把本人和代理人設成<b>不一樣</b>（一個被詐欺一個沒有、一個善意一個惡意）。關鍵字看授權的內容：「幫我買車」和「幫我買 A 車」結論相反。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-02-§105代理行為之瑕疵就代理人決之客觀觀察非由其決定但書意定代理依本人指示買車瑕疵§355§359買地通謀§759-1II.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>代理、代表、使者：幾個權利主體、誰做意思表示、有沒有決定權</h2>
+  <div class="scene">
+    <p>郭台銘代表鴻海簽約，是鴻海在簽約；他去吃滷肉飯，不是鴻海在吃。甲託乙傳話「我願意用 100 萬買丙的車」，乙傳成 130 萬，丙答應了。</p>
+    <p class="q">代表和代理差在哪？乙是代理人還是使者？傳錯了丙找誰賠？</p>
+  </div>
+  <div class="vs">
+    <div><h4>代理</h4><b>兩個</b>權利主體。代理人自己做意思表示，效力歸屬本人。只能代為<b>法律行為、準法律行為</b>。不得為無行為能力人。</div>
+    <div class="rule-c"><h4>代表（法人獨有）</h4><b>一個</b>權利主體：代表人是法人的手足，代表人做什麼＝法人做什麼（執行職務範圍內）。法律行為、事實行為、<b>侵權行為</b>都是法人的行為（86 台上 1782）。代表權來自法律規定（§27 II），不是法人授權。</div>
+  </div>
+  <div class="vs">
+    <div><h4>使者（傳達人）</h4>意思表示是<b>本人</b>做的，使者只轉達，<b>沒有任何決定權</b>。可以是無行為能力人（飛鴿傳書連鴿子都行）。</div>
+    <div><h4>§105 但書的「指示」vs 傳達</h4>指示：「幫我買 A 地」，付款期限、過戶時間、貸款條件等細節仍由代理人決定。傳達：純傳話，細節本人另談。</div>
+  </div>
+  <div class="flow">
+    <div class="b">乙<b>過失</b>傳錯</div><div class="a"></div>
+    <div class="b">甲依 §89 撤銷</div><div class="a"></div>
+    <div class="b q">丙依 §91 向<b>甲</b>請求信賴利益賠償</div>
+    <div class="br"></div>
+    <div class="b">乙<b>故意</b>傳錯</div><div class="a"></div>
+    <div class="b">甲仍得依 §89 撤銷</div><div class="a"></div>
+    <div class="b ok">丙<b>類推 §110</b> 向<b>乙</b>求償<small>損害是乙造成的，不該由甲承擔</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>自然人之間沒有代表：你自己有意思決定機關和手足，可以授權別人為意思表示而效果及於你，但不能授權別人「從今以後你就是我，你結婚等於我結婚」。法人是抽象組織沒有手足，才需要代表人。代表在法律上沒有特別規定，類推代理的規定（卡 4 自己代表就是）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>傳達錯誤的風險分配：過失傳錯是甲自己選錯傳達人，甲撤銷後要依 §91 賠丙；故意傳錯是乙自己的事，不該讓甲承擔，所以丙改向乙求償。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-03-代理vs代表86台上1782一個權利主體vs兩個權利主體代理vs使者傳達人無決定權可為無行為能力人傳達錯誤§89過失§91對甲故意類推§110對乙.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>自己代理、雙方代理 §106：有利益衝突就不能做，違反是效力未定不是無效</h2>
+  <div class="scene">
+    <p>甲授權乙買地，乙剛好有一塊地要賣，乙代理甲向自己買。另一例：甲託乙買地（買低於 1000 萬，價差抽 20%），丙託乙賣地（賣高於 1000 萬，超額抽 50%），乙同時代理甲和丙成交。房仲每天都在做這種事。</p>
+    <p class="q">乙會為誰的利益著想？這樣的代理效力如何？房仲為什麼可以？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§106 原則：非經本人許諾，不得自己代理、不得雙方代理 → 目的是<b>防止利益衝突</b></span><ul>
+      <li class="off"><span>違反效果：早年少數實務用 §71 無效說（「不得」＝強行規定）→ 已被最高法院改掉</span></li>
+      <li class="hit"><span>現行：不得代理＝就這件事<b>沒有代理權</b> → 無權代理 → <b>效力未定</b>（§170）</span></li>
+    </ul></li>
+    <li><span>三個例外（都是「沒有利益衝突」的具體化）</span><ul>
+      <li><span>① <b>本人許諾</b>：願意接受利益衝突就讓他做 → 房仲要求買賣雙方簽「同意雙方代理」條款</span></li>
+      <li><span>② <b>專</b>為履行債務：履行本來就該履行的債務沒有利益衝突 → 卡 5 的「專」字</span></li>
+      <li><span>③ 法無明文：<b>父母為未成年子女利益</b>之自己代理（爸爸把自己的地送給未成年兒子）→ 目的性限縮，不受 §106 限制</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>考過的例外②：A 法人把 V 地賣給甲，甲後來當選 A 的董事，代表 A 把 V 移轉登記給自己。這是「自己代表」，代表無特別規定 → 類推 §106。甲對 A 本來就有 §348 I 的移轉請求權，A 本來就要給，由甲代表 A 來給對 A 沒有任何不利益、誰來做都一樣 → 專為履行債務 → <b>有效</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§106 的題目抓一句話：<b>有利益衝突就不能做，沒有利益衝突就放寬讓它做</b>。「違反 §106 無效」是錯的選項。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-04-§106自己代理雙方代理防止利益衝突違反效果無權代理效力未定非§71無效例外本人許諾房仲專為履行債務自己代表類推父母為子女利益目的性限縮.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>銀行受甲授權管理財產，代甲向自己付利息：有清償效力，沒有承認效力</h2>
+  <div class="scene">
+    <p>甲向銀行乙借 100 萬，清償期 90 年 1 月 1 日，之後本金利息都沒付。103 年 1 月 10 日甲年紀大了，授與乙財產管理權；乙第一件事就是代理甲付了 20 萬利息給自己。105 年 5 月乙請求甲返還借款，甲主張時效抗辯。</p>
+    <p class="q">實務上付利息等於承認債務，會中斷時效。乙代甲付的這筆利息有沒有承認的效力？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="借款時效時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="60" cy="70" r="5" class="dot"/>
+    <text x="60" y="48" text-anchor="middle">90/1/1</text>
+    <text x="60" y="94" text-anchor="middle" class="mu">清償期屆至</text>
+    <text x="60" y="112" text-anchor="middle" class="mu">15 年起算</text>
+    <circle cx="250" cy="70" r="5" class="dot"/>
+    <text x="250" y="48" text-anchor="middle">103/1/10</text>
+    <text x="250" y="94" text-anchor="middle" class="mu">授權管理財產</text>
+    <text x="250" y="112" text-anchor="middle" class="mu">乙代甲付利息</text>
+    <circle cx="380" cy="70" r="5" class="dot acc"/>
+    <text x="380" y="48" text-anchor="middle">105/1/1</text>
+    <text x="380" y="94" text-anchor="middle" class="mu">時效完成</text>
+    <circle cx="470" cy="70" r="5" class="dot"/>
+    <text x="470" y="48" text-anchor="middle">105/5</text>
+    <text x="470" y="94" text-anchor="middle" class="mu">乙請求</text>
+    <text x="470" y="112" text-anchor="middle" class="mu">甲拒絕給付</text>
+  </svg>
+  <div class="fork">
+    <div class="cond">乙代甲付利息（自己代理）<br>§106 但書「<b>專</b>」為履行債務？</div>
+    <div class="out"><span class="tag">清償</span><div class="b ok">履行債務本身沒有利益衝突 → 可以 → 20 萬利息債務消滅</div></div>
+    <div class="out"><span class="tag">承認</span><div class="b no">承認會中斷時效（§129 I ②）、重行起算（§137）→ 甲原本 105/1/1 的時效利益被毀、乙的債權多活 15 年 → <b>有利益衝突</b> → 不「專」→ 不生承認效力</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>結論：時效仍於 105 年 1 月 1 日完成，105 年 5 月乙請求時甲得依 §144 I 拒絕給付。若承認有效，要從 103/1/10 重行起算到 118/1/10——原本再熬兩年就完成的請求權變成再等 15 年，這就是利益衝突。</p>
+    <p>授權管理財產，不等於授權承認債務。你可以幫我還，不能幫我承認。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這題表面是時效題，核心是 §106 但書的「專」字。要先知道「付利息＝承認」，再想「代理本人履行債務會不會同時發生代理本人承認的效果」→ 不會。老師評這題（高普考）出得很棒，很多人當場不知道在考什麼。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-05-§106但書專為履行債務銀行受財產管理授權代甲支付利息有清償效果無承認效果§129I②§137承認有利益衝突不專時效抗辯高普考案.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>無權代理的大原則：本人沒創造外觀就不負責；創造了外觀＋相對人善意無過失，才負授權人責任</h2>
+  <div class="scene">
+    <p>老師在這裡上課，外面有人對丙宣稱「我是老師的代理人」並以老師的名義簽約，老師渾然不知。對照：老師把車借給乙，乙以自己的名義把車賣給丙。</p>
+    <p class="q">為什麼無權處分的善意第三人可以善意受讓，無權代理的善意相對人原則上卻要自己去找無權代理人賠？</p>
+  </div>
+  <div class="vs">
+    <div><h4>無權處分</h4>本人把車交給乙（借、被騙、通謀）→ 本人<b>創造了占有的公示外觀</b> → 要為外觀負責 → 善意第三人可善意受讓（§801、§948、§759-1）</div>
+    <div class="rule-c"><h4>無權代理</h4>本人<b>什麼都沒做</b>，任何人都可能被人在外面宣稱是其代理人 → 本人不承擔風險 → <b>§170 效力未定</b>，由本人決定承認或拒絕 → 善意相對人改向無權代理人依 <b>§110</b> 求償</div>
+  </div>
+  <div class="flow">
+    <div class="b">例外：本人有<b>創造授權外觀</b>的可歸責事由</div><div class="a lbl">＋</div>
+    <div class="b">相對人<b>善意且無過失</b></div>
+    <div class="br"></div>
+    <div class="b ok">本人負<b>授權人責任</b>（當作有權代理）：§107 越權代理／§169 表見代理</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>這套模型叫<b>權利外觀理論</b>（法外觀理論），是信賴保護原則推出來的，票據法也用。§107 與 §169 都是它的具體化：相對人都要善意且無過失、效果都是本人負授權人責任，唯一不同是<b>歸責事由</b>（§107 授權後限制或撤回；§169 行為表示授權、明知不反對）。</p>
+    <p>用語：狹義無權代理＝§170；廣義無權代理＝§107＋§169＋§170。選擇題出現過。乙丙之間不發生任何直接法律效果——乙用的是甲的名義，丙沒有要跟乙締約的意思。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>王澤鑑認為 §107 也是表見代理（法理相同），但實務稱 §107 <b>越權代理</b>、§169 <b>表見代理</b>，考試照實務用語寫。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-06-無權代理體系廣義§107§169§170vs狹義大原則本人不承擔風險與無權處分對照例外權利外觀理論可歸責加善意無過失授權人責任.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>§107 代理權之限制或撤回：先公開授權、再私下限制或撤回，才有外觀可言</h2>
+  <div class="scene">
+    <p>甲在網路上公告「我的車委託二手車商乙賣，有興趣找他」。之後甲私下打電話給乙「底價 30 萬」。丙不知道底價，向乙以 25 萬買下。另一版本：甲一開始就跟乙講好底價 30 萬，只是丙不知道。</p>
+    <p class="q">兩個版本，甲都要對丙負授權人責任嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">外部授權（公開委託乙賣車）</div><div class="a"></div>
+    <div class="b">事後<b>內部</b>限制底價／撤回（沒人知道）</div>
+    <div class="br"></div>
+    <div class="b ok">外觀殘留 → 可歸責 → 丙善意無過失 → §107 甲不得以限制撤回對抗丙 ＝ 負授權人責任</div>
+    <div class="br"></div>
+    <div class="b">自始限制（一開始就講好底價）</div><div class="a"></div>
+    <div class="b q">學說：甲沒創造「無底價」的外觀 → 可歸責不成立 → <b>無 §107</b>，回歸 §170</div>
+    <div class="br"></div>
+    <div class="b no">實務：文義「限制」不分自始事後 → 丙善意無過失即可適用（學者批評對本人太重）</div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>各條「善意」的門檻不一樣（選擇題愛比）</span><ul>
+      <li class="hit"><span>§107、§169：善意且<b>無過失</b></span></li>
+      <li><span>§801＋§948 動產善意受讓：善意且無<b>重大</b>過失</span></li>
+      <li><span>§759-1 II 信賴不動產登記：善意即可</span></li>
+      <li><span>§110（通說）：善意即可（卡 14）</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>「不得以之對抗善意第三人」的意思：第三人可以要求本人負授權人責任，本人不能拿「我已經限制／撤回了」來抗辯。但書「因過失而不知」排除有過失的第三人。</p>
+    <p>撤回一定是事後的，沒有自始撤回。學說更進一步：§107 真正用得到的情形不多——<b>外部授權</b>（§167 向第三人授權，公開）之後<b>內部</b>限制或撤回，第三人才會誤以為授權還在。從頭到尾都偷偷來，沒有人有值得保護的信賴。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>考試劇情：甲高調公開委託房仲賣地 → 跟房仲吵架（成數太高）低調撤回、沒跟大家說 → 這才是 §107。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-07-§107代理權之限制或撤回要件善意且無過失自始限制學說否定實務肯定撤回必為事後外部授權內部撤回才有外觀善意程度比較§801§948§759-1.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>§169 表見代理的兩種歸責事由：交身分證印章託領掛號信；離職業務員繼續招攬，公司明知不反對</h2>
+  <div class="scene">
+    <p>掛號信最後一天要領，甲要上課，把身分證和印章交給乙拜託他去領。乙拿著這些以甲的名義向丙借錢。另一例：保險業務員離職後名片還在，繼續以公司名義招攬保單，公司知道卻不反對（業績有一張是一張），後來業務員私吞保費。</p>
+    <p class="q">甲有授權乙借錢嗎？保險公司要對保戶負責嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>①「由自己之<b>行為</b>表示以代理權授與他人」</h4>重點不在「授權」兩字，在「<b>行為</b>表示」：授權是法律行為、要有<b>意思</b>表示；這裡只是有一個行為讓人覺得你授權了，你內心沒有授權的意思。交身分證印章 → 看起來有授權（表見＝看起來好像）→ 內心只是要他領掛號信。</div>
+    <div class="rule-c"><h4>②「知他人表示為其代理人而不為反對之表示」</h4>消極型：知道他在外面以我的代理人自居卻不反對。離職業務員案：公司明知不反對所創造的外觀 → 保戶善意無過失 → 公司負授權人責任。</div>
+  </div>
+  <div class="flow">
+    <div class="b">歸責事由 ① 或 ②</div><div class="a lbl">＋</div>
+    <div class="b">第三人善意且無過失<small>但書：明知或可得而知者除外</small></div><div class="a"></div>
+    <div class="b ok">本人負<b>授權人責任</b></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§107 寫「不得對抗善意第三人」，§169 直接寫「應負授權人之責任」，意思一樣：第三人可以要本人負責，本人不能抗辯。兩條但書也一樣，都只留下善意且無過失的第三人。</p>
+    <p>創造外觀的四種情形：§107 的限制、撤回；§169 的行為表示授權、明知不反對。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§169 一試二試都常考、實務見解很多。接下來四張卡各處理一個爭點：時點（卡 9）、外觀怎麼認定與可歸責（卡 10）、法定代理與代表沒有 §169（卡 11）、不法行為（卡 12）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-08-§169表見代理兩種歸責事由行為表示非意思表示交身分證印章領掛號信明知他人表示為代理人而不反對離職保險業務員授權人責任但書.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>丙先締約、事後才問甲而甲不反對：締約時沒有信賴外觀，無 §169（102 台上 1778）</h2>
+  <div class="scene">
+    <p>① 乙對外宣稱是甲的代理人 → ② 乙以甲的名義和丙締約 → ③ 丙事後起疑，問甲「乙對你有代理權嗎」，甲笑笑說「你猜」，不反對也不承認。</p>
+    <p class="q">丙能依 §169「明知他人表示為代理人而不反對」要甲負授權人責任嗎？順序改成 ① → ③ → ② 呢？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 宣稱</div><div class="a"></div><div class="b">② 丙締約</div><div class="a"></div><div class="b">③ 甲不反對</div>
+    <div class="br"></div>
+    <div class="b no">② 時甲什麼都沒做 → 沒有信賴外觀、甲無可歸責、丙的信賴不值得保護 → <b>無 §169</b>；事後不反對不能補正</div>
+    <div class="br"></div>
+    <div class="b">① 宣稱</div><div class="a"></div><div class="b">③ 甲不反對</div><div class="a"></div><div class="b">② 丙締約</div>
+    <div class="br"></div>
+    <div class="b ok">丙因信賴甲不反對所創造的外觀而締約 → <b>有 §169</b></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>最高法院：「知他人表示為其代理人而不為反對之表示」指知悉時<b>應即時反對</b>使代理行為無從成立；若於<b>法律行為成立後</b>始知而未反對，對已成立之法律行為不生影響，不負授權人責任。信賴外觀以相對人<b>為意思表示的當下</b>判斷。</p>
+    <p>同一判決前段：表見代理須經<b>當事人主張</b>，法院不得依職權認定——因為當事人可能寧願直接主張 §170 無權代理（例如想對乙依 §110 求償），表見代理也是廣義無權代理的一種。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>看這類題目先畫 ①②③ 的時間順序。「先締約再不反對」還是「先不反對再締約」，答案相反。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-09-102台上1778明知他人表示為代理人而不反對須在法律行為成立前事後知悉不補正信賴外觀以為意思表示時為準表見代理須當事人主張法院不得依職權認定.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>交了印章就算授權外觀嗎？要看乙想代理什麼事；外觀和可歸責是兩個要件（70 台上 657）</h2>
+  <div class="scene">
+    <p>乙拿著甲的兩張名片說自己是甲的代理人，要向銀行代甲貸款。另一個乙拿著甲的印章、土地所有權狀、印鑑證明，要代甲設定抵押權。第三個案例：甲的證件印章權狀全鎖在家裡保險櫃，被乙偷走拿去用。</p>
+    <p class="q">哪些情形構成「由自己之行為表示以代理權授與他人」？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>外觀：客觀上足以使人相信有代理權？→ 依乙想代理的行為個案認定</span><ul>
+      <li class="off"><span>只有名片：拿別人名片的人<b>比比皆是</b> → 沒有外觀</span></li>
+      <li><span>代理貸款：至少印章＋雙證件</span></li>
+      <li class="hit"><span>代理設定抵押、移轉不動產：印章＋所有權狀＋<b>印鑑證明</b>（本人親赴戶政機關申請、載明用途）→ 有外觀</span></li>
+    </ul></li>
+    <li><span>可歸責：這個外觀是<b>本人創造</b>的？（陳忠五：與外觀分開看）</span><ul>
+      <li class="hit"><span>本人主動交付 → 可歸責</span></li>
+      <li class="off"><span>鎖在保險櫃被偷 → 外觀可能夠、第三人可能善意無過失，但不是「由自己之行為」→ 不可歸責 → <b>無 §169</b></span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>判例語境：交印章託辦特定事項的人比比皆是，不能因為交了印章就什麼行為都要負表見代理責任。考試上題目給的東西<b>越多越容易構成</b>（公司大小章、印鑑章、董事長章全在乙身上）；東西少少的就要想「這一點點足以讓人相信有代理權嗎」。</p>
+    <p>本人要不要有故意過失？<b>不要</b>。§169 是無過失責任：可歸責＝有沒有創造權限外觀，不是有沒有過失。為了領掛號信交付身分證印章，有創造外觀（可歸責）但不一定有過失，仍負責。本人責任是<b>履行責任</b>（契約對本人生效），不是損害賠償責任。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「可歸責」和「有過失」是兩個層次。選項寫「本人無過失即不負 §169 責任」→ 錯。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-10-70台上657比比皆是授權外觀依所代理行為個案認定名片不足貸款印章雙證件抵押權狀印鑑證明陳忠五外觀與可歸責分開文件被竊不成立§169無過失責任履行責任.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>法定代理與代表沒有 §169：資格來自法律規定，沒有授權外觀可言（79 台上 2012）</h2>
+  <div class="scene">
+    <p>乙對外宣稱是 15 歲甲的爸爸（法定代理人），甲不反對；乙代理甲向丙買機車。另一例：乙（總裁的兒子）對外宣稱是 A 公司董事好幾年，A 公司明知不反對；乙代表 A 和善意無過失的丙簽下三億投資案，但乙根本不是董事。</p>
+    <p class="q">文義上都像「明知他人表示為代理人而不反對」。丙能依 §169 要甲、要 A 負責嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">§169 的前提：這是一個<b>需要授權</b>的代理，才有「創造授權外觀」的可歸責與信賴外觀可言</div>
+    <div class="br"></div>
+    <div class="b">法定代理（§1086）、代表（§27 II）</div><div class="a"></div>
+    <div class="b">資格來自<b>法律規定</b>，不需授權</div>
+    <div class="br"></div>
+    <div class="b no">沒有授權外觀 → 沒有可歸責、沒有信賴外觀 → <b>無 §169</b>（也不得類推）</div>
+  </div>
+  <div class="vs">
+    <div><h4>宣稱是爸爸</h4>能不能當法定代理人靠法律不靠甲授權，甲不反對也不會造成丙的信賴。表見代理與法定代理在概念上矛盾、不會同時存在。</div>
+    <div class="trap-c"><h4>宣稱是董事</h4>董事代表權是 §27 法律賦予，不是法人授權 → 一般的<b>無權代表</b> → 回歸 <b>§31</b>：有登記可對抗、沒登記不能對抗。原審類推 §169 令 A 負授權人責任 → 最高法院：見解顯有錯誤，廢棄。</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>這種空降部隊通常不會登記為董事（登記就會被噴下去），§31 走不通，原審才想類推 §169。但代表權跟法定代理權一樣都是法律規定來的，沒有授權外觀。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>只看 §169 文義會答「有適用」。要回到卡 6 的法理：沒有授權就沒有授權外觀，沒有外觀就沒有表見代理。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-11-法定代理與代表無§169適用79台上2012法定代理不需授權無授權外觀乙宣稱為15歲甲之父董事代表權法定§27無權代表回歸§31登記對抗法院類推§169被廢棄.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>盜蓋印章借錢：盜蓋是手段、借貸是行為，仍可能成立表見代理（55 台上 1054 的正確讀法）</h2>
+  <div class="scene">
+    <p>甲把身分證、印章交給乙保管，乙盜蓋印章以甲的名義向丙借款，拿了錢就跑。丙要甲為借款契約負責。早年實務：盜蓋印章是不法行為，不法行為不能成立代理，所以不能成立表見代理，甲不負責。</p>
+    <p class="q">判例「不法行為不能成立代理，亦不能成立表見代理」錯了嗎？問題出在哪？</p>
+  </div>
+  <div class="flow">
+    <div class="b q">判例本身：代理限於意思表示，不法行為、事實行為不能代理 → 也不能表見代理 ✓</div>
+    <div class="br"></div>
+    <div class="b no">誤用（六七十年代實務望文生義）：盜蓋、偽刻印章有刑責＝不法行為 → 否定表見代理</div>
+    <div class="br"></div>
+    <div class="b ok">現行實務：盜蓋印章是<b>手段</b>，法律行為是<b>借貸</b>；借貸合法 → 仍可成立代理、可成立表見代理</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>判例適用的對象是行為本身不法（詐騙、侵權）或事實行為——那本來就沒有代理，也沒有表見代理的問題。手段歸手段，行為歸行為。後來最高法院意識到被誤用，做了判決以正視聽。</p>
+    <p>陳忠五：合法不法根本不是重點，表見代理的本質是<b>本人有沒有創造可歸責的授權外觀</b>。甲主動把身分證印章交給乙保管 → 有 → 不管乙合法蓋章還是盜蓋，只要造成丙的信賴就有 §169。（對照卡 10：鎖保險櫃被偷 → 沒創造外觀 → 無 §169。）</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項寫「乙盜蓋印章係不法行為，故不成立表見代理」→ 現行實務下是錯的。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-12-55台上1054不法行為不能成立代理亦不能成立表見代理早年誤用於盜蓋印章現行實務區分手段與行為借貸合法仍可成立陳忠五關鍵在本人有無創造可歸責外觀.md</span></div>
+</section>
+
+<!-- 13 -->
+<section class="card" id="c13">
+  <h2><span class="n">13</span>§170 狹義無權代理的三面關係；相對人不能請求乙履行、也不能善意取得</h2>
+  <div class="scene">
+    <p>甲把車借給乙，乙以「甲的代理人」名義把車賣給善意的丙並交付，甲拒絕承認。丙想：那我善意取得總可以吧？對照：乙若是以<b>自己</b>名義賣，丙可以依 §801＋§948 善意受讓。</p>
+    <p class="q">丙能催告甲、能撤回嗎？能叫乙履行嗎？為什麼無權代理不能善意取得？</p>
+  </div>
+  <div class="flow">
+    <div class="b">本人甲</div><div class="a lbl">承認／拒絕</div>
+    <div class="b q">§170 I 效力未定</div>
+    <div class="br"></div>
+    <div class="b">相對人丙</div><div class="a lbl">催告 §170 II</div>
+    <div class="b">定<b>相當期限</b>（不必一個月以上，與 §80 不同），逾期視為拒絕</div>
+    <div class="br"></div>
+    <div class="b">相對人丙</div><div class="a lbl">撤回 §171</div>
+    <div class="b">本人未承認前得撤回；締約時明知無代理權者不得</div>
+    <div class="br"></div>
+    <div class="b">相對人丙 → 無權代理人乙</div><div class="a"></div>
+    <div class="b no">不得請求履行：乙不是當事人</div>
+    <div class="br"></div>
+    <div class="b">善意丙 → 乙</div><div class="a"></div>
+    <div class="b">§110 損害賠償（卡 14）</div>
+  </div>
+  <div class="vs">
+    <div><h4>無權處分：可以善意取得</h4>乙以<b>自己名義</b>賣。丙看到乙占有 A 車 → §943 推定適法有權利 → 信賴「<b>乙是所有人</b>」→ 公信 → §801＋§948</div>
+    <div class="trap-c"><h4>無權代理：不能善意取得</h4>乙明講「這是甲的車，甲委託我賣」。丙信賴的是「<b>乙有代理權</b>」，不是乙有處分權。占有車的外觀不等於授權外觀 → 要往代理的保護機制找（§107／§169 的授權外觀），不是 §801＋§948</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>三面關係：① 本人–相對人：§170 效力未定 ② 相對人–無權代理人：§110 ③ 本人–無權代理人：內部關係。法條有時叫丙「相對人」有時叫「第三人」，只是觀察角度不同。</p>
+    <p>「無權處分才能善意取得，無權代理不能」選擇題不太會錯；申論要會寫理由：兩者的<b>信賴基礎</b>不同。我相信你有代理權，卻期待你把東西處分給我，概念矛盾。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§170 II 和 §80 長得一樣，差在 §80 的期限是「一個月以上」（法定），§170 II 只說「相當期限」，兩個禮拜也可以。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-13-§170狹義無權代理三面關係本人承認權相對人催告權§170II相當期限vs§80一個月撤回權§171相對人不得請求無權代理人履行不能善意取得信賴基礎不同§943.md</span></div>
+</section>
+
+<!-- 14 -->
+<section class="card" id="c14">
+  <h2><span class="n">14</span>§110 無權代理人的損害賠償責任：四個爭點</h2>
+  <div class="scene">
+    <p>甲受監護宣告但外表看不出來，授權乙去買東西；乙不知道授權無效（§75），代理甲和丙締約，甲的監護人拒絕承認。丙想依 §110 向乙求償，但丙自己當時也有點疏忽沒查證。</p>
+    <p class="q">乙沒有過失要賠嗎？丙有過失還能告嗎？乙若未成年呢？時效幾年？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>① 前提：本人<b>未承認</b>（法條沒寫，但效果是損害賠償：本人承認 → 契約生效 → 沒有損害）</span></li>
+    <li><span>② 故意過失</span><ul>
+      <li class="hit"><span>無權代理人乙：<b>無過失責任</b>。法條看一百遍沒有「過失」兩字；性質是類似契約的<b>補充責任</b>，只問有沒有無權代理 → 受監護宣告人授權案乙仍要賠</span></li>
+      <li><span>相對人丙（通說）：<b>善意即可</b>，不須無過失。體系解釋：§107、§169 都明文排除有過失者，§110 沒寫 → 立法者有意不要求；有過失用 §217 減輕</span></li>
+      <li class="off"><span>少數說：應限縮為善意且無過失，否則有過失的丙可以告無過失的乙，體系失衡</span></li>
+    </ul></li>
+    <li><span>③ 無權代理人須有<b>行為能力</b>（隱藏要件）：類似契約責任以有締約能力為前提；民法對未成年人的保護優於交易安全</span></li>
+    <li><span>④ 時效</span><ul>
+      <li><span>實務：§110 未規定 → §125 十五年</span></li>
+      <li class="hit"><span>學說：依<b>原法律行為</b>個案認定。補充責任只填補原契約利益，不能比原契約多：乙無權代理甲向丙承租房屋，租約有效時租金請求權 §126 才五年，不生效後對乙求償反而 15 年 → 不合理；立法者是故意不規定</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§110 的定位：本人拒絕承認 → 甲丙契約不生效 → 善意丙的損失＝原本契約能享受的利益 → 由無權代理人乙填補。它不是侵權責任，是補充「本人不承認」這個缺口的類似契約責任。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>考試最大的陷阱是爭點①：題目若寫本人已承認，就沒有 §110 的問題。下堂接著講損害賠償的範圍，以及 §107／§169 與 §110 的適用關係；之後進消滅時效、債編。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法10-筆記-14-§110無權代理人責任四爭點前提本人未承認無過失責任類似契約補充責任相對人通說善意即可少數說須有行為能力時效§125vs依原法律行為.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

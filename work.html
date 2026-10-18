@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>工作資料</title>
+<style>
+:root{--bg:#f7f7f4;--fg:#1f2328;--mu:#646a71;--card:#fff;--line:#e2e2dc;--acc:#2f6f8f;--acc-bg:#e3eef3;--code:#f0f0eb;--q:#f3f6f8;--mark:#fff3c4;--err:#b3261e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171a;--fg:#e6e6e3;--mu:#9a9fa5;--card:#1f2225;--line:#32363a;--acc:#7fb6d1;--acc-bg:#1d3440;--code:#25292d;--q:#1b2730;--mark:#4a4220;--err:#f2b8b5}}
+:root[data-theme="dark"]{--bg:#15171a;--fg:#e6e6e3;--mu:#9a9fa5;--card:#1f2225;--line:#32363a;--acc:#7fb6d1;--acc-bg:#1d3440;--code:#25292d;--q:#1b2730;--mark:#4a4220;--err:#f2b8b5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.75 system-ui,"Noto Sans TC","PingFang TC",sans-serif}
+header{position:sticky;top:0;z-index:3;background:var(--bg);border-bottom:1px solid var(--line)}
+header .in{max-width:860px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+header a{color:var(--acc);text-decoration:none;font-weight:600}
+header .where{color:var(--mu);font-size:.9rem;margin-right:auto}
+.pill{border:1px solid var(--line);border-radius:999px;padding:2px 12px;font-size:.85rem;font-weight:500;background:none;color:var(--fg);font-family:inherit;cursor:pointer;text-decoration:none}
+.pill.eli{background:var(--acc-bg);border-color:transparent;color:var(--acc)}
+main{max-width:860px;margin:0 auto;padding:20px 16px 32px}
+article,.sheet{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 26px;overflow-wrap:anywhere}
+.sheet h2{margin:0 0 4px;font-size:1.3rem}
+.sheet .meta{color:var(--mu);font-size:.88rem;margin:0 0 10px}
+.sheet ol{list-style:none;margin:0;padding:0}
+.sheet li{border-top:1px solid var(--line);display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 2px}
+.sheet li:first-child{border-top:0}
+.sheet li a.t{flex:1;min-width:12em;color:var(--fg);text-decoration:none;line-height:1.55;display:flex;gap:12px}
+.sheet li a.t b{color:var(--acc);font-variant-numeric:tabular-nums;flex:none}
+.sheet li a.t:hover{color:var(--acc)}
+form.lock{max-width:420px;margin:40px auto 0}
+form.lock label{display:block;font-weight:600;margin-bottom:6px}
+form.lock input{width:100%;font:inherit;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
+form.lock label.rem{display:flex;align-items:center;gap:8px;font-weight:400;font-size:.9rem;color:var(--mu);margin:10px 0 0}
+form.lock label.rem input{width:auto;margin:0}
+form.lock button{margin-top:12px;font:inherit;padding:8px 18px;border:0;border-radius:8px;background:var(--acc);color:var(--card);font-weight:600;cursor:pointer}
+form.lock button:disabled{opacity:.6;cursor:wait}
+.err{color:var(--err);margin:10px 0 0;font-size:.92rem}
+.msg{color:var(--mu)}
+details.jump{margin:0 0 16px;border:1px solid var(--line);border-radius:8px;padding:6px 12px;font-size:.92rem}
+details.jump summary{cursor:pointer;color:var(--acc);font-weight:600}
+details.jump ol{margin:6px 0 4px;padding-left:1.4em;columns:2;column-gap:24px}
+details.jump a{color:var(--fg);text-decoration:none}
+details.jump a:hover{color:var(--acc)}
+article h1{font-size:1.3rem;line-height:1.5;margin:0 0 12px;font-weight:700}
+article h2{font-size:1.15rem;margin:28px 0 8px;padding-bottom:4px;border-bottom:1px solid var(--line);scroll-margin-top:64px}
+article h3{font-size:1.02rem;margin:22px 0 6px;scroll-margin-top:64px}
+article p{margin:8px 0}
+article hr{border:0;border-top:1px solid var(--line);margin:22px 0}
+article blockquote{margin:10px 0;padding:8px 14px;background:var(--q);border-left:3px solid var(--acc);border-radius:0 6px 6px 0}
+article blockquote p{margin:4px 0}
+article code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:.9em}
+article pre{background:var(--code);padding:12px 14px;border-radius:8px;overflow-x:auto;line-height:1.55}
+article pre code{background:none;padding:0;font-size:.88rem;white-space:pre}
+article ul,article ol{padding-left:1.4em;margin:8px 0}
+article li{margin:3px 0}
+article strong{color:var(--fg);background:linear-gradient(transparent 62%,var(--mark) 62%)}
+.tw{overflow-x:auto;margin:12px 0;-webkit-overflow-scrolling:touch}
+article table{border-collapse:collapse;min-width:100%;font-size:.93rem}
+article th,article td{border:1px solid var(--line);padding:6px 10px;vertical-align:top;text-align:left}
+article th{background:var(--code);white-space:nowrap}
+iframe.page{display:block;width:100%;height:calc(100vh - 190px);min-height:420px;border:1px solid var(--line);border-radius:10px;background:#fff}
+.pager{max-width:860px;margin:0 auto;padding:0 16px 48px;display:flex;gap:12px}
+.pager a{flex:1;display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;color:var(--fg);text-decoration:none;font-size:.9rem;line-height:1.5}
+.pager a:hover{border-color:var(--acc)}
+.pager small{display:block;color:var(--acc);font-weight:600}
+.pager .next{text-align:right}
+.pager span.gap{flex:1}
+.pager.top{padding:20px 16px 0}
+.pager:empty{display:none}
+.pager.top + main{padding-top:14px}
+@media (max-width:600px){article,.sheet{padding:16px 14px}main{padding:12px 10px 24px}.pager{flex-direction:column;padding:0 10px 32px}.pager .next{text-align:left}.pager.top{padding:12px 10px 0}.pager.top + main{padding-top:10px}details.jump ol{columns:1}}
+</style></head><body>
+<header><div class="in"><a id="back" href="index.html">← 司律目錄</a><span class="where" id="where">工作資料 🔒</span><a class="pill eli" id="alt" hidden></a><button class="pill" id="lockbtn" hidden>鎖上</button></div></header>
+<nav class="pager top" id="pagerTop"></nav>
+<main id="main"><p class="msg">載入中…</p></main>
+<nav class="pager" id="pager"></nav>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script>
+// 加密包 work.enc 由 work-pack.html 產生：PBKDF2-SHA256 推導金鑰 → AES-256-GCM；明文為 gzip 過的 JSON。
+// 密語預設只放在本分頁的 sessionStorage；勾「記住這台裝置」才放 localStorage。按「鎖上」兩邊都清掉。
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+const KEY = 'work-pass';
+let BOX = null, DOCS = [];
+
+async function decrypt(box, pass){
+  const base = await crypto.subtle.importKey('raw', new TextEncoder().encode(pass.normalize('NFC')), 'PBKDF2', false, ['deriveKey']);
+  const key = await crypto.subtle.deriveKey({name:'PBKDF2', hash:'SHA-256', salt:b64(box.salt), iterations:box.iter}, base, {name:'AES-GCM', length:256}, false, ['decrypt']);
+  const plain = await crypto.subtle.decrypt({name:'AES-GCM', iv:b64(box.iv)}, key, b64(box.ct));
+  const text = await new Response(new Blob([plain]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+  return JSON.parse(text);
+}
+function sget(){ for (const st of ['sessionStorage', 'localStorage']) { try { const v = window[st].getItem(KEY); if (v) return v; } catch(e) {} } return null; }
+function sset(v, remember){
+  for (const st of ['sessionStorage', 'localStorage']) { try { window[st].removeItem(KEY); } catch(e) {} }
+  if (v != null) try { (remember ? localStorage : sessionStorage).setItem(KEY, v); } catch(e) {}
+}
+
+function build(data){
+  const groups = new Map();
+  for (const f of data.files) {
+    const m = f.name.match(/^(.*)\.(md|html?)$/i); if (!m) continue;
+    const g = groups.get(m[1]) || {base: m[1]};
+    if (/^md$/i.test(m[2])) g.md = f.text; else g.html = f.text;
+    groups.set(m[1], g);
+  }
+  DOCS = [...groups.values()].sort((a, b) => a.base.localeCompare(b.base, 'zh-Hant'));
+  DOCS.forEach((d, i) => {
+    let t = '';
+    if (d.md) { const h = d.md.match(/^#\s+(.+)$/m); if (h) t = h[1]; }
+    if (!t && d.html) { const h = d.html.match(/<title>([^<]*)<\/title>/i); if (h) t = h[1]; }
+    d.t = (t || d.base).replace(/[*`]/g, '').trim(); d.i = i;
+  });
+  BOX.packed = data.packed;
+}
+
+function showLock(errMsg){
+  $('lockbtn').hidden = true; $('alt').hidden = true; $('pager').innerHTML = $('pagerTop').innerHTML = '';
+  $('where').textContent = '工作資料 🔒';
+  $('main').innerHTML = `<form class="lock" id="lock"><label for="pw">輸入密語</label><input id="pw" type="password" autocomplete="current-password" autofocus><label class="rem"><input type="checkbox" id="rem">記住這台裝置（公用電腦不要勾）</label><button id="go">解鎖</button>${errMsg ? `<p class="err">${esc(errMsg)}</p>` : ''}</form>`;
+  $('lock').addEventListener('submit', async e => {
+    e.preventDefault(); const pass = $('pw').value; if (!pass) return;
+    $('go').disabled = true; $('go').textContent = '解鎖中…';
+    try { build(await decrypt(BOX, pass)); sset(pass, $('rem').checked); route(); }
+    catch(err) { showLock('密語不對，或加密包已損壞。'); }
+  });
+  $('pw').focus();
+}
+
+function showList(){
+  $('pager').innerHTML = $('pagerTop').innerHTML = ''; $('alt').hidden = true;
+  $('where').textContent = '工作資料'; document.title = '工作資料';
+  const when = BOX.packed ? new Date(BOX.packed).toLocaleString('zh-TW', {hour12:false}) : '';
+  $('main').innerHTML = `<div class="sheet"><h2>工作資料</h2><p class="meta">${DOCS.length} 份${when ? `・打包於 ${esc(when)}` : ''}</p><ol>${DOCS.map((d, i) =>
+    `<li><a class="t" href="#d/${i}"><b>${String(i + 1).padStart(2, '0')}</b>${esc(d.t)}</a>${d.md && d.html ? `<a class="pill eli" href="#h/${i}">🌐 HTML 版</a>` : ''}</li>`).join('')}</ol></div>`;
+}
+
+function pager(i){
+  const p = DOCS[i - 1], n = DOCS[i + 1];
+  const link = (d, cls, lab) => `<a class="${cls}" href="#d/${d.i}"><small>${lab}</small>${String(d.i + 1).padStart(2, '0')}　${esc(d.t)}</a>`;
+  $('pager').innerHTML = $('pagerTop').innerHTML = (p ? link(p, 'prev', '← 上一份') : '<span class="gap"></span>') + (n ? link(n, 'next', '下一份 →') : `<a class="next" href="#"><small>讀完了</small>回工作資料目錄</a>`);
+}
+
+function showDoc(i, wantHtml){
+  const d = DOCS[i]; if (!d) return showList();
+  const asHtml = wantHtml ? !!d.html : !d.md;
+  $('where').textContent = `工作資料 ${i + 1} / ${DOCS.length}`; document.title = d.t.slice(0, 30);
+  $('alt').hidden = !(d.md && d.html);
+  if (d.md && d.html) { $('alt').href = asHtml ? `#d/${i}` : `#h/${i}`; $('alt').textContent = asHtml ? '📄 MD 版' : '🌐 HTML 版'; }
+  pager(i);
+  if (asHtml) {
+    $('main').innerHTML = '<iframe class="page" sandbox="allow-scripts allow-popups" title="HTML 版"></iframe>';
+    $('main').firstChild.srcdoc = d.html;
+  } else {
+    const art = document.createElement('article');
+    art.innerHTML = window.marked ? marked.parse(d.md, {gfm: true, breaks: true}) : `<pre>${esc(d.md)}</pre>`;
+    art.querySelectorAll('table').forEach(t => { const w = document.createElement('div'); w.className = 'tw'; t.replaceWith(w); w.appendChild(t); });
+    art.querySelectorAll('a[href^="http"]').forEach(a => { a.target = '_blank'; a.rel = 'noopener'; });
+    const hs = [...art.querySelectorAll('h2')];
+    hs.forEach((h, k) => h.id = 's' + k);
+    if (hs.length > 3) {
+      const j = document.createElement('details'); j.className = 'jump';
+      j.innerHTML = `<summary>本篇章節（${hs.length}）</summary><ol>${hs.map((h, k) => `<li><a href="#s${k}" data-s="${k}">${esc(h.textContent)}</a></li>`).join('')}</ol>`;
+      j.addEventListener('click', e => { const a = e.target.closest('a[data-s]'); if (a) { e.preventDefault(); $('s' + a.dataset.s).scrollIntoView(); } });
+      const h1 = art.querySelector('h1'); h1 ? h1.after(j) : art.prepend(j);
+    }
+    $('main').replaceChildren(art);
+  }
+  window.scrollTo(0, 0);
+}
+
+function route(){
+  if (!DOCS.length && BOX) return showLock();
+  $('lockbtn').hidden = false;
+  const m = location.hash.match(/^#([dh])\/(\d+)$/);
+  m ? showDoc(+m[2], m[1] === 'h') : showList();
+}
+
+document.addEventListener('keydown', e => {
+  if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || e.defaultPrevented) return;
+  if (e.target.closest('input,textarea,select,[contenteditable]')) return;
+  const cls = e.key === 'ArrowLeft' ? 'prev' : e.key === 'ArrowRight' ? 'next' : '';
+  const a = cls && document.querySelector('#pager a.' + cls);
+  if (a) { e.preventDefault(); location.href = a.href; }
+});
+window.addEventListener('hashchange', () => { if (DOCS.length) route(); });
+$('lockbtn').addEventListener('click', () => { sset(null); DOCS = []; history.replaceState(null, '', location.pathname); showLock(); });
+
+(async () => {
+  try { const r = await fetch('work.enc', {cache: 'no-cache'}); if (!r.ok) throw 0; BOX = await r.json(); }
+  catch(e) { $('main').innerHTML = '<p class="msg">還沒有加密包（work.enc）。先用 <a href="work-pack.html">打包頁</a> 產生。</p>'; return; }
+  const saved = sget();
+  if (saved) { try { build(await decrypt(BOX, saved)); return route(); } catch(e) { sset(null); } }
+  showLock();
+})();
+</script>
+</body></html>

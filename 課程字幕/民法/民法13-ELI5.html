@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法13 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法13">
+<main>
+
+<header class="lesson-head">
+  <h1>民法13</h1>
+  <span class="sub">時效中斷效力範圍 §138 §747・時效不完成 §139～§143・時效完成效力 §144～§146・利息與違約金・侵權行為體系・§184 I 前段七要件・作為義務・法人侵權・三小條款與絕對權</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 13</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>訴訟中拿出來抵銷卻沒用到的債權，時效照樣中斷（113 年高院座談會）</h2>
+  <div class="scene">
+    <p>甲告乙給付 A 債權 500 萬。乙拿對甲的 B 債權 400 萬、C 債權 300 萬主張抵銷。法院審理後認定 A 債權其實只有 350 萬，用 B 債權抵掉。</p>
+    <p class="q">B 債權剩下的 50 萬、完全沒用到的 C 債權 300 萬，有既判力嗎？時效呢？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>民訴 §400 II：抵銷之請求「成立與否經裁判」且「以主張抵銷之額為限」有既判力 → 兩要件都要</span><ul>
+      <li class="hit"><span>B 債權 350 萬：經判斷 ✓、在抵銷額內 ✓ → 有既判力 → 債務消滅</span></li>
+      <li><span>B 債權 50 萬：經判斷 ✓、超過抵銷額 ✗ → 無既判力</span></li>
+      <li><span>C 債權 300 萬：未經判斷 → 無既判力</span></li>
+    </ul></li>
+    <li><span>無既判力部分的時效（座談會）</span><ul>
+      <li class="hit"><span>訴訟中主張抵銷 ＝ 在訴訟中請求對方給付 ＝ 類似起訴 → <b>§129 I ③ 中斷</b>，§137 II 訴訟終結時重行起算</span></li>
+      <li class="off"><span>但沒有既判力 → 無 §137 III 延為五年 → 承攬報酬仍只重算二年</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>這題介於民總、債編、民訴之間。在訴訟中主張抵銷除了抵銷本身的好處，對自己那些債權的時效也有幫助——就算最後沒用到。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§137 III「延為五年」的前提是經確定判決或與確定判決有同一效力的執行名義所確定的請求權；沒有既判力的部分不符合。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-01-訴訟中主張抵銷之債權時效113年高院座談會民訴§400II既判力限經裁判且抵銷額其餘部分§129I③類似起訴中斷§137II重行起算無§137III延為五年.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>只告一個連帶債務人，其他人的時效照走；主債務人承認債務，保證人的時效不中斷</h2>
+  <div class="scene">
+    <p>甲乙丙共同侵權，A 只告甲。兩年後發現甲沒錢，追加乙丙。另一題：主債務人向銀行承認債務（§129 I ②），保證人的時效跟著中斷嗎？</p>
+    <p class="q">乙丙能主張時效抗辯嗎？§747 的主語是誰？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>連帶債務人：不及</h4>§138 時效中斷是<b>相對效力</b>（當事人、繼承人、受讓人）；§279 連帶債務人一人之事項對他人不生效力 → 對甲起訴只對甲中斷，乙丙的時效獨立進行 → 兩年後追加，乙丙<b>得</b>時效抗辯（73 台上 2128）→ 要告就一次全部告</div>
+    <div class="rule-c"><h4>保證人：§747 只及於債權人的行為</h4>條文省略了主語：「<b>債權人</b>向主債務人請求履行及為其他中斷時效之行為，對保證人亦生效力」→ 請求（§129 I ①）、起訴（③）、類似起訴（II）及於保證人；主債務人的<b>承認</b>（②）不在內</div>
+  </div>
+  <div class="flow">
+    <div class="b">主債務人承認 → 保證人？</div><div class="a lbl">實務</div>
+    <div class="b">§747 反面解釋：沒講就沒有 → 不及</div>
+    <div class="br"></div>
+    <div class="b">主債務人承認 → 保證人？</div><div class="a lbl">陳榮傳</div>
+    <div class="br"></div>
+    <div class="b ok">類推 §742 II → 不及<small>沒講不等於沒有（可能漏未規定）；保證法理：債務人之不利益保證人不承擔；主債務人拋棄之抗辯保證人仍得主張</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>結論一樣（承認不及於保證人），差在理由。陳榮傳批評最高法院：平常最愛對沒規定的事類推，這裡卻說沒講就沒有。為什麼是類推而不是直接適用 §742 II：時效完成<b>後</b>的承認才是拋棄時效抗辯；時效進行<b>中</b>的承認只是重行起算，性質類似（都對保證人不利）所以類推。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>先告司機、快兩年才想追加雇主：對司機中斷了，對雇主的請求權卻可能已罹於時效。每個請求權的時效獨立進行。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-02-時效中斷效力範圍§138相對效力不及於其他連帶債務人§279-73台上2128保證人§747限債權人行為主債務人承認不及類推§742II.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>時效不完成 §139～§143：時效快完成時遇到障礙，障礙消滅後多給一段時間</h2>
+  <div class="scene">
+    <p>疫情全國停班停課、法院關門，當事人那天本來要遞狀。債務人死了、繼承人是誰不知道。13 歲被養父性侵，兩年時效 15 歲就完成。妻 30 年前借先生 100 多萬開工廠，離婚才想要回來。</p>
+    <p class="q">這些請求權就眼睜睜罹於時效嗎？五條各給多久？</p>
+  </div>
+  <div class="flow">
+    <div class="b">時效進行中</div><div class="a"></div>
+    <div class="b q">即將完成時遇<b>障礙</b>，無法請求／起訴以中斷</div>
+    <div class="br"></div>
+    <div class="b">障礙消滅</div><div class="a"></div>
+    <div class="b ok">再給一段時間，時效才完成（暫緩完成）</div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§139 天災或其他不可避之事變 → <b>一個月</b>（事實上障礙；法院關門）</span></li>
+    <li><span>§140 繼承財產之權利（繼承人有無不明、對死人請求無意義）→ 繼承人確定／管理人選定／破產宣告起<b>六個月</b></span></li>
+    <li><span>§141 無行為能力人、限制行為能力人<b>沒有</b>法定代理人（父母雙亡、新法代未就職）→ 成為行為能力人或法代就職起<b>六個月</b></span></li>
+    <li class="hit"><span>§142 無行為能力人、限制行為能力人<b>對法定代理人</b>之權利（不能期待法代幫他告自己：性侵、家暴）→ 代理關係消滅後<b>一年</b></span></li>
+    <li class="hit"><span>§143 夫妻間之權利（婚姻存續中不會提告）→ 婚姻關係消滅後<b>一年</b> → 離婚後一年內都可以要那 100 多萬</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>五條同一張圖，只差障礙是什麼、延長多久。與中斷不同：中斷是重行起算，不完成只是把末日往後推。</p>
+    <p>§141 vs §142：一個是<b>沒有</b>法代（六個月），一個是要告的對象<b>就是</b>法代（一年）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§143 的媽媽問了四個律師都說超過 30 年沒救了，老師說還沒離婚就沒問題——然後把答案講完，當事人就沒委任了。知道答案也要留一手。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-03-時效不完成§139至§143時效將完成時遇障礙給延長期間天災一個月繼承財產六個月無法代六個月對法代一年夫妻一年.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>仲裁判斷被撤銷：中斷不算數（類推 §133），撤銷訴訟中是法律上障礙（類推 §139），只給一個月（106 台上 1139）</h2>
+  <div class="scene">
+    <p>乙 97/10/14 完工，承攬報酬兩年時效。98/8/21 提付仲裁，99/4/30 仲裁判斷。甲提撤銷仲裁判斷之訴，100/9/29 撤銷確定。乙 100/11/2 發函請求、11/17 起訴。甲時效抗辯。</p>
+    <p class="q">乙一路都很積極，為什麼最後還是輸？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="仲裁案時間軸">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="45" cy="70" r="5" class="dot"/>
+    <text x="45" y="48" text-anchor="middle">97/10/14</text>
+    <text x="45" y="94" text-anchor="middle" class="mu">完工</text>
+    <text x="45" y="112" text-anchor="middle" class="mu">二年起算</text>
+    <circle cx="140" cy="70" r="5" class="dot"/>
+    <text x="140" y="48" text-anchor="middle">98/8/21</text>
+    <text x="140" y="94" text-anchor="middle" class="mu">提付仲裁</text>
+    <text x="140" y="112" text-anchor="middle" class="mu">§129 II ② 中斷</text>
+    <circle cx="250" cy="70" r="5" class="dot acc"/>
+    <text x="250" y="48" text-anchor="middle">99/10/14</text>
+    <text x="250" y="94" text-anchor="middle" class="mu">原完成日</text>
+    <text x="250" y="112" text-anchor="middle" class="mu">撤銷訴訟中無法起訴</text>
+    <circle cx="370" cy="70" r="5" class="dot"/>
+    <text x="370" y="48" text-anchor="middle">100/9/29</text>
+    <text x="370" y="94" text-anchor="middle" class="mu">撤銷確定</text>
+    <text x="370" y="112" text-anchor="middle" class="mu">類推 §139 給一個月</text>
+    <circle cx="470" cy="70" r="5" class="dot"/>
+    <text x="470" y="48" text-anchor="middle">10/31</text>
+    <text x="470" y="94" text-anchor="middle" class="mu">末日（§122 順延）</text>
+    <text x="470" y="112" text-anchor="middle" class="mu">11/2 請求 ✗</text>
+  </svg>
+  <div class="flow">
+    <div class="b">撤銷確定 → 仲裁自始不存在</div><div class="a lbl">類推 §133</div>
+    <div class="b no">視為不中斷 → 時效回到 99/10/14 已完成</div>
+    <div class="br"></div>
+    <div class="b">99/10/14 撤銷仲裁訴訟進行中，一事不再理不能起訴</div>
+    <div class="br"></div>
+    <div class="b">類推 §139：法律上障礙 → 9/29 起一個月 → 10/29（六）→ §122 → <b>10/31</b></div>
+    <div class="br"></div>
+    <div class="b no">11/2 請求、11/17 起訴 → 逾期 → 甲時效抗辯有理由</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>兩次類推：§133 列舉的是調解撤回／駁回／不成立、仲裁撤回／不能達成判斷，「達成判斷後被撤銷」不在其中 → 類推。§139 的障礙是天災等事實上障礙，本件是一事不再理的法律上障礙 → 類推。</p>
+    <p>申論寫法（老師建議）：① 解釋論把類推 §133、類推 §139 寫完 ② 指出結果不合理——乙不是權利睡眠者，仲裁被撤是仲裁人的問題，乙原本從提付仲裁起還有約 14 個月可用，只送一個月太短 ③ 立法論收尾：引進<b>時效停止</b>制度，仲裁到撤銷確定期間按暫停鍵，之後續算剩餘期間。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這題沒考過，但改編成考題不能只寫到「甲抗辯有理由」，要寫出不合理與立法論。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-04-106台上1139仲裁判斷被撤銷承攬報酬二年提付仲裁中斷撤銷確定類推§133視為不中斷撤銷訴訟進行中法律上障礙類推§139一個月§122順延逾期立法論時效停止.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>時效完成後不知情而清償、重簽協議、再提供擔保，都不能討回來（§144 II）；抵押權還能實行（§145）</h2>
+  <div class="scene">
+    <p>甲欠乙 100 萬早已罹於時效，甲不知道，跑去跟乙談分 100 期清償，還加提供一塊地設定抵押。另一題：乙對甲的債權罹於時效，乙就甲的 A 地有抵押權。</p>
+    <p class="q">甲事後知道有時效抗辯，可以主張不當得利要回已付的錢嗎？乙還能實行抵押權嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>§144 II：不得以不知時效為由請求返還</h4>時效完成後 ① 仍為給付 ② 以契約承認該債務 ③ 提出擔保 → 都不能討回來。所以債權人最愛罹於時效的債務人來協商，什麼條件都說好——一談就等於拋棄時效抗辯。有時效抗辯的人要<b>積極主張</b></div>
+    <div class="rule-c"><h4>為什麼不是不當得利：無請求權 ≠ 無效</h4>契約<b>無效</b> → 給付無法律上原因 → §179 ✓。請求權<b>罹於時效</b> → 買賣契約還在，債之關係沒消滅 → 給付有法律上原因 → §179 ✗。時效只是讓甲多一個拒絕給付的抗辯</div>
+  </div>
+  <div class="flow">
+    <div class="b">乙對甲債權罹於時效</div><div class="a"></div>
+    <div class="b">債權不消滅，甲只是有抗辯</div>
+    <div class="br"></div>
+    <div class="b ok">§145 抵押權擔保的債權還在 → 仍得就 A 地取償</div>
+    <div class="br"></div>
+    <div class="b">§880：時效完成後五年內不實行 → 抵押權消滅（除斥期間）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§144 I 抗辯發生主義（民法11 卡 14）的具體化：請求權不真的消滅，債務人取得拒絕給付的抗辯；不主張就沒有。「不知道」是債務人自己的問題，不是債權人的。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項寫「債務人不知時效完成而為給付，得依不當得利請求返還」→ 錯。「債權罹於時效，抵押權隨同消滅」→ 錯（§145；§880 另有五年除斥）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-05-時效完成之效力§144抗辯發生主義§144II給付不得請求返還契約承認提出擔保債務協商陷阱無請求權vs無效不當得利有法律上原因§145抵押權仍得取償§880五年除斥.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>本金罹於時效，17 年的利息全部跟著罹於時效嗎（§146、99 年第 5 次決議 vs 林誠二）</h2>
+  <div class="scene">
+    <p>95/8/1 清償期，借款 100 萬、年息 3%，17 年間誰都沒動作。112/8/1 乙起訴請求本金 100 萬＋利息 51 萬，甲時效抗辯。</p>
+    <p class="q">本金 110/8/1 就罹於時效了。利息呢？全部？還是分段？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 520 150" role="img" aria-label="利息三段">
+    <line x1="15" y1="70" x2="505" y2="70" class="lt"/>
+    <circle cx="50" cy="70" r="5" class="dot"/>
+    <text x="50" y="48" text-anchor="middle">95/8/1</text>
+    <text x="50" y="94" text-anchor="middle" class="mu">清償期</text>
+    <text x="50" y="112" text-anchor="middle" class="mu">本金 15 年起算</text>
+    <circle cx="230" cy="70" r="5" class="dot"/>
+    <text x="230" y="48" text-anchor="middle">107/8/1</text>
+    <text x="230" y="94" text-anchor="middle" class="mu">起訴日往回五年</text>
+    <text x="230" y="112" text-anchor="middle" class="mu">§126 界線</text>
+    <circle cx="360" cy="70" r="5" class="dot acc"/>
+    <text x="360" y="48" text-anchor="middle">110/8/1</text>
+    <text x="360" y="94" text-anchor="middle" class="mu">本金時效完成</text>
+    <text x="360" y="112" text-anchor="middle" class="mu">§146 界線</text>
+    <circle cx="470" cy="70" r="5" class="dot"/>
+    <text x="470" y="48" text-anchor="middle">112/8/1</text>
+    <text x="470" y="94" text-anchor="middle" class="mu">起訴</text>
+  </svg>
+  <div class="vs">
+    <div><h4>實務（99 年第 5 次決議）</h4>§146 主權利罹於時效效力及於從權利 → 本金一罹於時效，<b>51 萬利息全部</b>跟著罹於時效。誰叫你不積極行使權利</div>
+    <div class="rule-c"><h4>林誠二：分三段</h4>§146 指主權利罹於時效<b>之後</b>發生的從權利；之前發生的利息是獨立債權（可單獨讓與、單獨清償），各自看 §126 五年<br>① 110/8/2～112/8/1：§146 所及 → 甲得抗辯<br>② 107/8/2～110/8/1：未逾五年、非 §146 所及 → <b>甲應給付</b><br>③ 107/8/1 以前：自己逾 §126 五年 → 甲得抗辯（§126 問題，不是 §146）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>兩說只差第 ② 段。學說把本金未逾時效期間所生的利息稱為「支分權」（日本法用語，具獨立性）——考試不建議用這個詞，但要知道有這個區分。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>利息是本金生出來的、不違約也會發生 → 典型從權利。下一張卡的違約金不是。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-06-§146主權利罹於時效效力及於從權利利息99年第5次決議實務全部及於vs林誠二僅時效完成後發生之利息受§146所及之前發生者為獨立權利回歸§126五年三段計算.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>價金罹於時效，按日計算的違約金不跟著罹於時效（107 年第 3 次決議三結論）</h2>
+  <div class="scene">
+    <p>甲向乙公司買商品，約定 97/12/31 付款，逾期每日按價金千分之一計違約金。乙 103/6/1 才起訴請求價金與違約金，甲時效抗辯。價金是商品代價，§127 ⑧ 二年。</p>
+    <p class="q">價金罹於時效沒問題。違約金是從權利嗎？時效幾年？算到哪一天？</p>
+  </div>
+  <div class="tree"><ul>
+    <li class="hit"><span>① 違約金<b>不是</b> §146 的從權利：利息因本金而生（不違約也有）；違約金因<b>違約</b>而生（乖乖付款就沒有）→ 發生原因不同 → 價金罹於時效不使違約金跟著罹於時效</span></li>
+    <li class="hit"><span>② 違約金時效 <b>§125 十五年</b>：不是每天違約一次。98/1/1 起違約，違約金債權<b>那天就發生</b>，之後每天只是範圍 +1000 → 不是 §126 定期給付</span></li>
+    <li class="hit"><span>③ 計算至甲<b>就價金為時效抗辯之前一日</b>（103/5/31）：一抗辯就可以拒絕給付價金，不再違約，就沒有違約金</span></li>
+  </ul></div>
+  <div class="flow">
+    <div class="b">97/12/31 清償期</div><div class="a lbl">§127 ⑧ 二年</div>
+    <div class="b no">99/12/31 價金罹於時效</div>
+    <div class="br"></div>
+    <div class="b">98/1/1 起違約金發生</div><div class="a"></div>
+    <div class="b">每日 1000 元，算到 103/5/31</div>
+    <div class="br"></div>
+    <div class="b q">約 36.5 萬 × 5 年，比價金還高 → §252 酌減</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>三個結論背下來：不是從權利、十五年、算到時效抗辯前一日。民法總則到此結束；「權利之行使」章（權利濫用、誠信原則、正當防衛、緊急避難、自助行為）併入 §767 與侵權行為時講。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項寫「違約金為價金之從權利，隨價金罹於時效」或「按日計算之違約金適用 §126 五年」→ 都錯。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-07-違約金與時效107年第3次決議三結論違約金非§146從權利因違約而生時效§125十五年非定期給付計算至就價金為時效抗辯之前一日酌減.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>侵權行為怎麼想：要不要賠、賠什麼、賠多少；§213、§216、§195 不是請求權基礎</h2>
+  <div class="scene">
+    <p>乙被甲開車撞到。你想寫「依 §195 請求慰撫金」「依 §216 請求所失利益」「依侵權行為法則請求賠償」。</p>
+    <p class="q">這三種寫法哪裡有問題？§213～§218-1 為什麼不在侵權行為那一章？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 要不要賠</div><div class="a lbl">責任成立</div>
+    <div class="b">§184 三小條款、§185～§191-3<small>請求權基礎在這裡</small></div>
+    <div class="br"></div>
+    <div class="b">② 賠什麼</div><div class="a lbl">方法</div>
+    <div class="b">§213～§215 回復原狀／金錢賠償</div>
+    <div class="br"></div>
+    <div class="b">③ 賠多少</div><div class="a lbl">範圍</div>
+    <div class="b">§216、§193、§195<small>所受損害所失利益；勞動能力減損、增加生活需要；慰撫金</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§213～§218-1 規定在債之標的「損害賠償之債」，<b>所有</b>損害賠償（侵權、債務不履行）都用，不是侵權專屬。②③層的條文只決定責任成立之後的方法與範圍，不能單獨拿來當請求權基礎——要讓責任成立還是得回到 §184、§185～§191-3 這些完全法條。例外：<b>§192、§194</b>（致死時特定第三人的請求權）。</p>
+    <p>§184 有三小條款：I 前段、I 後段、II（對應德民 §823、§826），各自獨立、要件不同。考試要寫清楚是哪一段，不要只寫「§184」或「侵權行為法則」——標的不明確就無法涵攝，學者很討厭這六個字。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>老師的債編順序：侵權 → 不當得利 → 無因管理（三者獨立成題）→ 契約＋債總後半 → 債各買賣租賃承攬 → 物權約八堂。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-08-侵權行為體系責任成立§184至§191-3與效果§192至§198損害賠償之債§213至§218-1通用三層次要不要賠賠什麼賠多少非請求權基礎三小條款須寫明.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>§184 I 前段七個要件三個層次：牙醫拔牙和討債集團拔牙差在哪</h2>
+  <div class="scene">
+    <p>牙痛去看牙醫，醫生說要拔，拔了。欠錢不還，討債集團拿老虎鉗把你的牙拔了。兩個都有拔牙行為、牙齒被拔的結果、因果關係。</p>
+    <p class="q">為什麼一個不用賠、一個要賠？侵權行為法到底在平衡什麼？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>一、客觀構成要件（要件該當）</span><ul>
+      <li><span>① 行為（卡 10、11）② 權利受侵害（卡 13）③ 損害 ④ 因果關係</span></li>
+    </ul></li>
+    <li><span>二、違法性（客觀歸責）</span><ul>
+      <li class="hit"><span>⑤ 不法 —— 有無阻卻違法事由：<b>被害人承諾</b>（牙醫）、正當防衛、緊急避難、自助行為</span></li>
+    </ul></li>
+    <li><span>三、有責性（主觀歸責）</span><ul>
+      <li><span>⑥ 故意或過失 ⑦ 責任能力（識別能力）</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>與刑法三階理論（構成要件該當、違法、有責）同源——早期法律不分民刑，判斷一個人該不該負責的邏輯一樣。牙醫：構成要件該當，但有被害人承諾（你還求他拔），不法性阻卻 → 不賠。討債集團：不法 → 賠。</p>
+    <p>侵權行為法的本質是<b>行為自由與權利保護的拔河</b>：絕對的權利保護＝絕對的行為不自由（牙醫也要賠、無過失也要賠）；行為自由過度保護＝權利保護不足。每個要件怎麼詮釋就是在畫這條線，所以債總教科書侵權行為篇幅最大，王澤鑑、陳聰富各寫成一本書。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>無過失原則不負責，除非法律特別規定無過失責任。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-09-§184I前段七要件三階行為權利損害因果客觀構成要件不法客觀歸責故意過失責任能力主觀歸責牙醫vs討債集團行為自由與權利保護的拔河.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>不作為原則不成立侵權，有作為義務才算：法律、契約、交易往來安全義務（106 台上 1148 招牌案）</h2>
+  <div class="scene">
+    <p>便利商店外的 ATM 招牌掉下來，路人撿起來放在旁邊公共電話上。店長打電話報修，沒收進倉庫。乙打電話時招牌掉下來砸成重傷。店長說：招牌不是我弄掉的、不是我放的、我有報修，我什麼都沒做。</p>
+    <p class="q">「什麼都沒做」能不能構成侵權？作為義務從哪來？</p>
+  </div>
+  <div class="flow">
+    <div class="b">行為＝受意識支配之活動<small>夢遊、癲癇踩油門不是行為</small></div><div class="a"></div>
+    <div class="b">作為／不作為</div><div class="a"></div>
+    <div class="b q">不作為原則不成立侵權（路人昏倒我可以走開）→ 例外：有<b>作為義務</b></div>
+  </div>
+  <div class="tree"><ul>
+    <li><span>作為義務四來源（依序檢討）</span><ul>
+      <li><span>① 法律：消防員救火（鄰居不用）、父母帶發燒的子女就醫（隔壁小孩不關你的事）</span></li>
+      <li><span>② 契約：救生員對泳客、船長對遇難旅客（韓國沉船船長落跑）</span></li>
+      <li class="hit"><span>③ <b>交易往來安全義務</b>：你在社會上<b>開啟了危險</b>就要防範危險 → 百貨地下街蹭冷氣（無契約）滑倒，湯是別的客人打翻的也要負責；車拋錨不打雙黃燈、不放三角錐；招牌案</span></li>
+      <li><span>④ 誠信原則／公序良俗（卡 11）</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>106 台上 1148 的論述對著體系看：侵權須有加害行為 → 行為包括作為與不作為 → 不作為以作為義務為前提 → 毫無關係之人原則無作為義務 → 但基於法令、契約、服務關係、<b>自己危險前行為</b>可成立 → <b>經營商店者開啟往來交易</b>，對管理能力範圍內的營業場所及周遭設施有注意義務，設施遭破壞應採適當措施。最高法院：不是問你做了什麼，是問你<b>沒做什麼</b>——知道招牌有掉落危險卻不收進倉庫。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>先契約再侵權：地下街若有點餐，環境維護是契約附隨義務，往契約找就好；完全沒消費才需要交易往來安全義務。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-10-行為態樣作為vs不作為行為是受意識支配之活動不作為以作為義務為前提四來源法律契約交易往來安全義務誠信原則百貨地下街拋錨車106台上1148便利商店ATM招牌.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>平台不刪誹謗文是不作為侵權（109 台上 1015，老師保留）；什麼都不該當時還有誠信原則</h2>
+  <div class="scene">
+    <p>婚紗討論區有匿名惡評，業者要求平台刪文，平台說沒權限。另一例：爬山看到有人跌落山谷喊救命，荒山野嶺下一個人可能明天才來。還有：應召女見男客在浴室暈倒，收拾東西離開，沒跟櫃檯講，男客心肌梗塞死亡。</p>
+    <p class="q">平台有作為義務嗎？山谷和旅館案，法律、契約、安全義務都不該當，還能非難嗎？</p>
+  </div>
+  <div class="vs">
+    <div><h4>109 台上 1015：平台有作為義務</h4>平台開啟網路使用環境 → 對有相當理由足認侵害名譽之言論有採取防止措施之義務 → 未審核、未防止令其繼續存在 → 不作為侵權。<br><b>老師保留</b>：「有相當理由足認確屬侵害名譽」是法官的工作，平台沒有也不需要這能力；刪了被說侵害言論自由，不刪是不作為侵權，兩難。較合理：平台提供發文者身分，被害人去告本人</div>
+    <div class="rule-c"><h4>④ 誠信原則／公序良俗</h4>兩要素：① 你的<b>成本遠小於</b>可防止的損害 ② 你不做<b>真的會造成損害</b>（你是唯一能防止的人）。山谷：不要你下去拉（會死），打個電話很難嗎？旅館：跟櫃檯講一聲（不必留資料）成本極低，退房前不會有第二個人進房，她是唯一的救命稻草 → 違反作為義務</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>旅館案刑事判決用契約附隨義務論。老師：民法上<b>性交易契約違反善良風俗無效</b>（§72），無契約義務；也沒有開啟危險，無安全義務 → 只剩誠信原則這條路。判決用語「公序良俗」，學說上強調的就是誠信原則。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>誠信原則是最後一個來源，前三個都檢討過不該當才用，而且要同時滿足兩要素。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-11-網路平台不刪侵害名譽文章109台上1015不作為侵權老師保留誠信原則公序良俗作為義務成本小於損害且唯一能防止山谷喊救命應召女案.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>法人可以直接依 §184 負責了（108 台上 2035），但「統合構成員的行為」是循環論證</h2>
+  <div class="scene">
+    <p>工廠排放廢水汙染農田，被害人不知道是哪個員工按下排放鈕。早年：找不到行為人就不能用 §28、§188，法人又沒有「意識」沒有「行為」，告不了。</p>
+    <p class="q">108 台上 2035 給了五個理由讓法人成為 §184 的主體，哪些理由站得住？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>108 台上 2035 的理由與學者評價</span><ul>
+      <li class="off"><span>① 法人實在說 → 無實益：我國向來採實在說，早年仍否定法人侵權能力，與本問題無關</span></li>
+      <li class="off"><span>② §184 文義未排除法人 → 不充分：§28 明定法人就董事行為連帶，體系上可反推；沒規定 ≠ 可以用</span></li>
+      <li class="off"><span>③ <b>統合構成員之行為與意識</b> → <b>循環論證</b>：找不到行為人才告法人，結果又要我找「構成員」是誰、怎麼統合</span></li>
+      <li class="hit"><span>④ 保護被害人（不必再找行為人）✓</span></li>
+      <li class="hit"><span>⑤ 風險分配（在社會上活動獲利就該承擔風險）✓</span></li>
+    </ul></li>
+    <li><span>學說修正：為法人量身定義行為與過失</span><ul>
+      <li class="hit"><span>法人的行為 ＝ <b>組織義務違反的不作為</b>：不問誰排廢水，問法人<b>汙水處理環節哪裡沒做到</b></span></li>
+      <li class="hit"><span>法人的過失 ＝ <b>客觀化</b>（陳聰富）：法人客觀上應注意的標準（地下管線每兩年保養）沒做到就是過失，不問主觀預見可能性</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>「法人可不可以成立 §184」已不是考點（可以），考點是理由對不對、怎麼修正。被害人只須證明法人客觀上該做沒做，不必找人、不必證明意識；舉證困難另由民訴的舉證責任轉換處理。最高法院解決一個問題又創造一個問題。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>早年路徑仍可用：知道行為人是董事 → §28 連帶；是受僱人 → §188 連帶。108 台上 2035 補的是「找不到行為人」的缺口。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-12-法人侵權責任早年否定僅§28§188須找到行為人108台上2035肯定理由學者批評統合構成員循環論證修正法人行為為組織義務違反之不作為過失客觀化.md</span></div>
+</section>
+
+<!-- 13 -->
+<section class="card" id="c13">
+  <h2><span class="n">13</span>三小條款只差「權利」這個要件；權利限絕對權——看得見的才能要你避免</h2>
+  <div class="scene">
+    <p>甲把市價 1000 萬的 A 屋以 800 萬賣給乙，還沒過戶。丙過失把 A 屋燒了。甲和乙都有損害。</p>
+    <p class="q">甲、乙各能不能依 §184 向丙求償？乙的 200 萬差價怎麼辦？</p>
+  </div>
+  <div class="vs">
+    <div><h4>三小條款在第一層只差一個要件</h4><b>I 前段</b>：須「權利」受侵害＋不法＋故意過失<br><b>I 後段</b>：「加損害於他人」即可＋故意＋背於善良風俗<br><b>II</b>：「致生損害於他人」即可＋違反保護他人之法律＋推定過失</div>
+    <div class="rule-c"><h4>思考順序</h4>① 有無<b>損害</b>（沒損害就沒賠償，最容易忽略）② 有無<b>權利</b>受侵害 → 有 → I 前段；無 → 說明為何不能用前段 → I 後段或 II</div>
+  </div>
+  <div class="flow">
+    <div class="b">甲：損害 ✓、所有權（絕對權）✓</div><div class="a"></div>
+    <div class="b ok">§184 I 前段 → 丙賠甲</div>
+    <div class="br"></div>
+    <div class="b">乙：損害 ✓（§348 債權落空）、權利 ✗（債權是相對權）</div><div class="a"></div>
+    <div class="b no">前段 ✗；後段 ✗（丙只有過失）；II ✗（無違法）→ 乙對丙無侵權請求權</div>
+    <div class="br"></div>
+    <div class="b">乙的出路</div><div class="a"></div>
+    <div class="b ok">甲不可歸責給付不能 → <b>§225 II 代償請求權</b>：請求甲讓與其對丙的 §184 請求權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>「權利」為什麼限絕對權（通說）：① 比較法：源自德民 §823（學者批評不能德國說什麼就是什麼）② <b>典型公開性</b>（王澤鑑）：侵權行為法為保護權利而限制行為自由，前提是權利<b>看得見</b>——丙燒房子時只能預見房子有所有人，無法想像房子背後還有買受人；看不見的無從避免，法不強人所難 ③ 維持<b>契約與侵權的分際</b>：若債權也算，所有債務不履行都變侵權，債編可以刪掉只留一條，無法反映各契約的風險分配。</p>
+    <p>乙的保護在侵權法上退讓給丙的行為自由，但契約法有 §225 II 補位。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>下堂續講「權利」的經典案例（純粹經濟上損失等），之後再講陳忠五的平等保護說／差別保護說。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法13-筆記-13-三小條款構造比較§184I前段須權利受侵害I後段II僅須損害思考順序權利限絕對權典型公開性契約與侵權分際賣屋未過戶遭過失燒毀乙債權不受保護§225II.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法04 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法04">
+<main>
+
+<header class="lesson-head">
+  <h1>民法04</h1>
+  <span class="sub">屍體・從物・果實歸誰・什麼叫法律行為・成立與生效・爸媽拿小孩去做保</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>剪下來的頭髮是「東西」，屍體也是，但不能亂處理</h2>
+  <div class="scene">
+    <p>甲過世，四個子女乙丙丁戊。乙負債累累，拋棄繼承。丁戊想火葬，乙丙反對。丁戊說「乙都拋棄了不算，我們三個裡面兩個同意，過半」，就把甲火葬了。</p>
+    <p class="q">乙拋棄繼承後，還有資格對爸爸的遺體說話嗎？丁戊的火葬合法嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">屍體＝物（動產）</div><div class="a lbl">遺產一部</div>
+    <div class="b">全體繼承人公同共有</div><div class="a lbl">火葬＝處分</div>
+    <div class="b q">§828 II 準用 §820：人數過半同意</div>
+    <div class="br"></div>
+    <div class="b dim">乙拋棄繼承 → 遺體處分權也沒了？</div><div class="a lbl">109 台上 2627</div>
+    <div class="b no">不。慎終追遠、公序良俗 → 遺體所有權不得拋棄 → 乙仍算 → 四人中兩票 → 未過半 → 不合法</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>跟人體分離的東西（頭髮、血、取出的器官）就是<b>動產</b>：可以賣，但不能強制執行（答應賣血反悔了，不能把人綁去抽）。被侵害只有財產賠償、沒有慰撫金——除非像德國精液滅失案那樣有「再結合可能性」，少數說把它當身體的延伸。</p>
+    <p>屍體也是動產，但是「<b>具人格性的物</b>」：殘存死者的人格權，只能以埋葬、祭祀、研究這類目的處分，不能自由使用收益。繼承人取得後不得拋棄，所以拋棄繼承的效力<b>不及於遺體</b>——不然全家都拋棄，遺體變無主物看誰先占？</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這個判決跨三個領域：遺體性質（總則）、拋棄繼承效力（繼承）、公同共有物處分要過半（物權）。考哪一科都可能出現。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-01-人體分離部分與屍體.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>買冷氣要附遙控器：主物之處分及於從物</h2>
+  <div class="scene">
+    <p>甲向乙買一台冷氣，契約只寫「冷氣一台」。交貨時乙說：「遙控器要另外加 800 元，契約沒寫。」另一題：甲買車，車上的方向盤算不算另外一個東西？</p>
+    <p class="q">甲能不能依契約要遙控器？方向盤呢？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§68 從物四要件（都過才算）</span><ul>
+      <li><span>① 非主物的成分，是獨立的物 → 方向盤 ✗（它就是車的一部分）、遙控器 ✓</span></li>
+      <li><span>② 常助主物效用 → 遙控器方便操控 ✓</span></li>
+      <li><span>③ 與主物同屬一人 → 都是乙的 ✓</span></li>
+      <li class="hit"><span>④ 交易習慣（§68 I 但書）→ 買冷氣附遙控器 ✓；便當附筷子、iPhone 附耳機 → 習慣會變</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>我們簽約只寫主物，從物不會一一列。<span class="s">§68 II</span>「主物之處分及於從物」就是讓契約自動擴張到配件——冷氣契約效力及於遙控器，甲可以要。這呼應物的第三要件「滿足社會生活」：每個東西都切開談，生活過不下去。</p>
+    <p>這裡的「處分」是<b>法律上處分</b>（買賣、移轉、設定抵押），所以 <span class="s">§362</span> 主物有瑕疵解約及於從物、<span class="s">§862</span> 抵押權及於從物。事實上處分（把車拿去烤漆）跟從物無關，備胎不會跟著變新。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>考題不會問「B 是不是從物」，會問「甲乙就 A 訂約，乙能否請求交付 B」——你要自己想到四要件去檢驗。</p>
+    <p>第四個要件會隨時代變：以前買便當附筷子，現在要加一元；以前買手機附耳機豆腐頭，現在只剩一條線。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-02-主物從物§68與處分的範圍.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>樹上的果子：還掛著看地主，摘下來看誰有權摘</h2>
+  <div class="scene">
+    <p>甲的地租給乙種芒果；丙沒經同意也跑來種了一排。芒果還掛在樹上。隔週全部採收下來。</p>
+    <p class="q">掛在樹上時，乙種的、丙種的各是誰的？採下來之後呢？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">分離了沒？</div>
+    <div class="out"><span class="tag">未分離</span><div class="b">土地的一部分（§66 II）→ <b>地主甲的</b>。誰種的、租給誰、誰無權占有，通通不管</div></div>
+    <div class="out"><span class="tag">已分離</span><div class="b ok">獨立動產 → 有<b>收取權</b>之人（§70 I）：乙有租約 → 乙的；丙沒依據 → 不是丙的 → 回到原物所有人甲（§766）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>孳息＝大 A 生出小 A（雞生蛋、樹結果是天然孳息；房子生租金、錢生利息是法定孳息，<span class="s">§69</span>）。判斷永遠兩步：先問<b>分離了沒</b>。沒分離，它就是原物的一部分，問地主是誰就好。分離了，問誰有收取權——法條裡有「收益」兩個字的人（承租人、農育權人、典權人）；沒有別人就回原則，原物所有人（<span class="s">§766</span> 原物主義，因為證明「種在誰的地上」比「誰種的」容易）。</p>
+    <p>老師說 <span class="s">§70 I</span>「有收取權之人取得分離的孳息」有講跟沒講一樣——誰是收取權人要另外找：買受人（§373）、質權人（§889）、善意占有人（§952）、未成年人的父母（§1088），接下來四張卡各講一個。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>題目轉來轉去（地又賣、又租、又被占），未分離就只有一個答案：<b>現在的地主</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-03-孳息§69§70§766分離前後.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>地賣了，果子歸誰：一個看過戶、一個看交屋</h2>
+  <div class="scene">
+    <p>甲把 A 地賣給乙。情況一：已經過戶給乙，但還沒點交，果子還在樹上。情況二：已經點交給乙，但還沒過戶，果子已經採下來了。</p>
+    <p class="q">兩種情況果子各是誰的？為什麼判斷標準不一樣？</p>
+  </div>
+  <div class="vs">
+    <div><h4>未分離 → 看<b>登記</b></h4>果子是土地的一部分 → 地主的 → 地主看登記（<span class="s">§758</span>）<br>情況一：已過戶 → <b>乙的</b>（沒交付也一樣）</div>
+    <div class="rule-c"><h4>已分離 → 看<b>交付</b></h4>問誰有收取權 → <span class="s">§373</span>：利益（使用收益）自交付時起歸買受人<br>情況二：已交付 → <b>乙的</b>（沒過戶也一樣）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>不動產買賣有兩個動作：過戶（移轉登記，所有權才移轉）和點交（交付，占有才移轉）。四種排列組合 × 果子分離前後，老師說不要背，要會推：<b>未分離問地主→看登記；已分離問收取權→看交付</b>。</p>
+    <p><span class="s">§373</span>「買賣標的物之利益及危險，自交付時起由買受人承受負擔」在民總、債總、債各、物權都會出現，老師說它神出鬼沒。這裡只用「利益」那半：利益＝使用收益＝收取權。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>陷阱永遠在中間兩格：「已登記未交付、果子已分離」→ <b>甲的</b>（還沒交付）；「未登記已交付、果子未分離」→ <b>甲的</b>（還是地主）。看錯標準答案就反過來。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-04-買賣標的物孳息§373未分離看登記已分離看交付.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>養雞場設質：蛋你可以收，錢不是你的</h2>
+  <div class="scene">
+    <p>甲向乙借 100 萬，把整個養雞場的雞設定動產質權給乙。利息累積到 8 萬。雞下了一堆蛋，市價 13 萬，乙花 2 萬請人收蛋。</p>
+    <p class="q">乙能收蛋嗎？收了 13 萬能放進自己口袋嗎？甲還欠多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">蛋 13 萬</div><div class="a lbl">① 先抵費用</div>
+    <div class="b">13 − 2 ＝ 11 萬</div><div class="a lbl">② 次抵利息</div>
+    <div class="b">11 − 8 ＝ 3 萬</div><div class="a lbl">③ 次抵原債權</div>
+    <div class="b ok">100 − 3 ＝ 甲還欠 97 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§889</span> 說質權人得「<b>收取</b>」孳息——注意用字是收取不是收益。收取＝可以收；收益＝收了還能享有利益。承租人兩個都有；質權人只有前者，收了要「為出質人計算」（<span class="s">§890 I</span>），照 §890 II 的順序：費用 → 利息 → 原債權。</p>
+    <p>結果：乙拿回 2 萬成本，剩下 11 萬全部幫甲還債。甲一毛沒付，是他的雞用蛋幫他付的。「收」和「益」分家，是質權很特別的地方。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>抵充順序別背反：<b>費用、利息、本金</b>。申論沒看過，選擇題偶爾出。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-05-質權人收取孳息§889§890收與益分家.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>向冒牌地主租地的人，摘的果子算誰的</h2>
+  <div class="scene">
+    <p>甲老家在台東山上有塊地，幾年沒去。隔壁乙看沒人管，圍起來租給不知情的丙種釋迦。丙採收了一批。甲回來發現。</p>
+    <p class="q">採下來的釋迦是甲的、乙的、還是丙的？甲能告丙不當得利嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙：無權占有</div><div class="a lbl">沒有依據</div>
+    <div class="b no">不是收取權人</div>
+    <div class="br"></div>
+    <div class="b">丙：善意占有人，在地上行使租賃權</div><div class="a lbl">§943 I</div>
+    <div class="b q">推定他有合法租賃權</div><div class="a lbl">§952</div>
+    <div class="b ok">在推定範圍內有使用收益權 → 釋迦是丙的</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§952</span> 要配 <span class="s">§943</span> 一起讀：占有人在占有物上行使的權利，法律先推定他有；善意占有人在這個推定範圍內可以使用收益。丙受推定保護，所以分離後的果子歸丙，甲對丙的不當得利請求沒有理由（丙有法律上原因）。</p>
+    <p>§943 II 有兩個不推定的例外，丙都閃過了：① 占有<b>已登記不動產</b>行使<b>物權</b>——已登記的地看登記外觀不看占有；但丙行使的是租賃權（債權），不適用。② 行使所有權以外之權利，對<b>使其占有之人</b>——讓丙占有的是乙不是甲，所以對甲還是受推定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>是「推定」，甲起訴主張「你不是跟我租的」推翻之後，丙就不能再收。但推翻<b>之前</b>收的都合法。善意占有人有收取權，是最容易被忘掉的一個。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-06-善意占有人§952§943.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>阿公送孫子的地，果子卻是爸媽的</h2>
+  <div class="scene">
+    <p>阿公甲想把地留給 10 歲的長孫乙。律師說兒子還在，孫子沒有繼承權。阿公改用贈與，把 A 地過戶給乙。A 地上有一片柳丁園。</p>
+    <p class="q">贈與要不要乙的爸媽同意？柳丁還在樹上時是誰的？採下來之後是誰的？</p>
+  </div>
+  <div class="flow">
+    <div class="b">贈與給 10 歲乙</div><div class="a lbl">純獲法律上利益</div>
+    <div class="b ok">不須法代允許（§77 但書）→ 有效</div>
+    <div class="br"></div>
+    <div class="b">柳丁未分離</div><div class="a"></div>
+    <div class="b">地主乙的</div>
+    <div class="br"></div>
+    <div class="b">柳丁已分離</div><div class="a lbl">A 地是特有財產 §1087</div>
+    <div class="b q">父母有使用收益權 §1088 II → <b>爸媽的</b></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>未成年人因繼承、贈與、其他無償取得的財產叫<b>特有財產</b>（<span class="s">§1087</span>）。父母對它有管理權（§1088 I）、使用收益權（§1088 II 本文），處分則要「為子女之利益」（§1088 II 但書）。所以分離後的柳丁，法律特別規定由父母收取。</p>
+    <p>林秀雄老師批評：明明是小孩的財產，孳息為什麼歸爸媽？不符子女最佳利益。這條反映早年「阿公給孫子地，都是爸媽在種、收成貼補家用」的時代；現在土地出租的租金也歸父母，該檢討。身分法再講。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§1088 II 但書「非為子女之利益不得處分」，下一堂會變成爸媽拿小孩做保證人時的類推依據（卡 12）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-07-未成年人特有財產§1087§1088.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>一件事可以貼好幾個標籤：債權／物權、單獨／契約</h2>
+  <div class="scene">
+    <p>甲把機車賣給乙（簽約），交車過戶（移轉所有權），乙把對丙的 5 萬債權讓給甲抵車款，甲喝完飲料把杯子丟進垃圾桶，社團開會表決。</p>
+    <p class="q">這五件事各是什麼行為？一試會問「這段故事裡有幾個單獨行為、幾個準物權行為」。</p>
+  </div>
+  <div class="vs">
+    <div><h4>依效果分</h4><b>債權行為</b>（負擔）：只發生債權債務 → 簽買賣契約<br><b>物權行為</b>（處分，標的是物）：移轉機車所有權、拋棄杯子<br><b>準物權行為</b>（處分，標的是權利）：債權讓與、債務免除</div>
+    <div><h4>依方式分</h4><b>單獨行為</b>：一方意思表示就生效 → 拋棄、撤銷、捐助<br><b>契約</b>：雙方意思表示合致 → 買賣契約、<b>讓與合意</b>（物權契約）<br><b>合同行為</b>：多數人意思表示同方向 → 總會決議</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>法律行為＝以意思表示為要素、對外發生法律效果的法律事實——人用自己的意思創造法律效果。兩套分類是<b>不同角度</b>，不是對立：一個人可以同時是「50 歲以上」和「男性」，一個行為可以同時是「物權行為」和「契約」。移轉所有權要你給我收，是物權行為＋契約；丟杯子是物權行為＋單獨行為；捐助成立財團通說是債權行為＋單獨行為。</p>
+    <p>買賣契約只是「約定」，東西還沒變成你的，所以是債權行為、不產生權利變動；真正讓所有權動的是後面那個讓與合意。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>台灣「契約」是契約、「合同」是多數人同方向的決議，兩個意思不同。考卷寫「買賣合同」是對岸用語，不要寫。</p>
+    <p>債權讓與的標的是「債權」不是「物」，所以是<b>準</b>物權行為。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-08-法律行為的定義與分類.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>「原諒」是民法裡唯一有法律效果的情緒</h2>
+  <div class="scene">
+    <p>甲發現配偶乙外遇，當晚說「我原諒你」。三個月後甲還是想離婚。另一題：5 歲的丙在海邊撿到一顆沒人要的漂亮石頭。</p>
+    <p class="q">甲說過「原諒」，還能以外遇為由訴請離婚嗎？5 歲丙撿石頭能取得所有權嗎？他沒有行為能力。</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>表示行為（都要有意思）</span><ul>
+      <li><span>法律行為：效果<b>自己決定</b>（把手錶交給你是賣、送、借、租？看我的意思）</span></li>
+      <li class="hit"><span>準法律行為：效果<b>法律決定</b>，你只負責表達</span><ul>
+        <li><span>意思通知：催告 → §229 遲延、§129 時效中斷</span></li>
+        <li><span>觀念通知：優先承買通知 → §426-2 十日不回視為放棄</span></li>
+        <li><span>情感表示：宥恕 → §1053 不得離婚、§1145 II 繼承權復活</span></li>
+      </ul></li>
+    </ul></li>
+    <li><span>非表示行為＝事實行為（不要意思，做了就有效）：§802 先占、§811 添附、§814 加工</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>甲那題：原諒觸發 <span class="s">§1053</span>，法律效果是「不得再以此請求離婚」。不是甲決定「我原諒但還是要離」，是法律幫他決定好了。老師說當律師第一句要問「你有原諒過他嗎」。開心、生氣、難過都沒效果，民法只認原諒。</p>
+    <p>丙那題：無主物先占是事實行為，<b>不需要意思表示</b>，所以 <span class="s">§75</span> 無行為能力人意思表示無效管不到，5 歲照樣取得所有權。這就是分類的實益：需要意思表示的（法律行為、準法律行為）無行為能力人不能做，不需要的可以。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>準法律行為 vs 事實行為的差別：前者<b>主觀要有意思</b>（只是效果法律定），後者<b>只看客觀行為</b>。把乙的石頭刻成雕像，不用有「取得所有權的意思」，價值比石頭高就是你的（§814）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-09-準法律行為與事實行為.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>「是不是」和「有沒有效」是兩個問題</h2>
+  <div class="scene">
+    <p>兩個 5 歲小孩說好「我的卡片 50 元賣你」。另一題：甲口頭答應借乙 100 萬，隔天反悔沒匯；乙說「你答應了，契約成立，你違約」。</p>
+    <p class="q">小孩的買賣是不是法律行為？有效嗎？甲乙之間的消費借貸契約成立了嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">成立要件：是不是法律行為？<br><small>人・意思表示・標的</small></div><div class="a lbl">是</div>
+    <div class="b">生效要件：有沒有效？<br><small>行為能力・意思表示健全・標的適法</small></div><div class="a lbl">小孩</div>
+    <div class="b no">成立但無效（無行為能力）</div>
+  </div>
+  <div class="fork">
+    <div class="cond">§474「而約定」<br>前後拆開看</div>
+    <div class="out"><span class="tag">之前</span><div class="b">「移轉金錢所有權於他方」→ <b>成立要件</b>（交付）→ 甲沒匯錢，契約還沒成立，只有預約（§475-1）</div></div>
+    <div class="out"><span class="tag">之後</span><div class="b">「約定他方返還」→ 契約裡<b>唯一的義務</b> → 消費借貸是單務契約</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>成立看三樣：有人（跟狗約定不算）、有想受拘束的意思（朋友順路載你沒來不算違約，約機場接送沒來才算）、有能特定的標的（「送你一個東西」不算）。三樣都有就是法律行為；有沒有效是下一層。所以兩個小孩的買賣<b>是</b>買賣契約，只是<b>無效</b>。</p>
+    <p>特別成立要件：要式和要物。法定要式沒做到，<span class="s">§73</span> 寫「無效」（學說說該寫不成立，一試照法條選無效）；約定要式沒做到，<span class="s">§166</span>「推定不成立」。要物行為像消費借貸、使用借貸，交付了才成立——老師教你看法條「而約定」三個字在哪，前面是成立要件、後面是義務。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「單務契約必為無償」——<b>錯</b>。有利息的消費借貸就是單務有償。「雙務契約必為有償」——對；無償雙務不存在（無償委任是不完全雙務契約）。高普考愛考。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-10-成立要件三要素要式§73§166要物§474.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>先問「這是法律行為嗎」，才輪到行為能力出場</h2>
+  <div class="scene">
+    <p>17 歲甲當選畢業聯誼會會長，爸媽反對：「高三該讀書」。另一題：18 歲的乙受監護宣告，但某天意識清楚時登記結婚。又一題：3 歲丙把貼好郵票的信投進郵筒。</p>
+    <p class="q">甲當選有效嗎（§77 日常生活所必需？）乙的婚姻呢？郵局要不要幫丙寄？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>先問：是不是法律行為？</span><ul>
+      <li class="off"><span>不是（當選會長＝沒有權利義務；繼承＝事件；先占＝事實行為）→ 行為能力<b>根本不介入</b>，§77 用不上</span></li>
+      <li><span>是 → 一般生效要件 ①行為能力 §75～85 ②意思表示 §86～98 ③標的 §71～74；特別生效要件：條件期限、代理、處分權 §118</span><ul>
+        <li class="hit"><span>無行為能力人原則無效（§75），例外<b>不受影響</b>：身分行為看意思能力（乙可以結婚）；郵政法 §12、電信法：視為有行為能力人之行為（丙的信照寄）</span></li>
+      </ul></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>甲那題很多人反射動作去套 §77 但書「日常生活所必需」，全錯——當選會長不產生任何法律上權利義務，<b>不是法律行為</b>，法律不管你幾點起床、要不要洗澡。繼承是事件，植物人也能繼承；先占是事實行為，無行為能力人也能做。行為能力只處理法律行為的效力。</p>
+    <p>法律行為做成後只有四種下場：有效、無效（§111～113）、得撤銷（§114、116）、效力未定（§115～117）——老師說民法選擇題好出，寫個故事，ABCD 就是這四個。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>老師要求用語精確：身分行為、郵政電信行為是「例外<b>不受行為能力影響</b>」，不要寫「例外有效」——可能還會因為通謀虛偽、公序良俗而無效。</p>
+    <p>郵政行為不受影響，但信<b>裡面</b>的要約還是受影響：寄得出去，要約無效。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-11-生效要件體系與無行為能力人.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>爸媽拿五歲小孩去做保證人</h2>
+  <div class="scene">
+    <p>乙向銀行借 500 萬，沒人願意做保。銀行說：「你小孩五歲也是人啊。」乙代理 5 歲的甲跟銀行簽保證契約。另一版本：乙先把 800 萬股票放到 10 歲甲名下，再用甲做 1000 萬的保證人。第三版本：甲 16 歲，乙帶他到銀行說「我同意你自己簽」。</p>
+    <p class="q">三個版本的保證契約各是什麼效力？甲長大後想認帳，認得了嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">代理權濫用<br>類推 §1088 II 但書<br>（非為子女利益）</div>
+    <div class="out"><span class="tag">多數說</span><div class="b no">強行規定 → §71 <b>無效</b> → 甲長大想承認也沒用，要重新訂約</div></div>
+    <div class="out"><span class="tag">53 年決議・林秀雄</span><div class="b">內部限制 → 無權代理 → <b>效力未定</b> → 甲成年後自願承認就生效</div></div>
+  </div>
+  <div class="flow">
+    <div class="b">版本二：先放 800 萬在甲名下</div><div class="a lbl">實務</div>
+    <div class="b ok">800 萬範圍內「不概為無效」</div><div class="a lbl">超過</div>
+    <div class="b">回到原則</div>
+    <div class="br"></div>
+    <div class="b">版本三：不代理，改「同意」16 歲甲自己簽</div><div class="a lbl">類推 §1088 II 但書</div>
+    <div class="b no">同意無效</div><div class="a lbl">等於未經允許</div>
+    <div class="b">§79 效力未定 → 實務類推 §170 等甲成年自己決定（老師：用 §81 I 就好）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§1088 II 但書</span> 文義只管「特有財產的處分」，但法定代理人制度的目的就是保護未成年人，所以代理權、同意權、承認權的濫用通通<b>類推</b>這條。無效說和效力未定說的差別只有一個：甲長大後想認帳，認不認得了。</p>
+    <p>版本二是 53 年第 1 次民庭決議的例外：父母以子女名義置產，「推定」是為子女長期經營，在那個價額內拿子女做保不概為無效——那筆錢本來就是爸媽的。學者批評這個推定沒根據（也可能是單純贈與），而且 104 台上 839 把它從「拿財產設質」擴張到「代理訂保證契約」，超出決議射程。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>版本三是實務「山不轉路轉」：代理會被 53 年決議擋，就改成「同意小孩自己簽」。高院 105 年座談會第 15 號還是把它擋下來——同意顯不利子女就無效。</p>
+    <p>下堂續：限制行為能力人 §77～§85，以及跟受輔助宣告人的比較。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法04-筆記-12-法定代理人與代理權同意權濫用53年第1次決議.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

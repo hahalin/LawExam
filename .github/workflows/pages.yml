@@ -1,0 +1,42 @@
+# 每次 push 到 master：重產 index.html、toc.json，再把整個 repo 發佈到 GitHub Pages。
+# 需在 Settings → Pages → Build and deployment → Source 選「GitHub Actions」。
+# 不會 commit 回 repo，所以本機不用因為這個 workflow 先 git pull。
+name: Build and deploy Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build index.html and toc.json
+        run: python scripts/build_index.py
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

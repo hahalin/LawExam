@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法03 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法03">
+<main>
+
+<header class="lesson-head">
+  <h1>民法03</h1>
+  <span class="sub">誰的簽名算數・法人會不會闖禍・開會怎麼算票・什麼東西是「物」</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>「不得對抗」＝對方說了算</h2>
+  <div class="scene">
+    <p>A 法人章程寫明「董事不得為不動產交易」。甲董事還是代表 A 跟 B 買了一塊地。另一題：乙去年就卸任董事，今年還跑去代表 A 跟 C 簽約。</p>
+    <p class="q">B 想要 A 履約，A 能不能說「甲沒權限」擋掉？乙那題也用同一條嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">甲：董事＋有代表權<br>＋<b>受限制</b><br><span class="s">§27 III</span> 看善惡意</div>
+    <div class="out"><span class="tag">B 善意</span><div class="b ok">A 不得對抗 → B 說了算 → 甲視為有權代表 → 契約有效</div></div>
+    <div class="out"><span class="tag">B 惡意</span><div class="b">A 得對抗 → A 說了算 → 甲是無權代表 → 類推 §170 效力未定，看 A 承不承認</div></div>
+  </div>
+  <div class="fork">
+    <div class="cond">乙：<b>不是董事</b><br>（或無代表權董事）<br><span class="s">§31</span> 看有無登記</div>
+    <div class="out"><span class="tag">有登記</span><div class="b">A 得對抗 → 乙是無權代表 → 效力未定</div></div>
+    <div class="out"><span class="tag">沒登記</span><div class="b ok">A 不得對抗 → 契約有效。<b>跟 C 善不善意無關</b></div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>先問「代表 A 簽約的人是誰」。董事、有代表權、只是被加了限制 → 走 <span class="s">§27 III</span>，限制不能拿來對付善意第三人。根本不是董事、或是沒代表權的董事 → 這兩件事都是「應登記事項」，走 <span class="s">§31</span>：有登記就能對抗，沒登記就不能，條文裡沒有「善意」兩個字。</p>
+    <p>「對抗」是抗辯的意思：一定先有對方的主張。B 主張的永遠是「甲有權代表、契約有效、A 履約」。A 不得對抗 → B 這個主張成立；A 得對抗 → 甲變無權代表，民法沒規定代表，借最像的無權代理 <span class="s">§170</span> 來用，效力未定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項寫「無代表權之董事代表法人為法律行為，不得對抗<b>善意</b>第三人」——<b>錯</b>，一試超愛這樣交叉。§31 只看登記。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-01-無權代表§27III與§31.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>代理是「幫你說話」，代表是「就是你的手」</h2>
+  <div class="scene">
+    <p>A 法人的甲董事，帶著 A 的工人把圍籬圍到 B 的土地上，占了三年。B 要依 §767 把地要回來。</p>
+    <p class="q">B 該告甲，還是告 A？如果甲只是 A 的代理人，答案一樣嗎？</p>
+  </div>
+  <div class="vs">
+    <div><h4>代理（<span class="s">§103</span>）</h4>本人、代理人是<b>兩個人</b>。代理人只是用本人名義<b>做意思表示</b>，效果歸本人。只限法律行為、準法律行為；<b>侵權行為不能代理</b>。</div>
+    <div class="rule-c"><h4>代表（<span class="s">§27 II</span>）</h4>代表人＝法人，<b>一個主體</b>。代表人做的<b>任何事</b>（法律行為、事實行為、侵權行為）都是法人做的。</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>你的手打了人，不能說「不是我打的，是我的手打的」。董事是法人的手，甲占地＝A 占地，所以 B 要<b>告 A</b>；告甲會敗訴，因為法院會說甲沒有自己的無權占有事實，他是替 A 占的。最高法院 86 台上 1782 把這兩個制度講得很清楚：代表是一個權利主體間的關係，代理是兩個。</p>
+    <p>民法對代理規定一大堆，對代表只有「法人應設董事、董事代表法人」這種定義句。所以代表出問題（例如無權代表）時，依 §1 找法理，<b>類推</b>最像的代理規定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「我授權你幫我去打人」——那不是代理，是教唆、幫助。代理只能代為、代受意思表示。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-02-代表與代理的區別.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>法人會不會「自己」闖禍：直接告它 §184 可以嗎</h2>
+  <div class="scene">
+    <p>乙在 A 公司的賣場被掉落的貨架砸傷。監視器壞了，查不出是哪個員工沒固定貨架。乙想直接告 A 公司。</p>
+    <p class="q">找不到行為人，乙還能向 A 要賠償嗎？A「自己」能有故意過失嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>乙對 A 法人的請求權基礎</span><ul>
+      <li><span>找得到行為人</span><ul>
+        <li><span>行為人是董事／有代表權之人 → 對行為人 §184、對 A <b>§28</b></span></li>
+        <li><span>行為人是受僱人 → 對行為人 §184、對 A <b>§188</b></span></li>
+      </ul></li>
+      <li class="hit"><span>找不到行為人 → 直接對 A 主張 §184？早期不行 → 108 台上 2035：<b>可以</b></span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>早期說不行：§184 要「行為」（受意識支配的活動）和「故意過失」（主觀注意義務違反），法人沒有意識也沒有主觀狀態，所以只能靠 §28、§188 讓法人跟行為人連帶。最高法院 108 台上 2035 改採肯定，講了五個理由：法人實在說、文義沒排除、統合構成員的行為、保護被害人、風險分配。</p>
+    <p>學者說前兩個理由有寫跟沒寫一樣，第三個沒回答問題（找不到構成員要怎麼「統合」？）。真正站得住的是後兩個。學說自己的建法：法人的「行為」是<b>沒做到該做的組織義務</b>（不作為），「過失」用<b>客觀標準</b>判斷（陳聰富）。侵權行為法會再細講。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>法人有沒有契約責任？<b>一定有</b>，法人能簽約就要負債務不履行責任，這從來沒爭議。爭的只有侵權責任。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-03-法人侵權責任體系與§184肯定說.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>§28：法人跟它的手一起賠，被害人想告誰告誰</h2>
+  <div class="scene">
+    <p>A 公司登記的董事是甲，但大家都知道真正下決定的是沒掛名的老闆丙。丙以 A 的名義詐騙，被害人乙損失 100 萬。</p>
+    <p class="q">丙不是登記董事，A 要依 §28 負責嗎？乙可以只告 A 要 100 萬嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 董事或<b>其他有代表權之人</b><br><small>含清算人、破產管理人；含未登記的實質董事（101 台上 861）</small></div><div class="a"></div>
+    <div class="b">② 執行職務<br><small>與職務本體有關</small></div><div class="a"></div>
+    <div class="b">③ 加損害於他人<br><small>§184 前段後段皆可</small></div><div class="a"></div>
+    <div class="b ok">A 與丙<b>連帶</b>賠</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>「其他有代表權之人」不限形式上有頭銜的。只要對法人有實質控制力的影子董事，最高法院也算進去（<span class="s">§28</span>、101 台上 861）。所以丙的詐騙 A 要連帶負責。</p>
+    <p>連帶的意思在 <span class="s">§273</span>：被害人對債務人中一人、數人或全體，同時或先後，請求全部或一部——老師說「三個隨便」：告誰隨便、要多少隨便、先告誰隨便。乙可以只告 A 要 100 萬，也可以 A 20 丙 80。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>三個隨便有上限：損害 100 萬就是 100 萬，不能跟 A 要 100 再跟丙要 100。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-04-§28要件與連帶§273.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>開會算票：過半是「超過」，以上是「含」</h2>
+  <div class="scene">
+    <p>某登山協會 120 名社員，要變更章程。第一次開會來了 60 人、50 人贊成。第二次來了 80 人、60 人贊成。</p>
+    <p class="q">哪一次通過？如果是一個寺廟 31 名信徒、只來 7 人、5 人同意改選，算數嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>第一次：60 出席、50 同意</h4>§53 要「全體<b>過半</b>出席」。120 的一半是 60，剛好 60 不叫過半 → 第一關就刷掉 → <b>不通過</b></div>
+    <div class="rule-c"><h4>第二次：80 出席、60 同意</h4>80 過半 ✓；60/80＝3/4，「3/4 <b>以上</b>」含本數 ✓ → <b>通過</b></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>社團一人一票（<span class="s">§52 II</span>），跟公司法一股一票不同。普通決議：出席社員過半數（<span class="s">§52 I</span>）。特別決議只有兩個：變更章程（<span class="s">§53</span>）要全體過半出席＋出席 3/4 以上同意，或全體 2/3 以上書面同意；解散（<span class="s">§57</span>）要全體 2/3 以上可決、要開會。</p>
+    <p>寺廟那題是爭點：§52 I 只寫「出席社員過半數」，<b>沒寫要多少人出席</b>。最高法院看文義和體系（§53、§57 都寫了，§52 沒寫＝不要求），說 7 人出席 5 人同意有效。陳忠五老師說這沒有民主正當性：立法者是留白給章程自訂，章程沒訂就類推 §53 要過半出席，不夠就<b>決議不成立</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>出席數不足 → 「決議不成立」，不是無效也不是得撤銷。要先有「決議」的資格，才談它有沒有效。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-05-社團總會決議方法§52§53§57與出席數爭議.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>決議有瑕疵：程序問題三個月內告，內容問題直接無效</h2>
+  <div class="scene">
+    <p>100 人社團開會，10 人漏未收到通知。到場 70 人、50 人贊成，通過議案。那 10 人在決議後兩個月才知道，很不爽。</p>
+    <p class="q">他們還能撤銷嗎？寫存證信函說「我撤銷」有用嗎？就算告了，法院一定撤嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">瑕疵在哪？<br><span class="s">§56</span></div>
+    <div class="out"><span class="tag">程序</span><div class="b">召集程序／決議方法違法 → <b>得撤銷</b>：決議日起 3 個月內，請求<b>法院</b>撤銷；判決確定才生效</div></div>
+    <div class="out"><span class="tag">內容</span><div class="b no">決議內容違反法令章程 → <b>無效</b>，自始、無待撤銷 → 打確認之訴</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>漏發通知是程序瑕疵，走 <span class="s">§56 I</span>。沒出席的人有撤銷權（有出席卻沒當場異議的才沒有）。除斥期間從<b>決議日</b>起算三個月，不是從知道那天——兩個月才知道，就只剩一個月。而且條文寫「請求法院撤銷」，這是撤銷訴權，要打官司、判決確定才生效，存證信函撤不掉（跟 §88、§92 用意思表示撤銷不同）。</p>
+    <p>但就算告了：那 10 人全來、全反對，也是 80 出席 50 同意，結果不變。瑕疵非重大且對決議無影響 → 法院可以類推公司法 §189-1 駁回（107 台上 1957）。決議成本很高，不踩紅線就尊重它。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項寫「自社員<b>知悉</b>瑕疵起三個月內」——<b>錯</b>，是決議之日起。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-06-總會決議瑕疵§56撤銷與無效.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>基金會的錢捐出去了，什麼時候反悔來不及</h2>
+  <div class="scene">
+    <p>甲拿 1 億出來要成立基金會，送件申請許可後就過世了。繼承人想把錢要回來。另一題：某宗教財團法人的「信徒大會」決議把沒繳年費的 8 名信徒除名，捐助章程根本沒寫除名事由。</p>
+    <p class="q">繼承人撤回得了嗎？8 名信徒現在還是不是信徒？</p>
+  </div>
+  <div class="flow">
+    <div class="b">捐助、送件申請</div><div class="a lbl">①</div>
+    <div class="b">主管機關許可</div><div class="a lbl">②</div>
+    <div class="b">登記 ＝ 成立</div><div class="a"></div>
+    <div class="b no">之後撤不回來</div>
+  </div>
+  <div class="fork">
+    <div class="cond">捐助人在哪個階段過世？</div>
+    <div class="out"><span class="tag">①</span><div class="b">實務、王澤鑑：可撤回；林誠二：不可（已送件，尊重捐助人意思）</div></div>
+    <div class="out"><span class="tag">②</span><div class="b">實務：可撤回（登記前都可）；王澤鑑：不可（許可後就不行）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>「捐助」是把錢變成一個人（基金會），跟「捐贈」送錢給別人不同。財團沒有總會，意思機關是<b>捐助章程</b>；而且因為捐完就沒人盯，所以由<b>法院</b>外部監督。選擇題撤回時點選實務：登記前都還有救，登記後不行。</p>
+    <p>除名那題（111 年檢事官考題）：財團的信徒大會不是意思機關，章程沒寫除名事由，董事照大會決議除名就是<b>違反捐助章程</b> → <span class="s">§64</span> 法院得宣告無效。宣告前有效嗎？實務採撤銷訴訟說：<b>沒宣告前仍有效</b>（105、109 年判決）；吳從周採確認訴訟說：本來就無效，8 人還是信徒。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>民法只有 §64 用「宣告無效」四個字。吳從周的理由就卡在這：要撤銷就該寫「請求法院撤銷」，寫「宣告」就是確認它本來無效。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-07-財團法人捐助撤回與§64宣告無效.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>什麼東西才算「物」：你男朋友不是動產</h2>
+  <div class="scene">
+    <p>甲跟乙簽約，把「天上那顆星」賣給乙，收了 10 萬。丙問你：風力發電賣的風是物嗎？地上一粒灰塵是物嗎？所有權是物嗎？</p>
+    <p class="q">甲乙的契約有效嗎？風、灰塵、所有權，哪些是法律上的物？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>法律上的「物」四要件</span><ul>
+      <li><span>① 非人體的成分（人是主體，不被支配）</span></li>
+      <li class="hit"><span>② 人力所能支配 → 日月星辰 ✗ → 契約以不能給付為標的 → §246 無效</span></li>
+      <li><span>③ 能獨立滿足人類社會生活 → 一粒灰塵 ✗</span></li>
+      <li><span>④ 有體無體都可以 → 風力、電力 ✓；但抽象的權利（所有權、債權）✗</span></li>
+    </ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>權利客體＝被權利主體支配的對象，分「物」和「其他」（例如債權，可以讓與買賣）。民總 <span class="s">§66</span>～<span class="s">§70</span> 只處理物。四個要件過了才是物；是物之後再問：是土地或定著物嗎？是 → 不動產，否 → 動產（<span class="s">§67</span>）。所以風力是物、不是不動產 → <b>風力是動產</b>。</p>
+    <p>檢驗順序不能跳：先是物，才有動產不動產的問題。「你男朋友是動產還是不動產？」——他不是物，問題不成立。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>債權是權利客體（可以被支配、讓與），但<b>不是物</b>。所有權也不是物，它是法律創造的概念，人支配的是那個東西，不是「所有權」本身。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-08-權利客體與物的四要件.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>長在地上的、黏在地上的，都是「土地」</h2>
+  <div class="scene">
+    <p>甲把 A 地賣給乙，地上有一座魚池沒特別提。乙問：魚池是我的嗎？另一塊 B 地也有魚池，甲拿去跟銀行抵押，銀行問：抵押權效力及於魚池嗎？</p>
+    <p class="q">答案是「看魚池長什麼樣子」。為什麼？</p>
+  </div>
+  <div class="vs">
+    <div><h4>鋼筋混凝土魚塭</h4>有獨立結構、沒跟土地結為一體 → <b>獨立定著物＝獨立不動產</b>（91 台上 8115）→ 土地賣了魚池還是甲的 → 比照房屋，<span class="s">§425-1</span> 推定租賃；抵押權效力<b>不及</b></div>
+    <div class="rule-c"><h4>挖洞、貼石頭、灌水</h4>跟土地合為一體 → <b>土地的成分</b>（103 台上 280）→ 它就是土地，隨土地移轉；抵押權效力<b>及於</b></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>定著物四要件（63 年第 6 次民庭決議）：非土地成分、繼續附著、一定經濟目的、不易移動。第一關就是<b>獨立性</b>：長出來的樹、埋著的礦產、鋪上去的柏油路，只要沒分離、跟土地結為一體，就是土地的成分（<span class="s">§66 II</span>），不是獨立的物——不是定著物，也不是動產，它就是「土地」。所以土地抵押，銀行可以連樹一起賣。</p>
+    <p>魚池不是「肯定說／否定說」，是個案判斷：有獨立結構才有資格叫定著物。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>別把兩個魚池判決背成對立見解。老師說「丟啦」——是魚池長不一樣，不是法院想法不一樣。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-09-定著物四要件與魚池.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>蓋到哪才算房子、電線桿是不是不動產</h2>
+  <div class="scene">
+    <p>甲向台電租電線桿架第四台線路，一年 100 萬。台電忘了收，三年後一次要 300 萬。甲說：「電線桿是動產，租金時效兩年，我只付 200 萬。」</p>
+    <p class="q">電線桿是動產還是不動產？差一個字差 100 萬，差在哪一條？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">電線桿<br>不易移動嗎？</div>
+    <div class="out"><span class="tag">早期</span><div class="b">想拆就拆、颱風吹斷就換 → 動產 → 「租賃動產之租價」<span class="s">§127 ③</span> 二年 → 第一年罹於時效 → 付 200 萬</div></div>
+    <div class="out"><span class="tag">106 台上 1882</span><div class="b ok">現代電線桿牽一髮動全身，移動要層層評估 → 不動產 → 租金 <span class="s">§126</span> 五年 → 付 300 萬</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>這張卡是定著物後三個要件。<b>繼續性</b>：臨時敷設的輕便軌道、演唱會舞台、災後貨櫃屋，任務完成就拆 → 不是定著物（釋字 93）。<b>經濟性</b>：蓋房子蓋到<b>封頂、足以遮風避雨</b>就是定著物（63 年第 6 次決議後半）；封頂前是動產，交付就移轉；封頂後要登記。<b>固定性</b>：就是電線桿這題，老師說不是見解變了，是時代變了。</p>
+    <p>釋字 93 說輕便軌道「除臨時敷設者外」是不動產，但只講了繼續性和經濟性，<b>漏了固定性</b>——金世鼎大法官不同意見書當年就說，這樣下去電線桿也會變不動產。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題問輕便軌道，選釋字 93 的結論（不動產），不要選不同意見書。</p>
+    <p>南投兩層樓有水電的豪華狗舍：人都能住了，有經濟價值 → 定著物 → 才會有「違章建築」問題；動產不會是違建。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-10-輕便軌道封頂電線桿.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>一樹二賣：誰砍的就是誰的</h2>
+  <div class="scene">
+    <p>甲地上有一棵檜木。甲先把樹賣給乙，過幾天又賣給丙。丙動作快，把樹砍了運走。乙氣炸，告丙要樹。</p>
+    <p class="q">乙先買的，樹不該是乙的嗎？乙告丙會贏嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲賣乙<br><small>樹未分離＝土地成分，不是獨立的物</small></div><div class="a lbl">乙只買到</div>
+    <div class="b">砍伐權（對甲的<b>債權</b>）</div>
+    <div class="br"></div>
+    <div class="b">甲賣丙<br><small>債權平等，乙的債權對丙無效力</small></div><div class="a lbl">丙也買到</div>
+    <div class="b">砍伐權</div>
+    <div class="br"></div>
+    <div class="b">丙砍了</div><div class="a lbl">§70 I</div>
+    <div class="b ok">有收取權之人取得分離後的樹 → 樹是丙的</div>
+    <div class="br"></div>
+    <div class="b no">乙對丙：§348 ✗（丙不是契約當事人）、§767 ✗（乙不是所有人）</div>
+    <div class="br"></div>
+    <div class="b dim">只剩一條路</div><div class="a"></div>
+    <div class="b">乙對甲：§226 給付不能損害賠償</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>一物一權：一個物只受一個所有權支配。「一個物」有三種：獨立物（一塊土地，上面的樹是它的成分）、合成物（一台車，引擎輪胎是成分，一個物權行為搞定）、集合物（一間駕訓班，其實是幾百個物，要分別移轉）。<b>構成部分不是獨立的物</b>，不能單獨成為交易客體（<span class="s">§66 II</span>）。</p>
+    <p>所以 32 年上 6232 判例說：買沒分離的樹，「<b>僅</b>對出賣人有砍伐之權利」——僅＝只買到這個，對出賣人＝是債權。砍了才取得所有權（<span class="s">§70 I</span>、<span class="s">§766</span>），不因先買就是你的。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>老師口頭說「§70 第二項」，天然孳息是<b>第一項</b>；第二項是法定孳息（利息、租金）。</p>
+    <p>構成部分能單獨當物權標的的例外：法律另有規定，例如 <span class="s">§799</span> 區分所有建築物的專有部分（公寓）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-11-構成部分一物一權與一樹二賣.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>狗是「物」，但狗死了主人能不能要慰撫金</h2>
+  <div class="scene">
+    <p>甲的愛犬術後住進寵物醫院高壓氧艙，當晚艙內電線走火，狗被活活燒死。甲要求醫院賠狗的市價、醫藥費，還要慰撫金。</p>
+    <p class="q">狗在民法上是什麼？慰撫金要得到嗎？如果被害的是甲的孫子，阿公要得到嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>早期</h4>狗＝動產 → 財產權受侵害 → 可用錢衡量 → <b>無慰撫金</b>（§18 II 要人格權或身分權受侵害）。只能要市價、醫藥費。</div>
+    <div class="rule-c"><h4>106 年高院判決</h4>寵物是陪伴、非經濟目的，與人有<b>類似伴侶關係</b>，介於人與物之間 → 法律漏洞 → <b>類推侵權行為法</b> → <b>有慰撫金</b></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>動產的檢驗很簡單：是物、不是土地或定著物 → 動產（<span class="s">§67</span>）。動物在民法裡就是動產、人的財產，可以買賣；動保法另外保護，但不改變民法的定位。</p>
+    <p>老師對高院判決的評論：結論大家心裡能接受，論理有洞。孫子被撞死，阿公依 <span class="s">§194</span>（限父母子女配偶）<b>沒有</b>慰撫金；狗被燒死，主人<b>有</b>——阿公跟孫子的感情比不上人跟狗？學者的替代路徑：人與寵物的關係是人格權的延伸，走 <span class="s">§195 I</span>「其他人格法益而情節重大」，用「情節重大」當濾網。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>土地上的石頭是動產；土地上<b>沒分離的樹</b>不是動產，它是土地的成分，就是土地。</p>
+    <p>下堂續：與人體分離的部分、屍體，在法律上怎麼評價。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法03-筆記-12-動產§67與動物寵物慰撫金.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>
