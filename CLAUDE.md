@@ -42,6 +42,14 @@ epub / pdf 轉換目前不需要，不要主動提。
 4. 寫 ELI5 頁（HTML），用無頭瀏覽器截圖檢查流程框、時間軸沒有重疊。ELI5 句子白話，但法律概念用正式用語（除去侵害、效力未定、情節重大…），標題不用要轉一下才懂的比喻——Frank 要藉此適應二試讀寫的法律用語。
 5. 回報檔案清單。下一步固定是「下一堂」或「補 13~15 的筆記」。
 
+## 字幕缺漏補錄（錄音辨識）
+志光影片是 BlendVision DASH＋Widevine/PlayReady 加密：不下載、不解密；Windows 即時輔助字幕也收不到這段聲音（2026/10/19 實測）。可行做法是錄電腦播出的聲音：
+1. 先看字幕檔判斷：時間戳連續但內容斷句，或一條字幕撐很久字卻很少 → 才需要錄。字幕時間戳可能比影片實際時間晚到約 1 分鐘，播放起點往前多抓。
+2. 請 Frank 雙擊 `scripts\record_clip.bat`（Claude 只有檔案總管點選權，不能自己執行）。它錄 110 秒 WASAPI loopback → `_rec\clip.wav`，狀態寫在 `_rec\status.txt`（INSTALLING → RECORDING → DONE）。
+3. 看到 RECORDING 後，用 Claude in Chrome 在課程頁（`ai.highstudy.com.tw` playlist，點「115律師-民法A(袁翟)-NN」）以 JS 設 `video.currentTime`、取消靜音、`play()`。loopback 只在有聲音時寫入，wav 起點＝開始播放的位置。
+4. stage `clip.wav` 到雲端，ffmpeg 轉 16k 單聲道，用 sherpa-onnx `paraformer-zh-small-2024-03-09`（GitHub releases 下載；Hugging Face 被擋）分 8 秒辨識，轉繁體、改明顯錯字。
+5. 補進字幕 md 缺口處，開頭標「【以下為錄音辨識補錄，原字幕缺漏；錯字已人工校正】」；筆記來源註記改成「已以錄音辨識補入」。commit、push 後請 Frank 刪 `_rec\`（已在 .gitignore）。
+
 ## 硬規則
 - 任何既有 `.md` 不覆蓋；要更新就在原檔上改。
 - 法條原文不確定就標「→ 建議查閱最新六法原文」，不捏造。
