@@ -9,7 +9,7 @@
 import os, re, urllib.parse as up
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = '課程字幕'
-ORDER = ['民法', '強制執行法', '民事訴訟法', '刑法', '刑訴', '行政法', '保險法', '票據法', '民法-陳聰富']
+ORDER = ['民法', '強制執行法', '民事訴訟法', '刑法', '刑訴', '憲法', '行政法', '保險法', '票據法', '民法-陳聰富']
 
 def q(p): return up.quote(p)
 def natkey(s): return [int(t) if t.isdigit() else t for t in re.split(r'(\d+)', s)]
