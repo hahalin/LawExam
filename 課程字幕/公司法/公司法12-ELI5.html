@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公司法12 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="公司法12">
+<main>
+
+<header class="lesson-head">
+  <h1>公司法12</h1>
+  <span class="sub">董事退任類型・持股轉讓超過二分之一三段期間§197・餘額認定說・決議解任與賠償§199・提前改選視為解任§199-1・裁判解任先行程序§200・投保中心排除要件與三年失格・跨任期與跨公司解任・競業許可§209・歸入權・兼任與競業§32・參與決議董事責任§193・違法制止請求權§194、§218-2</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>公開發行公司董事賣超過一半持股：任期中當然解任，就任前當選失其效力</h2>
+  <div class="scene">
+    <p>甲上市公司 4 月 27 日停止過戶，名簿記載乙持股 100 萬股，足以當選一席。6 月 25 日股東會選乙為董事，6 月 29 日就任。乙在 5 月 10 日賣掉 60 萬股。</p>
+    <p class="q">乙在股東會上能投幾股？當選還算數嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 500 100" role="img" aria-label="§197 三段期間">
+    <line x1="15" y1="48" x2="490" y2="48"/>
+    <circle class="dot" cx="40" cy="48" r="5"/>
+    <circle class="dot" cx="200" cy="48" r="5"/>
+    <circle class="dot acc" cx="340" cy="48" r="5"/>
+    <text x="40" y="28" text-anchor="middle">4/27 停止過戶</text>
+    <text x="200" y="28" text-anchor="middle">6/25 選任</text>
+    <text x="340" y="28" text-anchor="middle">6/29 就任</text>
+    <text class="mu" x="120" y="78" text-anchor="middle">當選失其效力</text>
+    <text class="mu" x="270" y="78" text-anchor="middle">當選失其效力</text>
+    <text class="mu" x="425" y="78" text-anchor="middle">當然解任</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>閉鎖期間名簿不變更，乙照樣可投 100 萬股、照樣當選，所以法律把限制往前延伸：任期中轉讓超過選任當時持股二分之一，<b>當然解任</b>（<span class="s">§197 I</span>）；當選後就任前、或閉鎖期間轉讓超過二分之一，<b>當選失其效力</b>（<span class="s">§197 III</span>）。立法基礎是<b>經所合一</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>只限<b>公開發行公司</b>。非公開發行公司的董事賣光持股也不會解任。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-01-董事退任的類型與持股轉讓超過二分之一的三段期間§197.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>賣出股數超過一半不一定解任，要看剩下的持股有沒有低於選任時的一半</h2>
+  <div class="scene">
+    <p>甲公司是上市公司，董事乙就任時持股 100 股。6 月 2 日乙買進 50 萬股，6 月 8 日賣出 60 股，6 月 12 日再賣出 50 萬股。</p>
+    <p class="q">乙在哪一天當然解任？</p>
+  </div>
+  <div class="flow">
+    <div class="b">就任 100 股</div><div class="a lbl">買 50 萬股</div>
+    <div class="b">500,100 股</div><div class="a lbl">賣 60 股</div>
+    <div class="b dim">500,040 股：不解任</div>
+    <div class="br"></div>
+    <div class="b">500,040 股</div><div class="a lbl">賣 50 萬股</div>
+    <div class="b no">剩 40 股 &lt; 50：6/12 當然解任</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>經濟部採<b>餘額認定說</b>：轉讓後<b>實際持有</b>低於選任當時持股二分之一才解任。要「超過」二分之一，100 股賣 50 股不構成。選任時持股為零不受限制；法人代表人當選，看<b>法人股東</b>的持股。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>任期中才轉為公開發行：公開發行後<b>又有轉讓</b>，才和之前的轉讓<b>併同計算</b>。只在非公開發行時賣，不適用。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-02-超過二分之一的認定、非公開轉公開累計與餘額認定說§197.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>股東會沒有正當理由也能解任董事，但要賠報酬</h2>
+  <div class="scene">
+    <p>甲公司董事乙任期還剩一年，月薪 20 萬元。乙工作正常，但被爆出婚外情，股東會以特別決議把他解任。乙主張剩下一年的報酬、原本會分到的酬勞，以及出差費用。</p>
+    <p class="q">解任有效嗎？乙能請求哪些？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>無正當理由解任 → 金錢賠償</span>
+      <ul><li class="hit"><span>報酬：勞務對價，可以請求</span></li>
+      <li class="off"><span>業務執行費用：實報實銷，沒支出就沒有</span></li>
+      <li><span>酬勞：林國全否定、劉連煜肯定</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股東會得<b>隨時</b>以<b>特別決議</b>解任董事，不得以臨時動議提出；無正當理由也可以解任，只是董事得請求賠償（<span class="s">§199 I</span>）。正當理由看是否違反<b>委任契約</b>關係或<b>顯不適任</b>，例如經常不出席、挪用公款。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>私德問題不是正當理由。被解任的董事兼股東，多數說與法院認為<b>不須迴避</b>；一次表決解任兩名董事，最高法院認為得撤銷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-03-股東會決議解任董事、無正當理由的賠償與利害關係迴避§199.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>任期中改選全體董事，原任董事原則上立刻下台</h2>
+  <div class="scene">
+    <p>甲公司董事甲、乙、丙任期到 2028 年 6 月。2026 年 3 月股東會提前改選 3 席，選出甲、丁、戊；會中沒有其他決議。</p>
+    <p class="q">乙、丙做到什麼時候？丁、戊什麼時候就任？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">任期未屆滿＋改選全體董事</div>
+    <div class="out"><span class="tag">原則</span><div class="b no">視為提前解任，新任 2026/3 立即就任</div></div>
+    <div class="out"><span class="tag">例外</span><div class="b ok">另為決議任期屆滿始解任 → 做到 2028/6</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股東會於任期未屆滿前改選<b>全體</b>董事，未決議任期屆滿始為解任，<b>視為提前解任</b>（<span class="s">§199-1 I</span>）。定足數過半數出席（<span class="s">§199-1 II</span>），多數決回歸累積投票制；例外的決議普通決議即可。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>甲又當選仍算全體改選，看席次不看結果。同次會議<b>不得</b>以臨時動議改成任期屆滿才就任，要事先列案。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-04-任期中改選全體董事視為提前解任§199-1.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>訴請法院裁判解任前，要先讓解任議案在股東會被否決</h2>
+  <div class="scene">
+    <p>甲公司董事長乙掏空公司資產。股東丙持股 4%，想直接到法院請求解任乙。</p>
+    <p class="q">丙可以直接起訴嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">丙以 §172-1 提案解任乙</div><div class="a lbl">股東會</div>
+    <div class="b no">議案被否決</div><div class="a lbl">30 日內</div>
+    <div class="b ok">持股 3% 以上訴請裁判解任</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>事由要有<b>重大</b>損害公司之行為，或違反法令或章程之<b>重大</b>事項；持股 <b>3% 以上</b>；股東會後 <b>30 日內</b>（<span class="s">§200</span>）。「股東會未為決議將其解任」指解任議案<b>曾提出而未通過</b>：法院是第二線，用來矯正不當的股東會決議。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>持股夠也不能跳過股東會。§199 解任不需要事由，§200 一定要有事由。裁判解任效力到該次任期屆滿。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-05-裁判解任的立法目的與先行程序要件§200.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>投保中心只持股 1,000 股，也能直接訴請裁判解任上市公司董事</h2>
+  <div class="scene">
+    <p>乙上市公司董事以人頭借款掏空公司。股東甲與投保中心各持有 1,000 股，兩者都沒有在股東會提出解任議案，就分別直接起訴請求解任。</p>
+    <p class="q">誰的起訴合法？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><b>股東甲：公司法 §200</b><br>持股未達 3%<br>未經股東會否決議案<br>→ 不合法</div>
+    <div class="rule-c"><b>投保中心：投保法 §10-1</b><br>不需 3%，有股東身分即可<br>不需先行程序<br>→ 合法</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>投保中心對<b>上市、上櫃、興櫃</b>公司董監訴請裁判解任，<b>不受 §200 限制</b>：持股 3% 法條排除、先行程序依立法理由排除，但<b>事由保留</b>。解任確定後 <b>3 年內</b>不得充任上市櫃興櫃公司董監，已充任者當然解任。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>訴訟中董事辭職，因有失格效力，仍有<b>訴之利益</b>。失格期間仍可當經理人，是立法評論批評的缺陷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-06-投保中心裁判解任排除持股與程序要件及三年失格投保法§10-1.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>上一任的不法行為可以解任這一任，他公司的不法行為也可以</h2>
+  <div class="scene">
+    <p>甲上市公司董事乙第一任到 2022 年 7 月。乙 2021 年 10 月掏空公司，當時沒人發現，連任後 2023 年 2 月才被發現。董事丙曾在丁公司內線交易。</p>
+    <p class="q">投保中心能解任乙的第二任、丙在甲公司的職位嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 500 100" role="img" aria-label="跨任期解任時間軸">
+    <line x1="15" y1="48" x2="490" y2="48"/>
+    <line class="acc" x1="250" y1="48" x2="470" y2="48" style="stroke-width:5"/>
+    <circle class="dot" cx="40" cy="48" r="5"/>
+    <circle class="dot" cx="160" cy="48" r="5"/>
+    <circle class="dot" cx="250" cy="48" r="5"/>
+    <circle class="dot acc" cx="360" cy="48" r="5"/>
+    <text x="40" y="28" text-anchor="middle">2019/7 第一任</text>
+    <text x="160" y="28" text-anchor="middle">2021/10 事由</text>
+    <text x="250" y="78" text-anchor="middle">2022/7 連任</text>
+    <text x="360" y="28" text-anchor="middle">2023/2 發現</text>
+    <text class="mu" x="430" y="78" text-anchor="middle">起訴解任第二任</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>投保法 <span class="s">§10-1 I ②</span>：解任事由<b>不以起訴時任期內發生者為限</b> → 跨任期解任；訴訟中連任，訴訟也可續行。2025 年修正刪除「執行業務」，立法理由：不論是否在執行所屬公司業務都有解任必要 → <b>跨公司解任</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>公司法 §200 <b>沒有明文</b>可以跨任期，學說有爭議，老師採肯定說（改選時股東未必知悉、避免訴訟拖延）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-07-跨任期解任與跨公司解任投保法§10-1、§200.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>股東會概括許可董事競業，決議無效</h2>
+  <div class="scene">
+    <p>甲公司是上市公司，從事小筆電代工。股東常會通過：「本公司為多角化經營，為適應時勢需要，凡本公司董事為自己或他人為屬營業範圍內之行為，均予許可。」</p>
+    <p class="q">這個許可有效嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">董事競業的股東會許可</div>
+    <div class="out"><span class="tag">具體說明</span><div class="b ok">足供合理預測營業受影響程度 → 有效</div></div>
+    <div class="out"><span class="tag">概括許可</span><div class="b no">不知道同意了什麼 → 內容違法，無效</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>董事為屬於公司營業範圍內的行為，應對<b>股東會</b>說明<b>重要內容</b>並取得許可，<b>特別決議</b>（<span class="s">§209 I、II</span>），不得以臨時動議提出。營業範圍＝章程所載且實際進行的業務，包括<b>著手準備</b>、<b>暫時停止</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>只能<b>事前、具體個別</b>許可，不能事後追認。§209 是忠實義務的具體規定，<b>優先於 §23</b> 適用；該董事兼股東要迴避。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-08-董事競業禁止的營業範圍與說明重要內容的許可§209.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>董事沒經許可就競業，交易有效，公司一年內可決議歸入所得</h2>
+  <div class="scene">
+    <p>甲公司經營連鎖速食。董事乙沒經股東會許可，自己開了漢堡店，2026 年 1 月賺進 300 萬元。甲公司 2027 年 3 月才發現。</p>
+    <p class="q">漢堡店的交易有效嗎？甲公司還能拿回 300 萬元嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">未經許可競業</div><div class="a lbl">行為有效</div>
+    <div class="b">股東會普通決議</div><div class="a lbl">形成請求權</div>
+    <div class="b ok">請求交付所得</div>
+    <div class="br"></div>
+    <div class="b">2026/1 所得產生</div><div class="a lbl">已逾一年</div>
+    <div class="b no">2027/3 不得歸入</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股東會<b>得</b>以決議將該行為之所得視為公司之所得；自所得產生後<b>逾一年</b>者不在此限（<span class="s">§209 V</span>）。這是<b>普通決議</b>，乙兼股東要迴避；一年是<b>除斥期間</b>，與 §23 III 相同。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>事前許可是特別決議、事後歸入是普通決議。「視為公司之所得」不是錢自動進公司，仍要向乙請求。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-09-違反競業禁止的效力與歸入權§209.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>董事兼任他公司職位，同類業務才需要許可，經理人端另走 §32</h2>
+  <div class="scene">
+    <p>乙是甲晶圓代工公司的董事，想同時擔任丙晶圓代工公司的經理人，也想當丁牛排館的董事。</p>
+    <p class="q">乙要取得哪些許可？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>兼任是否構成競業：看有無業務機密外洩之虞</span>
+      <ul><li class="hit"><span>甲董事兼丙經理人（同類）：甲依 §209、丙依 §32，兩次許可</span></li>
+      <li class="off"><span>甲董事兼丁董事（不同類）：不須許可</span></li>
+      <li><span>經理人兼經理人：§32 前段明文禁止，不分同類</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>只有經理人兼經理人有明文禁止（<span class="s">§32</span>）。董事兼董事、董事兼經理人、經理人兼董事沒有明文，改問是否構成競業行為：兩家是<b>同類業務</b>才有利益衝突。董事端用 <span class="s">§209</span>，經理人端用 §32 並依 §29 I 方式同意。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>百分之百持股母子公司間兼任，實務不需 §209 許可。經理人兼同類公司<b>監察人</b>不構成競業，監察人不執行業務。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-10-董事與經理人的兼任是否構成競業§209、§32.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>董事會決議違反股東會決議，參與決議的董事要賠；異議要有紀錄才免責</h2>
+  <div class="scene">
+    <p>甲公司股東會決議不得投資海外不動產，董事會 5 席仍決議投資，董事長照決議執行，公司虧損 1 億元。乙、丙同意；丁口頭說不同意但議事錄沒記；戊沒理由不出席；己有記錄的異議。</p>
+    <p class="q">誰要對公司負責？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>依董事會決議執行（§193）</span>
+      <ul><li class="hit"><span>同意：乙、丙有責</span></li>
+      <li class="hit"><span>異議但無紀錄或書面聲明：丁有責</span></li>
+      <li class="hit"><span>無正當理由未出席：戊有責（學者多數）</span></li>
+      <li class="off"><span>異議且有紀錄：己免責</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>董事會執行業務應依照法令、章程及股東會決議；決議違反致<b>公司</b>受損，<b>參與決議</b>的董事對公司負賠償責任；表示<b>異議</b>且有<b>紀錄或書面聲明</b>可證者免責（<span class="s">§193</span>）。出席但棄權、離席，林國全認為仍有責。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>前提是<b>有董事會決議且照著做</b>。沒開董事會、未依決議或逾越權限，只有執行者依 §23 負責。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-11-董事會決議違法時參與決議董事的責任與其他法定責任§193、§226、§193-1.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>持股多少都沒關係，持股滿一年的股東就能請求董事會停止違法行為</h2>
+  <div class="scene">
+    <p>甲公司董事會決議違反法令，準備把公司資金貸與董事長親戚開的公司。股東乙只持有 1 張股票，已持有兩年；丙是監察人。資金還沒撥出。</p>
+    <p class="q">乙可以請求停止嗎？要不要等丙先出手？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>股東（§194）</b><br>繼續一年以上，不問比例<br>對象：董事會（解釋上含董事）<br>事項：法令、章程（解釋上含股東會決議）</div>
+    <div class="rule-c"><b>監察人（§218-2 II）</b><br>監察人<br>對象：董事會或董事<br>事項：法令、章程、股東會決議</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><b>繼續一年以上</b>持有股份的股東，得請求董事會停止其行為（<span class="s">§194</span>），是單獨股東權；必要時可聲請假處分。監察人應即通知董事會或董事停止其行為（<span class="s">§218-2 II</span>）。兩者<b>並行不悖、不分先後</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題最愛考「需要持股比例」「股東要先請監察人制止」——<b>都錯</b>。資金已撥出就沒有制止的問題，只剩事後求償。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法12-筆記-12-股東與監察人的違法制止請求權§194、§218-2.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

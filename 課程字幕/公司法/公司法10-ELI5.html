@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公司法10 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="公司法10">
+<main>
+
+<header class="lesson-head">
+  <h1>公司法10</h1>
+  <span class="sub">多數決扣除及於所有表決權受限制股份§180・自身利害關係迴避§178・法人股東與董事報酬案・董事設質超過二分之一§197-1・選任時零股與上限・相互投資、放棄表決權與假處分・決議瑕疵三類型§189、§191・決議不成立・召集程序與決議方法瑕疵・當場異議與訴權繼受・裁量駁回§189-1・撤銷後效力與§191擴張</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>超額代理的股份計入出席、不算入表決權數，3% 以有表決權股份計算</h2>
+  <div class="scene">
+    <p>甲公司已發行 1,000 萬股，其中無表決權特別股 200 萬股。丁同時受股東 A（30 萬股）、B（20 萬股）委託出席股東會。</p>
+    <p class="q">丁代理的 50 萬股，出席股份數算多少？表決權數算多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">有表決權 800 萬</div><div class="a lbl">× 3%</div>
+    <div class="b">上限 24 萬</div><div class="a lbl">丁代理 50 萬</div>
+    <div class="b ok">出席股份數 50 萬</div>
+    <div class="br"></div>
+    <div class="b">表決權數</div><div class="a"></div>
+    <div class="b ok">24 萬</div><div class="a lbl">超過部分</div>
+    <div class="b no">26 萬不予計算</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§180 II</span> 條文只寫 §178，但學者與實務都認為<b>所有表決權受限制</b>的股份都要在多數決扣除，例如限制表決權特別股、超額代理。超額代理的部分<b>計入出席股份數、不算入表決權數</b>（<span class="s">§177 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>經濟部認為 3% 是<b>實際得行使表決權</b>的 3%，所以是 24 萬，不是 1,000 萬的 3%（30 萬）。定足數只扣「無」表決權股份，「限制」表決權在多數決扣除。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-01-多數決扣除及於所有表決權受限制的股份§180、§157、§177.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>跟大股東交易的議案，大股東自己不能投，也不能替別人投</h2>
+  <div class="scene">
+    <p>甲公司已發行 1,000 萬股，股東會出席 700 萬股，表決兩案：①向大股東乙（130 萬股）購買乙的大樓；②向無關的丙購買大樓。股東丁（50 萬股）委託乙出席。</p>
+    <p class="q">議案①的表決權數是多少？議案②呢？</p>
+  </div>
+  <div class="flow">
+    <div class="b">議案① 出席 700 萬</div><div class="a lbl">− 乙 130 萬</div>
+    <div class="b">570 萬</div><div class="a lbl">− 丁 50 萬</div>
+    <div class="b ok">520 萬，同意須超過 260 萬</div>
+    <div class="br"></div>
+    <div class="b">議案② 與乙無關</div><div class="a"></div>
+    <div class="b ok">700 萬正常計算</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股東對會議事項有<b>自身利害關係</b>，且致有害於公司利益之虞，不得加入表決，也<b>不得代理</b>他股東（<span class="s">§178</span>），股份不算入已出席股東表決權數（<span class="s">§180 II</span>）。最高法院採<b>法律上利害關係說</b>；迴避依議案判定，有害公司利益之虞通常推定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙改委託與議案無關的戊替自己投票，經濟部認為<b>仍受 §178 限制</b>，因為代理的效力歸屬乙本人。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-02-自身利害關係股東不得加入表決與不得代理§178.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>法人股東有無利害關係看法人本身；先議決報酬再選董事，不必迴避</h2>
+  <div class="scene">
+    <p>丙公司股東會表決是否參加甲公司告乙的訴訟。投同意票的法人股東中，A 公司董事長就是乙，B 公司董事長是乙的兒子。丁公司股東會先通過下一任董事報酬，再改選董事，大股東戊兩案都投票。</p>
+    <p class="q">A、B 公司要迴避嗎？戊呢？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">有無 §178 利害關係</div>
+    <div class="out"><span class="tag">法人股東</span><div class="b ok">以 A、B 公司本身認定 → 不必迴避</div></div>
+    <div class="out"><span class="tag">報酬案</span><div class="b ok">先議報酬、後選任 → 無利益衝突</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>最高法院以<b>法人股東本身</b>為認定標準，不以代表人為準，屬形式認定（103 台上 2719）。董事報酬案：<b>先議決下一任報酬</b>，通過後才選任下一任董事，沒有利益衝突（105 台上 678）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>學者批評代表人與訴訟當事人關係密切卻不必迴避。報酬案考的話只考「先議決報酬、後選任」這個順序；倒過來就要討論 §178。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-03-法人股東利害關係以股東本身認定與先議決報酬再選任董事§178.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>公開發行公司董事設質超過選任時持股一半，超過的部分不能投票</h2>
+  <div class="scene">
+    <p>甲公司是上市公司。董事乙選任時持股 1 萬股，任期中又買進，開會時持股 3 萬股，其中 6,000 股設定質權向銀行借款。</p>
+    <p class="q">乙在股東會可以行使多少表決權？</p>
+  </div>
+  <div class="flow">
+    <div class="b">設質 6,000</div><div class="a lbl">− 選任 1 萬 × 1/2</div>
+    <div class="b no">1,000 不得行使</div><div class="a lbl">3 萬 − 1,000</div>
+    <div class="b ok">29,000 可行使</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公開發行公司董事以股份設質<b>超過選任當時持股 1/2</b>，超過的股份不得行使表決權，不算入已出席股東表決權數（<span class="s">§197-1 II</span>），監察人準用（<span class="s">§227</span>）。設質數以最後過戶日股東名簿為準（經濟部 100.12.29 函）。設質應即通知公司，公司申報期限：公司法 15 日、證交法 5 日。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>減的是<b>選任當時</b>持股的一半，不是開會時 3 萬股的一半。非公開發行公司不適用 II。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-04-董事股份設質的通知申報與超過選任當時二分之一不得行使表決權§197-1、§227.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>選任時零股全部能投；不能投的最多就是選任時持股的一半</h2>
+  <div class="scene">
+    <p>甲公司是上櫃公司。董事乙選任時持股 1 萬股，任期中買進 5 萬股，以其中 3 萬股設質。董事丙選任時一股都沒有，任期中買進 1 萬股，全部設質。</p>
+    <p class="q">乙、丙各能行使多少表決權？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙：3 萬 − 5,000</div><div class="a"></div>
+    <div class="b dim">文義 25,000</div><div class="a lbl">超過上限</div>
+    <div class="b no">只扣 5,000</div><div class="a lbl">6 萬 − 5,000</div>
+    <div class="b ok">55,000</div>
+    <div class="br"></div>
+    <div class="b">丙：選任時 0 股</div><div class="a"></div>
+    <div class="b ok">不受限制，1 萬全部行使</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>經濟部 100.12.29 函：不得行使的股份以<b>選任當時持股 1/2 為上限</b>。選任時持股為零，其後買進並設質<b>不受影響</b>，因為當選不是靠自己的持股（<span class="s">§197-1 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>照條文算出 25,000 是錯的：算出來的不得行使股數很大，通常就是超過上限。上限理由之一是避免任期中買越多、受限越多。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-05-選任時持股為零不受限制與不得行使表決權以選任當時二分之一為上限§197-1.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>股份被假處分的股東仍可出席，出席照算、表決權扣掉</h2>
+  <div class="scene">
+    <p>甲公司已發行 1,000 萬股，無表決權特別股 100 萬。出席 600 萬股，含戊被假處分禁止行使股東權的 30 萬股，戊仍到場。乙公司持有甲 37%、甲持有乙 42%，雙方知情。</p>
+    <p class="q">戊的 30 萬股算進出席股份數嗎？乙公司能行使多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">分母 900 萬</div><div class="a lbl">出席 600 萬</div>
+    <div class="b ok">達定足數（戊照算）</div><div class="a lbl">− 戊 30 萬</div>
+    <div class="b">表決權 570 萬</div>
+    <div class="br"></div>
+    <div class="b">乙持有甲 37%</div><div class="a lbl">相互投資</div>
+    <div class="b no">最多行使 1/3</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>95 台上 984：出席是基於股東身分<b>參與公司治理</b>，不是主張權利，所以仍得出席、計入定足數，表決權則扣除。相互投資公司知情者，得行使表決權不超過 <b>1/3</b>（<span class="s">§369-10</span>）；依企併法 §12 放棄表決權者也不算入。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>定足數扣除只記兩條：<b>無表決權特別股（§157）、§179 II</b>；其他八種都是多數決扣除。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-06-相互投資、放棄表決權與股份假處分的多數決扣除§369-10、§317、企併法§12.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>程序瑕疵在撤銷判決確定前都有效；內容違法直接無效</h2>
+  <div class="scene">
+    <p>甲公司 2023 年 6 月 27 日以特別決議解任董事乙，但召集通知晚寄了 5 天。乙在 30 日內起訴撤銷，打到 2028 年 5 月才勝訴確定。另一次股東會決議「購買象牙裝飾公司大廳」。</p>
+    <p class="q">這五年間解任決議有效嗎？買象牙的決議呢？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 500 100" role="img" aria-label="撤銷訴訟時間軸">
+    <line x1="15" y1="48" x2="490" y2="48"/>
+    <line class="acc" x1="60" y1="48" x2="430" y2="48" style="stroke-width:5"/>
+    <circle class="dot" cx="60" cy="48" r="5"/>
+    <circle class="dot" cx="190" cy="48" r="5"/>
+    <circle class="dot acc" cx="430" cy="48" r="5"/>
+    <text x="60" y="28" text-anchor="middle">2023/6/27 決議</text>
+    <text x="190" y="28" text-anchor="middle">7/27 前起訴</text>
+    <text x="430" y="28" text-anchor="middle">2028/5 勝訴確定</text>
+    <text class="mu" x="245" y="78" text-anchor="middle">訴訟中決議仍有效</text>
+    <text class="mu" x="430" y="78" text-anchor="middle">溯及無效</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>召集程序或決議方法違反法令章程，股東得自<b>決議之日起 30 日內</b>訴請撤銷（<span class="s">§189</span>）；撤銷前決議<b>有效</b>，勝訴確定才溯及無效。決議<b>內容</b>違反法令章程<b>無效</b>（<span class="s">§191</span>）。股東會成本高，所以程序瑕疵的效力放得比較弱。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>撤銷的對象是<b>個別決議</b>，不是整個股東會。30 日從決議日起算；沒起訴，有瑕疵的決議也確定有效。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-07-股東會決議瑕疵的三種類型與得撤銷效力較弱的理由§189、§191.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>無召集權人召集、出席股份數不足定額，決議不成立</h2>
+  <div class="scene">
+    <p>丙不是董事也沒有召集權，自己發通知召開甲公司股東會，決議解任董事乙。戊公司（公開發行）解任董事時只有 41% 股份出席，同意 70%。己公司承認財報（普通決議）時只有 45% 出席。</p>
+    <p class="q">三個決議各是什麼效力？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>決議不成立（法未明文，提確認之訴）</span>
+      <ul><li class="hit"><span>無召集權人召集：近期實務不成立；早期 28 上 1911 無效</span></li>
+      <li class="hit"><span>出席不足定額：103 年第 11 次民庭 → 戊公司 41%</span></li></ul></li>
+    <li><span>先看有沒有退路</span>
+      <ul><li class="off"><span>公發特決：過半數出席 × 2/3 同意（§199 III）</span></li>
+      <li class="off"><span>普決：1/3 以上出席可假決議 → 己公司 45%（§175）</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>決議成立過程顯然重大違法、欠缺成立要件，屬<b>不成立</b>，提確認之訴。無召集權人解任乙，內容合法不能用 §191；若只能用 <span class="s">§189</span>，訴訟中決議有效，乙要先離職，所以承認不成立。法定出席數額是<b>成立要件</b>，不足即不成立。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>出席 52% 的公發公司解任案可以退一步，不是不成立。表決權數不足是議案未通過，不必討論瑕疵。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-08-決議不成立的無召集權人召集與出席股份數不足103年度第11次民事庭會議.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>董事長自己召集、監察人沒必要時召集，最高法院都認為得撤銷</h2>
+  <div class="scene">
+    <p>甲公司董事長乙沒有開董事會，直接以董事長名義召開股東會。乙公司董事會已合法決議召集，但通知上誤寫成「董事長召集」。丙公司董事會正常運作，監察人卻在沒有必要時自行召集股東會。</p>
+    <p class="q">三次股東會的決議效力如何？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><b>得撤銷（§189）</b><br>董事長未經董事會決議召集<br>監察人無必要召集<br>以臨時動議提出 §172 V 事項<br>主席不適格、未提委託書、利害關係股東投票</div>
+    <div class="rule-c"><b>不構成瑕疵</b><br>已有合法董事會決議<br>只是誤載董事長名義或公司名義<br>違反議事規則</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股東會原則上由<b>董事會</b>召集（<span class="s">§171</span>）。最高法院認為董事長未經董事會決議召集、監察人無必要而依 <span class="s">§220</span> 召集，都是召集程序違反法令，<b>得撤銷</b>。決議方法瑕疵常見於主席、股東、委託書、利害關係四類。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙公司已有合法董事會決議，只是寫錯名義，<b>不構成瑕疵</b>。王文宇老師認為甲、丙兩例較像無召集權人，應屬不成立。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-09-召集程序與決議方法瑕疵的態樣§171、§172、§182-1、§220.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>出席未異議原則上不能告；未出席、來不及異議、受讓股份的人可以</h2>
+  <div class="scene">
+    <p>甲公司 6 月 30 日開股東會，召集通知期間不足。股東 A 出席但沒說話；B 出席，主席趁部分股東鼓譟未經決議就宣布散會；C 沒有出席；D 出席並當場異議，7 月 10 日把股份賣給 E。</p>
+    <p class="q">A、B、C、E 誰能訴請撤銷？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§189 原告（決議時是股東）</span>
+      <ul><li><span>出席且當場異議 → 有訴權</span></li>
+      <li class="off"><span>A：出席未異議 → 原則無</span></li>
+      <li class="hit"><span>B：無充分機會異議（或瑕疵無法得知）→ 有</span></li>
+      <li class="hit"><span>C：未出席 → 有</span></li>
+      <li class="hit"><span>E：前手 D 有訴權 → 訴權繼受</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>最高法院<b>類推適用</b>民法 <span class="s">§56 I 但書</span>：出席股東未當場表示異議，不得訴請撤銷，理由是禁反言。例外是無充分機會異議、瑕疵無法得知；未出席股東無法期待預知，也能起訴。前手已取得訴權，股份移轉時訴權一併移轉。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>E 若是認購公司發行的<b>新股</b>（原始取得），不能繼受訴權。只投反對票不等於當場異議。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-10-撤銷訴訟原告須當場異議的類推適用、例外與訴權繼受§189、民法§56.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>漏未通知屬重大瑕疵；不重大且無影響，法院才能駁回</h2>
+  <div class="scene">
+    <p>甲公司股東會出席 95%，同意 90%、反對 5%，事後發現有 10% 是不具股東身分的人投的票。乙公司股東會則漏未通知持股 3% 的股東丙，丙反對也會通過。兩案都被股東訴請撤銷。</p>
+    <p class="q">法院可以依 §189-1 駁回嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">程序瑕疵成立，審 §189-1</div>
+    <div class="out"><span class="tag">甲公司</span><div class="b ok">10% 加到反對方仍 80 比 15 通過 → 不重大且無影響 → 駁回</div></div>
+    <div class="out"><span class="tag">乙公司</span><div class="b no">漏未通知＝積極侵害 → 重大 → 不得駁回</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>違反事實<b>非屬重大且於決議無影響</b>，法院得駁回撤銷之訴，駁回後決議有效（<span class="s">§189-1</span>）。重大與否看是否<b>積極侵害</b>股東<b>參加</b>股東會的權益；有無影響採形式判斷，把瑕疵股份加到反對方看結果有沒有變。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>重大但無影響也不能駁回，兩個要件都要。無效董事會召集的股東會，主流採得撤銷，且仍有 §189-1 適用。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-11-裁量駁回的非重大且無影響與無效董事會召集的股東會§189-1.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>違反股東平等原則的決議，也是內容違法而無效</h2>
+  <div class="scene">
+    <p>甲公司只有普通股。股東會決議：大股東乙每股分配股利 3 元，其他股東每股 1 元。另外，乙公司選任董事丙的決議兩年後被撤銷確定，丙在任內曾代表公司簽了一份買賣契約。</p>
+    <p class="q">股利決議效力如何？丙簽的契約怎麼辦？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§191 內容違反法令或章程 → 無效</span>
+      <ul><li><span>具體法令、章程</span></li>
+      <li><span>最高法院擴張</span>
+        <ul><li class="hit"><span>股東平等原則（本題）</span></li>
+        <li><span>股東有限責任原則、股份轉讓自由原則</span></li>
+        <li><span>侵害股東固有權、公序良俗</span></li></ul></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>決議內容違反法令或章程<b>無效</b>（<span class="s">§191</span>），最高法院擴張到違反<b>股東平等</b>等公司法基本原則與公序良俗。撤銷判決確定後，決議<b>溯及</b>失效；不涉及第三人原則回復，涉及第三人要另外考量保護。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>丙的契約：一說丙屬<b>無權代表</b>，類推無權代理，股東會得決議承認；也有學者主張表見代理。老師說這題太難考，知道有爭議即可。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法10-筆記-12-撤銷判決的溯及效力與決議內容無效的擴張§189、§191.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

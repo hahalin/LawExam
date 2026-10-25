@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公司法02 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="公司法02">
+<main>
+
+<header class="lesson-head">
+  <h1>公司法02</h1>
+  <span class="sub">一人公司董事會行使股東會職權§128-1・不設董事會與董事人數§192・當然與職務負責人§8・事實上董事與影子董事§8 III・經理人委任與消極資格§29§30・經理人認定・職權限制不得對抗善意第三人§31§36・兼任與競業禁止§32・善管注意義務§23・忠實義務與歸入權§23 III・經營判斷法則</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 11</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>法人一人股份有限公司沒有股東會，由董事會以普通決議行使股東會職權</h2>
+  <div class="scene">
+    <p>乙公司已發行 1,000 萬股，全部由甲公司持有。乙公司要變更章程，這本來是股東會特別決議的事項。甲公司也想換掉它派在乙公司的董事丙。</p>
+    <p class="q">變更章程由誰決議、用哪一種決議？甲公司要怎麼換掉丙？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲公司<small>唯一法人股東</small></div><div class="a lbl">指派</div>
+    <div class="b">董事、監察人</div><div class="a"></div>
+    <div class="b">董事會</div><div class="a lbl">普決</div>
+    <div class="b ok">行使股東會職權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>政府或法人股東一人的股份有限公司<b>沒有股東會</b>，股東會職權由<b>董事會</b>行使（<span class="s">§128-1 I</span>）。經濟部見解：原本的普決、特決事項，一律改用<b>董事會普通決議</b>，章程另有規定者從其規定。董事、監察人由法人股東<b>指派</b>（<span class="s">§128-1 IV</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>沒有股東會，無法依 §199 解任董事，也不能期待董事會把自己換掉；所以法律雖然沒有明文規定，實務上仍承認法人股東可以<b>改派</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-01-政府或法人一人股份有限公司的董事會行使股東會職權§128-1.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>章程不設董事會才可以只有一兩位董事；只有一人公司可以不置監察人</h2>
+  <div class="scene">
+    <p>丙公司是非公開發行公司，股東有 A、B 兩人，想在章程規定只設董事 1 人、不置監察人。丁公司是公開發行公司，想只設董事 3 人。</p>
+    <p class="q">兩家公司的安排，哪些可以？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>公開發行公司 → 董事至少 5 人</span></li>
+    <li><span>非公開發行公司 → 原則至少 3 人</span>
+      <ul><li class="hit"><span>章程規定不設董事會 → 董事 1 人或 2 人</span></li></ul></li>
+    <li class="off"><span>不置監察人 → 只有政府或法人股東一人的公司</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公開發行公司董事不得少於<b>5 人</b>（<span class="s">證交法 §26-3 I</span>），丁公司設 3 人不行。非公開發行公司原則 3 人（<span class="s">§192 I</span>），但得依章程<b>不設董事會</b>，只置董事 1 人或 2 人（<span class="s">§192 II</span>），丙公司只設董事 1 人可以，這位董事就是董事長，並行使董事會職權。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>丙公司有兩個股東，<b>不能</b>不置監察人；只有政府或法人股東一人的公司可以（<span class="s">§128-1 III</span>）。董事 2 人時也<b>沒有董事會</b>，只是準用董事會的規定。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-02-不設董事會、不置監察人與董事最低人數§128-1、§192、證交法§26-3.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>董事任何時候都是公司負責人；經理人、監察人只在執行職務範圍內才是</h2>
+  <div class="scene">
+    <p>戊股份有限公司有董事丙、人事經理甲、監察人乙。公司的監察事項出了問題，股東想追究「公司負責人」的責任。</p>
+    <p class="q">甲、乙、丙，誰在這件事是公司負責人？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>當然負責人（§8 I）</b><br>有限、股份有限：董事<br>無限、兩合：執行業務或代表公司之股東</div>
+    <div class="trap-c"><b>職務負責人（§8 II）</b><br>經清臨：四種公司都有<br>發監檢重重：只有股份有限公司</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>董事是<b>當然負責人</b>，任何時候都是（<span class="s">§8 I</span>）。經理人、監察人是<b>職務負責人</b>，只在<b>執行職務範圍內</b>才是（<span class="s">§8 II</span>）。所以監察事項出問題時，負責人是乙和丙，人事經理甲不是。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>發起人、監察人、檢查人、重整人、重整監督人只有<b>股份有限公司</b>才有，選擇題常拿來問有限公司。§8 是定義規定：其他條文寫「公司負責人」，例如 §23，就回到 §8 找是誰。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-03-當然負責人與職務負責人§8、§23.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>不是董事卻在開董事會是事實上董事；控制並指揮一位董事就是影子董事</h2>
+  <div class="scene">
+    <p>創辦人甲卸下董事後，仍每次受邀出席董事會並發言。另一家公開發行公司裡，法人股東 B 公司只派了一位代表丙當選董事，B 指示丙挪用公司 5,000 萬元給 B 周轉。</p>
+    <p class="q">甲和 B 都不是董事，要不要負董事的責任？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">非董事（不是依公司法選出的董事）</div>
+    <div class="out"><span class="tag">親自執行董事業務</span><div class="b">事實上董事：甲（只能是自然人）</div></div>
+    <div class="out"><span class="tag">控制＋指揮董事</span><div class="b">影子董事：B（法人最多是影子董事）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>非董事而實質上執行董事業務，或實質控制公司人事、財務或業務經營而實質指揮董事執行業務者，與本法董事同負<b>民事、刑事及行政罰</b>責任（<span class="s">§8 III</span>），適用於所有公司。最高法院稱為「實質董事」。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>人事、財務、業務經營<b>擇一</b>即可；指揮的董事<b>一位就夠</b>，不必過半數。三種責任都要負，不是擇一。政府為公共利益指揮其指派的董事，不適用（<span class="s">§8 III 但書</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-04-事實上董事與影子董事§8.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>犯組織犯罪防制條例之罪，緩刑期滿後還要再過五年才能當經理人</h2>
+  <div class="scene">
+    <p>甲犯組織犯罪防制條例之罪，2026 年 1 月判決確定，宣告緩刑 3 年。乙公司（股份有限公司）董事會在 2027 年想以普通決議委任甲為經理人。</p>
+    <p class="q">甲最早哪一年才能當經理人？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 360 96" role="img" aria-label="消極資格時間軸" style="max-width:560px">
+    <line x1="20" y1="40" x2="340" y2="40"/>
+    <circle class="dot" cx="30" cy="40" r="5"/>
+    <circle class="dot acc" cx="180" cy="40" r="5"/>
+    <circle class="dot acc" cx="330" cy="40" r="5"/>
+    <text x="30" y="24" text-anchor="start">2026 判決確定</text>
+    <text x="30" y="64" text-anchor="start" class="mu">緩刑 3 年</text>
+    <text x="30" y="82" text-anchor="start" class="mu">期間內不得充任</text>
+    <text x="180" y="24" text-anchor="middle">2029 緩刑期滿</text>
+    <text x="180" y="64" text-anchor="middle" class="mu">還要再加</text>
+    <text x="180" y="82" text-anchor="middle" class="mu">未逾 5 年仍不行</text>
+    <text x="330" y="24" text-anchor="end">2034 以後</text>
+    <text x="330" y="64" text-anchor="end" class="mu">才能充任</text>
+    <text x="330" y="82" text-anchor="end" class="mu">經理人</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股份有限公司委任經理人用<b>董事會普通決議</b>（<span class="s">§29 I</span>），但有消極資格事由者<b>不得充任</b>，已充任者<b>當然解任</b>（<span class="s">§30</span>）：組織犯罪防制條例 5 年；詐欺、背信、侵占判處有期徒刑 1 年以上者 2 年；貪污治罪條例 2 年，都從執行完畢、緩刑期滿或赦免後起算。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題最愛考<b>緩刑期間</b>：期滿都還要再加 5 年，緩刑中當然不行。§30 也準用於有限公司董事、股份有限公司董事與監察人。有限公司委任經理人是全體<b>股東</b>表決權過半數，不是董事。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-05-經理人的委任與消極資格§29、§30、§222.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>判斷經理人不看職稱，看登記或選任；董事會通過的文件載明姓名也算</h2>
+  <div class="scene">
+    <p>A 公司請乙擔任「CEO」，言明職權與總經理相同，但董事會沒有決議選任，也沒有登記。之後董事會通過的營業報告書上，記載乙為總經理。</p>
+    <p class="q">乙是不是公司法上的經理人？</p>
+  </div>
+  <div class="tree"><ul>
+    <li class="off"><span>職稱 → 最不適宜的標準</span></li>
+    <li class="hit"><span>形式認定（主流）：經濟部登記或依 §29 選任，擇一 → 乙不是</span></li>
+    <li><span>最高法院：董事會通過的文件載明 → 實質決議通過聘任 → 乙是</span></li>
+    <li><span>實質認定（證交法主流）：對內管理、對外代表 → 乙是</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公司法已廢除經理人的法定名稱，所以<b>職稱</b>不能作為判斷標準。公司法主流是<b>形式認定</b>：經主管機關登記，或經 §29 程序選任（股份有限公司是董事會普決），兩者擇一即可。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>最高法院 100 年台上字第 1624 號：年報、公開說明書等文件載明某人為總經理，且這些文件經<b>董事會決議通過</b>，就算董事會已實質決議通過聘任。是不是經理人，決定他要不要負 §23 的義務。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-06-經理人的形式認定與實質認定100台上1624.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>公司以契約限制經理人簽約金額，不得對抗不知情的相對人</h2>
+  <div class="scene">
+    <p>胖虎公司以契約限制經理人阿貓只能簽 20 萬元以下的契約。阿貓仍代表公司向丁車行簽了一份 80 萬元的購車契約。</p>
+    <p class="q">胖虎公司可以拒絕付款嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">阿貓逾越契約限制簽約</div>
+    <div class="out"><span class="tag">丁車行不知道限制</span><div class="b ok">不得對抗 → 對公司有效</div></div>
+    <div class="out"><span class="tag">丁車行明知限制</span><div class="b no">對公司不生效力</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>通說認為公司法上經理人就是民法上經理人，有<b>管理事務及簽名</b>的固有職權。公司可以用<b>章程或契約</b>限制（<span class="s">§31</span>），但這個限制<b>不得對抗善意第三人</b>（<span class="s">§36</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§36 的「職權之限制」就是 §31 的章程、契約限制，兩條要一起記。經理人不得變更董事會、股東會的決議（<span class="s">§33</span>），違反法令、章程或 §33 致公司受損害，對<b>公司</b>負賠償責任（<span class="s">§34</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-07-經理人的職權限制不得對抗善意第三人§31、§33、§34、§36.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>經理人不得兼任其他公司的經理人，業務完全無關也一樣；要兩家公司各自同意</h2>
+  <div class="scene">
+    <p>甲是文具 A 股份有限公司的推廣部經理。B 有限公司（賣半導體設備）經過半數股東同意，聘甲為業務部經理，並說甲不用辭掉 A 公司的職務。</p>
+    <p class="q">業務不同類，甲可以兼任嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">A 股份有限公司<small>董事會普決</small></div><div class="a lbl">＋</div>
+    <div class="b">B 有限公司<small>股東表決權過半數</small></div><div class="a"></div>
+    <div class="b ok">兩次同意才合法</div>
+    <div class="br"></div>
+    <div class="b q">本題只有 B 同意</div><div class="a"></div>
+    <div class="b no">不合法</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>經理人<b>不得兼任其他營利事業之經理人</b>，也不得自營或為他人經營同類業務；但經依 <span class="s">§29 I</span> 方式同意者不在此限（<span class="s">§32</span>）。兼任時兩家公司要<b>各自同意</b>，本題缺 A 公司董事會決議。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>兼任禁止是公司法唯一的兼任禁止，<b>不問業務是否同類</b>。違反時行為仍<b>有效</b>，公司可主張利益歸入：多數類推民法 §563，也有學者主張依 §23 III。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-08-經理人的兼任禁止與競業禁止§32.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>無償擔任董事也要盡善良管理人注意義務，守法也包括在內</h2>
+  <div class="scene">
+    <p>甲是 A 公司的董事，沒有領任何報酬。他指示會計以假發票逃稅，被國稅局查獲，A 公司被罰 400 萬元。</p>
+    <p class="q">甲說自己是無償幫忙，注意義務應該比較輕。公司可以向他求償 400 萬元嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>民法委任（§535）</b><br>有償：善良管理人注意<br>無償：與處理自己事務同一注意</div>
+    <div class="trap-c"><b>公司法 §23 I</b><br>不分有償無償<br>一律善良管理人注意</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公司負責人應盡<b>善良管理人之注意義務</b>，違反致公司受損害者負損害賠償責任（<span class="s">§23 I</span>）。判斷採<b>客觀說</b>，看決策是否合理；也包括<b>知悉並遵守法律</b>的義務。所以 A 公司可以向甲請求 400 萬元。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>民法委任有償、無償的注意程度不同，§23 I <b>沒有區分</b>。典型的違反：沒有建立內控、<b>資訊不足下倉促決策</b>、消極不作為。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-09-公司負責人的善良管理人注意義務§23.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>公司沒有損害、董事卻有獲利時，經股東會決議可以請求利益歸入</h2>
+  <div class="scene">
+    <p>甲是 A 公司董事，開會時得知市值 100 億元的 B 公司願意低價出售。甲自己先用 85 億元買下，再轉賣給 A 公司。</p>
+    <p class="q">甲用 95 億元賣給 A，或用 110 億元賣給 A，公司各可以請求什麼？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">甲轉賣給 A 公司的價格</div>
+    <div class="out"><span class="tag">95 億</span><div class="b">A 沒有損害；甲獲利 10 億 → §23 III 歸入</div></div>
+    <div class="out"><span class="tag">110 億</span><div class="b no">A 損害 10 億 → §23 I；其餘 15 億 → §23 III</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>忠實義務處理董事與公司的<b>利益衝突</b>，本題是侵奪公司機會。違反時，損害依 <span class="s">§23 I</span> 請求賠償；負責人為自己或他人所得的利益，<b>股東會得以決議</b>視為公司所得（<span class="s">§23 III</span>），兩者可以<b>並用</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§23 III 要先經<b>股東會普通決議</b>，而且自所得產生後逾<b>一年</b>就不能行使。「視為公司之所得」不是錢自動變成公司的，公司只是取得請求權。有具體條文時（例如 §209 V 競業歸入）先用具體條文。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-10-忠實義務與股東會決議歸入權§23.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>經營判斷法則先推定董事沒有問題，原告至少要推翻一項推定</h2>
+  <div class="scene">
+    <p>股東代表 A 公司起訴，主張董事甲的併購決策讓公司虧損 3 億元，違反受任人義務。甲抗辯：這是經營決策，受經營判斷法則保護。</p>
+    <p class="q">誰要先舉證？原告推翻推定後，甲就一定要賠嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">推定董事決策沒有問題</div><div class="a lbl">原告舉證</div>
+    <div class="b q">推翻五項之一？</div>
+    <div class="br"></div>
+    <div class="b no">推翻不了 → 原告敗訴</div>
+    <div class="br"></div>
+    <div class="b">推翻成功</div><div class="a lbl">轉換</div>
+    <div class="b">董事舉證整體公平</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>經營判斷法則推定董事的決策充分知情、善意、為公司利益，本質是<b>舉證責任</b>的分配。原告至少要推翻一項推定：商業決定、無利害關係、適當注意、善意、無濫用裁量權（口訣「商利適善濫」）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>推翻成功不等於勝訴，只是改由董事證明交易<b>整體公平</b>（fair dealing＋fair price）。國考還沒考過，法研所考過；我國實務以商業事件審理細則 §37 部分引入。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法02-筆記-11-經營判斷法則的舉證責任與五個推定.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

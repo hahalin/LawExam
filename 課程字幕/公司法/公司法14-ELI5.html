@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公司法14 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="公司法14">
+<main>
+
+<header class="lesson-head">
+  <h1>公司法14</h1>
+  <span class="sub">視訊、書面決議與代理出席§205・數人頭與出席認定・自身利害關係的說明義務§206・控制從屬公司與自然人董事・迴避與多數決扣除・違反說明迴避的效力・常務董事與常務董事會§208・董事長選任解任與主席・董事長代表權限於營業上事務・董事長代理順序與臨時管理人§208-1・不得臨時動議解任董事長・監察人§216、§227</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>董事會視訊不必章定，書面決議與代理出席都要章程寫明</h2>
+  <div class="scene">
+    <p>甲公司（非公開發行）董事 A、B、C 三人，章程沒有規定代理出席或書面表決。A 在國外想用視訊參加；B 想委託 C 代理；董事長想下次改用書面表決。</p>
+    <p class="q">三種做法，哪些可以？</p>
+  </div>
+  <div class="tree"><ul>
+    <li class="hit"><span>A 視訊參加 → 視為親自出席，不必章定</span></li>
+    <li class="off"><span>B 委託 C 代理 → 章程沒寫，等於缺席</span></li>
+    <li class="off"><span>書面表決不集會 → 章程沒寫，不行</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§205 II 寫「如以」視訊為之，不必訂明章程；股東會視訊才要章定。董事<b>應</b>親自出席，章程訂定才可由<b>其他董事</b>代理，每次出具委託書，且受一人委託為限（<span class="s">§205 I、III、IV</span>）。書面決議要章程訂明、當次全體董事同意（<span class="s">§205 V</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>公開發行公司不能書面決議（<span class="s">§205 VII</span>）。全體同意的是<b>開會方式</b>，議案仍可反對；仍要發召集通知。電話、email 不算視訊。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-01-董事會的視訊會議、書面決議與代理出席§205.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>董事會數人頭，辭職的人先扣掉，簽到後離席照算</h2>
+  <div class="scene">
+    <p>甲公司董事 15 人，其中 3 人辭職。董事會要以特別決議提出出租全部營業的議案。開會時 9 人簽到，其中 2 人簽完就離開。</p>
+    <p class="q">出席人數夠嗎？要幾票同意？</p>
+  </div>
+  <div class="flow">
+    <div class="b">董事 15 人</div><div class="a lbl">扣辭職 3</div>
+    <div class="b">12 人</div><div class="a lbl">× 2/3</div>
+    <div class="b q">至少 8 人出席</div>
+    <div class="br"></div>
+    <div class="b">簽到 9 人</div><div class="a lbl">離席照算</div>
+    <div class="b ok">出席 9 人</div><div class="a lbl">過半數</div>
+    <div class="b ok">5 票同意</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>董事會一人一票，算人數不算股份（<span class="s">§206 I</span>）。經濟部以<b>實際在任、能應召出席</b>的董事為分母，法定解任、辭職的人先扣除。出席以<b>簽到簿</b>為準，中途離席不影響（77 台上 400）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不是 15 × 2/3 = 10。置董事二人時（不設董事會），學者與經濟部傾向兩人都要同意。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-02-董事會決議的數人頭計算、出席認定與法定解任扣除§206、77台上400.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>跟董事的太太交易，視為董事有自身利害關係</h2>
+  <div class="scene">
+    <p>甲公司董事會有兩案：一是向 B 買土地 5,000 萬元，B 是董事 A 的太太；二是向 D 租倉庫，D 是 A 的岳父。A 說：「兩案都不是跟我交易，我不用說明。」</p>
+    <p class="q">A 對哪一案要說明？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">交易相對人<br>與董事 A 的關係</div>
+    <div class="out"><span class="tag">太太 B</span><div class="b ok">配偶 → 視為 A 有，要說明</div></div>
+    <div class="out"><span class="tag">岳父 D</span><div class="b no">姻親 → 不適用 §206 III</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>董事有自身利害關係，應於<b>當次</b>董事會說明重要內容（<span class="s">§206 II</span>）。認定標準一：董事本身有直接具體的權利義務變動（107 台上 649）；標準二：配偶、二親等內血親、控制從屬公司有利害關係，<b>視為</b>董事有（<span class="s">§206 III</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>是二親等內<b>血親</b>，姻親不算。有利害關係的董事仍要通知出席，不出席就無從說明。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-03-董事自身利害關係的說明義務與認定標準§206.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>法人董事的從屬公司來交易，要說明的是法人董事</h2>
+  <div class="scene">
+    <p>乙公司是甲公司的法人董事，乙 100% 持有丁公司。甲要向丁採購 3,000 萬元設備。另外，自然人 E 是丙公司指派、以代表人身分當選的甲公司董事（§27 II），甲要向丙借款。</p>
+    <p class="q">兩案各是誰要在甲的董事會說明？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲與丁交易</div><div class="a lbl">丁是乙的從屬</div>
+    <div class="b">視為乙有</div><div class="a"></div>
+    <div class="b ok">乙說明</div>
+    <div class="br"></div>
+    <div class="b">甲與丙交易</div><div class="a lbl">可隨時改派</div>
+    <div class="b">丙控制 E</div><div class="a"></div>
+    <div class="b ok">E 說明（多數說）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>法人董事有控制、從屬公司，依關係企業正常適用；丁不是董事，不必說明。自然人董事能否有從屬公司：多數肯定，依據是<span class="s">§8 III</span>實質控制。能否有控制公司：多數肯定，但只限 §27 II 代表人董事，因為法人股東可依 <span class="s">§27 III</span> 隨時改派。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>智慧財產及商業法院採肯定，<b>最高法院尚未表態</b>。肯定說的例子只有 §27 II 一種。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-04-與董事有控制從屬關係的公司與自然人董事的爭議§206、§8、§27.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>利害關係董事說明後離場，多數決扣除、定足數照算</h2>
+  <div class="scene">
+    <p>甲公司董事 5 人全出席，審議向董事乙經營的公司採購 2,000 萬元。乙已說明利害關係。其餘 4 人表決：3 贊成、1 反對。</p>
+    <p class="q">乙能留在會場投票嗎？本案通過了嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">出席 5 人</div><div class="a lbl">乙迴避離場</div>
+    <div class="b">定足數仍算 5</div>
+    <div class="br"></div>
+    <div class="b">多數決分母 4</div><div class="a lbl">過半數</div>
+    <div class="b q">需 3 票</div><div class="a"></div>
+    <div class="b ok">3 票，通過</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>依 <span class="s">§206 IV 準用 §178</span>，有自身利害關係致有害於公司利益之虞（通常推定），不得加入表決，也不得代理。討論和表決都要迴避，迴避就是離場。依準用 <span class="s">§180 II</span>，只在多數決扣除。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>考卷不能直接寫 §178（主詞是股東）。迴避到只剩一人，經濟部認為仍可決議；可否同數時董事長沒有決定權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-05-利害關係董事的討論表決迴避與多數決扣除§206、§178、§180.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>應迴避未迴避，法院說無效，學者說扣掉那票再算</h2>
+  <div class="scene">
+    <p>同上一卡，但乙沒有迴避，也投了贊成。5 人表決：4 贊成（含乙）、1 反對。</p>
+    <p class="q">決議有效嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>法院、立法理由</b><br>違反就無效（88 台上 2863）；涉及利害衝突，法院介入審查（114 台上 1167）</div>
+    <div class="trap-c"><b>學者（劉連煜）</b><br>扣除乙：分母 4、贊成 3 → 仍過半，有效；未說明只負 §23 I 賠償</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>違反說明義務（<span class="s">§206 II</span>）或迴避義務（<span class="s">§206 IV</span>），實務認為決議無效。學者認為利害關係標準不明確、動輒無效害交易安全，主張扣除未迴避者的票數再判斷；曾宛如也認為過嚴。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這裡是「學者放寬」，不是法院放寬。章程調高調低董事會門檻，經濟部要求須法律明文。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-06-違反說明或迴避義務的效力與章程不得調整定足數88台上2863、114台上1167.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>董事 8 人以下不能設常務董事，常董會的決定董事會可以推翻</h2>
+  <div class="scene">
+    <p>甲公司董事 8 人，想設常務董事 3 人。乙公司董事 9 人，設常務董事 3 人；董事會休會期間，常董會決議去冰島設廠，下週董事會改成義大利。</p>
+    <p class="q">甲可以設常董嗎？乙最後去哪裡設廠？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">常董至少 3 人<br>且不超過董事 1/3</div>
+    <div class="out"><span class="tag">甲 8 人</span><div class="b no">上限 2.67 &lt; 3，不能設</div></div>
+    <div class="out"><span class="tag">乙 9 人</span><div class="b ok">上限 3，可以設 3 人</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>常務董事由董事以特別決議互選（<span class="s">§208 II</span>）。常董會在董事會休會時，依法令、章程、股東會及董事會決議執行職權，董事長隨時召集，<b>半數以上</b>出席、出席過半數決議（<span class="s">§208 IV</span>）。只能決議法未明定須董事會決議的事項，董事會可以變更。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙去義大利，以董事會為準。法定董事會決議事項是專屬權限，常董會不能碰。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-07-常務董事的人數限制與常務董事會的職權§208.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>第一次董事會選不出董事長，15 日內再開可改用普通決議</h2>
+  <div class="scene">
+    <p>甲公司董事 9 人、未設常務董事。4/1 第一次董事會只到 5 人，未達 2/3（6 人），選不出董事長。後來董事長不召集，過半數董事自行召集，要解任他。</p>
+    <p class="q">選董事長的會怎麼補救？自行召集的會誰當主席？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 500 100" role="img" aria-label="第一次董事會出席不足後十五日內繼續召集">
+    <line x1="15" y1="48" x2="490" y2="48"/>
+    <line class="acc" x1="90" y1="48" x2="400" y2="48" style="stroke-width:5"/>
+    <circle class="dot" cx="90" cy="48" r="5"/>
+    <circle class="dot acc" cx="400" cy="48" r="5"/>
+    <text x="90" y="28" text-anchor="middle">4/1 只到 5 人</text>
+    <text x="400" y="28" text-anchor="middle">4/16 前繼續召集</text>
+    <text class="mu" x="245" y="80" text-anchor="middle">15 日內，得用 §206 普通決議選舉</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>未設常董時，董事長由董事會特別決議互選（<span class="s">§208 I</span>）。出席不足最低人數，原召集人 15 日內繼續召集，得用 §206 方法選舉（<span class="s">§203 III</span>），5 人出席就夠。董事會誰召集誰當主席；過半數董事自行召集，類推 <span class="s">§182-1</span> 互推一人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>解任董事長法無明文，怎麼選就怎麼解：仍須特別決議，6 人出席。副董事長是「得」章定，不一定有。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-08-董事長的選任、解任與董事會主席即召集權人§208、§203.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>營業上事務未經董事會決議，相對人善意就對公司有效</h2>
+  <div class="scene">
+    <p>甲花店董事長 A 以公司名義向丙買花 100 萬元。甲的內規規定 50 萬元以上採購要經董事會決議，A 沒有提董事會；丙不知道這條內規。</p>
+    <p class="q">甲可以主張契約對公司不生效力嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">花店買花</div><div class="a lbl">營業上事務</div>
+    <div class="b ok">董事長有代表權</div>
+    <div class="br"></div>
+    <div class="b">未經董事會決議</div><div class="a lbl">類推 §58</div>
+    <div class="b q">丙善意？</div><div class="a lbl">是</div>
+    <div class="b ok">對甲有效</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>董事長對外代表公司（<span class="s">§208 III</span>），準用 §57 限於<b>營業上一切事務</b>（與營業目的之達成有關，109 台上 2027）；法律或章程明定須決議的事項，未決議不生效力。營業事務未經董事會決議，相對人無從得知，類推 <span class="s">§58</span> 看是否善意（104 台上 2430）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>先確定是營業上事務，才談類推 §58；文具店大量買花根本沒有代表權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-09-董事長代表公司限於營業上事務與未經董事會決議的交易104台上2430.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>董事長被假處分，事先指定的代理人也不能用</h2>
+  <div class="scene">
+    <p>甲公司董事長 A 被法院假處分，不得行使職權。甲沒有副董事長；A 之前已指定常務董事 B 為代理人。常務董事 C、D 想互推一人代理。</p>
+    <p class="q">由 B 代理，還是 C、D 互推？</p>
+  </div>
+  <div class="flow">
+    <div class="b dim">① 副董事長：沒有</div><div class="a"></div>
+    <div class="b no">② 指定 B：不能用</div><div class="a"></div>
+    <div class="b ok">③ 常董互推一人</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>董事長請假或因故不能行使職權（羈押、重病、假處分等），依序由副董事長、董事長指定的常務董事（未設常董則董事）、常務董事或董事互推一人代理（<span class="s">§208 III</span>）。指定權也是董事長職權，被假處分就不能行使。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>死亡、辭職、解任是缺位，沒有代理，補選時<b>類推</b> §208 III。董事會整個停擺，才由法院選任臨時管理人，代行董事長及董事會職權（<span class="s">§208-1</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-10-董事長的代理順序、缺位與臨時管理人§208、§208-1.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>公開發行公司不能用臨時動議解任董事長，非公發公司可以</h2>
+  <div class="scene">
+    <p>甲公司董事 9 人，開會通知的議程沒有董事長改選。會中董事乙臨時動議解任董事長 A，7 人出席、6 人同意。</p>
+    <p class="q">解任有效嗎？如果甲是非公開發行公司呢？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">以臨時動議<br>解任董事長</div>
+    <div class="out"><span class="tag">公開發行</span><div class="b no">違反議事辦法，原則無效</div></div>
+    <div class="out"><span class="tag">非公開發行</span><div class="b ok">經濟部：可以；7 ≥ 6 出席，有效</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公開發行公司董事會議事辦法：董事長選任、解任須列入召集事由，不得以臨時動議提出。違反時最高法院原則無效，例外是瑕疵輕微不影響決議結果、或全體董事知悉而無異議（113 台上 1491）；高雄地院曾認為有效。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>董事長若不合法散會，留下的董事可依 §208 III 的方式選出代理人接續開會。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-11-公開發行公司不得以臨時動議解任董事長與違反效力.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>監察人與董事分別選舉，規定幾乎都準用董事，但沒有競業禁止</h2>
+  <div class="scene">
+    <p>甲公開發行公司要選董事 5 人、監察人 3 人。股東丙持有 10 萬股。候選人丁不是股東；監察人戊同時在同業乙公司擔任董事長。</p>
+    <p class="q">丙選監察人有幾個選舉權？戊違反競業禁止嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">10 萬股</div><div class="a lbl">× 5</div>
+    <div class="b">選董事 50 萬權</div>
+    <div class="br"></div>
+    <div class="b">10 萬股</div><div class="a lbl">× 3</div>
+    <div class="b ok">選監察人 30 萬權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>監察人由股東會選任，至少一人在國內有住所，公開發行公司 2 人以上（<span class="s">§216</span>）；不需股東身分，任期同董事（<span class="s">§217</span>）。累積投票、解任準用董事（<span class="s">§227</span>），董監分別選舉。§227 沒有準用 §209，學者多數認為戊沒有競業禁止義務。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「至少一人國內住所」只有監察人有，經理人沒有。舊制董監併選才是 × 8。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法14-筆記-12-監察人的人數、資格、任期、選任與無競業禁止§216、§217、§227.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

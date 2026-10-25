@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公司法19 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="公司法19">
+<main>
+
+<header class="lesson-head">
+  <h1>公司法19</h1>
+  <span class="sub">推定控制從屬的分母取高§369-3・非常規交易的賠償責任§369-4・代位求償與時效§369-4、§369-6・受益從屬公司連帶§369-5・不得抵銷與深石原則§369-7・關係企業書表與持股通知§369-12、§369-8・相互投資與互為控從§369-9、§369-10・合併的定義與體系§316-1、§319・合併程序§317、§317-1・異議股東收買請求權企併法§12・簡易合併§316-2・企併法特別委員會與說明義務</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>兩家董事人數不同時，以席次較高的一方算半數</h2>
+  <div class="scene">
+    <p>丙公司有 9 席董事。A 公司 3 席，3 人全部也是丙的董事；C 公司 5 席，5 人全部也是丙的董事。</p>
+    <p class="q">A、C 哪一家和丙推定有控制從屬關係？</p>
+  </div>
+  <div class="flow">
+    <div class="b">A：相同 3 人</div><div class="a lbl">分母 9</div><div class="b no">3/9 不推定</div>
+    <div class="br"></div>
+    <div class="b">C：相同 5 人</div><div class="a lbl">分母 9</div><div class="b ok">5/9 推定</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>董事<b>半數以上相同</b>，或有表決權股份<b>半數以上</b>為相同股東持有，推定有控制從屬關係（<span class="s">§369-3</span>）。兩家人數或股份總數不同時，經濟部以<b>較高者</b>為分母。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>A 的董事「全部相同」仍不推定，因為分母是 9 不是 3。推定可以舉反證推翻，效果是<b>互為</b>實質控制從屬。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-01-推定控制從屬的半數以上相同以席次或股份較高者為分母§369-3.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>控制公司叫從屬公司做虧本交易，年度終了沒補就要賠</h2>
+  <div class="scene">
+    <p>甲公司持有乙公司 60%。2025 年 9 月，甲指示乙用遠高於市價的價格向甲買設備，乙虧 300 萬元。到 12 月 31 日，甲都沒有補償。</p>
+    <p class="q">乙可以向誰請求？如果甲在 12 月補足呢？</p>
+  </div>
+  <div class="flow">
+    <div class="b">非常規交易</div><div class="a"></div>
+    <div class="b q">會計年度終了</div><div class="a lbl">未補償</div>
+    <div class="b no">甲＋負責人連帶賠 300 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>控制公司使從屬公司為<b>不合營業常規</b>的經營，<b>未於會計年度終了時</b>適當補償，致受損害，應負賠償責任；控制公司負責人<b>連帶</b>（<span class="s">§369-4 I、II</span>）。判斷標準：客觀上顯不相當、顯欠合理、顯不符合商業判斷。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>以整年結算：1～11 月都虧、12 月補回，就不成立。這是揭穿公司面紗的一種，與 <span class="s">§154 II</span> 並行不悖，但這裡的賠償歸<b>從屬公司</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-02-控制公司使從屬公司為非常規交易的賠償責任與揭穿公司面紗§369-4、§154.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>從屬公司不敢要，債權人或一年以上 1% 股東可以自己起訴</h2>
+  <div class="scene">
+    <p>接卡 2，乙公司不敢向甲求償，還跟甲簽了和解書，放棄請求。乙的供應商丁對乙有 2,000 元貨款、兩年後才到期；股東戊持有乙有表決權股份 1.2%，已三年。</p>
+    <p class="q">丁、戊能不能起訴？錢要給誰？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">甲未賠償，乙已和解</div>
+    <div class="out"><span class="tag">丁、戊</span><div class="b ok">以自己名義起訴</div></div>
+    <div class="out"><span class="tag">聲明</span><div class="b">甲應給付乙公司</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>從屬公司<b>債權人</b>（不論金額、清償期），或<b>繼續一年以上</b>持有<b>有表決權</b>股份 1% 以上的股東，得以自己名義行使，請求<b>對從屬公司給付</b>（<span class="s">§369-4 III</span>）。時效：知悉起 2 年、責任發生起 5 年（<span class="s">§369-6</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>從屬公司的<b>和解或拋棄不影響</b>代位（<span class="s">§369-4 IV</span>），選擇題很愛考。這是公司法唯一明文要求「有表決權」的少數股東權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-03-從屬公司債權人與少數股東的代位求償、和解拋棄不受影響及時效§369-4、§369-6.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>錢流到另一家從屬公司，那家在受益範圍內一起負責</h2>
+  <div class="scene">
+    <p>接卡 2，10 月甲又指示乙用低價把原料賣給丙（也是甲的從屬公司），乙再虧 250 萬，丙賺 250 萬。年底甲都沒補。</p>
+    <p class="q">乙可向甲請求多少？可向丙請求多少？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>9 月：乙虧 300 萬（甲受益）</span></li>
+    <li><span>10 月：乙虧 250 萬（丙受益）</span></li>
+    <li class="hit"><span>向甲請求：550 萬</span></li>
+    <li class="hit"><span>向丙請求：250 萬，與甲連帶</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>控制公司賠的是從屬公司的<b>損害總額</b>，不管利益流向誰。致他從屬公司受有利益者，該公司於<b>所受利益限度內</b>負<b>連帶責任</b>（<span class="s">§369-5</span>），用意是怕控制公司無資力。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>常見錯誤是只答 250 萬。<span class="s">§369-4 III</span> 只寫「前二項」，文義不含 §369-5；學者多數說<b>類推適用</b>，債權人、少數股東也可代位向丙請求。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-04-受有利益的其他從屬公司於所受利益限度內負連帶責任§369-5.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>控制公司欠的賠償不能拿來抵銷，從屬公司破產時它的債權排最後</h2>
+  <div class="scene">
+    <p>乙公司依 §369-4 對甲公司有 800 萬元賠償請求權。甲剛好也借給乙 800 萬元，還設了抵押權。後來乙聲請破產。</p>
+    <p class="q">甲可以主張兩筆互相抵銷嗎？破產分配時甲的抵押債權排第幾？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>平時</b><br>賠償限度內不得抵銷（任何債權都不行）</div>
+    <div class="trap-c"><b>破產、和解、重整、特別清算</b><br>甲的債權次於其他債權受清償</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>控制公司對從屬公司的債權，在應負擔的損害賠償限度內<b>不得主張抵銷</b>（<span class="s">§369-7 I</span>）；從屬公司破產、和解、重整、特別清算時，<b>不論有無別除權或優先權</b>，都<b>次於</b>其他債權（<span class="s">§369-7 II</span>，深石原則）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>有<b>抵押權</b>也一樣排後面。若可抵銷，控制公司製造債權就能讓 §369-4 失去作用；連同和解拋棄不受影響，共三重保護。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-05-控制公司對從屬公司債權不得抵銷與深石原則§369-7.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>持股超過三分之一要通知，書表只有公開發行公司要做</h2>
+  <div class="scene">
+    <p>甲公司 3 月 1 日買進乙公司股份到 35%，6 月 1 日再加碼到 52%。甲、乙都不是公開發行公司。</p>
+    <p class="q">甲兩次各要在多久內通知乙？年底要不要編合併財務報表？</p>
+  </div>
+  <div class="flow">
+    <div class="b">超過 1/3</div><div class="a lbl">1 個月</div><div class="b">書面通知</div>
+    <div class="br"></div>
+    <div class="b">超過 1/2</div><div class="a lbl">5 日</div><div class="b">再通知</div><div class="a lbl">5 日</div><div class="b">乙公告</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>只有第一次超過 1/3 是 <b>1 個月</b>，之後低於 1/3、超過 1/2、再低於 1/2 都是 <b>5 日</b>；受通知公司 5 日內公告（<span class="s">§369-8</span>）。從屬公司做關係報告書、控制公司做合併書表，都限<b>公開發行</b>公司（<span class="s">§369-12</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>義務人限於<b>公司</b>。違反只處罰鍰，<b>不影響</b>取得股份的效力。本例甲、乙非公開發行，不必編書表。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-06-關係報告書、合併報告書與持股超過三分之一的通知義務§369-12、§369-8.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>相互投資只能行使三分之一，同時是控制從屬時 §179 優先</h2>
+  <div class="scene">
+    <p>大方公司持有東風 37%，東風持有大方 42%，雙方都知道。另一組：甲持有乙 52%、乙持有甲 37%。</p>
+    <p class="q">兩組各自能行使多少表決權？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>大方↔東風：相互投資 → 各只能行使 33.3%</span></li>
+    <li class="hit"><span>甲↔乙：同時符合 §179 → §179 優先</span></li>
+    <li><span>甲的 52% 全部行使</span></li>
+    <li class="off"><span>乙（從屬）持有甲的 37% 無表決權</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>相互投資<b>各達 1/3 以上</b>為相互投資公司（<span class="s">§369-9 I</span>）；<b>知悉</b>者行使表決權不得超過 1/3，超過部分多數決扣除；<b>盈餘或公積</b>增資配股所得仍可行使（<span class="s">§369-10</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>配股算法：先算 1/3 再加配股。各持有對方<b>超過半數</b>是互為控制從屬（<span class="s">§369-9 II</span>），可任意認定控制方，依 §179 II ② 雙方都無表決權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-07-相互投資的三分之一限制、盈餘配股計算與互為控制從屬§369-9、§369-10、§179.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>合併必有公司消滅、免清算、概括承受；股份加有限只能變股份</h2>
+  <div class="scene">
+    <p>甲股份有限公司與乙有限公司談合併，乙的老闆希望合併後留下乙、維持有限公司。甲還欠銀行 5,000 萬元。</p>
+    <p class="q">可以留乙嗎？甲消滅後，銀行的債權怎麼辦？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">甲（股份有限）與乙（有限）合併</div>
+    <div class="out"><span class="tag">存續或新設</span><div class="b ok">只能是股份有限公司</div></div>
+    <div class="out"><span class="tag">消滅公司</span><div class="b">免清算、權利義務概括承受</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股份＋股份、股份＋有限，存續或新設公司<b>以股份有限公司為限</b>（<span class="s">§316-1 I</span>）。消滅公司<b>無須清算</b>（<span class="s">§24</span>），權利義務由存續或新設公司<b>概括承受</b>（<span class="s">§75</span>，§319 準用）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>實務幾乎只用<b>吸收合併</b>，新設合併可用吸收後更名取代。準用體系只記沒準用的：有限公司決議用 <span class="s">§113</span> 2/3 同意；股份有限公司解散、決議用 §315、§316。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-08-合併的定義、吸收與新設合併、效果與各種公司的規範體系§75、§316-1、§319.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>合併契約由董事會作成、隨召集通知寄出，股東會特別決議才生效</h2>
+  <div class="scene">
+    <p>甲公司董事會決議與乙合併，約定乙的股東每股換現金 50 元。股東會召集通知沒附合併契約書，董事長打算在會上用臨時動議提出。</p>
+    <p class="q">哪幾個地方有問題？</p>
+  </div>
+  <div class="flow">
+    <div class="b">董事會作成契約</div><div class="a"></div>
+    <div class="b">隨召集通知寄出</div><div class="a"></div>
+    <div class="b ok">股東會特別決議</div>
+    <div class="br"></div>
+    <div class="b dim">通知公告債權人</div><div class="a lbl">30 日以上</div><div class="b dim">清償或擔保</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>董事會作成<b>書面</b>合併契約（<span class="s">§317 I、§317-1 I</span>），於發送召集通知時<b>一併發送</b>（§317-1 II），不得臨時動議，股東會<b>特別決議</b>（<span class="s">§316 I</span>）。這兩步是成立生效要件。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>依公司法對價<b>限於股份</b>，現金對價要依企併法。債權人保護（<span class="s">§73、§74</span>）只是對抗要件：沒做合併仍有效，但<b>不得對抗</b>債權人。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-09-合併的程序、合併契約應記載事項與債權人保護§317、§317-1、§316、§73、§74.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>合併時要請公司收買股份，異議後不能投贊成票</h2>
+  <div class="scene">
+    <p>甲公司出席股東會的股份 800 萬股，丁持有 100 萬股。丁開會前寄書面異議，到了現場卻投贊成票，事後請求公司收買股份。</p>
+    <p class="q">丁可以嗎？如果丁放棄表決權，決議怎麼算？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">集會前或集會中書面異議（口頭須經紀錄）</div>
+    <div class="out"><span class="tag">投贊成</span><div class="b no">不得請求收買</div></div>
+    <div class="out"><span class="tag">反對或放棄</span><div class="b ok">得請求收買</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§317</span> 寫異議後「<b>得</b>放棄表決權」；企併法 §12 寫「<b>並投票反對或放棄表決權</b>」。企併法是特別法，優先適用，所以異議股東不能投贊成票。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>放棄的表決權不算入已出席表決權數，是<b>多數決扣除</b>：丁放棄 100 萬股，分母變 700 萬股，同意要超過 350 萬股。性質是<b>形成權</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-10-合併時異議股東的股份收買請求權與企併法須投票反對或放棄表決權§317、企併法§12.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>持股九成以上，從屬公司併入控制公司只要雙方董事會特別決議</h2>
+  <div class="scene">
+    <p>A 公司持有 B 公司 92%。A、B 的董事會都以特別決議通過由 B 併入 A，都沒有開股東會。B 的小股東戊不同意，A 的股東己也不同意。</p>
+    <p class="q">程序合法嗎？戊、己誰能請求收買股份？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>A（控制、存續）</b><br>對股東影響甚小 → 股東無收買請求權</div>
+    <div class="trap-c"><b>B（從屬、消滅）</b><br>開股東會並無實益 → 股東有收買請求權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>控制公司持有從屬公司 <b>90% 以上</b>股份，得經<b>雙方董事會特別決議</b>合併，不適用 §316 股東會決議（<span class="s">§316-2 I</span>）。只有<b>從屬公司</b>股東得在 30 日以上期限內書面異議、請求收買（§316-2 II）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>限<b>從屬併入控制</b>；反過來控制併入從屬，就回到一般程序，要股東會特別決議。「90% 以上」含 90%。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-11-母子公司簡易合併的九成持股、董事會特別決議與從屬公司股東收買請求權§316-2.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>公開發行公司併購前應設特別委員會，有利害關係的董事要說明理由</h2>
+  <div class="scene">
+    <p>甲上市公司要吸收合併乙公司。甲的董事丁同時是乙的大股東。甲沒有設審計委員會，特別委員會審議後認為換股比例偏低，想否決本案。</p>
+    <p class="q">特別委員會可以否決嗎？丁要做什麼？</p>
+  </div>
+  <div class="flow">
+    <div class="b">特別委員會審議</div><div class="a lbl">提報</div>
+    <div class="b">董事會決議</div><div class="a"></div>
+    <div class="b">股東會決議</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公開發行公司召開董事會決議併購前，<b>應</b>設特別委員會審議<b>公平性、合理性</b>，結果提報董事會及股東會（<span class="s">企併法 §6</span>）。董事有自身利害關係，應向董事會及股東會說明<b>重要內容與贊成或反對理由</b>，並於召集事由中敘明（<span class="s">企併法 §5 III、IV</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>特別委員會只是諮詢，<b>沒有否決權</b>，也沒有談判磋商權；設有審計委員會者由審計委員會行之。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法19-筆記-12-企併法的對價多樣化、特別委員會與董事利害關係說明義務企併法§5、§6、§12.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

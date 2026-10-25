@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公司法09 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="公司法09">
+<main>
+
+<header class="lesson-head">
+  <h1>公司法09</h1>
+  <span class="sub">表決權行使三方式與委託書3%§177・五日前送達與隱藏性任意規定・二日前書面撤銷與委託書優先・書面電子投票的採行與強制電子§177-1・視為棄權與優先順序§177-2・共有股份推定一人§160・法人股東代表人與分別行使§181・章程提高降低決議門檻・表決權拘束契約的要件・長期拘束與公序良俗・表決權信託實為股份信託・無表決權股份不算入已發行股份總數§180</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>一人受二人以上委託，超過 3% 的表決權不予計算</h2>
+  <div class="scene">
+    <p>甲公司（非公開發行）股東乙持股 7%、丙持股 5%，兩人各自手寫委託書，都委託非股東丁出席股東會。另一位股東戊持股 15%，只委託己一人。</p>
+    <p class="q">丁能行使多少表決權？己呢？手寫委託書、委託非股東可以嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙 7% ＋ 丙 5%</div><div class="a lbl">都委託丁</div>
+    <div class="b">丁代理 12%</div><div class="a lbl">超過 3%</div>
+    <div class="b no">9% 不予計算</div><div class="a"></div>
+    <div class="b ok">丁行使 3%</div>
+    <div class="br"></div>
+    <div class="b">戊 15% 只委託己</div><div class="a"></div>
+    <div class="b ok">不受限制，15% 都能行使</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股東得於<b>每次</b>股東會出具委託書（<span class="s">§177 I</span>）；非公開發行公司可以自行書寫，受託人不需具股東身分。一人同時受<b>二人以上</b>委託，代理的表決權不得超過已發行股份總數表決權的 <b>3%</b>，超過的部分不予計算（<span class="s">§177 II</span>）；信託事業、核准的股務代理機構除外。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>只受<b>一人</b>委託不受 3% 限制（選擇題考過）。公開發行公司的委託書一定要用公司印製的，不能手寫。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-01-自然人行使表決權的方式、委託書與百分之三限制§177.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>委託書要在開會 5 日前到達公司；逾期但公司沒拒絕，仍然有效</h2>
+  <div class="scene">
+    <p>甲公司 6 月 29 日開股東會。股東乙的委託書 6 月 23 日送達；股東丙的委託書 6 月 25 日才送達，公司收下後沒有任何表示。股東丁先後送了兩份委託書，分別委託戊和己。</p>
+    <p class="q">乙、丙的委託書合法嗎？丁的兩份以哪一份為準？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 500 100" role="img" aria-label="五日前送達時間軸">
+    <line x1="15" y1="48" x2="490" y2="48"/>
+    <line class="acc" x1="120" y1="48" x2="360" y2="48" style="stroke-width:5"/>
+    <circle class="dot acc" cx="60" cy="48" r="5"/>
+    <circle class="dot" cx="180" cy="48" r="5"/>
+    <circle class="dot" cx="420" cy="48" r="5"/>
+    <text x="60" y="28" text-anchor="middle">6/23 乙送達</text>
+    <text x="180" y="28" text-anchor="middle">6/25 丙送達</text>
+    <text x="420" y="28" text-anchor="middle">6/29 開會</text>
+    <text class="mu" x="240" y="78" text-anchor="middle">6/24 ~ 6/28 完整五日</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>一股東一委託書、委託一人，應於開會 <b>5 日前送達</b>公司；重複時以<b>最先送達</b>者為準，但聲明撤銷前委託者除外（<span class="s">§177 III</span>）。期間依民法始日不算入，6 月 23 日是最後合法送達日。最高法院認為這是<b>隱藏性任意規定</b>：公司同意排除，或逾期送達而公司<b>未拒絕</b>，委託書仍有效，所以丙的也有效。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題愛考「<b>最先</b>」送達，不是最後。數字記「5222」：§177 III 的 5 日，加上 §177 IV、§177-2 I、§177-2 II 的三個 2 日。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-02-委託書五日前送達與隱藏性任意規定§177.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>委託書送達後想親自出席，要在 2 日前書面撤銷，否則以代理人為準</h2>
+  <div class="scene">
+    <p>甲公司 6 月 29 日開會。股東乙 6 月 20 日合法送達委託書，委託丙出席。乙後來改變主意，6 月 28 日打電話給公司說要撤銷，29 日乙和丙都到場，兩人投票意見相反。</p>
+    <p class="q">乙的撤銷有效嗎？以誰的票為準？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">委託書已合法送達，乙想親自出席</div>
+    <div class="out"><span class="tag">6/26 以前書面撤銷</span><div class="b ok">合法撤銷 → 依乙本人</div></div>
+    <div class="out"><span class="tag">6/28 電話撤銷</span><div class="b no">逾期且非書面 → 以代理人丙為準</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>委託書送達<b>後</b>，股東欲親自出席或改用書面電子投票，應於開會 <b>2 日前</b>以<b>書面</b>撤銷委託；<b>逾期撤銷</b>者，以委託代理人出席行使的表決權為準（<span class="s">§177 IV</span>）。逾期撤銷代表合法委託書仍存在，和本人到場發生意思表示衝突，法律選擇代理人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>撤銷要用書面：委託書是書面，「怎麼來的怎麼撤」。由此推出<b>委託書 ＞ 親自出席</b>；學者批評本人權限應大於代理人，但條文就是這樣。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-03-委託書送達後二日前書面撤銷與委託書優先§177.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>書面電子投票寫在召集通知就能用；上市櫃公司一定要有電子方式</h2>
+  <div class="scene">
+    <p>甲公司是非公開發行公司，召集通知寫明股東可用書面投票，但章程從沒規定過。乙公司是上櫃公司，召集通知只提供書面投票，沒有電子投票，股東會照樣通過盈餘分派案。</p>
+    <p class="q">甲公司需要先修章程嗎？乙公司的決議有沒有問題？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>甲公司（本文）</b><br>公發、非公發都得自由採用<br>載明於召集通知即可<br>不必修章程</div>
+    <div class="trap-c"><b>乙公司（但書）</b><br>上市、上櫃、興櫃應列電子方式<br>只給書面不夠<br>召集程序違法 → §189 撤銷</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公司召開股東會<b>得</b>採行書面或電子方式行使表決權，行使方法應載明於<b>召集通知</b>（<span class="s">§177-1 I</span>）。但證券主管機關得命公司將<b>電子方式</b>列為表決權行使方式之一，目前是上市、上櫃、興櫃公司。應採電子而未採，屬召集程序違反法令，股東得於決議之日起 30 日內訴請撤銷（<span class="s">§189</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>但書只有「<b>電子</b>」，沒有書面。選擇題問「採行書面電子投票須修改章程？」答案是不用。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-04-書面電子投票的採行與強制電子方式§177-1、§189.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>電子投票的股東對修正案視為棄權，實質上等於投反對票</h2>
+  <div class="scene">
+    <p>甲公司已發行 100 股，60 股親自出席，40 股事先電子投票、沒到場。現場有人提出盈餘分派的修正案，到場的 60 股中 40 股贊成、20 股反對。另一股東乙電子投票後也跑到現場，沒有撤銷。</p>
+    <p class="q">修正案通過了嗎？乙能自己提修正案或臨時動議嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">電子 40 股視為棄權</div><div class="a lbl">計入出席、不計同意</div>
+    <div class="b">出席 100、同意 40</div><div class="a"></div>
+    <div class="b no">未過半數 → 不通過</div>
+    <div class="br"></div>
+    <div class="b">乙電子投票後到場</div><div class="a lbl">未 2 日前撤銷</div>
+    <div class="b q">原議案依電子票・修正案視為棄權・臨時動議可提可投</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>書面電子投票者<b>視為親自出席</b>，但對臨時動議及原議案的修正<b>視為棄權</b>（<span class="s">§177-1 II</span>）。投票後想親自出席，應於 2 日前以<b>相同方式</b>撤銷，逾期以書面電子為準（<span class="s">§177-2 II</span>）；同時有委託書，以委託代理人為準（III）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>優先順序：<b>委託書 ＞ 書面電子 ＞ 親自出席</b>。到場未撤銷的人不得提修正案（修正案是原議案的延長，已表示過意見），但臨時動議可以（經濟部）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-05-書面電子投票的效力、撤銷與優先順序§177-1、§177-2.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>繼承人共有的股份只能推一人行使，最高法院要全體同意</h2>
+  <div class="scene">
+    <p>張三過世，留下乙公司股票 100 萬股，由李四、林五、趙六三人繼承，尚未分割遺產。李四、林五想推李四出席股東會，趙六反對；李四還想對上次的股東會決議提撤銷訴訟。</p>
+    <p class="q">李四能代表 100 萬股出席嗎？能提撤銷訴訟嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>§160 I 推定一人</span>
+      <ul><li><span>一人 → 同一意思表示，不可分割行使</span></li>
+      <li><span>推定方式</span>
+        <ul><li class="hit"><span>撤銷訴訟：全體同意（110 台上 2365）</span></li>
+        <li class="hit"><span>出席股東會：最高法院 → 全體同意</span></li>
+        <li class="off"><span>學者多數：管理行為 → 多數決</span></li></ul></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股份為數人共有者，共有人應<b>推定一人</b>行使股東權利（<span class="s">§160 I</span>），這一人行使全部股份，不能三人各投三分之一。最高法院認為推定不是共有物的管理行為，不能依民法 §828 準用 §820 用多數決，須<b>全體同意</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>趙六反對，依最高法院李四兩件事都不能做。共有人對公司負<b>連帶</b>繳納股款義務（§160 II）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-06-共有股份應推定一人行使股東權§160、民法§828.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>法人股東派三個代表人也只能投一種票；為他人持股的公發公司股東才能分別行使</h2>
+  <div class="scene">
+    <p>乙銀行持有甲公司（上市）35% 股份，派 A、B、C 三位代表人出席。這 35% 其實是替丙（10%）、丁（15%）、戊（10%）持有，丙丁贊成、戊反對。</p>
+    <p class="q">A、B、C 可以各投各的嗎？乙銀行能 25% 贊成、10% 反對嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">法人股東 35%，背後意見不同</div>
+    <div class="out"><span class="tag">一般情形</span><div class="b no">綜合計算、共同為之 → 只能全贊成或全反對</div></div>
+    <div class="out"><span class="tag">公發公司＋為他人持有</span><div class="b ok">得主張分別行使</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>政府或法人為股東時，<b>代表人不限於一人</b>，但表決權仍以持有股份<b>綜合計算</b>（<span class="s">§181 I</span>），代表人二人以上應<b>共同為之</b>（II）。<b>公開發行公司</b>的股東係<b>為他人持有</b>股份時，得主張分別行使（III），範圍由主管機關定，目前限於外資基金、國外金融機構、海外存託憑證等。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>非公開發行公司沒有 III 可用，只能不出席或棄權。代表人臨時不能出席，91 台上 2496 認為依民法 §537 得復委任。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-07-政府或法人股東的代表人與分別行使表決權§181.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>章程可以提高修章門檻，但普通決議門檻能不能提高，法院與經濟部說法不同</h2>
+  <div class="scene">
+    <p>丙公司已發行 1,000 萬股，想在章程規定：①修改章程一律要 900 萬股出席、出席表決權 90% 同意；②普通決議改成 700 萬股出席；③只有「修改公司名稱」那一條改成 90% × 90%。</p>
+    <p class="q">三個想法各自可行嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>章程調整決議門檻</span>
+      <ul><li class="hit"><span>① 特決提高：可以（§277 IV），全部修章案一體適用</span></li>
+      <li><span>② 普決提高：法院可以（最低強制規範）／經濟部近期不行</span></li>
+      <li class="off"><span>③ 只提高特定條文：不行（經濟部）</span></li>
+      <li class="off"><span>假決議：不得提高也不得降低</span></li></ul></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>特別決議條文多有「章程有較高之規定者，從其規定」（<span class="s">§277 IV</span>），可以提高，但經濟部要求一體適用於全部修章案。普通決議（<span class="s">§174</span>）：最高法院 101 年、臺高院 100 年認為是最低強制規範，可提高；經濟部近期認為不得提高，理由是明示其一排除其他、交易安全、僵局。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>假決議只能代替<b>普通決議</b>（§175 II「視同前條」）。老師說這個爭點從沒考過，記結論即可。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-08-章程得否提高或降低定足數與多數決§174、§175、§277.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>股東間約定一起投給誰要寫成書面，公開發行公司不能用，也不能拿錢換</h2>
+  <div class="scene">
+    <p>甲公司（非公開發行）大股東乙、丙口頭約定：下次改選董事都投給乙。丁公司（上市）大股東戊則簽書面契約，付給己 500 萬元，請己的持股都投給戊。</p>
+    <p class="q">兩個約定的效力如何？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><b>乙丙（非公發）</b><br>口頭約定<br>→ 欠缺書面，要式不備</div>
+    <div class="trap-c"><b>戊己（上市）</b><br>公發公司不適用 §175-1<br>又是有償 → 公序良俗</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股東得以<b>書面</b>契約約定共同行使表決權的方式（<span class="s">§175-1 I</span>），通說認為是要式契約，也不得以章程訂定。公開發行公司不適用（<span class="s">§175-1 III</span>），理由是委託書規則 §11 禁止價購委託書，避免私下<b>有償轉讓</b>表決權。有償的拘束契約，多數見解認為違反公序良俗而無效。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>2018 年明文化前，71 台上 4500 認為表決權拘束契約無效；現在條文已承認，舊見解看過即可。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-09-表決權拘束契約的要件與不得有償§175-1.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>約定「股權結構不變就一直支持」，學者認為仍是長期拘束，違反公序良俗</h2>
+  <div class="scene">
+    <p>甲公司（非公開發行）股東甲、乙簽書面契約：在目前股權結構維持不變的情形下，日後每次改選 3 席董事，都支持甲取得 2 席、乙取得 1 席。另一家公司的股東則約定未來 50 年都支持董事長丙提名的人。</p>
+    <p class="q">這兩份契約有效嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">定性：需共同為表決權方向行使</div><div class="a"></div>
+    <div class="b">第一層：法律要件</div><div class="a"></div>
+    <div class="b">第二層：公序良俗＝公司治理</div><div class="a lbl">長期</div>
+    <div class="b no">民法 §72 無效</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>先說明讓某人當選必然需要股東<b>共同為表決權方向的行使</b>，才是 <span class="s">§175-1</span> 的契約。再審兩層：法律要件；<b>嚴重違反公司治理即違反公序良俗</b>（106 台上 2329）。10 年以上大致算長期，經營權無法更迭、欠缺制衡，無效（<span class="s">民法 §72</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「股權結構維持不變」是<b>解除條件</b>。臺高院認為不算長期；學者認為條件不是期限，條件不成就就會無止境延續，<b>仍屬長期</b>。這是 2021 年考題的隱藏爭點。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-10-長期表決權拘束契約與公序良俗的兩層審查§175-1、民法§72.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>表決權信託要把股份移轉給受託人，並在 30 日前送交公司登記</h2>
+  <div class="scene">
+    <p>甲公司（非公開發行）股東乙把 50 萬股的表決權信託給丙，但想把股份留在自己名下，只讓丙去投票。甲公司 6 月 30 日開常會，乙 6 月 15 日才把信託契約送交公司登記。</p>
+    <p class="q">乙可以只信託表決權嗎？公司要承認丙的表決權嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">只信託表決權</div><div class="a"></div>
+    <div class="b no">不行：表決權不能單獨移轉</div>
+    <div class="br"></div>
+    <div class="b">股份移轉給丙</div><div class="a lbl">丙以自己名義行使</div>
+    <div class="b q">常會 30 日前送交登記</div><div class="a lbl">6/15 太晚</div>
+    <div class="b no">不得對抗公司</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股東得成立表決權信託，由<b>受託人</b>依書面信託契約行使表決權（<span class="s">§175-1 I</span>）。受託人要以自己名義行使，就必須<b>取得股份</b>，所以名為表決權信託、實為<b>股份信託</b>（經濟部）。未於常會 <b>30 日前</b>、臨時會 <b>15 日前</b>送交公司登記，不得對抗公司（II），期間與 §165 II 閉鎖期間相同。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>公開發行公司不適用（§175-1 III），但企業併購法 §10 在併購時例外允許。這個主題沒有考過，知道定義即可。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-11-表決權信託實為股份信託§175-1、§165、企併法§10.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>算出席門檻前，先把無表決權股份從已發行股份總數扣掉</h2>
+  <div class="scene">
+    <p>甲公司已發行 1,000 股：無表決權特別股 300 股、公司依法買回的庫藏股 50 股、從屬公司持有甲公司的股份 50 股。股東會當天，300 股特別股股東全部到場。</p>
+    <p class="q">普通決議至少要多少股出席？特別股到場有沒有算進去？</p>
+  </div>
+  <div class="flow">
+    <div class="b">已發行 1,000</div><div class="a lbl">− 特別股 300</div>
+    <div class="b">700</div><div class="a lbl">− 庫藏股 50</div>
+    <div class="b">650</div><div class="a lbl">− 從屬公司持股 50</div>
+    <div class="b ok">分母 600 → 301 股出席</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股東會決議，無表決權股份<b>不算入已發行股份總數</b>（<span class="s">§180 I</span>）。無表決權的有：無表決權特別股（§157 I 第 3 款）、公司依法持有的自己股份（<span class="s">§179 II 第 1 款</span>）、被持有過半數的從屬公司持有控制公司的股份（第 2 款）、控制及從屬公司<b>合計</b>持有過半數的他公司，持有控制、從屬公司的股份（第 3 款）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>特別股 300 股全部到場也<b>不計入出席股份數</b>，因為一開始就從分母扣掉。§179 II 第 3 款文義包括形式與實質控制，學者與最高法院限縮為形式控制。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法09-筆記-12-無表決權股份不算入已發行股份總數與出席股份數的計算§180、§179.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

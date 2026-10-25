@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公司法18 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="公司法18">
+<main>
+
+<header class="lesson-head">
+  <h1>公司法18</h1>
+  <span class="sub">股份回籠禁止§167 I・清算破產收回抵償與解釋上例外・庫藏股的股東權休止與處分§167 II・閉鎖性公司三要件§356-1・章程轉讓限制§356-5・限發起設立與群眾募資§356-3、§356-4・累積投票與特別股§356-3、§356-7・無實體股東會與表決權信託§356-8、§356-9・私募公司債與發行新股§356-11、§356-12・勞務出資・自願與強制變更§356-13、§356-14・關係企業與控制從屬§369-2、§369-3、§369-11</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>公司原則上不得買回自己的股份，例外只有五種</h2>
+  <div class="scene">
+    <p>甲公司已發行 1,000 萬股。董事長想用公司的錢 3,000 萬元，向跟他很熟的股東 A 買回 100 萬股，其他股東都沒被問。</p>
+    <p class="q">這樣可以嗎？哪些情形公司才能取得自己的股份？</p>
+  </div>
+  <div class="tree"><ul>
+    <li class="off"><span>董事長向熟人買回 → 不在例外內</span></li>
+    <li><span>§158 特別股收回</span></li>
+    <li><span>§167-1 員工庫藏股</span></li>
+    <li><span>§186、§317 股份收買請求權</span></li>
+    <li><span>§235-1 員工酬勞以庫藏股發放</span></li>
+    <li><span>§167 I 但書 股東清算、破產（卡 2）</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公司除五種法定例外外，<b>不得</b>自將股份收回、收買或收為質物（<span class="s">§167 I</span>）。買回等於把出資退還股東，違反<b>資本維持原則</b>；也會影響交易秩序，只跟熟人買更違反<b>股東平等原則</b>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§235-1 在條文裡夾在 §186 與 §317 中間，但它<b>不是</b>股份收買請求權。違反 §167 I 的收買<b>無效</b>，和 §163 但書、§167 III 一樣（公司法17 卡 12）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-01-股份回籠禁止原則的理由與五種法定例外§167.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>股東清算時，公司按市價收回股份抵債，等於優先受償</h2>
+  <div class="scene">
+    <p>乙公司對股東甲公司有 100 萬元債權，丙對甲公司有 400 萬元債權。甲公司解散進入清算，只剩市值 100 萬元的乙公司股份。</p>
+    <p class="q">乙、丙各拿得到多少？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>沒有 §167 I 但書</b><br>依債權 1：4 分配 → 乙 20 萬元、丙 80 萬元</div>
+    <div class="trap-c"><b>有 §167 I 但書</b><br>乙按市價收回股份抵銷 → 乙 100 萬元、丙 0 元</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>股東<b>清算</b>或受<b>破產宣告</b>時，公司得<b>按市價</b>收回其股份，抵償清算或破產宣告前結欠公司的債務（<span class="s">§167 I 但書</span>）。通說認為可直接主張抵銷。立法理由是股份可能被低價出售。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>學者批評違反<b>債權人平等原則</b>。清算指法人股東，破產則法人、自然人都可能。受贈、合併承受、減資銷除不是公司花錢買，解釋上不受禁止。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-02-股東清算或破產時按市價收回抵償債務與解釋上的例外§167.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>庫藏股在公司手上時股東權全部休止，違法買回則無效</h2>
+  <div class="scene">
+    <p>丁公司依 §186 向反對股東買回 20 萬股，又依 §167-1 買回 30 萬股準備給員工。股東會快到了，董事長想讓這 50 萬股也投票。</p>
+    <p class="q">能投票嗎？兩批股份各要在多久內處理？</p>
+  </div>
+  <div class="flow">
+    <div class="b">§186 買回 20 萬股</div><div class="a lbl">6 個月</div>
+    <div class="b">按市價出售</div>
+    <div class="br"></div>
+    <div class="b">§167-1 買回 30 萬股</div><div class="a lbl">3 年</div>
+    <div class="b">轉讓員工</div>
+    <div class="br"></div>
+    <div class="b q">屆期未處理</div><div class="a"></div>
+    <div class="b no">視為未發行股份</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公司合法持有自己股份期間，股東權<b>全部休止</b>，也<b>沒有表決權</b>（<span class="s">§179 II ①、§167-1 III</span>）；轉讓出去後回復。§167 I 但書、§186 收買的股份應於 6 個月內按市價出售（<span class="s">§167 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>收回的<b>特別股</b>法無明文，應銷除。違法取得自己股份，實務認為違反禁止規定而<b>無效</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-03-合法取得自己股份的股東權休止、處分期限與違法取得無效§167、§167-1、§179.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>閉鎖性公司要同時符合三要件，沒規定的回到股份有限公司</h2>
+  <div class="scene">
+    <p>戊公司是非公開發行公司，股東 48 人，章程沒有任何股份轉讓限制。董事長說：「我們人少，就是閉鎖性公司。」</p>
+    <p class="q">戊公司是閉鎖性公司嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>股東人數不超過 50 人 → 48 人 ✔</span></li>
+    <li class="hit"><span>章程定有股份轉讓限制 → 沒有 ✘</span></li>
+    <li><span>非公開發行股票公司 → ✔</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>閉鎖性公司指股東人數不超過 <b>50 人</b>、章程定有<b>股份轉讓限制</b>的<b>非公開發行</b>公司，三要件缺一不可（<span class="s">§356-1</span>）。它採排除式立法：只寫不適用的規定和特別規定，沒寫的回歸股份有限公司規定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>50 人上限主管機關<b>得增加</b>，但目前沒有增加。閉鎖性公司<b>仍是股份有限公司</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-04-閉鎖性公司的三大要件與排除式立法§356-1.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>轉讓限制必須寫進章程、及於全體股東，而且是永久的</h2>
+  <div class="scene">
+    <p>己公司（閉鎖性）章程寫：「普通股轉讓須經董事會同意，特別股不受限制」；另一條寫「限制 8 個月，期滿即可自由轉讓」。股東 B 過世，章程規定其股份由指定股東承購。</p>
+    <p class="q">這三條規定各有效嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li class="off"><span>特別股不受限制 → 違法，全體都要限制</span></li>
+    <li class="off"><span>8 個月後自由轉讓 → 違法，限制須永久</span></li>
+    <li><span>各股東寬嚴不同、分期間限制 → 可以</span></li>
+    <li class="hit"><span>遺產由章程指定股東承購 → 可以（112 台上 1512）</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>轉讓限制<b>應</b>於章程載明，印製股票的要在股票上明顯註記（<span class="s">§356-5</span>）。經濟部：限制須<b>永久</b>、及於<b>全體股東</b>、不分普通股特別股，但各股東的限制可以不同。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>是「應」不是「得」。閉鎖性屬性寫在章程並由主管機關網站公開（<span class="s">§356-2</span>），<b>不寫在公司名稱</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-05-閉鎖性公司章程限制轉讓的經濟部見解、遺產指定承購與屬性公開§356-5、§356-2.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>閉鎖性公司只能發起設立，對外募資只能透過股權群眾募資平臺</h2>
+  <div class="scene">
+    <p>庚公司 5 名發起人想設立閉鎖性公司，只認足一半股份，其餘想對外公開招募；設立後又想申請公開發行。</p>
+    <p class="q">哪些做法可以？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">閉鎖性公司要向外部投資人找錢</div>
+    <div class="out"><span class="tag">募集設立、公開發行</span><div class="b no">不得</div></div>
+    <div class="out"><span class="tag">許可證券商的股權群眾募資平臺</span><div class="b ok">可以</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>發起人<b>全體同意</b>並<b>全數認足</b>第一次應發行股份（<span class="s">§356-3 I</span>），只能發起設立，募集設立條文不適用。公司<b>不得公開發行</b>或募集有價證券，但經證券主管機關許可之證券商經營的股權群眾募資平臺募資者不在此限（<span class="s">§356-4 I</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>公司債債權人轉換或認股後，仍受 <b>50 人</b>與章程轉讓限制（<span class="s">§356-11 III</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-06-閉鎖性公司限發起設立、不得公開發行與股權群眾募資§356-3、§356-4.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>閉鎖性公司可用章程排除累積投票制，特別股也能保障監察人席次</h2>
+  <div class="scene">
+    <p>辛公司（閉鎖性）章程規定選董事「每股一個選舉權」；另發行一種特別股，每股 10 個表決權，選監察人也能用，並保障當選 1 席監察人。</p>
+    <p class="q">如果辛公司是一般非公發公司，哪些規定不行？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>一般公司</b><br>累積投票強制（§198）；複數表決權選監察人 ✘；保障名額只限董事</div>
+    <div class="trap-c"><b>閉鎖性公司</b><br>章程得另定選任方式；複數表決權選監察人 ✔；董事、監察人都可保障名額</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>閉鎖性公司選任董監「<b>除章程另有規定外</b>」才依 §198（<span class="s">§356-3 V、VII</span>），可改為每股一選舉權或全額連記法。一般公司的複數表決權不得用於選監察人（<span class="s">§157 II</span>），保障名額只寫董事；閉鎖性都可以（<span class="s">§356-7 I ④</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>經濟部：章程<b>不得</b>規定選董事須經<b>全體同意</b>。記法：§157 與 §356-7 尾數都是 7。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-07-閉鎖性公司得以章程排除累積投票制與特別股的放寬§356-3、§356-7、§157.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>無實體股東會：章程訂明，全體股東同意這次用書面開</h2>
+  <div class="scene">
+    <p>壬公司（閉鎖性）章程訂有無實體股東會條款。股東 10 人都同意這次用書面進行，但其中 2 人對增資案投反對票。股東 C 另想把表決權信託給不是股東的朋友。</p>
+    <p class="q">這次股東會成立嗎？C 可以信託給朋友嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">章程訂明</div><div class="a"></div>
+    <div class="b">全體股東同意當次用書面</div>
+    <div class="br"></div>
+    <div class="b">書面行使表決權、不實際集會</div><div class="a"></div>
+    <div class="b ok">視為已召開、視為親自出席</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>章程得訂明經<b>全體股東同意</b>，就<b>當次</b>議案以書面行使表決權而不實際集會（<span class="s">§356-8 III、IV</span>）。表決權信託的受託人，除章程另有規定外<b>以股東為限</b>（<span class="s">§356-9 II</span>），避免股份移轉後超過 50 人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>全體同意的是<b>開會方式</b>，不是議案，2 人反對不影響股東會成立。經濟部：不能親自、委託出席，也不適用電子投票。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-08-閉鎖性公司的無實體股東會與表決權信託受託人以股東為限§356-8、§356-9.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>閉鎖性公司私募轉換公司債可由章程免經股東會，發新股不必保留員工承購</h2>
+  <div class="scene">
+    <p>癸公司（閉鎖性）董事會特別決議私募轉換公司債，章程寫「私募轉換公司債無須經股東會決議」。同年又發行新股 100 萬股，全部給策略投資人 X。</p>
+    <p class="q">一般非公發公司做得到這兩件事嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>一般非公發公司</b><br>轉換公司債：董特決＋股東會普通決議（§248-1）<br>發新股：保留 10%～15% 給員工，其餘原股東認購（§267）</div>
+    <div class="trap-c"><b>閉鎖性公司</b><br>章程得排除股東會決議（§356-11 II 但書）<br>不適用 §267，可直接給特定人（§356-12 III）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>私募普通公司債兩邊都是<b>董事會特別決議</b>（閉鎖性 <span class="s">§356-11 I</span> 明文）。發行新股也都是董事會特別決議，閉鎖性「除章程另有規定外」（<span class="s">§356-12 I</span>），經濟部認為只能<b>提高</b>門檻。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>閉鎖性私募公司債<b>仍適用 §248 II、III</b>：發行後 15 日內向證券主管機關報備、應募人不超過 35 人。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-09-閉鎖性公司私募公司債、發行新股的決議與排除新股認購權§356-11、§356-12.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>勞務出資只有閉鎖性公司可以，要全體同意，而且有比例上限</h2>
+  <div class="scene">
+    <p>子公司（閉鎖性）實收資本額 2,000 萬元。工程師 D 想用未來三年的工作換六成股份；E 想用專利技術出資；F 想用對公司 300 萬元的借款債權換股份。</p>
+    <p class="q">誰可以？要經過什麼程序？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>股份交換、現金、財產 → 與一般公司相同</span></li>
+    <li><span>F 對公司貨幣債權 → 設立後可以，董事會決議</span></li>
+    <li><span>E 技術 → 全體股東同意＋章程載明</span></li>
+    <li class="hit"><span>D 勞務 → 閉鎖性專用：全體同意＋章程載明＋不超過一定比例</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>出資除現金外，得以財產、<b>技術或勞務</b>抵充；以技術或勞務出資，應經<b>全體股東同意</b>並於章程載明（<span class="s">§356-3 II、IV</span>；設立後 <span class="s">§356-12 II</span> 準用）。經濟部：資本額未達 3,000 萬元，勞務最多 1/2，D 要六成超過上限。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>非閉鎖性公司<b>不能</b>勞務出資。對公司貨幣債權在設立時不可能有，只有<b>設立後</b>能用。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-10-閉鎖性公司的出資種類與勞務出資的比例限制§356-3、§356-12.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>變回一般公司用特別決議，變成閉鎖性要全體同意</h2>
+  <div class="scene">
+    <p>丑公司（非公發）股東 30 人，29 人同意變更為閉鎖性公司。寅公司（閉鎖性）股東增加到 52 人，一直沒辦變更登記。</p>
+    <p class="q">丑公司能變更嗎？寅公司會怎樣？</p>
+  </div>
+  <div class="flow">
+    <div class="b">閉鎖性</div><div class="a lbl">股東會特別決議</div>
+    <div class="b">非閉鎖性</div>
+    <div class="br"></div>
+    <div class="b">非公發公司</div><div class="a lbl">全體同意＋通知公告</div>
+    <div class="b">閉鎖性</div>
+    <div class="br"></div>
+    <div class="b q">超過 50 人</div><div class="a lbl">未變更</div>
+    <div class="b no">處罰、命令解散</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>變更為非閉鎖性：<b>股東會特別決議</b>（<span class="s">§356-13 I</span>）。非公發公司變更為閉鎖性：<b>全體股東同意</b>並通知及公告債權人（<span class="s">§356-14</span>），丑公司只有 29 人同意，不能變更。不符合 §356-1 時<b>應</b>變更（<span class="s">§356-13 III、IV</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>變成閉鎖性只要通知公告，<b>不必取得債權人同意</b>，因為債權債務狀態不變。記法：回歸原則用特別決議，進入例外要全體同意。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-11-閉鎖性公司的自願變更與強制變更§356-13、§356-14.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>計算持股要把從屬公司和替公司持有的一起算；控制人事、財務、業務一項就夠</h2>
+  <div class="scene">
+    <p>A 公司持有 B 公司 53%。對 C 公司：A 持有 13%、B 持有 17%、甲替 A 持有 14%、乙替 B 持有 16%。另有 D、E 兩家公司的董事有半數以上相同。</p>
+    <p class="q">C 是不是 A 的從屬公司？D、E 誰控制誰？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>A 自己 13%</span></li>
+    <li><span>B（A 的從屬公司）17% → 第 1 款</span></li>
+    <li><span>甲（為 A 持有）14% → 第 2 款</span></li>
+    <li><span>乙（為 B 持有）16% → 第 3 款</span></li>
+    <li class="hit"><span>合計 60% ＞ 半數 → C 為 A 的從屬公司</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>持有他公司<b>有表決權</b>股份或出資額超過半數，為形式控制公司（<span class="s">§369-2 I</span>）；計算時連同三款一併計入（<span class="s">§369-11</span>）。直接或間接控制<b>人事、財務或業務經營</b>其中一項，即為實質控制（<span class="s">§369-2 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>D、E 符合 <span class="s">§369-3</span>，推定<b>互為</b>實質控制從屬：可主張 D 控制 E，也可反過來。無限公司<b>不可能</b>是從屬公司（<span class="s">§13 I</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法18-筆記-12-關係企業的體系、形式控制的綜合計算與推定互為實質控制§369-2、§369-3、§369-11.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公司法16 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="公司法16">
+<main>
+
+<header class="lesson-head">
+  <h1>公司法16</h1>
+  <span class="sub">建設股息§234與公積發放限制§241・公積發放程序與轉增資只發普通股・籌資體系與公司債種類§262、§246-1・禁止發行條件與總額限制§249、§250、§247・募集程序、受託人與債權人會議§246、§263・私募公司債§248、§248-1・新股認購權與洽特定人§267・認購權轉讓與限制轉讓§267・價格一律與公開發行限制§156、§269、§270・發行新股程序§266、§276・通常與特殊發行新股・員工獎勵制度與員工定義</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>沒有盈餘也能發：法定盈餘公積要留實收資本 25%，資本公積可以全發</h2>
+  <div class="scene">
+    <p>甲公司今年剛好打平，沒有盈餘可分，也沒有累積虧損。帳上：實收資本額 1,000 萬元、法定盈餘公積 600 萬元、發行溢價 400 萬元。</p>
+    <p class="q">法盈和發行溢價，最多各能發多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">法盈 600 萬</div><div class="a lbl">保留 1,000×25%</div>
+    <div class="b dim">250 萬不能發</div><div class="a"></div>
+    <div class="b ok">最多 350 萬</div>
+    <div class="br"></div>
+    <div class="b">發行溢價 400 萬</div><div class="a lbl">不限比例</div>
+    <div class="b ok">400 萬全發</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><b>無累積虧損</b>時，即使沒有盈餘，也能以公積發新股或現金（<span class="s">§241 I</span>）。法盈<b>限比例</b>：只有超過實收資本額 25% 的部分能發（<span class="s">§241 III</span>）。資本公積<b>限項目不限比例</b>：限發行溢價、受領贈與所得，可全部發放。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>另一個無盈餘的例外是<b>建設股息</b>：設立登記後需二年以上準備，經<b>主管機關許可</b>並依章程，開業前分派，列為預付股息（<span class="s">§234</span>）。只寫在章程、沒有許可，不能發。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-01-建設股息與公積發放的比例、項目限制§234、§241.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>公積發新股要股東會特別決議，公開發行公司發現金可章程授權董事會</h2>
+  <div class="scene">
+    <p>甲公開發行公司想用發行溢價 3,000 萬元發放。方案一：每股配發新股；方案二：每股發現金。章程已授權董事會決議以公積發放現金。乙股東持有的是特別股。</p>
+    <p class="q">兩個方案各由誰決議？乙拿到的新股是哪一種？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">以公積發放（§241）</div>
+    <div class="out"><span class="tag">發新股</span><div class="b q">股東會特別決議</div></div>
+    <div class="out"><span class="tag">發現金</span><div class="b ok">章程授權 → 董事會特別決議，報告股東會</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>以公積發新股（公積轉增資）準用 §240 I～III，須<b>股東會特別決議</b>。發現金原則相同；例外是<b>公開發行公司</b>以章程授權<b>董事會特別決議</b>並報告股東會（<span class="s">§241 II 準用 §240 V</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不論盈餘或公積轉增資，即使原本持有特別股，也<b>一律發普通股</b>（經濟部）。發行溢價發現金被批評是變相<b>出資退還</b>，但現行法允許。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-02-公積發放的決議程序、發行溢價發現金的批評與轉增資只發普通股§241、§240.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>轉換公司債換完就不是債權人，附認股權公司債另繳錢、債權還在</h2>
+  <div class="scene">
+    <p>丙買了乙公司 100 萬元轉換公司債，丁買了 100 萬元附認股權公司債。兩人都在約定期間依約定價格行使權利，各取得 1 萬股。</p>
+    <p class="q">行使之後，誰還是乙公司的債權人？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>丙：轉換公司債</b><br>債權換成股份，不另繳錢 → 債權消滅，只是股東</div>
+    <div class="trap-c"><b>丁：附認股權公司債</b><br>另行支付股款認購 → 成為股東，100 萬債權不變</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>兩種公司債，公司都有核給股份的<b>義務</b>，持有人有<b>選擇權</b>（<span class="s">§262</span>）。非公開發行公司不能私募股份，但<b>可以私募公司債</b>（<span class="s">§248 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>公司債到期本息 10 億、只有 8 億可還，必須每位債權人各還 <b>80%</b>，不能先全額還給一部分人。次順位公司債受償順序次於其他債權，只在股東前面（<span class="s">§246-1</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-03-公司籌資的公募私募體系與公司債的種類§262、§246-1.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>平均淨利是年息的 143%：可以發有擔保公司債，不能發無擔保</h2>
+  <div class="scene">
+    <p>甲公司最近三年平均稅後淨利 500 萬元，從未違約。擬發行 1 億元、年息 3.5% 的公司債，每年利息 350 萬元。</p>
+    <p class="q">甲可以發公司債嗎？有擔保、無擔保都可以嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">500 ÷ 350 ≈ 143%</div><div class="a lbl">≥ 100%</div>
+    <div class="b ok">可發公司債</div>
+    <div class="br"></div>
+    <div class="b">143%</div><div class="a lbl">&lt; 150%</div>
+    <div class="b no">不得發無擔保</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>平均淨利未達年息 <b>100%</b>，或違約遲延<b>尚在繼續中</b>，完全不得發行（<span class="s">§250</span>；銀行保證除外）。未達 <b>150%</b>，或違約已了結<b>三年內</b>，不得發無擔保（<span class="s">§249</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>總額：公開發行公司募集依證交法 §28-4（淨值 200%，無擔保 1/2）；私募普通公司債 400%；只有私募轉換、附認股權公司債才回到公司法 <span class="s">§247</span>。非公發私募<b>無上限</b>。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-04-公司債的禁止發行條件與總額限制§249、§250、§247、證交法§28-4、§43-6.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>公司債債權人會議：3/4 出席、2/3 同意，法院認可後才對全體生效</h2>
+  <div class="scene">
+    <p>甲公司公開募集同一次公司債 10 億元，付報酬請乙銀行擔任受託人。一年後，持有 6,000 萬元（6%）的債權人們想開債權人會議，決議延長還款期限。</p>
+    <p class="q">他們可以自己召集嗎？決議怎樣才對全體債權人有效？</p>
+  </div>
+  <div class="flow">
+    <div class="b">同次 5% 以上召集</div><div class="a"></div>
+    <div class="b">3/4 出席、2/3 同意</div>
+    <div class="br"></div>
+    <div class="b">議事錄主席簽名</div><div class="a lbl">認可＋公告</div>
+    <div class="b ok">對全體生效</div><div class="a"></div>
+    <div class="b">受託人執行</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公開募集須<b>董事會特別決議</b>並報告股東會（<span class="s">§246</span>）。召集權人是公司、受託人、<b>同次</b> 5% 以上債權人（<span class="s">§263 I</span>）；每一債券最低票面金額一表決權。決議經法院認可並公告後生效（<span class="s">§264</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>受託人限<b>金融或信託事業</b>，報酬由<b>公司</b>負擔（<span class="s">§248 VI</span>）。3/4 出席、2/3 同意是整部公司法唯一的組合。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-05-公開募集公司債的程序、受託人與債權人會議§246、§248、§263、§264.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>非公開發行公司也能私募公司債：35 人、銀行不算、發行後 15 日報備</h2>
+  <div class="scene">
+    <p>乙公司是非公開發行公司，近三年平均淨利只有年息的 60%，但沒有違約。它想私募普通公司債給 35 位自然人和 20 家銀行，不打算找受託人。</p>
+    <p class="q">哪些地方有問題？</p>
+  </div>
+  <div class="tree"><ul>
+    <li class="hit"><span>非公發也可私募（§248 II 末段）</span></li>
+    <li><span>不受 §249 ②、§250 ② 獲利能力限制</span></li>
+    <li><span>35 人上限，金融機構不計入 → 20 家銀行沒問題</span></li>
+    <li><span>私募不需受託人（§248 I ⑫ 但書）</span></li>
+    <li><span>發行後 15 日內向證券主管機關報備</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>普通、轉換、附認股權公司債都能私募（<span class="s">§248 II、III</span>）。這題都合法。決議：轉換、附認股權公司債須<b>董事會特別決議＋股東會決議</b>（<span class="s">§248-1</span>），因為會影響股份數量。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>私募普通公司債的決議法無明文，依立法理由是<b>董事會特別決議</b>。違約遲延<b>尚在繼續中</b>（§250 ①）仍不能私募。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-06-私募公司債的要件、事後報備與決議機關§248、§248-1.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>發行 100 萬股新股：員工應保留 10～15 萬股，剩下按比例給股東</h2>
+  <div class="scene">
+    <p>乙公司（民營、非公開發行）為了籌錢發行新股 100 萬股，保留 12 萬股給員工，員工只認了 3 萬股；股東接著也全部放棄。</p>
+    <p class="q">保留 12 萬股可以嗎？最後沒人認的股份怎麼辦？</p>
+  </div>
+  <div class="flow">
+    <div class="b">員工 10%～15%</div><div class="a lbl">剩下的</div>
+    <div class="b">股東按比例</div>
+    <div class="br"></div>
+    <div class="b">股東未認</div><div class="a lbl">非公發</div>
+    <div class="b ok">只能洽特定人</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>民營公司<b>應</b>保留 10%～15% 由員工承購，是法定上下限（<span class="s">§267 I</span>），12 萬股合法。其餘公告通知原有股東按比例儘先分認，逾期喪失；未認購者，公發公司得公開發行或洽特定人，非公發只能<b>洽特定人</b>（<span class="s">§267 III</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>新股認購權是<b>權利</b>不是義務。公營事業經核定<b>不得超過 10%</b>（§267 II）。普通股、特別股要<b>分別保留</b>。特定人沒有身分限制，由董事會決定。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-07-員工與原有股東的新股認購權及洽特定人認購§267.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>股東的新股認購權可以賣，員工的不行；員工認到的股份最多鎖 2 年</h2>
+  <div class="scene">
+    <p>甲公司發行新股。員工 A 想把自己 1 萬股的認購權讓給太太；股東 B 把 5 萬股的認購權賣給 C。公司另規定，員工認到的股份 3 年內不得轉讓。</p>
+    <p class="q">哪些可以？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>股東 B</b><br>認購權得與原有股份分離而獨立轉讓 → 可以賣給 C</div>
+    <div class="trap-c"><b>員工 A</b><br>員工的認購權不得轉讓；認到的股份可限制，但最長 2 年 → 3 年違法</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>新股認購權除保留由員工承購者外，得獨立轉讓（<span class="s">§267 IV</span>）。員工的不行，因為目的是勞資融合，轉給非員工就沒有意義。員工承購的股份得限制不得轉讓，最長兩年（<span class="s">§267 VI</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>章程<b>得</b>訂明員工包括控制或從屬公司員工（<span class="s">§267 VII</span>），而且是<b>雙向</b>：控制公司可以給從屬公司員工，從屬公司也可以給控制公司員工。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-08-新股認購權的獨立轉讓、員工承購股份的限制轉讓與控制從屬公司員工§267.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>降價重發要從員工重新問起，同次發行價格應歸一律</h2>
+  <div class="scene">
+    <p>乙公司同次發行普通股，每股 58 元，員工、股東、特定人都不買。董事會改成每股 20 元，想直接賣給特定人丁。</p>
+    <p class="q">可以直接賣給丁嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">58 元無人認</div><div class="a lbl">降為 20 元</div>
+    <div class="b no">直接賣丁</div>
+    <div class="br"></div>
+    <div class="b">20 元</div><div class="a lbl">價格一律</div>
+    <div class="b ok">員工 → 股東 → 特定人</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>同次發行、發行條件相同（例如都是普通股）者，<b>價格應歸一律</b>（<span class="s">§156 IV</span>），員工、股東、特定人價格一致，避免變相報酬。降價後要從員工重新問起。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>最近<b>連續二年虧損</b>或<b>資產不足抵償債務</b>，不得公開發行新股（<span class="s">§270</span>）。股息付不出來，不得公開發行有<b>股利優先</b>的特別股（<span class="s">§269</span>）。對照 §249、§250 一起背。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-09-同次發行價格應歸一律與公開發行新股的限制§156、§269、§270.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>認股和繳款合併辦理、繳款期間一個月以上，就不必再催告</h2>
+  <div class="scene">
+    <p>乙公司董事會特別決議發行新股。依法要經過認股期間、股款繳納期間，有人沒繳還要再催告一個月。公司覺得太久。另外，繳款期限過後只收到一半股款，已繳款的股東戊很不安。</p>
+    <p class="q">公司能怎麼縮短？戊能做什麼？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 360 96" role="img" aria-label="發行新股三個期間" style="max-width:560px">
+    <line x1="20" y1="40" x2="340" y2="40"/>
+    <circle class="dot" cx="30" cy="40" r="5"/>
+    <circle class="dot" cx="180" cy="40" r="5"/>
+    <circle class="dot acc" cx="330" cy="40" r="5"/>
+    <text x="30" y="24" text-anchor="start">認股期間</text>
+    <text x="30" y="64" text-anchor="start" class="mu">§267 III</text>
+    <text x="30" y="82" text-anchor="start" class="mu">逾期不認失權</text>
+    <text x="180" y="24" text-anchor="middle">繳款期間</text>
+    <text x="180" y="64" text-anchor="middle" class="mu">準用 §141</text>
+    <text x="180" y="82" text-anchor="middle" class="mu">可與認股合併</text>
+    <text x="330" y="24" text-anchor="end">催告一個月</text>
+    <text x="330" y="64" text-anchor="end" class="mu">準用 §142</text>
+    <text x="330" y="82" text-anchor="end" class="mu">合併後免除</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>經濟部 103 年函：認股與繳款<b>併同辦理</b>，有繳＝有認、未繳＝不認，<b>無庸催告</b>，但繳款期間須<b>一個月以上</b>。證交法 <span class="s">§33 III</span> 已明文化。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>戊可定一個月以上期限<b>催告公司</b>補足；逾期未完成，得撤回認股，公司返還股款並<b>加給法定利息</b>（<span class="s">§276</span>）。催告的對象是公司，不是未繳款的人。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-10-發行新股的程序與認股、繳款、催告期間§266、§276.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>只有為了籌錢的通常發行新股，員工和股東才有新股認購權</h2>
+  <div class="scene">
+    <p>乙公司今年發了三次新股：① 現金增資 50 萬股；② 轉換公司債持有人轉換 20 萬股；③ 和丙公司股份交換 30 萬股。</p>
+    <p class="q">哪一次員工、股東可以主張優先認購？</p>
+  </div>
+  <div class="tree"><ul>
+    <li class="hit"><span>① 現金增資：沒有特殊目的 → 通常發行 → 有新股認購權</span></li>
+    <li class="off"><span>② 轉換公司債：為了給轉換人 → 特殊發行 → 沒有</span></li>
+    <li class="off"><span>③ 股份交換：不受 §267 I～III（§156-3）→ 沒有</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>依發行目的區分：以籌集資金為目的是<b>通常發行新股</b>（又稱現金發行新股），有任何其他目的都是<b>特殊發行新股</b>。唯一區分實益是<b>新股認購權</b>的有無。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>公積轉增資不必保留員工承購（<span class="s">§267 V</span>）；合併、分割、重整等增發不適用（<span class="s">§267 VIII</span>）；限制員工權利新股不適用 I～VI（<span class="s">§267 IX</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-11-通常發行新股與特殊發行新股的區分實益§267、§156-3.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>董事、監察人不是員工，但董事長兼總經理可以就經理人身分領員工酬勞</h2>
+  <div class="scene">
+    <p>甲公司要發員工酬勞。名單上有：董事長 A（兼總經理）、董事 B（沒有兼職）、監察人 C、一般職員 D。</p>
+    <p class="q">誰能領？</p>
+  </div>
+  <div class="tree"><ul>
+    <li class="hit"><span>A：就總經理（經理人）身分具員工身分 → 可以</span></li>
+    <li class="off"><span>B：董事不是員工 → 不可以</span></li>
+    <li class="off"><span>C：監察人不是員工 → 不可以</span></li>
+    <li><span>D：董事、監察人以外，公司自行認定 → 可以</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>經濟部 110 年函：<b>董事、監察人不是員工</b>，其餘是否為員工由<b>公司自行認定</b>。董事長兼經理人，或兼任公司認定為員工的執行長，可以就該身分領員工獎勵。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>員工獎勵制度共五種：庫藏股、員工認股權憑證、員工酬勞、新股認購權、限制員工權利新股；只有限制員工權利新股要<b>股東會</b>特別決議。各制度細節在下一講（從 <span class="s">§167-1</span> 開始）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法16-筆記-12-員工獎勵制度的五種類型與董事、監察人不是員工§167-1、§235-1、§267.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>
