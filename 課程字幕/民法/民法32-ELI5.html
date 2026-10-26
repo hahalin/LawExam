@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法32 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法32">
+<main>
+
+<header class="lesson-head">
+  <h1>民法32</h1>
+  <span class="sub">租賃：法定租賃・押租金・出租人與承租人義務・轉租・消滅（§423～§455）</span>
+</header>
+<p class="lesson-intro">從<b>法定租賃</b>（§425、§426、§425-1）與<b>押租金</b>講完租賃的成立，接著講<b>出租人</b>的交付、保持、修繕與擔保義務，<b>承租人</b>的保管（失火責任）、租金與禁止轉租，最後講<b>租賃的消滅</b>與默示更新。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>房屋交付承租人占有後才出賣，租約才對受讓人繼續存在</h2>
+  <div class="scene">
+    <p>甲把 A 屋租給乙，12 月 25 日簽約，約定 1 月 1 日搬入。情況一：甲 12 月 28 日把 A 屋賣給丙並移轉登記。情況二：乙已入住，甲 3 月才賣給丙。租約未公證，租期 3 年。</p>
+    <p class="q">丙要乙搬走，乙能主張買賣不破租賃嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">移轉所有權時，A 屋是否已交付、乙占有中</div>
+    <div class="out"><span class="tag">情況一：尚未交付</span><div class="b no">不適用 §425，乙要搬</div></div>
+    <div class="out"><span class="tag">情況二：乙占有中</span><div class="b ok">租約移到乙丙之間</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>須出租人已交付、承租人占有中，所有權讓與的原因不限，贈與也算（<span class="s">§425 I</span>）。效果是租約法定移轉到承租人與受讓人之間。交付後設定地上權，<span class="s">§426</span> 準用 §425。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>未公證且租期逾五年或未定期限，不適用（<span class="s">§425 II</span>）；89 年 5 月 5 日前成立的租約不溯及。§426 有明文準用，不要寫類推。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-01-買賣不破租賃與設定物權不破租賃§425§426.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>地主自己只賣土地，房地之間推定有租賃關係</h2>
+  <div class="scene">
+    <p>甲在自己的 A 地上蓋 B 屋，後來只把 A 地賣給乙。雙方對租金談不攏，3 年後法院判決核定每月 28,000 元。</p>
+    <p class="q">乙能要求甲拆屋還地嗎？這 3 年的租金和遲延利息能請求嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>自己處分（§425-1）</h4>推定租賃關係，可舉反證，當事人可另行約定</div>
+    <div class="trap-c"><h4>強制執行、實行抵押權（§838-1、§876）</h4>視為有法定地上權，是物權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>推定在房屋得使用期限內有租賃關係，不受 20 年限制，乙不能請求拆屋。租賃關係在推定時已依法發生，法院核定租金<b>溯及</b>推定成立時，3 年租金都可請求（<span class="s">110 台上 3013</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>遲延利息：最高法院認為租金核定前無從給付、不可歸責，不能請求。土地共有時有無 §425-1，多數說否定，回到分管契約處理。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-02-土地房屋異其所有人之推定租賃§425-1.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>原房東沒把押租金轉交新屋主，承租人只能找原房東要</h2>
+  <div class="scene">
+    <p>乙承租甲的 A 屋，付押租金 4 萬元。甲把 A 屋賣給丙，租約依買賣不破租賃移到乙丙之間，但甲沒有把 4 萬元交給丙。之後租約終止。</p>
+    <p class="q">乙要向誰請求返還 4 萬元？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">甲有沒有把押租金轉交給丙</div>
+    <div class="out"><span class="tag">有轉交</span><div class="b ok">隨同移轉，向丙請求</div></div>
+    <div class="out"><span class="tag">沒轉交</span><div class="b no">向甲請求返還（§179）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>押租金契約是<b>要物契約</b>，以金錢交付為成立要件，所以要看甲有沒有轉交。租賃關係已不在甲乙之間，甲保有押租金欠缺法律上原因（<span class="s">§179</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>實務認為承租人要先返還房屋，不能主張同時履行（王澤鑑類推 §264 肯定）。押租金要有特約才能抵充欠租。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-03-押租金之隨同移轉與同時履行及抵租.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>承租人還沒占有，只能代位出租人請求無權占有人返還</h2>
+  <div class="scene">
+    <p>甲把 A 地租給乙，還沒交付。A 地正被地方勢力丙無權占用經營停車場，甲不敢處理。</p>
+    <p class="q">乙可以用什麼權利請求丙交出 A 地？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">乙是否已占有 A 地</div>
+    <div class="out"><span class="tag">尚未交付</span><div class="b">只有 §242 代位甲的 §767</div></div>
+    <div class="out"><span class="tag">已交付占有中</span><div class="b ok">§962，加上代位 §767</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>出租人有交付並保持租賃物合於使用收益狀態的義務（<span class="s">§423</span>）。乙對甲有租賃債權，甲怠於對丙行使所有物返還請求權，乙可以自己的名義代位行使（<span class="s">§242</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙不是所有人，不能主張 §767；還沒占有，也不能主張 §962。選擇題正解是代位。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-04-出租人之交付與保持義務§421§423.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>沒催告就自己修漏水，只能請求出租人省下的修繕費</h2>
+  <div class="scene">
+    <p>乙承租甲的 A 屋，房屋漏水。乙沒先通知甲，直接找師傅修好，花了 5,000 元；甲平常找的師傅修只要 3,000 元。</p>
+    <p class="q">乙能向甲請求多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">漏水</div><div class="a lbl">未催告</div>
+    <div class="b">乙自修 5,000 元</div><div class="a lbl">§430 要件不合</div>
+    <div class="b">甲免修繕義務</div><div class="a lbl">類推 §267 但書</div>
+    <div class="b ok">請求 3,000 元</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>修繕原則由出租人負擔（<span class="s">§429</span>）。承租人須定期催告，出租人不修才能終止、自修請求償還或扣租金（<span class="s">§430</span>）。未催告時，王千維教授認為出租人因此免修繕義務並省下費用，承租人可類推 §267 但書請求。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不能改用 §176、§179 請求全額，否則 §430 給出租人修繕機會的設計被架空。請求範圍是出租人省下的費用，不是實際支出。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-05-出租人之修繕義務與未催告之自行修繕§429§430.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>漏水修不好但還想續住，準用買賣請求減少租金</h2>
+  <div class="scene">
+    <p>乙每月 2 萬元承租甲的 A 屋。A 屋漏水，甲修了三次都修不好，乙自己找人也修不好。乙不想搬，只想少付一點租金。</p>
+    <p class="q">乙要依哪一條請求減租？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>租賃物出了什麼問題（承租人不可歸責）</span>
+      <ul>
+        <li><span>一部滅失 → 減租，不能達目的才終止（§435）</span></li>
+        <li><span>全部滅失 → 租賃關係當然消滅</span></li>
+        <li class="hit"><span>物之瑕疵 → §347 準用 §359 減租、§364 換物</span></li>
+        <li><span>第三人主張權利 → §436 準用 §435</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>租賃章沒有物之瑕疵擔保規定，可修就走修繕（§429、§430）。修不好、又不是滅失，§435 用不上，就依 <span class="s">§347</span> 準用買賣，請求減少租金；有保證品質可準用 §360 請求賠償。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§435 只問承租人不可歸責，不問出租人。瑕疵在交付後才發生，出租人仍要負擔保責任。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-06-租賃物之滅失瑕疵與出租人之擔保責任§435§436§347.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>承租人失火有重大過失才賠，員工輕過失失火也不能改依 §188</h2>
+  <div class="scene">
+    <p>乙向甲承租倉庫。乙的員工丙一時疏忽（輕過失）引起火災，倉庫損失 300 萬元。</p>
+    <p class="q">甲依 §433 找乙不行，改依 §188 找乙可以嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>一般毀損</h4>承租人抽象輕過失負責（§432、§184）；同居人、第三人造成，承租人也負責（§433）</div>
+    <div class="trap-c"><h4>失火</h4>重大過失才負責（§434）；§433、§188 都受影響</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§434 有保護承租人的特殊規範目的。最高法院認為受僱人只有輕過失時，出租人也不能依 §188 請求承租人（<span class="s">99 台上 1400</span>）。學說稱為規範競合（請求權相互影響）：不排除他條，而是把過失解為重大過失。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§434 不是強行規定，可特約加重為輕過失。早年實務用法條競合說直接排除 §184。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-07-承租人之保管義務與失火責任之競合§432至§434.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>由丈夫簽約租屋，妻子輕過失失火時，實務與學說結論不同</h2>
+  <div class="scene">
+    <p>甲乙是新婚夫妻，由甲出面向丙承租 A 屋。某天乙煮飯一時疏忽（輕過失），A 屋燒毀。</p>
+    <p class="q">丙可以向甲請求嗎？可以向乙請求嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>實務</h4>丙對甲（§433）：不行。丙對乙（§184）：可以，乙非契約當事人，不適用 §434</div>
+    <div class="trap-c"><h4>學說</h4>契約附保護第三人作用＋規範競合 → 乙也只就重大過失負責，丙不能請求</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>契約附保護第三人作用的要件：第三人與當事人關係親密（同居、配偶、父母子女），且為相對人可預見。效果是乙受契約保護、可援用 §434，避免同一屋簷下只因誰去簽約，責任就不同。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙不因此成為契約當事人，不必付租金。這個理論只有學說承認，實務尚未承認，考試不要亂用。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-08-同居人失火與契約附保護第三人作用.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>房租約定期初付，欠了兩期還不能終止</h2>
+  <div class="scene">
+    <p>乙承租甲的 A 屋，約定每月 28 日付下個月的租金 2 萬元。12 月 28 日乙付了 1 月份，之後 1 月 28 日、2 月 28 日都沒付。</p>
+    <p class="q">2 月 28 日當天，甲可以催告後終止租約嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="期初付租金的欠租時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="40" cy="55" r="5" class="dot"/>
+    <text x="40" y="35" text-anchor="middle">12/28</text>
+    <text x="40" y="80" text-anchor="middle" class="mu">付 1 月</text>
+    <circle cx="150" cy="55" r="5" class="dot"/>
+    <text x="150" y="35" text-anchor="middle">1/28</text>
+    <text x="150" y="80" text-anchor="middle" class="mu">欠 2 月</text>
+    <circle cx="260" cy="55" r="5" class="dot"/>
+    <text x="260" y="35" text-anchor="middle">2/28</text>
+    <text x="260" y="80" text-anchor="middle" class="mu">欠 3 月</text>
+    <path d="M260 55 H 370" class="acc"/>
+    <circle cx="370" cy="55" r="5" class="dot acc"/>
+    <text x="370" y="35" text-anchor="middle">3/28</text>
+    <text x="370" y="80" text-anchor="middle" class="mu">逾二個月</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>房屋遲付租金須達二個月租額，才能依催告終止；期初付的，須遲延給付逾二個月（<span class="s">§440 II</span>）。2 月 28 日乙在 3 月一天都還沒住，實際只多住一個月，所以還不能終止。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>因承租人自己的事由不能使用，租金照付（<span class="s">§441</span>）；不可歸責於承租人，依反面解釋免付。定期租約不能依 §442 調整租金，可回到 §227-2。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-09-承租人之租金義務與危險負擔§439至§442.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>房屋一部轉租，出租人事後單方反對，仍是合法轉租</h2>
+  <div class="scene">
+    <p>甲把 A 屋租給乙，租約沒有禁止轉租條款。乙把其中一個小房間轉租給丙。甲知道後寄信給乙丙：「我反對。」</p>
+    <p class="q">這個轉租合法嗎？甲能直接請求丙搬走嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">轉租的標的</div>
+    <div class="out"><span class="tag">房屋一部</span><div class="b ok">原則可以，有「反對之約定」才不行</div></div>
+    <div class="out"><span class="tag">房屋全部、土地</span><div class="b no">須出租人承諾，否則違法</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>反對之約定是契約，單方反對不算（<span class="s">§443 I</span>）。合法轉租時，丙可主張<b>占有連鎖</b>，甲不能依 §767 請求返還；丙造成的損害由乙負責（<span class="s">§444 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>土地一部轉租沒有例外。違法轉租時，甲要先依 §443 II 終止甲乙租約，才能向丙請求返還（44 年第 6 次民事庭決議）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-10-合法轉租與違法轉租及占有連鎖§443§444.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>明知是輻射屋還租，承租人仍可以終止契約</h2>
+  <div class="scene">
+    <p>乙承租甲的 A 屋，簽約時已知是輻射鋼筋屋，租約還寫明「承租人拋棄終止權」。住了半年，乙想終止。另外，若住到一半甲過世，或乙過世，租約會怎樣？</p>
+    <p class="q">乙能終止嗎？當事人死亡，租約會消滅嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>租約消滅或終止的原因</span>
+      <ul>
+        <li class="hit"><span>居住處所瑕疵危及安全健康 → 已知、已拋棄仍得終止（§424）</span></li>
+        <li><span>出租人死亡 → 租約不受影響，繼承人不能終止</span></li>
+        <li><span>承租人死亡 → 租約繼續，繼承人得終止（§452）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§424 保護居住者的生命、身體健康，承租人或同居人受危害都適用。買受人明知瑕疵還買不能主張瑕疵擔保，租賃危及健康時則不受影響。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>承租人死亡時，有終止權的是承租人的繼承人，出租人沒有；繼承人終止要先期通知（<span class="s">§450 III</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-11-租賃契約之終止事由與當事人死亡§424§452.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>租地建屋沒約定期限，租到房屋不堪使用為止</h2>
+  <div class="scene">
+    <p>民國 50 年乙向甲租 A 地蓋木造 B 屋，沒約定期限。民國 90 年 B 屋老舊，乙未經甲同意翻新成鋼筋混凝土屋。鑑定原 B 屋若不翻新，最多用到民國 100 年。民國 110 年甲請求拆屋還地。</p>
+    <p class="q">甲的請求有理由嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">民國 50 年租地建屋</div><div class="a lbl">未定期限</div>
+    <div class="b">至房屋不堪使用為止</div><div class="a lbl">未經同意翻新</div>
+    <div class="b">以原 B 屋判斷</div><div class="a lbl">民國 100 年已不堪用</div>
+    <div class="b ok">甲可請求返還</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>一般租期不得逾 20 年；租地建屋不受限制（<span class="s">§449</span>）。租地建屋未定期限，解為至房屋不堪使用為止的不確定期限，排除 §450 II 隨時終止。翻新經出租人同意，才以新屋判斷。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>租期屆滿後承租人續住、出租人不即反對，視為不定期限繼續（<span class="s">§451</span>），不以收租為要件；單純不收租不算反對。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法32-筆記-12-租賃期限與租地建屋之不確定期限及默示更新§449至§451.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

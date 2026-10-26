@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法31 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法31">
+<main>
+
+<header class="lesson-head">
+  <h1>民法31</h1>
+  <span class="sub">買賣之瑕疵擔保與危險負擔・贈與・租賃之成立（§350～§422）</span>
+</header>
+<p class="lesson-intro">接著權利瑕疵講完 §350～§352，進入<b>物之瑕疵擔保</b>的要件、四種效果、§365 期間，以及與不完全給付的競合；再講買受人義務與 §373、§374 的<b>危險負擔</b>；最後帶過<b>贈與</b>，並開始講<b>租賃</b>的成立。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>賣出不存在的債權，契約有效，出賣人要負債務不履行責任</h2>
+  <div class="scene">
+    <p>甲把「對乙的 100 萬元債權」以 80 萬元賣給丙並讓與。情況一：這筆債權根本不存在。情況二：債權存在，但乙沒錢還。</p>
+    <p class="q">兩種情況，丙都能找甲負責嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">丙收不到 100 萬元的原因</div>
+    <div class="out"><span class="tag">債權不存在</span><div class="b ok">甲負責（§350、§353）</div></div>
+    <div class="out"><span class="tag">債權存在，乙沒錢</span><div class="b no">甲原則不負責（§352）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>買賣不存在的物，契約無效，只有信賴利益賠償（<span class="s">§246、§247</span>）。買賣不存在的權利，因 §350 特別要出賣人擔保權利存在，契約解為有效，才有債務不履行可言。債權出賣人原則不擔保債務人的支付能力（<span class="s">§352</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>就算特約擔保支付能力，也只推定擔保「債權移轉時」的支付能力。買受人明知權利有瑕疵還買，出賣人不負責（<span class="s">§351</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-01-權利存在擔保與債權出賣人之支付能力擔保§350§351§352.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>出賣人保證的品質，買受人明知不符仍可主張瑕疵擔保</h2>
+  <div class="scene">
+    <p>乙向水果商甲買一箱芒果，乙一看就覺得不甜，甲拍胸脯保證「一定甜」。乙買回家，果然不甜。</p>
+    <p class="q">乙明知看起來不甜還買，還能主張瑕疵擔保嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>價值、效用瑕疵（§354 I）</h4>買受人知情 → 出賣人不負責；重大過失不知 → 原則不負責（§355）</div>
+    <div class="trap-c"><h4>保證品質（§354 II）</h4>不適用 §355，知不知道都能主張；但仍要檢查通知（§356）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>品質須經出賣人保證才構成瑕疵。§355 只寫「前條第一項」，不包括品質瑕疵，因為出賣人是為自己的保證負責。買受人受領後要從速檢查、即時通知，否則視為承認（<span class="s">§356</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>交付前已知有瑕疵，原則不能提前主張；出賣人確定拒絕擔保時，才可提前解約（<span class="s">84 台上 2785</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-02-物之瑕疵之類型與買受人之知情及檢查通知§354至§358.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>減價只要有瑕疵，損害賠償要保證品質或故意不告知</h2>
+  <div class="scene">
+    <p>A 車市價 100 萬元，乙以 90 萬元向甲買下。因為瑕疵，A 車市價只剩 70 萬元。</p>
+    <p class="q">乙請求減少價金能減多少？請求損害賠償能拿多少？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>減少價金（§359）</h4>90 萬降到 70 萬 → 減 20 萬；不需其他要件</div>
+    <div class="trap-c"><h4>損害賠償（§360）</h4>原本賺 10 萬變成虧 20 萬 → 賠 30 萬；限保證品質或故意不告知</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>減價是最基本的效果。解除契約須非顯失公平，也就是瑕疵達到契約目的不達（<span class="s">§359 但書</span>）。損害賠償包括所受損害與所失利益，拿得較多，所以要件較嚴（<span class="s">§360</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>買到凶宅仍可居住，屬價值瑕疵，實務傾向只能減價，不能解約。減價是形成權，已付的錢要另依 §179 請求返還。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-03-減少價金解除契約與損害賠償§359§360.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>主物解約及於從物，從物有瑕疵只能就從物解約</h2>
+  <div class="scene">
+    <p>乙向甲買一台冷氣，附一支遙控器。情況一：冷氣故障。情況二：只有遙控器故障。另外，乙買的若是一般型號的冷氣，也想直接換一台新的。</p>
+    <p class="q">乙可以解除哪些部分？能不能要求換貨？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>瑕疵出在哪裡</span>
+      <ul>
+        <li class="hit"><span>主物（冷氣）→ 解約效力及於從物，遙控器一起退（§362 I）</span></li>
+        <li><span>從物（遙控器）→ 只能就遙控器解約（§362 II）</span></li>
+        <li><span>成套數物分離顯受損害 → 任何一方得解除全部（§363 II）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>種類之債才能請求另行交付無瑕疵之物，而且要即時請求（<span class="s">§364</span>）。出賣人得定期催告買受人是否解約，逾期不解約即喪失解除權（<span class="s">§361</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>特定物沒有換貨的空間。§362 常和民總的主物、從物（§68）一起出題。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-04-另行交付無瑕疵之物與解除權之限制§361至§364.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>減價與解約受通知後六個月、交付後五年雙重限制</h2>
+  <div class="scene">
+    <p>甲於 2020 年 1 月把房屋交付給乙。乙 2023 年 3 月發現漏水並通知甲，卻拖到 2023 年 12 月才主張解約。</p>
+    <p class="q">乙還來得及解約嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="§365 兩段期間">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="40" cy="55" r="5" class="dot"/>
+    <text x="40" y="35" text-anchor="middle">2020/1</text>
+    <text x="40" y="80" text-anchor="middle" class="mu">交付</text>
+    <circle cx="170" cy="55" r="5" class="dot"/>
+    <text x="170" y="35" text-anchor="middle">2023/3</text>
+    <text x="170" y="80" text-anchor="middle" class="mu">通知</text>
+    <path d="M170 55 H 250" class="acc"/>
+    <circle cx="250" cy="55" r="5" class="dot acc"/>
+    <text x="250" y="35" text-anchor="middle">2023/9</text>
+    <text x="250" y="80" text-anchor="middle" class="mu">六個月屆滿</text>
+    <circle cx="360" cy="55" r="5" class="dot"/>
+    <text x="360" y="35" text-anchor="middle">2025/1</text>
+    <text x="360" y="80" text-anchor="middle" class="mu">五年屆滿</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>解除權與減價權於通知後六個月不行使，或自交付時起五年，消滅；任一屆滿就不能主張（<span class="s">§365 I</span>）。乙在 2023 年 12 月主張，已超過六個月。出賣人故意不告知瑕疵，只看五年（<span class="s">§365 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§365 是除斥期間，只管 §359。§360、§364 是請求權，實務回到 §125 的 15 年；學說主張類推 §365。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-05-減價解約之除斥期間與損害賠償之時效§365.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>解除權逾期後，買賣實務仍許依不完全給付解約</h2>
+  <div class="scene">
+    <p>甲蓋房子時偷工減料，房屋結構歪斜，賣給乙。乙交屋後第六年才發現，§365 的期間已過。</p>
+    <p class="q">乙能不能改依 §227 不完全給付解約？</p>
+  </div>
+  <div class="flow">
+    <div class="b">可歸責於甲？</div><div class="a lbl">是</div>
+    <div class="b">自始瑕疵</div><div class="a lbl">履行說</div>
+    <div class="b">§359＋§227 競合</div><div class="a lbl">請求權競合說</div>
+    <div class="b ok">§227 不受 §365 影響</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>不可歸責 → 只有瑕疵擔保。事後瑕疵且可歸責 → 兩者併存（<span class="s">77 年第 7 次民事庭決議</span>）。自始瑕疵，擔保說只負瑕疵擔保；履行說認為出賣人有交付無瑕疵之物的義務，兩者競合。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>承攬已改採規範競合說（<span class="s">96 年第 8 次決議</span>），考試兩說並陳。特約免除擔保原則有效，故意不告知則無效（<span class="s">§366</span>）；定型化契約看 §247-1 是否顯失公平。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-06-瑕疵擔保與不完全給付之競合及特約免除§227§366.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>房屋交付後因地震倒塌，未過戶的買受人仍要付價金</h2>
+  <div class="scene">
+    <p>甲以 1,000 萬元把 A 屋賣給乙。貸款還沒核撥、尚未過戶，甲先把房子交給乙裝潢。結果地震把 A 屋震倒，雙方都沒有過失。</p>
+    <p class="q">乙還要付 1,000 萬元嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">地震發生的時點</div>
+    <div class="out"><span class="tag">交付前</span><div class="b dim">甲免給付、乙免付價金 → 甲承擔危險</div></div>
+    <div class="out"><span class="tag">交付後</span><div class="b ok">甲免給付、乙仍須付價金 → 乙承擔危險</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>不可歸責於雙方的給付不能，原則上債務人免給付（<span class="s">§225 I</span>），他方免對待給付（<span class="s">§266</span>）。買賣標的物的利益及危險，自交付時起由買受人負擔（<span class="s">§373</span>），以交付為準，不看是否過戶。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>實務認為指示交付也會移轉危險（最高法院 44 年判例）；黃茂榮認為應以買受人現實占有為前提，占有改定、指示交付原則不移轉。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-07-買受人之義務與價金危險之移轉§367§373.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>交付才產生占有權源，買賣契約本身不是</h2>
+  <div class="scene">
+    <p>甲把 A 地賣給乙。情況一：已交付、未過戶，15 年後乙請求過戶已罹於時效。情況二：甲還沒交付也沒過戶，乙簽約一週後就把挖土機開進 A 地。</p>
+    <p class="q">兩種情況，甲能依 §767 請求乙返還 A 地嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>乙占有 A 地有沒有權源</span>
+      <ul>
+        <li><span>已交付 → 依 §373 享有利益，有權占有 → 甲不能請求</span></li>
+        <li class="hit"><span>未交付、擅自占有 → 只有債權，無權占有 → 甲可以請求</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>交付後買受人享受利益，可作為占有權源；反過來，已過戶但未交付，出賣人仍有權占有。這種契約上的權源只能對抗契約當事人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>甲為了打破僵局，把 A 地無償過戶給明知內情的兒子丙，由丙主張 §767，通常違反誠信原則。乙在交付前該做的是依 §348 請求點交，不是自己占有。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-08-買賣標的物交付後之占有權源與§767.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>買受人臨時改送他處，危險在交給運送人時就移轉</h2>
+  <div class="scene">
+    <p>乙向甲家具行買 5 萬元沙發，約定送到乙家。出貨當天，乙臨時要求改送妹妹家。運送途中發生車禍，沙發全毀，雙方都沒有過失。</p>
+    <p class="q">乙還要付 5 萬元嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">約定送乙家</div><div class="a lbl">臨時改送</div>
+    <div class="b">交給運送人<small>危險移轉</small></div><div class="a lbl">途中車禍</div>
+    <div class="b no">乙仍須付 5 萬元</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>買受人請求送交清償地以外之處所，自出賣人交付給運送人或承攬運送人時起，危險由買受人負擔（<span class="s">§374</span>），乙不能依 §266 免付價金。這段期間出賣人支出的必要費用依委任、非必要費用依無因管理請求（<span class="s">§375</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>雙方事先合意變更清償地，不是 §374 的情形；§374 是清償地已約定好，買受人臨時要求送到別處。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-09-送交清償地以外處所之危險提前移轉§374§375.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>經公證的贈與遲延，受贈人只能請求交付</h2>
+  <div class="scene">
+    <p>甲經公證答應送乙一台市價 60 萬元的車，乙已找好買家準備以 70 萬元轉賣。甲一直拖著不交車，後來因重大過失把車撞毀。</p>
+    <p class="q">乙能請求遲延利息嗎？撞毀後能請求多少？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>一般債務</h4>遲延可請求賠償；給付不能依 §226 賠所受損害＋所失利益（含 10 萬價差）</div>
+    <div class="trap-c"><h4>贈與（§409、§410）</h4>遲延只能請求交付；給付不能只能請求價額 60 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>贈與是單務契約。權利未移轉前贈與人得任意撤銷，經公證或履行道德上義務者除外（<span class="s">§408</span>），這類贈與才有遲延與不能的問題。贈與人只就故意或重大過失負給付不能責任（<span class="s">§410</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>贈與物有瑕疵，贈與人原則不負責；故意不告知或保證無瑕疵，才對因瑕疵所生的損害（加害給付）負賠償責任（<span class="s">§411</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-10-贈與人之給付義務與瑕疵擔保§406至§411.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>負擔不履行的撤銷權可以繼承，任意撤銷權不行</h2>
+  <div class="scene">
+    <p>甲把土地送給姪子乙，負擔是讓甲夫妻住到過世。甲死後，乙立刻要甲妻搬走。另一例：丙送丁房子後被丁毆打，丙不敢撤銷就過世了。</p>
+    <p class="q">甲、丙的繼承人能撤銷贈與嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>贈與人死亡後的撤銷權</span>
+      <ul>
+        <li><span>§408 I 任意撤銷 → 一身專屬，不得繼承</span></li>
+        <li class="hit"><span>§412 負擔不履行 → 得繼承</span></li>
+        <li><span>§416 忘恩負義 → 不得繼承，繼承人另有 §417（6 個月）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>負擔不是債務，附負擔贈與仍是單務契約；受贈人不履行，只能請求履行或撤銷（<span class="s">§412</span>）。§412 撤銷權源於契約衡平，不專屬於贈與人，可以繼承。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>所有撤銷權都因受贈人死亡而消滅（<span class="s">§420</span>）：丁若在第三個月死亡，丙的繼承人就撤不掉了。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-11-附負擔贈與與贈與撤銷權之繼承§412至§420.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>不動產口頭租兩年，視為不定期限租賃</h2>
+  <div class="scene">
+    <p>甲把 A 屋租給乙，雙方口頭約定租期兩年，每月 2 萬元，有 LINE 對話為證。</p>
+    <p class="q">乙住半年想搬走可以嗎？甲把 A 屋賣給丙，丙可以要乙搬走嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">逾一年、未以字據訂立 → 視為不定期限（§422）</div>
+    <div class="out"><span class="tag">乙想搬走</span><div class="b ok">可隨時終止（§450 II）</div></div>
+    <div class="out"><span class="tag">丙要乙搬走</span><div class="b no">乙不受買賣不破租賃保護（§425 II）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>租賃原則不要式；不動產租期逾一年，應以字據訂立（<span class="s">§422</span>）。「視為」不得舉反證推翻，LINE 對話、錄音都沒用。租賃是債權契約，出租他人之物不是無權處分。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>租期剛好一年不必字據。土地「互借」實質是互租，受讓人不能請求返還。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法31-筆記-12-意定租賃之互借與不動產租賃之字據§421§422.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

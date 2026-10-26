@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法24 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法24">
+<main>
+
+<header class="lesson-head">
+  <h1>民法24</h1>
+  <span class="sub">懸賞廣告・預約・債之標的・自始客觀不能・可歸責（§164～§247）</span>
+</header>
+<p class="lesson-intro">先收掉契約成立的尾巴：<b>懸賞廣告、預約、無因債務約束</b>。接著走債之標的，重點是<b>種類之債何時特定</b>。後半進入債務不履行：<b>自始客觀不能</b>不屬債務不履行，最後看<b>可歸責的標準</b>與<b>履行輔助人</b>。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>後完成的人先領走懸賞報酬，先完成的人改向他請求不當得利</h2>
+  <div class="scene">
+    <p>甲懸賞：第一位拍到石虎照片者給 1,000 元。乙 10/1 拍到，但不知道有這個廣告；丙 10/10 拍到，先向甲領走 1,000 元，甲不知道乙更早拍到。</p>
+    <p class="q">乙知道後，還能向甲要錢嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="懸賞廣告時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="60" cy="55" r="5" class="dot acc"/>
+    <text x="60" y="35" text-anchor="middle">10/1 乙拍到</text>
+    <text x="60" y="80" text-anchor="middle" class="mu">最先完成</text>
+    <circle cx="200" cy="55" r="5" class="dot"/>
+    <text x="200" y="35" text-anchor="middle">10/10 丙拍到</text>
+    <text x="200" y="80" text-anchor="middle" class="mu">先通知</text>
+    <circle cx="335" cy="55" r="5" class="dot"/>
+    <text x="335" y="35" text-anchor="middle">甲善意付丙</text>
+    <text x="335" y="80" text-anchor="middle" class="mu">乙 → 丙 §179</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>懸賞廣告採契約說：廣告是要約，完成行為是承諾。最先完成者取得報酬請求權，不知有廣告而完成也一樣（<span class="s">§164 II、IV</span>）。廣告人善意給付給最先通知之人，給付義務消滅（<span class="s">§164 III</span>），乙只能依不當得利向丙請求。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>約定以公證為契約成立要件卻沒公證，是「推定」不成立（§166），可以舉反證推翻，例如雙方已互相履約。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-01-契約之要式與懸賞廣告之報酬請求權§166§164.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>找狗廣告撤回了，找狗的人只能請求善意支出，最多到報酬額</h2>
+  <div class="scene">
+    <p>甲懸賞 1 萬元找 A 犬。乙花 3,000 元印傳單到處找，還沒找到，甲就撤回廣告。</p>
+    <p class="q">乙能向甲請求什麼？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">甲能證明乙不能完成嗎？</div>
+    <div class="out"><span class="tag">不能</span><div class="b ok">賠乙善意所受損害 3,000 元（上限 1 萬元）</div></div>
+    <div class="out"><span class="tag">能</span><div class="b no">狗已自己回家 → 不必賠</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>行為完成前還沒有承諾，契約未成立，廣告人可以撤回；但要賠行為人因廣告善意所受的損害，以預定報酬額為上限（<span class="s">§165 I</span>）。定有完成期間的廣告，推定拋棄撤回權（<span class="s">§165 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>優等懸賞廣告有兩人並列優等，除廣告另有聲明外，共同取得一份報酬請求權（§165-3），不是各拿一份。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-02-懸賞廣告之撤回與優等懸賞廣告§165至§165-3.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>簽了預約後對方把房子賣掉，賠準備費用還是本約的獲利</h2>
+  <div class="scene">
+    <p>甲、乙就 A 屋簽預約備忘錄。乙為買屋支出貸款手續費等 10 萬元；若順利買到可賺 100 萬元。甲卻把 A 屋賣給丙並移轉登記。</p>
+    <p class="q">乙可以向甲請求 10 萬元還是 100 萬元？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>林誠二、早期實務：10 萬</h4>只有預約不履行，賠為本約所做的準備費用</div>
+    <div class="trap-c"><h4>吳從周、近年實務：100 萬</h4>訂立本約 → 履行本約 → 本約不履行之賠償（重疊合併）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>預約是為訂立本約而成立的契約。預約的信賴利益在訂預約時已被吸收為成本，不能請求。吳從周認為預約的功能就是強制訂立本約，所以可在一個訴訟中依序請求訂立本約、履行本約、本約不履行的賠償。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>好意施惠不是契約，但可作為法律上原因，受益人不構成不當得利。能否降低注意義務：王澤鑑認為不行，林誠二認為可以。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-03-好意施惠與預約不履行之損害賠償.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>答應賠朋友投資虧損 50 萬，事後能不能拒絕給付</h2>
+  <div class="scene">
+    <p>甲、乙各出 100 萬元合夥投資，賠光了。甲在法律上沒有賠償義務，但因為交情寫下「我賠你 50 萬」。乙起訴請求。</p>
+    <p class="q">甲可以拒絕嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>乙請求 50 萬</span>
+      <ul>
+        <li><span>實務：無因債務承認是契約 → 直接請求有理由</span></li>
+        <li class="hit"><span>陳聰富：乙不用證明原因（舉證責任轉換）</span>
+          <ul>
+            <li class="hit"><span>甲證明欠缺原因 → 不當得利之惡意抗辯</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>實務認為無因債務承認可直接作為請求權基礎。陳聰富認為它只轉換舉證責任：乙不必證明原因，但甲若證明甲乙間欠缺原因，給了也能依不當得利要回來，所以依誠信原則可直接拒絕給付。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>惡意抗辯借自票據法：無因性在直接前後手之間不適用，甲乙正是直接當事人。國考少考，研究所較可能考。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-04-無因債務約束與不當得利之惡意抗辯.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>網購筆電在運送途中撞毀，買受人只能請求再給一台</h2>
+  <div class="scene">
+    <p>甲在網路商城向乙買某型號筆電一台。乙出貨途中超速車禍，筆電滅失。</p>
+    <p class="q">甲能依 §226 向乙請求損害賠償嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">是哪一種債？</div>
+    <div class="out"><span class="tag">一般</span><div class="b ok">種類之債：還能進貨 → 無給付不能 → §348 再給一台</div></div>
+    <div class="out"><span class="tag">清倉</span><div class="b no">庫存之債：最後一台沒了 → 給付不能</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>只約定型號、款式是種類之債，給中等品質之物就算履行（<span class="s">§200 I</span>）。種類是抽象的，市場上找得到就永遠能給付，所以特定前不會給付不能，§226 第一個要件就不成立。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>種類之債會給付不能只有兩種：庫存之債（例如結束營業的清倉大拍賣），以及標的已經特定（第 6 卡）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-05-債之標的與種類之債之給付不能§199§200I.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>水晶燈依約送到時買受人不在家，回程撞毀仍須付款</h2>
+  <div class="scene">
+    <p>甲向乙買水晶燈（種類之債），約定送到甲家。乙依約送到，甲忘了而不在家，請乙下午再送。乙回程遇到車禍，乙不可歸責，水晶燈滅失。</p>
+    <p class="q">甲還能要燈嗎？乙還能收錢嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">依約送到</div><div class="a lbl">交付必要行為完結</div>
+    <div class="b q">特定＋甲受領遲延</div><div class="a lbl">回程滅失</div>
+    <div class="b">給付不能</div>
+    <div class="br"></div>
+    <div class="b no">甲：§348 給付 ✗、§226 賠償 ✗</div>
+    <div class="b ok">乙：§367 請求價金 ✓</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>交付必要行為完結或經債權人同意指定，標的就特定（<span class="s">§200 II</span>）。赴償之債送到就是現實提出，不問債權人有沒有收下。特定後滅失是給付不能，乙免給付義務（<span class="s">§225 I</span>）。實務與王澤鑑認為受領遲延就是可歸責於甲的事由，乙仍可請求價金（<span class="s">§267</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>是「交付必要行為」完結，不是交付完結，只要求提出。往取之債只要準備好並通知（言詞提出，§235 但書）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-06-種類之債之特定與交付必要行為完結§200II§235.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>借 100 萬先扣利息只給 84 萬，實際利率超過 16%</h2>
+  <div class="scene">
+    <p>甲向乙借 100 萬元，約定年利率 16%。乙說利息先扣，實際只交付 84 萬元，一年後甲還 100 萬元。</p>
+    <p class="q">實際利率是多少？甲要還多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">實拿 84 萬</div><div class="a lbl">一年付 16 萬</div>
+    <div class="b q">16 ÷ 84 ≈ 19%</div><div class="a lbl">超過部分無效</div>
+    <div class="b ok">84 × 16% ＝ 13.44 萬<small>還 97.44 萬</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>約定利率超過週年 16% 的部分無效（<span class="s">§205</span>）；以折扣等方法巧取利益，超過部分也無效（<span class="s">§206</span>）。法定利率是 5%（<span class="s">§203</span>）。利息原則不得滾入原本，例外須書面約定、遲付逾一年、經催告（<span class="s">§207</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>數字都是「逾」「超過」：剛好 12% 沒有提前清償權（§204），剛好 16% 有效。以外國貨幣「定給付額」可改付新臺幣，「訂明以外國貨幣為給付」不行（§202）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-07-貨幣之債與利息之債§201至§207.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>第三人行使選擇權，債權人與債務人都要通知</h2>
+  <div class="scene">
+    <p>甲向乙買 A、B、C 三匹馬中的一匹，約定由獸醫丙挑選。</p>
+    <p class="q">丙選好後要通知誰？丙一直不選怎麼辦？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>第三人選擇（§209 II）</h4>向債權人<b>及</b>債務人表示，存證信函寄兩張</div>
+    <div class="trap-c"><h4>法定代理人承認（§117）</h4>向當事人<b>之一方</b>表示即可，寄一張</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>選擇權原則屬於債務人（<span class="s">§208</span>）。當事人定有期間而不選，移屬他方；未定期間，清償期屆至後催告仍不選，移屬催告之人（<span class="s">§210 I、II</span>）。選擇的效力溯及於債之發生時（<span class="s">§212</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>第三人不能或不欲選擇，選擇權直接歸債務人，不須催告（§210 III）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-08-選擇之債之選擇權歸屬與行使§208至§212.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>賣掉已燒毀的小木屋，只能賠錯過另一間房的損失</h2>
+  <div class="scene">
+    <p>甲的 A 屋上個月已燒毀，甲不知情，以 400 萬元賣給乙（市價 500 萬元）。乙因此拒絕了丙以 400 萬元出售、市價 450 萬元的 B 屋。</p>
+    <p class="q">乙能向甲請求 100 萬元還是 50 萬元？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>給付不能</span>
+      <ul>
+        <li class="hit"><span>自始客觀不能 → §246 無效 → §247 信賴利益 50 萬</span>
+          <ul><li class="off"><span>履行利益 100 萬 ✗</span></li></ul>
+        </li>
+        <li><span>自始主觀不能、嗣後不能 → 債務不履行（下一講）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>締約時任何人都做不到，是自始客觀不能，契約無效（<span class="s">§246</span>），不是債務不履行。知道或可得而知不能的一方，要賠非因過失信契約有效的他方，範圍是信賴利益，包含喪失締約機會（<span class="s">§247</span>，51 台上 2101）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§246 但書要「可以除去」加上「訂約時預期除去後給付」。事後修法開放農地買賣，但訂約時沒有預見，契約仍無效。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-09-債務不履行之體系與自始客觀不能§246§247.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>出賣虛構的債權，買賣契約反而有效</h2>
+  <div class="scene">
+    <p>甲虛構自己對丁有 20 萬元債權，以 1 萬元賣給乙。另一案，甲把對戊的 A 債權先讓與丙，又讓與丁。</p>
+    <p class="q">甲乙的買賣有效嗎？甲丁的第二次讓與有效嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>買賣不存在之物</h4>§246 無效 → §247 信賴利益</div>
+    <div class="trap-c"><h4>買賣不存在之債權</h4>契約有效 → §350、§353 依債務不履行請求</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>權利出賣人應擔保權利確係存在（<span class="s">§350</span>），違反時依債務不履行行使權利（<span class="s">§353</span>）。這些效果都以契約有效為前提，所以通說認為它們是特別規定，買賣不存在之債權，契約有效。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>雙重讓與時，第二次買賣有效；實務類推 §246 認第二次讓與無效（102 台上 1825）。老師批評：債權在丙身上，是他人之債權，不是不存在之債權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-10-債權雙重讓與與買賣不存在之債權§246§350.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>颱風封路害旅客遲到，客運公司沒有過失也要負責</h2>
+  <div class="scene">
+    <p>甲客運載乙、丙。乙那班遇颱風封路，晚了半天才到；丙那班遇強震落石，丙受傷。甲都沒有過失。</p>
+    <p class="q">甲對遲到、受傷都要負責嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>責任程度（由重到輕）</span>
+      <ul>
+        <li class="hit"><span>不可抗力責任：遲到（§654）、遲延中（§231 II）</span></li>
+        <li><span>通常事變責任：傷害（§654）、旅店主人（§606）</span></li>
+        <li><span>抽象輕過失：原則</span></li>
+        <li><span>具體輕過失：無償委任（§535）</span></li>
+        <li><span>重大過失：受領遲延中（§237）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§654</span> 只寫「應負責任」，不看故意過失，是無過失責任；但書只讓傷害以不可抗力免責。所以丙的傷害是通常事變責任，甲可免責；乙的遲到是不可抗力責任，甲仍要賠，但以因遲到增加的必要費用為限。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>無償時「從輕酌定」（§220 II）是放寬犯錯空間，可能只負具體輕過失或重大過失。訂約時就是無行為能力人，契約依 §75 無效，用不到 §221。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-11-可歸責之標準與注意義務之程度§220至§223.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>旅行社管不動當地旅館，旅館的過失仍算在旅行社身上</h2>
+  <div class="scene">
+    <p>甲旅行社與乙訂旅遊契約，住宿由當地丙旅館提供，甲對丙沒有指揮監督權。丙的員工疏忽，乙在旅館內受傷。</p>
+    <p class="q">乙能依債務不履行向甲請求賠償嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">§224 須否指揮監督？</div>
+    <div class="out"><span class="tag">要</span><div class="b no">90 台上 978 → 丙不是履行輔助人</div></div>
+    <div class="out"><span class="tag">不要</span><div class="b ok">108 台上 2363、陳聰富 → 甲負責</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債務人藉履行輔助人履約，輔助人的故意過失視為債務人自己的（<span class="s">§224</span>），用來判斷「可歸責」，不是請求權基礎。陳聰富認為 §224 是嚴格責任：藉他人履約，就承擔他人製造的風險，不以指揮監督為限。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>講義 427 頁最後一句改為「肯定說」。準備階段的建商、供應商是不是履行輔助人：王澤鑑認為是預備行為而否定；陳聰富目的性擴張而肯定。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法24-筆記-12-履行輔助人之指揮監督與準備階段§224.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法物權補充2 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法物權補充2">
+<main>
+
+<header class="lesson-head">
+  <h1>民法物權補充2</h1>
+  <span class="sub">擔保物權與占有補充：最高限額抵押・動產質權・權利質權・留置權・占有（§881-1～§966）</span>
+</header>
+<p class="lesson-intro">物權補充課最後一講，以選擇題為主：<b>最高限額抵押權</b>的有限制說與債權最高限額、確定與不準用；<b>動產質權</b>的注意義務與孳息抵充、返還即消滅、當鋪；<b>權利質權</b>的書面要件；<b>留置權</b>的要件與善意優先；最後把<b>占有</b>的體系與占有保護跑一遍。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 7</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>最高限額限的是本金加利息加違約金，實行費用另計</h2>
+  <div class="scene">
+    <p>甲以 A 地為乙設定最高限額 1,000 萬元的抵押權。確定時本金 1,100 萬、利息 100 萬、違約金 300 萬、實行費用 50 萬。A 地拍得 2,000 萬元。</p>
+    <p class="q">乙能優先受償多少？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>債權最高限額說（現行 §881-2）</h4>1,500 壓到 1,000＋費用 50＝1,050 萬</div>
+    <div class="trap-c"><h4>本金最高限額說（修法前一說）</h4>本金壓到 1,000＋100＋300＋50＝1,450 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>擔保範圍採有限制說，須列舉一定法律關係（<span class="s">§881-1 II</span>），「或其他」不受擔保。最高限額抵押權沒有發生、移轉、消滅上的從屬性。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>96 年前設定的不溯及既往，原則無限制，但偶然、不可預見的債權（例如車禍賠償）仍排除。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法物權補充2-筆記-01-最高限額抵押權之擔保範圍與債權最高限額說§881-1§881-2.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>最高限額抵押權要先確定才能實行，確定後的新債權不算</h2>
+  <div class="scene">
+    <p>甲公司以廠房為銀行設定最高限額 1,000 萬元，約定 20 年。第 8 年甲欠款不還，銀行聲請拍賣。第 9 年甲又向銀行借 50 萬元。實際債權已達 1,300 萬元。</p>
+    <p class="q">第 9 年那筆受擔保嗎？第三人要清償多少才能塗銷？</p>
+  </div>
+  <div class="flow">
+    <div class="b">聲請拍賣<small>§881-12 確定</small></div><div class="a"></div>
+    <div class="b no">之後的 50 萬不擔保<small>§881-14</small></div><div class="a"></div>
+    <div class="b ok">第三人清償 1,000 可塗銷<small>§881-16</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>確定期日不得逾 30 年（<span class="s">§881-4</span>），未約定可隨時請求確定。債權罹於時效後 5 年不實行，該債權脫離擔保（<span class="s">§881-15</span>）。當事人死亡原則不影響（§881-11）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>最高限額抵押權可以單獨讓與或讓他人共有（與 §870 相反）。不準用 §861 II、§869 I、§870、§870-1、§870-2、§880（<span class="s">§881-17</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法物權補充2-筆記-02-最高限額抵押權之讓與確定結算與不準用§881-4至§881-17.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>質權人收的孳息要先抵費用、再抵利息、最後抵本金</h2>
+  <div class="scene">
+    <p>甲以 1 萬隻雞為乙設定動產質權，擔保本金 100 萬元，已生利息 8 萬元。乙花 3 萬元收雞蛋，賣得 25 萬元。</p>
+    <p class="q">甲還欠乙多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">25 − 3 費用＝22</div><div class="a"></div>
+    <div class="b">22 − 8 利息＝14</div><div class="a"></div>
+    <div class="b ok">本金剩 86 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>保管質物要善良管理人注意（<span class="s">§888</span>）；收取孳息只要與處理自己財產同一注意（<span class="s">§890</span>）。擔保範圍比抵押權多保存費用與隱有瑕疵之賠償（<span class="s">§887</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>設定須交付，不得由出質人代占有（§885）。轉質連不可抗力都要負責（§891）。拍賣質物不必聲請法院（§893）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法物權補充2-筆記-03-動產質權之設定擔保範圍與質權人之權利義務§884至§895.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>質物借回給出質人，質權當場消滅；當鋪不能要你還錢</h2>
+  <div class="scene">
+    <p>甲把鑽戒質押給乙借 50 萬元，約定保留質權後借回參加晚宴。另一支手錶甲拿去當鋪，約定 4/30 取贖。</p>
+    <p class="q">乙的質權還在嗎？手錶沒去贖會怎樣？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">兩種質權</div>
+    <div class="out"><span class="tag">一般質權</span><div class="b no">返還即消滅，保留無效（§897）</div></div>
+    <div class="out"><span class="tag">營業質</span><div class="b ok">5/5 後當鋪取得所有權，債權同時消滅</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>喪失占有 2 年內未請求返還，質權消滅（<span class="s">§898</span>）。營業質僅得就質物行使權利，取贖期間屆滿後 5 日內未取贖即取得所有權（<span class="s">§899-2</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>最高限額質權除交付外還要書面（§899-1）。營業質不適用孳息、轉質、預行拍賣、物上代位等規定。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法物權補充2-筆記-04-動產質權之消滅最高限額質權與營業質§896至§899-2.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>以債權設質只要書面，沒交債權證書也有效</h2>
+  <div class="scene">
+    <p>甲向乙買 A 車，對乙有交車的債權。甲向丙借 100 萬元，以書面把這個債權設定權利質權給丙，但買賣契約書沒交給丙。</p>
+    <p class="q">質權有效嗎？到期丙可以怎麼做？</p>
+  </div>
+  <div class="flow">
+    <div class="b">書面 → 有效</div><div class="a lbl">§904</div>
+    <div class="b">請求乙交付 A 車</div><div class="a lbl">§906</div>
+    <div class="b ok">丙對 A 車有質權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>以債權設質應以書面為之；有證書者出質人有交付義務（<span class="s">§904</span>）。標的是不動產物權移轉者，丙可請求移轉給甲，對該不動產有抵押權（<span class="s">§906-1</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>交付債權證書是義務，不是要件。有價證券：無記名交付即可，記名須背書（§908）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法物權補充2-筆記-05-權利質權之設定與實行§900至§908.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>善意修車廠的留置權，優先於先成立的質權</h2>
+  <div class="scene">
+    <p>甲的 A 車先質押給乙擔保 100 萬元，乙把車交丙修理，修理費 30 萬元未付，丙留置 A 車。A 車拍得 105 萬元。</p>
+    <p class="q">乙、丙各拿多少？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">丙是否善意</div>
+    <div class="out"><span class="tag">善意</span><div class="b ok">丙 30、乙 75</div></div>
+    <div class="out"><span class="tag">惡意</span><div class="b ok">乙 100、丙 5</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>留置權是法定擔保物權，要件：占有他人動產、牽連關係、已屆清償期、不違反公序良俗（<span class="s">§928～§931</span>）。其他物權人不得對抗善意留置權人（<span class="s">§932-1</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>第三人的動產須占有之始善意且無重大過失。留置權不準用轉質。實行前須定 1 個月以上通知；不能通知等 6 個月（§936）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法物權補充2-筆記-06-留置權之發生要件與對善意留置權人之優先§928至§937.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>占有被侵奪才有占有保護，租約到期不搬不算侵奪</h2>
+  <div class="scene">
+    <p>甲把房子租給乙，租約到期乙不搬。另外，丙趁甲的管家丁不注意，把甲家的腳踏車騎走。</p>
+    <p class="q">甲能用 §962 請乙返還嗎？丁能當場追回腳踏車嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>自力救濟（§960、§961）</h4>直接占有人、占有輔助人丁可以；間接占有人不行</div>
+    <div class="trap-c"><h4>物上請求權（§962）</h4>直接、間接占有人可以；輔助人不行；1 年時效；須侵奪</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>占有是事實上管領力的狀態，不是權利（<span class="s">§940</span>）。善意占有人本權訴訟敗訴，自訴狀送達日起視為惡意（<span class="s">§959</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙是無權占有但不是侵奪，甲應依 §767 請求。共同占有人之間就使用範圍不得互相請求占有保護（§965）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法物權補充2-筆記-07-占有之類型推定效力與占有保護§940至§966.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

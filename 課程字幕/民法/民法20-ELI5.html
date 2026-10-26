@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法20 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法20">
+<main>
+
+<header class="lesson-head">
+  <h1>民法20</h1>
+  <span class="sub">侵權行為消滅時效（§197、§198）・無因管理（§172～§177）</span>
+</header>
+<p class="lesson-intro">前段收尾侵權行為：<b>時效從什麼時候起算</b>，以及時效完成後還剩什麼可以主張。後段進入無因管理：先判斷<b>適法或不適法</b>，再看本人與管理人彼此能請求什麼。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>被撞成植物人，時效自監護人就任知悉時起算</h2>
+  <div class="scene">
+    <p>25 歲的甲在 113 年 3 月被乙撞成植物人，倒地前看清了乙的車牌。114 年 5 月法院為甲為監護宣告，母親丙就任監護人，當月就知道肇事者是乙。</p>
+    <p class="q">2 年時效從 113 年 3 月還是 114 年 5 月起算？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="植物人之時效起算">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="60" cy="55" r="5" class="dot"/>
+    <text x="60" y="35" text-anchor="middle">113.3 車禍</text>
+    <text x="60" y="80" text-anchor="middle" class="mu">甲知道是乙</text>
+    <text x="60" y="98" text-anchor="middle" class="mu">但無法行使權利</text>
+    <path d="M200 55 H 340" class="acc"/>
+    <circle cx="200" cy="55" r="5" class="dot acc"/>
+    <text x="200" y="35" text-anchor="middle">114.5 丙就任</text>
+    <text x="200" y="80" text-anchor="middle" class="mu">起算 2 年</text>
+    <circle cx="340" cy="55" r="5" class="dot acc"/>
+    <text x="340" y="35" text-anchor="middle">116.5</text>
+    <text x="340" y="80" text-anchor="middle" class="mu">時效完成</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§197 I 前段</span>的「知」以<b>能行使權利之人</b>為準：有行為能力人看本人；無行為能力或限制行為能力人看法定代理人；成年人陷於無意識，看恢復意識或監護人就任知悉時。知道行為人是誰即可，不必等起訴或判刑。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>甲被撞時雖知道是乙，但當時無法行使權利，不從車禍日起算。學說另要求至少對他人應負責有合理懷疑，醫療糾紛最常用到。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-01-知有損害及賠償義務人之認定§197I前段.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>後遺症等損害底定才起算，無權占有不因持續而延後</h2>
+  <div class="scene">
+    <p>甲 113 年 1 月車禍只覺得頭暈，3 月驗出腦震盪，之後症狀陸續出現，114 年 6 月醫師認定不再惡化。另一案，乙自 112 年 1 月起無權占用丙的空地停車，丙當月就知道，乙到現在都沒搬走。</p>
+    <p class="q">兩案的 2 年各從什麼時候起算？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>損害不只一次</span>
+      <ul>
+        <li class="hit"><span>一個侵害行為，損害陸續出現 → 損害大致底定時（甲：114 年 6 月）</span></li>
+        <li><span>侵害行為持續
+          </span><ul>
+            <li class="hit"><span>不可分（無權占有、排放廢水）→ 損害最初發生時（丙：112 年 1 月）</span></li>
+            <li><span>可分（每月寄一封騷擾信）→ 每次個別起算</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>後遺症型若從車禍日起算，症狀還在冒出，時效已跑掉一大段，所以等<b>損害大致底定</b>。持續不可分的侵害，損害在侵權行為時即已確定，自知悉時起算（106 年 187 號判決）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不要以為「侵害還在持續，時效就不進行」。只有各次可區別的反覆侵害才分別起算。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-02-損害型態與兩年時效之起算點.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>損害晚 20 年才出現，實務從損害發生時起算 10 年</h2>
+  <div class="scene">
+    <p>A 公司自民國 70 年起使用有毒溶劑，員工乙 90 年才發病，95 年起訴。A 公司抗辯：自 70 年使用溶劑起已逾 10 年，請求權罹於時效。</p>
+    <p class="q">乙的請求罹於時效了嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="RCA案十年時效起算之兩說">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="40" cy="55" r="5" class="dot"/>
+    <text x="40" y="35" text-anchor="middle">70 年</text>
+    <text x="40" y="80" text-anchor="middle" class="mu">使用溶劑</text>
+    <text x="40" y="98" text-anchor="middle" class="mu">學說起算</text>
+    <circle cx="140" cy="55" r="5" class="dot"/>
+    <text x="140" y="35" text-anchor="middle">80 年</text>
+    <text x="140" y="80" text-anchor="middle" class="mu">學說：完成</text>
+    <path d="M250 55 H 360" class="acc"/>
+    <circle cx="250" cy="55" r="5" class="dot acc"/>
+    <text x="250" y="35" text-anchor="middle">90 年</text>
+    <text x="250" y="80" text-anchor="middle" class="mu">發病</text>
+    <text x="250" y="98" text-anchor="middle" class="mu">實務起算</text>
+    <circle cx="360" cy="55" r="5" class="dot acc"/>
+    <text x="360" y="35" text-anchor="middle">100 年</text>
+    <text x="360" y="80" text-anchor="middle" class="mu">實務：完成</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>最高法院：侵權行為<b>要件全部具備</b>才算「侵權行為時」（<span class="s">§197 I 後段</span>），損害發生前不起算 → 100 年才完成，乙 95 年起訴未罹於時效。學說認為時效制度目的是<b>法安定性</b>，應自行為時起算，再以誠信原則限制隱匿資訊的加害人主張時效抗辯，或修法延長。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>時效制度不是保護被害人的制度。人身侵害 25 年只是修正草案，不是現行法。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-03-十年時效自侵權行為時起算之爭議§197I後段.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>被脅迫賤賣滿 10 年，仍得拒絕履行</h2>
+  <div class="scene">
+    <p>甲脅迫乙以 600 萬元出賣市價 1,000 萬元的土地，簽約後甲按兵不動。10 年後地價漲到 5,000 萬，甲依 §348 請求乙移轉登記。</p>
+    <p class="q">乙已不能撤銷，還能拒絕嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b no">§92 撤銷<small>§93 已逾 10 年</small></div><div class="a"></div>
+    <div class="b no">§184＋§213 廢止<small>§197 已罹於時效</small></div><div class="a"></div>
+    <div class="b ok">§198 拒絕履行 ✓</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>廢止請求權就是依 §184＋§213 回復原狀、把法律關係廢掉。它罹於時效，因侵權行為取得的債權仍可拒絕履行（<span class="s">§198</span>）。林誠二把 §197 II 與 §198 看成一組（拒絕保護說）：侵權取得債權可拒絕給付，侵權取得利益可請求返還。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>若甲已取得登記，通說認 §197 II 是構成要件準用，須符合 §179；契約仍有效，乙拿不回。林誠二認為是獨立請求權基礎，可拿回。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-04-§197II§198與拒絕保護說.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>為閃避逆向車而摔傷，可依無因管理請求</h2>
+  <div class="scene">
+    <p>甲逆向騎車，乙為了避免撞上甲緊急轉向摔傷，醫藥費 8 萬元。乙當場就知道是甲，過了 3 年才想到求償。</p>
+    <p class="q">侵權行為 2 年已過，乙還有路嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">乙對甲的<br>請求權基礎</div>
+    <div class="out"><span class="tag">侵權</span><div class="b no">§184、§191-2 → 2 年已過 ✗</div></div>
+    <div class="out"><span class="tag">無因管理</span><div class="b ok">§176 I → 時效 15 年 ✓</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>無因管理要件：<b>未受委任、並無義務、為他人管理事務</b>（<span class="s">§172</span>）。有為他人的意思就夠，可以兼為自己（怕鄰居的火延燒自家而去救火），也不問結果。乙閃避是為了不讓甲受傷，屬道路交通之自我犧牲。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>肇事者送被害人就醫、消防隊救火，本來就有義務，不是無因管理。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-05-無因管理之分類與基本要件§172.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>帶病童喝符水仍屬適法，手段不當另負責任</h2>
+  <div class="scene">
+    <p>鄰居小孩甲發燒拉肚子，母親丙去上班。乙帶甲去宮廟喝符水，花了 100 元。另一案，丁的房屋預定下個月拆除重建，戊不知情，幫丁把漏水修好。</p>
+    <p class="q">乙、戊誰是適法無因管理？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>乙（符水）</h4>出發點是治病 → 承擔利於本人 → 適法，可向丙請求 100 元</div>
+    <div class="trap-c"><h4>戊（修漏水）</h4>房屋要拆，修了沒意義 → 違反丁可得推知之意思 → 不適法</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>利於本人看<b>管理事務之承擔</b>（為什麼管），不看實施（怎麼管）。手段不當是違反善良管理人注意、負債務不履行責任的問題。救死意甚堅的自殺者、代繳罰單，雖違反本人意思，仍屬適法（<span class="s">§174 II、§176 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§174 II 三種情形：公益上義務、法定扶養義務、本人意思違反公序良俗。考題最愛救自殺者。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-06-利於本人與不違反本人意思§174II§176II.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>火場中故意砍手救人，無惡意即可免責</h2>
+  <div class="scene">
+    <p>甲家失火，甲的手被倒下的櫃子壓住，火勢眼看 30 秒內就會蔓延過來。乙手邊只有斧頭，砍斷甲的手把甲拖出火場。</p>
+    <p class="q">甲事後能向乙請求斷手的賠償嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b ok">適法無因管理</div><div class="a lbl">能先破壞櫃子</div>
+    <div class="b q">原可能成立 §184、§227</div>
+    <div class="br"></div>
+    <div class="b">生命急迫危險</div><div class="a lbl">§175</div>
+    <div class="b ok">無惡意或重大過失 → 免責</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>管理人須盡<b>善良管理人之注意</b>，管理必然發生的損害（破窗救火）可阻卻違法。砍手若有其他方法可選，原本可能成立責任；但為免除本人生命之急迫危險，依 <span class="s">§175</span> 只就惡意或重大過失負責。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>條文寫「惡意」不是「故意」，故意砍手也可能免責。§175 不是請求權基礎，是免責事由。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-07-管理人之義務與急迫管理§175.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>修電箱灼傷，依無因管理只能請求財產上損害</h2>
+  <div class="scene">
+    <p>甲已離職、預定 8 月 1 日復職。7 月 15 日 A 公司警衛找甲回來修颱風弄壞的高壓電箱，電箱爆炸，甲 78% 灼傷。A 公司拒絕承認警衛找人修理。</p>
+    <p class="q">甲能向 A 公司請求慰撫金嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>甲對 A 公司</span>
+      <ul>
+        <li class="off"><span>§184 → A 公司無侵害行為 ✗</span></li>
+        <li class="off"><span>契約 → 尚未復職、警衛無權代理 ✗</span></li>
+        <li class="hit"><span>§176 I → 財產上損害 ✓，慰撫金 ✗</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§18 II</span>：人格權受侵害，須法律有特別規定才能請求慰撫金。侵權有 §195、債務不履行有 §227-1，無因管理沒有。陳忠五建議：A 公司事後替甲投保勞保可否認為承認，或以違反交易往來安全義務走侵權。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>無因管理原則上沒有報酬。醫師用自己的專業救治、節省了費用時，學說例外承認，類推 §176。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-08-本人之償還義務與慰撫金報酬§176.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>先認定適法，再雙向檢驗本人與管理人的請求</h2>
+  <div class="scene">
+    <p>甲在碧潭跳河，死意甚堅。乙下水救人，拉扯中把甲的手折斷，自己也嗆傷，醫藥費 3 萬元。</p>
+    <p class="q">甲、乙彼此能請求什麼？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">適法無因管理<br>（§174 II）</div>
+    <div class="out"><span class="tag">甲→乙</span><div class="b">§184：必然損害阻卻違法；§227：未違反善管注意 → 不負責</div></div>
+    <div class="out"><span class="tag">乙→甲</span><div class="b ok">§176 I 請求 3 萬（無慰撫金）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>本人受損看 §184（是否管理必然發生）與 §227（是否違反善管注意），責任成立再看 §175。管理人受損或支出依 <span class="s">§176 I</span>。適法無因管理是<b>法律上原因</b>，本人受利益不成立不當得利。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>卡 6 的甲喝符水後又拉肚子，不是管理必然發生的損害，乙對丙仍要負責；同時乙仍可請求 100 元，兩者並存。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-09-適法無因管理之互相求償與解題步驟.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>違反本人意思而管理，無過失也要賠</h2>
+  <div class="scene">
+    <p>甲的房屋預定拆除重建，乙不顧甲反對，花 5 萬元修漏水。施工時冷氣意外被震壞，損害 2 萬元，乙並無過失。</p>
+    <p class="q">乙要賠冷氣嗎？能要回 5 萬嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>不適法無因管理</span>
+      <ul>
+        <li class="hit"><span>本人受損 → §174 I 無過失責任：乙賠 2 萬</span></li>
+        <li><span>本人受利益
+          </span><ul>
+            <li><span>甲願享受（§177 I）→ 以所得利益為限償還</span></li>
+            <li class="off"><span>甲不願享受 → 強迫得利，無法返還 → 0 元</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>不適法無因管理<b>不發生法定之債</b>，沒有債務不履行；改由 <span class="s">§174 I</span> 負無過失責任，有過失也可以主張侵權。急迫時通說仍適用 §175。本人願享受利益，依 §177 I 以所得利益為限負 §176 I 義務。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>本人不願享受時可能成立不當得利，但屬強迫得利：能原樣返還就返還，不能返還價值為零。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-10-不適法無因管理§174I§177I.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>擅賣他人車的溢價，只有不法管理拿得到</h2>
+  <div class="scene">
+    <p>甲把市價 100 萬元的 A 車借給乙，乙明知是甲的車，擅自以 120 萬元賣給丙。</p>
+    <p class="q">甲依侵權行為、不當得利、不法管理，各能請求多少？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>甲對乙</span>
+      <ul>
+        <li><span>§184：看甲的損害 → 100 萬</span></li>
+        <li><span>§179：權益歸屬說 → 100 萬</span></li>
+        <li class="hit"><span>§177 II 準用 I：享受利益 → 120 萬</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>侵權行為看損害，20 萬不是甲依已定計畫可得預期的所失利益；不當得利依權益歸屬說，20 萬是乙創造的。89 年增訂 <span class="s">§177 II</span>：明知是他人事務而為自己利益管理，本人得主張享受利益，120 萬全部交出。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>誤以為是自己的事務而管理（繳錯鄰居的罰單）是誤信管理，不適用 §177 II，回到不當得利處理。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-11-誤信管理與不法管理之交易溢價§177II.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>無權代理的賠償可向本人請求，救人溺斃卻難求償</h2>
+  <div class="scene">
+    <p>乙以甲的名義找丙修甲家漏水，甲拒絕承認，乙依 §110 賠丙 3 萬元。另一案，丁下水救溺水的朋友戊，戊獲救，丁溺斃，丁的妻子要求戊負責。</p>
+    <p class="q">乙能找甲要 3 萬嗎？丁的妻子呢？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>乙的 3 萬</h4>§110 賠償債務屬 §176 I 的負擔債務（王澤鑑）→ 可請求，但須適法</div>
+    <div class="trap-c"><h4>丁的妻子</h4>§176 I：丁死亡未取得權利；§192、§194：非侵權行為 → 楊芳賢：無法求償</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>甲若承認，承攬契約直接在甲丙間生效，與無因管理無關。拒絕承認時，乙為甲好而負擔的無權代理賠償債務，仍可依 <span class="s">§176 I</span> 請求甲清償。管理人死亡則是現行法的漏洞，只能修法。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>有學說主張類推 §192 讓遺屬請求財產上損害，但不類推 §194，因為無因管理本來就沒有慰撫金。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法20-筆記-12-無因管理與無權代理及管理人死亡.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

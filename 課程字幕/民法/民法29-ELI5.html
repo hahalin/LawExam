@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法29 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法29">
+<main>
+
+<header class="lesson-head">
+  <h1>民法29</h1>
+  <span class="sub">連帶債務・不真正連帶・債權讓與・債務承擔・提存免除混同（§272～§344）</span>
+</header>
+<p class="lesson-intro">先講<b>連帶債務</b>：成立、外部效力（完全絕對、限制絕對、相對）與內部求償，再比較<b>不真正連帶</b>；接著是<b>債之移轉</b>（債權讓與 §294～§299、雙重讓與、債務承擔 §300～§306），最後快速帶過債之消滅中的<b>提存、免除、混同</b>。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>連帶債務的債權人，可以只挑一人請求全部</h2>
+  <div class="scene">
+    <p>甲乙丙三人共同撞傷 A，A 損害 100 萬元，內部分擔 30%、60%、10%。三人中只有丙名下有房屋。</p>
+    <p class="q">A 可以只告丙請求 100 萬元嗎？丙付了 60 萬元後，剩下 40 萬元找誰？</p>
+  </div>
+  <div class="flow">
+    <div class="b">A 損害 100 萬</div><div class="a lbl">只告丙</div>
+    <div class="b">丙付 60 萬</div><div class="a lbl">剩 40 萬</div>
+    <div class="b ok">甲乙丙仍連帶<small>直到 A 全部受償</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>連帶債務須契約明示或法律明文才成立（<span class="s">§272</span>）。債權人得對一人、數人或全體，同時或先後請求全部或一部（<span class="s">§273 I</span>）；未全部履行前，全體仍負連帶責任（<span class="s">§273 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>契約只有默示，不成立連帶債務。沒有明示也沒有法律明文、偶然為同一債務負責的，是不真正連帶（卡 6）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-01-連帶債務之成立與債權人之自由選擇§272§273.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>法院認定被害人與有過失，效力及於其他連帶債務人</h2>
+  <div class="scene">
+    <p>A 只告甲，請求 100 萬元。法院認定 A 自己與有過失 20%，判甲只就 80 萬元負責。後來對甲強制執行沒有結果，A 再告乙丙。</p>
+    <p class="q">A 能對乙丙重新主張自己沒有過失、請求 100 萬元嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">一人受確定判決，效力會不會擴張？</div>
+    <div class="out"><span class="tag">非個人關係且有利</span><div class="b ok">擴張：與有過失，乙丙也只負 80 萬</div></div>
+    <div class="out"><span class="tag">個人關係或不利</span><div class="b no">不擴張：甲的生計酌減</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>判決非基於該債務人個人關係，且為他債務人之利益，才及於他人（<span class="s">§275</span>）。清償等債務消滅事由（<span class="s">§274</span>）、受領遲延（<span class="s">§278</span>）同樣是完全絕對效力。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>債務免除不在 §274 之內。甲依 §218 獲得生計酌減，是基於甲個人的經濟狀況，乙丙不能援用。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-02-連帶債務之完全絕對效力事項§274§275§278.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>免除一人的債務，其他人只扣他的分擔額</h2>
+  <div class="scene">
+    <p>甲乙丙對 A 連帶負 100 萬元，分擔 30%、60%、10%。甲誠懇道歉，A 免除甲的債務，但表明還要向乙丙請求。</p>
+    <p class="q">A 還能向乙丙請求多少？如果改成與甲以 20 萬元和解呢？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>A 對乙丙可請求</span>
+      <ul>
+        <li class="hit"><span>免除甲 → 70 萬（扣甲 30 萬）</span></li>
+        <li><span>和解 20 萬、未付 → 90 萬（類似免除 10 萬）</span></li>
+        <li><span>和解 20 萬、已付 → 70 萬（再依 §274 扣 20 萬）</span></li>
+        <li class="off"><span>和解 40 萬、未付 → 100 萬（相對效力）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>免除一人而無消滅全部債務之意思，他債務人扣除該人應分擔部分後仍負責（<span class="s">§276 I</span>）；一人時效完成者準用（<span class="s">§276 II</span>）。目的是避免循環求償。和解金額低於分擔額，差額類似免除（<span class="s">98 台上 759</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>和解金額高於分擔額，只有相對效力，不適用 §276。已付的和解金是清償，另依 §274 扣除。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-03-免除和解與時效完成之限制絕對效力§276.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>只起訴甲，乙丙的時效照樣進行</h2>
+  <div class="scene">
+    <p>112 年 8 月 9 日甲乙丙共同侵害 A，A 當天就知道是這三人。A 只在 10 月 20 日起訴最有錢的甲。114 年 8 月 10 日發現甲脫產，才想追加乙丙。</p>
+    <p class="q">還來得及嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="起訴與時效時間軸">
+    <line x1="10" y1="60" x2="390" y2="60" class="lt"/>
+    <circle cx="40" cy="60" r="5" class="dot"/>
+    <text x="40" y="22" text-anchor="middle">112/8/9</text>
+    <text x="40" y="40" text-anchor="middle" class="mu">侵權行為</text>
+    <path d="M130 60 H 290" class="acc"/>
+    <circle cx="130" cy="60" r="5" class="dot acc"/>
+    <text x="130" y="85" text-anchor="middle">112/10/20</text>
+    <text x="130" y="103" text-anchor="middle" class="mu">只起訴甲</text>
+    <circle cx="290" cy="60" r="5" class="dot"/>
+    <text x="290" y="22" text-anchor="middle">114/8/9</text>
+    <text x="290" y="40" text-anchor="middle" class="mu">乙丙時效完成</text>
+    <circle cx="365" cy="60" r="5" class="dot"/>
+    <text x="365" y="85" text-anchor="middle">114/8/10</text>
+    <text x="365" y="103" text-anchor="middle" class="mu">追加乙丙</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>除 §274～§278 外，一人所生事項對他債務人不生效力（<span class="s">§279</span>），起訴中斷時效只及於被告。另外，丙對 A 有債權時，他債務人只能以丙的分擔額為限抵銷（<span class="s">§277</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙丙罹於時效後，甲還能依 §276 II 扣除乙丙的分擔額，A 對甲只剩甲自己的部分。連帶債務要告就一起告。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-04-他債務人之抵銷與相對效力事項§277§279.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>一人無資力，連被免除的人也要按比例分擔</h2>
+  <div class="scene">
+    <p>甲乙丙丁對 A 連帶負 100 萬元，分擔 40%、30%、20%、10%。甲沒有財產，A 已免除乙。A 向丁請求，丁扣除乙的部分後付了 70 萬元。</p>
+    <p class="q">丁向甲求償不到的 40 萬元，誰來負擔？</p>
+  </div>
+  <div class="flow">
+    <div class="b">丁付 70 萬</div><div class="a lbl">求償</div>
+    <div class="b">丙 20 萬 ✓<small>甲 40 萬 ✗</small></div><div class="a lbl">3：2：1</div>
+    <div class="b ok">乙 20 萬／丙 13.33 萬<small>丁自負 6.67 萬</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>內部未約定時平均分擔（<span class="s">§280</span>）。清償人得求償，並承受債權人原有權利（<span class="s">§281</span>）。一人不能償還，由求償權人與他債務人按比例分擔（<span class="s">§282 I</span>）；已被免除的人仍要分擔（<span class="s">§282 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>求償權是新發生的權利，承受權是債權人原有的權利。無資力是求償權人自己的過失造成的，不得請求他人分擔。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-05-連帶債務之內部求償與無資力之分擔§280§281§282.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>僱用人賠了全部，實務不准向法定代理人求償</h2>
+  <div class="scene">
+    <p>未成年人甲與丁公司的司機乙發生車禍，撞傷 A，A 損害 100 萬元。丙是甲的法定代理人。丁公司被判賠 100 萬元。</p>
+    <p class="q">丁能向丙、向甲求償嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>實務</h4>不真正連帶沒有內部分擔，丁不得向甲丙求償</div>
+    <div class="trap-c"><h4>階層理論</h4>丙丁同層，丁向丙平均求償 50 萬；丁向前層的甲全額求償</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>甲乙（<span class="s">§185</span>）、甲丙（<span class="s">§187</span>）、乙丁（<span class="s">§188</span>）是真正連帶；丙丁等人偶然為同一損害負責，是不真正連帶。外部關係可類推 §273、§274；丁對乙依 §188 III 求償。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>階層理論：同層類推 §280、§281 平均；後層對前層類推 §218-1 全額；前層不能向後層求償。高等法院曾採此說，最高法院仍維持否定說。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-06-不真正連帶債務之內部求償與階層理論.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>惡意受讓人再轉讓給善意第三人，兩說結論相反</h2>
+  <div class="scene">
+    <p>甲乙約定甲對乙的 100 萬元債權不得讓與。甲仍把債權讓與知道特約的丙，丙再讓與不知情的丁。丁向乙請求 100 萬元。</p>
+    <p class="q">乙可以拒絕丁嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">甲讓與惡意丙的效力？</div>
+    <div class="out"><span class="tag">物權效力說</span><div class="b no">無效 → 丙丁為無權處分 → 乙得拒絕</div></div>
+    <div class="out"><span class="tag">債權效力說</span><div class="b ok">有效 → 丁善意 → 乙不得拒絕</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債權讓與是準物權行為（<span class="s">§294 I</span>）。禁止讓與特約不得對抗善意第三人（<span class="s">§294 II</span>）。孫森焱採債權效力說，才能保護所有後手的善意第三人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>債權不能善意取得。讓與債權時，擔保隨同移轉，但被詐欺的撤銷權與讓與人不可分離，不隨同移轉（<span class="s">§295</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-07-債權讓與之限制與從權利之隨同移轉§294§295.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>已通知債務人後，誤向原債權人付款不生清償效力</h2>
+  <div class="scene">
+    <p>甲銀行把對乙的 50 萬元債權讓與丙資產管理公司，並通知乙。六年後乙忘了這回事，把 50 萬元匯給甲。</p>
+    <p class="q">丙還能向乙請求嗎？乙匯給甲的錢拿得回來嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>有通知</h4>乙對甲清償不生效力，丙仍可請求；乙向甲請求不當得利</div>
+    <div class="trap-c"><h4>沒有通知</h4>乙對甲清償有效，債務消滅；丙向甲請求不當得利</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債權讓與非經讓與人或受讓人通知，對債務人不生效力（<span class="s">§297 I</span>）。丙直接向乙請求，兼有通知效力（<span class="s">22 上 1162</span>）；乙已知道讓與，也不得以未通知為由拒絕。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙若明知已讓與還故意付給甲，依 §180 ③ 不得請求返還。「不生效力」只對債務人，甲丙之間仍然有效。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-08-債權讓與之通知對債務人之效力§297.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>通知讓與卻沒有讓與，債務人與受讓人的協商仍可對抗讓與人</h2>
+  <div class="scene">
+    <p>甲銀行通知乙：你欠的 100 萬元已讓與丙公司。其實甲作業疏失，根本沒有讓與。乙與丙談好打六折，付了 60 萬元。</p>
+    <p class="q">甲能再向乙請求剩下的 40 萬元嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲通知乙</div><div class="a lbl">乙信賴</div>
+    <div class="b">乙丙打六折<small>付 60 萬</small></div><div class="a lbl">§298 I</div>
+    <div class="b ok">可對抗甲<small>甲不得再請求 40 萬</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>讓與人已通知，縱未讓與或讓與無效，債務人仍得以對抗受讓人之事由對抗讓與人（<span class="s">§298 I</span>）。債務人受通知時對讓與人的抗辯，都可對抗受讓人（<span class="s">§299 I</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>撤銷通知要經受讓人同意，不是債務人（<span class="s">§298 II</span>）。乙拿對甲的債權向丙抵銷，須受通知時已存在，且清償期不晚於讓與的債權（<span class="s">§299 II</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-09-表見讓與與債務人之抗辯及抵銷§298§299.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>債權雙重讓與，債務人付給經他同意的第二受讓人</h2>
+  <div class="scene">
+    <p>承攬人甲對定作人 Y 有 300 萬元報酬債權，先讓與 X。後來 Y 為了避免下包商 Z 罷工，同意甲再把同一債權讓與 Z。X 通知 Y 後，Y 仍付給 Z。</p>
+    <p class="q">X 還能向 Y 請求嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>實務</h4>Y 同意的是讓與 Z，清償有效；X 向甲主張瑕疵擔保</div>
+    <div class="trap-c"><h4>詹森林</h4>類推 §297：X 已通知，清償不生效力，X 仍可向 Y 請求</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>第一次讓與有效，X 才是真正債權人；第二次讓與是無權處分（<span class="s">105 年第 15 次民事庭決議</span>）。實務以 Y 是否同意決定清償效力，不問 Y 是否已受通知。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>債權讓與不以債務人同意為要件，所以詹森林主張類推 §297。這篇文章 113 年考過，知道思路即可。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-10-債權雙重讓與後對第二受讓人清償之效力類推§297.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>債務人自己找人承擔債務，要債權人承認</h2>
+  <div class="scene">
+    <p>乙欠甲 100 萬元。乙與朋友丙訂約，由丙承擔這筆債務，甲沒有承認。</p>
+    <p class="q">甲還能向乙請求嗎？乙丙的約定還有用嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>債務承擔</span>
+      <ul>
+        <li><span>甲丙訂約 → 成立時移轉，不須乙同意（§300）</span></li>
+        <li class="hit"><span>乙丙訂約 → 須甲承認（§301）</span></li>
+        <li><span>甲不承認 → 債務人仍是乙；乙丙間轉為履行承擔</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>與債權人訂約承擔，契約成立時移轉（<span class="s">§300</span>）；與債務人訂約，非經債權人承認，對債權人不生效力（<span class="s">§301</span>）。催告逾期不確答視為拒絕；拒絕後乙或丙得撤銷承擔契約（<span class="s">§302</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>能撤銷代表乙丙契約有效，乙仍可請求丙向甲清償。概括承受資產負債是併存承擔，原債務人兩年內連帶負責（<span class="s">§305</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-11-免責與併存之債務承擔§300至§306.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>13 歲的債權人說「不用還了」，免除無效</h2>
+  <div class="scene">
+    <p>甲 13 歲，把一週零用錢 1,000 元借給同學乙，後來豪爽地說「不用還了」，沒有得到父母允許。</p>
+    <p class="q">這個免除是有效、無效，還是效力未定？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">限制行為能力人未得允許</div>
+    <div class="out"><span class="tag">單獨行為（免除）</span><div class="b ok">無效（§78）</div></div>
+    <div class="out"><span class="tag">契約</span><div class="b dim">效力未定（§79）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債權人表示免除，債之關係消滅，不需債務人同意（<span class="s">§343</span>）。提存原因是受領遲延或不能確知孰為債權人，提存後 10 年未領歸屬國庫（<span class="s">§326</span>、<span class="s">§330</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選效力未定就錯了。混同使債權消滅，但債權已設定權利質權給第三人時，依 §344 但書不消滅。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法29-筆記-12-債之消滅之提存債務免除與混同§326§343§344.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

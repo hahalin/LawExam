@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法19 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法19">
+<main>
+
+<header class="lesson-head">
+  <h1>民法19</h1>
+  <span class="sub">損害賠償範圍補充（§193、§195、消保法 §51）・減免規定（§216-1、§217、§218、§218-1）</span>
+</header>
+<p class="lesson-intro">前半堂補完<b>賠多少</b>：勞動能力、名譽權、親屬看護、懲罰性賠償金。後半堂進入<b>可以少賠多少</b>：先看利益能不能扣（損益相抵），再看被害人那邊誰的過失要算進來（與有過失）。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>勞動能力減損要看收入有沒有差額</h2>
+  <div class="scene">
+    <p>同一場車禍，廚師甲和旅館行政人員乙都喪失嗅覺。甲做不了廚師，換工作後月薪從 5 萬變 3 萬；乙照常上班領薪。家庭主婦丙鑑定勞動能力減損 8%。</p>
+    <p class="q">三人都能請求勞動能力減損嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>勞動能力減損（§193 I）</span>
+      <ul>
+        <li><span>有收入</span>
+          <ul>
+            <li class="hit"><span>有差額 → 甲每月 2 萬 ✓</span></li>
+            <li class="off"><span>無差額 → 乙 ✗（生活不便屬慰撫金）</span></li>
+          </ul>
+        </li>
+        <li class="hit"><span>無收入 → 丙：家事產值 × 8% ✓</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>實務要求<b>實際損害</b>：有收入的人看收入有無差額，沒收入的人用鑑定比例乘平常產值。<span class="s">§193</span> 是立法擬制，比依 §216 證明責任範圍因果關係輕鬆。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>有鑑定報告不等於有損害。同樣的傷，職業不同結論就不同。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-01-§193勞動能力減損之實際損害判斷.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>法人可請求非財產上損害，但法院不能判命道歉</h2>
+  <div class="scene">
+    <p>乙在網路散布甲公司產品有毒的不實消息。甲公司起訴，請求非財產上損害賠償，並請求法院判命乙登報道歉。</p>
+    <p class="q">法人沒有精神痛苦，能請求嗎？道歉能判嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>可以</h4>無法以金錢量化、對設立目的有重大影響之損害（須舉證）<br>刊登判決重要內容</div>
+    <div class="trap-c"><h4>不可以</h4>以精神痛苦請求慰撫金<br>判決命加害人道歉</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§195 I</span> 寫的是非財產上損害，慰撫金只是其中處理精神痛苦的部分（112 台上大 544）。回復名譽之適當處分不包括判決命道歉（111 憲判字 2，變更釋字 656）：道歉不能澄清事實，又侵害不表意自由。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§18 I 除去侵害只要求不法、不問故意過失；要請求賠償仍須回到 §184。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-02-名譽權侵害之法人非財產上損害與強制道歉§18§195.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>母親無償看護，被害人仍得請求看護費</h2>
+  <div class="scene">
+    <p>甲被乙撞傷住院 3 個月，由退休的母親丙每天到醫院照顧，丙沒有向甲收錢。行情上請看護每天 2,500 元。</p>
+    <p class="q">甲沒花錢，能向乙請求看護費嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">丙付出時間勞力<small>但無權利受侵害</small></div><div class="a lbl">丙不收費</div>
+    <div class="b dim">損害偏移到丙</div><div class="a lbl">移轉性損失</div>
+    <div class="b ok">甲：權利＋損害 → §193 I ✓</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>實務（88 台上 1827）：親屬看護<b>非不能評價為金錢</b>，基於親情的恩惠<b>不能加惠於加害人</b>。王澤鑑補上損害在哪裡：用移轉性損失把丙的損害移回甲，讓權利與損害同歸一人。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>丙不能自己依 §184 向乙請求，因為丙沒有絕對權受侵害。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-03-親屬看護之損害§193.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>懲罰性賠償金連同慰撫金一起乘倍數</h2>
+  <div class="scene">
+    <p>A 公司電路設計有重大瑕疵，商品爆炸使甲 30% 灼傷。甲依消保法 §7 請求醫藥費 50 萬、慰撫金 60 萬。A 有重大過失，最多 3 倍。</p>
+    <p class="q">懲罰性賠償金是 330 萬還是 150 萬？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">損害額<br>含不含慰撫金</div>
+    <div class="out"><span class="tag">大法庭</span><div class="b ok">含 → 110 萬 × 3＝330 萬</div></div>
+    <div class="out"><span class="tag">不同意見</span><div class="b">不含 → 50 萬 × 3＝150 萬</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>108 台上大 2680 採文義解釋：損害額就是消保法 §7 的賠償內容，經 §1 II 適用民法而包括慰撫金。魏大喨法官認為慰撫金已考量惡性，再放大是雙重懲罰。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>現行 <span class="s">消保法 §51</span> 是故意 5 倍、重大過失 3 倍、過失 1 倍。改依 §191-1 起訴，實務認為不能請求懲罰性賠償金。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-04-懲罰性賠償金之計算基礎消保法§51.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>保險金不是損益相抵，詐騙的甜頭才是</h2>
+  <div class="scene">
+    <p>丙撞壞甲的車，損害 100 萬，甲的車體險已理賠 70 萬。另一案，詐騙者先每月給乙 1 萬、共 3 萬「獲利」，乙總共被騙 110 萬。</p>
+    <p class="q">70 萬和 3 萬，哪一筆能依 §216-1 扣除？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>保險金 70 萬</h4>損害來自侵權、利益來自保險契約 → 不同原因事實 → 依保險法 §53 代位</div>
+    <div class="rule-c"><h4>詐騙甜頭 3 萬</h4>都來自詐騙 → 同一原因事實 → 扣除，請求 107 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§216-1</span> 的核心是<b>同一原因事實</b>。保險金依 68 台上 42 不生損益相抵，但保險公司給付後在 70 萬範圍內代位，甲對丙實際只剩 30 萬。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選項只寫「丙得主張扣除保險金」要看依據：依 §216-1 是錯，依保險法 §53 是對。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-05-§216-1損益相抵之同一原因事實.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>父母要承擔死者的過失，但不扣省下的養育費</h2>
+  <div class="scene">
+    <p>15 歲的甲無照騎車、未戴安全帽，被轉彎未注意的乙撞死。甲負 60%、乙負 40%。甲的父母丙依 §192、§194 請求 500 萬。乙另主張：甲死了，丙也省下養甲到大學畢業的 7 年費用。</p>
+    <p class="q">乙要賠多少？養育費能扣嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>乙的兩個抗辯</span>
+      <ul>
+        <li class="hit"><span>§217 甲之與有過失 → 500 萬 × 40%＝200 萬 ✓</span></li>
+        <li class="off"><span>§216-1 省下養育費 → ✗</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>間接被害人的請求權雖是固有權利，但源自侵權行為，須承擔直接被害人之過失（73 台再 182）。父母扶養子女與子女扶養父母是不同原因事實，子女死亡也不會被認為是利益（92 年第 5 次民事庭決議）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>同一案件兩個抗辯結論相反：與有過失成立，損益相抵不成立。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-06-間接被害人承擔直接被害人之與有過失§217.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>無識別能力人無與有過失，改類推 §187 III</h2>
+  <div class="scene">
+    <p>3 歲的乙在路上玩球沒看車，被甲撞傷。另一案，8 歲的丙把學校沒固定的足球門當單槓玩，球門倒下骨折，學校負無過失責任。</p>
+    <p class="q">甲和學校能主張被害人與有過失嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">被害人有無<br>識別能力</div>
+    <div class="out"><span class="tag">無（乙）</span><div class="b no">§217 ✗ → 類推 §187 III 衡平</div></div>
+    <div class="out"><span class="tag">有（丙）</span><div class="b ok">§217 ✓（實務：打六折）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>過失是能注意而不注意，無識別能力就沒有過失。通說（王澤鑑改採）不用 §217，改<b>類推 <span class="s">§187 III</span></b> 由法院斟酌經濟狀況調整。加害人負無過失責任，仍有 §217。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>識別能力個案判斷，不看年齡。陳忠五主張未成年人是被害人時從嚴認定、是加害人時從寬。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-07-無識別能力人與未成年人之與有過失.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>法定代理人的過失，原則不由子女承擔</h2>
+  <div class="scene">
+    <p>父親乙騎車載 10 歲的甲，沒讓甲戴安全帽，被丙撞上。乙負 30%、丙負 70%，甲受有 10 萬損害，向丙請求。</p>
+    <p class="q">丙能主張甲承擔乙的過失，只賠 7 萬嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="法定代理人與有過失之見解演變">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="60" cy="55" r="5" class="dot"/>
+    <text x="60" y="35" text-anchor="middle">73 台上 2201</text>
+    <text x="60" y="80" text-anchor="middle" class="mu">類推 §224</text>
+    <text x="60" y="98" text-anchor="middle" class="mu">承擔 → 7 萬</text>
+    <circle cx="200" cy="55" r="5" class="dot"/>
+    <text x="200" y="35" text-anchor="middle">89 年</text>
+    <text x="200" y="80" text-anchor="middle" class="mu">增訂 §217 III</text>
+    <text x="200" y="98" text-anchor="middle" class="mu">爭議未解</text>
+    <path d="M200 55 H 340" class="acc"/>
+    <circle cx="340" cy="55" r="5" class="dot acc"/>
+    <text x="340" y="35" text-anchor="middle">112 台上 1927</text>
+    <text x="340" y="80" text-anchor="middle" class="mu">原則不承擔</text>
+    <text x="340" y="98" text-anchor="middle" class="mu">→ 10 萬</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>學說將 <span class="s">§217 III</span> 的代理人目的性限縮為意定代理：法定代理人制度是為了保護未成年人，而且父母是法律給的、不是子女選的。112 台上 1927 原則上採此見解。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>該判決留了例外：子女行為具可非難性等，仍要承擔。王怡蘋批評子女有錯只該承擔自己的過失。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-08-法定代理人之與有過失§217III.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>搭計程車不承擔司機的過失，搭朋友機車要承擔</h2>
+  <div class="scene">
+    <p>甲搭乙的計程車，乙與丙相撞，乙負 30%、丙負 70%，甲損害 50 萬。換成朋友無償騎機車載甲，過失比例相同。</p>
+    <p class="q">兩種情形，丙都能主張減 30%（只賠 35 萬）嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="trap-c"><h4>計程車司機</h4>路邊招手、管不了怎麼開 → 非使用人 → 丙賠 50 萬</div>
+    <div class="rule-c"><h4>朋友（無償）</h4>自己選的、可以指示 → 使用人 → 丙賠 35 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§217 III</span> 的使用人，以被害人<b>得指揮監督</b>為限（105 台上 2270）。機車後座之人藉駕駛人擴大活動範圍，駕駛人是其使用人（74 台上 1170）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>雇主向受僱人求償時，實務不許受僱人援引其他受僱人的過失（103 台上 1157），文義上其實該當。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-09-使用人之與有過失§217III.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>加害人故意時，被害人的過失不減賠償</h2>
+  <div class="scene">
+    <p>銀行理專 Y 假稱幫老人 X 買基金，慫恿 X 申辦網路銀行，設定時記下密碼，事後盜領 150 萬。銀行抗辯 X 輕信行員、與有過失。</p>
+    <p class="q">X 的賠償要打折嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>被害人有過失，加害人是…</span>
+      <ul>
+        <li class="hit"><span>無過失 → §217 ✓</span></li>
+        <li class="hit"><span>過失 → §217 ✓（典型）</span></li>
+        <li><span>故意＋被害人也故意（互毆）→ 實務 ✗，詹森林類推 ✓</span></li>
+        <li class="off"><span>故意＋被害人過失 → ✗（X 不打折）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>林誠二：與有過失以被害人有<b>防止或迴避義務</b>為前提，法律未要求人民防範他人的故意不法侵害。故意侵權的風險應由行為人完全承擔。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>王怡蘋參考德國法再細分：直接故意一律不適用；未必故意時，被害人有重大過失才適用。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-10-加害人與被害人之過失態樣組合.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>特殊體質限於重大個體差異之疾病才減賠</h2>
+  <div class="scene">
+    <p>甲撞倒 80 歲有骨質疏鬆的乙，乙多處骨折。另一案，病人丙肝功能很差，麻醉劑量稍多就死亡；丙生前不遵醫囑、照樣喝酒。</p>
+    <p class="q">乙、丙的體質能算與有過失嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>被害人體質是損害原因之一</span>
+      <ul>
+        <li class="off"><span>身體特徵（非疾病）→ 無迴避可能 ✗</span></li>
+        <li class="off"><span>疾病，但在個體差異範圍內 → 乙骨質疏鬆 ✗</span></li>
+        <li><span>具重大個體差異之疾病 → 看有無積極治療</span>
+          <ul>
+            <li class="hit"><span>不遵醫囑、照樣喝酒 → 丙 ✓</span></li>
+            <li class="off"><span>已盡力治療仍惡化 → ✗</span></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>與有過失的過失是<b>對己義務</b>之違反，要有迴避可能。陳聰富只讓具重大個體差異的疾病適用；向明恩再看被害人有沒有好好治療、照顧自己。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>醫療案件中體質能否類推 §217，實務分歧：105 台上 136 肯定、105 台上 358 否定。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-11-特殊體質與與有過失.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>§218 只減不免，§218-1 讓非終局責任人求償</h2>
+  <div class="scene">
+    <p>甲的車停在乙停車場被丙偷走，乙監視器有死角也有過失。甲向乙依債務不履行請求，乙賠了 60 萬。</p>
+    <p class="q">乙賠完後，怎麼找丙要回來？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙賠甲 60 萬</div><div class="a lbl">同時履行 §264</div>
+    <div class="b">甲讓與對丙之 §184</div><div class="a"></div>
+    <div class="b ok">乙向丙求償</div>
+    <div class="br"></div>
+    <div class="b no">丙賠了要求甲讓與對乙之請求權 ✗</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§218-1</span> 只給<b>非終局</b>賠償義務人；讓與客體一定是對第三人之請求權，撞死牛後請求牛屍只能類推。<span class="s">§217</span> 法院可依職權減免；<span class="s">§218</span> 限非故意或重大過失且生計重大影響。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§218 只能減輕，不能免除。當事人沒主張與有過失，法院仍可斟酌。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法19-筆記-12-§217法院職權減免與§218§218-1.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

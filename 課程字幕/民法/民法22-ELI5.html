@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法22 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法22">
+<main>
+
+<header class="lesson-head">
+  <h1>民法22</h1>
+  <span class="sub">非給付型不當得利各類型・返還客體與範圍（§181～§183）・相當於租金之時效</span>
+</header>
+<p class="lesson-intro">前半講非給付型的案例：行為所生用<b>權益歸屬說</b>，法律規定所生用<b>法規目的說</b>。後半進入法律效果：<b>§181</b> 還什麼、<b>§182</b> 還多少、<b>§183</b> 什麼時候改找第三人。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 11</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>市價 800 萬的屋子賣了 1,000 萬，不當得利只能請求 800 萬</h2>
+  <div class="scene">
+    <p>甲的 A 屋通謀虛偽登記在乙名下，市價 800 萬元。乙擅自以 1,000 萬元賣給善意的丙並移轉登記，丙取得所有權。</p>
+    <p class="q">甲依 §179 向乙請求，能拿到 1,000 萬嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">價金 1,000 萬<br>權益歸屬於誰？</div>
+    <div class="out"><span class="tag">800 萬</span><div class="b ok">A 屋轉換而來 → 歸甲</div></div>
+    <div class="out"><span class="tag">200 萬</span><div class="b">買賣契約創造 → 歸乙</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>通說採價金說，再用權益歸屬說切分：只有 A 屋價值的部分屬於甲（<span class="s">§181</span>）。高價出售所得、代替利益都不是「本於該利益更有所取得者」。甲想拿全部 1,000 萬，要改走不法管理（<span class="s">§177 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>有學者採債務消滅說：乙的利益是用甲的屋子清償對丙的債務，所以償還房屋價額，避開「得利是價金卻只還市價」的矛盾。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-01-無權處分他人之物之得利與交易溢價§181.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>善意承租人在訴狀送達前，不必返還相當於租金之利益</h2>
+  <div class="scene">
+    <p>乙無權占有甲的 A 地，以每月 5 萬元出租給丙，丙不知道乙不是所有人。甲在 11 月起訴，訴狀送達丙。</p>
+    <p class="q">甲能向丙請求起訴前的相當於租金不當得利嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="善意承租人保護期間">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="60" cy="55" r="5" class="dot"/>
+    <text x="60" y="35" text-anchor="middle">丙善意承租</text>
+    <text x="60" y="80" text-anchor="middle" class="mu">§943 推定租賃權</text>
+    <text x="165" y="80" text-anchor="middle" class="mu">§952 利益歸丙</text>
+    <path d="M270 55 H 380" class="acc"/>
+    <circle cx="270" cy="55" r="5" class="dot acc"/>
+    <text x="270" y="35" text-anchor="middle">訴狀送達</text>
+    <text x="330" y="80" text-anchor="middle" class="mu">視為惡意 → §179</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>丙受有占有的利益（個別財產觀察法，付租金不影響）。丙行使的是租賃權，甲也不是使丙占有之人，受占有推定保護（<span class="s">§943</span>），依 <span class="s">§952</span> 占有利益歸屬於丙。本權訴訟敗訴者，自訴狀送達日起視為惡意（<span class="s">§959 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§767 要告現占有人丙，告乙會敗訴。占用既成道路只限通行；在路旁擺攤，所有人仍得請求不當得利。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-02-無權出租他人土地與既成道路之權益歸屬§952§943.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>侵權罹於時效後，打人不用賠也不是不當得利</h2>
+  <div class="scene">
+    <p>甲毆打乙致傷，乙過了兩年才想求償，甲提出時效抗辯。另一案，丙把借來的 A 車賣給善意的丁，丁善意取得。</p>
+    <p class="q">乙能改依 §179 向甲請求嗎？車主能依 §179 向丁要車嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">該法律規定是否要讓<br>受領人終局保有利益？</div>
+    <div class="out"><span class="tag">是</span><div class="b ok">時效（法安定性）、善意取得（交易安全）→ 有法律上原因</div></div>
+    <div class="out"><span class="tag">否</span><div class="b no">添附（物的經濟價值）→ 仍成立不當得利</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>甲受有免賠償的利益，但這是基於法律規定，用法規目的說判斷。時效制度目的在讓受益人保有利益，所以不成立不當得利（51 台上 2881）。善意取得同理，否則保護交易安全會落空。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>這題不適用 <span class="s">§197 II</span>：它要「因侵權行為受利益」，打人沒有得到財產；搶劫才有，時效完成後仍可依不當得利要回。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-03-時效完成與善意取得之法規目的說.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>磚頭砌進別人的牆，只能請求償還價額</h2>
+  <div class="scene">
+    <p>甲重砌圍牆時磚頭不夠，搬走鄰居乙門口價值 2 萬元的磚頭砌上去。</p>
+    <p class="q">乙能要求拆下磚頭還他嗎？能要什麼？</p>
+  </div>
+  <div class="flow">
+    <div class="b no">§767 返還磚頭 ✗<small>§811 所有權歸甲</small></div><div class="a"></div>
+    <div class="b">§179 成立<small>添附不是法律上原因</small></div><div class="a"></div>
+    <div class="b ok">§816 償還價額 2 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>動產附合成不動產重要成分，所有權歸不動產所有人（<span class="s">§811</span>）。這條是為了維護物的經濟價值，不是要讓甲終局保有，所以仍成立不當得利。<span class="s">§816</span> 排除返還原形，只能償還價額，是 §181 的特別規定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§816「依關於不當得利之規定」，通說（修正理由）是構成要件準用，仍要具備 §179 的要件。講義那段寫反，要手動對調。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-04-添附之不當得利與償還價額§811§816.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>已交付未登記的土地被徵收，買受人只能類推 §225 II 要補償費</h2>
+  <div class="scene">
+    <p>甲以 1,000 萬元把 A 地賣給乙，已交付、未移轉登記。A 地被徵收，補償費 1,000 萬元發給甲。</p>
+    <p class="q">乙還要付價金嗎？補償費能拿到嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>§373 危險</h4>含被徵收 → 交付後由乙負擔，乙仍須付價金</div>
+    <div class="trap-c"><h4>§373 利益</h4>只指使用收益，不含徵收的代替利益 → 補償費不歸乙</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>補償費依法歸土地所有人，登記前所有人是甲，所以甲受領的是自己的利益，不成立不當得利（81 年第 19 次民事庭決議）。乙付價金後，得<b>類推</b> <span class="s">§225 II</span> 請求甲讓與補償費。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>是類推不是直接適用：§225 II 講損害賠償，徵收補償費是損失補償。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-05-土地徵收補償費之權益歸屬§373§225II.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>強迫得利仍成立不當得利，能還原形就還原形</h2>
+  <div class="scene">
+    <p>甲擅自花 3 萬元替乙修好漏水；乙的房子下個月就要改建，根本不想修。另一案，丙擅自在丁家裝了一台冷氣。</p>
+    <p class="q">乙、丁要返還什麼？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>強迫得利（§179 成立）</span>
+      <ul>
+        <li class="hit"><span>原形能還 → 返還原形：冷氣拆下還丙</span></li>
+        <li><span>原形不能還 → 償還價額，採主觀說：漏水對乙 0 元</span></li>
+        <li class="off"><span>直接說不成立不當得利 ✗</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>先看無因管理：乙願意享受利益，依 <span class="s">§177 I</span> 在所得利益內償還。不願享受才走不當得利，屬支出費用型。強迫得利在 <span class="s">§181</span> 處理：價額原則採客觀說，強迫得利例外採主觀說。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>主觀價額不一定是零：乙因此決定改建前多住一個月，這一個月的價值要還。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-06-強迫得利之返還與主觀價額§181.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>善意誤吃別人的草莓，要看有沒有消費計畫</h2>
+  <div class="scene">
+    <p>甲誤以為是自己的，吃掉乙價值 500 元的草莓。另一案，丙詐騙丁 100 萬元，10 年後丁依 §179 請求。</p>
+    <p class="q">甲要還 500 元嗎？丙要付幾年利息？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">甲本來就有<br>買草莓的計畫？</div>
+    <div class="out"><span class="tag">有</span><div class="b no">省下費用，利益存在 → 償還 500 元</div></div>
+    <div class="out"><span class="tag">無</span><div class="b ok">利益不存在 → 依 §182 I 免返還</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>善意受領人利益不存在免返還（<span class="s">§182 I</span>），存否採總體財產觀察法；善意不問有無過失。惡意受領人不問存否都要還，並附加利息、賠償損害（<span class="s">§182 II</span>）。丙未約定利率，年息 5%。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>附加利息依 95 年第 17 次民事庭決議適用 §126，只能請求最近 5 年（25 萬），不是 10 年。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-07-善意與惡意受領人之返還範圍§182.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>受領人把車送人，原所有人改向受贈人請求</h2>
+  <div class="scene">
+    <p>甲把 A 車賣給乙並交付，乙轉送給丙。甲因錯誤撤銷買賣契約，物權行為有效；乙不知道有撤銷原因。</p>
+    <p class="q">甲該找乙還是找丙？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲→乙 §179 成立</div><div class="a lbl">贈與無對價</div>
+    <div class="b q">§182 I 利益不存在，免返還</div><div class="a"></div>
+    <div class="b ok">甲→丙 §183</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>受領人無償讓與第三人、因此免返還時，第三人在免返還限度內負責（<span class="s">§183</span>）。若甲連物權行為也撤銷，乙從未取得所有權、根本沒得利，就要<b>類推</b> §183。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙惡意時甲對乙仍有 §179，多數說與 102 台上 1591 不許再找丙。林誠二認為乙受有債務消滅的利益，§183 根本用不到。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-08-無償讓與第三人之返還責任§183.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>依指示把地過給買受人的兒子，買賣不成立時可向兒子請求</h2>
+  <div class="scene">
+    <p>乙向甲買 A 地，指示甲直接移轉登記給兒子丙。登記後雙方價金談不攏，買賣契約不成立。丙說：地是我爸送的，去找我爸。</p>
+    <p class="q">甲能要求丙返還 A 地嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>甲的請求</span>
+      <ul>
+        <li class="off"><span>甲→丙 給付型 §179：給付關係在甲乙、乙丙 ✗</span></li>
+        <li class="off"><span>甲→乙 §179：利益在丙，乙無償轉贈未得利 ✗</span></li>
+        <li class="hit"><span>甲→丙 類推 §183：返還 A 地 ✓</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>給付關係看甲想給誰：甲是在履行對乙的買賣義務。實務認為甲失去 A 地又無 §179 可用，丙無償取得，利益狀態同 <span class="s">§183</span>，所以類推適用（107 年最高法院判決維持高雄分院見解）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>林誠二：乙用甲的地履行對丙的贈與，受有債務消滅的利益，甲應向乙請求償還價額，不必動丙。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-09-指示給付受領人之類推適用§183.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>帳戶交給妹妹管，被多貸的 584 萬實務准免返還</h2>
+  <div class="scene">
+    <p>Y 委託在 X 農會上班的妹妹 S 代辦 216 萬元貸款，帳戶也交給 S 管。S 擅自貸了 800 萬元，付 216 萬給建商後，盜領 584 萬元。Y 完全不知情。</p>
+    <p class="q">X 能依 §179 向 Y 請求 584 萬嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>113 台上 1223</h4>Y 善意，錢已被領走 → §182 I 免返還</div>
+    <div class="trap-c"><h4>詹森林</h4>S 是 Y 的履行輔助人，依 §224 Y 為惡意；退一步，善意也要無過失</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>584 萬是無權代理，X 的職員就是無權代理人，X 非善意無過失，不成立表見代理。改打不當得利：成立 §179，但實務以 Y 本人判斷善意，依 <span class="s">§182 I</span> 免返還。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>詹森林認為 <span class="s">§224</span> 位於債之效力，也適用不當得利之債；立法理由「不問有無過失」只供參考。新爭點，尚未考過。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-10-§182I善意之判斷與履行輔助人§224.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>土地被占用 30 年，實務只准請求最近 5 年</h2>
+  <div class="scene">
+    <p>乙無權占有甲的土地 30 年才被發現，年租金行情 60 萬元。甲依 §179 請求相當於租金的不當得利。</p>
+    <p class="q">甲能拿回多少？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>實務：§126</h4>性質同租金，5 年 → 60 萬 × 5 ＝ 300 萬</div>
+    <div class="trap-c"><h4>學說：§125</h4>租金只是換算價額，15 年 → 60 萬 × 15 ＝ 900 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>過去的占有利益無法返還原形，依 <span class="s">§181</span> 但書償還價額，借用租金來計算。學說認為不當得利是一個持續的事實，不是每年各生一個債權，時效應同一般不當得利。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>選擇題問實務就答 5 年。老師批評：占用超過 5 年後等於沒本生意，變相鼓勵無權占有。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法22-筆記-11-相當於租金不當得利之消滅時效§125§126.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

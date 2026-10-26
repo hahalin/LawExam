@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法33 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法33">
+<main>
+
+<header class="lesson-head">
+  <h1>民法33</h1>
+  <span class="sub">租賃消滅效果・租地建屋特別規定・承攬（§422-1～§514）</span>
+</header>
+<p class="lesson-intro">先講完<b>租賃消滅後的效果</b>與 §456 短期時效，再講<b>租地建屋</b>的地上權登記與<b>優先承買權</b>（含違建）。後半進入<b>承攬</b>：定性、合建、工作遲延、瑕疵擔保的修補與解約、兩段式期間，最後是 96 年第 8 次民事庭決議。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>出租人求償從收回房屋起算兩年，承租人求償從租約終止起算</h2>
+  <div class="scene">
+    <p>乙承租甲的 A 屋，經甲同意鋪了 20 萬元木地板。租約 2024 年 6 月 30 日終止，乙拖到 9 月 1 日才搬走交屋，甲發現牆壁被撞壞。</p>
+    <p class="q">2026 年 8 月 1 日，乙請求有益費用、甲請求損害賠償，誰的請求權已經罹於時效？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="§456 兩種起算點的時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="40" cy="55" r="5" class="dot"/>
+    <text x="40" y="35" text-anchor="middle">2024/6/30</text>
+    <text x="40" y="80" text-anchor="middle" class="mu">終止</text>
+    <circle cx="140" cy="55" r="5" class="dot"/>
+    <text x="140" y="35" text-anchor="middle">2024/9/1</text>
+    <text x="140" y="80" text-anchor="middle" class="mu">交屋</text>
+    <circle cx="250" cy="55" r="5" class="dot"/>
+    <text x="250" y="35" text-anchor="middle">2026/6/30</text>
+    <text x="250" y="80" text-anchor="middle" class="mu">乙到期</text>
+    <path d="M250 55 H 360" class="acc"/>
+    <circle cx="360" cy="55" r="5" class="dot acc"/>
+    <text x="360" y="35" text-anchor="middle">2026/9/1</text>
+    <text x="360" y="80" text-anchor="middle" class="mu">甲到期</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>出租人的損害賠償與承租人的費用償還、工作物取回，都是 2 年（<span class="s">§456</span>）。出租人自受租賃物返還時起算，承租人自租賃關係終止時起算。乙已罹於時效，甲還來得及。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>返還租賃物（§455）不在 §456 範圍，依 §125 為 15 年。終止只準用 §258、§260，不準用 §259 回復原狀（<span class="s">§263</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-01-租賃關係消滅後之返還費用償還與短期時效§455§456.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>租約可以默示更新，登記的地上權到期就消滅</h2>
+  <div class="scene">
+    <p>甲乙訂租地建屋契約 50 年，乙依 §422-1 請求甲辦了 50 年的地上權登記。50 年到期，乙的房子還在，繼續使用，甲也沒有表示反對。</p>
+    <p class="q">租賃權和地上權都會默示更新嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">期間屆滿，承租人續用、出租人不即反對</div>
+    <div class="out"><span class="tag">租賃權</span><div class="b ok">默示更新為不定期限（§451）</div></div>
+    <div class="out"><span class="tag">地上權</span><div class="b no">不更新，期滿消滅</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>物權有絕對效力，必須有公示外觀；默示更新外界看不見，所以地上權不隨同更新（<span class="s">64 年第 5 次民事庭決議</span>）。地上權登記請求權的時效依 §125 為 15 年。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>土地法 §102 的「二個月內聲請登記」是訓示規定，不是時效。租用基地建屋欠租要達二年租額才可催告終止（<span class="s">§440 III</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-02-租地建屋之特別規定與地上權登記請求權§422-1.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>地主沒書面通知就把基地賣掉，承租人仍可把土地拿回來</h2>
+  <div class="scene">
+    <p>乙向甲租 A 地蓋 B 屋。甲沒有通知乙，就以 1,000 萬元把 A 地賣給丙並移轉登記。兩年後 A 地市價漲到 3,000 萬元。</p>
+    <p class="q">乙要用什麼步驟，才能用 1,000 萬元取得 A 地？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙行使優先承買權</div><div class="a lbl">形成權</div>
+    <div class="b">甲乙成立買賣</div><div class="a lbl">§242 代位</div>
+    <div class="b">甲的 §767 請求丙塗銷</div><div class="a lbl">§348</div>
+    <div class="b ok">甲移轉登記給乙</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>出賣人應以書面通知同樣條件，10 日內未書面表示承買才視為放棄（<span class="s">§426-2 II</span>）。未通知而移轉登記，不得對抗優先承買權人（<span class="s">§426-2 III</span>）：乙主張甲丙物權行為無效，甲仍是所有人，丙的登記構成妨害。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>只有優先承買權人能主張無效，其他人不行。等地價漲了才主張，可能被認定違反誠信原則。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-03-承租人出賣房屋與有物權效力之優先承買權§426-1§426-2.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>違建行使優先承買權後才被拆，權利不受影響</h2>
+  <div class="scene">
+    <p>乙向甲租 A 地，蓋的 B 屋是違章建築。甲未通知就把 A 地賣給丙。乙起訴主張優先承買權，甲隨即找主管機關把 B 屋拆了。</p>
+    <p class="q">房子都沒了，乙還能主張優先承買嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>B 屋是違建</span>
+      <ul>
+        <li><span>尚未拆除 → 可以行使（108 台上 2350）</span></li>
+        <li class="hit"><span>行使後才拆除 → 不受影響（103 台上 2188）</span></li>
+        <li class="off"><span>行使前已拆除 → 不能行使</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>違建只是不能辦第一次所有權登記，拆除前在私法上仍是人民的財產，可以交易，所以有 <span class="s">§426-2</span> 的適用。已經取得的優先購買權，不因房屋事後被拆而受影響。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>少數說（吳從周）以目的性限縮否定：違建本來就要拆，沒有避免拆屋還地的必要。實務與多數說肯定。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-04-違章建築與基地優先承買權之行使§426-2.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>外送員撞到人，平台責任取決於定性為僱傭或承攬</h2>
+  <div class="scene">
+    <p>丙在外送平台甲接單，每送一單領 60 元。某天丙送餐時撞傷路人丁，丁醫藥費 10 萬元。</p>
+    <p class="q">丁可以請求甲連帶賠償嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>僱傭（§482）</h4>服勞務、受指揮監督；甲依 §188 連帶負責，有勞基法適用</div>
+    <div class="trap-c"><h4>承攬（§490）</h4>完成工作、看結果；甲依 §189 原則不負責，無勞基法適用</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>僱傭重指揮監督與服從；委任重<b>過程</b>，處理事務，受任人有專業自由；承攬重<b>結果</b>，修好車就是履行。勞動部曾採僱傭說，業者隨後修約拿掉指揮監督因素。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>僱傭、承攬定義都有「給付報酬」，必須有償；委任（<span class="s">§528</span>）有償無償都可以。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-05-僱傭委任與承攬之區別§482§490§528.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>合建契約沒寫明類型，定性為土地買賣加房屋承攬</h2>
+  <div class="scene">
+    <p>地主甲與建商乙簽合建契約：乙在 A 地蓋 20 層大樓，其中 2 層歸甲，其餘歸乙。乙分得部分的基地價金 8,000 萬元，與甲應付的建屋報酬 8,000 萬元互相抵銷。甲那兩層後來漏水。</p>
+    <p class="q">甲要依買賣還是承攬主張？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>土地：買賣</h4>甲移轉基地給乙，乙付價金；土地權利瑕疵走買賣</div>
+    <div class="trap-c"><h4>房屋：承攬</h4>乙蓋好直接歸甲，報酬後付；房屋瑕疵走承攬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>建商承攬完成工作，以地主應付報酬充作買受基地價款，屬買賣與承攬之混合契約（<span class="s">91 台上 1559</span>）。漏水依承攬瑕疵擔保（§492 以下）處理。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>合建不是一律承攬：約定房屋蓋好後以房屋換基地所有權，是互易（§398）；另有合夥型。實務依約定內容探求真意。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-06-合建契約之定性與買賣承攬混合契約.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>工作做完但有瑕疵，實務認為已完成工作</h2>
+  <div class="scene">
+    <p>甲請乙寫一套庫存程式，報酬 30 萬元。乙交付了，但匯出報表的功能有錯誤。</p>
+    <p class="q">乙算不算已經「完成工作」？甲該走瑕疵擔保還是債務不履行？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>實務（85 台上 2280）</h4>做完就是做完，有瑕疵走 §492～§495 瑕疵擔保</div>
+    <div class="trap-c"><h4>學說（陳自強等）</h4>負完成無瑕疵工作義務，有瑕疵即債務不履行</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>學說的文義論證：買賣 §354 說出賣人「應擔保」，承攬 <span class="s">§492</span> 說承攬人「應使」其無瑕疵，表示立法者課予義務。依此，§492～§495 只是 §227 不完全給付的確認性規定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>承攬人義務是完成工作與瑕疵擔保；定作人義務是給付報酬與協力。老師寫擬答多採實務，論述較簡單。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-07-承攬人之義務與是否負完成無瑕疵工作義務§492.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>一般工程拖延未完工，實務不准定作人催告解約</h2>
+  <div class="scene">
+    <p>甲請乙蓋倉庫，約定去年 12 月 31 日完工，報酬後付 500 萬元。乙可歸責地一直拖，今年 6 月還沒蓋完。另一案，丙請丁搭跨年晚會舞臺，丁拖到 1 月 6 日。</p>
+    <p class="q">甲、丙能不能解除契約？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">期限是不是契約要素（絕對定期之債）</div>
+    <div class="out"><span class="tag">是：跨年舞臺</span><div class="b ok">解約並請求不履行損害（§502 II、§503）</div></div>
+    <div class="out"><span class="tag">否：一般倉庫</span><div class="b no">不得解約，等完工減報酬或依 §511 終止</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>遲延但有做完：一般情形減少報酬「或」請求遲延損害（<span class="s">§502 I</span>）。絕對定期之債顯可預見不能如期完成，可提前解約（<span class="s">§503</span>）。實務認為報酬後付，定作人沒做完不用付錢，不虧（<span class="s">98 台上 1256</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§502 I 是「或」，II 是「並」。依 §511 終止要賠償承攬人；學說主張可依 §254 催告後解約。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-08-承攬人之工作遲延與定作人之解除權§502§503.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>裝潢瑕疵要求損害賠償，實務要先給承攬人修補機會</h2>
+  <div class="scene">
+    <p>甲花 100 萬元請乙裝潢，乙施工草率：電線外露、浴室漏水。甲不想再讓乙進門，自己找丙修好，花了 80 萬元。</p>
+    <p class="q">甲沒先請乙修補，能直接依 §495 請求 80 萬元嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>實務（106 年第 5 次決議）</h4>須先定期催告修補，承攬人不修，才能請求損害賠償</div>
+    <div class="trap-c"><h4>學說（林誠二）</h4>可直接求償；原承攬人修補較便宜的差額，用與有過失扣除</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>先請求修補（<span class="s">§493 I</span>）；單純拒絕可自行修補請求費用，或減少報酬、解約（<span class="s">§494</span>）。§493、§494 是無過失責任；<span class="s">§495</span> 損害賠償須可歸責於承攬人。實務理由是承攬人最接近生產程序，修補成本最低。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>修補費用過鉅而拒絕，不能自行修補請求費用（§493 III）。林誠二指出：§514 從發見時起算，實務要求先修補，時效會在權利能行使前就開始跑。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-09-承攬瑕疵擔保之體系與損害賠償須否先請求修補§493至§495.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>房屋瑕疵不可歸責於建商，須拆除重建時仍可解約</h2>
+  <div class="scene">
+    <p>甲請乙蓋 A 屋。乙施工沒有過失，但供應商的鋼筋是輻射鋼筋，鑑定 A 屋有倒塌危險，必須拆除重建。</p>
+    <p class="q">甲可以解除承攬契約嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>工作有瑕疵</span>
+      <ul>
+        <li class="off"><span>非重要瑕疵 → 不能解約</span></li>
+        <li><span>重要瑕疵＋非建築物 → §494 解約</span></li>
+        <li><span>建築物＋可歸責於承攬人 → §495 II 解約</span></li>
+        <li class="hit"><span>建築物＋不可歸責 → 須拆除重建才可解約（83 台上 3265）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§494</span> 但書規定建築物不得解約，判例目的性限縮為「毋庸拆除重建者」。解約對承攬人最不利的是回復原狀，房屋本來就要拆，讓定作人解約，承攬人也沒有更不利。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§495 II 以可歸責為前提，不可歸責時用不上。詹森林指出草案原把它放在 §494 後面，立法院移置造成落差。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-10-承攬瑕疵之解除契約與建築物須拆除重建§494§495.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>房屋單純裝潢的瑕疵，發見期間只有一年</h2>
+  <div class="scene">
+    <p>乙替甲的 A 屋做單純裝潢（鋪地板、做天花板），2022 年 1 月 1 日交付。2023 年 6 月 1 日甲才發見天花板瑕疵，乙並非故意隱瞞。</p>
+    <p class="q">甲還能依 §493～§495 主張權利嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="單純裝潢瑕疵發見期間時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="40" cy="55" r="5" class="dot"/>
+    <text x="40" y="35" text-anchor="middle">2022/1/1</text>
+    <text x="40" y="80" text-anchor="middle" class="mu">交付</text>
+    <path d="M40 55 H 210" class="acc"/>
+    <circle cx="210" cy="55" r="5" class="dot acc"/>
+    <text x="210" y="35" text-anchor="middle">2023/1/1</text>
+    <text x="210" y="80" text-anchor="middle" class="mu">1 年屆滿</text>
+    <circle cx="340" cy="55" r="5" class="dot"/>
+    <text x="340" y="35" text-anchor="middle">2023/6/1</text>
+    <text x="340" y="80" text-anchor="middle" class="mu">才發見</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>一般工作交付後 1 年內要發見（<span class="s">§498</span>）；建築物或重大修繕 5 年（<span class="s">§499</span>）；故意不告知延為 5 年、10 年（<span class="s">§500</span>）。發見後還要在 1 年內行使（<span class="s">§514</span>）。單純裝潢不是重大修繕，甲已不能主張。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§514 的 1 年，對修補、費用償還、損害賠償是消滅時效；對減少報酬、解除契約這兩個形成權是除斥期間。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-11-瑕疵發見期間與權利行使期間§498至§500§514.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>承攬瑕疵逾一年不能改走 §227 I，人身受傷仍可依 §227 II 請求</h2>
+  <div class="scene">
+    <p>乙替甲蓋 A 屋時偷工減料。甲入住第 3 年，隔間牆崩裂（可修復），甲被落石擊傷。事故後 1 年 2 個月，甲才向乙主張契約上權利。</p>
+    <p class="q">房屋修繕費和醫藥費，哪一項還能請求？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>牆壁崩裂（瑕疵損害）</h4>§495 已逾 §514 一年；§227 I 受影響，也不能請求</div>
+    <div class="trap-c"><h4>甲受傷（加害給付）</h4>§495 本來就不包括；§227 II 不受影響，依 §227-1 準用 §197 為 2 年</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>96 年第 8 次民事庭決議：§495 不包括加害給付；§514 短期時效基於承攬性質與法安定性應優先適用，經過後不得改依 §227 請求。這是請求權相互影響說（規範競合說）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>相互影響要以同一損害同時該當兩個請求權為前提。加害給付不在 §495 範圍，沒有競合，§514 就影響不到 §227 II。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法33-筆記-12-承攬瑕疵與不完全給付之競合96年第8次民事庭決議.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

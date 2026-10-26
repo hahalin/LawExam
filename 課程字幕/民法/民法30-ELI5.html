@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法30 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法30">
+<main>
+
+<header class="lesson-head">
+  <h1>民法30</h1>
+  <span class="sub">清償・抵銷・買賣之權利瑕疵擔保（§309～§353）</span>
+</header>
+<p class="lesson-intro">先講<b>清償</b>：向第三人清償、第三人清償、債之本旨與代物清償／新債清償；再講<b>抵銷</b>的要件與各種不得抵銷的債權；債總至此結束，最後進入債各的<b>買賣</b>，講到 §353 的準用爭議與權利瑕疵擔保。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>存摺與真印章一起被盜用，損失由存戶承擔</h2>
+  <div class="scene">
+    <p>甲在 A 銀行存了 100 萬元。乙撿到甲的存摺，偽刻一顆肉眼看不出差別的印章，領走 100 萬元。</p>
+    <p class="q">損失在銀行還是甲？如果乙連真正的印章一起撿到呢？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">乙拿什麼去提款？</div>
+    <div class="out"><span class="tag">存摺＋偽刻印章</span><div class="b no">非準占有人，清償無效 → 銀行受損</div></div>
+    <div class="out"><span class="tag">存摺＋真正印章</span><div class="b ok">準占有人＋銀行善意，清償有效 → 甲受損</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>向第三人清償原則不生效力；受領人是債權之準占有人，且債務人不知其非債權人，例外有效（<span class="s">§310②</span>）。實務認為提款要有真正存摺與真正印章，才是準占有人（<span class="s">68 年第 6 次民事庭決議</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>偽刻印章肉眼無法辨識，銀行仍要承擔損失。存款是消費寄託，錢的所有權屬於銀行；誰受損害，就由誰向乙主張不當得利。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-01-向第三人清償與盜領存款之債權準占有人§309§310.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>有利害關係的第三人要清償，債權人不得拒絕</h2>
+  <div class="scene">
+    <p>甲把工程交給承攬人乙。乙施工震裂鄰居丙的牆，損害 50 萬元，一直談不攏，可能被勒令停工。甲沒有定作過失，依法不必賠，但怕工程延宕，想直接賠丙 50 萬元。乙表示異議。</p>
+    <p class="q">丙可以拒收甲的錢嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">債務人乙異議時</div>
+    <div class="out"><span class="tag">第三人無利害關係</span><div class="b dim">丙得拒絕（收下也有效）</div></div>
+    <div class="out"><span class="tag">第三人有利害關係</span><div class="b ok">丙不得拒絕</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債之清償得由第三人為之（<span class="s">§311 I</span>）。債務人異議時，債權人得拒絕；第三人有利害關係時，不得拒絕（<span class="s">§311 II</span>）。利害關係從寬認定，事實上的利害關係即可。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>條文是「得拒絕」，不是「應拒絕」。約定負催收責任的中人，雖然不是保證人，也被認為有利害關係。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-02-第三人清償之拒絕與利害關係第三人§311§312.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>要找保證人負責，替人清償的人須有利害關係</h2>
+  <div class="scene">
+    <p>甲向乙借 100 萬元，丙為保證人。甲的朋友丁主動替甲還清 100 萬元，後來甲沒錢還丁。</p>
+    <p class="q">丁可以改向保證人丙請求嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>求償權</h4>任何第三人都有，只能向甲請求（委任、無因管理、不當得利）</div>
+    <div class="trap-c"><h4>承受權</h4>限有利害關係的第三人，承受乙的債權連同保證</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>求償權的基礎是 <span class="s">§546</span>、<span class="s">§176</span> 或 <span class="s">§179</span>。有利害關係的第三人，於清償限度內承受債權人的權利，擔保一併移轉（<span class="s">§312</span>），丁才能向丙請求。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>自以為是債務人而給付，是非債清償，不是第三人清償。例如誤以為自己是要保人而繳保費，應向保險公司請求返還。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-03-第三人清償之求償權承受權與非債清償之區別§312.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>法院准許分期，一期遲延就全部到期</h2>
+  <div class="scene">
+    <p>乙欠甲 120 萬元，法院准乙分 12 期、每期 10 萬元。另外，丙向丁分期購買 120 萬元的機器，約定一期遲延即全部到期。乙、丙都在第 3 期遲延 10 萬元。</p>
+    <p class="q">甲、丁可以請求剩下的全部嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>法院許可分期</h4>一期遲延，甲可請求全部清償</div>
+    <div class="trap-c"><h4>分期付價買賣</h4>遲付須達 24 萬元（五分之一），丁現在還不能</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債務人無一部清償的權利，分期須債權人同意或法院許可（<span class="s">§318</span>）。分期付價買賣，遲付須達全部價金五分之一（<span class="s">§389</span>）。清償費用原則由債務人負擔（<span class="s">§317</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>定有清償期，債權人不得期前請求，但債務人得期前清償（<span class="s">§316</span>），期前清償不得請求返還。種類之債沒有約定時，在債權人住所地清償。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-04-清償地清償期清償費用與一部清償§314至§318.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>只是口頭約定改給新車款，原訂車款債權仍在</h2>
+  <div class="scene">
+    <p>甲向車商乙訂 2025 年式 A 車，價金 100 萬元。乙說 A 車缺貨，提議改給 2026 年式 A+、不加價，甲同意。三個月後乙還沒交 A+。</p>
+    <p class="q">甲原本的 A 車債權還在嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>以 A+ 代替 A</span>
+      <ul>
+        <li><span>當場交付並受領 A+ → 代物清償，債之關係消滅</span></li>
+        <li class="hit"><span>約定將來給 A+ → 新債清償，A+ 未給則 A 不消滅</span></li>
+        <li><span>約定 A 直接改成 A+ → 債之更改，只剩 A+</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>代物清償是要物行為，受領他種給付，債之關係才消滅（<span class="s">§319</span>）。新債清償是諾成約定，新債務不履行時，舊債務不消滅（<span class="s">§320</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>現行實務認為新債務清償期屆至前，不得行使舊債權，要先請求 A+（<span class="s">101 台上 1410</span>）。換訂單通常是債之更改，舊債務直接消滅。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-05-代物清償新債清償與債之更改§319§320.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>第三人利益契約的債務人，不得以對要約人的債權抵銷</h2>
+  <div class="scene">
+    <p>乙（要約人）與甲約定，由甲付 100 萬元給丙。甲另外對乙有 80 萬元債權。丙向甲請求 100 萬元。</p>
+    <p class="q">甲可以主張抵銷 80 萬元、只付 20 萬元嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>不是二人互負債務的抵銷</span>
+      <ul>
+        <li><span>保證人 → 得以主債務人的債權抵銷（§742-1）</span></li>
+        <li class="hit"><span>第三人利益契約的債務人 → 不得抵銷（§341）</span></li>
+        <li><span>債權讓與 → 受通知時已存在，且清償期不晚於讓與的債權（§299 II）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>抵銷須二人互負債務、給付種類相同、均屆清償期（<span class="s">§334</span>）。抵銷以意思表示為之，溯及最初得為抵銷時消滅（<span class="s">§335 I</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>只看 §270「一切抗辯」會選錯，§341 是特別規定。抵銷附條件或期限，整個抵銷的意思表示無效（<span class="s">§335 II</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-06-抵銷之要件方式與兩人互負債務之例外§334至§336.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>還沒起訴的慰撫金，也可以拿來抵銷</h2>
+  <div class="scene">
+    <p>甲乙車禍，甲車損 100 萬元；乙受傷，醫藥費 10 萬元。甲依 §184 請求乙賠 100 萬元。乙沒有起訴請求慰撫金，也沒有與甲約定，卻主張以醫藥費 10 萬元與慰撫金 100 萬元抵銷。</p>
+    <p class="q">慰撫金部分可以抵銷嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>現行實務</h4>可以；數額由法院認定，認定 60 萬元就抵 60 萬元</div>
+    <div class="trap-c"><h4>舊實務</h4>不可以；求償意思與數額都不明確</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>依債之性質不能抵銷者不得抵銷，例如扶養債務（<span class="s">§334 I 但書</span>）。<span class="s">§195 II</span> 只限制慰撫金不得讓與或繼承，沒有禁止抵銷（<span class="s">110 台上 2523</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>舊見解是 70 台上 2143。主張抵銷那一刻就已表示求償意思。已起訴或已依契約承諾的慰撫金，新舊見解都認為可以抵銷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-07-依債之性質不得抵銷與慰撫金債權之抵銷110台上2523.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>暴力討債的加害人，不得以借款債權抵銷賠償</h2>
+  <div class="scene">
+    <p>甲借乙 30 萬元，乙不還。甲找人毆打乙，乙受有損害 20 萬元。</p>
+    <p class="q">甲、乙誰可以主張抵銷？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>甲請求還錢</h4>乙以 20 萬元賠償債權抵銷：可以</div>
+    <div class="trap-c"><h4>乙請求賠償</h4>甲以借款債權抵銷：不可以</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>因故意侵權行為而負擔之債，其債務人不得主張抵銷（<span class="s">§339</span>）。禁止扣押之債，其債務人不得主張抵銷（<span class="s">§338</span>），政府不得以罰鍰抵銷急難救助金。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§339 只限制加害人，被害人可以抵銷；過失侵權行為不在限制內。互毆時雙方都是被害人，學說認為可以抵銷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-08-禁止扣押與故意侵權行為之債不得抵銷§338§339.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>請求權罹於時效，仍可拿來抵銷</h2>
+  <div class="scene">
+    <p>110 年 5 月 10 日甲乙車禍，雙方口頭說好互不求償，沒有簽和解書。甲的保險公司理賠後代位，在 112 年 5 月 8 日起訴乙請求 30 萬元。乙 5 月 20 日收到訴狀時，自己對甲的請求權已罹於兩年時效。</p>
+    <p class="q">乙還能拿自己的損害主張抵銷嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="車禍與時效時間軸">
+    <line x1="10" y1="60" x2="390" y2="60" class="lt"/>
+    <circle cx="40" cy="60" r="5" class="dot"/>
+    <text x="40" y="22" text-anchor="middle">110/5/10</text>
+    <text x="40" y="40" text-anchor="middle" class="mu">車禍</text>
+    <path d="M40 60 H 270" class="acc"/>
+    <circle cx="190" cy="60" r="5" class="dot"/>
+    <text x="190" y="85" text-anchor="middle">112/5/8</text>
+    <text x="190" y="103" text-anchor="middle" class="mu">保險公司起訴</text>
+    <circle cx="270" cy="60" r="5" class="dot acc"/>
+    <text x="270" y="22" text-anchor="middle">112/5/10</text>
+    <text x="270" y="40" text-anchor="middle" class="mu">乙時效完成</text>
+    <circle cx="355" cy="60" r="5" class="dot"/>
+    <text x="355" y="85" text-anchor="middle">112/5/20</text>
+    <text x="355" y="103" text-anchor="middle" class="mu">乙收到訴狀</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>時效完成前已適於抵銷者，時效完成後仍得抵銷（<span class="s">§337</span>）。罹於時效的債權沒有消滅，只是不能請求。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>受扣押命令的第三債務人，扣押後才取得的債權，不得與被扣押的債權抵銷；扣押前已存在的可以（<span class="s">§340</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-09-扣押後取得之債權與時效完成之債權抵銷§340§337.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>銀行只回「知道了」，事後抵銷不違反誠信原則</h2>
+  <div class="scene">
+    <p>甲在乙銀行有 500 萬元定存，也向乙貸款 300 萬元。甲以定存設定權利質權給丙，擔保工程款。丙通知乙，乙只回「知道了」。後來甲不付工程款，丙要行使質權，乙主張以貸款抵銷。</p>
+    <p class="q">乙沒有告知，還能抵銷嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙未告知貸款</div><div class="a lbl">信賴保護</div>
+    <div class="b">未表示不抵銷<small>沒有製造假象</small></div><div class="a lbl">利益衡量</div>
+    <div class="b ok">得抵銷<small>丙只喪失擔保</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>判斷是否違反誠信原則（<span class="s">§148 II</span>），看有無破壞信賴，以及利益衡量。陳忠五認為沉默不等於表示不抵銷；丙的工程款債權仍在，只是變成沒有擔保。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不違反誠信，不代表沒有告知義務。陳忠五認為銀行告知成本低、資訊對丙重要，應負告知義務；違反時是否構成不作為侵權行為，是延伸爭點。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-10-銀行受權利質權通知後未告知抵銷權與誠信原則.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>出賣人不可歸責而給付不能，通說認為也不能用 §353</h2>
+  <div class="scene">
+    <p>甲把 A 車賣給乙，價金 80 萬元。交車前，鄰居失火延燒，A 車全毀，甲沒有過失。</p>
+    <p class="q">乙能依 §226 或 §353 請求甲賠償嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">§353 對違反 §348 如何準用？</div>
+    <div class="out"><span class="tag">通說：構成要件準用</span><div class="b no">須可歸責 → 乙不能請求</div></div>
+    <div class="out"><span class="tag">少數說：法律效果準用</span><div class="b dim">無過失責任 → 乙可以請求</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>瑕疵擔保是無過失責任，違反 <span class="s">§349～§351</span> 時，§353 只借用債務不履行的法律效果。違反 <span class="s">§348</span> 的給付義務，通說採構成要件準用，仍以可歸責為要件。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>買到贓車，被原所有人依 §949 在兩年內追回，是第三人就標的物主張權利；出賣人依 §349、§353 負責，不問有無過失。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-11-買賣契約之義務體系與§353之準用爭議§345§348§349§353.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>鄰地主張袋地通行權，舊實務認為不是權利瑕疵</h2>
+  <div class="scene">
+    <p>甲把 A 地賣給乙並移轉登記。鄰地所有人丙依 §787 主張袋地通行權，開始通行 A 地。</p>
+    <p class="q">乙能要求甲負權利瑕疵擔保責任嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>否定說</h4>袋地通行權是法定負擔，不是人為設定的權利（90 台上 2093）</div>
+    <div class="trap-c"><h4>肯定說</h4>鄰地所有權擴張、限制 A 地，屬於權利瑕疵（姚志明）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>出賣人應擔保第三人就買賣標的物不得對買受人主張權利（<span class="s">§349</span>）。權利的出賣人應擔保權利確係存在（<span class="s">§350</span>），是 §246 的特別規定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>房屋占用鄰地被訴拆屋還地，鄰地所有人主張的是自己土地的權利，否定說認為應回歸物之瑕疵。§789 因分割造成的袋地是人為的，老師認為可算權利瑕疵。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法30-筆記-12-袋地通行權與房屋占用鄰地是否為權利瑕疵§349§350.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

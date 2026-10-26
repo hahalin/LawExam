@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法26 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法26">
+<main>
+
+<header class="lesson-head">
+  <h1>民法26</h1>
+  <span class="sub">受領遲延之效果・不完全給付・情事變更・代位權・撤銷詐害債權（§227～§245）</span>
+</header>
+<p class="lesson-intro">先補完<b>受領遲延</b>中發生給付不能時誰負責，再走<b>不完全給付</b>（瑕疵給付、附隨義務、擔保說與履行說、加害給付、徒勞無益費用）與<b>情事變更</b>，最後進入<b>債之保全</b>：代位權與撤銷詐害債權。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>買受人受領遲延中，員工輕過失撞毀貨物，出賣人不負賠償責任</h2>
+  <div class="scene">
+    <p>甲以 8 萬元出賣冷氣一台（種類之債）給乙，約定 3/1 送到乙家。甲派員工丙準時送達，乙因急性腸胃炎住院無法受領。丙載回途中因輕過失撞毀冷氣。</p>
+    <p class="q">乙可以請求甲再交一台，或請求賠償嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">丙依約送達<small>現實提出</small></div><div class="a lbl">§200 II</div>
+    <div class="b">冷氣特定</div><div class="a lbl">撞毀</div>
+    <div class="b q">給付不能<small>§225 I 免給付</small></div><div class="a lbl">§237</div>
+    <div class="b no">輕過失不必負責<small>§226 無理由</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>送到約定地點即交付必要行為完結，標的物特定，之後滅失就是給付不能，甲免給付義務。丙的過失視為甲的過失（<span class="s">§224</span>），但乙受領遲延中，甲僅就故意或重大過失負責（<span class="s">§237</span>），輕過失不可歸責。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>受領遲延不以債權人可歸責為要件，住院、教育召集也成立。拋棄占有只限不動產（§241），動產要載回保管並請求保管費（§240）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-01-受領遲延之效果與受領遲延中之給付不能§237至§241.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>受領遲延中標的物滅失，出賣人仍得請求價金，三說只差在理由</h2>
+  <div class="scene">
+    <p>接卡 1：冷氣撞毀，甲不可歸責。甲轉向乙請求 8 萬元價金，乙主張雙方都沒有錯，依 §266 免付。</p>
+    <p class="q">乙住院沒收貨，算不算可歸責於乙？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>受領遲延中之給付不能 → 乙仍須付 8 萬元</span>
+      <ul>
+        <li class="hit"><span>實務、王澤鑑：參考德國法，受領遲延即可歸責事由（§267）</span></li>
+        <li><span>黃茂榮：類推 §231 II，債權人負不可抗力責任</span></li>
+        <li><span>楊芳賢：德國是擬制，我國無明文 → 類推 §267</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>雙方不可歸責時免對待給付（<span class="s">§266</span>），可歸責於他方時仍得請求對待給付（<span class="s">§267</span>）。三說結論都是乙要付錢。國家考試寫實務見解（99 台上 1753）即可，可補楊芳賢的批評：受領遲延與給付不能之間其實沒有因果關係，是風險分配。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不宜用 §373：交付是提出加受領，本件只有提出。§267 但書可扣除甲省下的運費，§373 沒有這個效果。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-02-受領遲延是否為可歸責事由與§373之批判§267.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>茶葉只交 60 公斤，先問還能不能補正</h2>
+  <div class="scene">
+    <p>乙向甲買茶葉 100 公斤，甲因自己的疏失只交了 60 公斤。乙開的茶行月底要上架。</p>
+    <p class="q">乙能直接解約嗎？要依哪一條請求？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">欠的 40 公斤能補正嗎？</div>
+    <div class="out"><span class="tag">能</span><div class="b">準用給付遲延：命補正＋遲延損害；催告不補 → §254 解約</div></div>
+    <div class="out"><span class="tag">不能</span><div class="b">準用給付不能：§226 損害賠償、§256 解約</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>可歸責於債務人的不完全給付，債權人依給付遲延或給付不能之規定行使權利（<span class="s">§227 I</span>）。能補正又有實益，命其補正並請求遲延損害；補正已無實益，拒絕補正、請求不履行損害（<span class="s">§232</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>已拿到部分給付，解約須達契約目的不達，否則違反誠信原則。答案卷不要寫「依 §227 I 請求損害賠償」，要接到遲延或不能的條文。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-03-不完全給付之體系與瑕疵給付之效果§227I.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>冷氣附送安裝沒裝好，附隨義務違反原則上不能解約</h2>
+  <div class="scene">
+    <p>乙以 4 萬元向甲買冷氣，含安裝。甲的師傅裝歪了，冷氣會滴水；另一位客戶丙家則是電線沒接好，跳電燒壞壓縮機。</p>
+    <p class="q">乙和丙都能解除契約嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>乙：滴水</h4>冷氣還能吹、可修 → 請求修繕或賠償，不能解約</div>
+    <div class="trap-c"><h4>丙：壓縮機燒壞</h4>冷氣不能用 → 契約目的不達 → 可以解約</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>給付義務群包括主給付義務（冷氣本身）、從給付義務（可獨立請求，如名馬的血統證明書）與附隨義務（不可獨立請求，如安裝）。三者違反都構成不完全給付（<span class="s">§227</span>）；附隨義務違反原則不得解約，達契約目的不達時例外可以。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>題目給很瑣碎的事實，多半在考附隨義務：在餐廳廁所滑倒，可依 §227 請求賠償，但不能因此解約。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-04-給付義務群與附隨義務之違反.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>賣出泡水車，有沒有同時構成不完全給付，看出賣人有無給付無瑕疵之物的義務</h2>
+  <div class="scene">
+    <p>A 車滿分 100 分，訂約前就泡過水，只剩 60 分。甲把 A 車賣給乙，沒有告知，也沒有約定現況交付。甲對泡水有過失。</p>
+    <p class="q">乙除了瑕疵擔保，還能主張不完全給付嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>擔保說</h4>買的就是這台 60 分的車，現況交付合於債之本旨 → 只有瑕疵擔保</div>
+    <div class="trap-c"><h4>履行說</h4>出賣人應給付無瑕疵之物 → 60 分不合債之本旨 → 另構成 §227</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>瑕疵擔保是無過失責任，不完全給付以可歸責為要件。瑕疵於契約成立後才發生且可歸責於出賣人，兩者同時構成（<span class="s">77 年第 7 次民庭決議</span>）。爭議在自始瑕疵；兩者都構成時，才要往下處理競合。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>出賣人不可歸責時，不論採哪一說，都不能走 §227，只剩瑕疵擔保。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-05-不完全給付與瑕疵擔保之擔保說與履行說.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>不完全給付侵害人格權，可請求慰撫金但時效只有兩年</h2>
+  <div class="scene">
+    <p>乙向甲買三隻鸚鵡，牠們帶有禽流感，傳染給乙家另外 10 隻鳥全部死亡，乙自己也染病住院 2 週。</p>
+    <p class="q">乙的各項損害，請求權時效一樣嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>甲的不完全給付</span>
+      <ul>
+        <li><span>三隻病鳥本身 → 瑕疵給付 §227 I → 15 年</span></li>
+        <li><span>其他 10 隻鳥 → 加害給付 §227 II（財產）→ 15 年</span></li>
+        <li class="hit"><span>乙住院 → §227 II＋§227-1（人格權）→ 2 年</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>給付以外的其他損害是加害給付（<span class="s">§227 II</span>）。財產損害範圍依 §216，時效 15 年。人格權受侵害時，再搭配 §227-1 準用 §192～§195 請求慰撫金，並準用 §197，時效 2 年。§227-1 是民國 89 年為了讓債務不履行也能請求慰撫金而增訂。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§227-1 不是獨立請求權基礎，要先成立 §227 II。不完全給付體系裡只有人格權侵害是 2 年。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-06-加害給付與人格權侵害之慰撫金§227II§227-1.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>租到違建被拆，白花的裝修費學說以類推回復原狀請求</h2>
+  <div class="scene">
+    <p>甲向乙承租 A 建物 5 年，作高爾夫球練習場。乙隱瞞 A 是違建。甲花 500 萬元裝修，一年後 A 被拆除。</p>
+    <p class="q">甲能請求乙賠償 500 萬元裝修費嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>乙違反保持義務（§423）→ 不完全給付</span>
+      <ul>
+        <li class="off"><span>§227 I＋§226：履行利益，不含裝修成本</span></li>
+        <li class="off"><span>§227 II：裝潢已附合歸乙所有（§811），甲無所有權受侵害</span></li>
+        <li class="hit"><span>類推 §213：回到沒花這筆錢的狀態 → 500 萬元</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>出租人應保持租賃物合於約定使用收益的狀態（<span class="s">§423</span>），出租違建且被拆除即構成不完全給付。這種因信賴契約而白花的錢叫徒勞無益費用，我國沒有明文，學者主張類推回復原狀（<span class="s">§213</span>）請求。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>講義誤植為 §432，那是承租人的保管義務。實務以加害給付處理，詹森林批評此路徑。拿回裝修費就不再請求履行利益。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-07-違建租賃之徒勞無益費用類推§213.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>約定工程款永不調整，遇到疫情仍可聲請法院增加給付</h2>
+  <div class="scene">
+    <p>甲乙 2015 年訂工程契約，報酬 1,000 萬元，約定日後不論發生何事都不調整。2020 年疫情使人力物料大漲，2021/6 完工。</p>
+    <p class="q">乙還能請求增加報酬嗎？最晚何時要提出？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="情事變更時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="50" cy="55" r="5" class="dot"/>
+    <text x="50" y="35" text-anchor="middle">2015</text>
+    <text x="50" y="80" text-anchor="middle" class="mu">訂約</text>
+    <circle cx="160" cy="55" r="5" class="dot"/>
+    <text x="160" y="35" text-anchor="middle">2020</text>
+    <text x="160" y="80" text-anchor="middle" class="mu">疫情</text>
+    <circle cx="250" cy="55" r="5" class="dot acc"/>
+    <text x="250" y="35" text-anchor="middle">2021/6</text>
+    <text x="250" y="80" text-anchor="middle" class="mu">完工・起算</text>
+    <circle cx="350" cy="55" r="5" class="dot"/>
+    <text x="350" y="35" text-anchor="middle">2023/6</text>
+    <text x="350" y="80" text-anchor="middle" class="mu">2 年屆滿</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>契約成立後情事變更、非當時所得預料、依原有效果顯失公平，得聲請法院增減給付（<span class="s">§227-2</span>）。不調整的約定只及於可預料的風險（<span class="s">107 台上 970</span>）。增加給付是形成權，除斥期間類推原請求權時效，承攬報酬 2 年（§127 ⑦）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>起算點有三說，圖採陳聰富的完工時說。締約前誤判情勢不能直接適用，學說認可類推。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-08-情事變更原則之適用與增加給付之除斥期間§227-2.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>代位取回的錢屬於債務人，代位的債權人沒有優先受償權</h2>
+  <div class="scene">
+    <p>甲對乙有 100 萬元借款債權，銀行對乙也有 100 萬元債權。乙沒有其他財產，但對丙有 150 萬元已到期借款，乙一直不去要。</p>
+    <p class="q">甲代位要回 150 萬元，可以全部先拿去還自己嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲以自己名義起訴</div><div class="a lbl">§242</div>
+    <div class="b q">丙應向乙給付</div><div class="a lbl">回到乙</div>
+    <div class="b ok">全體債權人總擔保<small>甲、銀行參與分配</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債務人怠於行使權利，債權人為保全債權，得以自己名義行使；但專屬債務人本身的權利不行（<span class="s">§242</span>）。金錢債權須債務人無資力，原則須債務人已遲延，專為保存權利時例外（<span class="s">§243</span>）。效果是利益均霑。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>聲明是丙向乙給付，不是向甲給付。可以代位起訴，不能代位上訴；遺產分割請求權可以代位。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-09-代位權之要件與效果§242§243.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>真脫產用撤銷，假脫產用確認無效加代位</h2>
+  <div class="scene">
+    <p>甲對乙有 500 萬元債權。乙把名下唯一的 A 屋（市價 800 萬元）移轉登記給丙。</p>
+    <p class="q">甲要怎麼把 A 屋拉回乙名下？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>真脫產：真心送給丙</h4>§244 撤銷之訴＋回復原狀 → A 屋回到乙</div>
+    <div class="trap-c"><h4>假脫產：通謀虛偽</h4>確認無效（§87）＋代位乙行使 §767 → A 屋回到乙</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>撤銷詐害債權要件：債務人行為有害及債權；有償行為須債務人與受益人都明知；以財產為標的；非僅有害於特定物債權（<span class="s">§244</span>）。須聲請法院撤銷，知有撤銷原因時起 1 年、行為時起 10 年（<span class="s">§245</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>無效與得撤銷不能並存，通謀虛偽不是 §244 的對象（50 台上 547），實務用先備位。特定物債權人在乙尚有資力時應改請求賠償，不得撤銷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-10-撤銷詐害債權之架構與要件§244§245.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>拋棄繼承不能撤銷，放棄分遺產可以撤銷</h2>
+  <div class="scene">
+    <p>丁積欠戊 300 萬元，名下沒有財產。丁的父親死亡，留下 A 地，由乙丙丁三人繼承。</p>
+    <p class="q">丁拋棄繼承，或在分割協議中什麼都不拿，戊能撤銷嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>拋棄繼承</h4>身分行為，非以財產為標的 → 不得撤銷（73 年第 2 次決議）</div>
+    <div class="trap-c"><h4>遺產分割協議</h4>以遺產為標的 → 得撤銷</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債務人之行為非以財產為標的，不適用撤銷規定（<span class="s">§244 III</span>）。拋棄的是繼承權（身分）不能撤銷；拋棄的是分得遺產（財產）可以撤銷。少數說認為惡意拋棄繼承違反誠信原則，例外可撤銷。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>欠三人各 300 萬元，把 240 萬元全還給其中一人：實務認為資力沒有減少，民法也不要求按比例清償，不構成詐害。債權已罹於時效者不得撤銷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-11-拋棄繼承與遺產分割及對特定債權人清償之撤銷§244.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>債權只有 500 萬元，也能撤銷 800 萬元的贈與</h2>
+  <div class="scene">
+    <p>甲對乙有 500 萬元債權。乙把市價 800 萬元的股票全數贈與丙，乙沒有其他財產。</p>
+    <p class="q">甲只能撤銷 500 萬元的部分嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">確定沒有其他債權人嗎？</div>
+    <div class="out"><span class="tag">不確定</span><div class="b ok">全部撤銷 800 萬元，大家利益均霑</div></div>
+    <div class="out"><span class="tag">已證明沒有</span><div class="b">例外限於債權額 500 萬元</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>給付不可分（房屋）全部撤銷；給付可分（股票）原則也不受債權額限制，因為要回來的是債務人財產，其他債權人可能來參與分配（陳洸岳）。只有確實沒有其他債權人時，才限於債權額。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>抵押物抵償（<span class="s">§878</span>）也可能詐害：價值 500 萬元的地整筆給 300 萬元的抵押權人，普通債權人原可分 200 萬元變成 0；陳洸岳建議立法給差額請求權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法26-筆記-12-撤銷權之範圍與抵押物抵償之詐害§244§878.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

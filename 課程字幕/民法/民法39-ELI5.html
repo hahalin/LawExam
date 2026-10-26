@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法39 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法39">
+<main>
+
+<header class="lesson-head">
+  <h1>民法39</h1>
+  <span class="sub">區分所有・公同共有・抵押權（施行法 §8-5、§827～§864）</span>
+</header>
+<p class="lesson-intro">先收尾共有：修法前已分離的區分所有建築物怎麼把產權拉回一致，再講<b>公同共有</b>的權能，以及二試考過多次的<b>公同共有債權行使</b>（104 年第 3 次民事庭決議）。後半進入<b>抵押權</b>：意定與法定、承攬人抵押權、從屬性與不可分性，再一路講到擔保債權與抵押物的範圍、物上代位、孳息。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>修法前分開賣掉的基地，沒有地的住戶可以優先買回</h2>
+  <div class="scene">
+    <p>民國 80 年，甲乙丙丁各有一戶，基地應有部分各 1/4。甲缺錢，只把基地 1/4 賣給戊，自己留著房子。現在戊要把這 1/4 基地賣給外人。</p>
+    <p class="q">甲能搶在其他共有人前面買回嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">修法前已分離，現在要賣哪一塊</div>
+    <div class="out"><span class="tag">賣基地</span><div class="b ok">無地的專有部分所有人優先，數人按比例</div></div>
+    <div class="out"><span class="tag">賣房子</span><div class="b ok">有地無房的基地所有人優先，數人抽籤</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>現行法要求專有部分、共有部分與基地不得分離處分（<span class="s">§799 V</span>）。修法前已分離的可以繼續移轉，但另設優先承買權，目的是讓產權回到一致（<span class="s">物權編施行法 §8-5</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>甲的優先承買權優先於其他基地共有人依土地法 §34-1 IV 的優先承買權。數人主張時，買基地按比例，買房子抽籤，不要記反。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-01-區分所有建築物基地分離之優先承買權物權編施行法§8-5.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>繼承的土地有償出賣可以多數決，設定抵押權要全體同意</h2>
+  <div class="scene">
+    <p>甲乙丙三兄弟繼承父親的 A 地，尚未分割遺產，應繼分各 1/3。甲乙想把 A 地以 3,000 萬元賣掉，丙反對；甲乙又想拿 A 地設定抵押權借錢。</p>
+    <p class="q">甲乙兩人能各自作主嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>公同共有物的處分</span>
+      <ul>
+        <li class="hit"><span>不動產有償讓與、有償設定用益物權 → 土地法 §34-1 V 準用 I，多數決</span></li>
+        <li><span>動產、無償處分、設定抵押權 → §828 III 全體同意</span></li>
+        <li class="off"><span>處分「應有部分」→ 不存在</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>公同共有對物沒有應有部分，多數決用應繼分、派下權等潛在應有部分計算。使用收益依公同關係（<span class="s">§828 I</span>），管理準用 §820（<span class="s">§828 II</span>）。公同關係存續中不得請求分割（<span class="s">§829</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>引用時要寫土地法 §34-1「V 準用 I」，不能直接引 I。丙不同意出賣時，也能依準用行使優先承買權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-02-公同共有之潛在應有部分與權能§827至§830.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>繼承人一人起訴討債，實務要求全體同意或全體起訴</h2>
+  <div class="scene">
+    <p>甲借乙 500 萬元後死亡，繼承人丙丁戊，遺產未分割。丁戊不想管，丙自己起訴，請求乙把 500 萬元還給三位繼承人全體。</p>
+    <p class="q">丙一個人起訴，當事人適格有沒有欠缺？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>實務（104 年第 3 次民事庭決議）</h4>§831 → §828 III：須全體同意或全體起訴</div>
+    <div class="trap-c"><h4>學說（體系解釋）</h4>§831 → §828 II → §821，與 §293 一致：各人可為全體請求</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>§831 的財產權包括債權。實務認為起訴是權利行使，不是回復共有物，不準用 §821。學說認為公同共有債權是不可分債權，各債權人得請求向全體給付（<span class="s">§293 I</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>甲的房屋被乙占用，丙可以單獨請求返還房屋，這是物上請求權。甲死後才發生的相當租金不當得利，實務仍認為是公同共有債權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-03-公同共有債權之行使與繼承後之不當得利104年第3次民事庭決議.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>繼承人選出的股票管理人，不能代為行使表決權</h2>
+  <div class="scene">
+    <p>甲持有 A 公司股票 120 張，死後由乙丙丁繼承，遺產未分割。乙丙兩人投票選乙當管理人。股東會議案乙贊成，丙丁反對。</p>
+    <p class="q">乙能以管理人身分投 120 張贊成票嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">① 多數決選管理人</div><div class="a lbl">實務可以</div>
+    <div class="b">② 管理人投票</div><div class="a lbl">一致否定</div>
+    <div class="b no">不是管理行為</div><div class="br"></div>
+    <div class="b q">③ 共同行使表決權</div><div class="a lbl">多數說</div>
+    <div class="b">§828 III 全體同意</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>實務認為推選管理人是管理行為，可多數決（<span class="s">§820</span>）；林秀雄認為 §1152「互推」須全體同意。表決權行使是權利行使，管理人無此權限；多數說認為屬「其他之權利行使」，須全體同意。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>40 張贊成、80 張反對的割裂行使，多數民法學者否定，邵慶平肯定。游進發認為投票類似管理，可多數決。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-04-公同共有股票之管理人選任與表決權行使.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>法定抵押權不用登記就有，意定抵押權要登記才有</h2>
+  <div class="scene">
+    <p>甲向乙銀行借 500 萬元，把房屋設定抵押權給乙。丙買國宅，政府協助向丁銀行貸款 300 萬元，丁沒有去辦抵押權設定。</p>
+    <p class="q">乙、丁各在什麼時候取得抵押權？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>意定抵押權（乙）</h4>依法律行為設定，登記才生效（§758）</div>
+    <div class="trap-c"><h4>法定抵押權（丁）</h4>契約簽訂時依法取得第一順位，實行前再登記（§759）</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>普通抵押權是對債務人或第三人提供的不動產，不移轉占有，就賣得價金優先受償（<span class="s">§860</span>）。法定抵押權的例子還有裁判分割受金錢補償之人的抵押權（<span class="s">§824-1 IV</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>法定抵押權常有後來居上的設計：分割補償的抵押權，次序優先於應有部分上原本的抵押權（<span class="s">§824-1 V</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-05-抵押權之體系與意定法定抵押權§860.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>修繕承攬人只在房屋增值範圍內優先於先前的抵押權</h2>
+  <div class="scene">
+    <p>甲的 A 屋已設定第一順位抵押權給乙，擔保 800 萬元。地震後 A 屋只值 600 萬元，丙修繕後回到 900 萬元，報酬 250 萬元，丙依 §513 登記了抵押權。A 屋拍得 900 萬元。</p>
+    <p class="q">乙、丙各分多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">拍得 900 萬</div><div class="a"></div>
+    <div class="b q">增值 300 萬<small>丙優先 250，乙 50</small></div><div class="a"></div>
+    <div class="b">原值 600 萬<small>乙</small></div><div class="a"></div>
+    <div class="b ok">乙 650、丙 250</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>承攬人得請求定作人為抵押權登記，開工前也可以；契約經公證者得單獨申請。修繕報酬的抵押權，在修繕增加價值限度內優先於成立在先的抵押權（<span class="s">§513</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>現行法是登記了才有抵押權，不再是法定抵押權。次承攬人的定作人是承攬人，業主的房屋不是「定作人之不動產」，不能請求登記。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-06-承攬人抵押權§513.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>先設定抵押權、隔天才撥款，抵押權仍然有效</h2>
+  <div class="scene">
+    <p>甲乙 4 月 1 日約定借款 120 萬元，乙要求甲 4 月 2 日先設定抵押權，4 月 3 日才匯款。</p>
+    <p class="q">設定抵押權時借款契約還沒成立，抵押權有效嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="先設定抵押後撥款時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="60" cy="55" r="5" class="dot"/>
+    <text x="60" y="35" text-anchor="middle">4/1</text>
+    <text x="60" y="80" text-anchor="middle" class="mu">約定借款</text>
+    <circle cx="200" cy="55" r="5" class="dot acc"/>
+    <text x="200" y="35" text-anchor="middle">4/2</text>
+    <text x="200" y="80" text-anchor="middle" class="mu">設定抵押</text>
+    <path d="M200 55 H 330" class="acc"/>
+    <circle cx="330" cy="55" r="5" class="dot"/>
+    <text x="330" y="35" text-anchor="middle">4/3</text>
+    <text x="330" y="80" text-anchor="middle" class="mu">撥款・契約成立</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>消費借貸是要物契約，撥款時才成立。但被擔保債權包括將來可預期發生的特定債權（47 台上 535 判例），實行時登記的債權存在即可，普通抵押權也適用。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>實務採形式認定：設定契約登記的債權根本不存在，即使實際上另有一筆借款，抵押權仍無效，抵押人可以訴請塗銷。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-07-抵押權發生上之從屬性與形式認定.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>朋友提供的抵押，債務改由別人承擔，未經朋友承認就消滅</h2>
+  <div class="scene">
+    <p>甲向乙借 300 萬元，好友丁提供 B 地設定抵押權給乙。後來丙承擔了甲的債務，丁不知情。</p>
+    <p class="q">乙對 B 地的抵押權還在嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">債務承擔時，抵押物是誰提供的</div>
+    <div class="out"><span class="tag">債務人自己</span><div class="b ok">不受影響，原債務人變物上保證人</div></div>
+    <div class="out"><span class="tag">第三人</span><div class="b no">未經承認即消滅</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>從權利不因債務人變更而妨礙存在（<span class="s">§304 I</span>），但第三人提供的擔保，除該第三人承認外，因債務承擔而消滅（<span class="s">§304 II</span>）。債權讓與時抵押權依法隨同移轉，受讓人不必登記即取得（<span class="s">§295</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>清償後抵押權當然消滅（<span class="s">§307</span>），不必等塗銷；債權人拒絕塗銷，抵押人依 §767 I 中段請求除去妨害。抵押物或債權分割，抵押權不受影響（<span class="s">§868、§869</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-08-抵押權移轉消滅上之從屬性與不可分性§295§304§307§868§869.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>罹於時效的利息，不能再從抵押物拍賣價金受償</h2>
+  <div class="scene">
+    <p>甲 100 年 12 月向乙借款並設定抵押權，13 年來本金利息分文未付。乙在 113 年 12 月聲請實行抵押權。</p>
+    <p class="q">13 年的利息都能優先受償嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="利息五年時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="50" cy="55" r="5" class="dot"/>
+    <text x="50" y="35" text-anchor="middle">100 年</text>
+    <text x="50" y="80" text-anchor="middle" class="mu">借款</text>
+    <circle cx="210" cy="55" r="5" class="dot"/>
+    <text x="210" y="35" text-anchor="middle">108 年</text>
+    <text x="130" y="80" text-anchor="middle" class="mu">利息罹時效</text>
+    <path d="M210 55 H 340" class="acc"/>
+    <circle cx="340" cy="55" r="5" class="dot acc"/>
+    <text x="340" y="35" text-anchor="middle">113 年</text>
+    <text x="275" y="80" text-anchor="middle" class="mu">前五年可受償</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>本金罹於時效仍可就抵押物取償（<span class="s">§145 I</span>），但利息等定期給付不適用（<span class="s">§145 II</span>）。所以得優先受償的利息，限於聲請強制執行前五年內及執行中發生者（<span class="s">§861 II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>約定利息、違約金要登記才在擔保範圍；法定遲延利息、執行費用不必登記。設定契約書留白和寫「無」效果不同：寫「無」一律排除。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-09-抵押權擔保債權之範圍與利息五年限制§861§145.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>抵押後另蓋的獨立車庫，只能一起拍賣，不能優先受償</h2>
+  <div class="scene">
+    <p>甲以透天厝設定抵押權給乙，之後往後推出廚房，又在旁邊另蓋一間有獨立出入口的車庫。乙實行抵押權。</p>
+    <p class="q">廚房和車庫的價金，乙都能優先拿嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>建築物抵押後的附加部分（§862 III）</span>
+      <ul>
+        <li class="hit"><span>不具獨立性（沿牆增建的廚房）→ 效力所及，優先受償</span></li>
+        <li><span>獨立之物、設定後附加（車庫）→ 準用 §877 併付拍賣，不得優先受償</span></li>
+        <li class="off"><span>獨立之物、設定前已存在 → 不及</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>先判斷使用上、構造上有無獨立性，再判斷是不是從物（<span class="s">§68</span>）。從物與非坐落所需的從權利為效力所及（<span class="s">§862 I</span>）；坐落所需的租賃權只併付拍賣（<span class="s">§877-1</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>坐落所需的權利若是地上權，須與建物一併設定（<span class="s">§838 III</span>）。兒子在父親屋旁蓋的車庫不同屬一人，不是從物。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-10-抵押物之範圍從物從權利與附加物§862§877-1.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>房屋被燒，抵押權轉到賠償請求權上，殘餘鋼筋仍受抵押</h2>
+  <div class="scene">
+    <p>甲以 A 屋設定抵押權給乙。丙放火燒掉四分之三，甲對丙有 300 萬元損害賠償請求權，現場還剩一批堪用鋼筋。</p>
+    <p class="q">乙的抵押權還剩什麼？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>滅失部分（§881）</h4>抵押權消滅，轉換為對甲之賠償請求權的權利質權，次序不變</div>
+    <div class="trap-c"><h4>殘餘鋼筋（§862-1）</h4>仍為抵押權效力所及，得請求占有並依質權規定行使</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>代位的標的包括保險金（「其他利益」）。給付義務人因故意或重大過失仍向抵押人給付，例如保險公司已受通知，對抵押權人不生效力（<span class="s">§881 III</span>）。毀損也準用（<span class="s">§881 IV</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>殘餘物上的抵押權沒有轉換成質權，只是借用質權的行使方式；乙不請求占有，抵押權也不受影響。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-11-抵押物滅失之物上代位與殘餘物§881§862-1.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>扣押後承租人採收的作物，不是抵押權效力所及</h2>
+  <div class="scene">
+    <p>甲以 A 地設定抵押權給乙，後來把 A 地出租給丙種紅蘿蔔，月租 5 萬元。乙聲請實行抵押權，A 地辦了扣押登記，之後丙採收紅蘿蔔。</p>
+    <p class="q">紅蘿蔔可以一起拍賣嗎？乙能直接向丙收租嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">扣押後分離，誰有收取權</div>
+    <div class="out"><span class="tag">抵押人</span><div class="b ok">效力所及</div></div>
+    <div class="out"><span class="tag">承租人丙</span><div class="b no">不及</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>抵押權及於扣押後分離、得由抵押人收取的天然孳息（<span class="s">§863</span>），及扣押後抵押人得收取的法定孳息；後者須通知應付租金的人才能對抗（<span class="s">§864</span>）。扣押前已分離的孳息不及。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>實務認為 §864 只給優先受償權，不給收取權，乙不能直接向丙收租（100 台上 877）；謝在全認為可以直接請求給付。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法39-筆記-12-抵押物扣押後之天然孳息與法定孳息§863§864.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

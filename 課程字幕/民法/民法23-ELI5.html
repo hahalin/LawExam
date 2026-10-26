@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法23 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法23">
+<main>
+
+<header class="lesson-head">
+  <h1>民法23</h1>
+  <span class="sub">不當得利時效收尾・債之相對性與債權物權化・契約成立（§153～§163）</span>
+</header>
+<p class="lesson-intro">先收掉不當得利最後一個案例，接著進入契約法：<b>債之相對性</b>是原則，債權物權化、類推 §425、結合契約都是在挑戰它。後半走一遍契約成立：<b>要約、承諾、遲到通知、意思實現</b>。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>假繼承人賣掉登記的土地，價金時效從何時起算</h2>
+  <div class="scene">
+    <p>乙不是甲的親生子女卻被認領。82 年分割遺產，乙登記取得 A 地；94 年乙把 A 地以 600 萬元賣給善意第三人；100 年丙確認乙非甲之子女後，請求乙返還 600 萬元。</p>
+    <p class="q">15 年時效從 82 年還是 94 年起算？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="兩種起算點">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="50" cy="55" r="5" class="dot"/>
+    <text x="50" y="35" text-anchor="middle">82 年登記</text>
+    <text x="50" y="80" text-anchor="middle" class="mu">108 台上 26</text>
+    <path d="M200 55 H 340" class="acc"/>
+    <circle cx="200" cy="55" r="5" class="dot acc"/>
+    <text x="200" y="35" text-anchor="middle">94 年出賣</text>
+    <text x="200" y="80" text-anchor="middle" class="mu">106 台上 1162、學說</text>
+    <circle cx="340" cy="55" r="5" class="dot"/>
+    <text x="340" y="35" text-anchor="middle">100 年起訴</text>
+    <text x="340" y="80" text-anchor="middle" class="mu">18 年 / 6 年</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>108 台上 26 認為價金是登記利益變形而來，具同一性，自 82 年起算，已罹於時效。106 台上 1162 與多數學說認為登記只是空殼外觀，94 年丙才喪失所有權，兩個利益不同，時效個別起算（<span class="s">§128</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>還在乙名下的 B 地，依 §767 I 中段請求塗銷登記，不罹於時效（釋字 107、164），不要跟 A 地混算。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-01-無權處分所得價金之不當得利時效起算§125§128.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>車禍賠償遲遲不付，侵權之債也會給付遲延</h2>
+  <div class="scene">
+    <p>乙開車撞傷甲，法院判乙應賠 100 萬元。乙拖了半年都不付。</p>
+    <p class="q">債務不履行的規定，只能用在契約嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">看章節標題</div>
+    <div class="out"><span class="tag">以「債」為名</span><div class="b ok">所有的債都能用（侵權、不當得利、無因管理）</div></div>
+    <div class="out"><span class="tag">「契約」款</span><div class="b">§245-1～§270 才只給契約用</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債之標的、債之效力、債之保全、多數之債、債之移轉、債之消滅都以「債」為名，適用於所有的債。乙遲延給付，甲可請求遲延利息（<span class="s">§233</span>）；與有過失（<span class="s">§217</span>）也能用在債務不履行。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>考題習慣用契約設計債務不履行，但不要因此以為它只限契約。讀法條時往上看章節標題，就知道射程多大。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-02-債編總論之體系與章節標題之適用範圍.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>一物二賣，先買的人只能向出賣人請求損害賠償</h2>
+  <div class="scene">
+    <p>乙 3 月把 A 地賣給甲，5 月又把 A 地賣給丙，並先移轉登記給丙。</p>
+    <p class="q">甲說「我先買的」，能叫丙把 A 地過戶給他嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>甲的請求</span>
+      <ul>
+        <li class="off"><span>對丙 §348 → 甲丙沒有契約 ✗</span></li>
+        <li class="off"><span>對丙 §767 → 甲還不是所有人 ✗</span></li>
+        <li class="hit"><span>對乙 §226 → 給付不能損害賠償 ✓</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>兩個買賣契約都有效，甲、丙對乙各有內容相同的 §348 債權，不因成立先後而有優先，這是債權平等原則。債只能向債務人請求（債之相對性），乙履行給誰，另一人就只剩債務不履行。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>「先成立的債權優先」是錯的；物權衝突才分先後。釋字 484 理由書也說一物二賣相互間無排他效力。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-03-一物二賣之債權平等原則與債之相對性.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>土地借給弟弟蓋幼兒園，過戶給兒子後還能對抗嗎</h2>
+  <div class="scene">
+    <p>甲把 A 地無償借給弟弟乙蓋幼兒園。甲依 §767 告乙敗訴後，把 A 地送給兒子丙並移轉登記，由丙再告乙拆屋還地。</p>
+    <p class="q">乙對丙是有權占有還是無權占有？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>使用借貸能否對抗丙</span>
+      <ul>
+        <li class="hit"><span>多數說：不能 → 無權占有（例外從嚴、借貸無償）</span></li>
+        <li><span>詹森林：類推 §425 I → 有權占有</span></li>
+        <li><span>吳從周：債權物權化（蓋幼兒園＝公示外觀）→ 有權占有</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債之相對性是原則，買賣不破租賃（<span class="s">§425 I</span>）是例外，例外應從嚴解釋。租賃有償、使用借貸無償，借用人沒有特別保護的必要，所以多數說認為乙對丙是無權占有。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§425 要「承租人占有中」，不限買賣，所有權讓與即可。有學者認為它是把受讓人拉進契約，不是債權物權化。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-04-使用借貸能否對抗土地受讓人類推§425I與債權物權化.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>明知借貸關係還用過戶規避，§767 的行使構成權利濫用</h2>
+  <div class="scene">
+    <p>接第 4 卡：丙明知甲乙之間有使用借貸，也知道甲告乙敗訴，才配合受讓 A 地，再對乙主張 §767。</p>
+    <p class="q">丙一定能讓乙拆掉幼兒園嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b ok">§767 要件具備<small>乙無權占有</small></div><div class="a lbl">再檢查行使</div>
+    <div class="b q">§148 以損害他人為主要目的？</div>
+    <div class="br"></div>
+    <div class="b">明知而以受讓規避</div><div class="a"></div>
+    <div class="b no">權利行使受限制</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>先承認丙有權利，再看行使是否違反誠信原則（<span class="s">§148</span>）。98 台上 1319 不只做利益衡量，更看主觀：丙明知甲乙關係，利用債之相對性的弱點規避契約，可認以損害他人為主要目的。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不能寫「丙違反誠信原則，所以乙是有權占有」。乙仍是無權占有，受限制的是丙的權利行使。「主要目的」不必是唯一目的。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-05-受讓人行使所有物返還請求權與權利濫用§148.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>買了 117 個塔位卻沒交付沒登記，對拍定人主張不了</h2>
+  <div class="scene">
+    <p>乙向納骨塔所有人甲買 117 個塔位，尚未交付或登記。建物輾轉被戊拍定取得，乙訴請確認對塔位有永久使用權。</p>
+    <p class="q">乙的買賣契約能對抗戊嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>各審見解</span>
+      <ul>
+        <li class="off"><span>一審：類推 §425 I → 乙勝</span></li>
+        <li class="off"><span>二審：塔位未占有，不合 §425 → 乙敗</span></li>
+        <li class="hit"><span>三審：債權物權化須公示外觀，本件沒有 → 乙敗</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>實務（110 台上 1945）認為買賣只有債之效力，債權物權化至少要有使第三人知悉的公示外觀。陳榮傳批評：這等於債權加外觀就能對抗第三人，破壞債之相對性又沒有法律依據；應改依殯葬管理條例的登記簿或占有外觀處理。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>陳榮傳也反對類推 §425 I：塔位是永久買斷，租賃是一時性，性質不同。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-06-塔位買賣與債權物權化之批判.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>健身房倒閉，合作融資公司的貸款能不能停繳</h2>
+  <div class="scene">
+    <p>甲買 A 健身房終身會員 60 萬元，由 A 介紹的 B 融資公司貸款，B 直接撥款給 A，甲每月還 B 1 萬元。兩年後 A 倒閉。</p>
+    <p class="q">甲能以「沒課上」為由，拒絕繼續還 B 嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">A 與 B 有合作關係？</div>
+    <div class="out"><span class="tag">有</span><div class="b ok">對 A 的抗辯延伸到 B（楊淑文）</div></div>
+    <div class="out"><span class="tag">沒有</span><div class="b no">自己找的銀行 → 依債之相對性仍須還款</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>早年實務依債之相對性，要甲繼續繳。楊淑文提出結合契約之抗辯延伸：A、B 異業結盟互蒙其利，應相互承擔風險，不應把 A 倒閉的風險轉給消費者，甲對 A 的同時履行抗辯（<span class="s">§264</span>）可以對 B 主張。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>謝哲勝結論相同，但理論不同：他認為三方本質上是一個契約，抗辯直接對抗，不用「延伸」。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-07-預付型消費與結合契約之抗辯延伸.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>清償地一開始就吵不攏，契約根本不成立</h2>
+  <div class="scene">
+    <p>甲乙談好 A 車 50 萬元。情況一：雙方沒提清償地，事後甲說臺北交車、乙說臺南。情況二：締約時就為了臺北或臺南吵不攏。</p>
+    <p class="q">兩種情況契約都成立、交給法院決定嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>一開始沒表示</h4>推定契約成立；事後吵 → 法院依事件性質定之</div>
+    <div class="trap-c"><h4>一開始就不一致</h4>契約不成立</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>必要之點一致、非必要之點未經表示，推定契約成立（<span class="s">§153 II</span>）。後段「關於<b>該</b>非必要之點」意思不一致才由法院定之，「該」指的就是前面那個未經表示的點。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>常見錯誤：「非必要之點不一致，一律由法院定之」。要先分清楚是一開始沒表示，還是一開始就不一致。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-08-契約成立之方式與非必要之點§153.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>架上標價的牛奶是要約，特價傳單只是要約之引誘</h2>
+  <div class="scene">
+    <p>甲拿著傳單去便當店，說要買特價 50 元的雞腿便當，老闆說賣完了。乙在超商拿起標價 30 元的牛奶結帳，店員說不賣。</p>
+    <p class="q">哪一個契約已經成立？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>標價陳列：視為要約</h4>乙結帳＝承諾 → 契約成立，店員不能拒絕</div>
+    <div class="trap-c"><h4>傳單：要約之引誘</h4>甲說要買＝要約 → 老闆不承諾，契約不成立</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>要約人受要約拘束：發出後不能任意改內容（形式拘束力），契約成立後受契約拘束（實質拘束力）。但預先聲明不受拘束，或依事件性質無受拘束之意思者，例外不受拘束（<span class="s">§154</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>預先聲明不受拘束，承諾後還能反悔嗎？鄭玉波說只排除形式拘束力；孫森焱、邱聰智、林誠二等多數說認為兩者都排除，仍可反悔。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-09-要約與要約之引誘及要約之拘束力§154.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>撤回要約的快捷信遲到，相對人沒發遲到通知就視為準時</h2>
+  <div class="scene">
+    <p>甲 11/25 上午寄要約給乙，預計 11/27 到；下午反悔，改寄快捷撤回，通常 11/26 會到，卻因郵局疏失 11/28 才到。乙看郵戳知道是快捷，但沒通知甲，11/30 表示承諾。</p>
+    <p class="q">契約成立了嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">通常會準時到？</div><div class="a lbl">是</div>
+    <div class="b">乙可得而知？<small>郵戳為憑</small></div><div class="a lbl">是</div>
+    <div class="b q">乙有發遲到通知？</div>
+    <div class="br"></div>
+    <div class="b no">有 → 撤回失敗，要約有效</div>
+    <div class="b ok">沒有 → 視為未遲到，撤回成功</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>撤回通知同時或先時到達，要約不生效力（<span class="s">§95 I</span>）。遲到時依 <span class="s">§162</span>：通常會準時、相對人可得而知，相對人就應即發遲到之通知；怠於通知，撤回通知視為未遲到。本題乙沒通知，撤回成功，契約不成立。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>本來就會遲到，或看不出來寄出方式，就不能期待相對人通知，遲到就是遲到。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-10-要約之失效與撤回要約之遲到通知§155至§158§162.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>芭樂一斤 100 你回 80，就是拒絕原要約另提新要約</h2>
+  <div class="scene">
+    <p>夜市攤位標「芭樂一斤 100 元」。甲說：「一斤 80 賣不賣？」老闆回：「90 啦。」</p>
+    <p class="q">每一句話在法律上是什麼？最後由誰決定契約成不成立？</p>
+  </div>
+  <div class="flow">
+    <div class="b">標價 100<small>視為要約</small></div><div class="a lbl">殺價</div>
+    <div class="b q">甲：80<small>新要約</small></div><div class="a lbl">再變更</div>
+    <div class="b q">老闆：90<small>新要約</small></div><div class="a"></div>
+    <div class="b ok">甲說好 → 成立</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>將要約擴張、限制或變更而承諾，視為拒絕原要約而為新要約（<span class="s">§160 II</span>）；遲到的承諾也視為新要約。每變一次，決定權就換到對方手上。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>承諾遲到（<span class="s">§159</span>）、撤回承諾（<span class="s">§163</span> 準用 §162）和撤回要約（§162）三條結構一樣：通常不會遲到、對方可得而知、沒發遲到通知，就視為未遲到。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-11-承諾之遲到變更與撤回§159§160§163.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>承諾無須通知時，賣方一寄出畫契約就成立</h2>
+  <div class="scene">
+    <p>甲寫信向乙要買 A 畫，乙收信後直接把畫寄給甲，畫在運送途中遺失。</p>
+    <p class="q">契約成立了嗎？甲該主張債務不履行還是不當得利？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>承諾無須通知（§161）</h4>寄出＝可認為承諾之事實 → 寄出時成立；遺失是債務不履行</div>
+    <div class="trap-c"><h4>承諾須通知</h4>寄畫＝默示承諾，到達甲時才成立；沒到 → 契約不成立，已付款依不當得利請求</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>意思實現是「要約＋事實」：依習慣、事件性質或要約人預先聲明承諾無須通知，有可認為承諾之事實時契約成立（<span class="s">§161</span>）。要找的是那個事件，不是意思表示。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>販賣機吃錢：視為要約說走債務不履行；要約之引誘說認為飲料沒掉出來、意思未實現，走不當得利。交錯要約無明文，典型例是股票交易。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法23-筆記-12-交錯要約與意思實現及強制締約§161.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法41 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法41">
+<main>
+
+<header class="lesson-head">
+  <h1>民法41</h1>
+  <span class="sub">多數擔保・抵押權實行與消滅・最高限額・讓與擔保・其他物權（§875-2～§899-2）</span>
+</header>
+<p class="lesson-intro">前半收尾<b>多數擔保</b>：共同抵押的內部分擔與拋棄、人保物保平等說、同一人兼為保證人與抵押人。接著講抵押權的其他實行方法（流抵、§878）、§880 的五年期間，再進入<b>最高限額抵押權</b>與<b>讓與擔保</b>。最後快速掃過地上權、農育權、不動產役權與動產質權的選擇題考點，財產法到此結束。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>共同抵押的分擔比例，要用抵押權人實際拿得到的金額算</h2>
+  <div class="scene">
+    <p>甲向乙借 400 萬，A 地（市價 600 萬）設第一順位給乙。甲又向丙借 300 萬，A 地設第二順位、B 地（市價 200 萬）設第一順位給丙。丙實行抵押權，A、B 同時拍賣。</p>
+    <p class="q">丙的 300 萬，A、B 各負擔多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">A 地 600 − 乙 400</div><div class="a"></div>
+    <div class="b q">A 對丙值 200<small>B 對丙值 200</small></div><div class="a"></div>
+    <div class="b ok">1：1，各負擔 150</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>未限定金額時依各抵押物價值比例分擔（<span class="s">§875-2 I ①</span>）；同時拍賣準用（<span class="s">§875-3</span>）。限定金額高於抵押物價值，以價值為準（<span class="s">§875-2 II</span>）。抵押權人在某抵押物是後次序，就用扣掉前次序後的剩餘價值計算。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>直接用市價 600：200＝3：1 是錯的。市價高於債權額時，學說類推 §879 II 後段以債權額為準，但條文沒有明定，有爭議。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-01-共同抵押內部分擔額之計算§875-2§875-3.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>只拍賣一筆共同抵押物，後次序抵押權人承受另一筆的抵押權</h2>
+  <div class="scene">
+    <p>甲向乙借 600 萬，A 地（900 萬）、B 地（300 萬）都設第一順位給乙，分擔額 A 450、B 150。A 地另有丙（270 萬）第二順位、丁（210 萬）第三順位。乙只拍賣 A 地，拿足 600，丁只剩 30。</p>
+    <p class="q">丁少拿的 150 萬怎麼補回來？</p>
+  </div>
+  <div class="flow">
+    <div class="b">乙在 A 多拿 150</div><div class="a lbl">§875-4 ②</div>
+    <div class="b q">丁承受乙在 B 地的抵押權</div><div class="a"></div>
+    <div class="b ok">拍賣 B：丁 150、戊 150</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>抵押物屬同一人所有，抵押權人就先拍賣的抵押物受償超過分擔額時，該物的後次序抵押權人在超過範圍內，承受抵押權人對其餘未拍賣抵押物的權利（<span class="s">§875-4 ②</span>）。抵押物屬第三人所有則適用 <span class="s">§875-4 ①</span>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>如果乙乾脆拋棄 B 地抵押權，就無從承受。三說中，學者文章採限制受償說：可以拋棄，但乙在 A 地只能就分擔額 450 優先受償。不得拋棄說（§764 II）過度限制拋棄自由。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-02-共同抵押之抵押權拋棄與後次序抵押權人之保護§875-4.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>抵押物價值超過債權額時，以債權額和保證額度算比例</h2>
+  <div class="scene">
+    <p>甲向乙借 1,000 萬。丙提供 A 地（市價 1,200 萬）設定抵押權，丁當保證人，額度限定 600 萬。乙拍賣 A 地拿足 1,000 萬。</p>
+    <p class="q">丙可以向丁求償多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">A 地以 1,000 計</div><div class="a"></div>
+    <div class="b q">1,000：600＝5：3</div><div class="a"></div>
+    <div class="b">丙 625、丁 375</div><div class="a"></div>
+    <div class="b ok">丙向丁求償 375</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>現行法採人保物保平等說，乙可自由選擇先找誰。內部依保證責任與抵押物價值比例分擔；擔保債權額少於抵押物價值，以債權額為準（<span class="s">§879 II</span>）。抵押人向保證人求償依 <span class="s">§879 III</span>；保證人向抵押人求償，法無明文，類推 <span class="s">§281 I</span>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>1,200：600＝2：1 是錯的。舊法只有 §751，所以是物保優先；增訂 §879-1 後兩邊對稱，才變成平等。保證未約定額度時，以債權額為準。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-03-人保物保平等說與內部分擔求償§879§879-1.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>同一人兼為保證人與抵押人，實務算一份、學說算兩份</h2>
+  <div class="scene">
+    <p>甲向乙借 1,500 萬。丙、丁、戊各提供 A、B、C 地設定抵押權，價值都超過 1,500 萬；丙另外擔任全額保證人。乙拍賣 A 地拿足 1,500 萬。</p>
+    <p class="q">丙可以向丁、戊各求償多少？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>丙兼保證人與抵押人</span>
+      <ul>
+        <li class="off"><span>群團主義：保證組對抵押物組 1：1 → 各求償 250</span></li>
+        <li class="hit"><span>單一責任說（實務）：丙＋A 算一份，共 3 份 → 各求償 500</span></li>
+        <li class="hit"><span>雙重責任說（學說）：A、B、C、丙保證 4 份 → 各求償 375</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>通說採個別主義：每個保證人、每個抵押物各自依 <span class="s">§879 II</span> 計算。實務認為保證人以全部財產負責，A 地已被吸收（99 台上 1204）。學說認為提供兩種擔保就負兩份責任，也保護丁、戊設定時的信賴。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>群團主義是高院法官的少數說，考試可略。杜怡靜解釋論採雙重責任，立法論贊成改採日本法的單一責任。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-04-同一人兼為保證人與抵押人之分擔額群團主義與單一雙重責任說.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>流抵約款有效，但要登記、多退少補，移轉前還能清償</h2>
+  <div class="scene">
+    <p>甲向乙借 500 萬，A 地（市價 800 萬）設定抵押權，同時約定到期不還 A 地歸乙，並辦理登記。到期甲沒還。</p>
+    <p class="q">乙能直接成為 A 地所有人嗎？要不要找錢？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>§873-1 流抵（設定時約定）</h4>登記才能對抗第三人；乙只有移轉請求權；要找 300；移轉前甲仍可清償</div>
+    <div class="trap-c"><h4>§878（到期後約定）</h4>雙方地位對等，訂約取得或用拍賣以外方法處分；不得害及其他抵押權人</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>流抵約款非經登記不得對抗第三人（<span class="s">§873-1 I</span>）；抵押物價值超過擔保債權應返還，不足仍可請求清償（<span class="s">§873-1 II</span>）；所有權移轉前抵押人得清償以消滅抵押權（<span class="s">§873-1 III</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>流抵約款只有債權效力，到期不會自動取得所有權。§878 沒有找補規定，老師的說明是：已經欠錢的人與債權人地位對等，不需特別保護。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-05-流抵契約與抵押物之其他處分方法§873-1§878.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>借款請求權罹於時效後，抵押權還有五年可以實行</h2>
+  <div class="scene">
+    <p>甲向乙借錢，A 地設定抵押權給乙。乙 15 年都沒請求，借款請求權罹於時效。</p>
+    <p class="q">乙還能拍賣 A 地嗎？可以拖多久？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="時效與除斥期間時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="50" cy="55" r="5" class="dot"/>
+    <text x="50" y="35" text-anchor="middle">清償期</text>
+    <text x="50" y="80" text-anchor="middle" class="mu">開始起算</text>
+    <circle cx="200" cy="55" r="5" class="dot acc"/>
+    <text x="200" y="35" text-anchor="middle">+15 年</text>
+    <text x="200" y="80" text-anchor="middle" class="mu">時效完成</text>
+    <path d="M200 55 H 340" class="acc"/>
+    <circle cx="340" cy="55" r="5" class="dot"/>
+    <text x="340" y="35" text-anchor="middle">+5 年</text>
+    <text x="340" y="80" text-anchor="middle" class="mu">抵押權消滅</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>時效完成只發生拒絕給付的抗辯權，債之關係仍在，債權人仍得就抵押物取償（<span class="s">§145 I</span>）。時效完成後五年間不實行，抵押權消滅（<span class="s">§880</span>），性質是除斥期間，抵押人可請求塗銷。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>動產質權沒有這個五年限制：質物在質權人占有中，隨時可以實行。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-06-抵押權之除斥期間§145§880.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>最高限額抵押權確定前，讓與的債權不受擔保</h2>
+  <div class="scene">
+    <p>甲乙常有借款往來，設定最高限額 1,500 萬的最高限額抵押權。確定前，乙把其中一筆 200 萬的債權讓給丙。</p>
+    <p class="q">丙能主張這 200 萬受 A 地抵押權擔保嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">債權讓與時，抵押權跟不跟著走</div>
+    <div class="out"><span class="tag">普通抵押</span><div class="b ok">隨同移轉（§295）</div></div>
+    <div class="out"><span class="tag">最高限額・確定前</span><div class="b no">不隨同移轉（§881-6）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>最高限額抵押權擔保一定範圍內的不特定債權（<span class="s">§881-1 I</span>），沒有發生、移轉、消滅上的從屬性；確定前讓與或第三人清償，抵押權不隨同移轉（<span class="s">§881-6</span>）。實行前必須先確定（<span class="s">§881-12</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>擔保範圍採有限制說：只擔保一定法律關係所生之債權（<span class="s">§881-1 II</span>）。修法前的契約，最高法院以法理排除偶然、不可預見的債權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-07-最高限額抵押權之構造無從屬性與擔保範圍§881-1§881-6.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>最高限額限的是本金加利息加違約金，實行費用另計</h2>
+  <div class="scene">
+    <p>最高限額 1,500 萬。確定時本金 1,300 萬、利息 200 萬、違約金 100 萬、實行費用 50 萬；A 地已漲到 3,000 萬。</p>
+    <p class="q">乙能優先受償多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">1,300＋200＋100＝1,600</div><div class="a lbl">截到限額</div>
+    <div class="b q">1,500</div><div class="a lbl">加費用</div>
+    <div class="b ok">1,550</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>就已確定的原債權，只能在最高限額內行使（<span class="s">§881-2 I</span>）；利息、遲延利息、違約金與原債權合計不逾限額（<span class="s">§881-2 II</span>）→ 債權最高限額說。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>本金最高限額說會算出 1,650，是修法前的見解。§881-2 II 沒有列實行抵押權費用，與 §861 不同，老師認為費用不受限額限制。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-08-最高限額之計算本金最高限額說與債權最高限額說§881-2.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>讓與擔保的擔保權人取得所有權，但負不得處分的義務</h2>
+  <div class="scene">
+    <p>甲向乙借 1,000 萬，為了日後還能向銀行設第一順位抵押，不設定抵押權，而是把 A 地所有權移轉登記給乙作擔保，甲繼續住在 A 地。後來丙無權占有 A 地。</p>
+    <p class="q">誰可以請求丙返還 A 地？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>所有權移轉構造說（通說）</h4>乙是所有人，由乙依 §767 請求；乙不主張，甲依 §242 代位</div>
+    <div class="trap-c"><h4>擔保物權構造說（少數）</h4>乙只有擔保權，甲仍是所有人，甲直接依 §767 請求</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>讓與擔保由原因關係、讓與擔保契約（債）、移轉所有權（物）三個法律行為構成。清償前甲占有使用、乙不得處分；乙違約處分是債務不履行問題。陳榮傳稱乙取得的是定限所有權，本質仍是所有權。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>乙的債權人查封 A 地時，通說由乙提異議，不是甲。讓與擔保是非典型擔保，民法沒有明文。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-09-讓與擔保之法律構造與所有權移轉構造說.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>讓與擔保到期請求交付，要先找補差額</h2>
+  <div class="scene">
+    <p>甲以 A 地（市價 1,300 萬）讓與擔保給乙，擔保 1,000 萬借款。到期甲沒還，乙請求甲交付 A 地，甲要求乙先找 300 萬。</p>
+    <p class="q">甲可以主張同時履行抗辯嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>最高法院 108 台上 2447</h4>交付與返還差額互負且都已到期 → 有同時履行抗辯</div>
+    <div class="trap-c"><h4>陳榮傳</h4>先清算、讓與擔保關係消滅，乙才回復完全所有權可請求交付 → 有先後，無同時履行抗辯</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>約定到期不清償由擔保權人取得權利，與流抵約款類似，類推 <span class="s">§873-1 II</span>，乙負清算義務，應返還 300 萬。同時履行抗辯依 <span class="s">§264</span>，前提是雙方給付沒有先後。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>該判決稱讓與擔保「具有擔保物權之性質」，與通說所有權移轉構造說不符，也被學者批評。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-10-讓與擔保之清算義務與同時履行抗辯108台上2447.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>有償定期地上權要拋棄，須付三年分地租</h2>
+  <div class="scene">
+    <p>乙在丙的 A 地有地上權，期限 50 年，每年地租 50 萬。第 10 年乙不想用了。</p>
+    <p class="q">乙要付多少才能拋棄？如果是地層下陷蓋不了房子呢？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>地上權拋棄</span>
+      <ul>
+        <li><span>無償 → 隨時拋棄（§834）</span></li>
+        <li class="hit"><span>有償定期 → 3 年分 150 萬（§835 I）</span></li>
+        <li><span>有償未定期 → 1 年前通知或付 1 年分（§835 II）</span></li>
+        <li><span>不可歸責地上權人 → 打五折；可歸責地主 → 免付（§835 III）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>積欠地租達二年總額，經催告不付得終止（<span class="s">§836 I</span>）；地租約定經登記，受讓人與前手連帶負責欠租（<span class="s">§836 II</span>）。未定期限逾 20 年，法院得定期間或終止（<span class="s">§833-1</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>縱因不可抗力妨礙使用，地上權人不得請求減免地租（<span class="s">§837</span>），與租賃相反。建物滅失：意定地上權不消滅（§841），法定地上權消滅（§838-1 II）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-11-地上權之區分地上權與發生消滅§833-1§834§835§836.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>當鋪不能請求還錢，期滿五日不取贖就取得所有權</h2>
+  <div class="scene">
+    <p>甲把一幅畫拿到當鋪借 10 萬元，設定質權。取贖期間屆滿後過了 5 天，甲都沒來取贖。</p>
+    <p class="q">當鋪可以起訴請甲還 10 萬嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">到期未清償</div>
+    <div class="out"><span class="tag">一般質權</span><div class="b ok">可請求清償，再拍賣、流質或其他方法</div></div>
+    <div class="out"><span class="tag">營業質</span><div class="b no">僅得就質物；5 日後取得所有權、債權消滅</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>經許可以受質為營業者，僅得就質物行使權利（<span class="s">§899-2 I</span>）。一般動產質權：返還質物即消滅，保留無效（<span class="s">§897</span>）；喪失占有二年內未請求返還即消滅（<span class="s">§898</span>）；善意取得依 <span class="s">§886＋§948</span>。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不動產役權不得為權利抵押的標的（<span class="s">§882</span>）。保管質物要善管注意，收取孳息只要與自己財產同一注意。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法41-筆記-12-農育權不動產役權與動產質權營業質§850-1§882§899-2.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

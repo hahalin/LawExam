@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法40 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法40">
+<main>
+
+<header class="lesson-head">
+  <h1>民法40</h1>
+  <span class="sub">抵押權：次序調整・保全・實行・併付拍賣・多數擔保（§865～§877-1、§748、§875）</span>
+</header>
+<p class="lesson-intro">先講抵押人能做的事與抵押權<b>次序的讓與、拋棄</b>，再講保全與<b>拍賣分配</b>。後半是本講重頭戲：法定地上權與<b>併付拍賣</b>的十個案例，判斷關鍵永遠是抵押權設定的時點。最後進入<b>多數擔保</b>：保證連帶、連帶保證，以及共同抵押的外部受償計算。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>抵押後所有人仍可賣地出租，抵押權人不能把抵押權單獨賣掉</h2>
+  <div class="scene">
+    <p>甲以 A 地為乙設定抵押權，擔保 500 萬元。之後甲把 A 地賣給丙。乙則想把 500 萬元債權讓給丁，自己留著抵押權。</p>
+    <p class="q">甲的出賣有效嗎？乙的做法可以嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">抵押設定後</div>
+    <div class="out"><span class="tag">抵押人甲</span><div class="b ok">可再抵押、出租、讓與；抵押權追及</div></div>
+    <div class="out"><span class="tag">抵押權人乙</span><div class="b no">不得與債權分離讓與</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>甲讓與所有權，抵押權不因此受影響，乙仍可對丙的 A 地實行（<span class="s">§867</span>）。抵押權不得由債權分離而為讓與，或為其他債權之擔保（<span class="s">§870</span>），只能隨債權移轉（§295）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>後設定的抵押權次序依登記先後（§865）。出租、設定地上權可以，但影響抵押權時可被除去（§866）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-01-抵押人之權利與抵押權不得單獨讓與§865至§870.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>次序讓與是在合計額內讓對方先拿，次序本身不變</h2>
+  <div class="scene">
+    <p>甲的 A 屋拍得 280 萬元。乙、丙、丁依序為第 1、2、3 順位，債權各 180 萬、100 萬、60 萬。正常分配是乙 180、丙 100、丁 0。</p>
+    <p class="q">乙把次序讓與丁、或為丁相對拋棄、或絕對拋棄，各分多少？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>乙＋丁原本合計可拿 180</span>
+      <ul>
+        <li><span>讓與：丁先拿 60，乙 120</span></li>
+        <li><span>相對拋棄：按 3：1，乙 135、丁 45</span></li>
+        <li class="hit"><span>絕對拋棄：乙排最後，丙 100、丁 60、乙 120</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>次序調整不得影響其他抵押權人（<span class="s">§870-1 I</span>），所以丙仍拿 100 萬。三種方法中只有絕對拋棄會讓後次序升進。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>本題讓與與絕對拋棄金額剛好相同，但次序不同；換了數字就不一定相同。立法理由有很多計算例可練。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-02-抵押權次序之讓與與拋棄§870-1.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>債權人讓出次序，保證人在失去的優先受償範圍內免責</h2>
+  <div class="scene">
+    <p>甲向乙借 180 萬元，A 屋第一順位抵押給乙，另有戊為 180 萬元全額保證。乙把次序讓與丁後，乙從 A 屋只能拿 120 萬元。</p>
+    <p class="q">戊的保證責任要不要跟著調整？</p>
+  </div>
+  <div class="flow">
+    <div class="b">原本物：人＝180：180<small>各扛 90</small></div><div class="a lbl">乙讓出次序</div>
+    <div class="b q">物 120：人 180<small>戊扛 108</small></div><div class="a lbl">§870-2</div>
+    <div class="b ok">戊減免 60 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>調整次序致債權人喪失的優先受償利益限度內，保證人免其責任；保證人同意調整者除外（<span class="s">§870-2</span>）。抵押物價值高於債權額時以債權額計（§879 II）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>保證契約是債權人乙與保證人戊訂立的，不是甲與戊。債權人自己放掉擔保，不能由保證人買單。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-03-次序調整後保證人之免責§870-2.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>抵押人把地租給垃圾場，抵押權人可請求停止或請求提出擔保</h2>
+  <div class="scene">
+    <p>甲以市價 1 億元的 A 地為乙設定抵押權，之後把 A 地以月租 30 萬元租給垃圾掩埋場，地價可能跌到 5,000 萬元。</p>
+    <p class="q">乙可以怎麼做？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">價值是否已減少</div>
+    <div class="out"><span class="tag">尚未</span><div class="b ok">§871 請求停止；急迫時自為保全處分</div></div>
+    <div class="out"><span class="tag">已減少</span><div class="b ok">§872 回復原狀或提出擔保 → 否則請求清償</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>保全處分費用由抵押人負擔，受償次序優先於各抵押權（<span class="s">§871 II</span>）。可歸責於抵押人時，先找抵押人、再找債務人，不提出擔保即可請求清償。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不可歸責於抵押人（例如第三人偷埋垃圾），只能在抵押人因此所受利益限度內請求提出擔保（<span class="s">§872 IV</span>）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-04-抵押權之保全§871§872.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>後順位先到期可以先聲請拍賣，但仍依次序分配</h2>
+  <div class="scene">
+    <p>甲的房屋拍得 300 萬元。乙 180 萬（12/31 到期）、丙 100 萬（6/30 到期）、丁 60 萬（9/30 到期）依序為第 1～3 順位。丙在 6/30 聲請拍賣。</p>
+    <p class="q">誰拿多少？乙還沒到期能拿嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">拍得 300</div><div class="a"></div>
+    <div class="b ok">乙 180<small>視為到期</small></div><div class="a"></div>
+    <div class="b ok">丙 100</div><div class="a"></div>
+    <div class="b q">丁 20<small>40 萬成無擔保</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>依次序分配（<span class="s">§874</span>）。拍賣後全部抵押權消滅；未到期債權在得受清償範圍內視為到期（<span class="s">§873-2 I、II</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>丁未受償的 40 萬元不會因此視為到期，仍是 9/30 才到期。拍定人願清償且抵押權人同意，抵押權可不消滅（§873-2 III）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-05-抵押權實行之體系與拍賣分配§873§873-2§874.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>設定時地屋同一人，拍賣後視為有地上權，但房子倒了不能重建</h2>
+  <div class="scene">
+    <p>甲有 A 地及其上 B 屋，只以 A 地為乙設定抵押權。乙實行後丙拍定 A 地。十年後地震 B 屋倒塌，甲想重建。</p>
+    <p class="q">甲的房屋能留著嗎？倒了可以重建嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>法定地上權（§876）</h4>視為已有地上權；建物滅失 → 地上權消滅，不能重建</div>
+    <div class="trap-c"><h4>意定地上權（§841）</h4>不因建物滅失而消滅，可以再蓋</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>設定抵押權時土地及建物同屬一人，拍賣後分屬不同人，視為已有地上權設定，地租、期間、範圍協議不成由法院定（<span class="s">§876</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>判斷時點是「設定抵押權時」，不是拍賣時。法定地上權只為保護既存建物，不是讓甲重新蓋房子。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-06-土地與建物同屬一人之法定地上權§876.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>抵押後才蓋的房子可以併付拍賣，但房屋價金不歸抵押權人</h2>
+  <div class="scene">
+    <p>甲以空地 A 為乙設定抵押權，之後把 A 地租給丙，丙蓋了 B 屋。乙實行抵押權，A、B 合併拍得 1,200 萬元，其中 B 屋 400 萬元。</p>
+    <p class="q">乙怎麼處理丙的租約和房子？</p>
+  </div>
+  <div class="flow">
+    <div class="b">§866 II 除去租賃<small>法院職權</small></div><div class="a"></div>
+    <div class="b">§877 II 併付拍賣<small>須聲請</small></div><div class="a"></div>
+    <div class="b ok">地 800 → 乙；屋 400 → 丙</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>所有人抵押後自己蓋屋，抵押權人於必要時得聲請併付拍賣，對建物價金無優先受償權（<span class="s">§877 I</span>）。以房屋抵押時，房屋存在所必要且得讓與的權利應併付拍賣（<span class="s">§877-1</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§866 是「法院得」職權除去；§877 是「得聲請」。§877 I 可併可不併，§877-1 是「應」併。租約不影響清償時不能除去。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-07-抵押土地上建物之併付拍賣基本型§866§877§877-1.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>租約早於抵押，拍賣後隨同移轉，拍定人要接受</h2>
+  <div class="scene">
+    <p>甲先把 A 地租給丙，之後才以 A 地為乙設定抵押權，丙在 A 地蓋了房子。乙實行抵押權，丁拍定 A 地。</p>
+    <p class="q">丁能請求丙拆屋還地嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="租約早於抵押時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="50" cy="55" r="5" class="dot acc"/>
+    <text x="50" y="35" text-anchor="middle">1</text>
+    <text x="50" y="80" text-anchor="middle" class="mu">租給丙</text>
+    <path d="M50 55 H 370" class="acc"/>
+    <circle cx="160" cy="55" r="5" class="dot"/>
+    <text x="160" y="35" text-anchor="middle">2</text>
+    <text x="160" y="80" text-anchor="middle" class="mu">抵押給乙</text>
+    <circle cx="260" cy="55" r="5" class="dot"/>
+    <text x="260" y="35" text-anchor="middle">3</text>
+    <text x="260" y="80" text-anchor="middle" class="mu">丙蓋屋</text>
+    <circle cx="360" cy="55" r="5" class="dot"/>
+    <text x="360" y="35" text-anchor="middle">4</text>
+    <text x="360" y="80" text-anchor="middle" class="mu">丁拍定</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>拍賣不動產上原有的用益物權及租賃隨同移轉；抵押權設定後發生且有影響者，才可除去（強制執行法 <span class="s">§98 II</span>）。抵押後以使用借貸借地蓋屋，依 <span class="s">§866 III</span> 準用 II 除去。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>抵押後所有人蓋屋再出租房屋：非同一不動產，類推 §866 II（86 台抗 588）。承租人蓋屋後賣回所有人：類推 §877 I（89 台抗 352）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-08-併付拍賣之變化型與先成立之租賃隨同移轉86台抗588強執§98.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>借地蓋的房子沒有坐落權源，多數實務改用誠信原則判斷能否拆</h2>
+  <div class="scene">
+    <p>甲把 A 地無償借給丙，之後以 A 地為乙設定抵押權，丙蓋了一棟小學校舍，使用了 50 年。乙實行後丁拍定 A 地，請求丙拆屋還地。</p>
+    <p class="q">丙的校舍保得住嗎？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>丙無權占有（使用借貸不隨同移轉、不類推 §425）</span>
+      <ul>
+        <li><span>謝在全：拆</span></li>
+        <li><span>少數實務：類推 §425-1 推定租賃</span></li>
+        <li class="hit"><span>多數實務：誠信原則（公益、信賴）</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>拆除違反誠信原則時（<span class="s">§148 II</span>），丁不能依 §767 拆屋，但實務認為仍可依 <span class="s">§179</span> 請求相當於租金的不當得利。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>吳從周認為不能拆就表示坐落正當，沒有不當得利，應依情事變更請求法院定租金。以房屋抵押時，使用借貸不得讓與，不能依 §877-1 併拍。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-09-使用借貸建屋於抵押權實行後之拆屋還地與誠信原則.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>承租人以房屋抵押後買下土地，租約不因混同消滅，照樣併拍</h2>
+  <div class="scene">
+    <p>丙把 A 地租給甲，甲蓋 B 屋並以 B 屋為乙設定抵押權。之後甲買下 A 地。乙實行抵押權，由丁拍定 B 屋。</p>
+    <p class="q">甲能請求丁拆屋還地嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲＝地主＋承租人</div><div class="a lbl">類推 §762 但書</div>
+    <div class="b q">租賃存續對甲有利</div><div class="a lbl">§877-1</div>
+    <div class="b ok">屋＋租賃權併拍</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>混同原則上消滅，但存續對所有人有法律上利益者不消滅（<span class="s">§762</span>）。租賃存續時，租賃權併拍價金歸甲；若消滅只能類推 §876，甲拿不到價金。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§876 看設定抵押時、§838-1 看強制執行時、§425-1 看讓與時。謝在全認為 §876 保護抵押權人的預見，是特別規定，抵押實行案件不改用另外兩條。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-10-抵押人事後取得土地之租賃混同與§876之特別規定性§762§877-1.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>連帶保證可以直接找保證人，拋棄先訴抗辯權仍要先找債務人</h2>
+  <div class="scene">
+    <p>甲向乙借 300 萬元，丙丁兩人為保證人。清償期屆至，甲沒還錢。</p>
+    <p class="q">乙何時可以找丙丁？丙全額清償後能向丁要多少？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>一般保證（§748 保證連帶）</h4>先對甲執行無效果；已拋棄先訴抗辯權則甲屆期不履行即可</div>
+    <div class="trap-c"><h4>連帶保證（明示特約）</h4>甲丙丁三人連帶，清償期屆至直接找任一人</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>數人保證同一債務，保證人間連帶（<span class="s">§748</span>）。丙丁內部無約定平均各 150 萬元，丙可向丁求償 150 萬元（§280、§281）。對甲：承受 <span class="s">§749</span>，求償依委任 §546 或無因管理 §176。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>拋棄先訴抗辯權的保證不等於連帶保證，仍有補充性。甲負終局責任，不參與內部分擔。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-11-多數擔保之構造與保證連帶連帶保證§745§748§749.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>共同抵押同時拍賣，債務人的地先扣，其餘按價值比例</h2>
+  <div class="scene">
+    <p>甲向乙借 900 萬元，以甲的 A 地（300 萬）、丙的 B 地（600 萬）、丁的 C 地（900 萬）共同抵押。乙把三塊地一起拍賣。</p>
+    <p class="q">乙從每塊地各拿多少？</p>
+  </div>
+  <div class="flow">
+    <div class="b">A 先 300<small>§875-1</small></div><div class="a"></div>
+    <div class="b">剩 600，B：C＝2：3</div><div class="a"></div>
+    <div class="b ok">B 240、C 360</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>抵押權人可自由選擇拍賣哪一塊（<span class="s">§875</span>）。同時拍賣有債務人之物，先就其受償（<span class="s">§875-1</span>）；價金超過債權額時，準用 §875-2 按價值比例分擔（<span class="s">§875-3</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>只賣 B、C 時才是 B 360、C 540；三塊一起賣，C 只分擔 360。不必先賣債務人的地。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法40-筆記-12-共同抵押之外部關係自由選擇與同時拍賣之受償§875§875-1§875-3.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>

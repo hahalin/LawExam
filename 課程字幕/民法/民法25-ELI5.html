@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>民法25 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="民法25">
+<main>
+
+<header class="lesson-head">
+  <h1>民法25</h1>
+  <span class="sub">給付不能・代償請求權・解約與損賠・給付遲延・受領遲延（§211～§267）</span>
+</header>
+<p class="lesson-intro">先走完<b>給付不能</b>：雙方不可歸責時的<b>危險負擔</b>、<b>代償請求權</b>與其時效、可歸責時<b>解約與損賠能否並存</b>。回頭補 §211 後進入<b>給付遲延</b>的損賠與解約，最後開始<b>受領遲延</b>的提出。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 12</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>房屋查封中請求過戶，詹森林認為只是一時不能</h2>
+  <div class="scene">
+    <p>甲答應把 A 屋移轉給兒子乙。甲死後，護理之家為了 40 多萬元欠款查封 A 屋。乙向其他繼承人丙請求辦理移轉登記。</p>
+    <p class="q">查封還沒塗銷，丙是給付不能嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>第一訴訟</h4>查封未塗銷不能辦移轉 → 給付不能，乙敗訴</div>
+    <div class="trap-c"><h4>第二訴訟＋詹森林</h4>公法上登記障礙何以構成私法上給付不能？塗銷就能給 → 一時不能 → 給付遲延</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>給付不能先問債務人能不能提出，再問誰可歸責。債務人不可歸責：免給付義務並生代償請求權（<span class="s">§225</span>），債權人看自己可否歸責，決定免對待給付或仍須給付（<span class="s">§266、§267</span>）。債務人可歸責：損害賠償與解約（<span class="s">§226、§256</span>）。詹森林認為給付不能指永久不能。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>代償請求權與免對待給付只能擇一：要代償就要付錢。給付、對待給付是相對概念，看題目討論哪個標的。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-01-給付不能之效果體系與查封登記是否構成給付不能.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>房屋點交後因地震倒塌，還沒過戶也要付價金</h2>
+  <div class="scene">
+    <p>甲以 1,000 萬元出賣 A 屋給乙，7/1 點交，預定 8/1 過戶。7/15 地震，A 屋全倒，甲乙都沒有錯。</p>
+    <p class="q">甲還能向乙請求 1,000 萬元嗎？</p>
+  </div>
+  <svg class="tl" viewBox="0 0 400 120" role="img" aria-label="危險移轉時間軸">
+    <line x1="10" y1="55" x2="390" y2="55" class="lt"/>
+    <circle cx="70" cy="55" r="5" class="dot"/>
+    <text x="70" y="35" text-anchor="middle">訂約</text>
+    <text x="70" y="80" text-anchor="middle" class="mu">危險在甲</text>
+    <circle cx="190" cy="55" r="5" class="dot acc"/>
+    <text x="190" y="35" text-anchor="middle">7/1 點交</text>
+    <text x="190" y="80" text-anchor="middle" class="mu">危險移轉給乙</text>
+    <circle cx="320" cy="55" r="5" class="dot"/>
+    <text x="320" y="35" text-anchor="middle">7/15 地震</text>
+    <text x="320" y="80" text-anchor="middle" class="mu">乙仍須付款</text>
+  </svg>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>乙請求交屋，甲可主張免給付義務（<span class="s">§225 I</span>），這是抗辯，不是請求權基礎。雙方不可歸責時原則上買受人免對待給付（<span class="s">§266</span>），出賣人承擔價金危險；但自交付時起，利益及危險由買受人負擔（<span class="s">§373</span>），因為他已經享有使用收益。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>危險移轉看「交付」，不是移轉登記。有一方可歸責時不談 §373，由可歸責的人負責。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-02-雙方不可歸責之危險負擔§266§373.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>標的物被第三人毀損，買受人可以付價金改取得賠償請求權</h2>
+  <div class="scene">
+    <p>甲以 100 萬元出賣市價 200 萬元的 A 車給乙。交車前 A 車被丙撞毀，甲乙都不可歸責，甲對丙有侵權行為損害賠償請求權。</p>
+    <p class="q">乙怎麼主張最划算？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">乙選哪一條路？</div>
+    <div class="out"><span class="tag">§266</span><div class="b">不付 100 萬，也不要代償</div></div>
+    <div class="out"><span class="tag">§225 II</span><div class="b ok">付 100 萬，取得甲對丙的 200 萬請求權</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>債務人因給付不能的事由對第三人有損害賠償請求權，債權人得請求讓與（<span class="s">§225 II</span>），選擇權在債權人。土地出賣後被徵收，買受人不能依不當得利請求補償費，但可類推適用 §225 II（<span class="s">81 年第 19 次民庭決議</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>徵收補償費是類推，不是直接適用：補償針對合法侵害，賠償針對不法侵害。保險金多數說也是類推。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-03-代償請求權與徵收補償費之類推適用§225II.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>原請求權罹於時效後才給付不能，代償請求權根本不發生</h2>
+  <div class="scene">
+    <p>題一：甲乙買賣 A 地一直沒過戶，訂約後 10 年 A 地被徵收，再過 6 年乙請求補償費。題二：訂約後 16 年 A 地才被徵收，乙隨即請求。</p>
+    <p class="q">兩題甲都能主張時效抗辯嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>題一：10 年＋6 年</h4>新發生債權說：從不能時起算，6 年未滿 → 不得抗辯<br>原債權變形說：從訂約起算，16 年 → 得抗辯</div>
+    <div class="trap-c"><h4>題二：16 年才不能</h4>原請求權已罹於時效，甲得拒絕給付 → 沒有給付義務 → 沒有給付不能 → 代償請求權不發生</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>時效自請求權可行使時起算（<span class="s">§128</span>）。實務早期認代償請求權是新發生的權利，時效重新起算（<span class="s">96 台上 2086</span>）；學說多認為它是原給付請求權的變形，時效不重新起算。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>題二不要開兩說：先有請求權，才問有沒有罹於時效。債務人得拒絕並已拒絕給付，不生給付不能（97 台上 2002）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-04-代償請求權之消滅時效起算§225II§128.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>可歸責的給付不能，解約後還能不能請求履行利益</h2>
+  <div class="scene">
+    <p>甲以 80 萬元出賣市價 100 萬元的 A 車給乙，乙已付 30 萬元，另花 3 萬元鑑定。A 車因可歸責於甲的事由滅失，乙解除契約。</p>
+    <p class="q">乙除了拿回 30 萬元，還能請求什麼？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>實務：並存</h4>差額 20 萬（§226）＋拿回 30 萬；3 萬自行吸收</div>
+    <div class="trap-c"><h4>黃茂榮：擇一</h4>不解約：請求 100 萬但要付 80 萬<br>解約：拿回 30 萬＋信賴利益 3 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>可歸責時債務人一樣可主張免給付義務（<span class="s">§225 I</span>），由損害賠償取代（<span class="s">§226</span>）。實務採差額說，解約使契約溯及消滅，但解約不妨礙已發生的 §226（<span class="s">§260</span>）。黃茂榮採交換說，契約既已消滅就沒有履行利益，所以只能擇一。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§260 的性質兩說相反：實務認為不是獨立請求權基礎；黃茂榮認為是信賴利益的請求權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-05-解除契約與損害賠償並存或擇一§226§256§260.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>互易標的不能交付時，不解約請求全部價額對債權人較有利</h2>
+  <div class="scene">
+    <p>甲以 A 物（市價 100 萬元）與乙的 B 物（市價 90 萬元）互易。A 物因可歸責於甲的事由滅失，乙其實不想留著 B。</p>
+    <p class="q">乙怎麼主張才能把 B 換成錢？</p>
+  </div>
+  <div class="tree"><ul>
+    <li><span>A 因可歸責於甲滅失</span>
+      <ul>
+        <li class="off"><span>多數說：§226 差額 10 萬＋解約 → B 留在乙手上</span></li>
+        <li class="hit"><span>交換說：不解約，§226 請求 100 萬＋照樣交付 B</span></li>
+      </ul>
+    </li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>多數學說認為解除契約不使契約消滅，而是轉成清算關係（回復原狀），所以損害賠償當然不受妨礙（<span class="s">§260</span>），解約準用雙務契約規定也說得通（<span class="s">§261</span>）。一般買賣採清算說加差額說；互易時交換說較有實益。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>溯及消滅說來自日本判例，我國條文承襲德國、瑞士法，這是學者批評實務理由的核心。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-06-清算效果說與互易契約之交換說§260§261.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>出名人把借名土地高價賣掉，借名人的繼承人可請求實際價金</h2>
+  <div class="scene">
+    <p>民國 80 年甲把市價 2,000 萬元的 A 地借名登記在乙名下。90 年甲死亡，丙繼承。98 年乙以 2,500 萬元把 A 地賣給丁並過戶。107 年丙才知道。</p>
+    <p class="q">丙能向乙請求 2,000 萬元還是 2,500 萬元？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">請求權基礎</div>
+    <div class="out"><span class="tag">§226</span><div class="b">只賠 A 地市價 2,000 萬</div></div>
+    <div class="out"><span class="tag">類推</span><div class="b ok">類推 §225 II → 交付實得價金 2,500 萬</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>甲死亡，借名登記類推委任而消滅（<span class="s">§550</span>），乙負返還義務；出名人處分是有權處分，丁取得所有權，乙給付不能。實務與王澤鑑肯定類推：不可歸責都能代償，可歸責更應如此；價金和損害賠償都是代替利益。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>否定說：游進發認為有 §226 就沒有法律漏洞；林誠二認為違約獲利不必歸債權人。判決另以時效認代償不發生，受陳聰富批評。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-07-可歸責之給付不能類推代償請求權與105台上2111.md</span></div>
+</section>
+
+<!-- 8 -->
+<section class="card" id="c8">
+  <h2><span class="n">8</span>三選一的其中一宗不能，看由誰負責決定能不能選它</h2>
+  <div class="scene">
+    <p>甲乙約定由甲從 A、B、C 三匹馬中交付一匹，乙付 50 萬元，沒有約定誰選。交付前 A 馬死亡。</p>
+    <p class="q">甲還能選 A 嗎？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">A 死亡可歸責於誰？</div>
+    <div class="out"><span class="tag">甲</span><div class="b no">只能就 B、C 選一匹交付</div></div>
+    <div class="out"><span class="tag">乙</span><div class="b ok">甲可選 A → 免給付，乙仍付 50 萬</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>選擇權原則上屬於債務人（<span class="s">§208</span>）。數宗給付中有不能者，債之關係僅存在於餘存的給付；但不能的事由應由無選擇權的當事人負責時，不在此限（<span class="s">§211</span>）。甲選 A 後依給付不能處理：免給付義務、仍得請求對待給付（<span class="s">§225 I、§267</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>但書看的是「無選擇權」的人負責，先確定誰有選擇權，再判斷可歸責於誰。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-08-選擇之債之給付不能§211.md</span></div>
+</section>
+
+<!-- 9 -->
+<section class="card" id="c9">
+  <h2><span class="n">9</span>給付遲延時，債權人只要證明逾期，不可歸責由債務人舉證</h2>
+  <div class="scene">
+    <p>乙向甲訂貨，約定 11/30 交付。甲到 12/10 才交貨，說貨物被海關扣住。</p>
+    <p class="q">乙要證明甲有過失嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>給付遲延（§229、§230）</h4>乙證明逾期即可；甲要自己證明不可歸責</div>
+    <div class="trap-c"><h4>給付不能（§226）</h4>可歸責寫在要件裡，請求的債權人要證明</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>給付遲延是能給付而未給付。有確定期限，期限屆滿時起遲延；無確定期限，經催告自受催告時起遲延，催告定有期限的自期限屆滿時起（<span class="s">§229</span>）。不可歸責於債務人者不負遲延責任（<span class="s">§230</span>），游進發認為這是給債務人的抗辯。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>起訴送達訴狀、送達支付命令與催告有同一效力。海關扣貨是否可歸責要看是否為債務人報關疏失。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-09-給付遲延之要件與舉證責任§229§230.md</span></div>
+</section>
+
+<!-- 10 -->
+<section class="card" id="c10">
+  <h2><span class="n">10</span>婚紗婚禮後才送到可以拒收，西裝晚到只能請求遲延損害</h2>
+  <div class="scene">
+    <p>乙 12/24 結婚，向甲訂婚紗、向丙訂西裝，兩件都 12/26 才送到。乙當天另外花 1 萬元租西裝。</p>
+    <p class="q">乙可以兩件都拒收嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><h4>西裝：仍有實益（§231 I）</h4>婚後還能穿 → 受領西裝＋請求 1 萬元遲延損害</div>
+    <div class="trap-c"><h4>婚紗：無利益（§232）</h4>只穿一天 → 拒絕給付＋請求不履行損害</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>給付仍有實益，請求給付並賠償因遲延而生的損害，例如多付的倉庫租金、對下游的違約金（<span class="s">§231 I</span>）。遲延後的給付對債權人無利益，得拒絕給付並請求因不履行而生的損害（<span class="s">§232</span>）。有沒有實益要個案認定。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>遲延中標的物因颱風滅失，債務人仍要負責（<span class="s">§231 II</span>），可依 §226 請求；除非證明縱不遲延也會發生損害。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-10-遲延損害與不履行損害及遲延中之不可抗力§231§232.md</span></div>
+</section>
+
+<!-- 11 -->
+<section class="card" id="c11">
+  <h2><span class="n">11</span>沒有約定交貨日的買賣，要催告兩次才能解約</h2>
+  <div class="scene">
+    <p>乙向甲買一批貨，沒有約定交付日期。乙寄存證信函：「12/10 前不交貨就解約。」甲沒有交。</p>
+    <p class="q">契約解除了嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">第一次催告<small>12/10 前交付</small></div><div class="a lbl">§229 II</div>
+    <div class="b q">甲陷於遲延</div><div class="a lbl">§254</div>
+    <div class="b">第二次定期催告<small>12/17 前交付</small></div><div class="a lbl">仍不交</div>
+    <div class="b ok">解除契約</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>解除權在遲延後才發生。相對定期與未定期限，須定相當期限催告，期限內不履行才能解約（<span class="s">§254</span>）；絕對定期（如聖誕節活動布置）不必催告（<span class="s">§255</span>）。實務認為解約仍須可歸責。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>催告期限比約定或相當期間短，不是無效；經過約定或相當期間仍不履行，就可以解約（90 台上 1231）。對利息不須再付遲延利息（§233 II）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-11-給付遲延之解除契約與遲延利息§254§255§233.md</span></div>
+</section>
+
+<!-- 12 -->
+<section class="card" id="c12">
+  <h2><span class="n">12</span>被違法解僱後先寄存證信函，才能不上班仍請求報酬</h2>
+  <div class="scene">
+    <p>甲公司違法解僱員工乙，月薪 5 萬元。乙打算訴請確認僱傭關係存在，訴訟期間 8 個月不去上班。</p>
+    <p class="q">這 8 個月的 40 萬元薪水，乙能請求嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">甲解僱<small>預示拒絕受領</small></div><div class="a lbl">存證信函</div>
+    <div class="b q">乙通知已準備服勞務<small>言詞提出</small></div><div class="a lbl">甲拒絕</div>
+    <div class="b ok">受領勞務遲延<small>§487 仍得請求報酬</small></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>受領遲延須債務人依債務本旨提出，債權人拒絕或不能受領（<span class="s">§234、§235</span>）。債權人預示拒絕或給付兼需債權人之行為，債務人以準備給付之事情通知即可代替提出（言詞提出）。僱用人受領勞務遲延，受僱人不必補服勞務，仍得請求報酬（<span class="s">§487</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>未依債務本旨提出（送錯地點、有瑕疵），債權人拒收不構成受領遲延。買受人有受領義務（§367），不取件時出賣人可依 §254 解約。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">民法25-筆記-12-受領遲延之提出與違法解僱§234至§236§487.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>
