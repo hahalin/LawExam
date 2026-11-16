@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>公司法-江赫19 ELI5</title>
+<link rel="stylesheet" href="../_eli5/style.css">
+</head>
+<body data-lesson="公司法-江赫19">
+<main>
+
+<header class="lesson-head">
+  <h1>公司法-江赫19</h1>
+  <span class="sub">形式控制與綜合計算§369-2 I、§369-11・實質控制與推定§369-3・100 律師判斷題・不合營業常規賠償§369-4～§369-6・深石原則§369-7・相互投資§369-10・通知與合併財報§369-8、§369-12</span>
+</header>
+<p class="lesson-intro">每張卡先看情境和圖，自己想一下答案，再點開「規則」和「陷阱」。想不出來就直接點，不用硬撐。</p>
+
+<div class="toolbar">
+  <div class="progress"><span class="txt">懂了 0 / 7</span><div class="bar"><i></i></div></div>
+  <button id="expand-all" type="button">全部展開</button>
+  <button id="collapse-all" type="button">全部收合</button>
+  <button id="reset-done" type="button">清除勾選</button>
+</div>
+
+<!-- 1 -->
+<section class="card" id="c1">
+  <h2><span class="n">1</span>過半要看有表決權股份，持股還要加上子公司的</h2>
+  <div class="scene">
+    <p>A 已發行 200 萬股，其中 50 萬是無表決權特別股、50 萬是庫藏股。B 持有 A 55 萬股。</p>
+    <p class="q">A、B 是母子公司嗎？</p>
+  </div>
+  <div class="flow">
+    <div class="b">200 萬 − 100 萬</div><div class="a lbl">有表決權 100 萬</div><div class="b">B 持 55 萬</div><div class="a lbl">> 50 萬</div><div class="b ok">控制從屬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>持有他公司有表決權股份超過其已發行有表決權股份總數半數 → 控制公司（<span class="s">§369-2 I</span>）；持股要加計從屬公司、第三人代持的部分（<span class="s">§369-11</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>剛好 50% 不算。分母扣的是無表決權股份。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法-江赫19-筆記-01-關係企業與形式控制§369-1、§369-2I、§369-11.md</span></div>
+</section>
+
+<!-- 2 -->
+<section class="card" id="c2">
+  <h2><span class="n">2</span>董事半數以上相同推定實質控制，用席次多的那家算</h2>
+  <div class="scene">
+    <p>甲公司董事 5 席（ABCDE），乙公司董事 3 席（ABC）。</p>
+    <p class="q">有沒有控制從屬？乙持有甲的股份能投票嗎？</p>
+  </div>
+  <div class="vs">
+    <div class="rule-c"><b>形式控制子公司</b><br>股份回籠禁止<br>持有母公司股份無表決權</div>
+    <div class="trap-c"><b>實質控制子公司</b><br>不適用回籠禁止<br>持有母公司股份有表決權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>控制人事、財務或業務經營 → 實質控制（<span class="s">§369-2 II</span>）；董事或股東半數以上相同 → 推定（<span class="s">§369-3</span>）；以較高席次半數計（經濟部 88 年函）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>§369-3 推定的是實質控制。形式、實質唯一差別在股份回籠禁止與表決權（最高法院 100 台上 1178）。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法-江赫19-筆記-02-實質控制與推定控制從屬§369-2II、§369-3.md</span></div>
+</section>
+
+<!-- 3 -->
+<section class="card" id="c3">
+  <h2><span class="n">3</span>持股關係圖畫出來，一家一家判斷</h2>
+  <div class="scene">
+    <p>A 持 B 90%、C 50%，對 D 有人事任免權，與 E 有 4 名董事相同（A 9 席、E 5 席）；A 持 F 39%，B 持 F 10%，C、D、E 各持 F 5%。</p>
+    <p class="q">誰是 A 的從屬公司？</p>
+  </div>
+  <div class="tree"><ul>
+    <li class="hit"><span>B 90% → 形式控制</span></li>
+    <li class="off"><span>C 剛好 50% → 不是</span></li>
+    <li class="hit"><span>D 人事任免權 → 實質控制</span></li>
+    <li class="off"><span>E 4 人 < 9 席半數 5 人 → 不是</span></li>
+    <li class="hit"><span>F 39＋10＋5＝54% → 形式控制</span></li>
+  </ul></div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>綜合計算只加從屬公司（B、D）持股（<span class="s">§369-11</span>）；B、F 是形式控制，持有 A 的股份無表決權。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>C、E 不是 A 的從屬公司，它們持有 F 的 5% 不能加。D 是實質控制，持有 A 的股份仍可投票。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法-江赫19-筆記-03-100律師控制從屬判斷題拆解.md</span></div>
+</section>
+
+<!-- 4 -->
+<section class="card" id="c4">
+  <h2><span class="n">4</span>不利益經營年底補償就沒事；沒補償三種人連帶賠</h2>
+  <div class="scene">
+    <p>母公司叫子公司 A 低利借錢給子公司 B 蓋房子，年底沒補償 A。A 的小債權人和持股 1 年 1% 的股東想追討。</p>
+    <p class="q">誰能告？誰要賠？</p>
+  </div>
+  <div class="fork">
+    <div class="cond">年度終了未補償</div>
+    <div class="out"><span class="tag">請求權人</span><div class="b q">從屬公司／債權人（不限金額）／1 年 1% 股東</div></div>
+    <div class="out"><span class="tag">賠償義務人</span><div class="b q">控制公司／其負責人／受益他從屬公司（利益限度內）</div></div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§369-4</span> 不合營業常規經營未補償應賠償；<span class="s">§369-5</span> 受益他從屬公司連帶；<span class="s">§369-6</span> 2 年、5 年時效。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>債權人、股東是代位，錢給從屬公司。從屬公司和解或拋棄，不影響代位權。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法-江赫19-筆記-04-不合營業常規經營的賠償責任§369-4～§369-6.md</span></div>
+</section>
+
+<!-- 5 -->
+<section class="card" id="c5">
+  <h2><span class="n">5</span>控制公司的債權：不能抵銷賠償，破產時最後受償</h2>
+  <div class="scene">
+    <p>母公司欠子公司不利益經營的賠償 1,000 萬，又主張子公司欠它 1,000 萬貨款要抵銷。子公司後來破產。</p>
+    <p class="q">能抵銷嗎？破產時母公司的債權排第幾？</p>
+  </div>
+  <div class="flow">
+    <div class="b">控制公司債權</div><div class="a lbl">賠償限度內</div><div class="b no">不得抵銷</div><div class="a lbl">破產重整時</div><div class="b no">次於其他債權</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§369-7</span>：控制公司對從屬公司的債權，在應負擔損害賠償限度內不得主張抵銷；從屬公司破產、和解、重整或特別清算時，次於其他債權受清償。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>有別除權或優先權也一樣次順位。這叫深石原則，不是揭穿公司面紗。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法-江赫19-筆記-05-控制公司債權的受償限制§369-7.md</span></div>
+</section>
+
+<!-- 6 -->
+<section class="card" id="c6">
+  <h2><span class="n">6</span>相互投資只能投對方已發行有表決權股份的 1/3</h2>
+  <div class="scene">
+    <p>甲已發行 120 萬股、乙 60 萬股。甲持乙 30 萬、乙持甲 45 萬，雙方都知道。乙另獲配甲的盈餘配股 6 萬股。</p>
+    <p class="q">乙在甲的股東會能投幾萬股？</p>
+  </div>
+  <div class="flow">
+    <div class="b">120 萬 × 1/3</div><div class="a lbl">上限 40 萬</div><div class="b">45 萬中 5 萬不能投</div><div class="a lbl">＋配股 6 萬</div><div class="b ok">46 萬</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p>相互持股各達 1/3 以上 → 相互投資（<span class="s">§369-9</span>）；知情者表決權不得超過被投資公司已發行有表決權股份 1/3，盈餘或公積配股除外（<span class="s">§369-10</span>）。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>不得行使的部分在第二個算式（§180 II）扣。剛好 1/3 也算相互投資。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法-江赫19-筆記-06-相互投資公司與表決權限制§369-9、§369-10.md</span></div>
+</section>
+
+<!-- 7 -->
+<section class="card" id="c7">
+  <h2><span class="n">7</span>超過 1/3 一個月內通知，之後變動五天內再通知</h2>
+  <div class="scene">
+    <p>甲公司剛買到乙公司 35% 的股份，三個月後又加碼到 55%。</p>
+    <p class="q">甲要在多久內通知乙？乙要多久內公告？</p>
+  </div>
+  <div class="flow">
+    <div class="b">超過 1/3</div><div class="a lbl">1 個月內通知</div><div class="b">超過 1/2</div><div class="a lbl">5 日內再通知</div><div class="b ok">受通知者 5 日內公告</div>
+  </div>
+  <details class="rule"><summary>規則</summary><div class="body">
+    <p><span class="s">§369-8</span> 通知與公告；<span class="s">§369-12</span>：從屬公司公開發行 → 關係報告書；控制公司公開發行 → 合併營業報告書及合併財報。</p>
+  </div></details>
+  <details class="trap"><summary>陷阱</summary><div class="body">
+    <p>只有第一次是 1 個月，其餘都是 5 日。非公開發行的一方不用編關係報告書或合併報表。</p>
+  </div></details>
+  <div class="card-foot"><label><input type="checkbox">我懂了</label><span class="src">公司法-江赫19-筆記-07-關係企業的通知義務與合併財報§369-8、§369-12.md</span></div>
+</section>
+
+</main>
+<script src="../_eli5/app.js"></script>
+</body>
+</html>
